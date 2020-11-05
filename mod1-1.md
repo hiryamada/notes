@@ -45,26 +45,6 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 カスタム ドメインを追加後、それをテナントのプライマリ ドメインに設定することができます。プライマリ ドメインは、新しいユーザーを作成したときの既定のドメインになります。
 
-# Azure サブスクリプション
-
-[Azure サービスを作成して使用するには、Azure サブスクリプションが必要です。](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/1-introduction)
-
-- Azure サブスクリプションは、Azure でリソースをプロビジョニングするために使用される論理コンテナーです。 
-- 仮想マシン (VM) やデータベースなどのすべてのリソースの詳細が保持されます。
-- [サブスクリプションは、1つのディレクトリを信頼します（サブスクリプションは、1つのディレクトリに関連付けられます）。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-
-※ トレーニングでは、無料の[Azure Pass サブスクリプション](https://docs.microsoft.com/ja-jp/learn/certifications/mocazurepass)を利用することができます。
-
-[テナントに、新しいサブスクリプションを追加することができます。](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/4-multiple-subscriptions)
-
-サブスクリプションを使い分ける目的としては、以下のものがあります。
-
-- 環境の分離: 開発とテスト、セキュリティ、またはコンプライアンス上の理由でデータを分離することができます。 リソース アクセス制御はサブスクリプション レベルで設定できます。
-- 課金の管理: コストは最初にサブスクリプション レベルで集約されます。サブスクリプションを作成して、必要に応じてコストを管理および追跡しやすくなります。 たとえば、本番用のサブスクリプションと、開発用の別のサブスクリプションを作成することができます。
-- 組織構造を反映: たとえば、チームごとにサブスクリプションを作ることができます。
-- 制限の回避: サブスクリプションにはいくつかのハード制限があります。 たとえば、サブスクリプションごとの [ExpressRoute 回線](https://azure.microsoft.com/ja-jp/services/expressroute/)の最大数は 10 です。制限を超える必要がある場合は、追加のサブスクリプションが必要になることがあります。
-
-マイクロソフト エンタープライズ契約 (EA)、Microsoft 顧客契約、Microsoft Partner Agreement の各課金アカウントには、[Azure portal から追加でサブスクリプションを作成できます。](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/manage/create-subscription)
 
 # [Active Directory Directory Service (AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/ad-ds-getting-started) と Azure AD の違い
 
@@ -100,12 +80,16 @@ Azure IDにおけるユーザーIDの種類として、クラウド専用ID(Clou
 - オンプレミスのActive Directoryを、Azure ADに接続することができます。
 - オンプレミスで稼働する、[ドメインに参加している Windows Server 2012 以降にインストールします](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 - [無料で利用できます。](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#license-requirements-for-using-azure-ad-connect)
-- いくつかのハイブリッドIDの実装方式を選択できます。
-  - [パスワード ハッシュ同期(PHS)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-password-hash-sync) - ユーザーのオンプレミス AD パスワードのハッシュを Azure AD と同期させるサインイン方法。
-  - [パススルー認証(PTA)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-passthrough-authentication) - ユーザーがオンプレミスとクラウド内で同じパスワードを使用できるようにするサインイン方法。パスワードのハッシュをクラウドに配置したくない場合に利用します。
-  - [フェデレーション認証(AD FS)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn#federated-authentication) - 別の認証システムに認証プロセスを引き継ぐ方法。スマートカード ベースの認証やサードパーティの多要素認証が必要な場合に利用します。
 
-PHS、PTA、AD FSから、適切な選択を行うための[ドキュメントを利用できます。](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn)
+# Azure AD Connectによる、オンプレミスとAzure ADのID連携方法
+
+Azure AD Connectのセットアップ時に選択します。
+
+- [パスワード ハッシュ同期(PHS)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-password-hash-sync) - ユーザーのオンプレミス AD パスワードのハッシュを Azure AD と同期させるサインイン方法。
+- [パススルー認証(PTA)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-passthrough-authentication) - ユーザーがオンプレミスとクラウド内で同じパスワードを使用できるようにするサインイン方法。パスワードのハッシュをクラウドに配置したくない場合に利用します。
+- [フェデレーション認証(AD FS)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn#federated-authentication) - 別の認証システムに認証プロセスを引き継ぐ方法。スマートカード ベースの認証やサードパーティの多要素認証が必要な場合に利用します。
+
+これらの選択肢から適切な選択を行うための[ドキュメントを利用できます。](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn)
 
 # Azure ADのエディション
 
