@@ -1,4 +1,11 @@
-[Azure ADとは](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/2-create-aad)
+[Azure ADとは](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis)
+- Microsoft が提供するクラウドベースの ID およびアクセス管理サービス(IDaaS)
+- Microsoft 365、Azure portal、SaaS アプリケーションへのサイン イン
+- 企業ネットワークとイントラネット上のアプリへのサイン イン
+- 自分の組織で開発したクラウド アプリへのサイン イン
+- [資格情報(パスワードなど)の保護](https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/aadsec/azure-ad-security#credential-management)
+
+[Azure AD テナント(ディレクトリ)とは](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/2-create-aad)
 - 企業または組織が、AzureやMicrosoft 365などのサービスにサインアップすると、既定の "ディレクトリ" が割り当てられ、Azure AD のインスタンスになります。 
 - このディレクトリには、会社がサインアップした各サービスにアクセスできるユーザーとグループが保持されます。 
 - この既定のディレクトリは、"テナント" と呼ばれることもあります。 
