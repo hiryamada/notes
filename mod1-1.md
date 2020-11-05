@@ -10,7 +10,7 @@ Azure ADは、Microsoft が提供する、[クラウドベースの ID および
   - [AWS](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/amazon-web-service-tutorial)
   - [Zoom](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/zoom-tutorial)
   - [ヌーラボ](https://support.nulab.com/hc/ja/articles/360050198033-SAML%E8%AA%8D%E8%A8%BC-SSO-%E3%81%AE%E8%A8%AD%E5%AE%9A)
-- 企業ネットワークとイントラネット上のアプリへのサインイン - [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/ja-jp/azure/active-directory/manage-apps/application-proxy)
+- オンプレミスのアプリへのサインイン - [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/ja-jp/azure/active-directory/manage-apps/application-proxy)
 - [自分の組織で開発したクラウド アプリへのサインイン](https://docs.microsoft.com/ja-jp/azure/app-service/configure-authentication-provider-aad)
 
 パスワードなどの[資格情報の保護](https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/aadsec/azure-ad-security#credential-management)に役立つ機能を提供します。
@@ -41,9 +41,9 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 - カスタム ドメイン名: ドメイン レジストラーでドメイン名を作成（購入）し、Azure AD テナントに追加することができます。
 
-[プライマリ ドメイン名](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/domains-manage)
+[プライマリ ドメイン](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/domains-manage)
 
-カスタム ドメインを追加後、それをテナントのプライマリ ドメイン名に設定することができます。プライマリ ドメインは、新しいユーザーを作成したときにそのユーザーの既定のドメイン名になります。
+カスタム ドメインを追加後、それをテナントのプライマリ ドメインに設定することができます。プライマリ ドメインは、新しいユーザーを作成したときの既定のドメインになります。
 
 # Azure サブスクリプション
 
@@ -55,14 +55,16 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 ※ トレーニングでは、無料の[Azure Pass サブスクリプション](https://docs.microsoft.com/ja-jp/learn/certifications/mocazurepass)を利用することができます。
 
-[サブスクリプションを追加することができます。](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/4-multiple-subscriptions)
+[テナントに、新しいサブスクリプションを追加することができます。](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/4-multiple-subscriptions)
+
+サブスクリプションを使い分ける目的としては、以下のものがあります。
 
 - 環境の分離: 開発とテスト、セキュリティ、またはコンプライアンス上の理由でデータを分離することができます。 リソース アクセス制御はサブスクリプション レベルで設定できます。
-- 課金の管理: コストは最初にサブスクリプション レベルで集約されます。サブスクリプションを作成して、必要に応じてコストを管理および追跡することができます。 たとえば、本番用のサブスクリプションと、開発用の別のサブスクリプションを作成することができます。
-- 組織構造を反映: たとえば、チームごとにサブスクリプションを作ります。
-- 制限の回避: サブスクリプションにはいくつかのハード制限があります。 たとえば、サブスクリプションごとの Express Route 回線の最大数は 10 です。制限を超える必要がある場合は、追加のサブスクリプションが必要になることがあります。
+- 課金の管理: コストは最初にサブスクリプション レベルで集約されます。サブスクリプションを作成して、必要に応じてコストを管理および追跡しやすくなります。 たとえば、本番用のサブスクリプションと、開発用の別のサブスクリプションを作成することができます。
+- 組織構造を反映: たとえば、チームごとにサブスクリプションを作ることができます。
+- 制限の回避: サブスクリプションにはいくつかのハード制限があります。 たとえば、サブスクリプションごとの [ExpressRoute 回線](https://azure.microsoft.com/ja-jp/services/expressroute/)の最大数は 10 です。制限を超える必要がある場合は、追加のサブスクリプションが必要になることがあります。
 
-[マイクロソフト エンタープライズ契約 (EA)、Microsoft 顧客契約、Microsoft Partner Agreement の各課金アカウントには、Azure portal から追加でサブスクリプションを作成できます。](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/manage/create-subscription)
+マイクロソフト エンタープライズ契約 (EA)、Microsoft 顧客契約、Microsoft Partner Agreement の各課金アカウントには、[Azure portal から追加でサブスクリプションを作成できます。](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/manage/create-subscription)
 
 # [Active Directory Directory Service (AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/ad-ds-getting-started) と Azure AD の違い
 
@@ -84,10 +86,10 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 
 # ハイブリッドID
 
-ユーザーIDの種類として、クラウド専用ID(Cloud-only identity)と、ハイブリッドID(Hybrid identity)があります。
+Azure IDにおけるユーザーIDの種類として、クラウド専用ID(Cloud-only identity)と、ハイブリッドID(Hybrid identity)があります。
 
 - [クラウド専用ID](https://docs.microsoft.com/ja-jp/microsoft-365/enterprise/about-microsoft-365-identity?view=o365-worldwide): Azure AD テナントにのみ存在するID
-- [ハイブリッドID](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-hybrid-identity): オンプレミスとAzure ADのための共通のID
+- [ハイブリッドID](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-hybrid-identity): オンプレミスとAzure ADの共通のID
 
 オンプレミスおよびクラウドの両方のアプリケーションへのアクセス権を必要とする場合は、ハイブリッドIDを使用します。
 
@@ -96,24 +98,27 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 ハイブリッドIDを実装するには、[Azure AD Connect](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect)を使用します。
 
 - オンプレミスのActive Directoryを、Azure ADに接続することができます。
+- オンプレミスで稼働する、[ドメインに参加している Windows Server 2012 以降にインストールします](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 - [無料で利用できます。](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#license-requirements-for-using-azure-ad-connect)
-- [ドメインに参加している Windows Server 2012 以降にインストールします](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 - いくつかのハイブリッドIDの実装方式を選択できます。
-  - [パスワード ハッシュ同期](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-password-hash-sync) - ユーザーのオンプレミス AD パスワードのハッシュを Azure AD と同期させるサインイン方法。
-  - [パススルー認証](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-passthrough-authentication) - ユーザーがオンプレミスとクラウド内で同じパスワードを使用できるようにするサインイン方法。
-  - [フェデレーション認証](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn#federated-authentication) - 別の認証システムに認証プロセスを引き継ぐ方法。スマートカード ベースの認証やサードパーティの多要素認証が必要な場合に利用します。
+  - [パスワード ハッシュ同期(PHS)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-password-hash-sync) - ユーザーのオンプレミス AD パスワードのハッシュを Azure AD と同期させるサインイン方法。
+  - [パススルー認証(PTA)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-passthrough-authentication) - ユーザーがオンプレミスとクラウド内で同じパスワードを使用できるようにするサインイン方法。パスワードのハッシュをクラウドに配置したくない場合に利用します。
+  - [フェデレーション認証(AD FS)](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn#federated-authentication) - 別の認証システムに認証プロセスを引き継ぐ方法。スマートカード ベースの認証やサードパーティの多要素認証が必要な場合に利用します。
+
+PHS、PTA、AD FSから、適切な選択を行うための[ドキュメントを利用できます。](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn)
 
 # Azure ADのエディション
 
-[Azure ADのエディションと価格](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
+[Azure ADのエディションと価格](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)には、以下のものがあります。
+
 - Free
 - Office 365アプリ（Office 365、Microsoft 365サブスクリプションにて使用できる機能）
 - Premium P1: ￥672 ユーザー/月
 - Premium P2: ￥1,008 ユーザー/月
 
-※[Basicは廃止に](https://www.google.com/search?q=azure+ad+basic+%E5%BB%83%E6%AD%A2)
+※[Basicは廃止されます。](https://www.google.com/search?q=azure+ad+basic+%E5%BB%83%E6%AD%A2)
 
-[ユーザーまたはグループ (および関連するメンバー) ごとに、ライセンスを付与する必要があります。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/license-users-groups)
+Azure ADの[ユーザーまたはグループごとに、ライセンスを付与する必要があります。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/license-users-groups)
 
 # Azure ADの参加(Azure AD joined)
 
@@ -140,7 +145,7 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 - ユーザーは個人所有のデバイスを使用して、組織の Azure Active Directory の管理下にあるリソースにアクセスできます。
 - Windows 10、iOS、Android、MacOSに対応します。
 - 組織は、[条件付きアクセス](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/2-what-is-device-identity)を設定して、特定の条件を満たす場合に、デバイスのアクセスを許可または禁止することができます。
-- [Microsoft Intune](https://www.microsoft.com/ja-jp/microsoft-365/enterprise-mobility-security/microsoft-intune) などの Mobile Device Management (MDM) ツールを使用して、Azure AD 登録済みデバイスをセキュリティで保護し、制御することができます。 MDM では、ストレージの暗号化、パスワードの複雑さ、セキュリティ ソフトウェアを常に最新の状態に保つことを求めるなど、組織に必要な構成を適用する手段が提供されます。
+- [Microsoft Intune](https://www.microsoft.com/ja-jp/microsoft-365/enterprise-mobility-security/microsoft-intune) などの Mobile Device Management (MDM) ツールを使用して、Azure AD 登録済みデバイスをセキュリティで保護し、制御することができます。 MDM では、ストレージの暗号化、パスワードの複雑さ、セキュリティ ソフトウェアの最新化などを強制できます。
 
 # 管理者による、ユーザーのパスワードのリセット
 
@@ -158,4 +163,4 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 [SSPRを使用するには、ライセンスの割り当てが必要です。](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
 
 - [Azure AD Premium P1 or P2](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
-- [Microsoft 365 Business Standard または Microsoft 365 Business Premium でも、SSPRを利用できます](https://www.microsoft.com/ja-jp/microsoft-365/business/compare-all-microsoft-365-business-products)
+- Microsoft 365 Business Standard または Microsoft 365 Business Premium でも、[SSPRを利用できます](https://www.microsoft.com/ja-jp/microsoft-365/business/compare-all-microsoft-365-business-products)
