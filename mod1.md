@@ -50,9 +50,9 @@
 - 組織は、[条件付きアクセス](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/2-what-is-device-identity)を設定して、特定の条件を満たす場合に、デバイスのアクセスを許可または禁止することができます。
 - [Microsoft Intune](https://www.microsoft.com/ja-jp/microsoft-365/enterprise-mobility-security/microsoft-intune) などの Mobile Device Management (MDM) ツールを使用して、これらの Azure AD 登録済みデバイスをセキュリティで保護し、さらに制御することができます。 MDM では、ストレージの暗号化、パスワードの複雑さ、セキュリティ ソフトウェアを常に最新の状態に保つことを求めるなど、組織に必要な構成を適用する手段が提供されます。
 
-# セルフサービス パスワードリセット
+# セルフサービス パスワードリセット(SSPR)
 
-[SSPR](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-howitworks)
+[Azure AD のセルフサービス パスワード リセット](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-howitworks)
 
 - ユーザーは、管理者やヘルプ デスクが関与することなく、自分のパスワードを変更またはリセットできるようになります。
 - ユーザーはアカウントがロックされた場合やパスワードを忘れた場合でも、画面の指示に従って自分自身のロックを解除して、作業に戻ることができます。
