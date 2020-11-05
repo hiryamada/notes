@@ -6,7 +6,7 @@
   - [ラボ1](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.md)
 
 - モジュール2: ガバナンスとコンプライアンス
-  - [サブスクリプションとアカウント](mod2-1)
+  - [サブスクリプションとアカウント](mod2-1.md)
   - [Azure Policy](mod2-2.md)
   - [ロールベースのアクセス制御](mod2-3.md)
   - ラボ2
