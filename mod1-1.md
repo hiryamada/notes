@@ -33,6 +33,18 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 [Azure ADのデータの保存場所は、Azure AD テナントを作成するときに選択した国/地域によって決まります。](https://docs.microsoft.com/ja-jp/azure/active-directory-b2c/data-residency#data-residency)
 
+# テナントのドメイン名
+
+[初期ドメイン名とカスタムドメイン名](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/add-custom-domain)
+
+- 初期ドメイン名: 新しい Azure AD テナントにはすべて、 ～～.onmicrosoft.com という初期ドメイン名が付きます。初期ドメイン名は変更したり削除したりできません。Azureのサインアップに使用したメールアドレスが user@example.com だった場合、初期ドメイン名は userexample.onmicrosoft.com のようになります。
+
+- カスタム ドメイン名: ドメイン レジストラーでドメイン名を作成（購入）し、Azure AD テナントに追加することができます。
+
+[プライマリ ドメイン名](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/domains-manage)
+
+カスタム ドメインを追加後、それをテナントのプライマリ ドメイン名に設定することができます。プライマリ ドメインは、新しいユーザーを作成したときにそのユーザーの既定のドメイン名になります。
+
 # Azure サブスクリプション
 
 [Azure サービスを作成して使用するには、Azure サブスクリプションが必要です。](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/1-introduction)
