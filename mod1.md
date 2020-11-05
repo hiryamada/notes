@@ -37,8 +37,17 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 
 - Azure AD は、AD DS のクラウド バージョンではありません。 
 - オンプレミスの AD DS を完全に置き換えることを目的としたものでもありません。
+- AD DSの[OU(組織単位)](https://docs.microsoft.com/ja-jp/azure/active-directory-domain-services/create-ou)や[GPO(グループポリシーオブジェクト)](https://docs.microsoft.com/ja-jp/azure/active-directory-domain-services/manage-group-policy)は、Azure ADにはありません。
+- プロトコルや利用場所が異なります。
+
+|-|AD DS|Azure AD|
+|-|-|-|
+|プロトコル|[Kerberos](https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%AB%E3%83%99%E3%83%AD%E3%82%B9%E8%AA%8D%E8%A8%BC)|[OAuth, OpenID Connect, SAML](https://docs.microsoft.com/ja-jp/azure/active-directory/develop/authentication-vs-authorization#authentication-and-authorization-using-microsoft-identity-platform)|
+|利用できる場所|オンプレミス(組織のファイアウォール内)|クラウド(インターネット)|
 
 オンプレミスの AD DS がすでに存在する場合、Azure AD Connectを使用して、オンプレミスのActive Directoryと、Azure ADを接続し、ハイブリッドIDを提供することができます（後述）。
+
+※[Azure AD Domain Service](https://azure.microsoft.com/ja-jp/services/active-directory-ds/) というマネージド ドメイン サービスがありますが、こちらも、[オンプレミスのAD DSを置き換えるものではありません。](https://jpazureid.github.io/blog/azure-active-directory/azure-ad-ds-scenario/)
 
 # ハイブリッドID
 
