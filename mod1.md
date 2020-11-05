@@ -1,7 +1,8 @@
 # Azure Active Directory (Azure AD)
 
-[Azure ADとは](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis)
-- Microsoft が提供するクラウドベースの ID およびアクセス管理サービス(IDaaS)
+Azure ADは、Microsoft が提供する、[クラウドベースの ID およびアクセス管理サービス(IDaaS)](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis)です。
+
+さまざまなシステムへのサインインに利用することができます。
 - Microsoft 365、Azure portalへのサインイン
 - [SaaS アプリケーションへのサインイン](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/tutorial-list)
   - [Salesforce](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/salesforce-tutorial)
@@ -11,7 +12,12 @@
   - [ヌーラボ](https://support.nulab.com/hc/ja/articles/360050198033-SAML%E8%AA%8D%E8%A8%BC-SSO-%E3%81%AE%E8%A8%AD%E5%AE%9A)
 - 企業ネットワークとイントラネット上のアプリへのサインイン - [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/ja-jp/azure/active-directory/manage-apps/application-proxy)
 - [自分の組織で開発したクラウド アプリへのサインイン](https://docs.microsoft.com/ja-jp/azure/app-service/configure-authentication-provider-aad)
-- [資格情報(パスワードなど)の保護](https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/aadsec/azure-ad-security#credential-management)
+
+[資格情報(パスワードなど)の保護](https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/aadsec/azure-ad-security#credential-management)に役立つ機能を提供します。
+
+「デバイスの参加」「デバイスの登録」を使用して、アクセスするデバイスを制御することができます（後述）。
+
+ユーザーがパスワードを忘れてしまった場合、パスワードのリセット機能を利用できます（後述）。
 
 # Azure ADの概念
 
