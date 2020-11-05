@@ -39,6 +39,7 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 - Azure サブスクリプションは、Azure でリソースをプロビジョニングするために使用される論理コンテナーです。 
 - 仮想マシン (VM) やデータベースなどのすべてのリソースの詳細が保持されます。
+- [サブスクリプションは、1つのディレクトリを信頼します（サブスクリプションは、1つのディレクトリに関連付けられます）。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 
 ※ トレーニングでは、無料の[Azure Pass サブスクリプション](https://docs.microsoft.com/ja-jp/learn/certifications/mocazurepass)を利用することができます。
 
