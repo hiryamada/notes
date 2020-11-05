@@ -31,7 +31,7 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 [Azure ADのデータの保存場所は、Azure AD テナントを作成するときに選択した国/地域によって決まります。](https://docs.microsoft.com/ja-jp/azure/active-directory-b2c/data-residency#data-residency)
 
-# AD DSとAzure AD
+# [Active Directory Directory Service (AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/ad-ds-getting-started) と Azure AD の違い
 
 Azure ADは、[オンプレミスのActive Directoryとは異なります。](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/2-create-aad)
 
