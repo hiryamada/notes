@@ -33,6 +33,24 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 [Azure ADのデータの保存場所は、Azure AD テナントを作成するときに選択した国/地域によって決まります。](https://docs.microsoft.com/ja-jp/azure/active-directory-b2c/data-residency#data-residency)
 
+# Azure サブスクリプション
+
+[Azure サービスを作成して使用するには、Azure サブスクリプションが必要です。](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/1-introduction)
+
+- Azure サブスクリプションは、Azure でリソースをプロビジョニングするために使用される論理コンテナーです。 
+- 仮想マシン (VM) やデータベースなどのすべてのリソースの詳細が保持されます。
+
+※ トレーニングでは、無料の[Azure Pass サブスクリプション](https://docs.microsoft.com/ja-jp/learn/certifications/mocazurepass)を利用することができます。
+
+[サブスクリプションを追加することができます](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/4-multiple-subscriptions)
+
+- 環境の分離: 開発とテスト、セキュリティ、またはコンプライアンス上の理由でデータを分離することができます。 リソース アクセス制御はサブスクリプション レベルで設定できます。
+- 課金の管理: コストは最初にサブスクリプション レベルで集約されます。サブスクリプションを作成して、必要に応じてコストを管理および追跡することができます。 たとえば、本番用のサブスクリプションと、開発用の別のサブスクリプションを作成することができます。
+- 組織構造を反映: たとえば、チームごとにサブスクリプションを作ります。
+- 制限の回避: サブスクリプションにはいくつかのハード制限があります。 たとえば、サブスクリプションごとの Express Route 回線の最大数は 10 です。制限を超える必要がある場合は、追加のサブスクリプションが必要になることがあります。
+
+[マイクロソフト エンタープライズ契約 (EA)、Microsoft 顧客契約、Microsoft Partner Agreement の各課金アカウントには、Azure portal から追加でサブスクリプションを作成できます。](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/manage/create-subscription)
+
 # [Active Directory Directory Service (AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/ad-ds-getting-started) と Azure AD の違い
 
 Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/2-create-aad)
