@@ -13,7 +13,7 @@ Azure ADは、Microsoft が提供する、[クラウドベースの ID および
 - 企業ネットワークとイントラネット上のアプリへのサインイン - [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/ja-jp/azure/active-directory/manage-apps/application-proxy)
 - [自分の組織で開発したクラウド アプリへのサインイン](https://docs.microsoft.com/ja-jp/azure/app-service/configure-authentication-provider-aad)
 
-[資格情報(パスワードなど)の保護](https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/aadsec/azure-ad-security#credential-management)に役立つ機能を提供します。
+パスワードなどの[資格情報の保護](https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/aadsec/azure-ad-security#credential-management)に役立つ機能を提供します。
 
 「デバイスの参加」「デバイスの登録」を使用して、アクセスするデバイスを制御することができます（後述）。
 
