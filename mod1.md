@@ -145,5 +145,5 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 [SSPRを使用するには、ライセンスの割り当てが必要です。](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
 
 - [Azure AD Premium P1 or P2](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
-- [Microsoft 365 Business Standard, Microsoft 365 Business Premium] (https://www.microsoft.com/ja-jp/microsoft-365/business/compare-all-microsoft-365-business-products)
+- [Microsoft 365 Business Standard, Microsoft 365 Business Premium](https://www.microsoft.com/ja-jp/microsoft-365/business/compare-all-microsoft-365-business-products)
 
