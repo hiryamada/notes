@@ -29,6 +29,8 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 - この既定のディレクトリは、"テナント" と呼ばれることもあります。 
 - テナントは、組織と、それに割り当てられた既定のディレクトリを表します。
 
+[ユーザー数が100万未満の組織では、1つのテナントを作成することを強くお勧めします。100万を超えるユーザーがいる組織では、マルチテナントアーキテクチャを推奨します。](https://docs.microsoft.com/ja-jp/microsoft-365/education/deploy/design-multi-tenant-architecture)
+
 [Azure ADのデータの保存場所は、Azure AD テナントを作成するときに選択した国/地域によって決まります。](https://docs.microsoft.com/ja-jp/azure/active-directory-b2c/data-residency#data-residency)
 
 # [Active Directory Directory Service (AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/ad-ds-getting-started) と Azure AD の違い
@@ -51,11 +53,16 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 
 # ハイブリッドID
 
-オンプレミスとクラウドを基盤とする機能を利用する際に、場所に関係なく、1 つのユーザー ID ですべてのリソースの認証と権限付与を行うことができます。これを[ハイブリッド ID](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/) と呼んでいます。
+IDの種類として、クラウド専用ID(Cloud-only identity)と、ハイブリッドID(Hybrid identity)があります。
+
+- [クラウド専用ID](https://docs.microsoft.com/ja-jp/microsoft-365/enterprise/about-microsoft-365-identity?view=o365-worldwide): Azure AD テナントにのみ存在するID
+- [ハイブリッドID](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-hybrid-identity): オンプレミスとAzure ADのための共通のID
+
+オンプレミスおよびクラウドの両方のアプリケーションへのアクセス権を必要とする場合は、ハイブリッドIDを使用します。
+
+# Azure AD Connect
 
 ハイブリッドIDを実装するには、[Azure AD Connect](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect)を使用します。
-
-Azure AD Connectの特徴
 
 - オンプレミスのActive Directoryを、Azure ADに接続することができます。
 - [無料で利用できます。](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#license-requirements-for-using-azure-ad-connect)
@@ -63,6 +70,7 @@ Azure AD Connectの特徴
 - いくつかのハイブリッドIDの実装方式を選択できます。
   - [パスワード ハッシュ同期](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-password-hash-sync) - ユーザーのオンプレミス AD パスワードのハッシュを Azure AD と同期させるサインイン方法。
   - [パススルー認証](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-passthrough-authentication) - ユーザーがオンプレミスとクラウド内で同じパスワードを使用できるようにするサインイン方法。
+  - [フェデレーション認証](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn#federated-authentication) - 別の認証システムに認証プロセスを引き継ぐ方法。スマートカード ベースの認証やサードパーティの多要素認証が必要な場合に利用します。
 
 # Azure ADのエディション
 
