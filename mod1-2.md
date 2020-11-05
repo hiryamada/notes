@@ -26,24 +26,28 @@
 
 - [Azure Portal, CSVファイルを使用した一括作成](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/users-bulk-add#to-create-users-in-bulk)
 
-CSVファイルには初期パスワードが含まれます。ユーザーは、最初のサインインの際に、パスワードを変更できます。
+CSVファイルには初期パスワードを指定します。ユーザーは、初期パスワードでサインインし、その後パスワードを変更できます。
 
 # ユーザーの削除
 
-[ユーザーを削除した後、アカウントは 30 日間、中断(suspended)状態のままになります。 その 30 日の期間中は、ユーザー アカウントをそのすべてのプロパティと共に復元することができます。 30 日間の期間が経過すると、完全削除のプロセスが自動的に開始されます。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-users-restore)
+[ユーザーを削除した後、アカウントは 30 日間、中断(suspended)状態のままになります。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-users-restore)
 
-# グループの管理
+削除されてからまだ 30 日が経過していないユーザーはすべて表示することができます。 これらのユーザーは復元することができます。
+
+30 日間の期間が経過すると、完全削除のプロセスが自動的に開始されます。
+
+# グループ
 
 Azure ADでは、[グループ](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/enterprise-users/context/ugr-context)を使用して、クラウド ベースのアプリ、オンプレミスのアプリ、およびリソースへのアクセスの管理できます。
-
-# グループの種類
 
 Azure ADには、[2種類のグループ](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal?context=azure/active-directory/enterprise-users/context/ugr-context#group-types)があります。
 
 - セキュリティグループ: グループのユーザーに共有リソース（例：Salesforce）へのアクセス許可を割り当てることができます。
 - Office 365グループ: 共有メールボックス、カレンダー、ファイル、SharePoint サイトなどへのアクセスをメンバーに付与することで、共同作業の機会を提供します。
 
-# グループの[メンバーシップ](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal?context=azure/active-directory/enterprise-users/context/ugr-context#membership-types)（割り当て方法）
+# グループへのユーザーの割り当て
+
+割り当て方法を[メンバーシップ](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal?context=azure/active-directory/enterprise-users/context/ugr-context#membership-types)といいます。
 
 - 割り当て済み: 手動でユーザーをグループに追加・削除します。
 - 動的ユーザー: ルールを使用して、自動的にユーザーをグループに追加・削除します。
@@ -56,7 +60,7 @@ Azure ADには、[2種類のグループ](https://docs.microsoft.com/ja-jp/azure
 
 動的グループのメンバーを手動で追加または削除することはできません。
 
-この機能を使うには、少なくとも 1 つの動的グループのメンバーである一意のユーザーごとに [Azure AD Premium P1 ライセンス](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)が必要です。 ユーザーを動的グループのメンバーにするために、そのユーザーにライセンスを割り当てる必要はありませんが、少なくともそのすべてのユーザーを対象にできるだけのライセンス数が Azure AD 組織に含まれている必要があります
+この機能を使うには、少なくとも 1 つの動的グループのメンバーである一意のユーザーごとに [Azure AD Premium P1 ライセンス](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)が必要です。 ユーザーを動的グループのメンバーにするために、そのユーザーにライセンスを割り当てる必要はありませんが、少なくともそのすべてのユーザーを対象にできるだけのライセンス数が Azure AD 組織に含まれている必要があります。
 
 # テナント（ディレクトリ）の管理
 
@@ -65,13 +69,9 @@ Azure ADには、[2種類のグループ](https://docs.microsoft.com/ja-jp/azure
 
 [グローバル(全体)管理者](https://docs.microsoft.com/ja-jp/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator)は、[新しいテナントを追加することができます。](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/licensing-directory-independence#add-an-azure-ad-organization)
 
-テナントはAzureサブスクリプションの子リソースではない
-
-# テナント（ディレクトリ）の作成
-
 [Azure portalから、新しいテナントを作成することができます。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
-# Azure ADの監視
+# Azure ADへのサインイン・変更の監視
 
 - [サインイン ログ](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/concept-sign-ins#download-sign-in-activities) - ユーザー サインイン アクティビティに関する情報を提供します。
 
