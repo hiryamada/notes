@@ -74,11 +74,21 @@ Azure AD Connectの特徴
 - 組織のリソースへのアクセスを、組織が管理しているデバイスのみに制限することができます。
 - 組織は、[条件付きアクセス](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/2-what-is-device-identity)を設定して、特定の条件を満たす場合に、デバイスのアクセスを許可または禁止することができます。
 - ユーザーは、自分の職場アカウントを使用して、Azure AD インスタンスにアクセスします。
-- ユーザーは、パスワードまたは Windows Hello を使用して、ユーザー認証をすることができます。
+- ユーザーは、パスワードまたは [Windows Hello](https://support.microsoft.com/ja-jp/windows/windows-hello-%E3%81%AE%E6%A6%82%E8%A6%81%E3%81%A8%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97-dae28983-8242-bb2a-d3d1-87c9d265a5f0) を使用して、ユーザー認証をすることができます。Windows Hello では、顔認証や指紋認証を使用することができます。
+
+
+[Enterprise State Roaming](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/4-what-is-enterprise-state-roaming)
+
+- Windows 10 デバイスの設定とアプリケーション データを組織のクラウド サービスと同期させる機能です。
+- すべてのデバイス ユーザーを有効にすることも、組織のニーズに基づいて特定のユーザーまたはグループを選択することもできます。
+- [Enterprise State Roamingを使用するには、ライセンスの割り当てが必要です。](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
+  - [Azure AD Premium P1 or P2](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
+
 
 # Azure ADの登録(Azure AD registered)
 
 [Azure ADの登録済みデバイス](https://docs.microsoft.com/ja-jp/azure/active-directory/devices/concept-azure-ad-register)
+
 - ユーザーは個人所有のデバイスを使用して、組織の Azure Active Directory の管理下にあるリソースにアクセスできます。
 - Windows 10、iOS、Android、MacOSに対応します。
 - 組織は、[条件付きアクセス](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/2-what-is-device-identity)を設定して、特定の条件を満たす場合に、デバイスのアクセスを許可または禁止することができます。
@@ -86,15 +96,19 @@ Azure AD Connectの特徴
 
 # 管理者による、ユーザーのパスワードのリセット
 
-[管理者は、ユーザーのパスワードをリセットできます。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-users-reset-password-azure-portal)
+ユーザーが自分のパスワードを忘れてしまった場合、[管理者は、ユーザーのパスワードをリセットできます。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-users-reset-password-azure-portal)
 
 # セルフサービス パスワードリセット(SSPR)
 
 [Azure AD のセルフサービス パスワード リセット](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-howitworks)
 
-- ユーザーは、管理者やヘルプ デスクが関与することなく、自分のパスワードを変更またはリセットできるようになります。
-- ユーザーはアカウントがロックされた場合やパスワードを忘れた場合でも、画面の指示に従って自分自身のロックを解除して、作業に戻ることができます。
-- ヘルプ デスクの問い合わせが減り、生産性の喪失も軽減されます。
-- [ライセンスの割り当てが必要な機能です。](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
-  - [Azure AD Premium P1 or P2](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
-  - [Microsoft 365 Business Standard, Microsoft 365 Business Premium] (https://www.microsoft.com/ja-jp/microsoft-365/business/compare-all-microsoft-365-business-products)
+- SSPRを使用すると、ユーザーが自分のパスワードを忘れてしまった場合、管理者やヘルプ デスクが関与することなく、自分のパスワードをリセットすることができます。
+- ユーザーは、画面の指示に従って、自分自身のロックを解除して、作業に戻ることができます。
+- 組織のヘルプ デスクの問い合わせが減り、生産性の喪失も軽減されます。
+- [SSPRの有効範囲](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/tutorial-enable-sspr#enable-self-service-password-reset)は、「なし」「選択済み（指定したグループ）」「すべて」の3種類から選ぶことができます。現在、Azure portal を使用して SSPR に対して有効にできる Azure AD グループは 1 つだけです。
+
+[SSPRを使用するには、ライセンスの割り当てが必要です。](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
+
+- [Azure AD Premium P1 or P2](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
+- [Microsoft 365 Business Standard, Microsoft 365 Business Premium] (https://www.microsoft.com/ja-jp/microsoft-365/business/compare-all-microsoft-365-business-products)
+
