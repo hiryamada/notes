@@ -39,7 +39,7 @@
 
 [Azure ADの参加とは](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/3-what-is-ad-join)
 - 組織が所有する、Windows 10 または Windows Server 2019 デバイスを Azure Active Directory インスタンスに参加させることができます。 
-- 組織のリソースへのアクセスを、組織が管理ているデバイスのみに制限することができます。
+- 組織のリソースへのアクセスを、組織が管理しているデバイスのみに制限することができます。
 - 組織は、[条件付きアクセス](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/2-what-is-device-identity)を設定して、特定の条件を満たす場合に、デバイスのアクセスを許可または禁止することができます。
 - ユーザーは、自分の職場アカウントを使用して、Azure AD インスタンスにアクセスします。
 - ユーザーは、パスワードまたは Windows Hello を使用して、ユーザー認証をすることができます。
@@ -50,7 +50,7 @@
 - ユーザーは個人所有のデバイスを使用して、組織の Azure Active Directory の管理下にあるリソースにアクセスできます。
 - Windows 10、iOS、Android、MacOSに対応します。
 - 組織は、[条件付きアクセス](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/2-what-is-device-identity)を設定して、特定の条件を満たす場合に、デバイスのアクセスを許可または禁止することができます。
-- [Microsoft Intune](https://www.microsoft.com/ja-jp/microsoft-365/enterprise-mobility-security/microsoft-intune) などの Mobile Device Management (MDM) ツールを使用して、これらの Azure AD 登録済みデバイスをセキュリティで保護し、さらに制御することができます。 MDM では、ストレージの暗号化、パスワードの複雑さ、セキュリティ ソフトウェアを常に最新の状態に保つことを求めるなど、組織に必要な構成を適用する手段が提供されます。
+- [Microsoft Intune](https://www.microsoft.com/ja-jp/microsoft-365/enterprise-mobility-security/microsoft-intune) などの Mobile Device Management (MDM) ツールを使用して、Azure AD 登録済みデバイスをセキュリティで保護し、制御することができます。 MDM では、ストレージの暗号化、パスワードの複雑さ、セキュリティ ソフトウェアを常に最新の状態に保つことを求めるなど、組織に必要な構成を適用する手段が提供されます。
 
 # 管理者による、ユーザーのパスワードのリセット
 
