@@ -6,9 +6,11 @@
 
 [Azure ADのエディションと価格](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
 - Free
-- Office 365アプリ（Office 365、Microsoft 365ユーザーが使用できる機能）
+- Office 365アプリ（Office 365、Microsoft 365サブスクリプションにて使用できる機能）
 - Premium P1: ￥672 ユーザー/月
 - Premium P2: ￥1,008 ユーザー/月
+
+※[Basicは廃止に](https://www.google.com/search?q=azure+ad+basic+%E5%BB%83%E6%AD%A2)
 
 [Azure ADのシングル サインオン](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/tutorial-list)
 - [Salesforce](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/salesforce-tutorial)
