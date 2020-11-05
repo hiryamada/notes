@@ -44,7 +44,7 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 
 |-|AD DS|Azure AD|
 |-|-|-|
-|プロトコル|[Kerberos](https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%AB%E3%83%99%E3%83%AD%E3%82%B9%E8%AA%8D%E8%A8%BC)|[OAuth, OpenID Connect, SAML](https://docs.microsoft.com/ja-jp/azure/active-directory/develop/authentication-vs-authorization#authentication-and-authorization-using-microsoft-identity-platform)|
+|プロトコル|[Kerberos](https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%AB%E3%83%99%E3%83%AD%E3%82%B9%E8%AA%8D%E8%A8%BC), [NTLM](https://ja.wikipedia.org/wiki/NT_LAN_Manager)|[OAuth, OpenID Connect, SAML](https://docs.microsoft.com/ja-jp/azure/active-directory/develop/authentication-vs-authorization#authentication-and-authorization-using-microsoft-identity-platform)|
 |利用できる場所|オンプレミス(組織のファイアウォール内)|クラウド(インターネット)|
 
 オンプレミスの AD DS がすでに存在する場合、Azure AD Connectを使用して、オンプレミスのAD DSと、Azure ADを接続することができます（後述）。
