@@ -33,6 +33,8 @@
 
 ※[Basicは廃止に](https://www.google.com/search?q=azure+ad+basic+%E5%BB%83%E6%AD%A2)
 
+[ユーザーまたはグループ (および関連するメンバー) ごとに、ライセンスを付与する必要があります。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/license-users-groups)
+
 # Azure ADの参加(Azure AD joined)
 
 [Azure ADの参加とは](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/3-what-is-ad-join)
@@ -50,6 +52,10 @@
 - 組織は、[条件付きアクセス](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/2-what-is-device-identity)を設定して、特定の条件を満たす場合に、デバイスのアクセスを許可または禁止することができます。
 - [Microsoft Intune](https://www.microsoft.com/ja-jp/microsoft-365/enterprise-mobility-security/microsoft-intune) などの Mobile Device Management (MDM) ツールを使用して、これらの Azure AD 登録済みデバイスをセキュリティで保護し、さらに制御することができます。 MDM では、ストレージの暗号化、パスワードの複雑さ、セキュリティ ソフトウェアを常に最新の状態に保つことを求めるなど、組織に必要な構成を適用する手段が提供されます。
 
+# 管理者による、ユーザーのパスワードのリセット
+
+[管理者は、ユーザーのパスワードをリセットできます。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-users-reset-password-azure-portal)
+
 # セルフサービス パスワードリセット(SSPR)
 
 [Azure AD のセルフサービス パスワード リセット](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-howitworks)
@@ -57,6 +63,6 @@
 - ユーザーは、管理者やヘルプ デスクが関与することなく、自分のパスワードを変更またはリセットできるようになります。
 - ユーザーはアカウントがロックされた場合やパスワードを忘れた場合でも、画面の指示に従って自分自身のロックを解除して、作業に戻ることができます。
 - ヘルプ デスクの問い合わせが減り、生産性の喪失も軽減されます。
-- [ライセンスの割り当てが必要](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
+- [ライセンスの割り当てが必要な機能です。](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
   - [Azure AD Premium P1 or P2](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
   - [Microsoft 365 Business Standard, Microsoft 365 Business Premium] (https://www.microsoft.com/ja-jp/microsoft-365/business/compare-all-microsoft-365-business-products)
