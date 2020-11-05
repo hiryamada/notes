@@ -42,7 +42,7 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 ※ トレーニングでは、無料の[Azure Pass サブスクリプション](https://docs.microsoft.com/ja-jp/learn/certifications/mocazurepass)を利用することができます。
 
-[サブスクリプションを追加することができます](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/4-multiple-subscriptions)
+[サブスクリプションを追加することができます。](https://docs.microsoft.com/ja-jp/learn/modules/create-an-azure-account/4-multiple-subscriptions)
 
 - 環境の分離: 開発とテスト、セキュリティ、またはコンプライアンス上の理由でデータを分離することができます。 リソース アクセス制御はサブスクリプション レベルで設定できます。
 - 課金の管理: コストは最初にサブスクリプション レベルで集約されます。サブスクリプションを作成して、必要に応じてコストを管理および追跡することができます。 たとえば、本番用のサブスクリプションと、開発用の別のサブスクリプションを作成することができます。
@@ -67,7 +67,7 @@ Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.
 
 オンプレミスの AD DS がすでに存在する場合、Azure AD Connectを使用して、オンプレミスのAD DSと、Azure ADを接続することができます（後述）。
 
-※ 従来の AD DS 機能(ドメイン参加、グループ ポリシー、LDAP、Kerberos 認証、NTLM 認証など)が必要な場合は、[Azure AD Domain Service](https://azure.microsoft.com/ja-jp/services/active-directory-ds/) というマネージド ドメイン サービスがを利用することができます。ただし、こちらも、[オンプレミスのAD DSを完全に置き換えるものではありません。](https://jpazureid.github.io/blog/azure-active-directory/azure-ad-ds-scenario/)
+※ 従来の AD DS 機能(ドメイン参加、グループ ポリシー、LDAP、Kerberos 認証、NTLM 認証など)が必要な場合は、[Azure AD Domain Service](https://azure.microsoft.com/ja-jp/services/active-directory-ds/) というマネージド ドメイン サービスを利用することができます。ただし、こちらも、[オンプレミスのAD DSを完全に置き換えるものではありません。](https://jpazureid.github.io/blog/azure-active-directory/azure-ad-ds-scenario/)
 
 # ハイブリッドID
 
