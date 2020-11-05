@@ -27,7 +27,31 @@ Azure ADは、Microsoft が提供する、[クラウドベースの ID および
 - この既定のディレクトリは、"テナント" と呼ばれることもあります。 
 - テナントは、組織と、それに割り当てられた既定のディレクトリを表します。
 
+[Azure ADのデータの保存場所は、Azure AD テナントを作成するときに選択した国/地域によって決まります。](https://docs.microsoft.com/ja-jp/azure/active-directory-b2c/data-residency#data-residency)
+
 # AD DSとAzure AD
+
+Azure ADは、[オンプレミスのActive Directoryとは異なります。](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/2-create-aad)
+
+- Azure AD は、Windows Server Active Directory のクラウド バージョンではありません。 
+- オンプレミスの Active Directory を完全に置き換えることを目的としたものでもありません。
+
+オンプレミスの Active Directory がすでに存在する場合、Azure AD Connectを使用して、オンプレミスのActive Directoryと、Azure ADを接続し、ハイブリッドIDを提供することができます（後述）。
+
+# ハイブリッドID
+
+オンプレミスとクラウドを基盤とする機能を利用する際に、場所に関係なく、1 つのユーザー ID ですべてのリソースの認証と権限付与を行うことができます。これを[ハイブリッド ID](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/) と呼んでいます。
+
+ハイブリッドIDを実装するには、[Azure AD Connect](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect)を使用します。
+
+Azure AD Connectの特徴
+
+- オンプレミスのActive Directoryを、Azure ADに接続することができます。
+- [無料で利用できます。](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#license-requirements-for-using-azure-ad-connect)
+- [ドメインに参加している Windows Server 2012 以降にインストールします](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
+- いくつかのハイブリッドIDの実装方式を選択できます。
+  - [パスワード ハッシュ同期](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-password-hash-sync) - ユーザーのオンプレミス AD パスワードのハッシュを Azure AD と同期させるサインイン方法。
+  - [パススルー認証](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/tutorial-passthrough-authentication) - ユーザーがオンプレミスとクラウド内で同じパスワードを使用できるようにするサインイン方法。
 
 # Azure ADのエディション
 
