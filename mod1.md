@@ -15,9 +15,11 @@ Azure ADは、Microsoft が提供する、[クラウドベースの ID および
 
 パスワードなどの[資格情報の保護](https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/aadsec/azure-ad-security#credential-management)に役立つ機能を提供します。
 
-「デバイスの参加」「デバイスの登録」を使用して、アクセスするデバイスを制御することができます（後述）。
+Azure ADには、組織が所有するWindows PCだけではなく、ユーザー所有のiOSやAndroidなど、様々なデバイスで接続することができます。管理者は、「デバイスの参加」「デバイスの登録」を使用して、アクセスするデバイスを制御することができます（後述）。
 
 ユーザーがパスワードを忘れてしまった場合、パスワードのリセット機能を利用できます（後述）。
+
+オンプレミスのActive Directoryと、Azure ADを接続することができます（後述）。これにより、ユーザーは、1つのIDで、オンプレミスとクラウドの両方にアクセスすることができます。
 
 # Azure ADの概念
 
