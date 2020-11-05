@@ -33,12 +33,12 @@ Azure ADには、組織が所有するWindows PCだけではなく、ユーザ�
 
 # [Active Directory Directory Service (AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/ad-ds-getting-started) と Azure AD の違い
 
-Azure ADは、[オンプレミスのActive Directoryとは異なります。](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/2-create-aad)
+Azure ADは、[オンプレミスのAD DSとは異なります。](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/2-create-aad)
 
-- Azure AD は、Windows Server Active Directory のクラウド バージョンではありません。 
-- オンプレミスの Active Directory を完全に置き換えることを目的としたものでもありません。
+- Azure AD は、AD DS のクラウド バージョンではありません。 
+- オンプレミスの AD DS を完全に置き換えることを目的としたものでもありません。
 
-オンプレミスの Active Directory がすでに存在する場合、Azure AD Connectを使用して、オンプレミスのActive Directoryと、Azure ADを接続し、ハイブリッドIDを提供することができます（後述）。
+オンプレミスの AD DS がすでに存在する場合、Azure AD Connectを使用して、オンプレミスのActive Directoryと、Azure ADを接続し、ハイブリッドIDを提供することができます（後述）。
 
 # ハイブリッドID
 
