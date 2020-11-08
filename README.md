@@ -1,21 +1,13 @@
 
+# ご受講前の準備
 
+[こちらの手順に従い、ご準備をお願いします](prep/README.md)。
 
-# 受講準備
+# ご受講に関するご質問
 
-about [English text and lab instructions](prep/english.md)
+講師までチャットか音声でご質問ください。
 
-[Skillpipe（テキスト）の準備](prep/skillpipe.md)
-
-[新しいMicrosoftアカウントの作成](prep/msa.md)
-
-[Learn on Demand LMS](https://tsfb.learnondemand.net/) - 演習環境
-
-[Azure Pass](https://www.microsoftazurepass.com/) - 演習用のサブスクリプション
-
-- [Azure Sponsorships](https://www.microsoftazuresponsorships.com/balance) - 有効期限や料金を確認できます
-
-[Azure Portal](https://portal.azure.com/) 
+[よくあるご質問とそのご回答](faq.md)もご参照ください。
 
 # 講義メモ
 
