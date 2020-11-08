@@ -28,7 +28,7 @@
 
 # Azure Pass 
 
-演習用の無料のサブスクリプションである、[Microsoft Azure Pass](https://www.microsoftazurepass.com/)サブスクリプションを入手します。
+演習用の無料のサブスクリプションである、[Microsoft Azure Passサブスクリプションを入手](azurepass.md)します。
 
 このサブスクリプションは、コース終了後も、試験対策のための練習などにお使いいただけます。
 
