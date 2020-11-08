@@ -1,14 +1,14 @@
 # よくある質問 (Frequently Asked Questions)
 
-# 講義について
+# トレーニングについて
 
-講義の動画は提供されますか？
+トレーニングの動画は提供されますか？
 
-- 有償のコースにつき、講義の動画のご提供はございません。
+- 有償のコースにつき、動画のご提供はございません。
 
-講義の録音・録画はできますか？
+トレーニングの録音・録画はできますか？
 
-- 有償のコースにつき、講義の録音・録画はご遠慮ください。
+- 有償のコースにつき、録音・録画はご遠慮ください。
 
 質問はどうすればよいですか？
 
@@ -17,10 +17,10 @@
 
 # 認定試験について
 
-コースを受講すれば認定試験に合格できますか？
+このトレーニングを受講すれば認定試験に合格できますか？
 
 - [試験は、学習内容の範囲を超えてスキルを適用する能力を評価するように設計されているため、スキルは学習で教わったレベルよりも高いレベルで評価されます。](https://docs.microsoft.com/ja-jp/learn/certifications/exam-process-overview)試験を受ける前に学習に加えて経験や実践を積むことを強くおすすめします。
-- コースのご受講に加え、Microsoft Learnや書籍などを使用した自習を強くおすすめします。
+- トレーニングのご受講に加え、Microsoft Learnや書籍などを使用した自習を強くおすすめします。
 - [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/)
   - [AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)のラーニングパス
     - [AZ-104:Azure 管理者向けの前提条件](https://docs.microsoft.com/ja-jp/learn/paths/az-104-administrator-prerequisites/)
@@ -57,8 +57,7 @@
 # Skillpipe
 
 Skillpipeのアカウントは毎回新しく作成する必要がありますか？
-- いいえ。お一人あたり1つのSkillpipeのアカウントがあればOKです。
-- 以前、Microsoftの研修をご受講済みであれば、そのときに作成したSkillpipeアカウントをお使いください。
+- いいえ。以前お作りになったSkillpipeのアカウントがあれば、そちらをご利用いただけます。
 
 Skillpipeのアカウントはどのメールアドレスで作成すればよいですか？
 - 会社のメールアドレスでも、個人のメールアドレスでもかまいませんが、どの環境からでもすぐにアクセスすることができるよう、個人のメールアドレスがおすすめです。
@@ -67,8 +66,8 @@ Skillpipeのパスワードを忘れました。
 - [パスワードをリセット](https://www.skillpipe.com/#/account/resetpassword)してください。
 
 Skillpipeのログイン用メールアドレスがわからなくなりました。
-- いったん、新しいSkillpipeアカウントを作り、そちらでご受講ください。
-- のちほど、新しいSkillpipeアカウントの引き換え済みのテキストを、元のSkillpipeアカウントへ転送することができます。[How can I change my Skillpipe email address?](https://policies.skillpipe.com/en/faq/)をご確認ください。
+- いったん、新しいメールアドレスを使用してSkillpipeアカウントを作り、そちらでご受講ください。
+- のちほど、新しいSkillpipeアカウントの引き換え済みのテキストを、元のSkillpipeアカウントへ転送することができます。[How can I change my Skillpipe email address?](https://policies.skillpipe.com/en/faq/)をご参照ください。
 
 テキストの期限はありますか？
 - 特にありません。
@@ -79,9 +78,9 @@ Skillpipeのテキストは他人と共有できますか？
 # Microsoftアカウント
 
 Microsoftアカウントはどこで作成できますか？
-- [Microsoftアカウントの作成](https://account.microsoft.com/account/Account)にアクセスし、「Microsoftアカウントを作成」をクリックしてください。
+- [Microsoftアカウント](https://account.microsoft.com/account/Account)にアクセスし、「Microsoftアカウントを作成」をクリックしてください。
 
-Microsoftアカウントのパスワードを忘れてました。
+Microsoftアカウントのパスワードを忘れました。
 - [こちらの手順](https://support.microsoft.com/ja-jp/office/microsoft-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%82%92%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-eff4f067-5042-c1a3-fe72-b04d60556c37)に従って、パスワードをリセットしてください。
 
 # 演習環境 - Learn on Demand LMS (LODS)
@@ -90,11 +89,11 @@ Microsoftアカウントのパスワードを忘れてました。
 - 今回のコース用に新しく作成したMicrosoftアカウントでログインしてください。
 
 環境はいつまで使えますか？
-- ラボのトレーニングキーを入力してから、6ヶ月間、使用できます。
+- ラボのトレーニングキーを入力してから、6ヶ月間、アクセスできます。
 
 トレーニングキーとはなんですか？
 - ラボを有効化する際に必要となる8桁の文字列です。
-- トレーニング開始時に、講師よりチャットでお伝えします。
+- 研修開始時に、講師よりチャットでお伝えします。
 
 # Azure Pass サブスクリプション
 
@@ -103,20 +102,19 @@ Microsoftアカウントのパスワードを忘れてました。
 - 残りの日数、使用したクレジットは、[Microsoft Azure Sponsorship Credit Balance](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。
 
 ラボではどのくらいクレジットを消費しますか？
-- 全部のラボを実施しても、クレジットを使い切ってしまうことはありません。ラボを何周も実施できる十分なクレジットがあります。
-- ラボの終了後、VMなどを放置せずになるべく早く削除することで、クレジットの消費を抑えることができます。
+- 通常、全部のラボを実施しても、クレジットを使い切ってしまうことはありません。ラボを何周も実施できる十分なクレジットがあります。
+- ラボの完了後、VMなどのリソースを放置せずになるべく早く削除することで、クレジットの消費を抑えることができます。
 
 ※ Azure Passの詳細については[Azure Pass スポンサー プラン](https://azure.microsoft.com/ja-jp/offers/azure-pass/)をご確認ください。
 
 # ラボ手順について
-
 
 ラボの手順書はどこからアクセスできますか？
 - [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) の、「Instructions/Labs」内の各Markdownファイルを見てください。
   
 「ラボのコンピューターから～ファイルを開きます」という手順があります。このファイルはどこにありますか？
 
-- [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) の、「Allfiles/Labs」内にあります。
+- [AZ-104](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/) からダウンロードできます。
 
 ラボの手順通りに操作してもうまくいきません。（リソースが作られないなど）
 
@@ -124,10 +122,10 @@ Microsoftアカウントのパスワードを忘れてました。
 - 操作後、Azure portalの画面に反映されるまで、時間がかかる場合があります。しばらく待ってみてください。
 - 操作後、ページをリロードしないと、情報が反映されない場合があります。ブラウザのリロードボタンをクリックしてページをリロードしてみてください。
 
-ラボの手順書に誤りがあるようです（ラボの表記とAzure portalの表記が一致していません）
+ラボの手順書に誤りがあるようです（ラボの表記とAzure portalの表記が一致していません）。
 
-- Azureのサービスは日々、追加・強化されており、その過程で、手順書とAzure portalに差異が発生してしまう場合がございます。画面の案内などを見ながら操作を進めてください。ご不明な場合は講師にご確認ください。
-- 手順書に誤りを発見された場合、講師までフィードバックをいただけると大変助かります。
+- Azureのサービスは日々、強化・拡充されています。その過程で、手順書とAzure portalに差異が発生してしまう場合がございます。画面の案内などを見ながら操作を進めてみてください。ご不明な場合は、講師までお尋ねください。
+- 手順書に誤りを発見された場合、講師まで情報をいただけると大変助かります。
 
 ラボの手順書はいつまで使えますか？
 - とくに期限はございません。
@@ -144,6 +142,6 @@ English lab instructions
 
 - If you would like an English version of lab instructions, please check [Microsoft Learning GitHub repository](https://github.com/MicrosoftLearning).
 
-- [AZ-104](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator)
+- [AZ-104](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/)
 
 

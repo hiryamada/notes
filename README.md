@@ -12,8 +12,9 @@
 # クイック リンク
 
 [Skillpipe](https://www.skillpipe.com/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
-[演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) /  
+[演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) 
 
+ラボ: [AZ-104](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/)
 
 # 講義メモ
 
