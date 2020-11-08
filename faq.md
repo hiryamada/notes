@@ -100,7 +100,7 @@ Microsoftアカウントのパスワードを忘れてました。
 
 作成したサブスクリプションはいつまで使えますか？
 - サブスクリプション有効化後、所定の日数、またはクレジットの上限に達するまで、利用できます。
-- 残りの日数、使用したクレジットは、[Microsoft Azure Sponsorship クレジット残高](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。
+- 残りの日数、使用したクレジットは、[Microsoft Azure Sponsorship Credit Balance](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。
 
 ラボではどのくらいクレジットを消費しますか？
 - 全部のラボを実施しても、クレジットを使い切ってしまうことはありません。ラボを何周も実施できる十分なクレジットがあります。
