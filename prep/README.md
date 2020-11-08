@@ -1,22 +1,38 @@
+# 3種類のアカウントについて
+
+マイクロソフトの研修をご受講いただくにあたり、3種類のアカウントを意識して使い分ける必要がありますので、ご注意ください。
+
+1. 会社のアカウント 
+   - コースの受講お申し込みで使用
+   - 試験のお申し込みで使用
+2. Skillpipeアカウント 
+   - 電子テキストの表示に使用
+3. 新しいMicrosoftアカウント 
+   - 演習環境 - Learn on Demand LMS (LODS)へのログインに使用
+   - Azure Passサブスクリプションの取得に使用
+   - Azure portalへのログインに使用
+
 # テキストの準備
 
-[Skillpipe（テキスト）の準備](skillpipe.md)を行ってください。
+講義では、[Skillpipe](skillpipe.md)という電子テキスト システムを使用して、テキストを表示します。
 
 # 新しいMicrosoftアカウントの準備
 
-今回のコースご受講用に、[新しいMicrosoftアカウントの作成](msa.md)を行ってください。
+今回のコースのご受講用の、[新しいMicrosoftアカウントの作成](msa.md)を行ってください。
 
-# 演習環境での PromoCode の入手
+すべてのご受講者様に、必ず、新しいMicrosoftアカウントをお作りいただく必要があります。
 
-[演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) - 演習環境
+# 演習環境での Promo Code の入手
+
+[演習環境 - Learn on Demand LMS (LODS)](lods.md) にログインして、Promo Codeを入手します。
 
 # Azure Pass 
 
-Azure Passを使用して、ラボ演習用の無料のサブスクリプションを取得してください。前の手順で取得する PromoCode が必要です。
+演習用の無料のサブスクリプションである、[Microsoft Azure Pass](https://www.microsoftazurepass.com/)サブスクリプションを入手します。
 
-[Microsoft Azure Pass](https://www.microsoftazurepass.com/) - 演習用のサブスクリプション
+このサブスクリプションは、コース終了後も、試験対策のための練習などにお使いいただけます。
 
 # ソフトウェアのセットアップ
-ご自身のPCで演習を行いたい場合は、[ソフトウェアのセットアップ](env.md)を行ってください。
+ご自身のPCでラボの演習を行いたい場合は、[ソフトウェアのセットアップ](env.md)を行ってください。
 
 ブラウザでアクセスできる演習環境である「Learn on Demand LMS (LODS)」をご利用になる場合は、ソフトウェアのセットアップは不要です。
