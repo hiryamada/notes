@@ -1,10 +1,10 @@
 # テキストの準備
 
-[Skillpipe（テキスト）の準備](prep/skillpipe.md)を行ってください。
+[Skillpipe（テキスト）の準備](skillpipe.md)を行ってください。
 
 # 新しいMicrosoftアカウントの準備
 
-今回のコースご受講用に、[新しいMicrosoftアカウントの作成](prep/msa.md)を行ってください。
+今回のコースご受講用に、[新しいMicrosoftアカウントの作成](msa.md)を行ってください。
 
 # 演習環境での PromoCode の入手
 
@@ -17,6 +17,6 @@ Azure Passを使用して、ラボ演習用の無料のサブスクリプショ�
 [Microsoft Azure Pass](https://www.microsoftazurepass.com/) - 演習用のサブスクリプション
 
 # ソフトウェアのセットアップ
-ご自身のPCで演習を行いたい場合は、[ソフトウェアのセットアップ](prep/env.md)を行ってください。
+ご自身のPCで演習を行いたい場合は、[ソフトウェアのセットアップ](env.md)を行ってください。
 
 ブラウザでアクセスできる演習環境である「Learn on Demand LMS (LODS)」をご利用になる場合は、ソフトウェアのセットアップは不要です。
