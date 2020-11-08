@@ -3,11 +3,11 @@
 
 [通常、Azure AD は次の 3 つの方法でユーザーを定義します。](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/3-users)
 
-- クラウドID: Azure ADにのみ存在するユーザーです。
+- クラウドID（Cloud identities）: Azure ADにのみ存在するユーザーです。
 
-- ディレクトリ同期ID: オンプレミスのAD DSに存在するユーザーです。[Azure AD Connect](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/6-azure-ad-connect)によってIDが同期されます。
+- ディレクトリ同期ID（Directory-synchronized identities）: オンプレミスのAD DSに存在するユーザーです。[Azure AD Connect](https://docs.microsoft.com/ja-jp/learn/modules/manage-users-and-groups-in-aad/6-azure-ad-connect)によってIDが同期されます。
 
-- ゲストユーザー: 組織とコラボレーションするユーザーをゲスト ユーザーとして追加し、ディレクトリに招待できます。招待するユーザーは、他のテナントにアカウントがあってもなくてもかまいません。招待されたユーザーにはメールが送信されます。メール内の「Accept Invitation」をクリックして、招待を受け入れます。
+- ゲストユーザー（Guest users）: 組織とコラボレーションするユーザーをゲスト ユーザーとして追加し、ディレクトリに招待できます。招待するユーザーは、他のテナントにアカウントがあってもなくてもかまいません。招待されたユーザーにはメールが送信されます。メール内の「Accept Invitation」をクリックして、招待を受け入れます。
 
 # ユーザー管理を実行できる管理者
 
@@ -52,7 +52,7 @@ Azure ADには、[2種類のグループ](https://docs.microsoft.com/ja-jp/azure
 - 割り当て済み: 手動でユーザーをグループに追加・削除します。
 - 動的ユーザー: ルールを使用して、自動的にユーザーをグループに追加・削除します。
 
-# 動的メンバーシップ
+# 動的メンバーシップ（動的グループ）
 
 セキュリティ グループまたは Microsoft 365 グループに対し、ルールを作成して、[グループの動的メンバーシップ](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/groups-dynamic-membership)を有効にすることができます。
 
@@ -61,6 +61,10 @@ Azure ADには、[2種類のグループ](https://docs.microsoft.com/ja-jp/azure
 動的グループのメンバーを手動で追加または削除することはできません。
 
 この機能を使うには、少なくとも 1 つの動的グループのメンバーである一意のユーザーごとに [Azure AD Premium P1 ライセンス](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)が必要です。 ユーザーを動的グループのメンバーにするために、そのユーザーにライセンスを割り当てる必要はありませんが、少なくともそのすべてのユーザーを対象にできるだけのライセンス数が Azure AD 組織に含まれている必要があります。
+
+:bulb: グループの作成の際に、「メンバーシップの種類」を「動的ユーザー」とし、「動的クエリの追加」でルールを編集します。ルールの編集画面では、「ルールの検証」を使用して、ルールで選択される・されないユーザーの確認ができます。
+
+:bulb: 動的グループの作成後、実際に動的グループにメンバーが反映されるまで、若干（数分）の遅れが発生するようです。
 
 # テナント（ディレクトリ）の管理
 

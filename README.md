@@ -16,6 +16,8 @@
 
 ラボ: [AZ-104](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/)
 
+認定試験: [AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)
+
 # 講義メモ
 
 - [AZ-104](AZ-104/README.md)

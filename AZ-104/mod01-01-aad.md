@@ -129,13 +129,16 @@ Azure ADの[ユーザーまたはグループごとに、ライセンスを付�
 [Azure ADの登録済みデバイス](https://docs.microsoft.com/ja-jp/azure/active-directory/devices/concept-azure-ad-register)
 
 - ユーザーは個人所有のデバイスを使用して、組織の Azure Active Directory の管理下にあるリソースにアクセスできます。
-- Windows 10、iOS、Android、MacOSに対応します。
+- Windows 10、iOS、Android、[macOS](https://ja.wikipedia.org/wiki/MacOS)に対応します。
 - 組織は、[条件付きアクセス](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/2-what-is-device-identity)を設定して、特定の条件を満たす場合に、デバイスのアクセスを許可または禁止することができます。
 - [Microsoft Intune](https://www.microsoft.com/ja-jp/microsoft-365/enterprise-mobility-security/microsoft-intune) などの Mobile Device Management (MDM) ツールを使用して、Azure AD 登録済みデバイスをセキュリティで保護し、制御することができます。 MDM では、ストレージの暗号化、パスワードの複雑さ、セキュリティ ソフトウェアの最新化などを強制できます。
+  - 参考: Apple製品用のMDMとしては[Jamf（ジャムフ）](https://www.jamf.com/ja/)があります。[Azure ADと統合](https://docs.jamf.com/ja/jamf-protect/administrator-guide/Microsoft_Azure_AD_%E3%81%A8%E3%81%AE%E7%B5%B1%E5%90%88.html)することができます。
 
 # 管理者による、ユーザーのパスワードのリセット
 
 ユーザーが自分のパスワードを忘れてしまった場合、[管理者は、ユーザーのパスワードをリセットできます。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-users-reset-password-azure-portal)
+
+[管理者アカウントは、デフォルトで、セルフサービスのパスワード リセットが有効になっています](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-policy#administrator-reset-policy-differences)。一般ユーザーとは異なるルールが適用されます。
 
 # セルフサービス パスワードリセット(SSPR)
 
@@ -149,4 +152,6 @@ Azure ADの[ユーザーまたはグループごとに、ライセンスを付�
 [SSPRを使用するには、ライセンスの割り当てが必要です。](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
 
 - [Azure AD Premium P1 or P2](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/)
-- Microsoft 365 Business Standard または Microsoft 365 Business Premium でも、[SSPRを利用できます](https://www.microsoft.com/ja-jp/microsoft-365/business/compare-all-microsoft-365-business-products)
+- Microsoft 365 Business Standard または Microsoft 365 Business Premium でも、[SSPRを利用できます](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-licensing)
+
+ご参考：SSPRだけが必要な場合、[LogonBox](https://www.logonbox.com/en/)のようなSSPRソリューションを使用するという方法もあります。1000ユーザーの場合、LogonBoxのほうが97%安くなります。
