@@ -1,14 +1,14 @@
 
 
 - モジュール1: ID
-  - [Azure Active Directory](mod1-1.md)
-  - [ユーザーとグループ](mod1-2.md)
+  - [Azure Active Directory](mod01-01.md)
+  - [ユーザーとグループ](mod01-02.md)
   - [ラボ1](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.md)
 
 - モジュール2: ガバナンスとコンプライアンス
-  - [サブスクリプションとアカウント](mod2-1.md)
-  - [Azure Policy](mod2-2.md)
-  - [ロールベースのアクセス制御](mod2-3.md)
+  - [サブスクリプションとアカウント](mod02-01.md)
+  - [Azure Policy](mod02-02.md)
+  - [ロールベースのアクセス制御](mod02-03.md)
   - ラボ2
 - モジュール3 Azureの管理
   - Azure Resource Manager
@@ -17,6 +17,11 @@
   - ARMテンプレート
   - ラボ3
 - モジュール4 仮想ネットワーク
+  - [Azureネットワークコンポーネント](mod04-01-vnet.md)
+  - [IPアドレス指定](mod04-02-ip.md)
+  - [ネットワークセキュリティグループ](mod04-03-nsg.md)
+  - [Azure Firewall](mod04-04-firewall.md)
+  - [Azure DNS](mod04-05-dns.md)
 - モジュール5 サイト間接続
 - モジュール6 ネットワークトラフィック管理
 - モジュール7 Azure Storage
