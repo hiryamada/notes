@@ -116,6 +116,11 @@ Microsoftアカウントのパスワードを忘れました。
 
 - [AZ-104](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/) からダウンロードできます。
 
+リージョンはどこを使用すればよいですか？
+- westus, westus2, eastus, eastus2などが安定して使えるリージョンです。
+- japanwest （東日本）やjapaneast（西日本）では、現在VMの作成などに失敗する場合が多いようです。COVID-19対応のため、[無料版に一時的な制限がかけられている](https://news.microsoft.com/ja-jp/2020/03/31/200331-update-2-on-microsoft-cloud-services-continuity/)ためのようです。
+- リソースの作成に失敗してしまう場合は、別のリージョンをお試しいただくか、時間帯を変えて再度チャレンジしてみてください。
+
 ラボの手順通りに操作してもうまくいきません。（リソースが作られないなど）
 
 - リソースの作成や変更などの操作に時間がかかる場合があります。しばらく待ってみてください。

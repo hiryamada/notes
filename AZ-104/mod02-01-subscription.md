@@ -150,9 +150,26 @@ Microsoft Learn
 
 # コスト削減
 
+※以下、価格例は2020/11現在の料金です。
+
 Azure では、[多数のサービスにおいて、予約を行う](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/reservations/save-compute-costs-reservations#charges-covered-by-reservation)ことで、コストを大幅に節約することができます。
 
+例：D2 v3, 従量課金制、ライセンス込み、東日本リージョンの場合
+
+|支払い方法|価格|
+|-|-|
+|従量課金制|$161.33|
+|1年予約|$126.57|
+|3年予約|$107.63|
+
 [Azure ハイブリッド特典](https://azure.microsoft.com/ja-jp/pricing/hybrid-benefit/)では、オンプレミスの Windows Server と SQL Server のライセンスを Azure で利用することができます。クラウドでワークロードを実行するコストを大幅に削減（最大で85%）することができます。
+
+例：D2 v3, 従量課金制、ライセンス込み、東日本リージョン、従量課金制の場合
+
+|支払い方法|価格|
+|-|-|
+|ライセンス込み|$161.33|
+|Azure ハイブリッド特典|$67.16|
 
 [Azure Pricing Calculator（料金計算ツール）](https://azure.microsoft.com/ja-jp/pricing/calculator/)で、料金のシミュレーションを行うことができます。
 
@@ -163,10 +180,14 @@ Azure のリージョンによって、サービスの価格が異なります�
 
 |リージョン|1ヶ月あたりの価格|
 |-|-|
-|Japan East| $161.33|
 |East US| $137.24|
-|Australia Central|$158.41|
-|Brazil South|$183.23|
 |Brazil South|$140.16|
+|Australia Central|$158.41|
+|Japan East| $161.33|
+|Brazil South|$183.23|
 |France South|$193.45|
 |Switzerland West|$203.67|
+
+Japan EastのVMをEast USに移動すると85%安くなります。
+
+
