@@ -11,10 +11,10 @@
   - [ロールベースのアクセス制御](mod02-03-rbac.md)
   - [ラボ2a](https://github.com/hiryamada/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_02a_Manage_Subscriptions_and_RBAC.md), [ラボ2b](https://github.com/hiryamada/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.md)
 - モジュール3 Azureの管理
-  - [Azure Resource Manager]
-  - [Azure portal と Cloud Shell]
-  - [Azure PowerShell と CLI]
-  - [ARMテンプレート]
+  - [Azure Resource Manager](mod03-01-arm.md)
+  - [Azure portal と Cloud Shell](mod03-02-portal.md)
+  - [Azure PowerShell と CLI](mod03-03-psh-cli.md)
+  - [ARMテンプレート](mod03-04-template.md)
   - [ラボ3a](https://github.com/hiryamada/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_03a-Manage_Azure_Resources_by_Using_the_Azure_Portal.md), [ラボ3b](https://github.com/hiryamada/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_03b-Manage_Azure_Resources_by_Using_ARM_Templates.md), [ラボ3c](https://github.com/hiryamada/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_03c-Manage_Azure_Resources_by_Using_Azure_PowerShell.md), [ラボ3d](https://github.com/hiryamada/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_03d-Manage_Azure_Resources_by_Using_Azure_CLI.md)
 - モジュール4 仮想ネットワーク
   - [Azureネットワークコンポーネント](mod04-01-vnet.md)
