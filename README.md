@@ -14,7 +14,7 @@
 [Skillpipe](https://www.skillpipe.com/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
 [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) 
 
-ラボ: [AZ-104](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/)
+ラボ: [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) - 「Instructions/Labs」内の各Markdownファイル
 
 認定試験: [AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)
 

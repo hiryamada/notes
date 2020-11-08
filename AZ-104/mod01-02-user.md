@@ -11,7 +11,7 @@
 
 # ユーザー管理を実行できる管理者
 
-ユーザーを追加（一括括追）するには、[ユーザー管理者](https://docs.microsoft.com/ja-jp/azure/active-directory/roles/permissions-reference#user-administrator)または[グローバル(全体)管理者](https://docs.microsoft.com/ja-jp/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator)である必要があります。
+ユーザーを追加または一括追加するには、[ユーザー管理者](https://docs.microsoft.com/ja-jp/azure/active-directory/roles/permissions-reference#user-administrator)または[グローバル(全体)管理者](https://docs.microsoft.com/ja-jp/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator)である必要があります。
 
 # ユーザーの追加
 

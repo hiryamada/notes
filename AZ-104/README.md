@@ -1,10 +1,10 @@
 
-
+- モジュール0: ここから開始
+  - [コースの概要](mod00.md)
 - モジュール1: ID
   - [Azure Active Directory](mod01-01-aad.md)
   - [ユーザーとグループ](mod01-02-user.md)
-  - [ラボ1](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.md)
-
+  - [ラボ1](mod01-03-lab.md)
 - モジュール2: ガバナンスとコンプライアンス
   - [サブスクリプションとアカウント](mod02-01-subscription.md)
   - [Azure Policy](mod02-02-policy.md)

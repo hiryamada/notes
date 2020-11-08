@@ -78,10 +78,95 @@ Azure プラットフォームの更新 (計画メンテナンス) が行なわ�
 - 組織構造を反映: たとえば、チームごとにサブスクリプションを作ることができます。
 - 制限の回避: サブスクリプションにはいくつかのハード制限があります。 たとえば、サブスクリプションごとの [ExpressRoute 回線](https://azure.microsoft.com/ja-jp/services/expressroute/)の最大数は 10 です。制限を超える必要がある場合は、追加のサブスクリプションが必要になることがあります。
 
+# サブスクリプションの取得方法
 
-# Cost Management
+
+[無料と有料の両方のサブスクリプション オプションが提供されています。](https://docs.microsoft.com/ja-jp/learn/modules/plan-manage-azure-costs/4-purchase-azure-services)
+
+無料試用版 - 無料試用版サブスクリプションでは、人気のあるサービスの 12 か月間の無料使用、Azure サービスを調べるための 30 日間のクレジット、常に 25 個を超える無料のサービスが提供されます。 試用期間が終了するか、有料製品のクレジット期間が切れると、有料サブスクリプションにアップグレードしない限り、Azure サービスは無効になります。
+
+従量課金制 - 従量課金制サブスクリプションでは、クレジット カードまたはデビット カードをアカウントに関連付けることによって、使用した分の料金を支払うことができます。組織では、ボリューム割引および前払い請求を適用できます。
+
+メンバー プラン - マイクロソフトの特定の製品やサービスに対する既存のメンバーシップによって、Azure アカウントのクレジットが提供され、Azure サービスの料金が削減される場合があります。 たとえば、Visual Studio サブスクライバー、Microsoft Partner Network メンバー、Microsoft for Startups メンバー、Microsoft Imagine メンバーで、メンバー プランを使用できます。
+
+
+[Azure でサービスを購入するには、主に 3 つの方法があります。](https://docs.microsoft.com/ja-jp/learn/modules/plan-manage-azure-costs/4-purchase-azure-services)
+
+マイクロソフトエンタープライズ契約の利用 - 大規模なお客様は、エンタープライズ カスタマーと呼ばれ、Microsoft と Enterprise Agreement を結ぶことができます。 この契約では、3 年間の Azure サービスに対して所定の金額を支払うことが決められています。 通常、サービス料金は年額払いです。 Enterprise Agreement のお客様は、使用する予定のサービスの種類と量に基づいて、カスタマイズされた最適な価格を利用することができます。
+
+Web から直接 - この場合、Azure portal Web サイトから直接 Azure サービスを購入し、標準料金を支払います。 クレジット カードの支払いまたは請求書によって、毎月請求されます。 この購入方法は、Web ダイレクトと呼ばれています。
+
+クラウド ソリューション プロバイダーの利用 - クラウド ソリューション プロバイダー (CSP) は、Azure 上でのソリューション構築を支援する Microsoft パートナーです。 CSP が決定した価格で、お客様に Azure の使用量に対する請求が行われます。 また、サポートに関する質問に回答し、必要に応じて Microsoft にエスカレーションします。
+
+参考:
+
+[早わかりガイド](https://download.microsoft.com/download/A/2/8/A28985D6-78DE-41A4-B5EA-6FA0270D824B/LicenseQuickStartGuide.pdf)
+
+[マイクロソフトライセンス契約の比較（一般企業および公共機関向け）](http://download.microsoft.com/download/4/8/E/48EBFD21-76FC-44A5-9A2C-5B384214AA48/Transactional_Licensing_Comparison_Chart_JP.pdf)
+
+[くらう道の解説](https://www.cloudou.net/azure/azure002/)
+
+[SB C&S様による解説](https://licensecounter.jp/azure/faq/license/purchase.html)
+
+# Azure Cost Management
+
+Azure Cost Managementを使用して、クラウド全体のリソース使用量を追跡し、コストを管理することができます。
+
+注意：トレーニングで使用する「Azure Pass - スポンサープラン」では、Azure Cost Managementがサポートされていません。
+
+:bulb: Azure Cost Management には、「コストの請求と管理」や、「サブスクリプション」＞「コスト分析」からアクセスできます。
+
+[製品ページ](https://azure.microsoft.com/ja-jp/services/cost-management/)
+
+[Cost Managementの画面と使い方](https://docs.microsoft.com/ja-jp/learn/modules/analyze-costs-create-budgets-azure-cost-management/3-evaluate-costs-using-cost-analysis)
+
+[予算とアラート](https://docs.microsoft.com/ja-jp/learn/modules/analyze-costs-create-budgets-azure-cost-management/5-build-budgets-alerts)
+
+Microsoft Learn
+
+- [Azure Cost Management + Billing を使用して Azure の支出を制御し、請求を管理する](https://docs.microsoft.com/ja-jp/learn/paths/control-spending-manage-bills/)
+  - [Azure Cost Management を使用したコストの分析と予算の作成](https://docs.microsoft.com/ja-jp/learn/modules/analyze-costs-create-budgets-azure-cost-management/)
+- パートナー様向け: [Azure Cost Management を使用した Microsoft パートナーとしてのコストの構成と管理](https://docs.microsoft.com/ja-jp/learn/modules/manage-costs-partner-cost-management/)
 
 
 # リソースタグ
+
+- 1 つのリソースには最大 50 個のタグを設定することができます。
+- ストレージ アカウントを除く、あらゆる種類のリソースで名前は 512 文字に制限されています。
+  - ストレージ アカウントの場合、128 文字という制限があります。
+- タグの値は、リソースの種類を問わず、256 文字に制限されています。
+- タグが親リソースから継承されることはありません。リソースグループにタグを付けても、リソースグループ内のリソースにはそのタグは付きません。
+- リソースの種類によっては、タグをサポートされていません。
+
+タグの活用方法
+
+- 課金データをグループ化できます。
+- タグを使ってリソースを検索し、操作を行います。たとえば、VMに「shutdown:6PM」 と 「startup:7AM」 といったタグを付け、タグに従って自動的にVMを開始・停止するように、運用を自動化することができます。
+
+Microsoft Learn
+
+[タグ付けを使用してリソースを整理する](https://docs.microsoft.com/ja-jp/learn/modules/control-and-organize-with-azure-resource-manager/3-use-tagging-to-organize-resources)
+
+
 # コスト削減
 
+Azure では、[多数のサービスにおいて、予約を行う](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/reservations/save-compute-costs-reservations#charges-covered-by-reservation)ことで、コストを大幅に節約することができます。
+
+[Azure ハイブリッド特典](https://azure.microsoft.com/ja-jp/pricing/hybrid-benefit/)では、オンプレミスの Windows Server と SQL Server のライセンスを Azure で利用することができます。クラウドでワークロードを実行するコストを大幅に削減（最大で85%）することができます。
+
+[Azure Pricing Calculator（料金計算ツール）](https://azure.microsoft.com/ja-jp/pricing/calculator/)で、料金のシミュレーションを行うことができます。
+
+
+Azure のリージョンによって、サービスの価格が異なります。
+
+例：D2 v3, 従量課金制、ライセンス込みの場合
+
+|リージョン|1ヶ月あたりの価格|
+|-|-|
+|Japan East| $161.33|
+|East US| $137.24|
+|Australia Central|$158.41|
+|Brazil South|$183.23|
+|Brazil South|$140.16|
+|France South|$193.45|
+|Switzerland West|$203.67|
