@@ -19,7 +19,25 @@ Microsoft Learn
   - [Azure で Windows 仮想マシンを作成する](https://docs.microsoft.com/ja-jp/learn/modules/create-windows-virtual-machine-in-azure/)
 - [Windows Server IaaS VM のネットワークを実装する](https://docs.microsoft.com/ja-jp/learn/paths/implement-windows-server-iaas-virtual-machine-networking/)
 
-# パブリックIPアドレス
 
 # プライベートIPアドレス
 
+VNet内での通信に使用されます。
+
+VPN GateawayやExpressRoute回線を使用してオンプレミスとVNetを接続している場合、オンプレミスとの通信でも使用されます。
+
+# パブリックIPアドレス
+
+インターネットとの通信に使用されます。
+
+# 静的と動的
+
+静的：固定のIPアドレスを割り当てます。
+
+動的：IPアドレスを割り当てられたVMが起動したときに、IPアドレスの値が動的に決まります。VMを停止すると、IPアドレスの値はなくなります。
+
+# [IPアドレスのSKU](https://docs.microsoft.com/ja-jp/azure/virtual-network/public-ip-addresses#sku)
+
+BasicとStandardがあります。Standardは、可用性ゾーンのシナリオをサポートします。
+
+ロード バランサー リソースとパブリック IP リソースには一致する SKU を使用する必要があります。 
