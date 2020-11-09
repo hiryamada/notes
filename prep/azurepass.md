@@ -29,3 +29,30 @@
 
 このサブスクリプションの有効期限や、クレジットの残高は、[Microsoft Azure Sponsorship クレジット残高](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。
 
+## 注意
+
+Azure Passサブスクリプションの有効化は、1つのMicrosoftアカウントに対して1回だけ実行できます。トレーニング開始時に、1回だけ実施していただければOKです。
+
+## トラブルシューティング
+
+エラーメッセージ「Try again later - Sorry there's something templrarily wrong with this site.」
+
+- 原因：
+  - このMicrosoftアカウントで、Azure Passサブスクリプションの有効化に失敗している状態です。（失敗したけれども、有効化が行なわれた、Azure Passのシステム側で判断されてしまっています。）
+  - または、このMicrosoftアカウントで、すでに有効化が行なわれています。
+- 対処：
+  - Microsoftアカウントをサイン アウトします。
+  - 別のMicrosoftアカウントを作り直してください。
+  - 作り直したアカウントで、Azure Pass サブスクリプションの有効化を行ってください。
+
+エラーメッセージ「This promo code has already been redeemed by another user. Please contact your Microsoft representative for a new Azure Pass promo code.」
+
+- 原因：
+  - このPromo Codeはすでに使用済みとなっていて、使用できません。
+  - 新しいPromo Codeを作るところからやり直す必要があります。
+- 対処：
+  - Microsoftアカウントをサイン アウトします
+  - 別のMicrosoftアカウントを作り直してください
+  - 作り直したアカウントで、[演習環境 - Learn on Demand LMS (LODS)](lods.md)にサイン インし、ラボを起動して、Promo Codeを再取得してください
+  - 作り直したアカウントで、Azure Pass サブスクリプションの有効化を行ってください。
+
