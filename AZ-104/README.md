@@ -23,7 +23,15 @@
   - [Azure Firewall](mod04-04-firewall.md)
   - [Azure DNS](mod04-05-dns.md)
 - モジュール5 サイト間接続
+  - [VNETピアリング](mod05-01-peering.md)
+  - [ラボ5](https://github.com/hiryamada/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.md)
+  - VPN Gateway接続 - テキストを参照
+  - ExpressRouteおよびVirtual WAN - テキストを参照
 - モジュール6 ネットワークトラフィック管理
+  - [ネットワークルーティングおよびエンドポイント](mod06-01-routing.md)
+  - [Azure Load Balancer](mod06-02-lb.md)
+  - [Azure Application Gateway](mod06-03-appgw.md)
+  - [ラボ6](https://github.com/hiryamada/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md)
 - モジュール7 Azure Storage
 - モジュール8 Azure Virtual Machines
 - モジュール9 サーバーレス コンピューティング
