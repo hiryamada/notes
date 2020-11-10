@@ -16,7 +16,7 @@
 
 ラボ: [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) - 「Instructions/Labs」内の各Markdownファイル
 
-ラボの注意点/ヒント: [AZ-104](AZ-104/lab.md)
+ラボの注意点/ヒント: [ラボ全般](lab.md) / [AZ-104](AZ-104/lab.md)
 
 認定試験: [AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)
 
