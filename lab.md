@@ -5,7 +5,8 @@
 |リージョン1|リージョン2|地域|おすすめ|
 |-|-|-|-|
 |eastus|westus|米国|○|
-|eastus2|westcentralus|米国|○|
+|eastus2|centralus|米国|○|
+|westus2|westcentralus|米国|○|
 |japaneast|japanwest|日本|-|
 
 japaneast （東日本）は、ラボで指定されたVMの作成に失敗することがあるようです。
