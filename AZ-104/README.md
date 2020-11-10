@@ -34,6 +34,13 @@
   - [Azure Application Gateway](mod06-03-appgw.md)
   - [ラボ6](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md)
 - モジュール7 Azure Storage
+  - [Azure のストレージサービス](mod07-01-storage.md)
+  - [Azure Blob Storage](mod07-02-blob.md)
+  - [Azure Files](mod07-03-files.md)
+  - [Azure File Sync](mod07-04-filesync.md)
+  - [ストレージのセキュリティ](mod07-05-security.md)
+  - [ストレージの管理ツール](mod07-06-admin.md)
+  - [ラボ7](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_07-Manage_Azure_Storage.md)
 - モジュール8 Azure Virtual Machines
 - モジュール9 サーバーレス コンピューティング
 - モジュール10 データ保護
