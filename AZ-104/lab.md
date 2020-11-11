@@ -6,12 +6,12 @@ https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator
 
 手順書は、[Instructions/Labs](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/tree/master/Instructions/Labs) 以下の各Markdownファイル（～.md）です。
 
-ラボの中で使用する追加のファイルは、 [Allfiles/Labs](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/tree/master/Allfiles/Labs) 以下です。
+ラボの中で使用する追加のファイルは、 [Allfiles/Labs](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/tree/master/Allfiles/Labs) 以下に格納されています。
 
 これらのファイルを一括でダウンロードするには、[GitHubリポジトリ](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) の「Code」ボタン（画面右上の緑色のボタン）をクリックし、「Download ZIP」を選択してください。または、[ZIPファイルへのリンク](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip)を使ってください。
 
 GitHubから、ファイルを個別にダウンロードする場合のご注意：
-たとえば、[ラボ2のJSONファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/02/az104-02a-customRoleDefinition.json)をダウンロードする場合、このページの「Raw」ボタンをクリックし、JSONファイルそのものをブラウザに表示させてから、Ctrl + Sでファイルとして保存してください。
+たとえば、[ラボ2のJSONファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/02/az104-02a-customRoleDefinition.json)をダウンロードする場合、このページの「Raw」ボタンをクリックし、[JSONファイルそのもの](https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/master/Allfiles/Labs/02/az104-02a-customRoleDefinition.json)をブラウザに表示させてから、`Ctrl + S` または、「ページ右クリック ＞ 名前を付けて保存」で、ファイルとして保存してください。
 
 # Cloud Shell 環境へ、ラボのファイルをコピーする
 
