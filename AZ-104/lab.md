@@ -124,9 +124,78 @@ westus2（米国西部2）を使ってください。
 「ラボのコンピューターで LICENSE ファイルを・・・」：
 このファイルの場所がわからない・見つからない場合は、[こちらのリンク](https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/master/Allfiles/Labs/07/LICENSE)をたどってファイルを表示し、`Ctrl + S` または、「ページ右クリック ＞ 名前を付けて保存」で、ファイルとして保存してください。
 
-
+---
 タスク 5: Azure Files 共有を作成して構成する
 
 Azure portal で 「仮想マシン」 を検索して選択し、仮想マシンの一覧で 「az104-07-vm0」 をクリックします。
 
 →この手順だと仮想マシン（クラシック）がでるので、Virtual Machinesで検索してください。
+
+
+
+# ラボ8
+
+
+タスク1　手順13
+
+カスタムデプロイで指定する「Virtual machine name」と「Virtual machine computer name」は何が異なるのでしょうか。？
+
+virtualMachineNameパラメータは、テンプレート内の name に適用されます。
+
+https://docs.microsoft.com/en-us/azure/templates/microsoft.compute/2018-10-01/virtualmachines#microsoftcomputevirtualmachines-object
+
+
+```
+The name of the virtual machine.
+```
+
+virtualMachineComputerNameパラメータは、テンプレート内のcomputerName に適用されます。
+
+https://docs.microsoft.com/en-us/azure/templates/microsoft.compute/2018-10-01/virtualmachines#osprofile-objectSpecifies
+
+```
+the host OS name of the virtual machine.
+This name cannot be updated after the VM is created.
+Max-length (Windows): 15 characters
+Max-length (Linux): 64 characters.
+ like 1
+Microsoft.Compute/virtualMachines 2018-10-01 - ARM template reference
+```
+
+この2つに違う値を指定すると、デプロイが失敗しましたので、一致させる必要があるようです。パラメータは1個にまとめることができますね。Portalが生成するテンプレートは機械的に生成されていますので、別のパラメータになってしまっているようです。
+
+---
+
+タスク2の6：ps1ファイルが見当たらない場合はこちらからどうぞ。
+
+https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/master/Allfiles/Labs/08/az104-08-install_IIS.ps1
+
+（名前を付けて保存します）
+
+
+---
+
+タスク3－15：テンプレートに、Standard_DS1_v2 とありますので、それを Standard_D2s_v3 に置換してください。
+
+---
+
+タスク4
+
+「リソース プロバイダー」とは、Azure ポータル上で使える機能セットであり、こちらを有効にすることで、Azure 上で機能が使えるようになります。
+参考：[リソースプロバイダーの状態を確認](https://jpaztech1.z11.web.core.windows.net/%E4%BB%AE%E6%83%B3%E3%83%9E%E3%82%B7%E3%83%B3%E3%82%84%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E7%9B%A3%E8%A6%96%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.html)
+
+---
+
+タスク6の6：ps1ファイルが見当たらない場合はこちらからどうぞ。
+
+https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/master/Allfiles/Labs/08/az104-08-install_IIS.ps1
+
+（名前を付けて保存します）
+
+---
+
+タスク7の23：ps1ファイルが見当たらない場合はこちらからどうぞ。
+
+https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/master/Allfiles/Labs/08/az104-08-configure_VMSS_disks.ps1
+
+（名前を付けて保存します）

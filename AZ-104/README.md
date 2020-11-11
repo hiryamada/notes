@@ -41,7 +41,7 @@
   - [ストレージのセキュリティ](mod07-05-security.md)
   - [ストレージの管理ツール](mod07-06-admin.md)
   - [ラボ7](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_07-Manage_Azure_Storage.md)
-- モジュール8 Azure Virtual Machines
-- モジュール9 サーバーレス コンピューティング
-- モジュール10 データ保護
-- モジュール11 監視
+- モジュール8 Azure Virtual Machines - テキストを参照
+- モジュール9 サーバーレス コンピューティング - テキストを参照
+- モジュール10 データ保護 - テキストを参照
+- モジュール11 監視 - テキストを参照
