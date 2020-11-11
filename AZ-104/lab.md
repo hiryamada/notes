@@ -6,7 +6,7 @@ https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator
 
 手順書は、[Instructions/Labs](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/tree/master/Instructions/Labs) 以下の各Markdownファイル（～.md）です。
 
-# Cloud Shell のホームディレクトリに、ラボのファイルをコピーする
+# Cloud Shell のホームディレクトリに、ラボのファイルをコピーする（推奨）
 
 ラボで使用されるファイル（[Allfiles/Labs](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/tree/master/Allfiles/Labs)以下のファイル）は、下記の方法で準備すると、毎回アップロードする必要がなくなり、便利です。
 
