@@ -13,12 +13,8 @@
 
 # クイック リンク
 
-[Azure portal](https://portal.azure.com/) 
-/ [Skillpipe](https://www.skillpipe.com/)  
-/ [Azure Pass](https://www.microsoftazurepass.com/) 
-/ [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
-/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) 
-/ [Microsoftアカウント](https://account.microsoft.com/account/Account)
+[Azure portal](https://portal.azure.com/) / [Skillpipe](https://www.skillpipe.com/) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
+/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) / [Microsoftアカウント](https://account.microsoft.com/account/Account)
 
 ラボ: [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) - 「Instructions/Labs」内の各Markdownファイル
 
