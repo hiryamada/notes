@@ -8,7 +8,7 @@ https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator
 
 # Cloud Shell のホームディレクトリに、ラボのファイルをコピーする
 
-ラボで使用されるファイル（Allfiles/Labs以下のファイル）は、下記の方法で準備すると、毎回アップロードする必要がなくなり、便利です。
+ラボで使用されるファイル（[Allfiles/Labs](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/tree/master/Allfiles/Labs)以下のファイル）は、下記の方法で準備すると、毎回アップロードする必要がなくなり、便利です。
 
 Azure portalでCloud Shell （Bash）を起動し、下記のコマンドを貼り付けます。
 
