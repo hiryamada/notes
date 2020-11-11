@@ -121,6 +121,10 @@ westus2（米国西部2）を使ってください。
 
 # ラボ7
 
+「ラボのコンピューターで LICENSE ファイルを・・・」：
+このファイルの場所がわからない・見つからない場合は、[こちらのリンク](https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/master/Allfiles/Labs/07/LICENSE)をたどってファイルを表示し、`Ctrl + S` または、「ページ右クリック ＞ 名前を付けて保存」で、ファイルとして保存してください。
+
+
 タスク 5: Azure Files 共有を作成して構成する
 
 Azure portal で 「仮想マシン」 を検索して選択し、仮想マシンの一覧で 「az104-07-vm0」 をクリックします。
