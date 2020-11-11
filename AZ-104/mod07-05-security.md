@@ -1,5 +1,18 @@
 # ストレージのセキュリティ
 
+
+ストレージ アカウントのデータにアクセスするたびに、クライアントは HTTP/HTTPS 経由で Azure Storage に要求を行います。 
+
+匿名アクセス許可（パブリック アクセス）を除き、リソースに対するすべての要求が**承認**される必要があります。
+
+アクセスの承認の方式はいくつか存在します。ストレージのサービスによって、[使用することができるアクセス承認の方式が異なります](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-auth)。
+
+ポイント
+- 共有キーは、すべてのストレージ サービス（Blob、Files、キュー、テーブル）で使用できます。
+- 匿名アクセス許可は、Blobだけで使用できます。
+- Azure ADによる承認は、Blobとキューでのみサポートされています。
+- Azure Filesでは、SASをサポートしていませんが、AAD ドメインサービス、オンプレミスAD DSによる承認をサポートしています。
+
 ## [匿名読み取りアクセス](https://docs.microsoft.com/ja-jp/azure/storage/blobs/anonymous-read-access-configure?tabs=portal)
 
 コンテナーと BLOB へのオプションの匿名パブリック読み取りアクセスがサポートされています。
@@ -32,6 +45,8 @@ Azure Storage は、**Blob およびキュー**に対する要求の id ベー�
 
 Azure AD では、ロールベースのアクセス制御 (RBAC) を使用して、ユーザー、グループ、またはアプリケーションへの **blob およびキュー**へのアクセスを許可できます。 
 
+[使用できるロールの一覧](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-auth-aad?toc=/azure/storage/blobs/toc.json#azure-built-in-roles-for-blobs-and-queues)
+
 ※承認の流れ
 - クライアントは、Azure ADからOAuth 2.0アクセストークンを取得します。
 - クライアントは、リクエストにOAuth 2.0アクセストークンを含めて、ストレージサービスへ送信することで、アクセスが承認されます。
@@ -45,9 +60,11 @@ SAS を使用すると、クライアントがデータにアクセスする方�
 クライアントがアクセスできるリソース、それらのリソースに対して持つアクセス許可、SAS の有効期間などを制御できます。
 
 ※承認の流れ
-- 第1のクライアントは、ストレージ アカウント キーを使用して、Authenticationヘッダー（HMAC）を作り、ストレージ サービスにSASトークンの生成をリクエストします。
+- 第1のクライアントは、ストレージ アカウント キーを使用して、Authenticationヘッダー（HMAC）を作り、ストレージ サービスにSASトークンの生成をリクエストします。（※）
 - 第1のクライアントは、第2のクライアントにSASキーを渡します（委任）。
 - 第2のクライアントは、ストレージ サービスへ、SASトークンを含めてリクエストすることで、アクセスが承認されます。
+
+※Azure AD 資格情報で署名された SASトークンを作成することも[可能](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-sas-overview)です。（ユーザー委任SAS）
 
 - SASの種類
   - アカウントSAS

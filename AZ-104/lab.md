@@ -1,6 +1,21 @@
+# ラボの手順書とファイル
+
+こちらのGitHubリポジトリに格納されています。
+
+https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator
+
+手順書は、[Instructions/Labs](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/tree/master/Instructions/Labs) 以下の各Markdownファイル（～.md）です。
+
+ラボの中で使用する追加のファイルは、 [Allfiles/Labs](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/tree/master/Allfiles/Labs) 以下です。
+
+これらのファイルを一括でダウンロードするには、[GitHubリポジトリ](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) の「Code」ボタン（画面右上の緑色のボタン）をクリックし、「Download ZIP」を選択してください。または、[ZIPファイルへのリンク](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip)を使ってください。
+
+GitHubから、ファイルを個別にダウンロードする場合のご注意：
+たとえば、[ラボ2のJSONファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/02/az104-02a-customRoleDefinition.json)をダウンロードする場合、このページの「Raw」ボタンをクリックし、JSONファイルそのものをブラウザに表示させてから、Ctrl + Sでファイルとして保存してください。
+
 # Cloud Shell 環境へ、ラボのファイルをコピーする
 
-AZ-104のラボ全般で使用されるJSONファイルは、下記の方法で準備すると、毎回アップロードする必要がないので便利です。
+AZ-104のラボ全般で使用されるファイル（Allfiles/Labs以下のファイル）は、下記の方法で準備すると、毎回アップロードする必要がなくなり、便利です。
 
 Azure portalでCloud Shell （Bash）を起動し、下記のコマンドを貼り付けます。
 
@@ -9,7 +24,7 @@ git clone https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministra
 cp `find AZ-104JA-MicrosoftAzureAdministrator/Allfiles/Labs -type f` .
 ```
 
-コピーされたJSONファイルを確認するには `ls` を使用します。
+コピーされたファイルを確認するには `ls` を使用します。
 ```
 ls
 ```
