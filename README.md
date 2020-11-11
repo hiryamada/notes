@@ -3,6 +3,10 @@
 
 [こちらの手順に従い、ご準備をお願いします](prep/README.md)。
 
+ご準備（新しいMicrosoftアカウント作成、Promo Codeの入手、Azure Passの有効化）は、初日に1回だけ実施してください。
+
+以降、[Azure Portal](https://portal.azure.com) にアクセスし、作成したMicrosoftアカウントでサイン インすることができます。
+
 # トレーニングに関するご質問
 
 講師までチャットか音声でご質問ください。
