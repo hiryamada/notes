@@ -10,6 +10,9 @@
 
 - 有償のコースにつき、録音・録画はご遠慮ください。
 
+トレーニングで使用しているスライドは入手できますか？
+- 規定により、スライドをご提供することはできませんが、講師が適宜、ホワイトボードのスクリーンショットやURL等をチャットで共有させていただきます。
+
 質問はどうすればよいですか？
 
 - Teamsのチャットウィンドウに質問を打ち込んでください。
@@ -17,10 +20,10 @@
 
 # 認定試験について
 
-このトレーニングを受講すれば認定試験に合格できますか？
+トレーニングを受講すれば認定試験に合格できますか？
 
-- [試験は、学習内容の範囲を超えてスキルを適用する能力を評価するように設計されているため、スキルは学習で教わったレベルよりも高いレベルで評価されます。](https://docs.microsoft.com/ja-jp/learn/certifications/exam-process-overview)試験を受ける前に学習に加えて経験や実践を積むことを強くおすすめします。
-- トレーニングのご受講に加え、Microsoft Learnや書籍などを使用した自習を強くおすすめします。
+- [試験は、学習内容の範囲を超えてスキルを適用する能力を評価するように設計されているため、スキルは学習で教わったレベルよりも高いレベルで評価されます。](https://docs.microsoft.com/ja-jp/learn/certifications/exam-process-overview)試験を受ける前に学習に加えて経験や実践を積むことをおすすめします。
+- トレーニングのご受講に加え、Microsoft Learnや書籍などを使用した自習をおすすめします。
 - [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/)
   - [AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)のラーニングパス
     - [AZ-104:Azure 管理者向けの前提条件](https://docs.microsoft.com/ja-jp/learn/paths/az-104-administrator-prerequisites/)

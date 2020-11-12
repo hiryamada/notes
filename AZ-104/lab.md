@@ -199,3 +199,41 @@ https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdmin
 https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/master/Allfiles/Labs/08/az104-08-configure_VMSS_disks.ps1
 
 （名前を付けて保存します）
+
+
+# ラボ10
+
+特になし
+
+# ラボ11
+
+タスク5
+8 「ゲスト (クラシック)」 エントリも含まれていることに注意してください。
+→そしてそれを選択してから9に進んでください。
+
+
+
+タスク5
+10　このままだとグラフが表示されませんでした。
+ゲストメモリメトリックを有効にします。の手順に従って有効にしたら表示されました。
+
+
+
+タスク6
+1 メトリック→メトリックについて調べる
+
+
+
+タスク7
+4 クエリの例→フィードバックの右の「クエリ」
+
+
+
+タスク7
+11 Get started with sample queries (サンプル クエリの使用を開始する) ペインで
+→テーブル　クエリ　フィルターとなっている部分の「クエリ」です。
+
+
+
+
+なお、タスク4-5、タスク5-10でグラフが表示されない場合は、いったん飛ばして手順を最後まで実施してまた戻ってみてください。
