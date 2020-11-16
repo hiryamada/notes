@@ -80,7 +80,7 @@ https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-bui
 
 > アクセス階層: ホット
 
-Blobのアクセス改装は、デフォルトでホットになるため、特に指定する必要はありません。
+Blobのアクセス階層は、デフォルトでホットになるため、特に指定する必要はありません。
 
 # タスク3
 
