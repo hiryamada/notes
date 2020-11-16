@@ -1,0 +1,19 @@
+- モジュール0: コース紹介
+- モジュール1: Azure App Service
+  - ラボ1 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab.md) [解答](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab_ak.md) [解説](lab1.md)
+- モジュール2: Azure Functions
+- モジュール3: Blob Btorage
+- モジュール4: Cosmos DB
+- モジュール5: VM、ARM、ACR、ACI
+- モジュール6: ユーザー認証と承認
+- モジュール7: セキュリティ
+  - [Azure key Vault](mod07-01-keyvault.md)
+  - [マネージドID](mod07-02-managed-id.md)
+  - [App Configuration](mod07-03-app-configuration.md)
+  - ラボ7 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_07_lab.md) / [解答](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_07_lab_ak.md)
+- モジュール8: API Management
+- モジュール9: Logic Apps
+- モジュール10: Event Grid、Notification Hubs
+- モジュール11: Service Bus、Queue Storage
+- モジュール12: Azure Monitor、Application Insights
+- モジュール13: Azure Cache for Redis、Azure CDN
