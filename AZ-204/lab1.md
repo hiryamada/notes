@@ -82,6 +82,8 @@ https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-bui
 
 Blobのアクセス階層は、デフォルトでホットになるため、特に指定する必要はありません。
 
+※「詳細」タブまで進むと、「ホット」と「クール」の選択があります。
+
 # タスク3
 
 > 3. パブリック アクセス レベル: BLOB (BLOB の場合のみ匿名読み取りアクセス)

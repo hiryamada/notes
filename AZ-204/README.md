@@ -1,3 +1,5 @@
+ラボで使用するファイル: [GitHubのAZ-204リポジトリ](https://github.com/MicrosoftLearning/AZ-204Ja-DevelopingSolutionsforMicrosoftAzure)にアクセスし、「Code」ボタン（緑）＞Download ZIP、でダウンロードしてください。
+
 - モジュール0: コース紹介
 - モジュール1: Azure App Service
   - ラボ1 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab.md) [解答](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab_ak.md) [解説](lab1.md)

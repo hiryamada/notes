@@ -36,4 +36,86 @@ Microsoft Learn
 - 検索＞「Func」
 - すべてのリソース＞「関数アプリ」
 
-# 
+「関数アプリ」の中に、複数の「関数」を作成できます。
+
+# ストレージ アカウント
+
+
+Azure Functions では、関数アプリを作成するときに [Azure ストレージ アカウントが必要](https://docs.microsoft.com/ja-jp/azure/azure-functions/storage-considerations)になります。
+
+トリガーの管理や関数実行のログ記録などの操作に Azure Storage を使用しているためです。
+
+# サービスとの統合
+
+Azure Functionsは、Azureの様々なサービスや、サードパーティのサービスと[組み合わせて使用](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings)することができます。
+
+たとえば、Blob Storageに新しいBlobがアップロードされたときに、[関数を実行する](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-storage-blob-trigger?tabs=csharp)ことができます。
+
+
+※[Twilio](https://www.twilio.com/ja/)社は、音声、SMS、チャットなどの機能をすばやくアプリケーションに組み込むサービスを提供しています。[Azure FunctionsのTwilioバインド](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-twilio?tabs=csharp)を使用すると、Twilioを経由して、指定された電話番号宛てにテキスト メッセージ（SMS）を送信することができます。[Microsoft Learnの解説](https://docs.microsoft.com/ja-jp/learn/modules/send-location-over-sms-using-azure-functions-twilio/)もあります。
+
+# ホスティング方法
+
+Azure で関数アプリを作成するときは、アプリのホスティング プランを選択する必要があります。
+
+選択したホスティング プランによって、次の動作が決まります。
+- 関数アプリをスケールする方法。
+- 各関数アプリ インスタンスに利用できるリソース。
+- Azure Virtual Network 接続などの高度な機能のサポート。
+
+「関数アプリ」を作成する際に、「ホスティング」タブで指定します。
+
+- [消費量（サーバーレス）](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#consumption-plan) - 従量課金プラン、Consumptionとも呼ばれます。関数の実行中にのみコンピューティング リソースに対して料金が発生します。
+- [Premium](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#premium-plan) - 常にウォーム状態をキープ、VNet接続をサポート
+- [App Serviceプラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#dedicated-app-service-plan) - 「専用プラン」とも呼ばれます。すでに存在するApp Service上で関数を稼働させます。
+
+# タイムアウト期間
+
+プランによって、関数アプリの[タイムアウト期間](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#function-app-timeout-duration)が決まります。
+
+従量課金: デフォルトは5分、最大は10分に設定できます。
+
+Premium、App Serviceプランでは、最大値を無制限に設定できます。
+
+
+# トリガー
+
+トリガーは、関数が実行される原因です。 トリガーで関数の呼び出し方法が定義されます。
+
+1 つの関数には正確に 1 つのトリガーを含める必要があります。
+
+Azure portalでは、新しい関数を追加する際に、「テンプレート」から選択することで、「HTTP trigger」「Timer trigger」「Blob Storage trigger」
+
+# バインディング（バインド）
+
+関数へのバインドは、関数に別のリソースを宣言的に接続する方法です。
+
+バインドは入力バインド または出力バインド、あるいは両方として接続される場合があります。 
+
+バインドからのデータは、パラメーターとして関数に提供されます。
+
+バインドは省略可能であり、関数には 1 つまたは複数の入力または出力バインドがある場合があります。
+
+Azure portalでは、関数を作成したあとで、「統合」で、「入力」と「出力」の部分で、バインドを設定できます。
+
+# モニター
+
+関数の成功数・エラー数を確認したり、ログに対してクエリを実行したりすることができます。
+
+# 関数キー
+
+関数を作成したときにキーが1つ生成されます。Anonymous以外に設定した場合は、キーがないとアクセスできなくなります。
+
+# host.json
+
+関数アプリのトップに配置します。
+
+Application Insightの設定など、複数の関数に共通する設定をここで記述します。
+
+# function.json
+
+関数アプリ以下の、各関数のディレクトリ以下似配置します。
+
+トリガーとバインドの設定をこのファイルに記述します。
+
+directionがinのものが入力バインド、outのものが出力バインドとなります。
