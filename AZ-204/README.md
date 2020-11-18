@@ -2,9 +2,11 @@
 
 - モジュール0: コース紹介
 - モジュール1: Azure App Service
-  - ラボ1 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab.md) [解答](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab_ak.md) [解説](lab1.md)
+  - ラボ1 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab.md) [解説](lab01.md)
 - モジュール2: Azure Functions
+  - ラボ2 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_02_lab.md) [解説](lab02.md)
 - モジュール3: Blob Btorage
+  - ラボ3 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_03_lab.md) [解説](lab03.md)
 - モジュール4: Cosmos DB
 - モジュール5: VM、ARM、ACR、ACI
 - モジュール6: ユーザー認証と承認

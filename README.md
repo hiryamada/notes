@@ -4,6 +4,8 @@
 
 準備は初日に1回だけ実施すればOKです。以降は、ご準備いただいたMicrosoftアカウントで、[Azure portal](https://portal.azure.com/)や、[演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) にアクセスできます。
 
+※Teamsの接続に問題がある場合は、[Microsoft 365 ネットワーク接続テストツール](https://connectivity.office.com/)にアクセスし、「Run test」をクリックしてテストしてください。問題の根本的な原因を特定するのに役立ちます。[ツールについての説明](https://docs.microsoft.com/ja-jp/Microsoft-365/Enterprise/office-365-network-mac-perf-onboarding-tool)もお読みください。
+
 # トレーニングに関するご質問
 
 講師までチャットか音声でご質問ください。

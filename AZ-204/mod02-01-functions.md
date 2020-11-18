@@ -1,5 +1,15 @@
 Azure Functions
 
+Azure Functions はサーバーレス アプリケーション プラットフォームです。
+
+これにより、開発者はインフラストラクチャをプロビジョニングすることなく実行できるビジネス ロジックをホストできます。 
+
+Functions では、組み込みのスケーラビリティが提供され、使用されているリソースに対してのみ料金が請求されます。 
+
+C#、F#、JavaScript、Python、PowerShell Core など、好みの言語で関数コードを記述することができます。
+
+NuGet や NPM などのパッケージ マネージャーのサポートも含まれているので、ビジネス ロジック内で一般的なライブラリを使用することができます。
+
 [製品ページ](https://azure.microsoft.com/ja-jp/services/functions/)
 
 [概要](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-overview)
@@ -77,7 +87,6 @@ Azure で関数アプリを作成するときは、アプリのホスティン�
 
 Premium、App Serviceプランでは、最大値を無制限に設定できます。
 
-
 # トリガー
 
 トリガーは、関数が実行される原因です。 トリガーで関数の呼び出し方法が定義されます。
@@ -86,9 +95,13 @@ Premium、App Serviceプランでは、最大値を無制限に設定できま�
 
 Azure portalでは、新しい関数を追加する際に、「テンプレート」から選択することで、「HTTP trigger」「Timer trigger」「Blob Storage trigger」
 
-# バインディング（バインド）
+※[トリガーは、実行を開始する機能を別途備えた特殊な入力バインドです](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code?pivots=programming-language-csharp)。
+
+# バインド（バインディング）
 
 関数へのバインドは、関数に別のリソースを宣言的に接続する方法です。
+
+バインドを使用することで、データに接続するためのコードの記述が不要となります。たとえば、Blob Storageのバインドを使用することで、Blobに接続する入出力の準備を行うコードを関数内に記述する必要がなくなります。
 
 バインドは入力バインド または出力バインド、あるいは両方として接続される場合があります。 
 
