@@ -10,6 +10,9 @@
 - モジュール4: Cosmos DB
 - モジュール5: VM、ARM、ACR、ACI
 - モジュール6: ユーザー認証と承認
+  - [Microsoft ID Platform](mod06-01-idplatform.md)
+  - [Microsoft Authentication Library (MSAL)](mod06-02-msal.md)
+  - [Microsoft Graph](mod06-03-graph.md)
 - モジュール7: セキュリティ
   - [Azure key Vault](mod07-01-keyvault.md)
   - [マネージドID](mod07-02-managed-id.md)
