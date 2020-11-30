@@ -4,12 +4,12 @@
 
 |リージョン1|リージョン2|地域|おすすめ|
 |-|-|-|-|
-|eastus|westus|米国|○|
-|eastus2|centralus|米国|○|
-|westus2|westcentralus|米国|○|
-|japaneast|japanwest|日本|-|
+|eastus (米国東部)|westus (米国西部)|米国|○|
+|eastus2 (米国東部2)|centralus (米国中部)|米国|○|
+|westus2 (米国西部2)|westcentralus (米国西中部)|米国|○|
+|japaneast (東日本)|japanwest (西日本)|日本|-|
 
-japaneast （東日本）は、ラボで指定されたVMの作成に失敗することがあるようです。
+選択したリージョンでリソースの作成に失敗する場合は、別のリージョンをお試しください。
 
 # 複数行のコマンド貼り付け
 
