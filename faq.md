@@ -41,6 +41,25 @@
   - [Pearson VUE](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams)
   - [PSI](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi)
 
+
+# Azureはどうやって勉強すればよいですか？
+
+[Microsoft LearnのAzureコンテンツ](https://docs.microsoft.com/ja-jp/search/?terms=azure&category=Learn)
+
+[Microsoft Azure のオススメの学習方法についてまとめてみる](https://qiita.com/nakazax/items/9311ed4b20d045c094d4)
+
+[Azure Base コンテンツポータル（「Azureサイトの歩き方」）](https://www.microsoft.com/ja-jp/events/azurebase/contents/)
+
+[Azure"超"入門 最終講義 ･･･ 自己学習に役立つリソース](https://news.mynavi.jp/article/azure-33/)
+
+[SlideShareのAzureコンテンツ](https://www2.slideshare.net/search/slideshow?searchfrom=header&q=azure)
+
+[YouTubeのAzureコンテンツ](https://www.youtube.com/results?search_query=azure)
+
+[LinkedIn LearningのAzureコース](https://www.linkedin.com/learning/search?keywords=azure)
+
+[Pluralsight](https://www.pluralsight.com/partners/microsoft/azure)
+
 # 受講の環境
 
 携帯電話やタブレットで受講できますか？

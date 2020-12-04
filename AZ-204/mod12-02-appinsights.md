@@ -339,3 +339,15 @@ https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/java-trace-logs
 既定では、Application Insights Java エージェントは、WARN レベル以上で実行されたログを自動的にキャプチャします。
 
 ロガー経由で送信された例外は、例外のテレメトリとしてポータルに表示されます。
+
+# スマート検出
+
+https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/proactive-diagnostics
+
+スマート検出により、Web アプリケーションの潜在的なパフォーマンスの問題と失敗の異常について警告を自動的に受け取ることができます。 
+
+スマート検出では、アプリから Application Insights に送信されるテレメトリがプロアクティブに分析されます。 
+
+障害発生率が急激に上昇したり、クライアントまたはサーバーのパフォーマンスに異常なパターンが発生したりした場合に、アラートが表示されます。 
+
+**この機能には構成は不要です。** アプリケーションから適切なテレメトリが送信されていれば動作します。
