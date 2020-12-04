@@ -11,9 +11,9 @@ Azure Files NFS ファイル共有には、Linux または macOS クライアン
 Azure Filesの中に「ファイル共有」を作り、「ファイル」をアップロードします。
 
 
-# Azure ファイル共有へのオンプレミスAD DS認証
+# Azure ファイル共有へのAD DS認証
 
-Azure Files では、オンプレミス Active Directory Domain Services (AD DS) と Azure Active Directory Domain Services (Azure AD DS) という 2 種類の Domain Services を使用した、サーバー メッセージ ブロック (SMB) 経由の ID ベースの認証がサポートされます。
+Azure Files では、**オンプレミス Active Directory Domain Services (AD DS) と Azure Active Directory Domain Services (Azure AD DS)** という 2 種類の Domain Services を使用した、**サーバー メッセージ ブロック (SMB) 経由の ID ベースの認証**がサポートされます。
 
 https://docs.microsoft.com/ja-jp/azure/storage/files/storage-files-identity-auth-active-directory-enable
 
