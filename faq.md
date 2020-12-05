@@ -17,6 +17,7 @@
 
 - Teamsのチャットウィンドウに質問を打ち込んでください。
 - または、マイクをONにしていただき、直接質問してください。
+  - 質問が終わりましたらマイクはOFFにしてください。
 
 # 認定試験について
 
@@ -59,6 +60,18 @@
 [LinkedIn LearningのAzureコース](https://www.linkedin.com/learning/search?keywords=azure)
 
 [Pluralsight](https://www.pluralsight.com/partners/microsoft/azure)
+
+
+[Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/)
+
+
+[Awesome Azure Resources](https://github.com/kristofferandreasen/awesome-azure)
+
+# 最新情報の入手
+
+[ASCII x FIXER](https://ascii.jp/azure-fixer/)
+
+[Azure Announcements](https://azure.microsoft.com/ja-jp/blog/topics/announcements/)
 
 # 受講の環境
 

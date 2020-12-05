@@ -1,0 +1,42 @@
+# 各種ドキュメント
+
+SAP on Azure(Azureサイト)
+https://azure.microsoft.com/ja-jp/solutions/sap/
+
+SAP on Azure アーキテクチャ ガイド
+https://docs.microsoft.com/ja-jp/azure/architecture/reference-architectures/sap/sap-overview
+
+Azure を使用して SAP ワークロード シナリオをホストして実行する(Azure/VM/ワークロード/SAP)
+https://docs.microsoft.com/ja-jp/azure/virtual-machines/workloads/sap/get-started
+
+SAP on Azure ホワイトペーパーと電子書籍
+https://azure.microsoft.com/ja-jp/solutions/sap/resources/
+
+SAP on Azure Implementation Guide (SAP on Azure 実装ガイド)
+https://azure.microsoft.com/ja-jp/resources/sap-on-azure-implementation-guide/
+
+
+# パートナー様
+
+SAP on Azure のパートナー
+https://azure.microsoft.com/ja-jp/solutions/sap/partners/
+
+国内 SI / コンサルティング パートナー企業のご紹介
+https://docs.microsoft.com/ja-jp/archive/blogs/mssvrpmj/microsoft-azure-japan-dc-update
+
+# ブログ等
+
+[SAP on Azure] これからはじめるAzure環境構築とSAPシステム移行 - Azureを使いはじめる前に
+https://qiita.com/leq1341/items/2555a97004e1c7ea99a7
+
+SAP S/4HANAに最適化。巨大基幹システムを支えるマイクロソフト“SAP on Azure”の優位性（前編）
+https://bcblog.sios.jp/advantages-of-microsoft-sap-on-azure-1/
+
+SAP S/4HANAに最適化。巨大基幹システムを支えるマイクロソフト“SAP on Azure”の優位性（後編）
+https://bcblog.sios.jp/advantages-of-microsoft-sap-on-azure-2/
+
+# SAP情報
+
+Japan SAP User's Group (JSUG)
+http://www.jsug.org/
+
