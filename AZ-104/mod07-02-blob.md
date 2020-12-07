@@ -12,8 +12,15 @@ Azure Filesの中に「コンテナー」を作り、「Blob」をアップロ�
 
 ※ [日本語版のドキュメント](https://docs.microsoft.com/ja-jp/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs)では「BLOB」と「Blob」が混在しているようです。[英語版のドキュメント](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs)では、文中では小文字で「blob」、製品名の一部や記事のタイトルとしては「Blob」と表記されるようです。
 
+
+
 # Blobの種類
 
-- ブロックBlob(Block blobs) - テキストとバイナリ。最大4.75TiB
+- ブロックBlob(Block blobs) - テキストとバイナリ。Blob1個あたりの最大サイズは4.75TiB（最大サイズ200TBが[プレビュー](https://azure.microsoft.com/ja-jp/blog/run-high-scale-workloads-on-blob-storage-with-new-200-tb-object-sizes/)）。
 - 追加Blob(Append blobs) - ログ記録などの追加操作に最適化されている。
 - ページBlob(Page blobs) - VHDファイルの格納用。（マネージドではない）ディスクとして利用。
+
+
+# ストレージアカウントあたりの最大容量
+
+[5 PiB](https://docs.microsoft.com/ja-jp/azure/storage/files/storage-files-scale-targets)

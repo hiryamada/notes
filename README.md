@@ -15,7 +15,7 @@
 # クイック リンク
 
 [Azure portal](https://portal.azure.com/) / [Skillpipe](https://www.skillpipe.com/) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
-/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/)
+/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) / [Azure Feedback](https://feedback.azure.com/)
 
 ラボ: [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) - 「Instructions/Labs」内の各Markdownファイル
 

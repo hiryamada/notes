@@ -53,25 +53,41 @@
 
 [Azure"超"入門 最終講義 ･･･ 自己学習に役立つリソース](https://news.mynavi.jp/article/azure-33/)
 
-[SlideShareのAzureコンテンツ](https://www2.slideshare.net/search/slideshow?searchfrom=header&q=azure)
-
 [YouTubeのAzureコンテンツ](https://www.youtube.com/results?search_query=azure)
+
+[SlideShareのAzureコンテンツ](https://www2.slideshare.net/search/slideshow?searchfrom=header&q=azure)
 
 [LinkedIn LearningのAzureコース](https://www.linkedin.com/learning/search?keywords=azure)
 
 [Pluralsight](https://www.pluralsight.com/partners/microsoft/azure)
 
-
 [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/)
-
 
 [Awesome Azure Resources](https://github.com/kristofferandreasen/awesome-azure)
 
-# 最新情報の入手
+
+# クラウドはどうやって勉強したらよいですか？
+
+[カーネギー メロン大学のコース「クラウド開発者」](https://docs.microsoft.com/ja-jp/users/shanam/collections/oogag2kow83x2)
+
+# ベストプラクティスのまとめはありますか？
+
+[Azureアーキテクチャセンター](https://docs.microsoft.com/ja-jp/azure/architecture/)
+
+
+# 最新情報はどこで入手できますか？
+
+[Azure ブログ](https://azure.microsoft.com/ja-jp/blog/)
+
+[Azureの更新情報](https://azure.microsoft.com/ja-jp/updates/)
+
+[Azureのイベント](https://azure.microsoft.com/ja-jp/community/events/)
 
 [ASCII x FIXER](https://ascii.jp/azure-fixer/)
 
 [Azure Announcements](https://azure.microsoft.com/ja-jp/blog/topics/announcements/)
+
+[Twitter](https://twitter.com/azure)
 
 # 受講の環境
 
