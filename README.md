@@ -1,11 +1,8 @@
-# トレーニングの準備
-
-トレーニングではビデオ会議システムであるMicrosoft Teamsを使用します。[Teamsについてはこちらをご確認ください](prep/teams.md)。
-
-
-[こちらの手順に従い、ご準備をお願いします](prep/README.md)。
+# [トレーニングの準備](prep/README.md)
 
 準備は初日に1回だけ実施すればOKです。以降は、ご準備いただいたMicrosoftアカウントで、[Azure portal](https://portal.azure.com/)や、[演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) にアクセスできます。
+
+トレーニングではビデオ会議システムであるMicrosoft Teamsを使用します。[Teamsについてはこちらをご確認ください](prep/teams.md)。
 
 # [よくあるご質問](faq.md)
 
