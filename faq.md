@@ -1,4 +1,4 @@
-# よくある質問 (Frequently Asked Questions)
+# よくあるご質問
 
 # トレーニングについて
 
