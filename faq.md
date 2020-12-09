@@ -49,7 +49,19 @@
 
 [Microsoft Azure のオススメの学習方法についてまとめてみる](https://qiita.com/nakazax/items/9311ed4b20d045c094d4)
 
+[Azureで構築&開発をするときにいつも参考にしているリンク集等 2017年8月](https://qiita.com/mikaka360/items/44244b066c06c60006fe)
+
 [Azure Base コンテンツポータル（「Azureサイトの歩き方」）](https://www.microsoft.com/ja-jp/events/azurebase/contents/)
+
+↑特に「自習書」シリーズがおすすめ。
+
+[Microsoft Azure 自習書一式](https://www.microsoft.com/ja-jp/download/details.aspx?id=43120)
+
+↑古いが参考になる。
+
+[自習書シリーズとテップ バイ ステップ評価ガイド](https://techinfoofmicrosofttech.osscons.jp/index.php?%E8%87%AA%E7%BF%92%E6%9B%B8%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%A8%E3%83%86%E3%83%83%E3%83%97%20%E3%83%90%E3%82%A4%20%E3%82%B9%E3%83%86%E3%83%83%E3%83%97%E8%A9%95%E4%BE%A1%E3%82%AC%E3%82%A4%E3%83%89)
+
+↑リンク集
 
 [Azure"超"入門 最終講義 ･･･ 自己学習に役立つリソース](https://news.mynavi.jp/article/azure-33/)
 
@@ -65,6 +77,7 @@
 
 [Awesome Azure Resources](https://github.com/kristofferandreasen/awesome-azure)
 
+[mstepオンライン](https://partner.microsoft.com/ja-jp/training/mstep-platform)
 
 # クラウドはどうやって勉強したらよいですか？
 

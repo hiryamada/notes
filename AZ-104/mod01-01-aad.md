@@ -6,10 +6,15 @@ Azure ADは、Microsoft が提供する、[クラウドベースの ID および
 - Microsoft 365、Azure portalへのサインイン
 - [SaaS アプリケーションへのサインイン](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/tutorial-list)
   - [Salesforce](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/salesforce-tutorial)
+  - [Slack](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/slack-tutorial)
+  - [Concur](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/concur-tutorial)
+  - [Dropbox Business](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/dropboxforbusiness-tutorial)
   - [Adobe Creative Cloud](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/adobe-creative-cloud-tutorial)
   - [AWS](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/amazon-web-service-tutorial)
   - [Zoom](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/zoom-tutorial)
   - [ヌーラボ](https://support.nulab.com/hc/ja/articles/360050198033-SAML%E8%AA%8D%E8%A8%BC-SSO-%E3%81%AE%E8%A8%AD%E5%AE%9A)
+  - [サイボウズ Kintone](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/kintone-tutorial)
+  - [マネーフォワード クラウド](https://support.biz.moneyforward.com/valuepack/guide/sso/g022.html)
 - オンプレミスのアプリへのサインイン - [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/ja-jp/azure/active-directory/manage-apps/application-proxy)
 - [自分の組織で開発したクラウド アプリへのサインイン](https://docs.microsoft.com/ja-jp/azure/app-service/configure-authentication-provider-aad)
 

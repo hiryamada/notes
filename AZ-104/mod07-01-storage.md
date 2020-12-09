@@ -11,7 +11,7 @@
 ## VM用のディスク
 - [マネージド ディスク](https://docs.microsoft.com/ja-jp/azure/virtual-machines/managed-disks-overview) - 複数の[ストレージ スケール ユニット](https://www.google.com/search?q=%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%20%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%20%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88)に自動的に配置、[99.999%の可用性で設計](https://docs.microsoft.com/ja-jp/azure/virtual-machines/managed-disks-overview)
 - （マネージドではない）ディスク - [Azure Blob Storage](https://azure.microsoft.com/ja-jp/services/storage/blobs/)内の[VHD](https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-7/dd979539(v=ws.10)?redirectedfrom=msdn)（[ページBLOB](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-pageblob-overview)）
-- [一時ディスク](https://docs.microsoft.com/ja-jp/azure/virtual-machines/managed-disks-overview#temporary-disk) - ほとんどの VM で利用できます。アプリケーションやプロセスのために短期間の保存場所を提供するものであり、ページやスワップ ファイルなどのデータ格納のみを意図しています。メンテナンス イベント中、または VM の再デプロイ時に失われる可能性があります。
+- [一時ディスク](https://docs.microsoft.com/ja-jp/azure/virtual-machines/managed-disks-overview#temporary-disk) - 一時ディスクとは、**デプロイした VM に直接アタッチされているストレージ**のことです。一時ディスクのデータは、VM をシャットダウンすると消失します。ほとんどの VM で利用できます。アプリケーションやプロセスのために短期間の保存場所を提供するものであり、ページやスワップ ファイルなどのデータ格納のみを意図しています。メンテナンス イベント中、または VM の再デプロイ時に失われる可能性があります。
 
 ## [データ レイク](https://www.google.com/search?q=%E3%83%87%E3%83%BC%E3%82%BF+%E3%83%AC%E3%82%A4%E3%82%AF)
 - [Azure Data Lake Storage Gen2](https://azure.microsoft.com/ja-jp/services/storage/data-lake-storage/) - [ストレージ アカウント](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-account-create?tabs=azure-portal)作成時に「[階層構造の名前空間](https://docs.microsoft.com/ja-jp/azure/storage/blobs/data-lake-storage-namespace)」を「有効」にして作成すると、そのストレージ アカウント内で利用できます。

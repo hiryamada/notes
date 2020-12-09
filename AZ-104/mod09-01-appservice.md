@@ -1,3 +1,4 @@
+[AZ-204のノート](../AZ-204/mod01-01-appservice.md)
 
 # App Service 概要
 
@@ -6,6 +7,30 @@ Azure App Service を使用すると、インフラストラクチャを管理�
 Azure Web Apps では、自動スケールと高可用性が実現されるほか、Windows と Linux の両方がサポートされています。
 
 GitHub、Azure DevOps、または任意の Git リポジトリからの自動デプロイが可能になります。 
+
+
+# App Serviceに含まれるもの
+
+[2015年発表時](https://blog.azure.moe/2015/03/25/build-web-and-mobile-apps-faster/)
+
+- Web Apps
+- Mobile Apps
+- Logic Apps
+- API Apps
+
+[2017/9](https://satonaoki.wordpress.com/2017/09/09/webapp-for-containers-overview/)
+
+- App Service on Linux - 組み込みのイメージによる ASP.NET Core, Node.js, PHP and Rubyのサポート
+- Web App for Containers - カスタムのコンテナのサポート
+
+[2018/8](https://www.atmarkit.co.jp/ait/articles/1904/15/news009.html)
+
+- Web App for Containers が、Windowsコンテナをサポート
+
+[2020/5](https://techcommunity.microsoft.com/t5/apps-on-azure/introducing-app-service-static-web-apps/ba-p/1394451)
+
+- App Service Static Web Apps
+
 
 # リンク
 

@@ -4,12 +4,20 @@
 
 |リージョン1|リージョン2|地域|おすすめ|
 |-|-|-|-|
-|eastus (米国東部)|westus (米国西部)|米国|○|
-|eastus2 (米国東部2)|centralus (米国中部)|米国|○|
-|westus2 (米国西部2)|westcentralus (米国西中部)|米国|○|
-|japaneast (東日本)|japanwest (西日本)|日本|-|
+|eastus2 (米国東部2) AZ対応|centralus (米国中部) AZ対応|米国|○|
+|eastus (米国東部) AZ対応|westus (米国西部)|米国|-|
+|westus2 (米国西部2) AZ対応|westcentralus (米国西中部)|米国|-|
+|japaneast (東日本) AZ対応|japanwest (西日本)|日本|-|
+
+eastus2とcentralusは両方ともAZに対応したペアになっていますので、ラボ実施時におすすめです。
 
 選択したリージョンでリソースの作成に失敗する場合は、別のリージョンをお試しください。
+
+# [AZに対応したリージョン](https://docs.microsoft.com/ja-jp/azure/availability-zones/az-region)
+米国中部,	米国東部,	米国東部 2,	米国西部 2,	カナダ中部,
+フランス中部,	北ヨーロッパ,	英国南部,	西ヨーロッパ,
+Japan East,	東南アジア,	オーストラリア東部,
+US Gov バージニア, 南アフリカ北部, 米国中南部
 
 # 複数行のコマンド貼り付け
 

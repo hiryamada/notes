@@ -14,6 +14,8 @@ NuGet や NPM などのパッケージ マネージャーのサポートも含�
 
 [概要](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-overview)
 
+[登場時のブログ](https://azure.microsoft.com/en-us/blog/introducing-azure-functions/)
+
 Microsoft Learn
 
 - [サーバーレス アプリケーションの作成](https://docs.microsoft.com/ja-jp/learn/paths/create-serverless-applications/)
@@ -127,7 +129,7 @@ Application Insightの設定など、複数の関数に共通する設定をこ�
 
 # function.json
 
-関数アプリ以下の、各関数のディレクトリ以下似配置します。
+関数アプリ以下の、各関数のディレクトリ以下に配置します。
 
 トリガーとバインドの設定をこのファイルに記述します。
 
