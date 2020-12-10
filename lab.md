@@ -33,7 +33,7 @@ Cloud Shell が 20 分間、操作をしない状態にすると、タイムア�
 
 # Cloud Shellでの貼り付け
 
-Cloud Shellで貼り付けを行う場合は、`Ctrl + Shift + V` を使用してください。
+(Windowsをご利用の場合) Cloud Shellで貼り付けを行う場合は、`Ctrl + Shift + V` または `Shift + Insert` を使用してください。
 
 # Cloud Shell でのファイルの編集について
 
@@ -42,3 +42,9 @@ Cloud Shellで貼り付けを行う場合は、`Ctrl + Shift + V` を使用し�
 「{}」ボタン（エディターを開く）で、エディターを起動できます。
 
 エディターを閉じる際は、Cloud Shell右上の「✕」ではなく、「...」アイコンから「エディターを閉じる」、または `Ctrl + Q`で閉じてください。
+
+# Mac での Cloud Shell のフォントについて
+
+[Azure Cloud Shellでフォント表示がおかしい場合の対処法](https://qiita.com/aical/items/f7a4c6cc0499936e7180)
+
+
