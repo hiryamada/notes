@@ -1,0 +1,1 @@
+https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500

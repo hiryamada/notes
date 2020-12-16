@@ -1,4 +1,4 @@
-# Azure Pass サブスクリプションの有効化
+# Azure Pass サブスクリプションの入手
 
 ## 事前の準備
 
@@ -27,25 +27,25 @@
 - 以上で、Microsoftアカウントに、「Azure Pass - スポンサー プラン」というAzureサブスクリプションが作られました。
 - このInPrivateウィンドウ（シークレットウィンドウ、プライベートウィンドウ）は閉じてもかまいません。
 
-これで、お作りになったMicrosoftアカウントで [Azure portal](https://portal.azure.com/) にサインインし、有効化したAzure Passサブスクリプションを使用して、ラボを実施することができます。
+これで、お作りになったMicrosoftアカウントで [Azure portal](https://portal.azure.com/) にサインインし、入手したAzure Passサブスクリプションを使用して、ラボを実施することができます。
 
 このサブスクリプションの有効期限や、クレジットの残高は、[Microsoft Azure Sponsorship クレジット残高](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。
 
 ## 注意
 
-Azure Passサブスクリプションの有効化は、1つのMicrosoftアカウントに対して1回だけ実行できます。トレーニング開始時に、1回だけ実施していただければOKです。
+Azure Passサブスクリプションの入手は、1つのMicrosoftアカウントに対して1回だけ実行できます。トレーニング開始時に、1回だけ実施していただければOKです。
 
 ## トラブルシューティング
 
 エラーメッセージ「Try again later - Sorry there's something templrarily wrong with this site.」
 
 - 原因：
-  - このMicrosoftアカウントで、Azure Passサブスクリプションの有効化に失敗している状態です。（失敗したけれども、すでに有効化が行なわれたと、Azure Passのシステム側で判断されてしまっています。）
-  - または、このMicrosoftアカウントで、すでに有効化が行なわれています。
+  - このMicrosoftアカウントで、Azure Passサブスクリプションの入手に失敗している状態です。（失敗したけれども、すでに入手が行なわれたと、Azure Passのシステム側で判断されてしまっています。）
+  - または、このMicrosoftアカウントで、すでに入手が行なわれています。
 - 対処：
   - Microsoftアカウントをサイン アウトします。
   - 別のMicrosoftアカウントを作り直してください。
-  - 作り直したアカウントで、再度、Azure Pass サブスクリプションの有効化を行ってください。
+  - 作り直したアカウントで、再度、Azure Pass サブスクリプションの入手を行ってください。
 
 エラーメッセージ「This promo code has already been redeemed by another user. Please contact your Microsoft representative for a new Azure Pass promo code.」
 
