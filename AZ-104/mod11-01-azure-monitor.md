@@ -1,6 +1,7 @@
 Azure Monitor
 
 
+
 https://www.slideshare.net/ssuser411bae/azure-monitor-log
 
 
@@ -19,4 +20,14 @@ https://docs.microsoft.com/ja-jp/azure/azure-monitor/terminology
 
 パートナー統合
 https://docs.microsoft.com/ja-jp/azure/azure-monitor/platform/partners#datadog
+
+# [Azure Monitor for VMs](https://docs.microsoft.com/ja-jp/azure/azure-monitor/insights/vminsights-overview)
+
+Azure Monitor for VMs では、実行中のプロセスや他のリソースへの依存関係など、仮想マシンと仮想マシン スケール セットのパフォーマンスと正常性が監視されます。 それは、パフォーマンスのボトルネックとネットワークの問題を識別することによって、重要なアプリケーションのパフォーマンスと可用性を予測するのに役立ち、問題が他の依存関係に関連しているかどうかを把握することにも役立つ可能性があります。
+
+# [アクションルール](https://docs.microsoft.com/ja-jp/azure/azure-monitor/platform/alerts-action-rules?tabs=portal)
+
+アラートによって生成される通知を抑制すると便利なシナリオは多数あります。 これらのシナリオは、**計画メンテナンス期間中の抑制**から、**業務時間外の抑制**まで多岐にわたります。 
+
+アクション ルールを使用すると、Azure Resource Manager の任意のスコープ (Azure サブスクリプション、リソース グループ、ターゲット リソース) で、アクションを定義または抑制できます。
 

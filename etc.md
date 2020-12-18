@@ -23,3 +23,12 @@ https://www.twilio.com/ja/sendgrid/email-api
 https://sendgrid.kke.co.jp/docs/Integrate/Partners/Microsoft_Azure.html
 
 
+# パケットキャプチャ
+
+https://techinfoofmicrosofttech.osscons.jp/index.php?%E9%9B%BB%E6%96%87%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%EF%BC%88%E3%83%91%E3%82%B1%E3%83%83%E3%83%88%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%EF%BC%89
+
+# プロセスの監視
+
+Procmon
+
+[ProcMon for linux](https://github.com/microsoft/ProcMon-for-Linux)

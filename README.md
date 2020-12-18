@@ -17,7 +17,7 @@
 
 ラボの注意点/ヒント: [ラボ全般](lab.md) / [AZ-104](AZ-104/lab.md)
 
-認定試験: [AZ-900 Fundamentals](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900) / [AZ-104 Administrator](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104) / [AZ-204 Developing](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204) / 認定試験トップ 試験の説明 / [オンライン試験](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi) / [更新](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification)
+認定試験: [AZ-900 Fundamentals](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900) / [AZ-104 Administrator](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104) / [AZ-204 Developing](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204) / [認定試験トップ](https://docs.microsoft.com/ja-jp/learn/certifications/) / [認定試験のドキュメント](https://docs.microsoft.com/ja-jp/learn/certifications/certification-exams) / [オンライン試験](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi) / [更新](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification) / [認定サポートフォーラム](https://aka.ms/MCTForum)
 
 # 講義メモ
 

@@ -43,6 +43,17 @@
   - [PSI](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi)
 
 
+# 認定試験の有効期限は？
+
+
+- 2021年6月より前に取得した ロールベースの専門資格(AZ-104等)は、**取得した日から2年間**有効です。
+- 2021年6月以降、取得した ロールベース または専門認定 はいずれも、**取得した日から1年間**有効となります。
+
+6か月以内に有効期限が切れる有効な認定資格をお持ちの方は、**Microsoft Learnの更新アセスメントに合格することで、毎年、無料で認定資格を更新することができます**。
+
+[詳しくはこちらをご覧ください](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification#%E8%AA%8D%E5%AE%9A%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88)。
+
+
 # Azureはどうやって勉強すればよいですか？
 
 [Microsoft LearnのAzureコンテンツ](https://docs.microsoft.com/ja-jp/search/?terms=azure&category=Learn)
