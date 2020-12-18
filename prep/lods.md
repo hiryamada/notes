@@ -34,7 +34,7 @@
 - 対処：
   - Microsoftアカウントをサイン アウトします
   - 念の為、Webブラウザを閉じ、再度Webブラウザを開きます。
-  - 前の手順で作成した、新しいMicrosoftアカウントで、[演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/)にサイン インしてください。
+  - 前の手順で作成した、新しいMicrosoftアカウントで、[演習環境 - Learn on Demand LMS (LODS) (外部サイト)](https://tsfb.learnondemand.net/)にサイン インしてください。
 
 「接続の問題？ ラボマシンへの接続が中断されたようです。接続の再試行」という表示が出ます。
 - 原因：
