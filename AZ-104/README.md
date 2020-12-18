@@ -42,6 +42,9 @@
   - [ストレージの管理ツール](mod07-06-admin.md)
   - [ラボ7](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_07-Manage_Azure_Storage.md)
 - モジュール8 Azure Virtual Machines - テキストを参照
-- モジュール9 サーバーレス コンピューティング - テキストを参照
-- モジュール10 データ保護 - テキストを参照
+- モジュール9 サーバーレス コンピューティング
+  - [Azure App Service](mod09-01-appservice.md)
+  - [Azure Container Instances](mod09-02-container.md)
+  - [Azure Kubernetes Service](mod09-03-aks.md)
+- [モジュール10 データ保護](mod10-backup.md)
 - モジュール11 監視 - テキストを参照
