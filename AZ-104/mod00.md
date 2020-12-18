@@ -5,13 +5,14 @@
 - 初級 ★
   - AZ-900 Azure Fundamentals
 - 中級 ★★
-  - AZ-104 Azure Administrator
+  - **AZ-104 Azure Administrator**
 - 上級 ★★★
   - AZ-303 Azure Architect Technologies
   - AZ-304 Azure Architect Design
 
 # 講義とラボ
-講義(60min)＋ラボ(60min)
+
+講義(60分)＋ラボ(30～60分) 時間配分は前後する場合があります。
 
 モジュールによっては複数のラボがあります。
 
@@ -30,8 +31,8 @@
 - Day 3
   - モジュール 07: Azure Storage 
   - モジュール 08: Azure Virtual Machines 
-  - モジュール 09: サーバーレス コンピューティング 
 - Day 4
+  - モジュール 09: サーバーレス コンピューティング 
   - モジュール 10: データ保護
   - モジュール 11: 監視
 

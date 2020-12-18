@@ -8,17 +8,20 @@
 
 ご不明点は、講師までチャットか音声でご質問ください。
 
-# クイック リンク
+# 講義ノート
 
-[Azure portal](https://portal.azure.com/) / [Skillpipe](https://www.skillpipe.com/) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
-/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) / [Azure Feedback](https://feedback.azure.com/)
+- [AZ-104](AZ-104/README.md)
+- [AZ-204](AZ-204/README.md)
+- [AZ-500](AZ-500/README.md)
 
 ラボ: [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) - 「Instructions/Labs」内の各Markdownファイル
 
 ラボの注意点/ヒント: [ラボ全般](lab.md) / [AZ-104](AZ-104/lab.md)
 
+# クイック リンク
+
+[Azure portal](https://portal.azure.com/) / [Skillpipe](https://www.skillpipe.com/) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
+/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) / [Azure Feedback](https://feedback.azure.com/)
+
 認定試験: [AZ-900 Fundamentals](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900) / [AZ-104 Administrator](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104) / [AZ-204 Developing](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204) / [認定試験トップ](https://docs.microsoft.com/ja-jp/learn/certifications/) / [認定試験のドキュメント](https://docs.microsoft.com/ja-jp/learn/certifications/certification-exams) / [オンライン試験](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi) / [更新](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification) / [認定サポートフォーラム](https://aka.ms/MCTForum)
 
-# 講義メモ
-
-- [AZ-104](AZ-104/README.md)
