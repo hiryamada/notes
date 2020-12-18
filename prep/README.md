@@ -4,7 +4,7 @@
 
 以降、[Azure Portal](https://portal.azure.com) にアクセスし、作成したMicrosoftアカウントでサイン インすることができます。
 
-# 3種類のアカウントについて
+# アカウントについてのご説明
 
 トレーニングをご受講いただくにあたり、3種類のアカウントを使い分ける必要がありますので、ご注意ください。
 
@@ -18,21 +18,19 @@
    - Azure Passサブスクリプションの取得に使用
    - Azure portalへのログインに使用
 
-# [テキストの準備](skillpipe.md)
+# [1.テキストの準備](skillpipe.md)
 
 トレーニングでは、Skillpipeという電子テキスト システムを使用して、テキストを表示します。
 
-# [新しいMicrosoftアカウントの作成](msa.md)
+# [2.今回のトレーニング用の新しいMicrosoftアカウントの作成](msa.md)
 
-今回のトレーニングのご受講用の、新しいMicrosoftアカウントの作成を行ってください。
+すべてのご受講者様に、必ず、**今回のトレーニング用の新しいMicrosoftアカウント**をお作りいただく必要があります。
 
-すべてのご受講者様に、必ず、新しいMicrosoftアカウントをお作りいただく必要があります。
-
-# [演習環境での Promo Code の入手](lods.md)
+# [3.演習環境での Promo Code の入手](lods.md)
 
 [演習環境 - Learn on Demand LMS (LODS)](lods.md) にログインして、Promo Codeを入手します。
 
-# [Azure Passサブスクリプションの入手](azurepass.md)
+# [4.Azure Passサブスクリプションの入手](azurepass.md)
 
 演習用の無料のサブスクリプションである、[Microsoft Azure Passサブスクリプション](azurepass.md)を入手します。
 
@@ -41,7 +39,7 @@
 このサブスクリプションのクレジットや有効期限は、
 [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)のページでご確認いただけます。
 
-# [ソフトウェアのセットアップ](env.md)
+# [5.ソフトウェアのセットアップ](env.md)
 ご自身のPCでラボの演習を行いたい場合は、[ソフトウェアのセットアップ](env.md)を行ってください。
 
 ブラウザでアクセスできる演習環境である「Learn on Demand LMS (LODS)」をご利用になる場合は、ソフトウェアのセットアップは不要です。

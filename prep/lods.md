@@ -7,7 +7,7 @@
 
 ## 手順
 
-- [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/)にアクセスします。
+- [演習環境 - Learn on Demand LMS (LODS) (外部サイト)](https://tsfb.learnondemand.net/)にアクセスします。
 - 「Sign In」ボタンをクリックします。
 - 「How would you like to sign in?」では、「Microsoft Account」をクリックします。
 - Microsoftアカウントへのサイン インが求められますので、今回のコース用に作成したMicrosoftアカウントでサイン インします。
@@ -27,7 +27,7 @@
 
 # トラブルシューティング
 
-「トレーニングキーの引き換え」が表示されません。「サイト管理」が表示されています。https://tsfb.learnondemand.net/ にアクセスすると、https://tsfb.learnondemand.net/Admin にリダイレクトされてしまいます。
+「トレーニングキーの引き換え」が表示されません。「サイト管理」が表示されています。`https://tsfb.learnondemand.net/` にアクセスすると、`https://tsfb.learnondemand.net/Admin` にリダイレクトされてしまいます。
 
 - 原因：
   - 受講者ではなく講師の権限でアクセスしているようです。
