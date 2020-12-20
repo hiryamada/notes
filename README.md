@@ -20,8 +20,12 @@
 
 # クイック リンク
 
-[Azure portal](https://portal.azure.com/) / [Skillpipe](https://www.skillpipe.com/) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
-/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) / [Azure Feedback](https://feedback.azure.com/)
+トレーニング関連: [Azure portal](https://portal.azure.com/) / [Skillpipe](https://www.skillpipe.com/) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
+/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) 
 
-認定試験: [AZ-900 Fundamentals](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900) / [AZ-104 Administrator](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104) / [AZ-204 Developing](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204) / [認定試験トップ](https://docs.microsoft.com/ja-jp/learn/certifications/) / [認定試験のドキュメント](https://docs.microsoft.com/ja-jp/learn/certifications/certification-exams) / [オンライン試験](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi) / [更新](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification) / [認定サポートフォーラム](https://aka.ms/MCTForum)
+Azure全般: [Azureの全サービス](https://azure.microsoft.com/ja-jp/services/) / [ドキュメント](https://docs.microsoft.com/ja-jp/azure/) / [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/) / [トラブルシューティング](https://docs.microsoft.com/ja-jp/troubleshoot/azure/)
+
+お問い合わせ: [新しいサポートリクエストの作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) / [Azure Feedback](https://feedback.azure.com/)
+
+認定試験関連: [AZ-900 Fundamentals](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900) / [AZ-104 Administrator](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104) / [AZ-204 Developing](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204) / [認定試験トップ](https://docs.microsoft.com/ja-jp/learn/certifications/) / [認定試験のドキュメント](https://docs.microsoft.com/ja-jp/learn/certifications/certification-exams) / [オンライン試験](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi) / [更新](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification) / [認定サポートフォーラム](https://aka.ms/MCTForum)
 

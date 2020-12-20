@@ -26,8 +26,8 @@
 - モジュール5 サイト間接続
   - [VNETピアリング](mod05-01-peering.md)
   - [ラボ5](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.md)
-  - VPN Gateway接続 - テキストを参照
-  - ExpressRouteおよびVirtual WAN - テキストを参照
+  - VPN Gateway接続 - テキスト/[補足資料](pdf/mod05/VNet間接続.pdf)を参照
+  - ExpressRouteおよびVirtual WAN - テキスト/[補足資料](pdf/mod05/Azure%20ExpressRoute.pdf)を参照
 - モジュール6 ネットワークトラフィック管理
   - [ネットワークルーティングおよびエンドポイント](mod06-01-routing.md)
   - [Azure Load Balancer](mod06-02-lb.md)
@@ -41,7 +41,9 @@
   - [ストレージのセキュリティ](mod07-05-security.md)
   - [ストレージの管理ツール](mod07-06-admin.md)
   - [ラボ7](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_07-Manage_Azure_Storage.md)
-- モジュール8 Azure Virtual Machines - テキストを参照
+- モジュール8 Azure Virtual Machines
+  - [VM](mod08-01-vm.md)
+  - [VMSS](mod08-02-vmss.md)
   - [ラボ8](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_08-Manage_Virtual_Machines.md)
 - モジュール9 サーバーレス コンピューティング
   - [Azure App Service](mod09-01-appservice.md)
