@@ -25,9 +25,48 @@ AMQP 1.0, JMS 2.0(Service Bus Premium), JMS 1.0(Service Bus Standard)
 
 メッセージは キュー に送受信されます。 受信側アプリがメッセージを受信して処理できるようになるまで、キューがメッセージを格納します。
 
+[QueueClient](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.servicebus.queueclient?view=azure-dotnet)
+
+`SendAsync(Message)`
+
+# [Service Bus キューの作成](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-quickstart-portal#create-a-namespace-in-the-azure-portal)
+
+「名前空間」を作成。このとき、Basic/Standard/Premiumを指定。
+
+Premiumの場合は、メッセージングユニットの数を指定。ゾーン冗長を指定。
+
 # Service Bus [トピック](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-messaging-overview#topics)
 
 トピック を使用してメッセージを送受信することもできます。 キューはポイント間通信によく使用されますが、トピックは[パブリッシュ/サブスクライブ](https://ja.wikipedia.org/wiki/%E5%87%BA%E7%89%88-%E8%B3%BC%E8%AA%AD%E5%9E%8B%E3%83%A2%E3%83%87%E3%83%AB)のシナリオで役立ちます。
+
+[TopicClient](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.servicebus.topicclient?view=azure-dotnet)
+
+`SendAsync(Message)`
+
+# Service Busトピックの作成
+
+トピック/サブスクリプションを使用する場合は、StandardまたはPremiumを指定。（Basicは不可）
+
+# トピックフィルター
+
+サブスクライバーは、トピックから受信するメッセージを定義できます。 
+
+これらのメッセージは、1 つ以上の名前付きのサブスクリプション ルールの形式で指定されます。 
+
+各ルールは、特定のメッセージを選択する条件と、選択したメッセージを注釈するアクションで構成されます。
+
+- ブール値フィルター (TrueFilter/FalseFilter)
+- SQLフィルター (SqlFilter)
+- 相関関係フィルター (CorrelationFilter)
+
+可能な場合は、アプリケーションでは、SQLフィルターではなく、処理効率が高く、スループットに与える影響が少ない、相関関係フィルターを選択してください。
+
+フィルターおよびアクションでは、パーティション分割とルーティングという、さらに 2 つのパターン グループが作成されます。
+
+https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/topic-filters#examples
+
+https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-tutorial-topics-subscriptions-portal
+
 
 # Active なメッセージとは？
 
