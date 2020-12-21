@@ -92,6 +92,11 @@ https://azure.microsoft.com/ja-jp/pricing/calculator/
 
 https://azure.microsoft.com/ja-jp/pricing/tco/calculator/
 
+# Azure [開発/テスト価格](https://azure.microsoft.com/ja-jp/pricing/dev-test/)
+
+- [Visual Studio サブスクライバー向け](https://azure.microsoft.com/ja-jp/pricing/member-offers/credit-for-visual-studio-subscribers/)
+- [エンタープライズ 開発/テスト](https://azure.microsoft.com/ja-jp/offers/ms-azr-0148p/)
+- [従量課金制 開発/テスト](https://azure.microsoft.com/ja-jp/offers/ms-azr-0023p/)
 
 # 無料アカウント
 
@@ -107,4 +112,21 @@ https://azure.microsoft.com/ja-jp/free/
 https://docs.microsoft.com/ja-jp/azure/cost-management-billing/manage/create-free-services
 
 https://azure.microsoft.com/ja-jp/free/free-account-faq/
+
+# Cosmos DB
+
+「[Azure Cosmos DB を無料で試す](https://azure.microsoft.com/ja-jp/try/cosmosdb/)」では、Azure アカウントにサインアップしたりクレジット カードを使用したりせずに、クラウドでの Azure Cosmos DB を無料のエクスペリエンスとして試すことができます。 Azure Cosmos DB 試用アカウントでは、利用期間が限られています (現在は 30 日)。 
+
+# App Service
+
+https://azure.microsoft.com/ja-jp/pricing/details/app-service/windows/
+
+Free (F1) プランは無料で使えます。
+
+# Azure AD
+
+https://azure.microsoft.com/ja-jp/pricing/details/active-directory/
+
+Free エディションは、Azure、Dynamics 365、Intune、Power Platform などの商用のオンライン サービスのサブスクリプションに含まれています。
+
 
