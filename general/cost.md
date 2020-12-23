@@ -130,3 +130,7 @@ https://azure.microsoft.com/ja-jp/pricing/details/active-directory/
 Free エディションは、Azure、Dynamics 365、Intune、Power Platform などの商用のオンライン サービスのサブスクリプションに含まれています。
 
 
+# ホット、クール、アーカイブ層
+
+ストレージコスト：ホット＞クール＞アーカイブ
+
