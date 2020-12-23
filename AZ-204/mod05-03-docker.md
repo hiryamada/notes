@@ -1,3 +1,11 @@
+# Docker / Kubernetes の基本
+
+Microsoft Learn
+
+[Azure でコンテナーを管理する](https://docs.microsoft.com/ja-jp/learn/paths/administer-containers-in-azure/)
+
+
+
 # 基本的な用語・概念
 
 [コンテナー（コンテナー型仮想化）](https://www.google.com/search?q=%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%83%BC%E5%9E%8B%E4%BB%AE%E6%83%B3%E5%8C%96)
@@ -9,6 +17,11 @@
 [コンテナーレジストリ](https://www.google.com/search?q=%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%83%BC%E3%83%AC%E3%82%B8%E3%82%B9%E3%83%88%E3%83%AA)
 
 [コンテナーオーケストレーション](https://www.redhat.com/ja/topics/containers/what-is-container-orchestration)
+
+
+[半日でわかる コンテナー技術 (入門編)](https://www.slideshare.net/ToruMakabe/ss-120427179)
+
+
 
 # Docker
 

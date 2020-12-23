@@ -20,7 +20,7 @@ App Configuration を使用すると、以下のシナリオを簡単に実装�
 
 - さまざまな環境や地域に対応した階層型構成データの管理と配布を一元化する
 - アプリケーションを再デプロイまたは再起動することなく、アプリケーション設定を動的に変更する
-- 機能の可用性をリアルタイムで制御する
+- [機能の可用性をリアルタイムで制御する - 機能フラグ](https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/use-feature-flags-dotnet-core)
 
 # App ConfigurationとKey Vault
 
@@ -38,4 +38,12 @@ https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/use-key-vault-ref
 # リソースの作成
 
 検索＞「App Configuration」
+
+# ラベル
+
+[値を設定するときに「ラベル」を追加する。](https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/howto-labels-aspnet-core#specify-a-label-when-adding-a-configuration-value)
+
+# [ラベル付きの値のコードからの読み込み](https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/howto-labels-aspnet-core#load-configuration-values-with-a-specified-label)
+
+Select()を2回実行する。1回めはラベルなしの構成値を読み取る。2回めは現在の環境（Prodなど）に対応するラベルが付いた構成値を読み取る。1回目の構成値は、2回めに読み込んだ構成値によって上書きされる。
 

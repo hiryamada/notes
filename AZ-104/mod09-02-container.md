@@ -1,4 +1,16 @@
-[半日でわかる コンテナー技術 (入門編)](https://www.slideshare.net/ToruMakabe/ss-120427179)
+# Azure Container Instances
+
+Azure で最も高速かつ簡単にコンテナーを実行する
+
+[製品ページ](https://azure.microsoft.com/ja-jp/services/container-instances/)
+
+[価格](https://azure.microsoft.com/ja-jp/pricing/details/container-instances/)
+
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-overview)
+
+Microsoft Learn
+Azure Container Instances で Docker コンテナーを実行する
+https://docs.microsoft.com/ja-jp/learn/modules/run-docker-with-azure-container-instances/
 
 
 ■コンテナで、VMのようなサイズを選べますか？
@@ -15,5 +27,22 @@ https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-c
 コンテナー グループに割り当ての最小値は、 1 CPU と 1 GB メモリとなります。
 https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-container-groups#minimum-and-maximum-allocation
 
-最大値は、4コア、16GBメモリとなります。
-https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-faq#can-i-deploy-with-more-than-4-cores-and-16-gb-of-ram
+最大値は、[4コア、16GBメモリとなります](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-faq#can-i-deploy-with-more-than-4-cores-and-16-gb-of-ram)。[リージョンによって異なります](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-region-availability)。
+
+
+
+# [コンテナーグループ](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-container-groups)
+
+
+Azure Container Instances の最上位のリソースは、コンテナー グループです。
+
+コンテナー グループは、同じホスト コンピューター上にスケジュール設定される (get scheduled) コンテナーのコレクションです。 
+
+※[スケジュール：コンテナ（Pod）をコンピューター（ノード、クラスター）に配置すること。](https://access.redhat.com/documentation/ja-jp/openshift_container_platform/3.11/html/cluster_administration/scheduling)
+
+
+コンテナー グループ内のコンテナーでは、ライフサイクル、リソース、ローカル ネットワーク、ストレージ ボリュームを共有します。 これは、Kubernetes におけるポッドの概念に似ています。
+
+Azure Container Instances では、グループにインスタンスのリソース要求を追加することで、CPU、メモリ、必要に応じて GPU (プレビュー) などのリソースをマルチコンテナー グループに割り当てます。
+
+`az container create`コマンドは、[コンテナーグループを作ります](https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az_container_create)。

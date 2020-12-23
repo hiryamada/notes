@@ -4,8 +4,6 @@ Azure Logic Apps は、ビジネス プロセスの実行を自動化するク�
 
 "Logic Apps デザイナー" と呼ばれるグラフィカル デザイン ツールを使ってアプリを作成します。
 
-
-
 [製品ページ](https://azure.microsoft.com/ja-jp/services/logic-apps/)
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-overview)
@@ -44,15 +42,15 @@ Logic Apps では、アプリの作成に使用できる何百もの事前構築
 
 例：メールを送る、Twitterにツイートを送信する、Slackにメッセージを投稿する、テキストの感情を分析する、など。
 
-# コントロールアクション
+# [ワークフローを制御するアクション](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-workflow-actions-triggers#control-workflow-actions)
 
-Condition：条件分岐
-Switch
-For each
-Until
-Branch
+- [ForEach](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-workflow-actions-triggers#foreach-action)
+- [If (Condition)](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-workflow-actions-triggers#if-action)
+- [Scope](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-control-flow-run-steps-group-scopes)
+- [Switch](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-workflow-actions-triggers#switch-action)
+- [Until](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-workflow-actions-triggers#until-action)
 
-[Power Automate(旧称 Microsoft Flow)などの類似サービスとの比較](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs)
+# [Power Automate(旧称 Microsoft Flow)などの類似サービスとの比較](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs)
 
 Power Automateはビジネスユーザー向け。Logic Appsは開発者向け。
 
@@ -106,3 +104,9 @@ Azure Logic Apps から[オンプレミスのデータ ソースに接続](https
 > 
 https://www.atmarkit.co.jp/ait/articles/1711/22/news031.html
 
+# [ポーリングトリガー](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-workflow-actions-triggers)
+
+ポーリング トリガーでは、定期的にサービスのエンドポイントをチェックすることができます。
+
+[HTTP トリガー](https://docs.microsoft.com/ja-jp/azure/logic-apps/logic-apps-workflow-actions-triggers#http-trigger)
+このトリガーからは、指定の繰り返しスケジュールに基づき、指定の HTTP または HTTPS エンドポイントに要求が送信されます。 その後、トリガーにより応答が確認され、ワークフローの実行状況が判断されます。
