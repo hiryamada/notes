@@ -56,6 +56,8 @@
 
 # Azureはどうやって勉強すればよいですか？
 
+[Microsoft Virtual Training Days](https://www.microsoft.com/ja-jp/events/top/training-days.aspx) - 無料のトレーニングイベント。2 日間両日を受講された方には、各認定試験機関で AZ-900 を無料で受験できる特典をご用意しております。
+
 [Microsoft LearnのAzureコンテンツ](https://docs.microsoft.com/ja-jp/search/?terms=azure&category=Learn)
 
 [Microsoft Azure のオススメの学習方法についてまとめてみる](https://qiita.com/nakazax/items/9311ed4b20d045c094d4)
