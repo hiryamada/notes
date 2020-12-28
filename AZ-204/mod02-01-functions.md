@@ -419,3 +419,16 @@ directionがinのものが入力バインド、outのものが出力バインド
 
 # 「アプリケーション設定」と「接続文字列」の違い
 
+# 設定ファイル
+
+[hosts.json](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-host-json)
+
+host.json メタデータ ファイルには、関数アプリのすべての関数に影響するグローバル構成オプションが含まれています。
+
+[function.json](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-reference)
+
+function.json ファイルには、関数のトリガー、バインド、その他の構成設定を定義します。 
+
+[local.settings.json](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#local-settings-file)
+
+local.settings.json ファイルには、アプリの設定、接続文字列、およびローカルの開発ツールによって使用される設定が格納されます。 local.settings.json ファイル内の設定は、プロジェクトをローカルで実行している場合にのみ使用されます。

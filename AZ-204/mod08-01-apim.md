@@ -50,6 +50,8 @@ It handles other requests by fanning out to multiple services.
 
 API の各リビジョンには、特別な形式の URL を使用してアクセスできます。 クエリ文字列の前ではなく、対象の API の URL の末尾に ;rev={revisionNumber} を追加することで、その API の特定のリビジョンにアクセスします。 
 
+[バージョンとリビジョンについての説明](https://azure.microsoft.com/ja-jp/blog/versions-revisions/)
+
 # 呼び出し元の制限
 
 - OAuth 2.0
