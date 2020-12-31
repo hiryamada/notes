@@ -35,7 +35,7 @@ Azure全般: [Azureの全サービス](https://azure.microsoft.com/ja-jp/service
 
 アーキテクト向け: [アーキテクチャセンター](https://docs.microsoft.com/ja-jp/azure/architecture/) / [WAF](https://docs.microsoft.com/ja-jp/azure/architecture/framework/) / [CAF](https://azure.microsoft.com/ja-jp/cloud-adoption-framework/) / [CDP(クラウドデザインパターン)](https://docs.microsoft.com/ja-jp/azure/architecture/patterns/) / [.NET アプリケーション アーキテクチャ](https://docs.microsoft.com/ja-jp/dotnet/architecture/)
 
-開発者向け: [コードサンプル](https://docs.microsoft.com/ja-jp/samples/browse/) / [.NET](https://dotnet.microsoft.com/) / [.NETのドキュメント](https://docs.microsoft.com/ja-jp/dotnet/)/ [PoCガイド](https://clouddamcdnprodep.azureedge.net/gdc/gdcN9BlkO/original) / [Azure AI Gallery](https://gallery.azure.ai/) / [Fiddler](https://www.telerik.com/fiddler) / [ngrok](https://ngrok.com/)
+開発者向け: [コードサンプル](https://docs.microsoft.com/ja-jp/samples/browse/) / [.NET](https://dotnet.microsoft.com/) / [.NETのドキュメント](https://docs.microsoft.com/ja-jp/dotnet/)/ [PoCガイド](https://clouddamcdnprodep.azureedge.net/gdc/gdcN9BlkO/original) / [Azure AI Gallery](https://gallery.azure.ai/) / [Fiddler](https://www.telerik.com/fiddler) / [ngrok](https://ngrok.com/) / [Visual Studio サブスクリプション($50～$150のクレジット)](https://visualstudio.microsoft.com/ja/subscriptions/)
 
 SAP on Azure: [概要](https://docs.microsoft.com/ja-jp/azure/architecture/reference-architectures/sap/sap-overview)
 
