@@ -23,7 +23,7 @@
 トレーニング関連: [Azure portal](https://portal.azure.com/) / [Skillpipe](https://www.skillpipe.com/) / [Azure Pass](https://www.microsoftazurepass.com/) / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
 / [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) / [Microsoftアカウント](https://account.microsoft.com/account/Account) 
 
-Azure全般: [Azureの全サービス](https://azure.microsoft.com/ja-jp/services/) / [ドキュメント](https://docs.microsoft.com/ja-jp/azure/) / [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/) / [トラブルシューティング](https://docs.microsoft.com/ja-jp/troubleshoot/azure/) / [サポートが終了する製品の一覧](https://docs.microsoft.com/ja-jp/lifecycle/overview/product-end-of-support-overview) / [ライフサイクルのFAQ](https://docs.microsoft.com/ja-jp/lifecycle/faq/general-lifecycle) / [製品およびサービスのライフサイクル情報の検索](https://docs.microsoft.com/ja-jp/lifecycle/products/)
+Azure全般: [Azureの全サービス](https://azure.microsoft.com/ja-jp/services/) / [ドキュメント](https://docs.microsoft.com/ja-jp/azure/) / [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/) / [トラブルシューティング](https://docs.microsoft.com/ja-jp/troubleshoot/azure/) / [サポートが終了する製品の一覧](https://docs.microsoft.com/ja-jp/lifecycle/overview/product-end-of-support-overview) / [ライフサイクルのFAQ](https://docs.microsoft.com/ja-jp/lifecycle/faq/general-lifecycle) / [製品およびサービスのライフサイクル情報の検索](https://docs.microsoft.com/ja-jp/lifecycle/products/) / [Azure モバイル アプリ](https://azure.microsoft.com/ja-jp/features/azure-portal/mobile-app/)
 
 お問い合わせ: [新しいサポートリクエストの作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) / [Azure Feedback](https://feedback.azure.com/) 
 
