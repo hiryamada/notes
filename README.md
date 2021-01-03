@@ -38,6 +38,7 @@ Azure全般:
 / [サポートが終了する製品の一覧](https://docs.microsoft.com/ja-jp/lifecycle/overview/product-end-of-support-overview) 
 / [ライフサイクルのFAQ](https://docs.microsoft.com/ja-jp/lifecycle/faq/general-lifecycle) 
 / [製品およびサービスのライフサイクル情報の検索](https://docs.microsoft.com/ja-jp/lifecycle/products/)
+/ [Azure モバイル アプリ](https://azure.microsoft.com/ja-jp/features/azure-portal/mobile-app/)
 
 お問い合わせ: 
 [新しいサポートリクエストの作成(Azure Portal)](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
@@ -86,6 +87,7 @@ Azure全般:
 / [アプリケーション開発 オンデマンド ウェビナー特集](https://www.microsoft.com/ja-jp/events/top/apps-innovation-webinars.aspx)
 / [dev.to/azure](https://dev.to/azure)
 / [Microsoft Tech Community](https://techcommunity.microsoft.com/)
+/ [Visual Studio サブスクリプション($50～$150のクレジット)](https://visualstudio.microsoft.com/ja/subscriptions/)
 
 SAP on Azure: [概要](https://docs.microsoft.com/ja-jp/azure/architecture/reference-architectures/sap/sap-overview)
 
@@ -403,3 +405,7 @@ IDaaS:
 / [AZURE・PLUS株式会社様](https://www.azure-plus.co.jp/)
 
 
+<<<<<<< HEAD
+=======
+便利:  [Whats my DNS](https://www.whatsmydns.net/) / [確認くん](https://www.ugtop.com/spill.shtml) / [純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
+>>>>>>> 61086a5843c01d9643ab1c13ad275136a0249356
