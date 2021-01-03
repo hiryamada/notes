@@ -403,9 +403,3 @@ IDaaS:
 / [アズーア ヘア アンド スパ](https://www.google.com/search?q=azure+hair+%26+spa)
 / [コート・ダジュール](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%88%E3%83%BB%E3%83%80%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB_(%E6%9B%96%E6%98%A7%E3%81%95%E5%9B%9E%E9%81%BF))
 / [AZURE・PLUS株式会社様](https://www.azure-plus.co.jp/)
-
-
-<<<<<<< HEAD
-=======
-便利:  [Whats my DNS](https://www.whatsmydns.net/) / [確認くん](https://www.ugtop.com/spill.shtml) / [純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
->>>>>>> 61086a5843c01d9643ab1c13ad275136a0249356
