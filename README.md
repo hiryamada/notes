@@ -39,6 +39,7 @@ Azure全般:
 / [ライフサイクルのFAQ](https://docs.microsoft.com/ja-jp/lifecycle/faq/general-lifecycle) 
 / [製品およびサービスのライフサイクル情報の検索](https://docs.microsoft.com/ja-jp/lifecycle/products/)
 / [Azure モバイル アプリ](https://azure.microsoft.com/ja-jp/features/azure-portal/mobile-app/)
+/ [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/)
 
 お問い合わせ: 
 [新しいサポートリクエストの作成(Azure Portal)](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
@@ -118,6 +119,10 @@ MVP(Most Valuable Professional):
 / [Azure boost (ASCII x FIXER)](https://ascii.jp/azure-fixer/) 
 / [CloudSteady 技術FAQ](https://cloudsteady.jp/post/category/faq/) 
 
+Reddit:
+[Azure](https://www.reddit.com/r/AZURE/)
+/ [Microsoft](https://www.reddit.com/r/microsoft/)
+
 Youtube:
 [Microsoft](https://www.youtube.com/user/Microsoft)
 / [Microsoft Azure](https://www.youtube.com/user/windowsazure)
@@ -137,6 +142,7 @@ Youtube:
 / [Microsoft Cloud](https://www.youtube.com/user/MSCloudOS)
 / [Microsoft Education](https://www.youtube.com/user/Microsoftedu)
 / [Xbox](https://www.youtube.com/user/xbox)
+/ [Azure Tips and Tricks](https://www.youtube.com/playlist?list=PLLasX02E8BPCNCK8Thcxu-Y-XcBUbhFWC)
 
 Youtube(日本):
 [日本マイクロソフト株式会社 公式チャンネル](https://www.youtube.com/user/microsoftjapanvideos)
@@ -148,6 +154,11 @@ Youtube(日本):
 / [Microsoft Partner Network Japan](https://www.youtube.com/channel/UClVBYGCEwOkdVMoBClVaTqg)
 / [kosmosebiさん（Azure Thursday Japan等）](https://www.youtube.com/channel/UC3VHyKjqgTGSfRMVS1qET-A)
 / [JAZUG](https://www.youtube.com/channel/UCSPrbgsEVl0azNhQWmkA0pA)
+
+Twitch:
+[Microsoft Developer Community](https://www.twitch.tv/team/microsoftdevcommunity)
+/ [MicrosoftDeveloper](https://www.twitch.tv/MicrosoftDeveloper)
+/ [VisualStudio](https://www.twitch.tv/visualstudio)
 
 Twitter - Microsoft
 [Microsoft](https://twitter.com/microsoft)
@@ -175,7 +186,7 @@ Twitter - Azure全般
 / [Azure DevOps](https://twitter.com/AzureDevOps)
 / [Azure app(モバイルアプリ)](https://twitter.com/azureapp)
 / [Java at Microsoft](https://twitter.com/JavaAtMicrosoft)
-
+/ [BicepLang](https://twitter.com/BicepLang)
 
 Twitter - Azure製品
 / [Microsoft Azure AD](https://twitter.com/azuread)
@@ -319,6 +330,8 @@ Azureとのインテグレーション:
 ツール類（管理者）:
 [Azure Image Builder](https://docs.microsoft.com/ja-jp/azure/virtual-machines/image-builder-overview)
 / [Bicep](https://github.com/Azure/bicep)
+/ [Cloud Maker](https://cloudmaker.ai/)
+/ [Farmer](https://compositionalit.github.io/farmer/)
 
 ツール類（開発者向け）:
 / [Azurite](https://github.com/Azure/Azurite)
@@ -396,7 +409,7 @@ IDaaS:
 [純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
 / [アズールレーン](https://www.azurlane.jp/)
 / [TrySail『azure』](https://www.google.com/search?q=TrySail+Azure)
-/ [AZURE♯（アズールシャープ](http://www.bright-co.jp/NewSite/profile/index.html)
+/ [AZURE♯（アズールシャープ）](http://www.bright-co.jp/NewSite/profile/index.html)
 / [AZUR et MASA UEKI](https://www.google.com/search?q=AZUR+et+MASA+UEKI+Azure)
 / [AZUL BY MOUSSY](https://www.google.com/search?q=AZUL+BY+MOUSSY)
 / [アジュール フォーティーファイブ](https://www.google.com/search?q=%E3%82%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB+%E3%83%95%E3%82%A9%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%83%95%E3%82%A1%E3%82%A4%E3%83%96&oq=%E3%82%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB+%E3%83%95%E3%82%A9%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%83%95%E3%82%A1%E3%82%A4%E3%83%96)
