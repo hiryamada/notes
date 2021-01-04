@@ -21,13 +21,14 @@
 - 前の手順で入手したPromo Codeを入力し、「Claim Promo Code」（プロモーションコードの要求）をクリックします。
 - 「We are processing your request」というページが出ます。**画面の指示に従い、「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。
 - 「Azure Pass - Sponsorship」ページで、氏名などの情報を入力します。
-- 「Subscription Agreement」に同意するためのチェックボックスにチェックを入れます。
-- 「Sign Up」をクリックします。
-- Azure Portalの画面が表示されます。
-- 以上で、Microsoftアカウントに、「Azure Pass - スポンサー プラン」というAzureサブスクリプションが作られました。
-- このInPrivateウィンドウ（シークレットウィンドウ、プライベートウィンドウ）は閉じてもかまいません。
+- 「次へ」をクリックします。
+- 「Subscription Agreement（サブスクリプション契約）」等に同意するためのチェックボックスにチェックを入れます。
+- 「サインアップ（Sign Up）」をクリックします。
+- 「お客様の情報を確認しています」「アカウントを設定しています」などのメッセージが出ます。そのまま待ちます。
+- Azure portalの画面に移動し、「Microsoft Azureへようこそ」と表示されます。
+- 「ツアーの開始」をクリックして、Azure portalの各部の使い方を確認します。
 
-これで、お作りになったMicrosoftアカウントで [Azure portal](https://portal.azure.com/) にサインインし、入手したAzure Passサブスクリプションを使用して、ラボを実施することができます。
+以上で、Microsoftアカウントに、「Azure Pass - スポンサー プラン」というAzureサブスクリプションが作られました。
 
 このサブスクリプションの有効期限や、クレジットの残高は、[Microsoft Azure Sponsorship クレジット残高](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。
 
