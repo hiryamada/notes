@@ -27,6 +27,7 @@
 / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
 / [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) 
 / [Microsoftアカウント](https://account.microsoft.com/account/Account) 
+/ [Temp Mail](https://www.google.com/search?q=temp+mail)
 
 Azure全般: 
 [全サービス](https://azure.microsoft.com/ja-jp/services/) 
@@ -40,13 +41,14 @@ Azure全般:
 / [製品およびサービスのライフサイクル情報の検索](https://docs.microsoft.com/ja-jp/lifecycle/products/)
 / [Azure モバイル アプリ](https://azure.microsoft.com/ja-jp/features/azure-portal/mobile-app/)
 / [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/)
+/ [Azure Service Health ダッシュボード - サービス正常性(Azure portal)](https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues)
 
 お問い合わせ: 
 [新しいサポートリクエストの作成(Azure Portal)](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
 / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) 
 / [Azure Feedback](https://feedback.azure.com/) 
 
-認定試験関連: 
+認定試験: 
 [AZ-900 Fundamentals](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900) 
 / [AZ-104 Administrator](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104) 
 / [AZ-204 Developing](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204) 
@@ -57,6 +59,10 @@ Azure全般:
 / [更新](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification) 
 / [認定サポートフォーラム](https://aka.ms/MCTForum) 
 / [認定試験解説(トレノケート様)](https://blog.trainocate.co.jp/blog/415_018)
+/ [公式模擬問題(MeasureUp)](https://www.measureup.com/)
+/ Exam Replay (不合格時の再受験が無料) - 
+[ご案内1](https://www.microsoft.com/ja-jp/learning/local-exam-replay.aspx)
+, [ご案内2](https://docs.microsoft.com/ja-jp/learn/certifications/deals)
 
 最新情報: 
 [Azure ブログ](https://azure.microsoft.com/ja-jp/blog/) 
@@ -64,6 +70,10 @@ Azure全般:
 / [Announcements](https://azure.microsoft.com/ja-jp/blog/topics/announcements/) 
 / [Azureのイベント](https://azure.microsoft.com/ja-jp/community/events/)
 / [Channel 9](https://channel9.msdn.com/)
+/ [Microsoft Virtual Training Days](https://www.microsoft.com/ja-jp/events/top/training-days.aspx)
+/ [COVID-19対策](https://www.microsoft.com/ja-jp/mscorp/covid-19-response.aspx)
+/ [Global Skills Initiative-Japan](https://www.microsoft.com/ja-jp/mscorp/gsi/default.aspx)
+/ [Azure更新情報(2015年11月6日～2018 年10月,和訳)](https://azureupdatesj.wordpress.com/)
 
 総合: 
 [Azureリソース](https://azure.microsoft.com/ja-jp/resources/) 
@@ -118,6 +128,21 @@ MVP(Most Valuable Professional):
 / [Publickey](https://www.publickey1.jp/) 
 / [Azure boost (ASCII x FIXER)](https://ascii.jp/azure-fixer/) 
 / [CloudSteady 技術FAQ](https://cloudsteady.jp/post/category/faq/) 
+/ [ゼロからはじめるAzure](https://news.mynavi.jp/series/zeroazure/)
+/ [Azure"超"入門](https://news.mynavi.jp/series/azure/)
+
+ニュースサイト＞クラウド
+[@IT](https://www.atmarkit.co.jp/ait/subtop/cloud.html)
+/ [CloudUser by ITmedia](https://www.itmedia.co.jp/news/subtop/clouduser/)
+/ [クラウドWatch](https://cloud.watch.impress.co.jp/)
+
+IT系ニュース
+[マイナビ＞企業IT](https://news.mynavi.jp/top/business/enterprise/)
+/ [ThinkIT](https://thinkit.co.jp/news/list)
+/ [日経クロステック](https://xtech.nikkei.com/)
+/ [CNet](https://japan.cnet.com/)
+/ [EnterpriseZine](https://enterprisezine.jp/)
+/ [JBpress](https://jbpress.ismedia.jp/category/it-news)
 
 Reddit:
 [Azure](https://www.reddit.com/r/AZURE/)
@@ -250,6 +275,38 @@ Azure Advent Calender:
 / [2017](https://qiita.com/advent-calendar/2017/microsoft-azure-tech)
 / [Microsoft Azure Cognitive Services Advent Calendar 2020](https://qiita.com/advent-calendar/2020/cognitive)
 [求ム！Cloud Nativeアプリケーション開発のTips！【PR】日本マイクロソフト Advent Calendar 2020](https://qiita.com/advent-calendar/2020/azure-cloudnative)
+/ Microsoft Azure Tech Advent Calendar
+[2020](https://qiita.com/advent-calendar/2020/microsoft-azure-tech)
+, [2019](https://qiita.com/advent-calendar/2019/microsoft-azure-tech)
+, [2018](https://qiita.com/advent-calendar/2018/microsoft-azure-tech)
+, [2017](https://qiita.com/advent-calendar/2017/microsoft-azure-tech)
+/ Office 365 Advent Calendar
+[2020](https://adventar.org/calendars/5362)
+,[2019](https://adventar.org/calendars/3960/)
+,[2018](https://adventar.org/calendars/3184/)
+,[2017](https://adventar.org/calendars/2585)
+,[2016](https://adventar.org/calendars/1396)
+,[2015](https://adventar.org/calendars/790)
+,[2014](https://adventar.org/calendars/382)
+,[2013](https://adventar.org/calendars/134)
+/ C# Advent Calendar
+[2020](https://qiita.com/advent-calendar/2020/csharplang)
+,[2019その1](https://qiita.com/advent-calendar/2019/c-sharp)
+,[2019その2](https://qiita.com/advent-calendar/2019/c-sharp-2)
+,[2018](https://qiita.com/advent-calendar/2018/c-sharp)
+,[2017](https://qiita.com/advent-calendar/2017/csharp)
+,[2016](https://qiita.com/advent-calendar/2016/csharp)
+/ Microsoft Learn Advent Calendar 
+[2020](https://adventar.org/calendars/5090)
+,[2019](https://adventar.org/calendars/4507)
+/ Q# Advent Calendar [2020](https://devblogs.microsoft.com/qsharp/q-advent-calendar-2020/)
+/ Microsoft Power BI Advent Calendar 
+[2020](https://qiita.com/advent-calendar/2020/powerbi)
+,[2019](https://qiita.com/advent-calendar/2019/powerbi)
+,[2018](https://qiita.com/advent-calendar/2018/powerbi)
+,[2017](https://qiita.com/advent-calendar/2017/power-bi)
+/ Microsoft Research Internship アルムナイ Advent Calendar [2020](https://adventar.org/calendars/5107)
+/ [Azure Advent Calendar 2019](https://azureadventcalendar.com/)
 
 Azureデータセンター: 
 [バーチャルツアー](https://jpmscom-cloudplatform.azurewebsites.net/ja-jp/cloud-platform/ms.datacenter.tour/datacenter/index.html) 
@@ -399,11 +456,19 @@ IDaaS:
 / [ニフクラ](https://pfs.nifcloud.com/) 
 / [DigitalOcean](https://www.digitalocean.com/)
 / [ConoHa](https://www.conoha.jp/)
+/ [FJcloud-O](https://jp.fujitsu.com/solutions/cloud/fjcloud/-o/)
+/ [Cloudn（サービス終了）](https://www.ntt.com/business/services/cloud/iaas/cloudn.html)
+/ [WebARENA](https://web.arena.ne.jp/)
 
 便利: 
 [Whats my DNS](https://www.whatsmydns.net/) 
 / [確認くん](https://www.ugtop.com/spill.shtml) 
 / [Downdetector](https://downdetector.jp/)
+
+豆知識:
+[azure（単語）](https://ja.wiktionary.org/wiki/azure)
+/ [Contoso](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%88%E3%82%BD)
+/ [Microsoftのコーポレートスローガンの推移](https://www.quora.com/What-is-Microsofts-corporate-slogan-What-does-it-mean)
 
 その他のAzure:
 [純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
@@ -416,3 +481,4 @@ IDaaS:
 / [アズーア ヘア アンド スパ](https://www.google.com/search?q=azure+hair+%26+spa)
 / [コート・ダジュール](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%88%E3%83%BB%E3%83%80%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB_(%E6%9B%96%E6%98%A7%E3%81%95%E5%9B%9E%E9%81%BF))
 / [AZURE・PLUS株式会社様](https://www.azure-plus.co.jp/)
+/ [株式会社AZURE様](https://www.a-zr.com/)
