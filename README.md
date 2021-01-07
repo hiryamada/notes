@@ -41,7 +41,9 @@ Azure全般:
 / [製品およびサービスのライフサイクル情報の検索](https://docs.microsoft.com/ja-jp/lifecycle/products/)
 / [Azure モバイル アプリ](https://azure.microsoft.com/ja-jp/features/azure-portal/mobile-app/)
 / [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/)
+/ [Azureの状態（ステータスダッシュボード）](https://status.azure.com/ja-jp/status)
 / [Azure Service Health ダッシュボード - サービス正常性(Azure portal)](https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues)
+/ [Azure DevOpsの状態](https://status.dev.azure.com/)
 
 お問い合わせ: 
 [新しいサポートリクエストの作成(Azure Portal)](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
@@ -74,11 +76,14 @@ Azure全般:
 / [COVID-19対策](https://www.microsoft.com/ja-jp/mscorp/covid-19-response.aspx)
 / [Global Skills Initiative-Japan](https://www.microsoft.com/ja-jp/mscorp/gsi/default.aspx)
 / [Azure更新情報(2015年11月6日～2018 年10月,和訳)](https://azureupdatesj.wordpress.com/)
+/ [Instagram(microsoftdeveloper)](https://www.instagram.com/microsoftdeveloper/)
+/ [Facebook(@microsoftazure)](https://www.facebook.com/microsoftazure)
 
 総合: 
 [Azureリソース](https://azure.microsoft.com/ja-jp/resources/) 
 / [Azure Baseコンテンツ ポータル](https://www.microsoft.com/ja-jp/events/azurebase/contents/) 
 / [Azure Charts](https://azurecharts.com/) 
+/ [Azure Overview(プレビュー/GAの日付等)](https://azure-overview.com/)
 / [アイコン](https://docs.microsoft.com/ja-jp/azure/architecture/icons/)
 
 アーキテクト向け: 
@@ -326,7 +331,7 @@ Azureデータセンター:
 / 澤円さんの[インタビュー](https://ascii.jp/elem/000/001/474/1474081/), [スライド](https://www.slideshare.net/decode2016/spl002) 
 / コンテナー型データセンター 記事[1](https://www.businessinsider.jp/post-222637), [2](https://www.atmarkit.co.jp/ait/articles/2010/21/news061.html) 
 / 海底データセンター(Project Natick) 記事[1](https://news.microsoft.com/ja-jp/features/200915-project-natick-underwater-datacenter/), [2](https://japan.cnet.com/article/35159756/), [3](https://pc.watch.impress.co.jp/docs/news/1225160.html), [4](https://www.gizmodo.jp/2018/08/live-stream-of-microsoft-underwater-datacenter.html) 
-/ [祝 Azure 日本データセンター by クラウド ガール](https://channel9.msdn.com/Series/Microsoft-Virtual-Academy-Japan/claudia)
+/ [信頼性のインフォグラフィック](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf)
 
 セキュリティ: 
 [信頼できるクラウド](https://azure.microsoft.com/ja-jp/overview/trusted-cloud/) 
@@ -359,6 +364,8 @@ AWSとのインテグレーション:
 / [Azure Migrateを使用してEC2 インスタンスを Azure に移行する](https://docs.microsoft.com/ja-jp/azure/site-recovery/migrate-tutorial-aws-azure) 
 / [Azure ADアカウントを使用してAWSにサインインする](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/amazon-web-service-tutorial) / [Azure Security Center を AWS に接続してワークロードを保護する](https://docs.microsoft.com/ja-jp/azure/security-center/quickstart-onboard-aws) 
 / [Azure Sentinel を AWS CloudTrail に接続して管理イベントをストリーミングする](https://docs.microsoft.com/ja-jp/azure/sentinel/connect-aws)
+/ [Azure Arc enabled servers(AWSやオンプレなどの環境で稼働するVM・SQL Server等をAzureから管理)](https://www.publickey1.jp/blog/20/windowslinuxazureazure_arc_enabled_serversignite_2020.html)
+/ [Azure Arc enabled data services(AWSやオンプレなどの環境で稼働するSQL Managed InstanceやPostgreSQLをAzureから管理)](https://www.publickey1.jp/blog/20/azure_sqlawsazure_arc_enabled_data_servicesignite_2020.html)
 
 AWSエンジニア向けAzureトレーニング: 
 [AZ-010 Azure Administration for AWS SysOps](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-010t00) 
@@ -469,6 +476,15 @@ IDaaS:
 [azure（単語）](https://ja.wiktionary.org/wiki/azure)
 / [Contoso](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%88%E3%82%BD)
 / [Microsoftのコーポレートスローガンの推移](https://www.quora.com/What-is-Microsofts-corporate-slogan-What-does-it-mean)
+/ [ASM](https://www.google.com/search?q=Azure+Service+Manager)
+
+~~黒歴史/ネタ~~:
+[クラウドガール](https://www.google.com/search?q=%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%AC%E3%83%BC%E3%83%AB)
+/ [祝 Azure 日本データセンター](https://channel9.msdn.com/Series/Microsoft-Virtual-Academy-Japan/claudia)
+/ [藍澤光](https://www.google.com/search?q=%E8%97%8D%E6%BE%A4%E5%85%89)
+/ [擬人化](https://www.google.com/search?q=windows+%E6%93%AC%E4%BA%BA%E5%8C%96)
+/ [Office アシスタント](https://www.google.com/search?q=Office+%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88)
+/ [マイクロソフト(北海道ならではの風土が育んだ乳脂肪をたっぷり含んだソフトクリーム)](https://www.google.com/search?q=%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88+%E3%82%BD%E3%83%95%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0)
 
 その他のAzure:
 [純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
