@@ -44,6 +44,9 @@ Azure全般:
 / [Azureの状態（ステータスダッシュボード）](https://status.azure.com/ja-jp/status)
 / [Azure Service Health ダッシュボード - サービス正常性(Azure portal)](https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues)
 / [Azure DevOpsの状態](https://status.dev.azure.com/)
+/ [Azure Marketplace(ITソリューション)](https://azuremarketplace.microsoft.com/ja-jp)
+/ [Microsoft AppSource(ビジネス ソリューション)](https://appsource.microsoft.com/ja/)
+
 
 お問い合わせ: 
 [新しいサポートリクエストの作成(Azure Portal)](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
@@ -51,10 +54,7 @@ Azure全般:
 / [Azure Feedback](https://feedback.azure.com/) 
 
 認定試験: 
-[AZ-900 Fundamentals](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900) 
-/ [AZ-104 Administrator](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104) 
-/ [AZ-204 Developing](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204) 
-/ [認定試験ダッシュボード](https://www.microsoft.com/ja-jp/learning/dashboard.aspx) 
+/ [認定試験ダッシュボード(試験予約,履歴)](https://www.microsoft.com/ja-jp/learning/dashboard.aspx) 
 / [認定試験トップ](https://docs.microsoft.com/ja-jp/learn/certifications/) 
 / [認定試験のドキュメント](https://docs.microsoft.com/ja-jp/learn/certifications/certification-exams) 
 / [オンライン試験](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi) 
@@ -66,11 +66,21 @@ Azure全般:
 [ご案内1](https://www.microsoft.com/ja-jp/learning/local-exam-replay.aspx)
 , [ご案内2](https://docs.microsoft.com/ja-jp/learn/certifications/deals)
 
+認定試験(出題範囲等):
+[AZ-900 Fundamentals](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900) 
+/ [AZ-104 Administrator](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104) 
+/ [AZ-204 Developing](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204) 
+/ [AZ-500 Security](https://docs.microsoft.com/ja-jp/learn/certifications/exams/AZ-500)
+/ [AZ-400 DevOps](https://docs.microsoft.com/ja-jp/learn/certifications/exams/AZ-400)
+/ [AZ-303 Architect Technologies](https://docs.microsoft.com/ja-jp/learn/certifications/exams/AZ-303)
+/ [AZ-304 Architect Design](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-304)
+
 最新情報: 
 [Azure ブログ](https://azure.microsoft.com/ja-jp/blog/) 
 / [更新情報](https://azure.microsoft.com/ja-jp/updates/) 
 / [Announcements](https://azure.microsoft.com/ja-jp/blog/topics/announcements/) 
 / [Azureのイベント](https://azure.microsoft.com/ja-jp/community/events/)
+/ [Join it 法人のお客様向け 定例セミナー/トレーニングのご案内](https://www.microsoft.com/ja-jp/events/joinit/default.aspx)
 / [Channel 9](https://channel9.msdn.com/)
 / [Microsoft Virtual Training Days](https://www.microsoft.com/ja-jp/events/top/training-days.aspx)
 / [COVID-19対策](https://www.microsoft.com/ja-jp/mscorp/covid-19-response.aspx)
@@ -78,6 +88,7 @@ Azure全般:
 / [Azure更新情報(2015年11月6日～2018 年10月,和訳)](https://azureupdatesj.wordpress.com/)
 / [Instagram(microsoftdeveloper)](https://www.instagram.com/microsoftdeveloper/)
 / [Facebook(@microsoftazure)](https://www.facebook.com/microsoftazure)
+/ [マイクロソフト法人向け総合ポータル](https://www.microsoft.com/ja-jp/biz)
 
 総合: 
 [Azureリソース](https://azure.microsoft.com/ja-jp/resources/) 
@@ -85,6 +96,17 @@ Azure全般:
 / [Azure Charts](https://azurecharts.com/) 
 / [Azure Overview(プレビュー/GAの日付等)](https://azure-overview.com/)
 / [アイコン](https://docs.microsoft.com/ja-jp/azure/architecture/icons/)
+
+コミュニティ:
+[Japan Azure User Group](http://r.jazug.jp/)
+/ [Azureもくもく会](https://www.google.com/search?q=azure+%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F)
+/ [Azure Council Experts（ACE）アジュール評議会](https://www.a-c-e.biz/)
+/ [Azure Rock Star(技術コミュニティおよびビジネス コミュニティをご紹介)](https://www.microsoft.com/ja-jp/events/top/azure-rock-star.aspx)
+
+イベント:
+
+[Ignite](https://www.google.com/search?q=microsoft+Ignite)
+/ [de:code](https://www.google.com/search?q=de%3Acode)
 
 アーキテクト向け: 
 [アーキテクチャセンター](https://docs.microsoft.com/ja-jp/azure/architecture/) 
@@ -99,7 +121,6 @@ Azure全般:
 / [.NETのドキュメント](https://docs.microsoft.com/ja-jp/dotnet/)
 / [PoCガイド](https://clouddamcdnprodep.azureedge.net/gdc/gdcN9BlkO/original) 
 / [Azure AI Gallery](https://gallery.azure.ai/) 
-/ [Azure Rock Star(技術コミュニティおよびビジネス コミュニティをご紹介)](https://www.microsoft.com/ja-jp/events/top/azure-rock-star.aspx)
 / [アプリケーション開発 オンデマンド ウェビナー特集](https://www.microsoft.com/ja-jp/events/top/apps-innovation-webinars.aspx)
 / [dev.to/azure](https://dev.to/azure)
 / [Microsoft Tech Community](https://techcommunity.microsoft.com/)
@@ -362,7 +383,11 @@ Azure vs AWS:
 AWSとのインテグレーション: 
 [Azure Cost managementでAWSのコストを管理する](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/costs/aws-integration-manage) 
 / [Azure Migrateを使用してEC2 インスタンスを Azure に移行する](https://docs.microsoft.com/ja-jp/azure/site-recovery/migrate-tutorial-aws-azure) 
-/ [Azure ADアカウントを使用してAWSにサインインする](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/amazon-web-service-tutorial) / [Azure Security Center を AWS に接続してワークロードを保護する](https://docs.microsoft.com/ja-jp/azure/security-center/quickstart-onboard-aws) 
+/ [Azure ADアカウントを使用してAWSにサインインする](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/amazon-web-service-tutorial) 
+/ [Azureポータルから、AWS上のEC2インスタンスを作成する](https://dev.classmethod.jp/articles/azure-automation-runbook-using-aws-ec2-instance/)
+/ [AzCopy を使用して Amazon S3 から Azure Storage にデータをコピーする](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-s3)
+/ [AWSのMFA認証にMicrosoft Authenticatorを使用する](https://www.google.com/search?q=microsoft+authenticator+aws)
+/ [Azure Security Center を AWS に接続してワークロードを保護する](https://docs.microsoft.com/ja-jp/azure/security-center/quickstart-onboard-aws) 
 / [Azure Sentinel を AWS CloudTrail に接続して管理イベントをストリーミングする](https://docs.microsoft.com/ja-jp/azure/sentinel/connect-aws)
 / [Azure Arc enabled servers(AWSやオンプレなどの環境で稼働するVM・SQL Server等をAzureから管理)](https://www.publickey1.jp/blog/20/windowslinuxazureazure_arc_enabled_serversignite_2020.html)
 / [Azure Arc enabled data services(AWSやオンプレなどの環境で稼働するSQL Managed InstanceやPostgreSQLをAzureから管理)](https://www.publickey1.jp/blog/20/azure_sqlawsazure_arc_enabled_data_servicesignite_2020.html)
@@ -439,6 +464,7 @@ Cognitive Services:
 / [本田技研工業様](https://www.google.com/search?q=%E6%9C%AC%E7%94%B0%E6%8A%80%E7%A0%94%E5%B7%A5%E6%A5%AD+azure) 
 / [星野リゾート様](https://www.google.com/search?q=%E6%98%9F%E9%87%8E%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88+azure) 
 / [ゑびや大食堂様](https://www.google.com/search?q=%E3%82%91%E3%81%B3%E3%82%84%E5%A4%A7%E9%A3%9F%E5%A0%82+azure) 
+/ [港区様](https://customers.microsoft.com/fr-fr/story/minatocity-government-azure-jp-japan)
 
 採用事例（海外）: 
 [Who's Using Microsoft Azure?](https://www.contino.io/insights/whos-using-microsoft-azure-2020) 
@@ -498,3 +524,9 @@ IDaaS:
 / [コート・ダジュール](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%88%E3%83%BB%E3%83%80%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB_(%E6%9B%96%E6%98%A7%E3%81%95%E5%9B%9E%E9%81%BF))
 / [AZURE・PLUS株式会社様](https://www.azure-plus.co.jp/)
 / [株式会社AZURE様](https://www.a-zr.com/)
+/ [アジュール株式会社様](https://www.azure-tokyo.co.jp/)
+/ [†BAR AZURE†](https://twitter.com/minami55azure)
+/ [ペンション アズール](http://www.p-azur.com/)
+/ [アズールモータリング麻布様](http://azb.azzurre-motoring.com/)
+/ [Grand Azure](https://www.azuregd.com/)
+/ [AZURE MARINER(補給艦をイメージしたコンセプトカフェ＆バー)](http://azuremariner.com/)
