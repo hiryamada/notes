@@ -58,7 +58,7 @@ Azure全般:
 / [認定試験トップ](https://docs.microsoft.com/ja-jp/learn/certifications/) 
 / [認定試験のドキュメント](https://docs.microsoft.com/ja-jp/learn/certifications/certification-exams) 
 / [オンライン試験](https://docs.microsoft.com/ja-jp/learn/certifications/online-exams-psi) 
-/ [更新](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification) 
+/ [有効期限の更新(無料)](https://docs.microsoft.com/ja-jp/learn/certifications/renew-your-microsoft-certification) 
 / [認定サポートフォーラム](https://aka.ms/MCTForum) 
 / [認定試験解説(トレノケート様)](https://blog.trainocate.co.jp/blog/415_018)
 / [公式模擬問題(MeasureUp)](https://www.measureup.com/)
