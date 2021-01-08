@@ -104,7 +104,6 @@ Azure全般:
 / [Azure Rock Star(技術コミュニティおよびビジネス コミュニティをご紹介)](https://www.microsoft.com/ja-jp/events/top/azure-rock-star.aspx)
 
 イベント:
-
 [Ignite](https://www.google.com/search?q=microsoft+Ignite)
 / [de:code](https://www.google.com/search?q=de%3Acode)
 
