@@ -42,16 +42,20 @@ Azure全般:
 / [Azure モバイル アプリ](https://azure.microsoft.com/ja-jp/features/azure-portal/mobile-app/)
 / [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/)
 / [Azureの状態（ステータスダッシュボード）](https://status.azure.com/ja-jp/status)
-/ [Azure Service Health ダッシュボード - サービス正常性(Azure portal)](https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues)
 / [Azure DevOpsの状態](https://status.dev.azure.com/)
 / [Azure Marketplace(ITソリューション)](https://azuremarketplace.microsoft.com/ja-jp)
 / [Microsoft AppSource(ビジネス ソリューション)](https://appsource.microsoft.com/ja/)
 
+Azure へのアクセス:
+[Azure portal](https://portal.azure.com/) 
+/ [Azure AD 管理センター](https://aad.portal.azure.com/)
+/ [Azure Service Health ダッシュボード - サービス正常性(Azure portal)](https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues)
+/ [新しいサポートリクエストの作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
 
 お問い合わせ: 
-[新しいサポートリクエストの作成(Azure Portal)](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
-/ [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) 
+[Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) 
 / [Azure Feedback](https://feedback.azure.com/) 
+/ [MSDNフォーラム](https://social.msdn.microsoft.com/Forums/ja-JP/home)
 
 認定試験: 
 / [認定試験ダッシュボード(試験予約,履歴)](https://www.microsoft.com/ja-jp/learning/dashboard.aspx) 
@@ -79,7 +83,6 @@ Azure全般:
 [Azure ブログ](https://azure.microsoft.com/ja-jp/blog/) 
 / [更新情報](https://azure.microsoft.com/ja-jp/updates/) 
 / [Announcements](https://azure.microsoft.com/ja-jp/blog/topics/announcements/) 
-/ [Azureのイベント](https://azure.microsoft.com/ja-jp/community/events/)
 / [Join it 法人のお客様向け 定例セミナー/トレーニングのご案内](https://www.microsoft.com/ja-jp/events/joinit/default.aspx)
 / [Channel 9](https://channel9.msdn.com/)
 / [Microsoft Virtual Training Days](https://www.microsoft.com/ja-jp/events/top/training-days.aspx)
@@ -89,6 +92,7 @@ Azure全般:
 / [Instagram(microsoftdeveloper)](https://www.instagram.com/microsoftdeveloper/)
 / [Facebook(@microsoftazure)](https://www.facebook.com/microsoftazure)
 / [マイクロソフト法人向け総合ポータル](https://www.microsoft.com/ja-jp/biz)
+/ [Microsoft Learn Blog](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog)
 
 総合: 
 [Azureリソース](https://azure.microsoft.com/ja-jp/resources/) 
@@ -98,14 +102,36 @@ Azure全般:
 / [アイコン](https://docs.microsoft.com/ja-jp/azure/architecture/icons/)
 
 コミュニティ:
-[Japan Azure User Group](http://r.jazug.jp/)
+[Japan Azure User Group(JAZUG)](http://r.jazug.jp/)
+/ [JAZUG女子部](https://jazuggirls.doorkeeper.jp/)
+/ [Japan SQL Server User Group](https://www.jssug.jp/)
+/ [Japan Azure Cosmos DB User Group](https://jcdug.connpass.com/)
 / [Azureもくもく会](https://www.google.com/search?q=azure+%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F)
 / [Azure Council Experts（ACE）アジュール評議会](https://www.a-c-e.biz/)
 / [Azure Rock Star(技術コミュニティおよびビジネス コミュニティをご紹介)](https://www.microsoft.com/ja-jp/events/top/azure-rock-star.aspx)
+/ [わんくま同盟](http://wankuma.com/)
+/ [.NETラボ](https://dotnetlab.connpass.com/)
 
 イベント:
-[Ignite](https://www.google.com/search?q=microsoft+Ignite)
-/ [de:code](https://www.google.com/search?q=de%3Acode)
+/ [Azureのイベント](https://azure.microsoft.com/ja-jp/community/events/)
+/ [Ignite - ITプロフェッショナル向けイベント](https://www.google.com/search?q=microsoft+Ignite)
+/ [de:code - 開発者の方、IT に携わるすべてのエンジニアの方](https://www.google.com/search?q=de%3Acode)
+, 動画資料等:
+[2020](https://www.youtube.com/playlist?list=PL1RqQ3kddIpYHMWVlenT3cf_w5Pr3oYke) 
+, [2019](https://kogelog.com/2019/06/04/20190604-01/)
+, [2018](https://www.atmarkit.co.jp/ait/articles/1806/15/news145.html)
+, [2017](https://channel9.msdn.com/Events/de-code/2017)
+, [2016](https://channel9.msdn.com/Events/de-code/2016)
+, [2015](https://channel9.msdn.com/Events/de-code/decode-2015)
+, [2014](https://channel9.msdn.com/Events/de-code/2014)
+/ [.NET Conf](https://www.google.com/search?q=.net+conf)
+/ [Build - 開発者向けイベント](https://mybuild.microsoft.com/)
+/ Microsoft Digital Trust Summit
+/ [Inspite - パートナー様向け](https://partner.microsoft.com/ja-jp/inspire)
+/ Japan Partner Conference
+/ FEST2015
+/ The Microsoft Conference 
+/ Tech・ED Japan （～2010）
 
 アーキテクト向け: 
 [アーキテクチャセンター](https://docs.microsoft.com/ja-jp/azure/architecture/) 
@@ -125,10 +151,21 @@ Azure全般:
 / [Microsoft Tech Community](https://techcommunity.microsoft.com/)
 / [Visual Studio サブスクリプション($50～$150のクレジット)](https://visualstudio.microsoft.com/ja/subscriptions/)
 
+セキュリティ担当者向け:
+
+[セキュリティの基礎](https://docs.microsoft.com/ja-jp/azure/security/fundamentals/)
+/ [ベストプラクティス](https://docs.microsoft.com/ja-jp/azure/security/fundamentals/best-practices-and-patterns)
+/ [クラウド導入フレームワーク（CAF）のセキュリティベストプラクティス](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/security/security-top-10)
+/ [「Azure のセキュリティと言っても範囲が広すぎるので、どこから手を付けたら良いのか分からない！」という方のためのセッション](https://eventmarketing.blob.core.windows.net/decode2018-after/decode2018_PDF_CI17.pdf)
+/ [Azureセキュリティベンチマーク](https://docs.microsoft.com/ja-jp/azure/security/benchmarks/introduction)
+/ [コンプライアンスに準拠するためのサービス](https://docs.microsoft.com/ja-jp/compliance/regulatory/offering-home)
+/ [Microsoft Assesments](https://docs.microsoft.com/ja-jp/assessments/)
+
 SAP on Azure: [概要](https://docs.microsoft.com/ja-jp/azure/architecture/reference-architectures/sap/sap-overview)
 
 MVP(Most Valuable Professional):
 [公式](https://mvp.microsoft.com/ja-jp/)
+/ [概要](https://mvp.microsoft.com/ja-jp/overview)
 / [Microsoft MVP について](https://chomado.github.io/MS-MVP/)
 / [MVPその他の定義](https://ja.wikipedia.org/wiki/MVP)
 
@@ -331,6 +368,7 @@ Azure Advent Calender:
 ,[2018](https://qiita.com/advent-calendar/2018/powerbi)
 ,[2017](https://qiita.com/advent-calendar/2017/power-bi)
 / Microsoft Research Internship アルムナイ Advent Calendar [2020](https://adventar.org/calendars/5107)
+/ [Azure SQL & Synapse Analytics Advent Calendar 2020](https://qiita.com/advent-calendar/2020/azure-sqldb-and-synapse)
 / [Azure Advent Calendar 2019](https://azureadventcalendar.com/)
 
 Azureデータセンター: 

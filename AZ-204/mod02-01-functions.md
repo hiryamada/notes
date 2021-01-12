@@ -303,7 +303,7 @@ Premium、App Serviceプランでは、最大値を無制限に設定できま�
 
 [HTTP トリガー関数の場合は最大230秒](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#function-app-timeout-duration)。※トリガーにもいろいろな種類があり（ストレージのトリガーやCosmos DBトリガーなど）、そのうちの1つがHTTPトリガー（HttpTrigger）である。
 
-[Azure Durable Functions](mod02-01-durable-functions.md) ... ステートフル、タイムアウトなし。
+[Azure Durable Functions](mod02-02-durable-functions.md) ... ステートフル、タイムアウトなし。
 
 # イベント ドリブン
 

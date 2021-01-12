@@ -2,25 +2,46 @@
 
 - モジュール0: コース紹介
 - モジュール1: Azure App Service
+  - [App Service](mod01-01-appservice.md)
   - ラボ1 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab.md) [解説](lab01.md)
 - モジュール2: Azure Functions
+  - [Azure Functions](mod02-01-functions.md)
+  - [Durable Functions](mod02-02-durable-functions.md)
   - ラボ2 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_02_lab.md) [解説](lab02.md)
 - モジュール3: Blob Btorage
+  - [Azure Blob Storage](mod03-01-blob.md)
   - ラボ3 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_03_lab.md) [解説](lab03.md)
 - モジュール4: Cosmos DB
+  - [Azrure Cosmos DB](mod04-01-cosmosdb.md)
+  - [Table Table Storage](mod04-02-table.md)
 - モジュール5: VM、ARM、ACR、ACI
+  - [Azure VM](mod05-01-vm.md)
+  - [ARM](mod05-02-arm.md)
+  - [Docker](mod05-03-docker.md)
+  - [Azure Container Registry](mod05-04-acr.md)
+  - [Azure Container Instance](mod05-05-aci.md)
 - モジュール6: ユーザー認証と承認
   - [Microsoft ID Platform](mod06-01-idplatform.md)
   - [Microsoft Authentication Library (MSAL)](mod06-02-msal.md)
   - [Microsoft Graph](mod06-03-graph.md)
+  - ラボ6 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_06_lab.md)
 - モジュール7: セキュリティ
   - [Azure key Vault](mod07-01-keyvault.md)
   - [マネージドID](mod07-02-managed-id.md)
   - [App Configuration](mod07-03-app-configuration.md)
   - ラボ7 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_07_lab.md) / [解答](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_07_lab_ak.md)
 - モジュール8: API Management
+  - [Azure API Management](mod08-01-apim.md)
 - モジュール9: Logic Apps
+  - [Azure Logic Apps](mod09-01-logicapp.md)
 - モジュール10: Event Grid、Notification Hubs
+  - [Azure Event Grid](mod10-01-eventgrid.md)
+  - [Azure Event Hubs](mod10-02-eventhubs.md)
+  - [Azure Notification Hubs](mod10-03-notification-hubs.md)
 - モジュール11: Service Bus、Queue Storage
+  - [Azure Service Bus](mod11-01-servicebus.md)
+  - [Azure Queue Storage](mod11-02-queue.md)
 - モジュール12: Azure Monitor、Application Insights
+  - [Azure Monitor](mod12-01-monitor.md)
+  - [Azure App Insights](mod12-02-appinsights.md)
 - モジュール13: Azure Cache for Redis、Azure CDN

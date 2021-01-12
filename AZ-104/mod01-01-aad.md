@@ -111,6 +111,12 @@ Azure AD Connectのセットアップ時に選択します。
 
 Azure ADの[ユーザーまたはグループごとに、ライセンスを付与する必要があります。](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/license-users-groups)
 
+# 試用
+
+https://azure.microsoft.com/ja-jp/trial/get-started-active-directory/
+
+試用版のアクティブ化を行うと、100 個の Azure Active Directory Premium ライセンスを取得できます。30 日間有効です。
+
 # Azure ADの参加(Azure AD joined)
 
 [Azure ADの参加とは](https://docs.microsoft.com/ja-jp/learn/modules/manage-device-identity-ad-join/3-what-is-ad-join)
