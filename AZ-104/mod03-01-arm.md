@@ -24,7 +24,9 @@ Azure サブスクリプションにリソース プロバイダーを登録す�
 
 例：AZ-104のラボ11では、Microsoft.Insights と Microsoft.AlertsManagement の2つのリソース プロバイダーを明示的に登録しています。
 
-:blub: Azure Portalで、サブスクリプションのリソースプロバイダーを確認・登録・解除するには、サブスクリプション＞設定＞リソース プロバイダー を選択します。
+:blub: Azure Portalで、サブスクリプションのリソース プロバイダーを確認・登録・解除するには、サブスクリプション＞設定＞リソース プロバイダー を選択します。
+
+[よく使う Resource Provider を Azure サブスクリプションに一括登録するスクリプト](https://blog.shibayan.jp/entry/20210107/1609948542)
 
 # リソース グループ
 
