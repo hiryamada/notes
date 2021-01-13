@@ -28,7 +28,7 @@ GitHub、Azure DevOps、または任意の Git リポジトリからの自動デ
 
 # App Serviceに含まれるもの
 
-[2015年発表時]((https://weblogs.asp.net/scottgu/announcing-the-new-azure-app-service)
+[2015年発表時](https://weblogs.asp.net/scottgu/announcing-the-new-azure-app-service)
 
 以前に「Azure Websites」「Azure Mobile Services」と呼ばれていたものを統合。
 
@@ -55,7 +55,7 @@ GitHub、Azure DevOps、または任意の Git リポジトリからの自動デ
 
 App Service では、アプリは常に App Service プラン で実行されます。
 
-[App Service プラン](https://azure.microsoft.com/ja-jp/pricing/details/app-service/windows/) - Free, Shared, Basic, Standard, Premium, Isolated
+[App Service プラン](https://azure.microsoft.com/ja-jp/pricing/details/app-service/windows/) - Free(F1), Shared(D1), Basic(B1,B2,B3), Standard(S1,S2,S3), Premium(P1v2,P2v2,P3v2,P1v3,P2v3,P3v3), Isolated(I1,I2,I3), Isolated v2(I1v2,I2v2,I3v2)
 
 Azure Functions には、 App Service プラン で実行するオプションもあります。
 

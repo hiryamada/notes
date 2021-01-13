@@ -2,7 +2,7 @@
 
 - モジュール0: コース紹介
 - モジュール1: Azure App Service
-  - [App Service](mod01-01-appservice.md)
+  - [Azure App Service](mod01-01-appservice.md)
   - ラボ1 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab.md) [解説](lab01.md)
 - モジュール2: Azure Functions
   - [Azure Functions](mod02-01-functions.md)
