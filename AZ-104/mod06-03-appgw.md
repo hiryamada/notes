@@ -9,6 +9,8 @@
   - [Azure でネットワーク セキュリティを実装する](https://docs.microsoft.com/ja-jp/learn/paths/implement-network-security/)
     - [Azure Application Gateway を使用してネットワーク トラフィックをエンドツーエンドで暗号化する](https://docs.microsoft.com/ja-jp/learn/modules/end-to-end-encryption-with-app-gateway/)
 
+[Load BalancerとApplication Gatewayの違い（Azureサポートチーム）](https://jpaztech1.z11.web.core.windows.net/LoadBalancer%E3%81%A8ApplicationGateway%E3%81%AE%E9%80%9A%E4%BF%A1%E3%81%AE%E9%81%95%E3%81%84.html)
+
 # Application Gateway とは？
 
 アプリケーションレイヤー(L7)のロードバランサー

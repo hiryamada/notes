@@ -37,6 +37,10 @@
   - [Azure Database for MySQL](https://azure.microsoft.com/ja-jp/services/mysql/)
   - [Azure Database for MariaDB](https://azure.microsoft.com/ja-jp/services/mariadb/)
 
+# データレイク/データ分析
+
+- [Azure Synapse Analytics](https://azure.microsoft.com/ja-jp/services/synapse-analytics/) - データ統合、データ ウェアハウス、ビッグ データ分析
+
 # キャッシュ系のサービス
 
 - [Azure Cache for Redis](https://azure.microsoft.com/ja-jp/services/cache/)

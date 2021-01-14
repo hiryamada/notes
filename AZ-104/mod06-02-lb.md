@@ -13,6 +13,9 @@
   - [Azure Load Balancer を使用してアプリケーションのスケーラビリティと回復性を向上させる](https://docs.microsoft.com/ja-jp/learn/modules/improve-app-scalability-resiliency-with-load-balancer/)
   - [Azure Load Balancer の受信ネットワーク接続のトラブルシューティング](https://docs.microsoft.com/ja-jp/learn/modules/troubleshoot-inbound-connectivity-azure-load-balancer/)
 
+
+[Load BalancerとApplication Gatewayの違い（Azureサポートチーム）](https://jpaztech1.z11.web.core.windows.net/LoadBalancer%E3%81%A8ApplicationGateway%E3%81%AE%E9%80%9A%E4%BF%A1%E3%81%AE%E9%81%95%E3%81%84.html)
+
 # Azure Load Balancerとは
 
 トランスポート層(TCP/UDP)のロード バランサー サービス

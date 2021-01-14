@@ -3,6 +3,10 @@
 
 [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/modules/control-network-traffic-flow-with-routes/2-azure-virtual-network-route)を参照。
 
+
+[Azure VM の外部接続 (SNAT) オプション まとめ - Azure Networking テクニカル サポート](https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/)
+
+
 # システム ルート
 
 Azure のサブネット、仮想ネットワーク、およびオンプレミスのネットワークの間を自動的にルーティングされます。 
@@ -17,19 +21,7 @@ VMのネットワーク インターフェースを表示し、「サポート�
 
 # [仮想アプライアンス(NVA)](https://azure.microsoft.com/ja-jp/solutions/network-appliances/)
 
-Network Virtual Appliance（NVA）は、下記のような機能を提供するAzure VMです。
-
-- アプリケーション配信コントローラー(ADC)
-- ファイアウォール
-- 暗号化
-
-製品例：Barracuda, Check Point, Cisco, Citrix, F5, Fortinet, NetApp, Paloalto, Trend Microなどの製品があります。
-
-Azure Marketplaceからデプロイすることができます。
-
-[NVAは、VNetにデプロイすることができます](https://docs.microsoft.com/ja-jp/learn/modules/control-network-traffic-flow-with-routes/)。
-
-VMから送信されるトラフィックをNVAでフィルタリングしてからインターネットに送信したり、インターネットからのトラフィックをNVAでフィルタリングしてからVMに送信したりする場合は、「カスタム ルート」を使用して、トラフィックがNVAを経由するようにします。
+[AZ-500のノート](../AZ-500/mod02-02-08-nva.md)
 
 # カスタム ルート
 

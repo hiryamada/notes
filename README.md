@@ -46,8 +46,9 @@ Azure全般:
 / [Azure Marketplace(ITソリューション)](https://azuremarketplace.microsoft.com/ja-jp)
 / [Microsoft AppSource(ビジネス ソリューション)](https://appsource.microsoft.com/ja/)
 
-Azure へのアクセス:
+Azure へのアクセス(要アカウント):
 [Azure portal](https://portal.azure.com/) 
+/ [Azure Cloud Shell](https://shell.azure.com/)
 / [Azure AD 管理センター](https://aad.portal.azure.com/)
 / [Azure Service Health ダッシュボード - サービス正常性(Azure portal)](https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues)
 / [新しいサポートリクエストの作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
@@ -56,6 +57,9 @@ Azure へのアクセス:
 [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) 
 / [Azure Feedback](https://feedback.azure.com/) 
 / [MSDNフォーラム](https://social.msdn.microsoft.com/Forums/ja-JP/home)
+/ [Azureのサポートプラン](https://azure.microsoft.com/ja-jp/support/plans/)
+/ [法人/パートナー向けサポート](https://www.microsoft.com/ja-jp/services/support.aspx)
+/ [プロフェッショナル サポート](https://www.microsoft.com/ja-jp/services/professional.aspx)
 
 認定試験: 
 / [認定試験ダッシュボード(試験予約,履歴)](https://www.microsoft.com/ja-jp/learning/dashboard.aspx) 
@@ -139,6 +143,7 @@ Azure へのアクセス:
 / [CAF(Cloud Adoption Framework)](https://azure.microsoft.com/ja-jp/cloud-adoption-framework/) 
 / [CDP(クラウドデザインパターン)](https://docs.microsoft.com/ja-jp/azure/architecture/patterns/) 
 / [.NET アプリケーション アーキテクチャ](https://docs.microsoft.com/ja-jp/dotnet/architecture/)
+/ [徹底解説！できる Azure Migrate](https://info.microsoft.com/JA-AzureMig-CNTNT-FY20-03Mar-18-Thoroughcommentary-SRGCM3343_01Registration-ForminBody.html)
 
 開発者向け: 
 [コードサンプル](https://docs.microsoft.com/ja-jp/samples/browse/) 
@@ -168,6 +173,28 @@ MVP(Most Valuable Professional):
 / [概要](https://mvp.microsoft.com/ja-jp/overview)
 / [Microsoft MVP について](https://chomado.github.io/MS-MVP/)
 / [MVPその他の定義](https://ja.wikipedia.org/wiki/MVP)
+
+ブログ（Azureサポートチーム）:
+[Japan Azure IaaS Core Support Blog](https://jpaztech.github.io/blog/index.html)
+/ [Japan Azure Identity Support Blog](https://jpazureid.github.io/blog/)
+/ [Japan PaaS Support Team Blog](https://jpazpaas.github.io/blog/)
+/ [Azure 課金・サブスクリプションサポートチームブログ](https://docs.microsoft.com/ja-jp/archive/blogs/dsazurejp/)
+/ [Japan Azure IaaS Support Blog](https://docs.microsoft.com/ja-jp/archive/blogs/jpaztech/)
+/ [Japan Azure PaaS Support Blog](https://docs.microsoft.com/ja-jp/archive/blogs/jpcie/)
+/ [Japan Azure Identity Support Blog](https://docs.microsoft.com/ja-jp/archive/blogs/jpazureid/)
+/ [Japan Developer Support Core Team Blog](https://jpdscore.github.io/blog/index.html)
+/ [Japan Developer Support Internet Team Blog](https://jpdsi.github.io/blog/)
+/ [Microsoft Security Response Center Japan Security Team](https://msrc-blog.microsoft.com/category/jpsecurity/)
+[Cloud and Server Product Japan Blog](https://docs.microsoft.com/ja-jp/archive/blogs/mssvrpmj/)
+
+[日本語のTechNet／MSDNブログの移行先(by山市良さん)](https://www.atmarkit.co.jp/ait/articles/1906/04/news004.html)
+
+フォーラム:
+[Japan Azure IaaS and Networking Support Team Forum](https://social.msdn.microsoft.com/Forums/ja-JP/home?forum=Jpaztech)
+
+ブログ（Azure Tech Community）:
+[Azure Active Directory Identity Blog](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/bg-p/Identity)
+
 
 ブログ（個人系）: 
 [くらう道](https://www.cloudou.net/) 
@@ -434,6 +461,26 @@ AWSエンジニア向けAzureトレーニング:
 / [AZ-020 Microsoft Azure solutions for AWS developers](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-020t00) 
 / [AZ-030 Microsoft Azure technologies for AWS architects](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-030t00)
 
+値下げ:
+2020:
+[Azure Files premium tierの値下げ](https://azure.microsoft.com/en-us/updates/announcing-new-lower-pricing-for-azure-files-premium-tier/)
+/ [「Visual Studio Codespaces」発表。Visual Studio Onlineを名称変更、料金も値下げ](https://www.publickey1.jp/blog/20/webvisual_studio_codespacesvisual_studio_online.html)
+, 2019:
+[Azure Archive Storage の新たな値下げ](https://azure.microsoft.com/ja-jp/updates/we-re-making-azure-archive-storage-better-with-new-lower-pricing/)
+/ [Azure App ServiceのLinux Premium v2プランを値下げ](https://ascii.jp/elem/000/001/946/1946508/)
+, 2018:
+[Azure Standard サポート プラン: 値下げと初回応答時間の短縮](https://azure.microsoft.com/ja-jp/updates/azure-standard-support-updates/)
+, 2017:
+[汎用仮想マシンの料金値下げ](https://azure.microsoft.com/ja-jp/blog/price-reductions-on-general-purpose-virtual-machines/)
+, 2016: 
+[General Purpose Instances, Compute Optimized Instances, Av2 seriesの値下げ](https://azure.microsoft.com/en-us/blog/new-lower-azure-pricing/)
+, 2014:
+[コンピューティングは27～35％、ストレージは44～65％値下げ](https://www.itmedia.co.jp/news/articles/1404/01/news050.html)
+, 2013: 
+[Windows Azure SQL Reporting 値下げ](https://azure.microsoft.com/en-us/blog/sql-reporting-services-pricing-update/)
+, 2012:
+[Windows Azureストレージ/コンピューティングの料金値下げ](https://satonaoki.wordpress.com/tag/azure/page/55/)
+
 e-Learning: 
 [Microsoft Virtual Training Days](https://www.microsoft.com/ja-jp/events/top/training-days.aspx) 
 / [Pluralsight](https://www.pluralsight.com/partners/microsoft/azure) 
@@ -458,15 +505,28 @@ Azureとのインテグレーション:
 / [Bicep](https://github.com/Azure/bicep)
 / [Cloud Maker](https://cloudmaker.ai/)
 / [Farmer](https://compositionalit.github.io/farmer/)
+/ [Azure VM と一緒に使うと便利なサービス](https://keyomura.hatenablog.com/entry/2020/04/04/163139)
 
 ツール類（開発者向け）:
+[Azure Functions Core Tools](https://www.npmjs.com/package/azure-functions-core-tools)
 / [Azurite](https://github.com/Azure/Azurite)
 / [Azure Cosmos DB Emulator](https://docs.microsoft.com/ja-jp/azure/cosmos-db/local-emulator)
 / [Fiddler](https://www.telerik.com/fiddler) 
 / [ngrok](https://ngrok.com/)
+/ [Visual Studio App Center](https://azure.microsoft.com/ja-jp/services/app-center/)
 
 ツール類（データエンジニア向け）:
 [SQL developer tools](https://www.microsoft.com/en-us/sql-server/developer-tools)
+/ [Azure Data Explorer](https://dataexplorer.azure.com/clusters/help/databases/Samples)
+
+Visual Studio Code拡張機能:
+[Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
+/ [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+
+Microsoft Edge拡張機能:
+[Amazing Icon Downloader](https://chrome.google.com/webstore/detail/amazing-icon-downloader/kllljifcjfleikiipbkdcgllbllahaob)
+/ [Jump from en-us to ja-jp or the other page](https://microsoftedge.microsoft.com/addons/detail/jump-from-enus-to-jajp-/akjjgiefpfhfdncdnngfdhoaibhjpkgo)
+/ [Az Mask](https://microsoftedge.microsoft.com/addons/detail/az-mask/ikognecdmhjbhmnkldfjfaijbojlbfan)
 
 OSSのデプロイ等: 
 [GitLab](https://docs.gitlab.com/ee/install/azure/) 
