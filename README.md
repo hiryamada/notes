@@ -29,6 +29,15 @@
 / [Microsoftアカウント](https://account.microsoft.com/account/Account) 
 / [Temp Mail](https://www.google.com/search?q=temp+mail)
 
+基本ツール類:
+/ [Microsoft Edge](https://www.microsoft.com/ja-jp/edge)
+, [ビジネス向け(Windows Serverなど)](https://www.microsoft.com/ja-jp/edge/business)
+/ [Microsoft Authenticator](https://www.microsoft.com/ja-jp/account/authenticator)
+/ [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/) + [Azure Account拡張機能](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
+/ [Storage Explorer](https://azure.microsoft.com/ja-jp/features/storage-explorer/)
+/ [Windows Terminal](https://docs.microsoft.com/ja-jp/windows/terminal/)
+/ [GitHubアカウント](https://github.co.jp/)
+
 Azure全般: 
 [全サービス](https://azure.microsoft.com/ja-jp/services/) 
 / [価格](https://azure.microsoft.com/ja-jp/pricing/)
@@ -46,16 +55,20 @@ Azure全般:
 / [Azure Marketplace(ITソリューション)](https://azuremarketplace.microsoft.com/ja-jp)
 / [Microsoft AppSource(ビジネス ソリューション)](https://appsource.microsoft.com/ja/)
 
-Azure へのアクセス(要アカウント):
+Azure へのアクセス(要Azureアカウント):
 [Azure portal](https://portal.azure.com/) 
 / [Azure Cloud Shell](https://shell.azure.com/)
 / [Azure AD 管理センター](https://aad.portal.azure.com/)
+/ [Azure Resource Explorer](https://resources.azure.com/)
+, [登場時のブログ, Screencast](https://azure.microsoft.com/ja-jp/blog/azure-resource-explorer-a-new-tool-to-discover-the-azure-api/)
+, [わかりやすい解説](https://qiita.com/yaegashi/items/fa8984b724e5e819aa6e)
 / [Azure Service Health ダッシュボード - サービス正常性(Azure portal)](https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues)
 / [新しいサポートリクエストの作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
 
 お問い合わせ: 
-[Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) 
-/ [Azure Feedback](https://feedback.azure.com/) 
+)
+/ [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) 
+/ [Azure Knowledge Center（一般的な質問への回答を参照）](https://azure.microsoft.com/ja-jp/resources/knowledge-center// [Azure Feedback](https://feedback.azure.com/) 
 / [MSDNフォーラム](https://social.msdn.microsoft.com/Forums/ja-JP/home)
 / [Azureのサポートプラン](https://azure.microsoft.com/ja-jp/support/plans/)
 / [法人/パートナー向けサポート](https://www.microsoft.com/ja-jp/services/support.aspx)
@@ -83,6 +96,27 @@ Azure へのアクセス(要アカウント):
 / [AZ-303 Architect Technologies](https://docs.microsoft.com/ja-jp/learn/certifications/exams/AZ-303)
 / [AZ-304 Architect Design](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-304)
 
+認定試験（全体像とリンク）:
+ポスター:
+[Microsoft全体](https://aka.ms/TrainCertPoster)
+, [Microsoft全体(日本語版)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4oMr2)
+/ [Azure](https://aka.ms/AzureCerts_Poster) 
+/ Training and Certification Desks: 
+[Microsoft全体](https://aka.ms/TrainCertDeck)
+, [Azure](https://aka.ms/AzureTrainCertDeck)
+, [Microsoft 365](https://aka.ms/M365TrainCertDeck)
+, [Dynamics 365](https://aka.ms/D365TrainCertDeck)
+, [Power Platform](https://aka.ms/PPTrainCertDeck)
+
+Study Guide: 
+https://aka.ms/ESIStudyGuide_AZ-104
+https://aka.ms/ESIStudyGuide_AZ-204
+https://aka.ms/ESIStudyGuide_AZ-303
+https://aka.ms/ESIStudyGuide_AZ-304
+https://aka.ms/ESIStudyGuide_AZ-500
+https://aka.ms/ESIStudyGuide_DA-100
+https://aka.ms/ESIStudyGuide_AZ-900
+
 最新情報: 
 [Azure ブログ](https://azure.microsoft.com/ja-jp/blog/) 
 / [更新情報](https://azure.microsoft.com/ja-jp/updates/) 
@@ -103,7 +137,16 @@ Azure へのアクセス(要アカウント):
 / [Azure Baseコンテンツ ポータル](https://www.microsoft.com/ja-jp/events/azurebase/contents/) 
 / [Azure Charts](https://azurecharts.com/) 
 / [Azure Overview(プレビュー/GAの日付等)](https://azure-overview.com/)
-/ [アイコン](https://docs.microsoft.com/ja-jp/azure/architecture/icons/)
+
+アイコン:
+[アイコン](https://docs.microsoft.com/ja-jp/azure/architecture/icons/)
+/ [最新のアイコンの見つけかた](https://qiita.com/yaegashi/items/e661507765c48db09e2b)
+, [アップデート1](https://qiita.com/yaegashi/items/c0882e76baab72b13e39)
+, [アップデート2](https://qiita.com/yaegashi/items/e661507765c48db09e2b)
+
+書籍:
+[Azure定番システム設計・実装・運用ガイド](https://www.nikkeibp.co.jp/atclpubmkt/book/18/P53790/) ([書籍内のリンク集](https://jpaztech1.z11.web.core.windows.net/[%E5%85%AC%E5%BC%8F%E3%83%AA%E3%83%B3%E3%82%AF%E9%9B%86]201896%E7%99%BA%E5%A3%B2Azure%E5%AE%9A%E7%95%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%A8%AD%E8%A8%88%E3%83%BB%E5%AE%9F%E8%A3%85%E3%83%BB%E9%81%8B%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89(2018914%E6%9B%B4%E6%96%B0%E3%80%81%E5%A2%97%E5%88%B7%E6%B1%BA%E5%AE%9A%EF%BC%81).html))
+/ [速習Azure Administrator](https://nextpublishing.jp/book/11810.html)
 
 コミュニティ:
 [Japan Azure User Group(JAZUG)](http://r.jazug.jp/)
@@ -137,6 +180,8 @@ Azure へのアクセス(要アカウント):
 / The Microsoft Conference 
 / Tech・ED Japan （～2010）
 
+※[「de:code」カンファレンスは、Buildの日本版にあたる](http://news.line.me/articles/oa-ascii/f390dbf42268)
+
 アーキテクト向け: 
 [アーキテクチャセンター](https://docs.microsoft.com/ja-jp/azure/architecture/) 
 / [WAF(Well-Architected Framework)](https://docs.microsoft.com/ja-jp/azure/architecture/framework/) 
@@ -153,8 +198,23 @@ Azure へのアクセス(要アカウント):
 / [Azure AI Gallery](https://gallery.azure.ai/) 
 / [アプリケーション開発 オンデマンド ウェビナー特集](https://www.microsoft.com/ja-jp/events/top/apps-innovation-webinars.aspx)
 / [dev.to/azure](https://dev.to/azure)
-/ [Microsoft Tech Community](https://techcommunity.microsoft.com/)
+/ [Microsoft Tech Community (Microsoft の開発者およびテスト担当者からの Azure の技術的な質問への回答)](https://techcommunity.microsoft.com/)
 / [Visual Studio サブスクリプション($50～$150のクレジット)](https://visualstudio.microsoft.com/ja/subscriptions/)
+
+ゲーム開発者向け:
+[Azure ゲーム開発](https://azure.microsoft.com/ja-jp/solutions/gaming/)
+/ AppCenter(スマホのエミュレーターで自動テスト)
+/ PlayFab(リアルタイム分析)
+/ IncrediBuild(ゲーム開発タスクを最大30倍加速, Visual Studioとのシームレスな連携, クラウドで処理を分散)
+/ [最高のゲームをつくろう！マイクロソフト Game Stack でゲーム開発をしよう！(de:code 2019)](https://eventmarketing.blob.core.windows.net/decode2019-after/decode19_PDF_DT10.pdf)
+/ [GitHub for Unity](https://www.google.com/search?q=GitHub+for+Unity)
+/ [株式会社クラウドクリエイティブスタジオ様事例](https://www.google.com/search?q=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA)
+/ [PC 版『SAMURAI SPIRITS』のバックエンドプラットフォームとしてマイクロソフトの「Azure PlayFab」を採用](https://www.google.com/search?q=SAMURAI+SPIRITS+azure+playfab)
+/ [Xbox オフィシャルサイト](https://www.xbox.com/ja-JP)
+/ [DirectX](https://ja.wikipedia.org/wiki/Microsoft_DirectX)
+/ [モノビットエンジン株式会社様のセミナー動画](https://www.monobitengine.com/seminar/)
+/ [マイクロソフトのクラウドテクノロジーでゲーム開発](https://www.slideshare.net/dmasubuchi/idxboxcloud)
+/ [『Minecraft』シリーズで活用されているマルチプレイサーバの実装テクニック](https://news.denfaminicogamer.jp/kikakuthetower/200903h)
 
 セキュリティ担当者向け:
 
@@ -165,6 +225,8 @@ Azure へのアクセス(要アカウント):
 / [Azureセキュリティベンチマーク](https://docs.microsoft.com/ja-jp/azure/security/benchmarks/introduction)
 / [コンプライアンスに準拠するためのサービス](https://docs.microsoft.com/ja-jp/compliance/regulatory/offering-home)
 / [Microsoft Assesments](https://docs.microsoft.com/ja-jp/assessments/)
+/ [BLOB ストレージのセキュリティに関する推奨事項](https://docs.microsoft.com/ja-jp/azure/storage/blobs/security-recommendations)
+/ [Azure Storage 用の Azure セキュリティ ベースライン](https://docs.microsoft.com/ja-jp/azure/storage/common/security-baseline)
 
 SAP on Azure: [概要](https://docs.microsoft.com/ja-jp/azure/architecture/reference-architectures/sap/sap-overview)
 
@@ -195,7 +257,6 @@ MVP(Most Valuable Professional):
 ブログ（Azure Tech Community）:
 [Azure Active Directory Identity Blog](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/bg-p/Identity)
 
-
 ブログ（個人系）: 
 [くらう道](https://www.cloudou.net/) 
 / [ブチザッキ](https://blog.azure.moe/) 
@@ -204,6 +265,7 @@ MVP(Most Valuable Professional):
 / [re-imagine](https://torumakabe.github.io/) 
 / [++C++; // 未確認飛行 C](https://ufcpp.net/about_site/)
 / [しばやん雑記](https://blog.shibayan.jp/)
+/ [Logico Inside](https://logico-jp.io/)
 
 ブログ（企業系）: 
 / [Cloud-config Tech Blog](https://tech-blog.cloud-config.jp/) 
@@ -211,6 +273,18 @@ MVP(Most Valuable Professional):
 / [Azureブログ｜SB C&amp;S株式会社](https://licensecounter.jp/azure/blog/)
 / [株式会社LIG](https://liginc.co.jp/?s=azure)
 / [SIOS TECH.LAB](https://tech-lab.sios.jp/)
+
+Azureのコンサルティング・設計・構築・運用・監視・保守・運用代行・契約管理・請求管理等:
+[cloud.config 株式会社FIXER様](https://www.fixer.co.jp/ja-jp/about/fixer.html)
+/ [「Microsoft Azure」向け提供サービス(SBテクノロジー株式会社様)](https://www.softbanktech.co.jp/service/keyword/azure/)
+/ [ソフトクリエイト様](https://www.softcreate.co.jp/azure)
+/ [くらまね for Azure (株式会社Colorkrew様)](https://www.colorkrew.com/mspazure01/) 
+/ [Microsoft Azure 導入・運用代行(株式会社スカイアーチネットワークス様)](https://www.skyarch.net/proactive/cloud/azure/)
+/ [リンクアット・ジャパン様](https://azure.pitserv.jp/)
+/ [Azure運用代行サービス(株式会社アールワークス様)](https://www.rworks.jp/cloud/azure/azure-service/)
+/ [JIG-SAW OPS様](https://ops.jig-saw.com/service/cloud/azure)
+/ [ReSMサービス Azure運用管理(株式会社DTS様)](https://www.resm.jp/service/azure_management/)
+/ [ディーアイエスソリューション株式会社様](https://www.pc-daiwabo.co.jp/from_dis/1801.html)
 
 ニュースサイト等: 
 [InfoQ](https://www.infoq.com/jp/) 
@@ -514,10 +588,17 @@ Azureとのインテグレーション:
 / [Fiddler](https://www.telerik.com/fiddler) 
 / [ngrok](https://ngrok.com/)
 / [Visual Studio App Center](https://azure.microsoft.com/ja-jp/services/app-center/)
+/ [git-secrets](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/preventing-leaked-azure-secrets-in-github/ba-p/1400010)
+/ [Credential Scanner(CredScan)](https://secdevtools.azurewebsites.net/helpcredscan.html)
+/ [BFG](https://rtyley.github.io/bfg-repo-cleaner/)
 
 ツール類（データエンジニア向け）:
 [SQL developer tools](https://www.microsoft.com/en-us/sql-server/developer-tools)
 / [Azure Data Explorer](https://dataexplorer.azure.com/clusters/help/databases/Samples)
+/ [SQL Server Management Studio(SSMS)](https://docs.microsoft.com/ja-jp/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+/ [Azure Data Studio](https://docs.microsoft.com/ja-jp/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
+/ [mssql-cli](https://github.com/dbcli/mssql-cli)
+/ [様々なDB向けのCLI](https://github.com/dbcli)
 
 Visual Studio Code拡張機能:
 [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
@@ -542,8 +623,11 @@ Cognitive Services:
 ): 
 [トヨタ様](https://www.google.com/search?q=%E3%83%88%E3%83%A8%E3%82%BF+azure) 
 / [パナソニック様](https://www.google.com/search?q=%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF+azure) 
-/ [バンダイナムコスタジオ様](https://www.google.com/search?q=%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4%E3%83%8A%E3%83%A0%E3%82%B3%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA+azure) 
+/ [バンダイナムコスタジオ様](https://www.google.com/search?q=%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4%E3%83%8A%E3%83%A0%E3%82%B3%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA+azure) ]
+/ [セガ様](https://www.google.com/search?q=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%BB%E3%82%AC+azure)
+/ [カプコン様](https://www.iij.ad.jp/svcsol/case/capcom.html)
 / [スターバックス様](https://www.google.com/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9+azure) 
+/ [ソニー様](https://www.google.com/search?q=%E3%82%BD%E3%83%8B%E3%83%BC+azure)
 / [フジテレビ様](https://www.google.com/search?q=%E3%83%95%E3%82%B8%E3%83%86%E3%83%AC%E3%83%93+azure) 
 / [三井住友銀行様](https://www.google.com/search?q=%E4%B8%89%E4%BA%95%E4%BD%8F%E5%8F%8B%E9%8A%80%E8%A1%8C+azure) 
 / [北國銀行様](https://www.google.com/search?q=%E5%8C%97%E5%9C%8B%E9%8A%80%E8%A1%8C+azure) 
@@ -562,6 +646,8 @@ Cognitive Services:
 / [星野リゾート様](https://www.google.com/search?q=%E6%98%9F%E9%87%8E%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88+azure) 
 / [ゑびや大食堂様](https://www.google.com/search?q=%E3%82%91%E3%81%B3%E3%82%84%E5%A4%A7%E9%A3%9F%E5%A0%82+azure) 
 / [港区様](https://customers.microsoft.com/fr-fr/story/minatocity-government-azure-jp-japan)
+
+[Microsoft Azureの導入・構築に実績のあるシステム開発会社10社(発注ナビ)](https://hnavi.co.jp/knowledge/blog/azure_system_companies/)
 
 採用事例（海外）: 
 [Who's Using Microsoft Azure?](https://www.contino.io/insights/whos-using-microsoft-azure-2020) 
@@ -589,6 +675,7 @@ IDaaS:
 / [FJcloud-O](https://jp.fujitsu.com/solutions/cloud/fjcloud/-o/)
 / [Cloudn（サービス終了）](https://www.ntt.com/business/services/cloud/iaas/cloudn.html)
 / [WebARENA](https://web.arena.ne.jp/)
+/ [Vercel](https://vercel.com/)
 
 便利: 
 [Whats my DNS](https://www.whatsmydns.net/) 

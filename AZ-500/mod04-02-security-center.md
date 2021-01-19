@@ -10,6 +10,10 @@
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduction)
 
+[Azure Security Center Labs](https://github.com/Azure/Azure-Security-Center/tree/master/Labs)
+
+Microsoft Learn: [Azure Security Center を使用してセキュリティ上の脅威を解決する](https://docs.microsoft.com/ja-jp/learn/modules/resolve-threats-with-azure-security-center/)
+
 # [Azure Defender](https://docs.microsoft.com/ja-jp/azure/security-center/azure-defender)
 
 **これは Azure Security Center の Standard 価格レベル オプションに代わるものです**。
@@ -19,14 +23,26 @@
 
 Azure Defender は、Azure とハイブリッド ワークロードを高度かつインテリジェントに保護するために Security Center 内に統合された、クラウド ワークロード保護プラットフォーム (CWPP) です。 
 
-Azure Defenderは、さらに個別の「プラン」に分かれている。
+Azure Defenderは、[複数の「Defender プラン」から構成されます](https://docs.microsoft.com/ja-jp/azure/security-center/azure-defender#what-resource-types-can-azure-defender-secure)。
 
-- Azure Defender for servers - [JIT VMアクセス](https://docs.microsoft.com/ja-jp/azure/security-center/just-in-time-explained)などを含む。
-- Azure Defender for App Service
-- Azure Defender for Storage
+Azure Security Center の 価格と設定 の領域から Azure Defender を有効にすると、次の Defender プランが同時にすべて有効になります。
+
+- [Azure Defender for servers](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-servers-introduction) - [JIT VMアクセス](https://docs.microsoft.com/ja-jp/azure/security-center/just-in-time-explained)などを含む。
+- [Azure Defender for App Service](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-app-service-introduction)
+- [Azure Defender for Storage](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-storage-introduction)
+- [Azure Defender for SQL](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-sql-introduction)
+- [Azure Defender for Kubernetes](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-kubernetes-introduction)
+- [Azure Defender for container registries](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-container-registries-introduction)
+- [Azure Defender for Key Vault](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-key-vault-introduction)
+- [Azure Defender for Resource Manager](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-resource-manager-introduction)
+- [Azure Defender for DNS](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-dns-introduction)
+
+
+その他のDefender
+- [Microsoft 365 Defender](https://www.microsoft.com/ja-jp/microsoft-365/security/microsoft-365-defender)
+- [Windows Defender](https://support.microsoft.com/ja-jp/windows/windows-%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AB%E3%82%88%E3%82%8B%E4%BF%9D%E8%AD%B7%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99-2ae0363d-0ada-c064-8b56-6a39afb6a963) - Windows 10に組み込まれたウィルス対策プログラム
 - [Azure Defender for Identity](https://docs.microsoft.com/ja-jp/defender-for-identity/what-is) - 以前Azure ATP(Advanced Thread Protection)とよばれていたもの
-- ...
-
+- [Azure Defender for IoT](https://azure.microsoft.com/ja-jp/services/azure-defender-for-iot/)
 
 
 # クラウドセキュリティの2つの柱
