@@ -529,6 +529,7 @@ AWSとのインテグレーション:
 / [Azure Sentinel を AWS CloudTrail に接続して管理イベントをストリーミングする](https://docs.microsoft.com/ja-jp/azure/sentinel/connect-aws)
 / [Azure Arc enabled servers(AWSやオンプレなどの環境で稼働するVM・SQL Server等をAzureから管理)](https://www.publickey1.jp/blog/20/windowslinuxazureazure_arc_enabled_serversignite_2020.html)
 / [Azure Arc enabled data services(AWSやオンプレなどの環境で稼働するSQL Managed InstanceやPostgreSQLをAzureから管理)](https://www.publickey1.jp/blog/20/azure_sqlawsazure_arc_enabled_data_servicesignite_2020.html)
+/ [Azure Cloud Shellを最強のAWS CLI環境にする](https://qiita.com/moritalous/items/7adda101ae59652ab313)
 
 AWSエンジニア向けAzureトレーニング: 
 [AZ-010 Azure Administration for AWS SysOps](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-010t00) 
@@ -567,6 +568,8 @@ Azureとのインテグレーション:
 [Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) 
 / [Datadog](https://docs.datadoghq.com/ja/integrations/azure/?tab=azurecliv20) 
 / [New Relic](https://docs.newrelic.co.jp/docs/integrations/microsoft-azure-integrations/getting-started/activate-azure-integrations) 
+/ [Zabbix](https://www.zabbix.com/integrations/azure)
+/ [AppDynamics](https://www.appdynamics.com/ja_jp/solutions/cloud/cloud-monitoring/microsoft-azure) 
 / [Packer](https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/build-image-with-packer) 
 / [Vagrant](https://github.com/Azure/vagrant-azure) 
 / [Red Hat on Azure](https://azure.microsoft.com/ja-jp/overview/linux-on-azure/red-hat/) 

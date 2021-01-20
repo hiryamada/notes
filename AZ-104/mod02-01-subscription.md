@@ -108,6 +108,27 @@ Web から直接 - この場合、Azure portal Web サイトから直接 Azure �
 
 [SB C&S様による解説](https://licensecounter.jp/azure/faq/license/purchase.html)
 
+
+# [Azure サブスクリプションの課金所有権を別のアカウントに譲渡する](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/manage/billing-subscription-transfer)
+
+(Transfer billing ownership of an Azure subscription to another account)
+
+譲渡: Transfer
+
+課金所有権: Billing ownership
+
+**アカウントの課金管理者のみ**がサブスクリプションの所有権を譲渡できます。
+
+
+手順:
+
+- サブスクリプションを選択
+- 「課金所有権の譲渡」をクリック
+- サブスクリプションの新しい所有者となる、アカウントの課金管理者であるユーザーのメール アドレスを入力
+- 別の Azure AD テナントのアカウントにサブスクリプションを譲渡する場合は、[サブスクリプションを新しいアカウントのテナントに移行する](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/manage/billing-subscription-transfer#transfer-a-subscription-to-another-azure-ad-tenant-account)かどうかを選択
+  - 別のテナントに移行すると、ロールの割り当てが風んに削除される。
+
+
 # Azure Cost Management
 
 Azure Cost Managementを使用して、クラウド全体のリソース使用量を追跡し、コストを管理することができます。

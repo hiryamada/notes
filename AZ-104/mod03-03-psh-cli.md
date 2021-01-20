@@ -1,12 +1,14 @@
 # Azure PowerShell
 
-[ドキュメント](https://docs.microsoft.com/ja-jp/powershell/azure/?view=azps-5.0.0)
+[ドキュメント](https://docs.microsoft.com/ja-jp/powershell/azure/)
 
-PowerShellの使用例については、ラボ手順書をご参照ください。
+
 
 # Azure CLI
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/cli/azure/)
+
+コマンドの実行結果（JSON）から必要な部分を抽出したい場合は `--query` オプションを使用する。[JMESPath](https://jmespath.org/)の文法を使用する。
 
 ```
 az login
