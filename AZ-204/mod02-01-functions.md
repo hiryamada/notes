@@ -1,4 +1,4 @@
-Azure Functions
+# Azure Functions
 
 Azure Functions はサーバーレス アプリケーション プラットフォームです。
 

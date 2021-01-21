@@ -1,47 +1,62 @@
-ラボで使用するファイル: [GitHubのAZ-204リポジトリ](https://github.com/MicrosoftLearning/AZ-204Ja-DevelopingSolutionsforMicrosoftAzure)にアクセスし、「Code」ボタン（緑）＞Download ZIP、でダウンロードしてください。
+# ラボ
 
-- モジュール0: コース紹介
+- [ラボ手順書](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/)
+  - 「Answer Key」が付いているものを参照してください（より具体的な指示が書かれています）
+- ラボで使用するソースコード: [GitHubのAZ-204リポジトリ](https://github.com/MicrosoftLearning/AZ-204Ja-DevelopingSolutionsforMicrosoftAzure)にアクセスし、「Code」ボタン（緑）＞Download ZIP でダウンロードしてください。展開すると「Allfiles」フォルダがあり、その中にソースコードが入っています。
+
+# 講義ノート
+
+- モジュール0: [コース紹介](mod00.md)
 - モジュール1: Azure App Service
   - [Azure App Service](mod01-01-appservice.md)
-  - ラボ1 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_01_lab.md) [解説](lab01.md)
+  - ラボ1 
 - モジュール2: Azure Functions
   - [Azure Functions](mod02-01-functions.md)
   - [Durable Functions](mod02-02-durable-functions.md)
-  - ラボ2 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_02_lab.md) [解説](lab02.md)
-- モジュール3: Blob Btorage
+  - ラボ2 
+- モジュール3: Blob Storage
   - [Azure Blob Storage](mod03-01-blob.md)
-  - ラボ3 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_03_lab.md) [解説](lab03.md)
+  - ラボ3 
 - モジュール4: Cosmos DB
   - [Azrure Cosmos DB](mod04-01-cosmosdb.md)
   - [Table Table Storage](mod04-02-table.md)
-- モジュール5: VM、ARM、ACR、ACI
+- モジュール5: IaaS
   - [Azure VM](mod05-01-vm.md)
   - [ARM](mod05-02-arm.md)
   - [Docker](mod05-03-docker.md)
   - [Azure Container Registry](mod05-04-acr.md)
   - [Azure Container Instance](mod05-05-aci.md)
+  - ラボ5
 - モジュール6: ユーザー認証と承認
   - [Microsoft ID Platform](mod06-01-idplatform.md)
   - [Microsoft Authentication Library (MSAL)](mod06-02-msal.md)
   - [Microsoft Graph](mod06-03-graph.md)
-  - ラボ6 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_06_lab.md)
+  - ラボ6 
 - モジュール7: セキュリティ
   - [Azure key Vault](mod07-01-keyvault.md)
   - [マネージドID](mod07-02-managed-id.md)
   - [App Configuration](mod07-03-app-configuration.md)
-  - ラボ7 [課題](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_07_lab.md) / [解答](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/blob/master/Instructions/Labs/AZ-204_07_lab_ak.md)
+  - ラボ7 
 - モジュール8: API Management
   - [Azure API Management](mod08-01-apim.md)
+  - ラボ8
 - モジュール9: Logic Apps
   - [Azure Logic Apps](mod09-01-logicapp.md)
-- モジュール10: Event Grid、Notification Hubs
+  - ラボ9
+- モジュール10: イベント
   - [Azure Event Grid](mod10-01-eventgrid.md)
   - [Azure Event Hubs](mod10-02-eventhubs.md)
   - [Azure Notification Hubs](mod10-03-notification-hubs.md)
-- モジュール11: Service Bus、Queue Storage
+  - ラボ10
+- モジュール11: メッセージング
   - [Azure Service Bus](mod11-01-servicebus.md)
   - [Azure Queue Storage](mod11-02-queue.md)
-- モジュール12: Azure Monitor、Application Insights
+  - ラボ11
+- モジュール12: 監視
   - [Azure Monitor](mod12-01-monitor.md)
   - [Azure App Insights](mod12-02-appinsights.md)
-- モジュール13: Azure Cache for Redis、Azure CDN
+  - ラボ12
+- モジュール13: キャッシュ
+  - [Azure Cache for Redis](mod13-01-redis.md)
+  - [Azure CDN](mod13-02-cdn.md)
+  - ラボ13
