@@ -217,6 +217,7 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [マイクロソフトのクラウドテクノロジーでゲーム開発](https://www.slideshare.net/dmasubuchi/idxboxcloud)
 / [『Minecraft』シリーズで活用されているマルチプレイサーバの実装テクニック](https://news.denfaminicogamer.jp/kikakuthetower/200903h)
 / [本田翼がマイクロソフトとタッグを組んでゲームを開発中](https://www.google.com/search?q=%E6%9C%AC%E7%94%B0%E7%BF%BC+%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88)
+/ [Azure仮想マシンにMINECRAFT(Bedrock Edition)サーバを立てる](https://qiita.com/yotan/items/15ab8d44d6cf9e383c98)
 
 セキュリティ担当者向け:
 [セキュリティの基礎](https://docs.microsoft.com/ja-jp/azure/security/fundamentals/)
@@ -228,6 +229,7 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [Microsoft Assesments](https://docs.microsoft.com/ja-jp/assessments/)
 / [BLOB ストレージのセキュリティに関する推奨事項](https://docs.microsoft.com/ja-jp/azure/storage/blobs/security-recommendations)
 / [Azure Storage 用の Azure セキュリティ ベースライン](https://docs.microsoft.com/ja-jp/azure/storage/common/security-baseline)
+/ [リモートの従業員に対するセキュリティと管理](https://docs.microsoft.com/ja-jp/enterprise-mobility-security/remote-work/)
 
 SAP on Azure: [概要](https://docs.microsoft.com/ja-jp/azure/architecture/reference-architectures/sap/sap-overview)
 
@@ -236,6 +238,7 @@ MVP(Most Valuable Professional):
 / [概要](https://mvp.microsoft.com/ja-jp/overview)
 / [Microsoft MVP について](https://chomado.github.io/MS-MVP/)
 / [MVPその他の定義](https://ja.wikipedia.org/wiki/MVP)
+/ [DigiCert MVP Program](https://www.digicert.com/friends/msmvp/)
 
 ブログ（Azureサポートチーム）:
 [Japan Azure IaaS Core Support Blog](https://jpaztech.github.io/blog/index.html)
@@ -269,6 +272,7 @@ MVP(Most Valuable Professional):
 / [Logico Inside](https://logico-jp.io/)
 / [Ohina Work](https://ohina.work/)
 / [ヨコヤマ企画](https://yp.g20k.jp/)
+/ [KTKR雑記](https://zakki.nya-n.net/)
 
 ブログ（企業系）: 
 [Cloud-config Tech Blog](https://tech-blog.cloud-config.jp/) 
