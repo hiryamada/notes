@@ -158,6 +158,7 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [Azure Rock Star(技術コミュニティおよびビジネス コミュニティをご紹介)](https://www.microsoft.com/ja-jp/events/top/azure-rock-star.aspx)
 / [わんくま同盟](http://wankuma.com/)
 / [.NETラボ](https://dotnetlab.connpass.com/)
+/ [トレノケ雲の会](https://kumonokai.connpass.com/)
 
 イベント:
 / [Azureのイベント](https://azure.microsoft.com/ja-jp/community/events/)
@@ -218,7 +219,6 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [本田翼がマイクロソフトとタッグを組んでゲームを開発中](https://www.google.com/search?q=%E6%9C%AC%E7%94%B0%E7%BF%BC+%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88)
 
 セキュリティ担当者向け:
-
 [セキュリティの基礎](https://docs.microsoft.com/ja-jp/azure/security/fundamentals/)
 / [ベストプラクティス](https://docs.microsoft.com/ja-jp/azure/security/fundamentals/best-practices-and-patterns)
 / [クラウド導入フレームワーク（CAF）のセキュリティベストプラクティス](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/security/security-top-10)
@@ -268,9 +268,10 @@ MVP(Most Valuable Professional):
 / [しばやん雑記](https://blog.shibayan.jp/)
 / [Logico Inside](https://logico-jp.io/)
 / [Ohina Work](https://ohina.work/)
+/ [ヨコヤマ企画](https://yp.g20k.jp/)
 
 ブログ（企業系）: 
-/ [Cloud-config Tech Blog](https://tech-blog.cloud-config.jp/) 
+[Cloud-config Tech Blog](https://tech-blog.cloud-config.jp/) 
 / [SB Technology クラウドエンジニアブログ](https://www.softbanktech.co.jp/special/blog/cloud_blog/) 
 / [Azureブログ｜SB C&amp;S株式会社](https://licensecounter.jp/azure/blog/)
 / [株式会社LIG](https://liginc.co.jp/?s=azure)
@@ -288,13 +289,17 @@ Azureのコンサルティング・設計・構築・運用・監視・保守・
 / [ReSMサービス Azure運用管理(株式会社DTS様)](https://www.resm.jp/service/azure_management/)
 / [ディーアイエスソリューション株式会社様](https://www.pc-daiwabo.co.jp/from_dis/1801.html)
 
+連載記事、コラム等:
+[なるほど、Microsoft Azure](https://www.school.ctc-g.co.jp/columns/takeda/takeda01.html)
+/ [今からはじめる Microsoft Azure](https://www.school.ctc-g.co.jp/columns/ozawa4/)
+/ [ゼロからはじめるAzure](https://news.mynavi.jp/series/zeroazure/)
+/ [Azure"超"入門](https://news.mynavi.jp/series/azure/)
+
 ニュースサイト等: 
 [InfoQ](https://www.infoq.com/jp/) 
 / [Publickey](https://www.publickey1.jp/) 
 / [Azure boost (ASCII x FIXER)](https://ascii.jp/azure-fixer/) 
 / [CloudSteady 技術FAQ](https://cloudsteady.jp/post/category/faq/) 
-/ [ゼロからはじめるAzure](https://news.mynavi.jp/series/zeroazure/)
-/ [Azure"超"入門](https://news.mynavi.jp/series/azure/)
 
 ニュースサイト＞クラウド
 [@IT](https://www.atmarkit.co.jp/ait/subtop/cloud.html)
@@ -588,6 +593,7 @@ Azureとのインテグレーション:
 
 ツール類（開発者向け）:
 [Azure Functions Core Tools](https://www.npmjs.com/package/azure-functions-core-tools)
+/ [Azure ストレージ エミュレーター](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-emulator)
 / [Azurite](https://github.com/Azure/Azurite)
 / [Azure Cosmos DB Emulator](https://docs.microsoft.com/ja-jp/azure/cosmos-db/local-emulator)
 / [Fiddler](https://www.telerik.com/fiddler) 
@@ -604,6 +610,12 @@ Azureとのインテグレーション:
 / [Azure Data Studio](https://docs.microsoft.com/ja-jp/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
 / [mssql-cli](https://github.com/dbcli/mssql-cli)
 / [様々なDB向けのCLI](https://github.com/dbcli)
+
+作図: 
+[Lucidchart](https://www.lucidchart.com/pages/ja/templates/network/lucidchart-azure-framework-2019)
+/ [ヌーラボ Cacoo（カクー）](https://www.google.com/search?q=cacoo+azure)
+/ [Edraw Azure 構成図ツール](https://www.edrawsoft.com/jp/azure-diagram/)
+/ [Visio](https://www.google.com/search?q=visio+azure)
 
 Visual Studio Code拡張機能:
 [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
@@ -681,6 +693,9 @@ IDaaS:
 / [Cloudn（サービス終了）](https://www.ntt.com/business/services/cloud/iaas/cloudn.html)
 / [WebARENA](https://web.arena.ne.jp/)
 / [Vercel](https://vercel.com/)
+/ [Fujitsu Cloud Service A5 for Microsoft Azure](https://jp.fujitsu.com/solutions/cloud/paas/a5/presen-a5/pdf/presen-a5.pdf)
+/ [FUJITSU Cloud Service K5](https://jp.fujitsu.com/solutions/cloud/oss/document/pdf/foross-catalog.pdf)
+
 
 便利: 
 [Whats my DNS](https://www.whatsmydns.net/) 
@@ -700,6 +715,7 @@ IDaaS:
 / [擬人化](https://www.google.com/search?q=windows+%E6%93%AC%E4%BA%BA%E5%8C%96)
 / [Office アシスタント](https://www.google.com/search?q=Office+%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88)
 / [マイクロソフト(北海道ならではの風土が育んだ乳脂肪をたっぷり含んだソフトクリーム)](https://www.google.com/search?q=%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88+%E3%82%BD%E3%83%95%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0)
+/ [毎月10日はWindows 10の日](https://www.google.com/search?q=%E6%AF%8E%E6%9C%8810%E6%97%A5+Windows+10%E3%81%AE%E6%97%A5)
 
 その他のAzure:
 [純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
