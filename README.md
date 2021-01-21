@@ -240,6 +240,11 @@ MVP(Most Valuable Professional):
 / [MVPその他の定義](https://ja.wikipedia.org/wiki/MVP)
 / [DigiCert MVP Program](https://www.digicert.com/friends/msmvp/)
 
+ブログ（Azure公式）:
+[Azure Active Directory Identity Blog](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/bg-p/Identity)
+/ [ASP.NET Blog](https://devblogs.microsoft.com/aspnet/)
+/ [Microsoft Developer Blogs](https://devblogs.microsoft.com/)
+
 ブログ（Azureサポートチーム）:
 [Japan Azure IaaS Core Support Blog](https://jpaztech.github.io/blog/index.html)
 / [Japan Azure Identity Support Blog](https://jpazureid.github.io/blog/)
@@ -257,9 +262,6 @@ MVP(Most Valuable Professional):
 
 フォーラム:
 [Japan Azure IaaS and Networking Support Team Forum](https://social.msdn.microsoft.com/Forums/ja-JP/home?forum=Jpaztech)
-
-ブログ（Azure Tech Community）:
-[Azure Active Directory Identity Blog](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/bg-p/Identity)
 
 ブログ（個人系）: 
 [くらう道](https://www.cloudou.net/) 
@@ -606,6 +608,7 @@ Azureとのインテグレーション:
 / [git-secrets](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/preventing-leaked-azure-secrets-in-github/ba-p/1400010)
 / [Credential Scanner(CredScan)](https://secdevtools.azurewebsites.net/helpcredscan.html)
 / [BFG](https://rtyley.github.io/bfg-repo-cleaner/)
+/ [httprepl](https://docs.microsoft.com/ja-jp/aspnet/core/web-api/http-repl/?view=aspnetcore-5.0&tabs=windows)
 
 ツール類（データエンジニア向け）:
 [SQL developer tools](https://www.microsoft.com/en-us/sql-server/developer-tools)
