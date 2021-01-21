@@ -66,9 +66,9 @@ Azure へのアクセス(要Azureアカウント):
 / [新しいサポートリクエストの作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
 
 お問い合わせ: 
-)
 / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) 
-/ [Azure Knowledge Center（一般的な質問への回答を参照）](https://azure.microsoft.com/ja-jp/resources/knowledge-center// [Azure Feedback](https://feedback.azure.com/) 
+/ [Azure Knowledge Center（一般的な質問への回答を参照）](https://azure.microsoft.com/ja-jp/resources/knowledge-center/)
+/ [Azure Feedback](https://feedback.azure.com/) 
 / [MSDNフォーラム](https://social.msdn.microsoft.com/Forums/ja-JP/home)
 / [Azureのサポートプラン](https://azure.microsoft.com/ja-jp/support/plans/)
 / [法人/パートナー向けサポート](https://www.microsoft.com/ja-jp/services/support.aspx)
@@ -215,6 +215,7 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [モノビットエンジン株式会社様のセミナー動画](https://www.monobitengine.com/seminar/)
 / [マイクロソフトのクラウドテクノロジーでゲーム開発](https://www.slideshare.net/dmasubuchi/idxboxcloud)
 / [『Minecraft』シリーズで活用されているマルチプレイサーバの実装テクニック](https://news.denfaminicogamer.jp/kikakuthetower/200903h)
+/ [本田翼がマイクロソフトとタッグを組んでゲームを開発中](https://www.google.com/search?q=%E6%9C%AC%E7%94%B0%E7%BF%BC+%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88)
 
 セキュリティ担当者向け:
 
@@ -266,6 +267,7 @@ MVP(Most Valuable Professional):
 / [++C++; // 未確認飛行 C](https://ufcpp.net/about_site/)
 / [しばやん雑記](https://blog.shibayan.jp/)
 / [Logico Inside](https://logico-jp.io/)
+/ [Ohina Work](https://ohina.work/)
 
 ブログ（企業系）: 
 / [Cloud-config Tech Blog](https://tech-blog.cloud-config.jp/) 
