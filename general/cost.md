@@ -76,6 +76,8 @@ VMには、IPアドレス、NIC、ディスクなどのリソースが付随す�
 
 [ディスク上のデータサイズではなく、プロビジョニングした容量に対して課金される。ディスクのサイズは縮小することはできない。](https://docs.microsoft.com/ja-jp/azure/virtual-machines/faq-for-disks)
 
+https://www.publickey1.jp/blog/21/red_hat_enterprise_linux16okred_hat.html
+
 # Azure AutomationによるVM運用例
 
 https://internet.watch.impress.co.jp/docs/column/shimizu/1199751.html

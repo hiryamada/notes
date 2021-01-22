@@ -6,7 +6,9 @@
 
 # 講義ノート
 
-- モジュール0: [コース紹介](mod00.md)
+- モジュール0: 
+  - [コース紹介](mod00.md)
+  - [ラボ環境のセットアップ](pdf/mod00/ラボ環境のセットアップ.pdf)
 - モジュール1: Azure App Service
   - [Azure App Service](mod01-01-appservice.md)
   - ラボ1 
@@ -18,8 +20,9 @@
   - [Azure Blob Storage](mod03-01-blob.md)
   - ラボ3 
 - モジュール4: Cosmos DB
-  - [Azrure Cosmos DB](mod04-01-cosmosdb.md)
+  - [Azure Cosmos DB](mod04-01-cosmosdb.md)
   - [Table Table Storage](mod04-02-table.md)
+  - ラボ4
 - モジュール5: IaaS
   - [Azure VM](mod05-01-vm.md)
   - [ARM](mod05-02-arm.md)

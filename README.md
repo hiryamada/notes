@@ -710,8 +710,7 @@ IDaaS:
 / [Downdetector](https://downdetector.jp/)
 
 豆知識:
-[azure（単語）](https://ja.wiktionary.org/wiki/azure)
-/ [Contoso](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%88%E3%82%BD)
+ [Contoso](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%88%E3%82%BD)
 / [Microsoftのコーポレートスローガンの推移](https://www.quora.com/What-is-Microsofts-corporate-slogan-What-does-it-mean)
 / [ASM](https://www.google.com/search?q=Azure+Service+Manager)
 
@@ -725,7 +724,8 @@ IDaaS:
 / [毎月10日はWindows 10の日](https://www.google.com/search?q=%E6%AF%8E%E6%9C%8810%E6%97%A5+Windows+10%E3%81%AE%E6%97%A5)
 
 その他のAzure:
-[純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
+[azure（単語）](https://ja.wiktionary.org/wiki/azure)
+/ [純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
 / [アズールレーン](https://www.azurlane.jp/)
 / [TrySail『azure』](https://www.google.com/search?q=TrySail+Azure)
 / [AZURE♯（アズールシャープ）](http://www.bright-co.jp/NewSite/profile/index.html)
@@ -742,3 +742,9 @@ IDaaS:
 / [アズールモータリング麻布様](http://azb.azzurre-motoring.com/)
 / [Grand Azure](https://www.azuregd.com/)
 / [AZURE MARINER(補給艦をイメージしたコンセプトカフェ＆バー)](http://azuremariner.com/)
+/ [殻ノ少女 オリジナルサウンドトラック AZURE](https://www.google.com/search?q=%E6%AE%BB%E3%83%8E%E5%B0%91%E5%A5%B3+azure)
+/ [Every Little Thing - azure moon](https://www.google.com/search?q=azure+moon+elt)
+/ [fripSide - piece of azure](https://www.google.com/search?q=flipside+piece+of+azure)
+/ [Fafner in the Azure](https://www.google.com/search?q=Fafner+in+the+Azure)
+/ [azure blue～天色の架空線～](https://www.google.com/search?q=azure+blue%EF%BD%9E%E5%A4%A9%E8%89%B2%E3%81%AE%E6%9E%B6%E7%A9%BA%E7%B7%9A%EF%BD%9E)
+/ [今井麻美 - The Azure 〜碧の記憶〜](https://www.google.com/search?q=%E4%BB%8A%E4%BA%95%E9%BA%BB%E7%BE%8E+The+Azure%EF%BD%9E%E7%A2%A7%E3%81%AE%E8%A8%98%E6%86%B6%EF%BD%9E)
