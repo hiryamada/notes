@@ -66,11 +66,6 @@ https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-bui
 
 または、`az webapp config appsettings set`コマンドを使用して設定を有効にすることもできます。
 
-# Kuduについて
-
-[KuduのWiki](https://github.com/projectkudu/kudu)。[Kuduの解説（@IT）](https://www.atmarkit.co.jp/ait/articles/1707/27/news024_3.html)。[ZIPデプロイ](https://github.com/projectkudu/kudu/wiki/Deploying-from-a-zip-file-or-url)にも対応しています。
-
-[ZIPデプロイ](https://docs.microsoft.com/ja-jp/azure/app-service/deploy-zip#create-a-project-zip-file)
 
 
 # タスク1

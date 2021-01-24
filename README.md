@@ -49,6 +49,7 @@ Azure全般:
 / [ライフサイクルのFAQ](https://docs.microsoft.com/ja-jp/lifecycle/faq/general-lifecycle) 
 / [製品およびサービスのライフサイクル情報の検索](https://docs.microsoft.com/ja-jp/lifecycle/products/)
 / [Azure モバイル アプリ](https://azure.microsoft.com/ja-jp/features/azure-portal/mobile-app/)
+/ [Azure デスクトップ アプリ](https://www.atmarkit.co.jp/ait/articles/1906/07/news007.html)
 / [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/)
 / [Azureの状態（ステータスダッシュボード）](https://status.azure.com/ja-jp/status)
 / [Azure DevOpsの状態](https://status.dev.azure.com/)
@@ -63,7 +64,7 @@ Azure へのアクセス(要Azureアカウント):
 , [登場時のブログ, Screencast](https://azure.microsoft.com/ja-jp/blog/azure-resource-explorer-a-new-tool-to-discover-the-azure-api/)
 , [わかりやすい解説](https://qiita.com/yaegashi/items/fa8984b724e5e819aa6e)
 / [Azure Service Health ダッシュボード - サービス正常性(Azure portal)](https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues)
-/ [新しいサポートリクエストの作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) 
+/ [新しいサポートリクエストの作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), [サポートリクエストの作成と管理の方法](https://docs.microsoft.com/ja-jp/azure/azure-portal/supportability/how-to-create-azure-support-request)
 
 お問い合わせ: 
 / [Azure営業担当者へのお問い合わせ](https://azure.microsoft.com/ja-jp/overview/sales-number/) 
@@ -131,6 +132,7 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [Facebook(@microsoftazure)](https://www.facebook.com/microsoftazure)
 / [マイクロソフト法人向け総合ポータル](https://www.microsoft.com/ja-jp/biz)
 / [Microsoft Learn Blog](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog)
+/ [Azureのウェビナー](https://azure.microsoft.com/ja-jp/overview/webinars/)
 
 総合: 
 [Azureリソース](https://azure.microsoft.com/ja-jp/resources/) 
@@ -294,16 +296,17 @@ Azureのコンサルティング・設計・構築・運用・監視・保守・
 / [JIG-SAW OPS様](https://ops.jig-saw.com/service/cloud/azure)
 / [ReSMサービス Azure運用管理(株式会社DTS様)](https://www.resm.jp/service/azure_management/)
 / [ディーアイエスソリューション株式会社様](https://www.pc-daiwabo.co.jp/from_dis/1801.html)
+/ [Microsoft Azureユーザー向けクラウド保険 東京海上日動火災保険株式会社様](https://www.google.com/search?q=microsoft+azure+%E6%9D%B1%E4%BA%AC%E6%B5%B7%E4%B8%8A%E6%97%A5%E5%8B%95+%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E4%BF%9D%E9%99%BA)
+/ [シネックスジャパン様 サイバーリスクサポート for Microsoft Azure](https://www.google.com/search?q=%E3%82%B7%E3%83%8D%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3+%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E3%83%AA%E3%82%B9%E3%82%AF%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88+for+Microsoft+Azure)
 
 連載記事、コラム等:
 [なるほど、Microsoft Azure](https://www.school.ctc-g.co.jp/columns/takeda/takeda01.html)
 / [今からはじめる Microsoft Azure](https://www.school.ctc-g.co.jp/columns/ozawa4/)
 / [ゼロからはじめるAzure](https://news.mynavi.jp/series/zeroazure/)
 / [Azure"超"入門](https://news.mynavi.jp/series/azure/)
+/ [マイクロソフトのTAMさん日和](https://tech-blog.cloud-config.jp/2019-06-10-microsoft-tam-report/)
 
-ニュースサイト等: 
-[InfoQ](https://www.infoq.com/jp/) 
-/ [Publickey](https://www.publickey1.jp/) 
+ニュースサイト＞Microsoft, Azure: 
 / [Azure boost (ASCII x FIXER)](https://ascii.jp/azure-fixer/) 
 / [CloudSteady 技術FAQ](https://cloudsteady.jp/post/category/faq/) 
 
@@ -319,6 +322,11 @@ IT系ニュース
 / [CNet](https://japan.cnet.com/)
 / [EnterpriseZine](https://enterprisezine.jp/)
 / [JBpress](https://jbpress.ismedia.jp/category/it-news)
+/ [InfoQ](https://www.infoq.com/jp/) 
+/ [Publickey](https://www.publickey1.jp/) 
+/ [スラド](https://srad.jp/)
+/ [OSDN Magazine](https://mag.osdn.jp/)
+
 
 Reddit:
 [Azure](https://www.reddit.com/r/AZURE/)
@@ -504,6 +512,7 @@ Azureデータセンター:
 / コンテナー型データセンター 記事[1](https://www.businessinsider.jp/post-222637), [2](https://www.atmarkit.co.jp/ait/articles/2010/21/news061.html) 
 / 海底データセンター(Project Natick) 記事[1](https://news.microsoft.com/ja-jp/features/200915-project-natick-underwater-datacenter/), [2](https://japan.cnet.com/article/35159756/), [3](https://pc.watch.impress.co.jp/docs/news/1225160.html), [4](https://www.gizmodo.jp/2018/08/live-stream-of-microsoft-underwater-datacenter.html) 
 / [信頼性のインフォグラフィック](https://azure.microsoft.com/mediahandler/files/resourcefiles/infographic-reliability-with-microsoft-azure/InfographicRC2.pdf)
+/ [Microsoft reveals its MASSIVE data center (Full Tour)](https://www.youtube.com/watch?v=80aK2_iwMOs)
 
 セキュリティ: 
 [信頼できるクラウド](https://azure.microsoft.com/ja-jp/overview/trusted-cloud/) 
@@ -743,8 +752,10 @@ IDaaS:
 / [Grand Azure](https://www.azuregd.com/)
 / [AZURE MARINER(補給艦をイメージしたコンセプトカフェ＆バー)](http://azuremariner.com/)
 / [殻ノ少女 オリジナルサウンドトラック AZURE](https://www.google.com/search?q=%E6%AE%BB%E3%83%8E%E5%B0%91%E5%A5%B3+azure)
-/ [Every Little Thing - azure moon](https://www.google.com/search?q=azure+moon+elt)
+/ [Every Little Thing - azure moon](https://www.google.com/search?q=azure+moon+elt) ([ELTとは？](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/sql-data-warehouse/design-elt-data-loading#what-is-elt))
 / [fripSide - piece of azure](https://www.google.com/search?q=flipside+piece+of+azure)
 / [Fafner in the Azure](https://www.google.com/search?q=Fafner+in+the+Azure)
 / [azure blue～天色の架空線～](https://www.google.com/search?q=azure+blue%EF%BD%9E%E5%A4%A9%E8%89%B2%E3%81%AE%E6%9E%B6%E7%A9%BA%E7%B7%9A%EF%BD%9E)
 / [今井麻美 - The Azure 〜碧の記憶〜](https://www.google.com/search?q=%E4%BB%8A%E4%BA%95%E9%BA%BB%E7%BE%8E+The+Azure%EF%BD%9E%E7%A2%A7%E3%81%AE%E8%A8%98%E6%86%B6%EF%BD%9E)
+/ [VALKYRIA: Azure Revolution (蒼き革命のヴァルキュリア)](https://www.google.com/search?q=VALKYRIA%3A+Azure+Revolution)
+

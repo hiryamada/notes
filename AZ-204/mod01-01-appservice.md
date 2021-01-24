@@ -289,8 +289,13 @@ Git, Docker, Azure DevOps（デプロイセンター）, GitHub Actions, Circle 
 
 [Bitbucket](https://www.atlassian.com/ja/software/bitbucket)は、アトラシアン社が提供する、Gitリポジトリのサービスです。
 
+# Kuduについて
+
 組み込みの Kudu App Service ビルド サーバーを使用して、Bitbucket（、GitHub、または Azure Repos）から[継続的にデプロイ](https://docs.microsoft.com/ja-jp/azure/app-service/deploy-continuous-deployment)できます。
 
+[KuduのWiki](https://github.com/projectkudu/kudu)。[Kuduの解説（@IT）](https://www.atmarkit.co.jp/ait/articles/1707/27/news024_3.html)。[ZIPデプロイ](https://github.com/projectkudu/kudu/wiki/Deploying-from-a-zip-file-or-url)にも対応しています。
+
+[ZIPデプロイ](https://docs.microsoft.com/ja-jp/azure/app-service/deploy-zip#create-a-project-zip-file)
 
 # スケールアップ/ダウン
 

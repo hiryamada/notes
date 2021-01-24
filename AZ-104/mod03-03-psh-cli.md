@@ -2,6 +2,16 @@
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/powershell/azure/)
 
+Learn: [PowerShell の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-powershell/)
+
+
+[Azure Administrator対策「Azure PowerShellの命名規約」](https://ohina.work/post/az-103_powershell/)
+
+実行注意: すべてのロックを削除し、すべてのリソースグループを削除（Cloud Shell用のストレージアカウントを除外）
+```
+Get-AzResourceLock | Remove-AzResourceLock -Force
+Get-AzResourceGroup |Where-Object {$_.ResourceGroupName -notlike 'cloud-shell*'} |Remove-AzResourceGroup -Force -AsJob
+```
 
 
 # Azure CLI

@@ -1,8 +1,11 @@
 # ラボ
 
+- 各ラボは1時間(予想時間45分+バッファ15分)です。
 - [ラボ手順書](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/)
   - 「Answer Key」が付いているものを参照してください（より具体的な指示が書かれています）
 - ラボで使用するソースコード: [GitHubのAZ-204リポジトリ](https://github.com/MicrosoftLearning/AZ-204Ja-DevelopingSolutionsforMicrosoftAzure)にアクセスし、「Code」ボタン（緑）＞Download ZIP でダウンロードしてください。展開すると「Allfiles」フォルダがあり、その中にソースコードが入っています。
+- 主に、Azure portal と [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/) を使用します。
+- 言語は主に C# が使用されます。
 
 # 講義ノート
 

@@ -19,6 +19,9 @@ Microsoft Learn
   - [Azure で Windows 仮想マシンを作成する](https://docs.microsoft.com/ja-jp/learn/modules/create-windows-virtual-machine-in-azure/)
 - [Windows Server IaaS VM のネットワークを実装する](https://docs.microsoft.com/ja-jp/learn/paths/implement-windows-server-iaas-virtual-machine-networking/)
 
+最新情報
+
+- [Public IP SKU upgrade generally available](https://azure.microsoft.com/ja-jp/updates/public-ip-sku-upgrade-generally-available/) - Public IP(とLoad Balancer)について、IPアドレスを変更せず、BasicからStandardへのアップグレードが可能に。PowerShell, CLI, テンプレート、APIから。[参考](https://kogelog.com/2021/01/14/20210114-01/)
 
 # プライベートIPアドレス
 

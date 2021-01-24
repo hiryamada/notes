@@ -7,6 +7,9 @@ Azure Cosmos DB
 
 [登場時のブログ](https://azure.microsoft.com/ja-jp/blog/azure-cosmos-db-microsofts-globally-distributed-multi-model-database-service/)
 
+名前の由来
+[宇宙 (コスモス: Cosmos) スケールのアプリのビルドを可能にするために Cosmos DB が生み出された](https://azure.microsoft.com/ja-jp/blog/azure-cosmos-db-pushing-the-frontier-of-globally-distributed-databases/) 
+
 
 [NoSQL（Wikipedia）](https://ja.wikipedia.org/wiki/NoSQL)
 
