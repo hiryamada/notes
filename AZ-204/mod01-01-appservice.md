@@ -62,6 +62,8 @@ Azure Functions には、 App Service プラン で実行するオプション�
 [Azure Functions](https://azure.microsoft.com/ja-jp/services/functions/) - [3種類の価格プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-overview#how-much-does-functions-cost)。[従量課金プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#consumption-plan)、[Premium プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#premium-plan)、[App Serviceプラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#app-service-plan)
 
 
+[各プランでの制限値など](https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits)
+
 # 使用できる言語
 
 .NET、.NET Core、Java、Ruby、Node.js、PHP、Pythonをサポート。
