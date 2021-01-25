@@ -638,3 +638,50 @@ Azure Portal で、Web アプリに移動します。
 # Application Insights
 
 [Mod12を参照](mod12-02-appinsights.md)
+
+# Azure App Service での OS とランタイムのパッチ適用
+
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/app-service/overview-patch-os-runtime)
+
+> App Service はサービスとしてのプラットフォームです。これは、OS およびアプリケーション スタックが Azure によって自動的に管理されることを意味します。
+> 
+> Azure では、2 つのレベルで OS のパッチ適用が管理されます。1 つが物理サーバーで、もう 1 つが App Service リソースを実行するゲスト仮想マシン (VM) です。 
+> 
+> どちらも、月例パッチ火曜日スケジュールに従って毎月更新されます。 これらの更新プログラムは、Azure サービスの高可用性 SLA を保証する方法で、自動的に適用されます。
+
+
+[Azure App ServiceのOSアップデートの背後にある魔法の神秘性を取り除く (Demystifying the magic behind App Service OS updates) – S/N Ratio (wordpress.com)](https://satonaoki.wordpress.com/2018/01/25/demystifying-the-magic-behind-app-service-os-updates/)
+
+> 特定のリージョンでアップデートを行う際、我々は、アプリが動作していない利用可能なインスタンスをアップデートし、それから、アップデート済みのインスタンスにアプリを移動し、それから、アプリがなくなったインスタンスをアップデートします。
+> 
+> この移動はコールド スタートを引き起こし、これに関連してパフォーマンスが低下がする場合があります。
+> 
+> アプリケーションのバイナリが新しい仮想マシンにロードされ、ライブラリがディスクからロードされます。
+> 
+> 外部ユーザーに対して、アプリへのリクエストに対するレスポンスで1度限りの遅延が発生し、その後、サイトは正常に動作します。
+
+
+[Webアプリが動いているマシンが再起動したらどうなるの？](https://qiita.com/superriver/items/df5790f9a25292cbcc03#web%E3%82%A2%E3%83%97%E3%83%AA%E3%81%8C%E5%8B%95%E3%81%84%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9E%E3%82%B7%E3%83%B3%E3%81%8C%E5%86%8D%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%9F%E3%82%89%E3%81%A9%E3%81%86%E3%81%AA%E3%82%8B%E3%81%AE)
+
+> さて、ワーカー自身は様々な理由から再起動されます。OSの更新とプラットフォームコードの更新が理由であることが多いです。
+> 
+> あるワーカー上でWebアプリが実行中に再起動が要求されると、それ以降フロントエンドはHTTPリクエストをそのワーカーには送らなくなります。
+> 
+> ただしすでに処理中のリクエストの処理は続行します(いわゆるGraceful shutdownです)。
+
+ （中略）
+
+> というわけなので、マシンがいつ再起動しようと、理想的にはダウンタイムは発生しません。
+> 
+> 特にアプリが十分速く起動するように書かれている場合はコールドスタートの時間も短くなります。
+
+# サポートされる言語ランタイムの更新、追加、非推奨の時期
+
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/app-service/overview-patch-os-runtime#when-are-supported-language-runtimes-updated-added-or-deprecated)
+
+ランタイムの更新と廃止は以下で発表されます。
+
+- https://azure.microsoft.com/updates/?product=app-service
+- https://github.com/Azure/app-service-announcements/issues
+
+GitHubの通知（Watch）を有効にすることで、通知を受信することができます。

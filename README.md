@@ -363,6 +363,7 @@ Youtube(日本):
 / [Microsoft Partner Network Japan](https://www.youtube.com/channel/UClVBYGCEwOkdVMoBClVaTqg)
 / [kosmosebiさん（Azure Thursday Japan等）](https://www.youtube.com/channel/UC3VHyKjqgTGSfRMVS1qET-A)
 / [JAZUG](https://www.youtube.com/channel/UCSPrbgsEVl0azNhQWmkA0pA)
+/ Microsoft Azure 技術ブリーフィング
 
 Twitch:
 [Microsoft Developer Community](https://www.twitch.tv/team/microsoftdevcommunity)
