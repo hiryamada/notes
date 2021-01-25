@@ -395,6 +395,8 @@ Shared: 使用したCPUクォータに対して課金。
 
 Basic以上：プランの各VMインスタンスに対して課金。
 
+※料金表の下部に書かれている価格は1インスタンスの場合。インスタンスを増やすと、インスタンス数に比例したコストがかかる。[料金計算ツール](https://azure.microsoft.com/ja-jp/pricing/calculator/)で、インスタンス数に対応するコストを計算できる。
+
 # App ServiceはVNet内にデプロイされる？
 
 ASEの場合、はい。それ以外の場合、いいえ。
@@ -433,8 +435,6 @@ VPNやExpressRouteを経由してオンプレミスのリソースにアクセ�
 **ASE で作成する App Service プランはすべて、Isolated の価格レベルでのみ使用できます。**
 
 Isolated レベルでは、App Service Environment によって、アプリを実行する分離された worker の数が定義されるので、各 worker に対して課金されます。 さらに、App Service Environment 自体の実行に対して、定額のスタンプ料金があります。
-
-
 
 # VNet統合
 
@@ -613,18 +613,6 @@ App Service には、RESTful API 用のクロスオリジン リソース共有 
 
 Cloud Shell で az webapp cors add コマンドを使用して、クライアントの URL に対して CORS を有効にします。
 
-# [常時接続](https://docs.microsoft.com/ja-jp/azure/app-service/faq-availability-performance-application-issues#how-do-i-decrease-the-response-time-for-the-first-request-after-idle-time)
-
-既定では、設定された期間だけアイドル状態が続くと Web アプリはアンロードされます。 このようにして、システムはリソースを節約できます。 欠点は、Web アプリが読み込まれて応答の処理を開始できるようにするために、Web アプリがアンロードされた後の最初の要求への応答が長くなることです。 
-
-BasicおよびStandardサービス プランでは、アプリを常に読み込まれた状態にするために、 [常時接続] 設定をオンにすることができます。 これにより、アプリがアイドル状態になった後の読み込み時間が長くなることはなくなります。 [常時接続] 設定を変更するには:
-Azure Portal で、Web アプリに移動します。
-[構成] を選択します。
-[全般設定] を選択します。
-[常時接続] の [On] (オン) を選択します。
-
-[この機能自体にはコストはかかりません](https://stackoverflow.com/questions/28619006/does-the-azure-websites-always-on-option-have-any-implication-on-price)が、メモリを基準としたオートスケールを設定した場合などに、オートスケールに影響がでる場合があります。（＝コストに影響する可能性があります）
-
 # ARRアフィニティ
 
 [ARRアフィニティの解説](https://techinfoofmicrosofttech.osscons.jp/index.php?Application%20Request%20Routing%20%28ARR%29)
@@ -674,6 +662,27 @@ Azure Portal で、Web アプリに移動します。
 > というわけなので、マシンがいつ再起動しようと、理想的にはダウンタイムは発生しません。
 > 
 > 特にアプリが十分速く起動するように書かれている場合はコールドスタートの時間も短くなります。
+
+# コールドスタートを回避するには常時接続を有効化
+
+[クラウドで正常なアプリを実行するための究極のガイド](https://satonaoki.wordpress.com/2020/06/07/robust-apps-for-the-cloud/)
+
+> 常時接続 (Always On) は、過去20分間にリクエストを受信していない時でも、VMインスタンスを起動させたままにします。
+> 
+> 既定では、常時接続は無効化されています。常時接続を有効化すると、アプリケーションのコールド スタートが起こらなくなります。
+
+
+# [常時接続](https://docs.microsoft.com/ja-jp/azure/app-service/faq-availability-performance-application-issues#how-do-i-decrease-the-response-time-for-the-first-request-after-idle-time)
+
+既定では、設定された期間だけアイドル状態が続くと Web アプリはアンロードされます。 このようにして、システムはリソースを節約できます。 欠点は、Web アプリが読み込まれて応答の処理を開始できるようにするために、Web アプリがアンロードされた後の最初の要求への応答が長くなることです。 
+
+BasicおよびStandardサービス プランでは、アプリを常に読み込まれた状態にするために、 [常時接続] 設定をオンにすることができます。 これにより、アプリがアイドル状態になった後の読み込み時間が長くなることはなくなります。 [常時接続] 設定を変更するには:
+Azure Portal で、Web アプリに移動します。
+[構成] を選択します。
+[全般設定] を選択します。
+[常時接続] の [On] (オン) を選択します。
+
+[この機能自体にはコストはかかりません](https://stackoverflow.com/questions/28619006/does-the-azure-websites-always-on-option-have-any-implication-on-price)が、メモリを基準としたオートスケールを設定した場合などに、オートスケールに影響がでる場合があります。（＝コストに影響する可能性があります）
 
 # サポートされる言語ランタイムの更新、追加、非推奨の時期
 
