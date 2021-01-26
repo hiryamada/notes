@@ -1,3 +1,8 @@
+# マネージドID
+
+[Azure リソースのマネージド ID は、以前のマネージドサービス ID (MSI) の新しい名前です。](https://docs.microsoft.com/ja-jp/azure/active-directory/managed-identities-azure-resources/overview)
+
+
 https://docs.microsoft.com/ja-jp/azure/active-directory/managed-identities-azure-resources/overview
 
 
@@ -7,6 +12,21 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/managed-identities-azure
 システム割り当てマネージド ID によって、コード内に資格情報を格納せずに、Azure リソースをクラウド サービス (Azure Key Vault など) に対して認証させることができます。有効にすると、Azure ロールベースのアクセス制御を介して必要なすべてのアクセス許可を付与できます。この種類のマネージド ID のライフサイクルは、このリソースのライフサイクルに関連付けられています。また、各リソース (仮想マシンなど) は、システム割り当てマネージド ID を 1 つしか持つことができません。マネージド ID の詳細情報を表示します。
 
 ユーザー割り当てマネージド ID によって、コード内に資格情報を格納せずに、Azure リソースをクラウド サービス (Azure Key Vault など) に対して認証させることができます。この種類のマネージド ID は、スタンドアロンの Azure リソースとして作成され、独自のライフサイクルを持ちます。単一のリソース (仮想マシンなど) は、複数のユーザー割り当てマネージド ID を利用することができます。同様に、単一のユーザー割り当てマネージド ID を複数のリソース (仮想マシンなど) で共有することができます。マネージド ID の詳細情報を表示します。
+
+# サポートされるサービス
+
+[Azure リソースのマネージド ID をサポートするサービス](https://docs.microsoft.com/ja-jp/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities)
+
+主なもの:
+
+- API Management
+- App Service
+- ACI
+- ACRタスク
+- Functions
+- AKS
+- Logic Apps
+- VM, VMSS
 
 # 操作手順例（ユーザー割り当てマネージドIDの場合）
 

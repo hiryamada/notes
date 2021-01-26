@@ -5,6 +5,11 @@ document: https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-quickstar
 dotnet new console -n blobtest
 cd blobtest
 dotnet add package Azure.Storage.Blob
+code .
+
+Ctrl + Shift + Space: パラメータヒントの表示
+F5: デバッグ実行
+Ctrl + F5: デバッグ無しで実行
 
 */
 
