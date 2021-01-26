@@ -50,6 +50,10 @@ https://cosmos.azure.com/
 
 [無料で試す](https://azure.microsoft.com/ja-jp/try/cosmosdb/)
 
+[Azure Cosmos DB Performance Tips](https://eventmarketing.blob.core.windows.net/mstechsummit2018-after/DA13_PDF_TS18.pdf)
+
+[Azure Cosmos DB入門 - ryuichi111stdの技術日記](https://ryuichi111std.hatenablog.com/entry/2017/05/21/012928)
+
 # 歴史
 
 [2015 年 4 月より、Azure DocumentDB の一般提供を開始](https://xtech.nikkei.com/it/atclncf/service/00019/051500002/)。DocumentDBの紹介ビデオ[1](https://azure.microsoft.com/ja-jp/resources/videos/documentdb-general-availability-and-whats-new/), [2](https://azure.microsoft.com/ja-jp/resources/videos/introduction-to-azure-documentdb/)。
