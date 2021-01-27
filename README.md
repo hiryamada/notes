@@ -149,6 +149,13 @@ https://aka.ms/ESIStudyGuide_AZ-900
 書籍:
 [Azure定番システム設計・実装・運用ガイド](https://www.nikkeibp.co.jp/atclpubmkt/book/18/P53790/) ([書籍内のリンク集](https://jpaztech1.z11.web.core.windows.net/[%E5%85%AC%E5%BC%8F%E3%83%AA%E3%83%B3%E3%82%AF%E9%9B%86]201896%E7%99%BA%E5%A3%B2Azure%E5%AE%9A%E7%95%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%A8%AD%E8%A8%88%E3%83%BB%E5%AE%9F%E8%A3%85%E3%83%BB%E9%81%8B%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89(2018914%E6%9B%B4%E6%96%B0%E3%80%81%E5%A2%97%E5%88%B7%E6%B1%BA%E5%AE%9A%EF%BC%81).html))
 / [速習Azure Administrator](https://nextpublishing.jp/book/11810.html)
+/ [マイクロサービス with Docker on Azure](https://satonaoki.wordpress.com/2016/11/04/microservices-docker-azure-book/)
+/ [Microsoft Azure導入ガイドブック](https://book.mynavi.jp/ec/products/detail/id=28146)
+/ [ひと目でわかるWindows Azureアプリケーション開発入門](https://project.nikkeibp.co.jp/bnt/atcl/12/P94490/)
+/ Microservices on Azure
+/ Windows Azure Packプライベートクラウド構築ガイド
+/ Windows Azure入門―Microsoftのクラウドコンピューティング
+/ 脱オンプレミス! クラウド時代の認証基盤 Azure Active Directory 完全解説
 
 コミュニティ:
 [Japan Azure User Group(JAZUG)](http://r.jazug.jp/)
@@ -159,8 +166,9 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [Azure Council Experts（ACE）アジュール評議会](https://www.a-c-e.biz/)
 / [Azure Rock Star(技術コミュニティおよびビジネス コミュニティをご紹介)](https://www.microsoft.com/ja-jp/events/top/azure-rock-star.aspx)
 / [わんくま同盟](http://wankuma.com/)
-/ [.NETラボ](https://dotnetlab.connpass.com/)
+/ [.NETラボ(.NET技術やマイクロソフト製品について勉強するコミュニティー)](https://dotnetlab.connpass.com/)
 / [トレノケ雲の会](https://kumonokai.connpass.com/)
+/ [Azureアップデートに付いて行く会(facebook)](https://www.facebook.com/groups/1641913796067434/)
 
 イベント:
 / [Azureのイベント](https://azure.microsoft.com/ja-jp/community/events/)
@@ -277,6 +285,8 @@ MVP(Most Valuable Professional):
 / [Ohina Work](https://ohina.work/)
 / [ヨコヤマ企画](https://yp.g20k.jp/)
 / [KTKR雑記](https://zakki.nya-n.net/)
+/ [LT風味](https://blog.ltflavor.com/)
+/ [みち草](https://www.michikusayan.com/)
 
 ブログ（企業系）: 
 [Cloud-config Tech Blog](https://tech-blog.cloud-config.jp/) 
@@ -305,6 +315,8 @@ Azureのコンサルティング・設計・構築・運用・監視・保守・
 / [ゼロからはじめるAzure](https://news.mynavi.jp/series/zeroazure/)
 / [Azure"超"入門](https://news.mynavi.jp/series/azure/)
 / [マイクロソフトのTAMさん日和](https://tech-blog.cloud-config.jp/2019-06-10-microsoft-tam-report/)
+/ [まだ知らない人のための最新Microsoft Azure入門](https://www.buildinsider.net/web/azure/01)
+/ [.NETエンジニアのための定期勉強会（Sansan主催）レポート](https://www.buildinsider.net/enterprise/sansanreport)
 
 ニュースサイト＞Microsoft, Azure: 
 / [Azure boost (ASCII x FIXER)](https://ascii.jp/azure-fixer/) 
@@ -566,6 +578,7 @@ AWSエンジニア向けAzureトレーニング:
 , 2019:
 [Azure Archive Storage の新たな値下げ](https://azure.microsoft.com/ja-jp/updates/we-re-making-azure-archive-storage-better-with-new-lower-pricing/)
 / [Azure App ServiceのLinux Premium v2プランを値下げ](https://ascii.jp/elem/000/001/946/1946508/)
+/ [Basic Linux App Service プランのキャンペーン価格のご紹介](https://azure.microsoft.com/ja-jp/updates/now-is-the-time-to-host-your-apps-on-app-service-on-linux/)
 , 2018:
 [Azure Standard サポート プラン: 値下げと初回応答時間の短縮](https://azure.microsoft.com/ja-jp/updates/azure-standard-support-updates/)
 , 2017:
@@ -595,7 +608,7 @@ Azureとのインテグレーション:
 / [AppDynamics](https://www.appdynamics.com/ja_jp/solutions/cloud/cloud-monitoring/microsoft-azure) 
 / [Packer](https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/build-image-with-packer) 
 / [Vagrant](https://github.com/Azure/vagrant-azure) 
-/ [Red Hat on Azure](https://azure.microsoft.com/ja-jp/overview/linux-on-azure/red-hat/) 
+/ [Red Hat on Azure](https://azure.microsoft.com/ja-jp/overview/linux-on-azure/red-hat/) ([Red Hat Enterprise Linuxを無料で利用できる「Individual Developerサブスクリプション」の提供が発表](https://codezine.jp/article/detail/13532))
 / [Azure VMware Solution](https://azure.microsoft.com/ja-jp/services/azure-vmware/) 
 / [Atlassian](https://www.atlassian.com/ja/enterprise/data-center/azure)
 
@@ -715,9 +728,14 @@ IDaaS:
 
 
 便利: 
-[Whats my DNS](https://www.whatsmydns.net/) 
+[窓の杜](https://forest.watch.impress.co.jp/)
+/ [Serverless Cost Calculator](http://serverlesscalc.com/)
+/ [Whats my DNS](https://www.whatsmydns.net/) 
 / [確認くん](https://www.ugtop.com/spill.shtml) 
 / [Downdetector](https://downdetector.jp/)
+/ [Try Redis](https://try.redis.io/)
+/ [TryRuby](https://try.ruby-lang.org/)
+[Rubyがミニツク](http://www.minituku.net/)
 
 豆知識:
  [Contoso](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%88%E3%82%BD)
@@ -759,4 +777,5 @@ IDaaS:
 / [azure blue～天色の架空線～](https://www.google.com/search?q=azure+blue%EF%BD%9E%E5%A4%A9%E8%89%B2%E3%81%AE%E6%9E%B6%E7%A9%BA%E7%B7%9A%EF%BD%9E)
 / [今井麻美 - The Azure 〜碧の記憶〜](https://www.google.com/search?q=%E4%BB%8A%E4%BA%95%E9%BA%BB%E7%BE%8E+The+Azure%EF%BD%9E%E7%A2%A7%E3%81%AE%E8%A8%98%E6%86%B6%EF%BD%9E)
 / [VALKYRIA: Azure Revolution (蒼き革命のヴァルキュリア)](https://www.google.com/search?q=VALKYRIA%3A+Azure+Revolution)
+/ [アズール顆粒](https://www.google.com/search?q=%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E9%A1%86%E7%B2%92)
 
