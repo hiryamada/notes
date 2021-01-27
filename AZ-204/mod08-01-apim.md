@@ -15,6 +15,8 @@ Microsoft Learn
 
 [aka.ms/apimlove](https://azure.github.io/api-management-resources/)
 
+[API は公開してからが始まりです](https://eventmarketing.blob.core.windows.net/mstechsummit2018-after/AD06_PDF_TS18.pdf)
+
 # [「APIゲートウェイ」パターン](https://docs.microsoft.com/ja-jp/dotnet/architecture/microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern)
 
 [本家](https://microservices.io/patterns/apigateway.html)

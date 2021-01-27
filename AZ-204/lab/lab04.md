@@ -3,6 +3,8 @@
 を実施してください。
 
 
+以下、本家のラボ4のかんたんな説明
+
 ```
 フォルダ Starter
   AdventureWorks.bacpac --- SQL DBのバックアップデータ
