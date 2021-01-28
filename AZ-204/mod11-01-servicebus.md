@@ -10,7 +10,7 @@ Microsoft Learn
 
 - [Azure Service Bus を使用し、メッセージベースの通信ワークフローを実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-message-workflows-with-service-bus/)
 
-# Azure Queue Storage と Azure Service Busの比較
+# Azure Service Bus と Azure Queue Storage の比較
 
 https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
 
@@ -20,7 +20,7 @@ Service Bus:
 - メッセージの最大サイズは1MB
 - 複数の通信プロトコル、データ コントラクト、信頼ドメイン、ネットワーク環境などにまたがるアプリケーションやアプリケーション コンポーネントの統合を目的としている
 - セッション、トランザクション、重複削除（自動重複検出）などの高度な機能をサポート
-- 複数のプロトコルをサポート
+- 複数のプロトコル(AMQP 1.0, JMS 1.0/2.0)をサポート
 
 Queue Storage:
 - **メッセージの順序は変わることがある**
@@ -29,12 +29,24 @@ Queue Storage:
 - 非同期的な処理のバックログを作成（して、Queueに格納）
 - アプリケーションコンポーネントを分離してスケーラビリティや対障害性を高めたり、負荷を平準化する目的で使用される
 - ストレージアカウント 汎用v1/v2で使用できる
+- HTTPベースのプロトコル: [REST API](https://docs.microsoft.com/ja-jp/rest/api/storageservices/queue-service-rest-api)
 
 # [対応プロトコル](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-messaging-overview#compliance-with-standards-and-protocols)
 
 AMQP 1.0, JMS 2.0(Service Bus Premium), JMS 1.0(Service Bus Standard)
 
+
+# AMQP
+
+https://www.amqp.org/
+
 [AMQP 1.0の紹介とその重要な理由](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-amqp-overview) - AMQP 1.0 は、堅牢なクロス プラットフォーム メッセージング アプリケーションを作成するために使用できる、効率的で信頼性の高い回線レベルのメッセージング プロトコルです。AMQP 1.0 は国際標準であり、ISO および IEC によって、ISO/IEC 19464:2014 として承認されています。AMQP 1.0 は、2008 年以降、20 社を超える企業 (テクノロジ サプライヤーとエンド ユーザー企業の両方) で構成される中核的なグループにより開発されています。
+
+
+[【仕様を読み解く】第1回 Advanced Message Queuing Protocol (1) ~Types~](https://buildersbox.corp-sansan.com/entry/2020/11/06/110000)
+
+[【仕様を読み解く】第2回 Advanced Message Queuing Protocol (2) ~Transport~](https://buildersbox.corp-sansan.com/entry/2020/12/11/110000)
+
 
 # Service Bus [キュー](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-messaging-overview#queues)
 

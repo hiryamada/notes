@@ -8,7 +8,7 @@ Azure Queue Storage
 
 [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/modules/communicate-between-apps-with-azure-queue-storage/)
 
-# Azure Queue Storage と Azure Service Busの比較
+# Azure Service Bus と Azure Queue Storage の比較
 
 →[こちら](mod11-01-servicebus.md)
 
