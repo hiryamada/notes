@@ -13,6 +13,10 @@ Azure Queue Storage
 →[こちら](mod11-01-servicebus.md)
 
 
+# Blob トリガーの問題をQueueで解決
+
+https://tech-lab.sios.jp/archives/7505
+
 # プログラミング例(.NET)
 
 https://docs.microsoft.com/ja-jp/azure/storage/queues/storage-dotnet-how-to-use-queues

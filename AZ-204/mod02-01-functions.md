@@ -327,6 +327,11 @@ Azure portalでは、新しい関数を追加する際に、「テンプレー�
 
 ※[トリガーは、実行を開始する機能を別途備えた特殊な入力バインドです](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code?pivots=programming-language-csharp)。
 
+# Blob トリガーの問題をQueueで解決
+
+https://tech-lab.sios.jp/archives/7505
+
+
 # バインド（バインディング）
 
 関数へのバインドは、関数に別のリソースを宣言的に接続する方法です。
@@ -418,6 +423,8 @@ directionがinのものが入力バインド、outのものが出力バインド
 アプリケーション設定で `AzureWebJobsDisableHomepage` を作り、その値を `true` にする。
 
 # 「アプリケーション設定」と「接続文字列」の違い
+
+https://tech-blog.cloud-config.jp/2020-03-25-why-application-setting-and-connection-string-exists-in-web-app/
 
 # 設定ファイル
 

@@ -259,6 +259,11 @@ Standard以上で利用可能。
 
 「デプロイスロットの設定」にチェックを入れた場合、この設定は、スワップしてもスロットに残る。チェックを入れていない設定は、スワップによってアプリとともにスワップ先のスロットへ移動する。
 
+# 「アプリケーション設定」と「接続文字列」の違い
+
+https://tech-blog.cloud-config.jp/2020-03-25-why-application-setting-and-connection-string-exists-in-web-app/
+
+
 # [CI/CDのサポート](https://docs.microsoft.com/ja-jp/azure/app-service/deploy-best-practices)
 
 Git, Docker, Azure DevOps（デプロイセンター）, GitHub Actions, Circle Ci, Travis CIなどに対応。
