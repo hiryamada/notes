@@ -1,4 +1,4 @@
-Azure Service Bus
+# Azure Service Bus
 
 [製品ページ](https://azure.microsoft.com/ja-jp/services/service-bus/)
 
@@ -15,6 +15,8 @@ Microsoft Learn
 https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
 
 Service Bus:
+- [キュー](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-quickstart-portal)にて、**ブローカー メッセージング通信**モデルをサポート（[メッセージブローカーの説明](https://docs.microsoft.com/ja-jp/azure/architecture/patterns/publisher-subscriber)）
+- [トピックとサブスクリプション](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-quickstart-topics-subscriptions-portal)にて、**パブリッシュ/サブスクライブ** モデルをサポート。（参考：[Fanoutパターン](http://aws.clouddesignpattern.org/index.php/CDP:Fanout%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3)）
 - **メッセージの順序をFIFOで保証できる**
 - **キューのサイズは1～80GBの間で指定**
 - メッセージの最大サイズは1MB
