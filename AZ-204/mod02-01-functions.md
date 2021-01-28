@@ -98,9 +98,11 @@ C#, JavaScript, F#, Java, PowerShell, Python, TypeScriptの7つ。
 
 [それ以外の言語については、カスタム ハンドラーを使用します (実質上、言語の制限はありません)。](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-overview#scenarios)
 
-# [OS/ランタイム](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#operating-systemruntime)
+# OS/ランタイム
 
+https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#operating-systemruntime
 
+プランにより、言語サポート状況が異なる。
 
 # ハンドラー
 

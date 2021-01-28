@@ -1,8 +1,25 @@
-Azure Monitor
+# Azure Monitor
+
+Azure とオンプレミスのサービスを監視します。 メトリック、ログ、およびトレースを集計して分析します。 アラートを発生させ、通知を送信するか、自動ソリューションを呼び出します。
+
+[製品ページ](https://azure.microsoft.com/ja-jp/services/monitor/)
+
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/azure-monitor/overview)
+
+[価格](https://azure.microsoft.com/ja-jp/pricing/details/monitor/)
+
+[Azure Monitor Logで実現するモダンな管理手法](https://www.slideshare.net/ssuser411bae/azure-monitor-log)
+
+# 歴史
+
+2016/9/16 Azure Monitor Public Preview
+
+https://azure.microsoft.com/ja-jp/blog/announcing-the-public-preview-of-azure-monitor/
 
 
+2017/3/31 Azure Monitor GA
 
-https://www.slideshare.net/ssuser411bae/azure-monitor-log
+https://azure.microsoft.com/ja-jp/blog/announcing-the-general-availability-of-azure-monitor/
 
 
 # Azure Monitor のブランド変更 / 用語の変更

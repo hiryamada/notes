@@ -1,37 +1,33 @@
-概要
-https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/app-insights-overview
+# Application Insights
+
+Application Insights は Azure Monitor の機能であり、開発者や DevOps プロフェッショナル向けの拡張可能なアプリケーション パフォーマンス管理 (APM) サービスです。 このサービスを使用して、実行中のアプリケーションを監視することができます。
+
+[概要](https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/app-insights-overview)
+
+[価格（Azure Monitor内）](https://azure.microsoft.com/ja-jp/pricing/details/monitor/)
+
 
 
 Microsoft Learn:
-Application Insights により Azure Web アプリでのページの読み込み時間をキャプチャして表示する
-https://docs.microsoft.com/ja-jp/learn/modules/capture-page-load-times-application-insights/
-
-Microsoft Learn:
-サーバー側の Web アプリケーション コードに Application Insights を追加する
-https://docs.microsoft.com/ja-jp/learn/modules/instrument-web-app-code-with-application-insights/
+- [Application Insights により Azure Web アプリでのページの読み込み時間をキャプチャして表示する](https://docs.microsoft.com/ja-jp/learn/modules/capture-page-load-times-application-insights/)
+- [サーバー側の Web アプリケーション コードに Application Insights を追加する](https://docs.microsoft.com/ja-jp/learn/modules/instrument-web-app-code-with-application-insights/)
 
 
-Application Insightsは、Azure Monitor の機能の一つです。
-https://azure.microsoft.com/ja-jp/services/monitor/
+[Azure Application Insights 基礎と実践](https://eventmarketing.blob.core.windows.net/decode2019-after/decode19_PDF_DT05.pdf)
 
 
 # 歴史
 
-2015/4/29 Public Preview
+2015/4/29 Application Insights Public Preview
 
 https://azure.microsoft.com/ja-jp/blog/announcing-application-insights-public-preview-2/
 
-2016/11/16 GA
+2016/11/16 Application Insights GA
 
 https://azure.microsoft.com/ja-jp/blog/general-availability-of-azure-application-insights/
 
+2019/2/21 Application Insightsが東日本リージョンで利用できるようになりました。
 
-2017/3/31 
-
-https://azure.microsoft.com/ja-jp/blog/announcing-the-general-availability-of-azure-monitor/
-
-
-2019/2/21, 東日本リージョンで利用できるようになりました。
 https://azure.microsoft.com/ja-jp/updates/application-insights-available-in-australia-east-and-japan-east/
 
 # Application Insightsとは
