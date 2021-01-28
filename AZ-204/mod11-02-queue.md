@@ -10,7 +10,8 @@ Azure Queue Storage
 
 # Azure Queue Storage と Azure Service Busの比較
 
-https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
+→[こちら](mod11-01-servicebus.md)
+
 
 # プログラミング例(.NET)
 
@@ -32,6 +33,8 @@ count: 最大32
 timeout: デフォルト30秒
 
 # Azure SDK for .NET v12
+
+※[ラボ11ではこちらを使用しています](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_11_lab_ak.html)
 
 ReceiveMessage / ReceiveMessages
 

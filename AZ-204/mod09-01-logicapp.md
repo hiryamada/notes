@@ -1,4 +1,4 @@
-Azure Logic Apps
+# Azure Logic Apps
 
 Azure Logic Apps は、ビジネス プロセスの実行を自動化するクラウド サービスです。
 

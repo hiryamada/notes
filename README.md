@@ -200,6 +200,9 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [CDP(クラウドデザインパターン)](https://docs.microsoft.com/ja-jp/azure/architecture/patterns/) 
 / [.NET アプリケーション アーキテクチャ](https://docs.microsoft.com/ja-jp/dotnet/architecture/)
 / [徹底解説！できる Azure Migrate](https://info.microsoft.com/JA-AzureMig-CNTNT-FY20-03Mar-18-Thoroughcommentary-SRGCM3343_01Registration-ForminBody.html)
+/ [Azure 上での Azure.com の運用 パート 1: 設計の原則とベスト プラクティス](https://azure.microsoft.com/ja-jp/blog/azurecom-operates-on-azure-part-1-design-principles-and-best-practices/)
+/ [Azure 上での Azure.com の運用 パート 2: テクノロジとアーキテクチャ](https://azure.microsoft.com/ja-jp/blog/how-azurecom-operates-on-azure-part-2-technology-and-architecture/)
+/ [Azure のベスト プラクティスを 1 つの場所で見つけられる(Azure Advisor)](https://azure.microsoft.com/ja-jp/blog/your-single-source-for-azure-best-practices/)
 
 開発者向け: 
 [コードサンプル](https://docs.microsoft.com/ja-jp/samples/browse/) 
@@ -211,6 +214,10 @@ https://aka.ms/ESIStudyGuide_AZ-900
 / [dev.to/azure](https://dev.to/azure)
 / [Microsoft Tech Community (Microsoft の開発者およびテスト担当者からの Azure の技術的な質問への回答)](https://techcommunity.microsoft.com/)
 / [Visual Studio サブスクリプション($50～$150のクレジット)](https://visualstudio.microsoft.com/ja/subscriptions/)
+/ [Web開発のベストプラクティス(クラウド用の web アプリの開発を成功させるのに役立つ13のパターンとプラクティス)](https://docs.microsoft.com/ja-jp/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/web-development-best-practices)
+/ [Azure での安全な開発のベスト プラクティス](https://docs.microsoft.com/ja-jp/azure/security/develop/secure-dev-overview)
+/ [Azure Database for PostgreSQL を使用してアプリケーションを構築するためのベスト プラクティス](https://docs.microsoft.com/ja-jp/azure/postgresql/application-best-practices)
+/ [Azure App Service のベスト プラクティス](https://docs.microsoft.com/ja-jp/azure/app-service/app-service-best-practices)
 
 ゲーム開発者向け:
 [Azure ゲーム開発](https://azure.microsoft.com/ja-jp/solutions/gaming/)

@@ -15,7 +15,9 @@ Event Grid とは異なり、非常に高いスループット、多数の発行
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-about)
 
+# Event GridとEvent Hubsの違い
 
+→[こちら](mod10-01-eventgrid.md)
 
 # [Event Hubs Kafkaエンドポイント](https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview)
 
@@ -37,7 +39,6 @@ Event Hubs のすべてのコンシューマーは AMQP 1.0 セッションを�
 
 
 単一イベントまたはバッチのどちらであるかには関係なく、単一パブリケーション (イベント データ インスタンス) には 1 MB の制限があります。 このしきい値より大きいイベントを発行すると、エラーが発生します。
-
 
 # パーティション
 

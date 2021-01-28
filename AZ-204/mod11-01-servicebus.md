@@ -14,6 +14,21 @@ Microsoft Learn
 
 https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
 
+Service Bus:
+- **メッセージの順序をFIFOで保証できる**
+- **キューのサイズは1～80GBの間で指定**
+- メッセージの最大サイズは1MB
+- 複数の通信プロトコル、データ コントラクト、信頼ドメイン、ネットワーク環境などにまたがるアプリケーションやアプリケーション コンポーネントの統合を目的としている
+- セッション、トランザクション、重複削除（自動重複検出）などの高度な機能をサポート
+- 複数のプロトコルをサポート
+
+Queue Storage:
+- **メッセージの順序は変わることがある**
+- **キューのサイズは最大500TB**
+- メッセージの最大サイズは64KB
+- 非同期的な処理のバックログを作成（して、Queueに格納）
+- アプリケーションコンポーネントを分離してスケーラビリティや対障害性を高めたり、負荷を平準化する目的で使用される
+- ストレージアカウント 汎用v1/v2で使用できる
 
 # [対応プロトコル](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-messaging-overview#compliance-with-standards-and-protocols)
 

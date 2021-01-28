@@ -19,7 +19,7 @@ Microsoft Learn
 - Azure CDN Standard from Microsoft
 - Azure CDN Standard from Akamai
 - Azure CDN Standard from Verizon
-- Azure CDN Premium from Verizon.
+- Azure CDN Premium from Verizon
 
 # 概要
 

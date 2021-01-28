@@ -25,6 +25,7 @@ GitHub、Azure DevOps、または任意の Git リポジトリからの自動デ
 
 [Japan PaaS Support Team Blog](https://jpazpaas.github.io/blog/)
 
+[Azure App Service のベスト プラクティス](https://docs.microsoft.com/ja-jp/azure/app-service/app-service-best-practices)
 
 # App Serviceに含まれるもの
 
