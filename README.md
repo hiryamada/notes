@@ -45,6 +45,7 @@ Azure全般:
 / [ドキュメント](https://docs.microsoft.com/ja-jp/azure/) 
 / [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/) 
 / [トラブルシューティング](https://docs.microsoft.com/ja-jp/troubleshoot/azure/) 
+/ [リージョン別の利用可能な製品（提供見込み、プレビュー、GA）](https://azure.microsoft.com/ja-jp/global-infrastructure/services/)
 / [サポートが終了する製品の一覧](https://docs.microsoft.com/ja-jp/lifecycle/overview/product-end-of-support-overview) 
 / [ライフサイクルのFAQ](https://docs.microsoft.com/ja-jp/lifecycle/faq/general-lifecycle) 
 / [製品およびサービスのライフサイクル情報の検索](https://docs.microsoft.com/ja-jp/lifecycle/products/)
@@ -302,8 +303,9 @@ MVP(Most Valuable Professional):
 / [株式会社LIG](https://liginc.co.jp/?s=azure)
 / [SIOS TECH.LAB](https://tech-lab.sios.jp/)
 
-Azureのコンサルティング・設計・構築・運用・監視・保守・運用代行・契約管理・請求管理等:
-[cloud.config 株式会社FIXER様](https://www.fixer.co.jp/ja-jp/about/fixer.html)
+Azureのコンサルティング・プロジェクト支援・設計・構築・運用・監視・保守・運用代行・契約管理・請求管理等:
+[Azureの最上位SIパートナー24社はこれだ](https://xtech.nikkei.com/it/atcl/column/16/102800248/102800002/)
+/ [cloud.config 株式会社FIXER様](https://www.fixer.co.jp/ja-jp/about/fixer.html)
 / [「Microsoft Azure」向け提供サービス(SBテクノロジー株式会社様)](https://www.softbanktech.co.jp/service/keyword/azure/)
 / [ソフトクリエイト様](https://www.softcreate.co.jp/azure)
 / [くらまね for Azure (株式会社Colorkrew様)](https://www.colorkrew.com/mspazure01/) 
@@ -315,6 +317,7 @@ Azureのコンサルティング・設計・構築・運用・監視・保守・
 / [ディーアイエスソリューション株式会社様](https://www.pc-daiwabo.co.jp/from_dis/1801.html)
 / [Microsoft Azureユーザー向けクラウド保険 東京海上日動火災保険株式会社様](https://www.google.com/search?q=microsoft+azure+%E6%9D%B1%E4%BA%AC%E6%B5%B7%E4%B8%8A%E6%97%A5%E5%8B%95+%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E4%BF%9D%E9%99%BA)
 / [シネックスジャパン様 サイバーリスクサポート for Microsoft Azure](https://www.google.com/search?q=%E3%82%B7%E3%83%8D%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3+%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E3%83%AA%E3%82%B9%E3%82%AF%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88+for+Microsoft+Azure)
+/ [ゼンアーキテクツ様](https://zenarchitects.co.jp/)
 
 連載記事、コラム等:
 [なるほど、Microsoft Azure](https://www.school.ctc-g.co.jp/columns/takeda/takeda01.html)
@@ -785,4 +788,4 @@ IDaaS:
 / [今井麻美 - The Azure 〜碧の記憶〜](https://www.google.com/search?q=%E4%BB%8A%E4%BA%95%E9%BA%BB%E7%BE%8E+The+Azure%EF%BD%9E%E7%A2%A7%E3%81%AE%E8%A8%98%E6%86%B6%EF%BD%9E)
 / [VALKYRIA: Azure Revolution (蒼き革命のヴァルキュリア)](https://www.google.com/search?q=VALKYRIA%3A+Azure+Revolution)
 / [アズール顆粒](https://www.google.com/search?q=%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E9%A1%86%E7%B2%92)
-
+/ [アズール＆カンパニー株式会社様](https://www.azureweb.jp/)

@@ -30,6 +30,8 @@ https://azure.microsoft.com/ja-jp/blog/general-availability-of-azure-application
 
 https://azure.microsoft.com/ja-jp/updates/application-insights-available-in-australia-east-and-japan-east/
 
+(2021/1/29現在、[西日本はプレビュー](https://azure.microsoft.com/ja-jp/global-infrastructure/services/?products=monitor&regions=japan-west,japan-east))
+
 # Application Insightsとは
 
 Application Insights は アプリケーション パフォーマンス管理 (APM) サービスです。
