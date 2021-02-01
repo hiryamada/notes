@@ -1,10 +1,12 @@
 # AZ-010 Azure Administration for AWS SysOps
 
-AWS システム管理者向けの Azure 管理
+AWS システム管理者向けの Azure 管理（2日間）
 
-2日間
-
-ほとんどの部分は、AZ-104の
+- AWS（クラウド）のご経験がある方向けの速習コースです。
+- AWSのサービスに対応するAzureのサービスの基本を学べます。
+- このコースに対応する認定試験はありません。
+  - 出題範囲が近いものとしては[AZ-900](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900)や[AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)があります。
+  - ただし、このコースではAZ-900やAZ-104の出題範囲をすべてカバーするものではありません。
 
 # 講義ノート
 
