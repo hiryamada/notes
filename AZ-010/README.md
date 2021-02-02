@@ -2,11 +2,20 @@
 
 AWS システム管理者向けの Azure 管理（2日間）
 
-- AWS（クラウド）のご経験がある方向けの速習コースです。
-- AWSのサービスに対応するAzureのサービスの基本を学べます。
+[公式サイト](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-010t00)
+
+- AWS（クラウド）のご経験がある方向けのAzure速習コースです。
+- ユーザー管理、リソース管理、ネットワーク、仮想マシン、ストレージといった、Azureの基本サービスを2日間で学びます。
+- AWSのサービスに対応するAzureのサービスの基本を学ぶことができます。
 - このコースに対応する認定試験はありません。
-  - 出題範囲が近いものとしては[AZ-900](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900)や[AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)があります。
-  - ただし、このコースではAZ-900やAZ-104の出題範囲をすべてカバーするものではありません。
+  - 出題範囲が近いものとしては[AZ-900](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900)や[AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)があります。受講後はぜひこれらの認定試験にチャレンジしてみてください。
+  - ただし、このコースはAZ-900やAZ-104の出題範囲をすべてカバーするものではありません。
+
+関連コース
+- [AZ-020: Microsoft Azure solutions for AWS developers](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-020t00)
+- [AZ-030: Microsoft Azure technologies for AWS architects](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-030t00)
+
+
 
 # 講義ノート
 
@@ -25,7 +34,7 @@ AWS システム管理者向けの Azure 管理（2日間）
   - リソース グループ
   - [Azure portal と Cloud Shell](../AZ-104/mod03-02-portal.md)
   - [Azure CLI と Azure PowerShell](../AZ-104/mod03-03-psh-cli.md)
-  - Azure Marketplace
+  - [Azure Marketplace](../general/azure-marketplace.md)
   - クイックスタートテンプレート
   - Azure Advisor
   - セキュリティセンター
