@@ -305,6 +305,7 @@ MVP(Most Valuable Professional):
 
 Azureのコンサルティング・プロジェクト支援・設計・構築・運用・監視・保守・運用代行・契約管理・請求管理等:
 [Azureの最上位SIパートナー24社はこれだ](https://xtech.nikkei.com/it/atcl/column/16/102800248/102800002/)
+/ [Microsoft Azureの導入・構築に実績のあるシステム開発会社10社(発注ナビ)](https://hnavi.co.jp/knowledge/blog/azure_system_companies/)
 / [cloud.config 株式会社FIXER様](https://www.fixer.co.jp/ja-jp/about/fixer.html)
 / [「Microsoft Azure」向け提供サービス(SBテクノロジー株式会社様)](https://www.softbanktech.co.jp/service/keyword/azure/)
 / [ソフトクリエイト様](https://www.softcreate.co.jp/azure)
@@ -680,7 +681,7 @@ Cognitive Services:
 ): 
 [トヨタ様](https://www.google.com/search?q=%E3%83%88%E3%83%A8%E3%82%BF+azure) 
 / [パナソニック様](https://www.google.com/search?q=%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF+azure) 
-/ [バンダイナムコスタジオ様](https://www.google.com/search?q=%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4%E3%83%8A%E3%83%A0%E3%82%B3%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA+azure) ]
+/ [バンダイナムコスタジオ様](https://www.google.com/search?q=%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4%E3%83%8A%E3%83%A0%E3%82%B3%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA+azure)
 / [セガ様](https://www.google.com/search?q=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%BB%E3%82%AC+azure)
 / [カプコン様](https://www.iij.ad.jp/svcsol/case/capcom.html)
 / [スターバックス様](https://www.google.com/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9+azure) 
@@ -704,7 +705,6 @@ Cognitive Services:
 / [ゑびや大食堂様](https://www.google.com/search?q=%E3%82%91%E3%81%B3%E3%82%84%E5%A4%A7%E9%A3%9F%E5%A0%82+azure) 
 / [港区様](https://customers.microsoft.com/fr-fr/story/minatocity-government-azure-jp-japan)
 
-[Microsoft Azureの導入・構築に実績のあるシステム開発会社10社(発注ナビ)](https://hnavi.co.jp/knowledge/blog/azure_system_companies/)
 
 採用事例（海外）: 
 [Who's Using Microsoft Azure?](https://www.contino.io/insights/whos-using-microsoft-azure-2020) 
@@ -745,7 +745,7 @@ IDaaS:
 / [Downdetector](https://downdetector.jp/)
 / [Try Redis](https://try.redis.io/)
 / [TryRuby](https://try.ruby-lang.org/)
-[Rubyがミニツク](http://www.minituku.net/)
+/ [Rubyがミニツク](http://www.minituku.net/)
 
 豆知識:
  [Contoso](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%88%E3%82%BD)
