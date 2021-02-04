@@ -108,6 +108,14 @@
 - 応答を開始した VM は、正常な VM の一覧に再び追加され、ユーザー要求の受信を開始します。
 - 正常性プローブを使用しないと、Load Balancer では VM が正常かどうかを判断できません。 代わりに、すべての VM が応答するものと想定します。
   
+# 正常性プローブの送信元
+
+https://docs.microsoft.com/ja-jp/azure/application-gateway/application-gateway-probe-overview
+
+Application Gateway で正常性プローブに使用される発信元 IP アドレスは、バックエンド プールによって異なります。
+- バックエンド プール内のサーバー アドレスがパブリック エンドポイントの場合、ソース アドレスはアプリケーション ゲートウェイのフロントエンド パブリック IP アドレスです。（注：今回のラボはこのパターン）
+- バックエンド プール内のサーバー アドレスがプライベート エンドポイントの場合、ソース IP アドレスは Application Gateway サブネットのプライベート IP アドレス空間からのものです。
+
 # VNetとの関係
 
 LB自体はVNetに結びつかない。
@@ -131,4 +139,20 @@ Load Balancer がフローを終了または開始したり、フローのペイ
  仮想マシンにフローが到着するときは、元のソース IP アドレスも保持されます。
 
 すべてのエンドポイントは、VM によって応答されます。 
+
+# リージョン間ロードバランサー(プレビュー 2020/9/22～)
+
+クロスリージョンの負荷分散を行うLB。
+
+サービスが複数の Azure リージョンにわたってグローバルに利用可能になります。 
+
+1 つのリージョンで障害が発生した場合、トラフィックは次の最も近い正常なリージョンのロード バランサーにルーティングされます。
+
+リージョン間LB → 各リージョンの（複数の）LB → バックエンドVM
+
+マニュアル：https://docs.microsoft.com/ja-jp/azure/load-balancer/cross-region-overview#home-regions
+
+登場時のブログ：https://azure.microsoft.com/ja-jp/updates/preview-azure-load-balancer-now-supports-crossregion-load-balancing/
+
+チュートリアル：https://docs.microsoft.com/ja-jp/azure/load-balancer/tutorial-cross-region-portal
 
