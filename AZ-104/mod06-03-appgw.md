@@ -83,4 +83,11 @@ Standard, Standard_v2, WAF, WAF_v2の4つから選択。WAF, WAF_v2は、WAF付�
 - オンプレミス サーバー(IPアドレス/FQDN)
 - Azure App Service
 
+# 正常性プローブの送信元
+
+https://docs.microsoft.com/ja-jp/azure/application-gateway/application-gateway-probe-overview
+
+Application Gateway で正常性プローブに使用される発信元 IP アドレスは、バックエンド プールによって異なります。
+- バックエンド プール内のサーバー アドレスがパブリック エンドポイントの場合、ソース アドレスはアプリケーション ゲートウェイのフロントエンド パブリック IP アドレスです。（注：今回のラボはこのパターン）
+- バックエンド プール内のサーバー アドレスがプライベート エンドポイントの場合、ソース IP アドレスは Application Gateway サブネットのプライベート IP アドレス空間からのものです。
 
