@@ -45,3 +45,17 @@
 
 - [Azure Cache for Redis](https://azure.microsoft.com/ja-jp/services/cache/)
 - [Azure HPC Cache](https://azure.microsoft.com/ja-jp/services/hpc-cache/)
+
+# フェイルオーバー
+
+フェイルオーバー前
+- プライマリのエンドポイントを名前解決するとIPアドレス a.b.c.d が返される
+- セカンダリのエンドポイントを名前解決するとIPアドレス e.f.g.h が返される
+
+フェイルオーバー後（レプリケーションはLRSとなるのでセカンダリは存在しなくなる）
+- プライマリのエンドポイントを名前解決するとIPアドレス e.f.g.h が返される
+- セカンダリのエンドポイントを名前解決すると NXDOMAIN (ドメインが存在しない）が返される
+
+つまり、フェイルオーバー後も、プライマリのエンドポイントを引き続き使用することができ、その接続先はフェイルオーバー前のセカンダリ側のIPアドレスとなる。
+
+
