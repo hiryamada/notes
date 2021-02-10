@@ -746,6 +746,7 @@ IDaaS:
 / [Try Redis](https://try.redis.io/)
 / [TryRuby](https://try.ruby-lang.org/)
 / [Rubyがミニツク](http://www.minituku.net/)
+/ [Bitly(URL短縮)](https://bitly.com/)
 
 豆知識:
  [Contoso](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%88%E3%82%BD)
