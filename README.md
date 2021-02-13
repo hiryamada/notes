@@ -717,6 +717,60 @@ IDaaS:
 / [Okta](https://www.okta.com/jp/) 
 / [トラスト・ログイン](https://trustlogin.com/) 
 / [HENNGE One](https://hennge.com/jp/service/one/)
+/ [Atlassian Crowd](https://www.atlassian.com/ja/software/crowd)
+/ OpenAM
+/ Keycloak
+
+
+監視・可視化・通知・インシデント管理・Monitoring as Code・監視パイプライン:
+
+[Nagios](https://www.nagios.org/)
+/ [Zabbix](https://www.zabbix.com/jp/features)
+/ [Mackerel](https://mackerel.io/ja/)
+/ [PagerDuty](https://ja.pagerduty.com/)
+/ [~~HipChat~~(Slackへの移行を推奨)](https://www.google.com/search?q=hipchat)
+/ [OpsGenie](https://www.atlassian.com/ja/software/opsgenie)
+/ [NewRelic](https://newrelic.com/jp)
+/ [Datadog](https://www.datadoghq.com/ja/)
+/ [SolarWinds Orion](https://www.solarwinds.com/ja/orion-platform)
+/ [Icinga2](https://icinga.com/)
+/ [Sensu](https://sensu.io/)
+/ VMware Tanzu
+/ [AlertOps](https://alertops.com/)
+PRTG
+
+ITサービス管理:
+[SolarWinds](https://www.solarwinds.com/ja/)
+
+ログコレクター・フォワーダー・ログ分析:
+
+[Fluentd](https://www.fluentd.org/)
+/ [Fluent Bit](https://fluentbit.io/)
+/ Logstash
+/ [Splunk](https://www.splunk.com/ja_jp)
+/ [Elastic](https://www.elastic.co/jp/elasticsearch/)
+/ [Glaylog](https://www.graylog.org/)
+/ [Cacti](https://www.cacti.net/)
+/ [Logs.io](https://logz.io/)
+
+構成管理・IaC
+[Puppet](https://puppet.com/)
+/ [Ansible (Red Hat Ansible Automation Platform)](https://www.ansible.com/)
+/ Chef
+/ Terraform
+/ [Red Hat Ansible Tower](https://www.ansible.com/products/tower)
+
+ジョブスケジューラ
+Rundeck
+JobScheduler
+
+[Prometheus](https://prometheus.io/)
+[Alertmanager](https://github.com/prometheus/alertmanager)
+[StatsD](https://github.com/statsd/statsd)
+
+[InfluxDB](https://www.influxdata.com/products/influxdb/) 
+[Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)
+
 
 クラウド, VPS, レンタルサーバー等: 
 [GCP](https://cloud.google.com/) 
@@ -735,6 +789,7 @@ IDaaS:
 / [Vercel](https://vercel.com/)
 / [Fujitsu Cloud Service A5 for Microsoft Azure](https://jp.fujitsu.com/solutions/cloud/paas/a5/presen-a5/pdf/presen-a5.pdf)
 / [FUJITSU Cloud Service K5](https://jp.fujitsu.com/solutions/cloud/oss/document/pdf/foross-catalog.pdf)
+
 
 
 便利: 
