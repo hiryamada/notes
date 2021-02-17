@@ -816,6 +816,7 @@ JobScheduler
 / [Office アシスタント](https://www.google.com/search?q=Office+%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88)
 / [マイクロソフト(北海道ならではの風土が育んだ乳脂肪をたっぷり含んだソフトクリーム)](https://www.google.com/search?q=%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88+%E3%82%BD%E3%83%95%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0)
 / [毎月10日はWindows 10の日](https://www.google.com/search?q=%E6%AF%8E%E6%9C%8810%E6%97%A5+Windows+10%E3%81%AE%E6%97%A5)
+/ [忍者の能力と自分を関連付けたい個人と企業向けのドメイン](https://docs.aws.amazon.com/ja_jp/Route53/latest/DeveloperGuide/ninja.html)
 
 その他のAzure:
 [azure（単語）](https://ja.wiktionary.org/wiki/azure)
@@ -845,3 +846,4 @@ JobScheduler
 / [VALKYRIA: Azure Revolution (蒼き革命のヴァルキュリア)](https://www.google.com/search?q=VALKYRIA%3A+Azure+Revolution)
 / [アズール顆粒](https://www.google.com/search?q=%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E9%A1%86%E7%B2%92)
 / [アズール＆カンパニー株式会社様](https://www.azureweb.jp/)
+/ [アズール（ニンジャスレイヤー）](https://www.google.com/search?q=%E3%83%8B%E3%83%B3%E3%82%B8%E3%83%A3%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC+azure)

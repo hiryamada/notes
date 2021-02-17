@@ -1,3 +1,26 @@
+# AZ-120
+
+コース情報
+https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-120t00
+
+- 4日間
+- 前提知識: AZ-900, AZ-104, SAP
+- モジュール数: 11
+
+# 認定試験
+
+試験 AZ-120: Planning and Administering Microsoft Azure for SAP Workloads
+https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-120
+
+
+この試験では、SAP HANA と Linux の認定に加えて、Azure Administrator Associate または Azure Solutions Architect Expert 認定を取得することを強くお勧めします。
+
+- SAP Workloads を Azure に移行する (10-15%)
+- SAP Workloads をサポートする Azure ソリューションの設計 (20-25%)
+- Azure for SAP Workloads の構築とデプロイ (35-40%)
+- SAP Workloads 向け Azure インフラストラクチャの検証 (10-15%)
+- Azure SAP Architecture を運用する (10-15%)
+
 # 各種ドキュメント
 
 SAP on Azure(Azureサイト)
