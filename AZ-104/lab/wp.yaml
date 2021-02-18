@@ -1,0 +1,79 @@
+# https://tech-lab.sios.jp/archives/19853
+
+# az group create -n wprg -l japaneast
+# az container create -g wprg --file wp.yaml
+
+apiVersion: 2018-10-01
+# コンテナグループを作成するリージョンを指定します。
+location: japaneast
+# このファイルで作成するコンテナが所属するコンテナグループを指定します。
+name: myContainerGroup
+properties:
+  containers:
+  # コンテナ名を指定します。WordPressのコンテナです。
+  - name: wordpress
+    properties:
+      # コンテナのイメージ名を指定します。
+      image:  wordpress:php7.4-apache
+      # コンテナのbuild時に渡す環境変数を指定します。WordPressの起動には
+      # 最低限DBのホスト名、データベース名、ユーザー名、パスワードが必要になります。
+      environmentVariables:
+        - name: 'WORDPRESS_DB_HOST'
+          value: '127.0.0.1:3306'
+        - name: 'WORDPRESS_DB_NAME'
+          value: 'wordpress'
+        - name: 'WORDPRESS_DB_USER'
+          value: 'wordpress'
+        # secureValueを指定しておくとAzureポータルで非表示となります。
+        - name: 'WORDPRESS_DB_PASSWORD'
+          secureValue: 'wordpress'
+      resources:
+        requests:
+          # コンテナに割り当てるCPUとメモリを指定します。
+          cpu: 1
+          memoryInGb: 1.5
+      # このコンテナに対して開放するポートを指定します。
+      ports:
+      - port: 80
+  # コンテナ名を指定します。WordPressが接続するDBのコンテナです。
+  - name: db
+    properties:
+      # コンテナのイメージ名を指定します。
+      image: mysql:8.0.20
+      # コンテナのbuild時に渡す環境変数を指定します。MySQLを起動するために
+      # 必要な環境変数諸々です。
+      environmentVariables:
+        - name: 'MYSQL_ROOT_PASSWORD'
+          secureValue: 'wordpress'
+        - name: 'MYSQL_DATABASE'
+          value: 'wordpress'
+        - name: 'MYSQL_USER'
+          value: 'wordpress'
+        # secureValueを指定しておくとAzureポータルで非表示となります。
+        - name: 'MYSQL_PASSWORD'
+          secureValue: 'wordpress'
+      resources:
+        requests:
+          # コンテナに割り当てるCPUとメモリを指定します。
+          cpu: 1
+          memoryInGb: 1.5
+      # このコンテナに対して開放するポートを指定します。
+      ports:
+      - protocol: tcp
+        port: '3306'
+  # OSのタイプを指定します。
+  osType: Linux
+  # IPアドレスのタイプを指定します。パブリックに公開したいので、Publicとつけます。
+  # グローバルなIPアドレスが割り当てられます。
+  ipAddress:
+    type: Public
+    # インターネットに対して公開したいポートとプロトコルを指定します。
+    ports:
+    - protocol: tcp
+      port: '80'
+    # 以下の値を指定すると[dnsNameLabel].[リージョン名].azurecontainer.ioという
+    # FQDNが付与されます。
+    dnsNameLabel: wp12341234
+# 以下は決り文句です。(MS公式ドキュメントそのまんまです)
+tags: null
+type: Microsoft.ContainerInstance/containerGroups
