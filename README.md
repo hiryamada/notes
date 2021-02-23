@@ -10,9 +10,12 @@
 
 # 講義ノート
 
-- [AZ-104](AZ-104/README.md)
-- [AZ-204](AZ-204/README.md)
-- [AZ-500](AZ-500/README.md)
+- [AZ-104 Administrator](AZ-104/README.md)
+- [AZ-204 Developing](AZ-204/README.md)
+- [AZ-500 Security](AZ-500/README.md)
+- [AZ-400 DevOps](AZ-400/README.md)
+- [AZ-220 IoT](AZ-220/README.md)
+- [AZ-010 Administrator for AWS SysOps](AZ-010/README.md)
 
 ラボ: [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) - 「Instructions/Labs」内の各Markdownファイル
 
