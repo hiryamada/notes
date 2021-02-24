@@ -28,24 +28,32 @@ Azure の IoT情報
 主なIoT関連サービス（AZ-220出題範囲）
 
 - [Azure IoT Hub](https://azure.microsoft.com/ja-jp/services/iot-hub/)
+  - [Device Twins (JSON)](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-device-twins)
 - [Azure IoT Device Provisioning Service (DPS)](https://docs.microsoft.com/ja-jp/azure/iot-dps/)
-- [Azure IoT Edge](https://azure.microsoft.com/ja-jp/services/iot-edge/)
-- [Azure IoT Central](https://docs.microsoft.com/ja-jp/azure/iot-central/core/overview-iot-central)
+- [Azure IoT Edge](https://azure.microsoft.com/ja-jp/services/iot-edge/) - エッジでビジネスロジック(異常検出,機械学習,認識等)を実行
+  - [モジュール](https://docs.microsoft.com/ja-jp/azure/iot-edge/iot-edge-modules?view=iotedge-2018-06)
+  - [ゲートウェイ](https://docs.microsoft.com/ja-jp/azure/iot-edge/iot-edge-as-gateway?view=iotedge-2018-06)
+- [Azure IoT Central](https://docs.microsoft.com/ja-jp/azure/iot-central/core/overview-iot-central) - IoTアプリプラットフォーム
+  - [アプリケーションテンプレート](https://docs.microsoft.com/ja-jp/azure/iot-central/core/concepts-app-templates)
 - [Azure Stream Analytics (ASA)](https://docs.microsoft.com/ja-jp/azure/stream-analytics/stream-analytics-edge)
-- [Azure Digital Twins](https://azure.microsoft.com/ja-jp/services/digital-twins/)
 - [Azure Time Series Insights](https://azure.microsoft.com/ja-jp/services/time-series-insights/)
-- [Azure IoT デバイスSDK](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-sdks#azure-iot-hub-device-sdks)
-- [Azure IoT ソリューション アクセラレータ](https://azure.microsoft.com/ja-jp/features/iot-accelerators/)
-- Azure Security Center for IoT (現「[Azure Defender for IoT](https://docs.microsoft.com/ja-jp/azure/sentinel/connect-asc-iot)」)
+- [Azure IoT デバイスSDK / サービスSDK / Provisioning SDK](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-sdks)
+  - [SDKを使用しない開発](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-no-sdk)
+- [Azure Defender for IoT](https://docs.microsoft.com/ja-jp/azure/defender-for-iot/)
 
 IoT関連サービス（その他）
+- [Azure IoT ソリューション アクセラレータ](https://azure.microsoft.com/ja-jp/features/iot-accelerators/)
+- [Azure Digital Twins (ADT)](https://azure.microsoft.com/ja-jp/services/digital-twins/)
 - [Windows 10 IoT](https://www.microsoft.com/ja-jp/windowsforbusiness/windows-iot)
   - Windows 10 IoT Core
   - Windows 10 IoT Enterprise
   - Windows 10 Server IoT 2019
   - SQL Server IoT 2019
-- [Azure Sphere](https://azure.microsoft.com/ja-jp/services/azure-sphere/)
-- [Azure Stack Hub](https://azure.microsoft.com/ja-jp/products/azure-stack/hub/)
+- [Azure Sphere](https://azure.microsoft.com/ja-jp/services/azure-sphere/) - MCU(マイクロコントローラー ユニット) + OS + セキュリティサービス
+- [Azure Stack Hub](https://azure.microsoft.com/ja-jp/products/azure-stack/hub/) - エッジ(任意の場所)でAzureサービス(VM, VNet, Monitor, Key Vault等)を実行
+- [Azure RTOS](https://azure.microsoft.com/ja-jp/services/rtos/) - リアルタイムOS
+- [Azure SQL Edge](https://azure.microsoft.com/ja-jp/services/sql-edge/) - エッジデバイス上で動作するSQL Server
+- [Azure Stack Edge](https://azure.microsoft.com/ja-jp/products/azure-stack/edge/) - エッジアプライアンス
 
 SDK
 - [Azure IoT Hub デバイスSDK](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-sdks#azure-iot-hub-device-sdks)
@@ -61,10 +69,11 @@ SDK
 - [Azure Certified Device catalog](https://devicecatalog.azure.com/)
 - [組み込み初心者が Azure Sphere のLEDをいっぱいチカチカしてみた](https://qiita.com/y10exxx/items/6b29ed2211a094be16b1)
 - [Azure IoT Edge を使って取得した画像を Azure に送ってみる](https://qiita.com/Yoshifumi/items/6c7722d120c51293944e)
+- [獣害対策](http://fukui.pcn.club/katsuyama/azure201703/)
+- [スタバのコーヒーメーカーへの搭載](https://www.itmedia.co.jp/enterprise/articles/2004/01/news060.html)
 
 IoT一般
 - [IoTLT(国内最大規模のIoTコミュニティ)アドベントカレンダー](https://qiita.com/advent-calendar/2020/iotlt)
-- [獣害対策](http://fukui.pcn.club/katsuyama/azure201703/)
 
 # トレーニング
 

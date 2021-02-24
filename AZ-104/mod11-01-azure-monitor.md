@@ -8,7 +8,9 @@ Azure とオンプレミスのサービスを監視します。 メトリック�
 
 [価格](https://azure.microsoft.com/ja-jp/pricing/details/monitor/)
 
-[Azure Monitor Logで実現するモダンな管理手法](https://www.slideshare.net/ssuser411bae/azure-monitor-log)
+Azure Monitor Logで実現するモダンな管理手法:
+[動画](https://www.youtube.com/watch?v=YwYVd38xFMU)
+,[スライド](https://www.slideshare.net/ssuser411bae/azure-monitor-log)
 
 # 歴史
 
