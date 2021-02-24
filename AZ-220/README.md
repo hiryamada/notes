@@ -1,4 +1,4 @@
-# AZ-220 IoT
+# AZ-220 Microsoft Azure IoT Developer
 
 [コース情報](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-220t00)
 
@@ -13,11 +13,17 @@
 
 [認定資格](https://docs.microsoft.com/ja-jp/learn/certifications/azure-iot-developer-specialty)
 
-Azure の IoT ソリューション 
+Azure の IoT情報
 - [トップページ](https://azure.microsoft.com/ja-jp/overview/iot/)
 - [IoT関連サービス](https://azure.microsoft.com/ja-jp/product-categories/iot/)
 - [Azure IoTのドキュメント](https://docs.microsoft.com/ja-jp/azure/iot-fundamentals/)
 - [Learn の「IoT」タグがついたモジュール](https://docs.microsoft.com/ja-jp/learn/browse/?products=azure-iot)
+- [Azure IoT のテクノロジ、サービス、ソリューション](https://docs.microsoft.com/ja-jp/azure/iot-fundamentals/iot-services-and-technologies)
+- [ブログ](https://azure.microsoft.com/ja-jp/blog/topics/internet-of-things/)
+- [Tech Community](https://techcommunity.microsoft.com/t5/internet-of-things-iot/ct-p/IoT)
+- [IoTリファレンス（推奨）アーキテクチャ](https://docs.microsoft.com/ja-jp/azure/architecture/reference-architectures/iot)
+- [ガートナーによる 2020 年のインダストリアル IoT プラットフォームのマジック クアドラントで Microsoft がリーダーに選出](https://azure.microsoft.com/ja-jp/blog/microsoft-named-a-leader-in-gartner-s-2020-magic-quadrant-for-industrial-iot-platforms/)
+
 
 主なIoT関連サービス（AZ-220出題範囲）
 
@@ -53,15 +59,20 @@ SDK
 - [Channel 9 - Internet of Things Show](https://channel9.msdn.com/Shows/Internet-of-Things-Show)
 - [たかはしまさる さんのQiita記事（IoT, DevOps等）](https://qiita.com/mstakaha1113)
 - [Azure Certified Device catalog](https://devicecatalog.azure.com/)
+- [組み込み初心者が Azure Sphere のLEDをいっぱいチカチカしてみた](https://qiita.com/y10exxx/items/6b29ed2211a094be16b1)
+- [Azure IoT Edge を使って取得した画像を Azure に送ってみる](https://qiita.com/Yoshifumi/items/6c7722d120c51293944e)
+
+IoT一般
+- [IoTLT(国内最大規模のIoTコミュニティ)アドベントカレンダー](https://qiita.com/advent-calendar/2020/iotlt)
+- [獣害対策](http://fukui.pcn.club/katsuyama/azure201703/)
 
 # トレーニング
 
 ラボ:
 
-- 1～20番
-- 18番は欠番となっています
+- 1～20番(18番は欠番なので全19ラボ)
 - 「課題」と表示されている部分もありますがラボと同一です
-- [手順書一覧](https://microsoftlearning.github.io/AZ-220JA-Microsoft-Azure-IoT-Developer/):
+- [手順書一覧](https://microsoftlearning.github.io/AZ-220JA-Microsoft-Azure-IoT-Developer/)
 - [手順書一覧（Markdown）](https://github.com/MicrosoftLearning/AZ-220JA-Microsoft-Azure-IoT-Developer/tree/master/Instructions/Labs)
 
 
