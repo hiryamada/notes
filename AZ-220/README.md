@@ -74,6 +74,8 @@ SDK
 
 IoT一般
 - [IoTLT(国内最大規模のIoTコミュニティ)アドベントカレンダー](https://qiita.com/advent-calendar/2020/iotlt)
+- [IoTのテクノロジとプロトコル](https://azure.microsoft.com/ja-jp/overview/internet-of-things-iot/iot-technology-protocols/)
+
 
 # トレーニング
 
@@ -84,14 +86,14 @@ IoT一般
 - [手順書一覧](https://microsoftlearning.github.io/AZ-220JA-Microsoft-Azure-IoT-Developer/)
 - [手順書一覧（Markdown）](https://github.com/MicrosoftLearning/AZ-220JA-Microsoft-Azure-IoT-Developer/tree/master/Instructions/Labs)
 
-
 モジュール: 全11モジュール
 - M1：IoT と Azure IoT サービスの概要
   - レッスン:
     - IoT のビジネス案件
     - IoT ソリューション アーキテクチャの概要
     - IoT ハードウェアとクラウド サービス
-      - [Azure IoT Hub](iot-hub.md)
+  - サービス:
+    - [Azure IoT Hub](iot-hub.md)
   - ラボ:
     - 1 Azure の使用を開始する
     - 2 Azure IoT Service の使用を開始する
@@ -106,9 +108,10 @@ IoT一般
 - M3: スケールに合わせたデバイス プロビジョニング
   - レッスン:
     - デバイス プロビジョニング サービスの条件と概要
-      - [Azure IoT Device Provisioning Service (DPS)](iot-dps.md)
     - デバイス プロビジョニング サービスの構成よび管理
     - デバイス プロビジョニング タスク
+  - サービス:
+    - [Azure IoT Device Provisioning Service (DPS)](iot-dps.md)
   - ラボ:
     - 5 DPS でのデバイスの各登録
     - 6 DPS でのデバイスの自動登録
@@ -116,6 +119,7 @@ IoT一般
   - レッスン:
     - メッセージおよびメッセージ処理
     - データ ストレージ オプション
+  - サービス:
     - [Azure Stream Analytics](stream-analytics.md)
   - ラボ:
     - 7 デバイス メッセージのルーティング
@@ -123,16 +127,20 @@ IoT一般
 - M5：分析情報とビジネス統合
   - レッスン:
     - IoT ソリューション向けビジネス統合
-    - [Time Series Insights によるデータの可視化](time-series-insights.md)
+    - Time Series Insights によるデータの可視化
     - Power BI によるデータの可視化
+  - サービス:
+    - [Azure Time Series Insights](time-series-insights.md)
   - ラボ:
     - 9 Event Grid による IoT Hub の統合
     - 10 Time Series Insights によるタイム スタンプ データの探索と分析
 - M6：Azure IoT Edge のデプロイ処理
   - レッスン:
-    - [Azure IoT Edge の概要](iot-edge.md)
+    - Azure IoT Edge の概要
     - Edge デプロイ処理
     - Edge ゲートウェイ デバイス
+  - サービス:
+    - [Azure IoT Edge](iot-edge.md)
   - ラボ:
     - 11 IoT Edge の概要
     - 12 [IoT Edge ゲートウェイのセットアップ](https://github.com/MicrosoftLearning/AZ-220JA-Microsoft-Azure-IoT-Developer/blob/master/Instructions/Labs/LAB_AK_12-setup-an-iot-edge-gateway.md)
@@ -161,15 +169,18 @@ IoT一般
 - M10：Azure Security Center および IoT のセキュリティに関する考慮事項
   - レッスン:
     - IoT ソリューション向けのセキュリティの基礎
-      - [Azure Defender for IoT](defender-for-iot.md)
     - IoT 向け Azure Security Center の概要
     - IoT エージェント向け Azure Security Center での保護の強化
+  - サービス:
+    - [Azure Defender for IoT](defender-for-iot.md)
   - ラボ:
     - 19 IoT 向け Azure Security Center の実装
 - M11：IoT Central を使用して IoT ソリューションを構築する
   - レッスン:
-    - [IoT Central の概要](iot-central.md)
+    - IoT Central の概要
     - デバイス テンプレートの作成および管理
     - Azure IoT Centralでのデバイスの管理
+  - サービス:
+    - [Azure IoT Central](iot-central.md)
   - ラボ:
-    - 20 Azure IoT Central の使用開始する
+    - 20 Azure IoT Central の使用を開始する

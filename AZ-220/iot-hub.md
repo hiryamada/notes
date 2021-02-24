@@ -1,3 +1,161 @@
 # Azure IoT Hub
 
 [製品ページ](https://azure.microsoft.com/ja-jp/services/iot-hub/)
+
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/iot-hub/)
+
+[価格](https://azure.microsoft.com/ja-jp/pricing/details/iot-hub/)
+
+[価格の説明](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-pricing)
+
+
+- マネージド サービス
+- IoT アプリケーションとデバイスの間のメッセージ ハブ
+- デバイスからクラウドへと、クラウドからデバイスへの、両方の通信をサポート
+- 数百万のデバイスの同時接続、毎秒数百万のイベントに対応するようにスケーリング
+
+# レベルとサイズ
+
+IoT Hubのリソース作成時に「管理」タブで指定。
+
+リソース作成後は「価格とスケール」から変更可能（Freeを除く）
+
+- Free, Basic, Standardの「レベル」
+- FreeはF1, BasicはB1/B2/B3, StandardはS1/S2/S3という「サイズ」がある
+  - 数字が大きいほうが性能が高い（よりたくさんのメッセージを送信できる）
+
+Free
+- サイズ: F1のみ
+- ユニット数: 
+- PoC（概念実証）用
+- 1 日あたり合計 8,000 メッセージまで送信でき、最大 500 台までのデバイス ID を登録できます
+- Free エディションから有料エディションのいずれかに切り替えることはできません。
+- IoT Edge利用可能
+
+Basic
+- サイズ: B1/B2/B3
+- ユニット数: B1,B2は1～200, B3は1～10
+- Basic レベルから Standard レベルにアップグレードできますが、Standard レベルから Basic レベルにダウングレードすることはできません。
+- 「cloud-to-device」, 「IoT Edge」, 「デバイス管理」は使用できない
+
+Standard
+- サイズ: S1/S2/S3
+- ユニット数: S1,S2は1～200, S3は1～10
+- Defender for IoTが使用できる（オプション、デフォルト値は「オン」）
+- [cloud-to-deviceメッセージ送信はFree/Standardレベルで使用可能](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-messages-c2d)
+- IoT Edge利用可能
+
+ユニット数
+- 「ユニット数」を変更できる。
+- デフォルトは1。
+- ユニット数に比例したコストがかかる
+- ユニット数に比例して、1日の最大メッセージ送信可能数が決まる
+
+
+
+
+# 設定＞ネットワーク
+
+「パブリックアクセス」タブ
+
+「無効」「選択したIP範囲」「すべてのネットワーク」を選べる。
+
+「プライベートエンドポイント接続」タブ
+
+[プライベートエンドポイント(Private Link)](https://docs.microsoft.com/ja-jp/azure/private-link/private-link-overview?toc=/azure/virtual-network/toc.json#availability)を設定できる。
+
+[サービスエンドポイントは非対応](https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-service-endpoints-overview)
+
+# プロトコルサポート
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-protocols
+
+- MQTT - port 8883
+- MQTT over WebSocket - port 443
+- AMQP - port 5671
+- AMQP over WebSocket - port 443
+- HTTPS - port 443
+
+# az コマンドによるIoT Hub作成例
+
+```
+az group create -n <group> -l <location>
+az iot hub create -n <name> -g <group> --sku <sku>
+```
+
+`-g` ( `--group-name` )は必須。
+
+`--sku` はオプション、省略時は`S1`
+
+# メッセージルーティング
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-messages-d2c
+
+メッセージ ルーティングを使用すると、自動化された、スケーラブルで信頼性の高い方法で、デバイスからクラウド サービスにメッセージを送信することができます。
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-routing-query-syntax
+
+メッセージ ルーティングでは、メッセージ プロパティとメッセージ本文に基づいてクエリを実行できるほか、デバイス ツインのタグとプロパティに基づいてクエリを実行することもできます。
+
+
+各メッセージは、一致するルーティング クエリを持つすべてのエンドポイントにルーティングされます。 つまり、メッセージは複数のエンドポイントにルーティングできます。
+
+IoT Hub では現在、次のエンドポイントがサポートされています。
+- 組み込みのエンドポイント
+- Azure Storage
+- Service Bus キューと Service Bus トピック
+- Event Hubs
+
+# ルートのテスト
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-messages-d2c#testing-routes
+
+新しいルートを作成したり、既存のルートを編集したりする場合は、サンプル メッセージを使用してルート クエリをテストする必要があります。
+
+個々のルートをテストすることも、すべてのルートを一度にテストすることも可能で、テスト中にメッセージがエンドポイントにルーティングされることはありません。
+
+テストには、Azure portal、Azure Resource Manager、Azure PowerShell、および Azure CLI を使用することができます。 
+
+結果は、サンプル メッセージがクエリに一致したか、メッセージがクエリに一致しなかったか、サンプル メッセージまたはクエリ構文が正しくないためにテストを実行できなかったかを識別するのに役立ちます。
+
+# IoT Hub の Event Grid との統合
+
+Azure Event Grid は、発行-サブスクライブ モデルを使用する、フル マネージドのイベント ルーティング サービスです。 IoT Hub と Event Grid は、Azure サービスと Azure 以外のサービスに IoT Hub イベントを統合するために、ほぼリアルタイムで連携します。 IoT Hub は、デバイス イベント とテレメトリ イベントの両方を発行します。
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-event-grid-routing-comparison
+
+（IoT Hub メッセージ ルーティング : この IoT Hub の機能を使用して、Azure Storage コンテナー、Event Hubs、Service Bus キュー、Service Bus トピックなどのサービス エンドポイントに、device-to-cloud メッセージをルーティングすることができます。 また、ルーティングでは、エンドポイントにルーティングする前にデータをフィルター処理するクエリ機能も提供されています。 デバイスのテレメトリ データに加えて、アクションのトリガーに使用できる非テレメトリ イベントも送信できます。）
+
+# デバイスを監視する
+
+デバイスから送信されたテレメトリを表示する
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/quickstart-send-telemetry-cli#view-messaging-metrics-in-the-portal
+
+az iot hub monitor-events コマンドを実行します。 これにより、シミュレートされたデバイスの監視が開始されます。 出力には、シミュレートされたデバイスから IoT hub に送信されたテレメトリが表示されます。
+
+https://docs.microsoft.com/ja-jp/cli/azure/ext/azure-iot/iot/hub?view=azure-cli-latest#ext_azure_iot_az_iot_hub_monitor_events
+
+Monitor device telemetry & messages sent to an IoT Hub.
+
+```
+az iot hub monitor-events -n {iothub-name} -d {device-name}
+```
+
+# iothub-diagnostics tool
+
+https://github.com/azure/iothub-diagnostics
+
+This tool is provided to help diagnose issues with a device connecting to Azure IoT Hubs.
+
+The tool will run, and will provide high level information about success and failure to the command prompt. 
+
+```
+iothub-diagnostics HostName=<my-hub>.azure-devices.net;SharedAccessKeyName=<my-policy>;SharedAccessKey=<my-policy-key>
+```
+注意：Archived
+
+# サービスポリシー
+
+# SharedAccessKey
+
