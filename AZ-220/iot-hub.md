@@ -54,23 +54,29 @@ Standard
 
 
 
-# 設定＞ネットワーク
+# 設定＞ネットワーク（IPフィルター）
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-ip-filtering
 
 「パブリックアクセス」タブ
 
-「無効」「選択したIP範囲」「すべてのネットワーク」を選べる。
+- 「無効」「選択したIP範囲」「すべてのネットワーク」を選べる。
+- 1 つの IPv4 アドレスか、または CIDR 表記法で記述した IP アドレス ブロックを指定
+- 10個まで
+- 順序付けはない
+- IPv6アドレスの設定はできない
 
 「プライベートエンドポイント接続」タブ
 
-[プライベートエンドポイント(Private Link)](https://docs.microsoft.com/ja-jp/azure/private-link/private-link-overview?toc=/azure/virtual-network/toc.json#availability)を設定できる。
+- [プライベートエンドポイント(Private Link)](https://docs.microsoft.com/ja-jp/azure/private-link/private-link-overview?toc=/azure/virtual-network/toc.json#availability)を設定できる。
 
-[サービスエンドポイントは非対応](https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-service-endpoints-overview)
+- [サービスエンドポイントは非対応](https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-service-endpoints-overview)
 
 # プロトコルサポート
 
 https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-protocols
 
-- MQTT - port 8883
+- MQTT - port 8883sknrM9m
 - MQTT over WebSocket - port 443
 - AMQP - port 5671
 - AMQP over WebSocket - port 443
@@ -126,7 +132,7 @@ https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-event-grid-routing-compar
 
 （IoT Hub メッセージ ルーティング : この IoT Hub の機能を使用して、Azure Storage コンテナー、Event Hubs、Service Bus キュー、Service Bus トピックなどのサービス エンドポイントに、device-to-cloud メッセージをルーティングすることができます。 また、ルーティングでは、エンドポイントにルーティングする前にデータをフィルター処理するクエリ機能も提供されています。 デバイスのテレメトリ データに加えて、アクションのトリガーに使用できる非テレメトリ イベントも送信できます。）
 
-# デバイスを監視する
+# デバイスを監視する - monitor-events コマンド
 
 デバイスから送信されたテレメトリを表示する
 
@@ -142,20 +148,69 @@ Monitor device telemetry & messages sent to an IoT Hub.
 az iot hub monitor-events -n {iothub-name} -d {device-name}
 ```
 
+
+# サービスポリシー
+
+# SharedAccessKey
+
+# ファイルアップロード
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-file-upload
+
+ファイルのアップロードを使用して、断続的に接続されたデバイスでアップロードされた、または帯域幅を節約するために圧縮されたメディア ファイルや大容量のテレメトリ バッチを送信します。
+
+
+デバイスは、デバイス向けエンドポイント ( /devices/{deviceId}/files) を介して通知を送信することで、ファイルのアップロードを開始できます。 アップロードが完了したことをデバイスが IoT Hub に通知すると、IoT Hub はサービス向けエンドポイント ( /messages/servicebound/filenotifications) を介してファイル アップロード通知メッセージを送信します。
+
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-configure-file-upload
+
+IoT Hub でファイルのアップロード機能を使用するには、最初に Azure Storage アカウントとハブを関連付ける必要があります。
+
+# ログの収集
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/tutorial-use-metrics-and-diags
+
+Azure Monitor を使用して、IoT ハブのメトリックとログを収集できます。これらは、ソリューションの操作の監視と、発生した問題のトラブルシューティングに役立ちます。 
+
+IoT Hub は、操作の複数のカテゴリに対応する**リソース ログ**を出力します。ただし、これらのログを**表示**するには、送信先に送るための**診断設定**を作成する必要があります。 そのような送信先の 1 つが、**Log Analytics ワークスペース**で収集される **Azure Monitor ログ**です。
+
+リソースログ：
+
+https://docs.microsoft.com/ja-jp/azure/azure-monitor/essentials/tutorial-resource-logs
+
+
+リソース ログを収集すると、Azure リソースの詳細な操作に関する分析情報が提供され、正常性と可用性を監視するのに役立ちます。 Azure リソースではリソース ログが自動的に生成されますが、**リソース ログを収集する場所を構成する必要があります**。 
+
+
+# IoTエクスプローラ
+
+https://docs.microsoft.com/ja-jp/azure/iot-pnp/howto-use-iot-explorer
+
+Azure IoT エクスプローラーは、IoT ハブに接続されている任意のデバイスと対話するためのグラフィカル ツールです。 
+
 # iothub-diagnostics tool
 
 https://github.com/azure/iothub-diagnostics
 
 This tool is provided to help diagnose issues with a device connecting to Azure IoT Hubs.
 
+デバイスの接続の診断に使用できるツール。注意：Archived
+
+
 The tool will run, and will provide high level information about success and failure to the command prompt. 
 
 ```
 iothub-diagnostics HostName=<my-hub>.azure-devices.net;SharedAccessKeyName=<my-policy>;SharedAccessKey=<my-policy-key>
 ```
-注意：Archived
 
-# サービスポリシー
+# IoT Hub のデバイス ツイン
 
-# SharedAccessKey
+"デバイス ツイン" は、デバイスの状態に関する情報 (メタデータ、構成、状態など) を格納する JSON ドキュメントです。
 
+IoT Hub でデバイス ID を作成または削除したときに、デバイス ツインは暗黙的に作成または削除されます。
+
+デバイス ツインには、デバイスに関連する次のような情報が格納されます。
+
+- デバイスの状態と構成を同期するために使用するデバイスとバックエンド。
+- 実行時間の長い操作にクエリを行い、ターゲットを設定するために使用するソリューション バックエンド。

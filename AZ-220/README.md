@@ -54,6 +54,7 @@ IoT関連サービス（その他）
 - [Azure RTOS](https://azure.microsoft.com/ja-jp/services/rtos/) - リアルタイムOS
 - [Azure SQL Edge](https://azure.microsoft.com/ja-jp/services/sql-edge/) - エッジデバイス上で動作するSQL Server
 - [Azure Stack Edge](https://azure.microsoft.com/ja-jp/products/azure-stack/edge/) - エッジアプライアンス
+- [Azure IoTエクスプローラ](https://docs.microsoft.com/ja-jp/azure/iot-pnp/howto-use-iot-explorer) - IoT ハブに接続されている任意のデバイスと対話するためのグラフィカル ツール
 
 SDK
 - [Azure IoT Hub デバイスSDK](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-sdks#azure-iot-hub-device-sdks)
