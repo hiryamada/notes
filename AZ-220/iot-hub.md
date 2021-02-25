@@ -76,7 +76,7 @@ https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-ip-filtering
 
 https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-protocols
 
-- MQTT - port 8883sknrM9m
+- MQTT - port 8883
 - MQTT over WebSocket - port 443
 - AMQP - port 5671
 - AMQP over WebSocket - port 443
