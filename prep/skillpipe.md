@@ -40,7 +40,7 @@ Skillpipeへ[ログイン(外部サイト)](https://www.skillpipe.com/#/account/
 
 # ダウンロード
 
-Skillpipeのコース（電子テキスト）がダウンロードできるようになりました。
+※注意：PDF等でダウンロードする機能ではありません。
 
 ダウンロードを行っておくと、ページの移動の待ち時間がなくなり、快適にコースを利用できるようになります。
 
@@ -54,23 +54,56 @@ Skillpipeのコース（電子テキスト）がダウンロードできるよ�
 - デバイスがインターネットから切断されると、アイコンのとなりのスイッチが「オフライン」に切り替わります（手動でオフラインに切り替えることも可能です）。
 - デバイスがインターネットに接続されたら、手動で「オンライン」に切り替えることができます。
 
+# よくあるご質問
+
+- 閲覧の期限: 特にございません。トレーニングご受講後もご利用いただけます。
+- ダウンロード: テキストをPDF等でダウンロードすることはできません。ただし、下記の「印刷」を行い、印刷の機能を利用してPDFとして保存することは可能です。
+- 印刷: 画面左側のメニュー＞「印刷」から可能です。ただし、セクション（表示中のページ）単位での印刷となります。テキスト全体を一括して印刷することはできません。
+
 # トラブルシューティング
 
-Skillpipeからメールが届いていません
+Q: Skillpipeからメール（ライセンスキー）が届いていません。
 
 - 原因
   - Skillpipeからのメールが「迷惑メール」などに分類されている可能性があります。
   - 会社のメールサーバーの設定により、メールが削除され、受講者のメールボックスにメールが届いてない可能性があります。
 - 対処
   - Skillpipeからのメールが「迷惑メール」などに分類されていないかご確認ください。
-  - 「迷惑メール」にもメールが見つからない場合、講師までチャットでお問い合わせください。
-  - 講師が新しいライセンス キーを取得して、チャットでお渡しします。
+  - 「迷惑メール」にもメールが見つからない場合、下記「ライセンスキーの問い合わせ」に従い再発行依頼をお願いします。
   - 後ほど、ライセンスキーのメールが見つかった場合は、未使用のライセンスキーを講師までお戻しいただけると助かります。
 
-現在の環境から、Skillpipeからメールが届いているメールアカウントにアクセスできないので、ライセンスキーがわかりません
+# ライセンスキーの問い合わせ
 
-- 対処
-  - 講師までチャットでお問い合わせください。
-  - 講師が新しいライセンス キーを取得して、チャットでお渡しします。
-  - 後ほど、メールにアクセスできた場合は、未使用のライセンスキーを講師までお戻しいただけると助かります。
+ライセンスキーがご不明の場合や、英語版をご希望の場合は、下記サポートにて新規Caseを作成して発行を依頼してください。
 
+https://esisupport.microsoft.com
+
+画面左側のCreate Caseをクリック
+（ページ表示後クリックできるようになるまで30秒ほど時間がかかります）
+
+Case入力例:
+
+- (ご受講者様のお名前)は、ご自身の名前をローマ字でご記入ください。
+- (コース名)は、ご受講中のコース名(AZ-104など)をご記入またはご選択ください。
+- (言語): Japanese または English
+- (講師名), (デリバリーID)は、講師までお尋ねください。
+- (コースURL): 
+  - AZ-104: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-104t00
+  - AZ-204: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
+  - AZ-400: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
+  - AZ-500: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-500t00
+
+```
+Issue Title: (コース名) (言語) Skillpipe licence code
+Pick a Category: Microsoft delivered Courses (ILT)
+Pick an Issue: Skillpipe
+Issue Sub-Category: License Distribution
+Course Name: (コース名) 
+Course URL: (コースURL)
+Description: 
+    Could you please give me an (コース名) Skillpipe license code of (言語) version?
+    Employer name: （ご受講者様のお名前）
+    Trainer name: (講師名)
+    Delivery ID: (デリバリーID)
+    Course: (コース名)
+```

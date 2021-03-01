@@ -6,6 +6,8 @@
 
 [価格](https://azure.microsoft.com/ja-jp/pricing/details/iot-hub/)
 
+1ヶ月あたり、ユニットあたりの料金＋メッセージ合計数
+
 [価格の説明](https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-pricing)
 
 
@@ -214,3 +216,15 @@ IoT Hub でデバイス ID を作成または削除したときに、デバイ�
 
 - デバイスの状態と構成を同期するために使用するデバイスとバックエンド。
 - 実行時間の長い操作にクエリを行い、ターゲットを設定するために使用するソリューション バックエンド。
+
+# アクセス制御
+
+
+https://docs.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-security#access-control-and-permissions
+
+- IoT Hubレベルの共有アクセスポリシー（shared access policies）
+  - 設定＞共有アクセスポリシー＞＋追加 で、ポリシーを追加できる
+  - あらかじめiothubowner, service, device, registryRead, registryReadWriteの5つのポリシーが追加されている
+  - ポリシーは「アクセスポリシー名」と、「レジストリ読み込み」権限、「レジストリ書き込み」権限、「サービス接続」権限、「デバイス接続」権限という4つの権限で構成される
+  - 追加された各ポリシーごとに、「共有アクセスキー」（主キー、セカンダリキー、接続文字列ープライマリキー、接続文字列ーセカンダリキー）が生成される
+- デバイスごとのセキュリティ資格情報（Security Credentials）

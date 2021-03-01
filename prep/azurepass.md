@@ -3,7 +3,7 @@
 ## 事前の準備
 
 - 今回のコース用に新しく作成したMicrosoftアカウント。まだ準備していない場合は[こちらの手順](msa.md)に従ってご準備ください。
-- [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/)で入手したPromo Code。まだPromo Codeを入手していない場合は、[こちらの手順](lods.md)に従ってPromo Codeを入手してください。
+- [演習環境 - Learn on Demand LMS (LODS)](https://esi.learnondemand.net/)で入手したPromo Code。まだPromo Codeを入手していない場合は、[こちらの手順](lods.md)に従ってPromo Codeを入手してください。
 
 ## 手順
 
@@ -20,13 +20,14 @@
 - 「Confirm Microsoft Account」ボタンをクリックします。
 - 前の手順で入手したPromo Codeを入力し、「Claim Promo Code」（プロモーションコードの要求）をクリックします。
 - 「We are processing your request」というページが出ます。**画面の指示に従い、「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。
-- 「Azure Pass - Sponsorship」ページで、氏名などの情報を入力します。
-- 「次へ」をクリックします。
-- 「Subscription Agreement（サブスクリプション契約）」等に同意するためのチェックボックスにチェックを入れます。
+- 「Your profile」フォームで、氏名などの情報を入力します。
+- 「次へ」(Next)をクリックします。※画面が切り替わるまで少し待ちます。リロードなどの操作を行わないでください。
+- 「サブスクリプション契約(Agreement)」に同意するためのチェックボックス(I agree to the subscription agreement, offer details, and privacy statement.)にチェックを入れます。
 - 「サインアップ（Sign Up）」をクリックします。
-- 「お客様の情報を確認しています」「アカウントを設定しています」などのメッセージが出ます。そのまま待ちます。
-- Azure portalの画面に移動し、「Microsoft Azureへようこそ」と表示されます。
-- 「ツアーの開始」をクリックして、Azure portalの各部の使い方を確認します。
+- 「お客様の情報を確認しています」「アカウントを設定しています」(Setting up your account...)などのメッセージが出ます。そのまま待ちます。リロードなどの操作を行わないでください。
+- Azure portalの画面に移動し、「Microsoft Azureへようこそ」(Welcome to Microsoft Azure)と表示されます。
+- 「ツアーの開始」(Start tour)をクリックして、Azure portalの各部の使い方を確認します。
+- 画面表示が英語になっている場合は、画面上部の歯車アイコン（Settings）をクリックし、「Languages & region」タブを選択し、「Language」で「日本語」を選択し、「Apply」をクリックします。
 
 以上で、Microsoftアカウントに、「Azure Pass - スポンサー プラン」というAzureサブスクリプションが作られました。
 
