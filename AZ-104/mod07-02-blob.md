@@ -12,7 +12,15 @@ Azure Filesの中に「コンテナー」を作り、「Blob」をアップロ�
 
 ※ [日本語版のドキュメント](https://docs.microsoft.com/ja-jp/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs)では「BLOB」と「Blob」が混在しているようです。[英語版のドキュメント](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs)では、文中では小文字で「blob」、製品名の一部や記事のタイトルとしては「Blob」と表記されるようです。
 
+# Microsoft Learn
 
+[リージョン間でストレージ データをレプリケートし、セカンダリ ロケーションにフェールオーバーすることで、ディザスター リカバリーを実現する](https://docs.microsoft.com/ja-jp/learn/modules/provide-disaster-recovery-replicate-storage-data/)
+
+# オブジェクトレプリケーション
+
+https://docs.microsoft.com/ja-jp/azure/storage/blobs/object-replication-overview
+
+オブジェクト レプリケーションを使用すると、ソース ストレージ アカウントと宛先アカウントの間でブロック BLOB を非同期にコピーできます。
 
 # Blobの種類
 
