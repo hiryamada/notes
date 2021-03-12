@@ -1,4 +1,6 @@
 /*
+https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues
+
 dotnet new console -n ServiceBusSender
 cd ServiceBusSender
 dotnet add package Azure.Messaging.ServiceBus --version 7.1.1
