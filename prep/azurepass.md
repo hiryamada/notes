@@ -24,7 +24,7 @@
 - 「次へ」(Next)をクリックします。※画面が切り替わるまで少し待ちます。リロードなどの操作を行わないでください。
 - 「サブスクリプション契約(Agreement)」に同意するためのチェックボックス(I agree to the subscription agreement, offer details, and privacy statement.)にチェックを入れます。
 - 「サインアップ（Sign Up）」をクリックします。
-- 「お客様の情報を確認しています」「アカウントを設定しています」(Setting up your account...)などのメッセージが出ます。そのまま待ちます。リロードなどの操作を行わないでください。
+- 「お客様の情報を確認しています」「アカウントを設定しています」(Setting up your account...)などのメッセージが出ます。**リロードやページ移動などの操作を行わなず、そのまま1分ほど待ちます**。この間に画面に表示されるテキストエリアには何も入力する必要はありません。
 - Azure portalの画面に移動し、「Microsoft Azureへようこそ」(Welcome to Microsoft Azure)と表示されます。
 - 「ツアーの開始」(Start tour)をクリックして、Azure portalの各部の使い方を確認します。
 - 画面表示が英語になっている場合は、画面上部の歯車アイコン（Settings）をクリックし、「Languages & region」タブを選択し、「Language」で「日本語」を選択し、「Apply」をクリックします。

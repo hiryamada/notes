@@ -25,7 +25,7 @@ Skillpipeのアカウントをお持ちの場合は、そのアカウントで[�
 
 # ライセンスキーの引き換え（テキストの入手）
 
-Skillpipeへ[ログイン(外部サイト)](https://www.skillpipe.com/#/account/login)後、「コースの追加（Add Course）」をクリックし、ライセンス キーを入力して、引き換え（Redeem）を行ってください。
+Skillpipeへ[サインイン(外部サイト)](https://www.skillpipe.com/#/account/login)後、「コースの追加（Add Course）」をクリックし、ライセンス キーを入力して、引き換え（Redeem）を行ってください。
 
 引き換え後、メニューの「ブックシェルフ」（Bookshelf）で、コースのテキストを選択します。
 

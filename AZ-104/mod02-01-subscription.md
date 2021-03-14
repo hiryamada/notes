@@ -202,9 +202,10 @@ Azure のリージョンによって、サービスの価格が異なります�
 |リージョン|1ヶ月あたりの価格|
 |-|-|
 |East US| $137.24|
-|Brazil South|$140.16|
+|North Central US|$140.16|
 |Australia Central|$158.41|
 |Japan East| $161.33|
+|Japan West| $161.33|
 |Brazil South|$183.23|
 |France South|$193.45|
 |Switzerland West|$203.67|
