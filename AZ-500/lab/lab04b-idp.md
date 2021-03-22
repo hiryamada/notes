@@ -20,6 +20,7 @@
   - Microsoft Authenticatorアプリをインストールしておきます。
 - 手順書と実際の画面の文言が異なる場合があります。実際の画面の表示をよく読んで操作を進めてください。
 
+途中、Windows VMへのリモートデスクトップ接続が必要となります。リモートデスクトップ接続が使用できない環境では、代わりに[Azure Bastion](https://docs.microsoft.com/ja-jp/azure/bastion/tutorial-create-host-portal)を使用できます。
 
 # 演習3
 
