@@ -2,6 +2,8 @@
 
 ラボ4の演習1, 3, 4, 5を行います。
 
+※ラボ4a実施後、もとのAzureテナントに切り替えて、このラボを実施します。
+
 # 概要
 
 - 演習1 ARMテンプレートを使い、演習4タスク4で使用するVMをデプロイします。
@@ -41,6 +43,6 @@
 
 タスク6-6 IE セキュリティ強化の構成」 をクリック→ IE Enhanced Security Configuration
 
-タスク6-14～15: 認証が終わると、画面に「NoScript XSS Warning」という青い画面が出ます。選択肢の一番下の「Always Allow」を選んで「OK」をクリックしてください。
+タスク6-14～15: 認証が終わると、画面に「NoScript XSS Warning」という青い画面が出ます（これは、Torのブラウザーに[NoScriptプラグイン](https://addons.mozilla.org/ja/firefox/addon/noscript/)が組み込まれていて、それが出している警告です。）。選択肢の一番下の「Always Allow」を選んで「OK」をクリックしてください。
 
 タスク6-15: アプリケーション アクセス パネルに正常にサインインしたことを確認します。→ 画面左上に「My Apps」と表示されていればOKです。
