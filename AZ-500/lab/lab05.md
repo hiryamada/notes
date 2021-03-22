@@ -1,4 +1,4 @@
-# ラボ5
+# ラボ5 Privileged Identity Management
 
 [ラボ4a](lab04a-mfa.md)で作成したテナント「AdatumLab500-04」を使用します。このテナントにはaaduser1/2/3というユーザーが作成済みです。
 
@@ -33,7 +33,7 @@ Azure AD Privileged Identity Managementの操作を体験します。
 - 「対象」割り当て: このロールのメンバーは、ロールを使用するにはアクション(MFAチェックなど)を実行する必要があります。
 - 「アクティブ」割り当て: アクションは不要で、アクティブ割り当てされたメンバーは、ロールによって提供される特権を常に所有します。
 
-https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user?tabs=new
+参考: [Privileged Identity Management で Azure AD ロールを割り当てる](https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user?tabs=new)
 
 タスク1-11 AdatumLab500-04 | 割り当て ブレードに戻り → Privileged Identity Management ＞ 管理 ＞ Azure ADロール ＞ 管理 ＞ 割り当て とたどります
 
