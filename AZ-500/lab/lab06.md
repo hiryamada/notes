@@ -93,3 +93,10 @@ True
 
 タスク3-10 IEで、 aduser1 を表示しているページで、Ctrl + R を押して、ページをリロードします。Job info の Department が「Sales」となっていることが確認できます。
 
+リソースのクリーンナップの2
+
+```
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+Install-Module MsOnline -Force
+```
