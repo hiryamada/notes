@@ -30,7 +30,7 @@ PS /home/test2021-0322-2> Test-AzDnsAvailability -DomainNameLabel test987654 -Lo
 True
 ```
 
-タスク2-2 青い「Deploy to Azure」ボタンをクリックします。
+タスク2-2 開いたGitHubリポジトリのページの下部にある、青い「Deploy to Azure」ボタンをクリックします。
 
 タスク2-4 「ロード ファイル」→「ファイルの読み込み」
 
