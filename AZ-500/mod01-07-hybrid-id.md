@@ -47,6 +47,16 @@ https://jpazureid.github.io/blog/azure-active-directory-connect/password-writeba
 パスワード ライトバックはパスワード ハッシュ同期による認証だけではなく、パススルー認証や AD FS の環境でもサポートされています。よって、認証方法によらず、同期ユーザーは Azure AD 側からもパスワード変更 (SSPR) をおこなうことができます。
 
 
-# セルフサービスのパスワードリセット（SSPR）
+# [Azure AD Connect Health](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#what-is-azure-ad-connect-health)
 
+Azure AD Connectの正常性の監視機能。
 
+[「Azure AD Connect Healthエージェント」をインストール](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-health-agent-install)する。
+
+監視結果は「[Azure AD Connect Healthポータル](https://portal.azure.com/#blade/Microsoft_Azure_ADHybridHealth/AadHealthMenuBlade/QuickStart)」（Azure portal内）に表示される。
+
+監視対象
+
+- [Azure AD Connectの同期の監視](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-health-sync)
+- [AD DSの監視](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-health-adds)
+- [AD FSの監視](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-health-adfs)
