@@ -42,4 +42,34 @@ aks-agentpool-18419162-0   Ready    agent   72m   v1.18.14
 
 タスク5-7 これはコマンドではなく、実行結果例です。
 
+タスク6-2 「外部IP」列に・・・→ EXTERNAL-IP の下に表示されているIPアドレスをコピーします。
+
+タスク7-7 「Cloud Shell」 ウィンドウ内の Bash セッションで、出力を確認します。外部 IP は、この場合はプライベート IP アドレスです。→ 7-6のコマンド実行で以下のような出力が得られます。CLUSTER-IPを記録します。
+
+```
+NAME            TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
+nginxinternal   LoadBalancer   10.0.19.17   <pending>     80:31151/TCP   4m10s
+```
+
+タスク8-1 
+
+タスク8-2 ポッドの一覧表示で、NAME 列の最初の項目をコピーします。 → 8-1のコマンドで以下のような出力が得られます。
+`nginxinternal-` で始まるNAMEを記録します。
+```
+NAME                             READY   STATUS    RESTARTS   AGE
+nginxexternal-77ddc89569-rjm49   1/1     Running   0          8m4s
+nginxinternal-765d58855-f5zcm    1/1     Running   0          6m11s
+```
+
+タスク8-3 `<`と `>`は削除します。例としては、以下のようになります。
+
+```
+kubectl exec -it nginxinternal-765d58855-f5zcm -- /bin/bash
+```
+
+タスク8-4 タスク7-7で記録した、`nginxinternal-`で始まるPodのINTERNAL-IPを使用します。`<`と `>`は削除します。例としては、以下のようになります。
+
+```
+curl http://10.0.19.17
+```
 
