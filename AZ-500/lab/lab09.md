@@ -44,7 +44,7 @@ NAME                       STATUS   ROLES   AGE   VERSION
 aks-agentpool-18419162-0   Ready    agent   72m   v1.18.14
 ```
 
-タスク5-1 開始前に、以下のコマンドを実行してください。
+タスク5-1 開始前に、以下のコマンドを実行してください。AKSマネージドIDがVNetにアクセスするためのContributorロールを付与します。[参考](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/issues/113)
 ```
 RG_AKS=AZ500LAB09
 AKS_VNET_NAME=AZ500LAB09-vnet
