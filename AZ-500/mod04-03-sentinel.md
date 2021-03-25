@@ -69,9 +69,7 @@ Sentinel
 - イベントとアラート
 - [アラートをインシデントに対応付ける](https://docs.microsoft.com/ja-jp/azure/sentinel/quickstart-get-visibility?WT.mc_id=docs-azuredevtips-azureappsdev)
 - [インシデントの調査とクローズ](https://docs.microsoft.com/ja-jp/azure/sentinel/tutorial-investigate-cases?WT.mc_id=docs-azuredevtips-azureappsdev#closing-an-incident)
-- evaluate results
 - [ワークフロー](https://docs.microsoft.com/ja-jp/azure/sentinel/tutorial-respond-threats-playbook): 脅威への自動対応
 - [プレイブック](https://docs.microsoft.com/ja-jp/azure/sentinel/tutorial-respond-threats-playbook?WT.mc_id=docs-azuredevtips-azureappsdev): 脅威への対応
-- blueprint
-- policy
+
 
