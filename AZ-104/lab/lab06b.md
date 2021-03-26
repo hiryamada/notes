@@ -1,8 +1,12 @@
-# ラボ6 
+# ラボ6b
 
-タスク1～4を省略し、タスク5のロードバランサー、タスク6のApplication Gatewayを実施するための手順です。
+[ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md)の、タスク5のロードバランサー、タスク6のApplication Gatewayを実施します。
 
-1. Cloud Shell を開き、Bashを選択します。
+このページの手順に従って進めてください。
+
+## ラボで使用するVMの準備
+
+1. Cloud Shell を開き、**Bashを選択します**。
 
 2. 下記のスクリプトをすべてコピーし、Cloud Shell に貼り付けて実行します。「web1」と「web2」という2つのVMが作成されます。
 
@@ -87,7 +91,10 @@
 
 6. Webブラウザの新しいタブで「web2」のIPアドレスにアクセスします。ページ内に「web2」が表示されることを確認します。
 
-7. https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md のタスク5を実施してください。下記に注意してください。
+## Azure Load Balancer
+
+
+7. [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md) のタスク5を実施してください。下記に注意してください。
    - リージョン（地域）は「東日本」（japaneast）を指定してください。
    - バックエンドプールに追加する仮想マシンは、web1とweb2を選択してください。
    - 「正常性プローブ」と「負荷分散規則」はタスク5の指示通りに作成します。
@@ -96,7 +103,9 @@
      - ロードバランサーのパブリックIPにアクセスすると、「web1」または「web2」が表示されます。
      - 「InPrivateウィンドウ」、「シークレットウィンドウ」、別のブラウザ、別のPC、別の端末（携帯、タブレットなど）を使うなどして、ロードバランサーのパブリックIPにアクセスします。「web1」または「web2」が表示されます。
 
-8. https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md のタスク6を実施してください。下記に注意してください。
+# Application Gateway
+
+8. [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md) のタスク6を実施してください。下記に注意してください。
    - アプリケーション ゲートウェイの作成（手順が多いのでがんばってください）
      - リージョン（地域）は「東日本」（japaneast）を指定してください。
      - スケールユニット：「インスタンス数」に読み替えます。1を指定してください。
@@ -104,6 +113,8 @@
    - アプリケーション ゲートウェイの作成後、フロントエンド パブリック IP アドレスにアクセスすると、「web1」または「web2」が表示されます。
    - ブラウザを何度もリロードすると、「web1」「web2」「web1」「web2」・・・と表示されます。ラウンドロビンで負荷分散が行われている様子が確認できます。
 
-9. https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md のページ末尾の「リソースのクリーンアップ」を実行してください。
+## クリーンナップ
+
+9. [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md) のページ末尾の「リソースのクリーンアップ」を実行してください。
 
 以上です。お疲れさまでした！
