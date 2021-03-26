@@ -9,7 +9,8 @@
 
 3dの一番最後に, 3a/3b/3c/3d全体のクリーンアップの手順があります。
 
-## ラボ3a
+## ラボ3a 補足事項
+
 
 タスク1の3
 リージョン：東日本
@@ -26,7 +27,7 @@ yes→はい
 リソースのクリーンアップ
 1　「削除」が画面サイズの関係で表示されていない場合は右に画面をスクロールします。
 
-## ラボ3b
+## ラボ3b 補足事項
 
 タスク2の3
 
@@ -36,11 +37,11 @@ yes→はい
 
 パラメータのファイル: [こちら](https://raw.githubusercontent.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/master/Allfiles/Labs/03/az104-03b-md-parameters.json)を開き、Ctrl + Sでいったんローカルに保存します。それから、Azure portalでこのファイルを読み込ませてください。
 
-## ラボ3c
+## ラボ3c 補足事項
 
 基本はコピペで実行してください。
 また、Cloud Shellの画面をできるだけ大きくしてからやると見やすいです。
 
-## ラボ3d
+## ラボ3d 補足事項
 
 Cloud Shellの左上のプルダウンでPowerShellを選択します。
