@@ -25,3 +25,9 @@ Azure AD ロール
 Azure ロール
 
 
+# Microsoft Identiy Manager (MIM)
+
+https://www.slideshare.net/decode2016/inf023/6
+
+(Azure ADではなく)Active Directory向けのID管理（特権管理）製品。
+
