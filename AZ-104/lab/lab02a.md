@@ -2,7 +2,6 @@
 
 RBACロールのラボです。
 
-
 目安時間: 30分
 
 ## ラボのポイント
@@ -21,7 +20,14 @@ RBACロールのラボです。
   - 「az104-02-aaduser1」でサインインし、ロールのActionsで許可された操作が実行できることを確認します。
 
 
+
 ## 補足事項
+
+事前に必要なファイルのダウンロードを行ってください。
+
+お手元のブラウザでラボを実施する場合: [ラボファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip)をダウンロードし、展開します。その中のAllFilesフォルダ以下に、ラボで使用するファイルが含まれています。
+
+ラボ環境でラボを実施する場合: ラボ環境の中のブラウザを使用して、[ラボファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip) をラボ環境の中にダウンロードし、展開します。その中のAllFilesフォルダ以下に、ラボで使用するファイルが含まれています。
 
 タスク1の2
 注のほう「管理グループの使用を開始します」をクリックで進めます。
@@ -34,9 +40,6 @@ RBACロールのラボです。
 Azure Pass -スポンサープラン-のこと。
 
 タスク3の4
-サポート要求共同作成者（カスタム）
-→英語になっています。Support Request Contributer(Custom)
-
 一番下にあるはずです。
 解像度によっては半分切れていて読めないかもしれません。
 スクロールしてください。
