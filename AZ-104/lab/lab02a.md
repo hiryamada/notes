@@ -4,6 +4,8 @@ RBACロールのラボです。
 
 目安時間: 30分
 
+事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip)をダウンロードして展開しておきましょう。
+
 ## ラボのポイント
 
 - タスク1
