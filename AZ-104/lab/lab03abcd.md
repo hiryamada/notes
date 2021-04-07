@@ -1,10 +1,11 @@
 # ラボ3a/b/c/d
 
+想定時間: 60分
+
 ラボ3のa/b/c/dを連続で実施していただきます。
 
 （まだ準備していない場合）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip)をダウンロードして展開しておきましょう。
 
-目安時間: 60分
 
 
 ## ラボの重要ポイント

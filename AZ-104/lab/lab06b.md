@@ -1,5 +1,7 @@
 # ラボ6b
 
+想定時間: 60分
+
 Azureの2種類のロードバランサーのデプロイを学習します。
 
 - Azure Load Balancer

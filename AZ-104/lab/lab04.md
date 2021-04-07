@@ -1,8 +1,9 @@
 # ラボ4
 
+想定時間: 60分
+
 （まだ準備していない場合）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip)をダウンロードして展開しておきましょう。
 
-想定時間: 60分
 
 タスク1,2,3,4は、仮想ネットワーク(VNet)、サブネット、VMのネットワークインターフェースカード（NIC）、IPアドレス、ネットワークセキュリティグループといった、VNetの基本を学びます。
 

@@ -1,5 +1,7 @@
 # ラボ6a
 
+想定時間: 60分
+
 3つのVNetを使用して、ハブ・スポークのネットワークを作ります。
 
 ハブ（中央）のVNetのVMをルーターとして構成することで、ハブのルーターを経由して、スポークのVM同士が通信できることを確認します。
@@ -7,6 +9,7 @@
 [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md)の、タスク1～4を実施します。
 
 タスク5～タスク6は、[次のラボ](lab06b.md)で実施しますので、スキップしてください。
+
 
 ## ラボの重要ポイント
 

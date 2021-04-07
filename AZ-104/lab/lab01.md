@@ -1,6 +1,6 @@
 # ラボ1
 
-目安時間: 60分
+想定時間: 60分
 
 [ラボの手順書](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/)：4日間のラボ演習の手順書の目次ページです。ブックマークしておいてください。
 
