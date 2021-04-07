@@ -1,5 +1,10 @@
 # ラボ6b
 
+Azureの2種類のロードバランサーのデプロイを学習します。
+
+- Azure Load Balancer
+- Azure Application Gateway
+
 [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md)の、タスク5のロードバランサー、タスク6のApplication Gatewayを実施します。
 
 このページの手順に従って進めてください。
