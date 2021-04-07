@@ -119,7 +119,7 @@ Azureの2種類のロードバランサーのデプロイを学習します。
      - ロードバランサーのパブリックIPにアクセスすると、「web1」または「web2」が表示されます。
      - 「InPrivateウィンドウ」、「シークレットウィンドウ」、別のブラウザ、別のPC、別の端末（携帯、タブレットなど）を使うなどして、ロードバランサーのパブリックIPにアクセスします。「web1」または「web2」が表示されます。
 
-# Application Gateway
+## Application Gateway
 
 8. [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md) のタスク6を実施してください。下記に注意してください。
    - アプリケーション ゲートウェイの作成（手順が多いのでがんばってください）
