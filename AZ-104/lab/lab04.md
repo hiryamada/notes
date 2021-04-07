@@ -61,8 +61,11 @@ Allow→許可
 Windows PowerSHell（管理者）→Windows PowerShell(admin)
 
 タスク6の11
-下記が例スペースに注意
+
+以下はドメインが「mydomain.com」、ネームサーバーが「ns1-02.azure-dns.com.」の場合の例です。
 
 ```
 nslookup az104-04-vm0.mydomain.com ns1-02.azure-dns.com.
 ```
+
+コマンドと引数の間にスペースを入れることに注意してください。
