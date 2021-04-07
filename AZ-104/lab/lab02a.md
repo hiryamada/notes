@@ -6,7 +6,7 @@ RBACロールのラボです。
 
 事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip)をダウンロードして展開しておきましょう。
 
-## ラボのポイント
+## ラボの重要ポイント
 
 - タスク1
   - 新しい管理グループを作成し、管理グループの下にサブスクリプションを移動（追加）します。これによって、サブスクリプションの管理を、管理グループ単位で実行することができるようになります。

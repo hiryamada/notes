@@ -7,7 +7,18 @@ Azureの2種類のロードバランサーのデプロイを学習します。
 
 [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md)の、タスク5のロードバランサー、タスク6のApplication Gatewayを実施します。
 
-このページの手順に従って進めてください。
+このラボは、このページの手順に従って進めてください。
+
+## ラボの重要ポイント
+
+- 2つのVM（web1とweb2）を準備します。
+- Webブラウザでweb1にアクセスすると「web1」が、web2にアクセスすると「web2」が表示されます。
+- Azure Load Balancer を構成します。
+  - バックエンドにweb1,web2を指定します。
+  - Azure Load Balancer経由でweb1,web2にアクセスできることを確認します。
+- Azure Application Gateway を構成します。バックエンドにweb1,web2を指定します。
+  - バックエンドにweb1,web2を指定します。
+  - Azure Application Gateway経由でweb1,web2にアクセスできることを確認します。
 
 ## ラボで使用するVMの準備
 
