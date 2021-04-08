@@ -28,9 +28,8 @@
 / [Skillpipe](https://www.skillpipe.com/) 
 / [Azure Pass](https://www.microsoftazurepass.com/) 
 / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
-/ [演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) 
+/ [演習環境 - Learn on Demand LMS (LODS)](https://esi.learnondemand.net/) 
 / [Microsoftアカウント](https://account.microsoft.com/account/Account) 
-/ [Temp Mail](https://www.google.com/search?q=temp+mail)
 
 基本ツール類:
 / [Microsoft Edge](https://www.microsoft.com/ja-jp/edge)
