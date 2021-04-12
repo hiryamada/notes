@@ -1,5 +1,11 @@
 # ラボ9
 
+想定時間: 60min
+
+（まだ準備していない場合は）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
+
+## ラボの重要ポイント
+
 ACR(Azure Container Registry)と、AKS(Azure Kubernetes Service)を使用します。
 
 Kubernetesクラスターに、Nginx（Webサーバー）をデプロイします。
@@ -21,7 +27,9 @@ Cloud Shellは、Bashを使用します。切り替えるのを忘れないよ�
 
 **タスク5開始前に、追加で実行するコマンドがあります。** 詳しくは以下をご参照ください。
 
-## 演習1
+## 補足事項
+
+### 演習1
 
 タスク1-6 $RANDOMの部分には自動的に乱数が入ります。[参考](https://qiita.com/7of9/items/60b59fd872fe378726fd)
 

@@ -1,12 +1,15 @@
 # ラボ4b Identity Protection
 
-目標: 60min
+想定時間: 60min
 
 ラボ4の3, 4, 5を行います。
 
 演習1, 2は[ラボ4a](lab04a-mfa.md)で実施済みです。
 
-# 概要
+（まだ準備していない場合は）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
+
+
+## ラボの重要ポイント
 
 - 演習3 (条件付きアクセス)Azure portal にサインインするときに MFA を必要とするポリシーを作成します
 - 演習4 (Azure AD Identity Protection) 演習1で立ち上げたVM内で、ToRブラウザーを使って、匿名IPアドレスからの「アプリケーション アクセス パネル」へのアクセスを試行します。
@@ -22,7 +25,9 @@
 
 途中、Windows VMへのリモートデスクトップ接続が必要となります。リモートデスクトップ接続が使用できない環境では、代わりに[Azure Bastion](https://docs.microsoft.com/ja-jp/azure/bastion/tutorial-create-host-portal)を使用できます。
 
-# 演習3
+## 補足事項
+
+### 演習3
 
 演習3は[ラボ4a](lab04a-mfa.md)で作ったテナント「AdatumLab500-04」で実施します。
 
@@ -36,7 +41,7 @@
 
 「サインイン情報のリスク」 → 「サインインのリスク」の「未構成」をクリック
 
-# 演習4
+### 演習4
 
 タスク2-2 ユーザー アカウントを選択→→aaduser1/2/3以外の、最初から登録されているユーザー(Microsoftアカウントの名前が付いています)を選択します。
 

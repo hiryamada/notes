@@ -1,13 +1,24 @@
 # ラボ1 ユーザー/ロール
 
-目標: 20min
+想定時間: 20min
+
+Azure ADでのユーザー管理について学びます。
+
+基本的に[ラボの手順書](https://microsoftlearning.github.io/AZ-500JA-AzureSecurityTechnologies/)を見ながら進めます。手順書はブックマークしておいてください。手順書の注意点や修正については下記「補足事項」を事前によくお読みください。
+
+
+事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
+
+## ラボの重要ポイント
 
 - 演習1 Azure Portalを使用してユーザーを作成します。
 - 演習2 PowerShellを使用してユーザーを作成します。
 - 演習3 AZ CLIを使用してユーザーを作成します。
 - 演習4 グループにロールを割り当てます。グループに属するユーザーにロールが割り当てされることを確認します。
 
-## 演習1
+## 補足事項
+
+### 演習1
 
 タスク1-6
 
@@ -17,7 +28,7 @@
 $domainName = ((Get-AzureAdTenantDetail).VerifiedDomains)[0].Name
 ```
 
-# 演習3
+### 演習3
 
 タスク2-4
 
@@ -27,7 +38,7 @@ $domainName = ((Get-AzureAdTenantDetail).VerifiedDomains)[0].Name
 OBJECTID=$(echo $USER | jq '.[].objectId' | tr -d '"')
 ```
 
-# 演習4
+### 演習4
 
 タスク1-2 
 

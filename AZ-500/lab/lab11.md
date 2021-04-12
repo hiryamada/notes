@@ -1,5 +1,11 @@
 # ラボ11 
 
+想定時間: 60min
+
+（まだ準備していない場合は）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
+
+## ラボの重要ポイント
+
 「SQL Server」の中に、「SQLデータベース」があります。
 
 - タスク1

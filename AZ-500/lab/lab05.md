@@ -1,8 +1,12 @@
 # ラボ5 Privileged Identity Management
 
-目標: 120min
+想定時間: 120min
 
 Azure AD Privileged Identity Managementの操作を体験します。
+
+（まだ準備していない場合は）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
+
+## ラボの重要ポイント
 
 - 演習1 
   - aaduser2に、「課金管理者」「グローバル閲覧者」「セキュリティ管理者」の3つのAzure ADロールを割り当てます。
@@ -22,7 +26,7 @@ Azure AD Privileged Identity Managementの操作を体験します。
 
 途中で、aaduser2と、aaduser3のUPN(aaduser2@～～.onmicrosoft.com など)とパスワードが必要となります。これらが不明な場合は、Azure ADの画面でaaduser2/3を表示し、UPNをコピーします。パスワードは「パスワードのリセット」を行うことで、新しい一時パスワードを生成できます。
 
-## 演習1
+## 補足事項
 
 タスク1-2 検索ボックスに「pim」と入力すると Azure AD Privileged Identity Management が検索できます。
 

@@ -20,12 +20,12 @@
 - 「Confirm Microsoft Account」ボタンをクリックします。
 - 前の手順（演習環境での Promo Code の入手）で入手したPromo Codeを入力します。**トレーニングキーとPromo Codeは別のもの** ですのでご注意ください。
 - 「Claim Promo Code」（プロモーションコードの要求）をクリックします。
-- 「We are processing your request」というページが出ます。**画面の指示に従い、「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。
-- 「Your profile」フォームで、氏名などの情報を入力します。
-- 「次へ」(Next)をクリックします。※画面が切り替わるまで少し待ちます。リロードなどの操作を行わないでください。
-- 「サブスクリプション契約(Agreement)」に同意するためのチェックボックス(I agree to the subscription agreement, offer details, and privacy statement.)にチェックを入れます。
+- 「We are processing your request」というページが出ます。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。
+- 「プロフィール（Your profile）」フォームで、氏名などの情報を入力します。
+- 「次へ(Next)」をクリックします。※画面が切り替わるまで少し待ちます。リロードなどの操作を行わないでください。
+- 「サブスクリプション契約(Agreement)」に同意するためのチェックボックス「サブスクリプション契約、オファーの詳細、プライバシーに関する声明に同意します。(I agree to the subscription agreement, offer details, and privacy statement.)」にチェックを入れます。
 - 「サインアップ（Sign Up）」をクリックします。
-- 「お客様の情報を確認しています」「アカウントを設定しています」(Setting up your account...)などのメッセージが出ます。**リロードやページ移動などの操作を行わなず、そのまま1分ほど待ちます**。この間に画面に表示されるテキストエリアには何も入力する必要はありません。
+- 「お客様の情報を確認しています...」「アカウントを設定しています...」(Setting up your account...)などのメッセージが出ます。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。この間に画面に表示されるテキストエリアには何も入力する必要はありません。
 - Azure portalの画面に移動し、「Microsoft Azureへようこそ」(Welcome to Microsoft Azure)と表示されます。
 - 「ツアーの開始」(Start tour)をクリックして、Azure portalの各部の使い方を確認します。
 - 画面表示が英語になっている場合は、画面上部の歯車アイコン（Settings）をクリックし、「Languages & region」タブを選択し、「Language」で「日本語」を選択し、「Apply」をクリックします。

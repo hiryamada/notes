@@ -1,5 +1,11 @@
 # ラボ8 Azure Firewall
 
+想定時間: 60min
+
+（まだ準備していない場合は）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
+
+## ラボの重要ポイント
+
 - 演習1
   - タスク1
     - ARMテンプレートを使用して、ラボで使用するVNet、VM 2台をデプロイします。
@@ -20,7 +26,9 @@
 
 Azure Firewallは比較的高額なサービスなので、Azure Passサブスクリプションのクレジットが無駄にならないよう、演習が終わりましたら、なるべく早く削除（ラボ末尾のクリーンアップ）をすることをおすすめします。
 
-## 演習1
+## 補足事項
+
+### 演習1
 
 タスク1-6 East US → 米国東部
 
