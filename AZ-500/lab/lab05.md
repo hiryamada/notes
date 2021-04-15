@@ -6,6 +6,8 @@ Azure AD Privileged Identity Managementの操作を体験します。
 
 （まだ準備していない場合は）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
 
+ラボ4で作成したテナントとユーザーが必要となります。まだラボ4を実施していない方は、ラボ4演習2タスク1～4を実施しておいてください。所要時間5分程度。
+
 ## ラボの重要ポイント
 
 - 演習1 
@@ -98,3 +100,9 @@ Azure AD Privileged Identity Managementの操作を体験します。
 タスク2-3 例えば、「Eligible administrators aren't activating their privileged role」（資格がある管理者が特権ロールをアクティブ化していない）をクリックします。画面右側に「アラート設定の編集」が表示され、「ロールがアクティブ化されていない日数」が30日に設定されています。つまり、ロールをアクティブ化することができるユーザーが、30日間ロールをアクティブ化しなかった場合に、警告（アラート）が出される、という設定になっています。
 
 タスク2-4 「AdatumLab500-04 | クイック スタート」画面に戻ります。「概要」をクリックします。
+
+リソースのクリーン アップ  10
+
+[テナントを削除するためには、Azure AD Premium P2が「プロビジョニング解除」とする必要がありますが、それまでかなり（数十日）時間がかかります](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/directory-delete-howto#if-you-cant-delete-the-organization)。テナント自体は今回は特に放置してもコストが発生することはありませんので、ユーザーの削除まで実施をお願いいたします。
+
+

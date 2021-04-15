@@ -44,4 +44,4 @@ https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500
 
 https://microsoftlearning.github.io/AZ-500JA-AzureSecurityTechnologies/
 
-ラボ13(20分), 14(20分), 15(30分)はセットになっています。
+注意：ラボ13, 14, 15は続きの内容になっており、かつ、途中の待ち時間がかなりかかるものとなっています。待ち時間を含めると、トータルで2時間ほど要すると思われます。少し余裕を持って取り組みましょう。
