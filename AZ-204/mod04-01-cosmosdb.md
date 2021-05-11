@@ -54,6 +54,9 @@ https://cosmos.azure.com/
 
 [Azure Cosmos DB入門 - ryuichi111stdの技術日記](https://ryuichi111std.hatenablog.com/entry/2017/05/21/012928)
 
+
+[Table API よく寄せられる質問](https://docs.microsoft.com/ja-jp/azure/cosmos-db/table-api-faq)
+
 # 歴史
 
 [2015 年 4 月より、Azure DocumentDB の一般提供を開始](https://xtech.nikkei.com/it/atclncf/service/00019/051500002/)。DocumentDBの紹介ビデオ[1](https://azure.microsoft.com/ja-jp/resources/videos/documentdb-general-availability-and-whats-new/), [2](https://azure.microsoft.com/ja-jp/resources/videos/introduction-to-azure-documentdb/)。
