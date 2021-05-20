@@ -36,6 +36,8 @@ PS /home/test2021-0322-2> Test-AzDnsAvailability -DomainNameLabel test987654 -Lo
 True
 ```
 
+タスク2-1 https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain を開いてください。
+
 タスク2-2 開いたGitHubリポジトリのページの下部にある、青い「Deploy to Azure」ボタンをクリックします。
 
 タスク2-4 「ロード ファイル」→「ファイルの読み込み」
