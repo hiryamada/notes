@@ -42,3 +42,15 @@ https://github.com/hiryamada/notes/tree/main/AZ-204/lab
 
 パターンCの場合は、[esi.learnondemand.net](https://esi.learnondemand.net/) の「ラボ環境」を立ち上げて、その中で作業します。
 
+# ラボのコード
+
+演習を実施する環境（パターンAの場合はご自身のPC。パターンBの場合は起動したVM。パターンCの場合はラボ環境）内で、以下のサイトにアクセスします。
+
+https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure
+
+「Code」（緑色ボタン）の「Download ZIP」からダウンロードします。
+
+ダウンロードしたZIPファイルを展開します。
+
+Allfiles/Labs以下に、各ラボで使用するプロジェクトのファイルが格納されています。使い方は各ラボの手順書を参照してください。
+
