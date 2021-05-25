@@ -1,3 +1,18 @@
+# ラボ2 Azure Function
+
+- ラボ全般の説明は[こちら](lab00.md)をご参照ください。
+- リージョンは「(US) 米国東部」（East US, eastus）を選択してください。
+- リソースグループは「Serverless」を使用します。
+- 関数アプリのためのストレージアカウントを事前に作成します。
+- 3つの関数を作成します。`func new`
+  - Echo: HTTPリクエストで起動し、メッセージを表示するだけの単純な関数。
+  - Recurring: タイマーで繰り返し実行される関数。
+  - GetSettingInfo: HTTPリクエストで起動し、Blobのファイルを読み取って内容を表示する関数。
+
+- 手順書中「yourname」となっているところは「yamada」のようなご自身のお名前を入れてください。たとえば `funcstor[yourname]` と書いてある場合、`[` と `]` は除き、`funcstoryamada` のようにしてください。名前が重複してしまう場合は、`funcstoryamada1234` のように末尾に適当な数字などを付与してください。
+- タスク4 では、「Azure Storage BLOB 拡張機能」というパッケージを登録しています（`func extensions install --package Microsoft.Azure.WebJobs.Extensions.Storage`）。関数アプリで、Blob Storageのトリガーとバインドを使用するためには、このパッケージの登録が必要です。[参考](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-storage-blob)
+  - WebJobsは、Functionの登場以前から使われている、[App Serviceの機能の一つ](https://docs.microsoft.com/ja-jp/azure/app-service/webjobs-create)です。[参考1](https://news.mynavi.jp/article/zeroazure-9/), [参考2](https://qiita.com/yuhattor/items/f7b2aec5211951dd7622)
+
 # 演習1
 
 ## タスク1
