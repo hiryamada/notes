@@ -24,7 +24,7 @@ mkdir $FUNC_NAME
 cd $FUNC_NAME
 
 # 関数のプロジェクトを初期化する。
-# func init --worker-runtime dotnet
+func init --worker-runtime dotnet
 
 # 作成されたプロジェクトのフレームワークを確認。
 # <TargetFramework>netcoreapp3.1</TargetFramework> となっていればOk
