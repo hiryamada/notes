@@ -98,5 +98,5 @@ az storage blob upload --account-name $STORAGE_ACCOUNT_NAME --container-name dro
 
 # 起動用のURLを確認
 # "invokeUrlTemplate": "https://app99982374502834.azurewebsites.net/api/fileparser"
-# などが検索される。そのURLにアクセスすると、records.json が表示される。
+# などが検索される。そのURLにアクセスすると、records.json の内容が表示される。
 az functionapp function show --name $APP_NAME --function-name $FUNC_NAME --resource-group $RESOURCE_GROUP_NAME |grep api
