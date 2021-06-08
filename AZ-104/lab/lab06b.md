@@ -30,7 +30,7 @@ Azureの2種類のロードバランサーのデプロイを学習します。
 
     ```
     rg=az104-06-rg1
-    region=japaneast
+    region=eastus
     vnet=az104-06-vnet01
     subnet=subnet1
 
@@ -113,7 +113,7 @@ Azureの2種類のロードバランサーのデプロイを学習します。
 
 
 7. [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md) のタスク5を実施してください。下記に注意してください。
-   - リージョン（地域）は「東日本」（japaneast）を指定してください。
+   - リージョン（地域）は「米国東部」（eastus）を指定してください。
    - バックエンドプールに追加する仮想マシンは、web1とweb2を選択してください。
    - 「正常性プローブ」と「負荷分散規則」はタスク5の指示通りに作成します。
    - 「負荷分散規則」の作成後、ロードバランサーのパブリックIPにアクセスします。
@@ -125,7 +125,7 @@ Azureの2種類のロードバランサーのデプロイを学習します。
 
 8. [ラボ6手順書](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md) のタスク6を実施してください。下記に注意してください。
    - アプリケーション ゲートウェイの作成（手順が多いのでがんばってください）
-     - リージョン（地域）は「東日本」（japaneast）を指定してください。
+     - リージョン（地域）は「米国東部」（eastus）を指定してください。
      - スケールユニット：「インスタンス数」に読み替えます。1を指定してください。
      - バックエンドプールの追加：前の手順でメモ帳などに記録しておいた「web1」「web2」のパブリックIPアドレスを指定します。
    - アプリケーション ゲートウェイの作成後、フロントエンド パブリック IP アドレスにアクセスすると、「web1」または「web2」が表示されます。
