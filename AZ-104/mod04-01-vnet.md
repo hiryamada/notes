@@ -51,6 +51,6 @@ VNetにデプロイするサービスでは、[専用のサブネット](https:/
 
 参考
 
-- https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/-azure-subscription-service-limits#azure-firewall-limits
+- https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-firewall-limits
 - https://docs.microsoft.com/ja-jp/azure/bastion/quickstart-host-portal
 - https://www.syuheiuda.com/?p=5311
