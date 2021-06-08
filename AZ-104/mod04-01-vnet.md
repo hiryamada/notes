@@ -41,3 +41,16 @@ VNetにデプロイするサービスでは、[専用のサブネット](https:/
 - Azure Bastionは「[AzureBastionSubnet](https://docs.microsoft.com/ja-jp/azure/bastion/bastion-nsg#azurebastionsubnet)」という名前のサブネットにデプロイする必要があります。
 - Azure Firewallは「[AzureFirewallSubnet](https://docs.microsoft.com/ja-jp/azure/firewall/tutorial-hybrid-portal#create-the-firewall-hub-virtual-network)」という名前のサブネットにデプロイする必要があります。
 
+# 専用サブネットの名前と最小サイズ
+
+- GatewaySubnet(VPNのみの場合) 最小サイズ /29
+- GatewaySubnet(ExpressRouteのみの場合) 最小サイズ /28
+- GatewaySubnet(VPN/ExpressRoute併用の場合) 最小サイズ /27
+- AzureBastionSubnet 最小サイズ /27
+- AzureFirewallSubnet 最小サイズ /26
+
+参考
+
+- https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/- azure-subscription-service-limits#azure-firewall-limits
+- https://docs.microsoft.com/ja-jp/azure/bastion/quickstart-host-portal
+- https://www.syuheiuda.com/?p=5311
