@@ -16,6 +16,8 @@ DevOpsとはなにか。なぜ必要なのか。
 - DevOpsとは、**顧客に継続的に価値を届ける**ための、人、プロセス、テクノロジの集まり
 - サイクルをなるべく早く回す。
 - 各サイクルで、データに基づく学習を行う
+  - [OODA(ウーダ)ループ](https://ja.wikipedia.org/wiki/OODA%E3%83%AB%E3%83%BC%E3%83%97)：Observe(観察) — Orient(判断) — Decide(決断) — Act(実行)
+    - [PDCA(Plan-Do-Check-Act)との違い](https://data.wingarc.com/what-is-ooda-11126): OODAは相手の観察から始まる。PDCAは自己計画から始まる。
   - [Validated Learning](https://en.wikipedia.org/wiki/Validated_learning)
     - 各サイクルで目標を設定し、アイデアを試行し、データを集め、目標に近づいたことを確認する
     - Validated Learningは、リーンスタートアップにおける考え方。
@@ -23,7 +25,7 @@ DevOpsとはなにか。なぜ必要なのか。
     - 起業の方法論の一つ。
     - リーン(lean) （1）もたれる。傾く。（2）**無駄のない**。ひきしまった。
     - MVP（Minimum Viable Product）を作る。
-    - VMPをアーリーアダプターに提供して意見を求める。
+    - MVPをアーリーアダプターに提供して意見を求める。
     - MVPを改良する。またはピボット（方向転換）する。
 
 [DevOps (Wikipedia)](https://ja.wikipedia.org/wiki/DevOps)
