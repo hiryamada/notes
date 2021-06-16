@@ -40,3 +40,6 @@ https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400
 
 https://docs.microsoft.com/ja-jp/users/khigashi/collections/631ybyrz26n72
 
+# その他
+
+https://www.azuredevops.tips/

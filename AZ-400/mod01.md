@@ -1,7 +1,14 @@
-# DevOpsの計画
+# モジュール1 DevOpsの計画
 
-- DevOpsとはなにか。なぜ必要なのか。
-- DevOpsの導入(変革: Transformation)のためのヒント。
+- DevOpsとは何か。なぜ必要なのか。
+- DevOpsの導入(変革: Transformation)するには何をすればよいのか。
+- DevOpsをどのプロジェクトに導入するか。
+- 組織にどのようにDevOpsを導入するか。
+- DevOpsのプロジェクトの成果物（新機能）をどのように顧客へリリースするか。
+- Azure DevOpsとは何か。
+- GitHubとは何か。
+
+ラボ: Azure DevOpsを使い始める
 
 ## 変革の計画 (plan for transformation)
 
@@ -9,7 +16,7 @@ DevOps変革(DevOps transformation): DevOpsをチームや組織（会社）に�
 
 ### DevOpsとは？
 
-DevOpsとはなにか。なぜ必要なのか。
+DevOpsとは何か。なぜ必要なのか。
 
 参考: [DevOpsとはなにか](https://medium.com/@yuhattor/devops%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B-601c68005371)
 
@@ -224,10 +231,10 @@ DevOpsができているかどうかは、どうやって評価するか？
 水平型チームと垂直型チームとは。
 
 - 水平型
-  - 役割別
-  - デザインチーム、アプリ開発チーム、DBチーム、など
+  - 役割別のチーム
+  - デザインチーム(UI)、アプリ開発チーム(API)、DBチーム(Data)、など
 - 垂直型
-  - 製品
+  - 製品別のチーム
   - 製品Aのチーム、製品Bのチーム、製品Cのチーム、など
 
 垂直型のメリット
@@ -347,25 +354,27 @@ Azure ADのユーザーは、Azure ADを使用してサインインを完了し�
 
 ### 既存の作業管理ツールの移行または統合
 
-[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存の作業管理ツールとの移行/統合](https://marketplace.visualstudio.com/search?term=migration&target=AzureDevOps&category=All%20categories&sortBy=Relevance)を行う拡張機能が提供されている。
+[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存の作業管理ツールとの移行/統合(https://marketplace.visualstudio.com/search?term=migration&target=AzureDevOps&category=All%20categories&sortBy=Relevance)のための拡張機能]が提供されている。
 
 - [Trello](https://trello.com/ja) - かんばんツール
   - [Trello と Azure DevOps Boardの統合](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello)
 - [Jira](https://www.atlassian.com/ja/software/jira) - プロジェクト管理ツール
   - [JiraからAzure DevOps Boardへの「作業項目（Work Item）」の移行](https://marketplace.visualstudio.com/items?itemName=solidify.jira-devops-migration)
+- など
 
 ### 既存のテスト管理ツールの移行または統合
 
-[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存のテスト管理ツールとの移行/統合を行う拡張機能](https://marketplace.visualstudio.com/search?term=test&target=AzureDevOps&category=All%20categories&sortBy=Relevance)が提供されている。
+[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存のテスト管理ツールとの連携するための拡張機能](https://marketplace.visualstudio.com/search?term=test&target=AzureDevOps&category=All%20categories&sortBy=Relevance)が提供されている。
 
 - [Apache JMeter](https://jmeter.apache.org/)
   - [JMeter](https://marketplace.visualstudio.com/items?itemName=AlexandreGattiker.jmeter-tasks)
 - [Pester](https://github.com/pester/Pester)
   - [Pester Test Runner Build Task](https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-PesterRunner-Task)
+- など
 
 ### ライセンス管理戦略の設計
 
-Azure DevOpsとGitHubの価格は。
+Azure DevOpsとGitHubの価格は公式サイトで確認。
 
 #### Azure DevOps
 
@@ -388,4 +397,26 @@ https://github.co.jp/pricing.html
 - Team: $4 /ユーザー/月
 - Enterprise: $21 /ユーザー/月
 
-## ラボ
+
+## ラボ（ハンズオン演習）
+
+- Azure DevOpsにサインインする
+- 組織を作成する
+- 基本編: Microsoft Learn: [ソフトウェア開発にアジャイル アプローチを選ぶ](https://docs.microsoft.com/ja-jp/learn/modules/choose-an-agile-approach/) 
+  - Azure Board
+    - プロジェクトの作成
+    - チームの作成
+    - チームメンバーの追加
+    - 作業項目の追加
+    - スプリントの定義
+    - 作業項目の所有者（Owner）の設定
+- 応用編(英語のみ): Azure DevOps Labs: [Agile Planning and Portfolio Management with Azure Boards](https://azuredevopslabs.com//labs/azuredevops/agile/)
+  - Azure Board
+    - エリア
+    - ダッシュボード
+    - Epicの作成
+    - キャパシティ
+    - Boardのカスタマイズ
+    - ダッシュボードの作成
+    - プロセスのカスタマイズ
+

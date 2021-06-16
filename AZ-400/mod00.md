@@ -5,3 +5,4 @@
 Microsoft Learn
 - [DevOps プラクティスを発展させる](https://docs.microsoft.com/ja-jp/learn/paths/evolve-your-devops-practices/)
 
+GitHubアカウントを作成
