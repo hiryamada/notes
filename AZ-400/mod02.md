@@ -141,8 +141,8 @@ Gitの弱点とは。
   - 対策
     - [Git LFS](https://git-lfs.github.com/) を使う
       - コンテンツをリモートサーバーに配置するしくみ
-    - Azure Artifacts を使う
-      - 成果物（パッケージ）を管理するシステム
+    - プロジェクトの成果物（ビルドされるもの）はリポジトリには含めない。
+      - 成果物は通常 Azure Artifacts に格納する
 - 学ぶのに時間がかかる （[学習曲線がある](https://tsuhon.jp/column/7582)）
   - 初心者にとって特にブランチと同期（プッシュ・プル）が難しい
   - 対策
@@ -202,7 +202,7 @@ TFVC(Team Foundation バージョン管理)から、Azure Reposへ、[移行ツ�
 ## ラボ
 
 - Skillpipe Module 2、「ソース管理システムの種類」の「Gitをローカルで操作」にかかれている手順を実際にやってみましょう
-- ローカルにGitとVisual Studio Codeのインストールが必要です。ローカルに以下のものをインストールするか、ラボ環境を起動して使用してください。
+- GitとVisual Studio Codeが必要です。お手元のPCに以下のものをインストールするか、ラボ環境を起動して使用してください。
   - [Git for Windows](https://gitforwindows.org/)
   - [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
 

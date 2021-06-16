@@ -1,4 +1,4 @@
-# 技術的負債の管理
+# モジュール3 技術的負債の管理
 
 - 技術的負債（Technical debt）とは何か。なぜ発生するのか。
 - コードの品質とは何か。
@@ -13,11 +13,16 @@
 
 ## 技術的負債の特定
 
-技術的負債(Technical debt)とは何か。
+技術的負債(Technical debt テクニカルデット)とは何か。
 
 - コードの問題を修正するのにかかるコスト。
 - 品質が低いコードは、メンテナンスするために大きなコストがかかる。
+- よく、開発済みの「ソフトウェア資産」などという言い方をするが・・・
 - 多くのシステムが技術的負債を抱えている。
+- 負債は時間とともに増えていく
+  - メンテナンスができるエンジニアが退職
+  - 昔の技術や仕様が若い世代に継承されない
+  - 新しいプラットフォームへの移行・移植が困難
 - 「2025年の崖」問題: [2025年以降、最大で、毎年12兆円の経済損失が生じる可能性がある（経済産業省）](https://www.meti.go.jp/shingikai/mono_info_service/digital_transformation/pdf/20180907_01.pdf)
 
 [参考（Wikipedia）](https://ja.wikipedia.org/wiki/%E6%8A%80%E8%A1%93%E7%9A%84%E8%B2%A0%E5%82%B5)
@@ -158,7 +163,38 @@ SonarCloud（SonarQube）についてはモジュール20で扱う。
 チャットに書き込んでください。
 
 ### Azure DevOpsプロジェクト wiki
-### Wiki の内容
+
+Azure DevOpsでプロジェクトを作成すると、プロジェクトでの情報共有のための[Wiki](https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%82%AD)が作成される。
+
+※念の為補足：WikiとWikipediaは別のものです。
+- Wiki: コンテンツをWebブラウザから直接編集することができるWebサイト（のしくみ）
+- Wikipedia: オンライン百科事典
+
+Azure DevOps / Project / Overview / Wiki に、2つのボタンがある。
+- Create project wiki
+  - 新しい「プロジェクト用 wiki」を作成する
+  - 「Project wiki」以下に「プロジェクト名.wiki」として表示される
+  - このWikiは1つだけ作成できる（中に復数のページは作れる）
+- Publish code as wiki
+  - プロジェクト内のAzure Reposリポジトリに格納されている、Markdownファイル（～.md）が含まれたフォルダを「publish」（Wiki化）する
+  - プロジェクト内のAzure Reposリポジトリを先に作っておく必要がある
+  - 「publish」（Wiki化）するリポジトリ、ブランチ、フォルダ、Wiki名を指定する
+  - 復数のフォルダを「publish」（Wiki化）できる
+    - Code wikisとして一覧表示される
+  - unpublish することもできる。
+
+### Wiki の内容 (使用できるマークダウン形式)
+
+- GFM ([GitHub Flavored Markdown](https://github.github.com/gfm/))
+- [Mermaid](https://mermaid-js.github.io/mermaid/#/)
+  - フローチャート
+  - シーケンス図
+  - ガントチャート
+  - クラス図
+  - Git グラフ
+  - E-R図
+  - User Journey Diagram 
+    - [ジャーニーマップ](https://drm.ricoh.jp/lab/glossary/g00053.html)
 
 ## GitHub Codespacesを使用したオンライン開発
 

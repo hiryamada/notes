@@ -338,6 +338,8 @@ https://github.co.jp/features
 
 ユーザーがAzure DevOps内で実行可能な操作は、[セキュリティグループ](https://docs.microsoft.com/ja-jp/azure/devops/organizations/security/change-individual-permissions)で設定できる。デフォルトのセキュリティグループが定義されている。カスタムのセキュリティグループも定義可能。
 
+たとえば「共同作成者」セキュリティグループのメンバーであるユーザーは、プロジェクトの Wiki ページを追加または編集することができる。
+
 - 組織レベルの設定
   - Azure DevOps / Project Settings / Neneral - Permissions / Groups
 - プロジェクトレベルの設定
