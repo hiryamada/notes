@@ -36,7 +36,7 @@ Azure Backup (Recovery Services コンテナー)によるバックアップを�
 ## 補足事項
 
 タスク1の5
-リージョンはjapaneast
+リージョンは「米国東部」（eastus）を指定します
 
 タスク2の2
 定期購読→サブスクリプション
