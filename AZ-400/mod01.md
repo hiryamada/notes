@@ -37,16 +37,20 @@ DevOpsの八の字のループの意味: [DevOps (Atlassian社)](https://www.atl
 - ループの左側: **開発**に必要なプロセス、機能、ツール
 - ループの右側: **運用**に必要なプロセス、機能、ツール
 
-無限ループとなっていて、プロセスが繰り返されることを表している。運用からはフィードバックが得られる。フィードバックをもとに次の開発を行う。
+DevOpsのプロセスは繰り返される（反復的）。運用からはフィードバックが得られる。フィードバックをもとに次の開発を行う。
 
-### DevOpsの体験
+### DevOpsの体験（実践）
 
 DevOpsを実践するとは、具体的にどういうことなのか。
 
 参考: [DevOpsとはなにか](https://medium.com/@yuhattor/devops%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B-601c68005371)
 
-- [継続的インテグレーション](https://docs.microsoft.com/ja-jp/devops/develop/what-is-continuous-integration)
-- [継続的デリバリー](https://docs.microsoft.com/ja-jp/devops/deliver/what-is-continuous-delivery)
+- [継続的インテグレーション(CI)](https://docs.microsoft.com/ja-jp/devops/develop/what-is-continuous-integration)
+  - チーム メンバーがバージョン管理 に変更をコミットするたび、コードのビルドとテストを自動的に行う
+- [継続的デリバリー(CD)](https://docs.microsoft.com/ja-jp/devops/deliver/what-is-continuous-delivery)
+  - ビルドされた成果物のデプロイを自動的に行う。
+  - デプロイ先はステージング環境や本番環境
+  - CI/CDで、エンドユーザーに対して新機能をリリースすることを[継続的デプロイ](https://azure.microsoft.com/ja-jp/overview/continuous-delivery-vs-continuous-deployment/)と呼ぶ場合もある
 - バージョンコントロール
   - [Git (Wikipedia)](https://ja.wikipedia.org/wiki/Git)
   - [Gitとは (Microsoft Docs)](https://docs.microsoft.com/ja-jp/devops/develop/git/what-is-git)
@@ -67,11 +71,15 @@ DevOpsを実践するとは、具体的にどういうことなのか。
   - [イメージとコンテナ](https://docs.docker.jp/get-started/index.html#images-and-containers)
   - [Docker とは (Red Hat社)](https://www.redhat.com/ja/topics/containers/what-is-docker)
 
+参考: [The Twelve-Factor App](https://12factor.net/ja/): SaaSのための方法論、技術の利用原則。
+
 ### 変革チームの分離
 
-DevOps変革(DevOps transformation): DevOpsをチームや組織（会社）に導入すること。
+DevOps変革(DevOps transformation)とは: DevOpsをチームや組織（会社）に導入すること。
 
-変革のヒント:
+変革のためのアドバイス: チームの分離
+
+全社いっせいではなく、一部のチームからDevOpsを導入する。
 
 - 既存のスタッフが変革を行うのは困難な場合が多い
   - 日常業務とDevOps変革を同時に達成するのは難しい
@@ -87,6 +95,8 @@ DevOps変革(DevOps transformation): DevOpsをチームや組織（会社）に�
 
 ### 目標に向けたタイムラインの設定
 
+長いタイムラインと短いタイムラインを設定する。
+
 - 長いタイムライン
   - DevOps変革(DevOps transformation)には1年～2年の期間が必要である
 - 短いタイムライン
@@ -98,11 +108,12 @@ DevOps変革(DevOps transformation): DevOpsをチームや組織（会社）に�
 
 - 2014年頃からDevOpsの導入を開始
 - 2017年には、75000人の社員がDevOpsを利用（3年で約3倍に）
-- Azure DevOps自体が、Azure DevOpsを使用して開発されている。
+- Azure DevOpsという製品自体が、Azure DevOpsを使用して開発されている。
   - 3週間のスプリントを設定。
     - つまり新機能や改善が3週間ごとに出てくる
     - 3週間ごとに、**継続して、顧客に新しい価値を届ける**
   - 最初のスプリントは2010/8に開始
+  - https://docs.microsoft.com/en-us/azure/devops/release-notes/features-timeline
 
 ## プロジェクトの選択
 
@@ -113,13 +124,15 @@ DevOps変革(DevOps transformation): DevOpsをチームや組織（会社）に�
   - 利用者
   - リリース粒度
 
-### プロジェクトの種類
+### プロジェクトの種類（定義と選択）
 
 DevOpsを、新規プロジェクト（グリーンフィールド）に導入すべきか、既存プロジェクト（ブラウンフィールド）に導入すべきか。
 
 グリーンフィールド/ブラウンフィールド: ソフトウェアサービスや製品の分類方法の一種。もともと都市計画やビルの建築プロジェクトで使われていた用語。グリーン：草が生えた土地、ブラウン：工業目的で使われた土地。
 
-### プロジェクトで開発しているシステムの種類
+結論：多くの組織は、DevOpsを、グリーンフィールドのプロジェクトで導入する。ただし、ブラウンフィールドで導入することも可能。
+
+### プロジェクトで開発しているシステムの種類（記録システムとエンゲージメント システムの選択）
 
 DevOpsを、SoRプロジェクトに導入すべきか、SoEプロジェクトに導入すべきか。
 
@@ -134,23 +147,33 @@ DevOpsを、SoRプロジェクトに導入すべきか、SoEプロジェクト�
 
 [参考](https://speakerdeck.com/naoya/system-of-record-to-system-of-engagement?slide=4)
 
-### リリース: 利用者とリリース粒度
+結論：DevOpsは、SoEのプロジェクトで導入する方が容易である。ただし、DevOpsはSoRでも適用は可能。
 
-DevOpsの成果物（製品やサービス）を、どのグループの利用者にリリースするか。
+### リリース: 利用者とリリース粒度（初期抵抗を最小限に抑えるためのグループの選択）
 
-- カナリア: 開発版を利用
-- アーリーアダプター: 最新の安定版を利用
-- 一般ユーザー: 安定版を利用
+DevOpsの成果物（新機能）を、どのグループの利用者にリリースするか。
+
+- カナリア: とても積極的な人々。
+- アーリーアダプター: 積極的な人々。
+- 一般ユーザー: 積極的ではないな人々。安定を望む。
+
+参考：[Azure App Configurationの「機能フラグ」](https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/concept-feature-management)を利用すると、**リリースしたソフトウェアにおいて**、特定のユーザーやグループに対して、特定の機能を有効化することができる。
 
 リリースの粒度: 新機能をどの程度の粒度でリリースするか。
 
-- 変更を一度にリリースする
+- 変更を一度にリリースする（ビッグバン）
 - 変更を段階的にリリースする
+
+結論：変更は段階的にリリースしたほうがよい。大規模なリリースは失敗することが多い。
 
 ### プロジェクト メトリックと主要業績評価指標 (KPI) を識別する
 
+DevOpsができているかどうかは、どうやって評価するか？
+
 - メトリック: プロジェクトの活動を測定し、数値化する。
 - 目標(KPI)を確立し、合意する
+
+結論：プロジェクトのメトリックを集める。KPIを定める。
 
 ## チーム構造
 
@@ -169,7 +192,7 @@ DevOpsの成果物（製品やサービス）を、どのグループの利用�
   - 要件の変更に柔軟に対応
   - 顧客の要求に答えることを重視
 
-どちらも、顧客に価値を届けるためのものだが、**継続的に**価値を届けるにはアジャイル型が適している。
+**継続的に**価値を届けるにはアジャイル型が適している。
 
 アジャイルについて学ぶ
 
@@ -272,4 +295,97 @@ DevOpsの成果物（製品やサービス）を、どのグループの利用�
 
 
 ## DevOpsへの移行
+
+### Azure DevOps でできること
+
+https://azure.microsoft.com/ja-jp/services/devops/
+
+### GitHub でできること
+
+https://github.co.jp/features
+
+### 認可およびアクセス戦略の設計
+
+#### 開発者がAzure DevOps/GitHubにサインインのためのアカウント
+
+- Azure DevOps Services
+  - Microsoft アカウント、GitHub アカウント、または Azure Active Directory (AAD) のいずれかを使用
+- GitHub
+  - GitHubアカウントを使用
+
+#### 外部のサービスやツールがAzure DevOpsにアクセスするための認証
+
+- Azure DevOps
+  - [SSH認証](https://docs.microsoft.com/ja-jp/azure/devops/repos/git/use-ssh-keys-to-authenticate)
+  - [Git Credential Manager コア](https://docs.microsoft.com/ja-jp/azure/devops/repos/git/set-up-credential-managers)
+  - 個人用アクセストークン（PAT: Personal Access Token）
+    - 外部ツールからAzure DevOpsに接続する場合に利用することがある。
+    - 例：[GitHub Desktop](https://desktop.github.com/) から、[Azure DevOpsに接続](https://blog.beachside.dev/entry/2021/05/17/083000)
+- GitHub
+  - 個人用アクセストークン（PAT: Personal Access Token）
+    - GitHub API またはコマンドラインを使用するときに GitHub への認証でパスワードの代わりに使用
+    - https://docs.github.com/ja/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+
+#### Azure DevOpsのセキュリティグループ
+
+ユーザーがAzure DevOps内で実行可能な操作は、[セキュリティグループ](https://docs.microsoft.com/ja-jp/azure/devops/organizations/security/change-individual-permissions)で設定できる。デフォルトのセキュリティグループが定義されている。カスタムのセキュリティグループも定義可能。
+
+- 組織レベルの設定
+  - Azure DevOps / Project Settings / Neneral - Permissions / Groups
+- プロジェクトレベルの設定
+  - Azure DevOps / Organization Settings / Security - Permissions / Groups
+
+#### 多要素認証
+
+※Azure DevOpsの機能ではなく、Azure ADの機能。
+
+Azure ADのユーザーは、Azure ADを使用してサインインを完了し、Azure DevOpsにアクセスする。
+
+ユーザーがAzure ADにサインインする際に[Azure AD の MFA](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/howto-mfa-getstarted)を利用することを強制することができる。
+
+
+### 既存の作業管理ツールの移行または統合
+
+[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存の作業管理ツールとの移行/統合](https://marketplace.visualstudio.com/search?term=migration&target=AzureDevOps&category=All%20categories&sortBy=Relevance)を行う拡張機能が提供されている。
+
+- [Trello](https://trello.com/ja) - かんばんツール
+  - [Trello と Azure DevOps Boardの統合](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello)
+- [Jira](https://www.atlassian.com/ja/software/jira) - プロジェクト管理ツール
+  - [JiraからAzure DevOps Boardへの「作業項目（Work Item）」の移行](https://marketplace.visualstudio.com/items?itemName=solidify.jira-devops-migration)
+
+### 既存のテスト管理ツールの移行または統合
+
+[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存のテスト管理ツールとの移行/統合を行う拡張機能](https://marketplace.visualstudio.com/search?term=test&target=AzureDevOps&category=All%20categories&sortBy=Relevance)が提供されている。
+
+- [Apache JMeter](https://jmeter.apache.org/)
+  - [JMeter](https://marketplace.visualstudio.com/items?itemName=AlexandreGattiker.jmeter-tasks)
+- [Pester](https://github.com/pester/Pester)
+  - [Pester Test Runner Build Task](https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-PesterRunner-Task)
+
+### ライセンス管理戦略の設計
+
+Azure DevOpsとGitHubの価格は。
+
+#### Azure DevOps
+
+https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/
+
+Azure DevOps Servicesの価格
+
+- Basic
+  - 最初の5名まで無料
+  - 6名以降は、672 円/ユーザー/月
+- Basic + Test
+  - すべてのBasic機能＋テスト機能
+  - 5,824 円/ユーザー/月
+
+#### GitHub
+
+https://github.co.jp/pricing.html
+
+- Free
+- Team: $4 /ユーザー/月
+- Enterprise: $21 /ユーザー/月
+
 ## ラボ
