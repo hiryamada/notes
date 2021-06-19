@@ -118,7 +118,7 @@ SonarCloud（SonarQube）についてはモジュール20で扱う。
 
 皆さんが使っている品質管理のツールは、[Marketplace](https://marketplace.visualstudio.com/azuredevops)に登録されていますか？（Azure DevOpsで利用できますか？）
 
-チャットに書き込んでください。
+なにか思い出や教訓などがございましたら、ぜひチャットに書き込んでください。
 
 ### 技術的負債の測定と管理
 
@@ -160,7 +160,7 @@ SonarCloud（SonarQube）についてはモジュール20で扱う。
 
 皆さんが使っている知識共有ツールは、[Marketplace](https://marketplace.visualstudio.com/azuredevops)に登録されていますか？（Azure DevOpsと連携できますか？）
 
-チャットに書き込んでください。
+なにか思い出や教訓などがございましたら、ぜひチャットに書き込んでください。
 
 ### Azure DevOpsプロジェクト wiki
 
