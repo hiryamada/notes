@@ -66,6 +66,7 @@ DevOpsを実践するとは、具体的にどういうことなのか。
 - アジャイルな計画とリーンなプロジェクト手法
   - [アジャイルソフトウェア開発宣言](https://agilemanifesto.org/iso/ja/manifesto.html)
   - [リーンスタートアップ](https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97)
+  - [アジャイル開発の進め方（IPA）](https://www.ipa.go.jp/files/000065606.pdf)
 - モニタリング
   - [Azure Monitor](https://docs.microsoft.com/ja-jp/azure/azure-monitor/overview)
   - [Application Insights](https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/app-insights-overview)
