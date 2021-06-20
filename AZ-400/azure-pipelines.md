@@ -229,6 +229,8 @@ Azure DevOpsによるパブリックプロジェクトの運用については[�
 
 クラシックのパイプラインは[YAMLに移行](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/migrate/from-classic-pipelines?view=azure-devops)することができる。
 
+[2020/6現時点で、クラシックパイプラインは、廃止になる予定はないが、Azure Pipelinesの新機能はYAMLパイプラインに先に追加されるとされている](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6828)。このことから、新規のプロジェクトでは、YAMLパイプラインを使用すべきと思われる。
+
 
 ## その他
 

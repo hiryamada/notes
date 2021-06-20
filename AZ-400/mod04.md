@@ -27,6 +27,8 @@
   - Google社、Facebook社、Twitter社などでこの戦略をとっている
   - JavaScriptのコンパイラBabelは、[モノレポ](https://github.com/babel/babel/blob/master/packages/README.md)で開発されている（1つのリポジトリに多数のモジュールを含む）
   - モノレポ＝モノリス（一枚岩の巨大なアプリケーション）では[ない](https://www.graat.co.jp/blogs/ck1099bcoeud60830rf0ej0ix)。
+  - [「コードベース」（Wikipedia）](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%99%E3%83%BC%E3%82%B9)とも。
+    - GoogleやFacebookは巨大なモノリシックコードベースを運用している。すべてのソースコードがそこに集約されている。
 - 復数リポジトリ（Polyrepo, Multi-Repo）ポリリポ、ポリレポとも
   - プロジェクトごとに独自のリポジトリを使用
 

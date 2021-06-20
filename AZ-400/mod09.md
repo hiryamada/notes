@@ -5,25 +5,64 @@
 - パッケージ フィードとは。
 - パッケージ フィード マネージャーとは。
 - Azure Artifactsとは。
+- アップストリームソースとは
+- パッケージグラフとは。
+- ユニバーサルパッケージとは。
 
-重要ポイント:
+用語集:
 
-- パッケージ: 
-  - 別のソフトウェア ソリューションから利用できる、ソフトウェア成果物。
-- パッケージ フィード（フィード）: 
-  - パッケージの集中管理を行うスペース。
-- パッケージ フィード マネージャー: 
+- パッケージ
+  - (1)別のソフトウェア ソリューションから利用できる、再利用が可能な、ソフトウェアコンポーネント。ライブラリ。
+  - (2)何らかのシステム・アプリケーションとして運用が可能な、デプロイ可能なソフトウェア。パッケージソフト。
+- アーティファクト（成果物）
+  - (1)「パッケージ」と同じ意味。npmのパッケージ等。
+  - (2) [広い意味での成果物・副産物](https://blog.jfrog.co.jp/entry/what-is-an-artifact)。パッケージに加え、ドキュメント、ログファイル、エビデンスなども含まれる。参考: [Azure Pipelinesでサポートされている成果物](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/artifacts/artifacts-overview?view=azure-devops&tabs=nuget)
+- パッケージ フィード（フィード）
+  - パッケージの保管と配信を行うサーバー/サービス。
+  - Azure Artifactでは「フィード」と呼ばれるパッケージの管理領域を作成する。
+    - パブリックなフィードとプライベートなフィードを作ることができる
+  - `nuget push`や`npm publish`を使って、フィードにパッケージを「発行」することができる。
+  - 一般的には「リポジトリ」とも。ただしソースコードを格納する「Gitリポジトリ」ではない。
+  - 「RSSフィード」とは関係はない。
+- パッケージ フィード マネージャー
   - パッケージの管理を行うしくみ/ツール/コマンド。パッケージマネージャ。npm等
-- パブリック パッケージ ソース（パブリック パッケージ フィード）: 
-  - パッケージを提供する場所。パッケージのリポジトリ。npmjs.com等
-- プライベート フィード: 
+- パブリック パッケージ ソース（パブリック パッケージ フィード）
+  - パッケージを提供する場所。パッケージのリポジトリ。nuget.org, npmjs.com等
+- プライベート フィード（プライベート リポジトリ）
   - 組織等でプライベートに使用されるフィード。
-- セルフホステッド プライベート フィード: 
-  - オンプレミスのサーバー等で運用されるプライベート フィード。Nexus等。
-- SaaS プライベート フィード: 
-  - サービスとして提供されるプライベート フィード。Azure Artifact等
-- アップストリームソース: 
-  - Azure Artifacts のフィードが参照する、外部のフィード。npmjs.com等
+  - 「セルフホステッド」または「SaaS」のどちらかで、プライベート フィードを運用できる。
+- セルフホステッド プライベート フィード
+  - オンプレミスのサーバー等で運用されるプライベート フィード。
+  - 「アーティファクト リポジトリ マネージャ」を使用して作成できる。
+- アーティファクト リポジトリ マネージャ
+  - プライベート フィード（プライベート リポジトリ）を作るためのソフトウェア。
+  - Nexus, Artifactory, Apache Archivaなどが有名。
+  - NuGetの場合は「[NuGet.Server](https://www.nuget.org/packages/NuGet.Server/)」を使用。
+- SaaS プライベート フィード
+  - サービスとして提供されるプライベート フィード。Azure Artifactや、商用のものがある。
+- ソース: 
+  - (1)Azure Artifactsに接続したCIシステム等（アーティファクトが生成される場所）。Azure PipelinesのYAMLパイプライン等。
+  - (2)「アップストリームソース」（Azure Artifacts のフィードが接続する、別のフィード）
+    - パブリック パッケージ フィード（npmjs.com等）
+    - 他のAzure Artifactsフィード
+  - (3)（パッケージの利用者から見た）フィード。例「フィードはパッケージの信頼できるソースです」
+  - (4)プログラムのソースコード。Azure Artifactはアーティファクトを格納・配信するものであり、ソースコードは扱わないため、Azure Artifactのドキュメント中ではほぼこの意味では使われない。
+- アップストリームソース
+  - Azure Artifacts のフィードが参照する、外部のフィード。npmjs.com等。「パブリック パッケージ ソース」は「プライベート フィード」の「アップストリーム ソース」として設定できる。
+- 消費者（コンシューマー）
+  - パッケージの利用者。フィードからパッケージを取り出して別の開発で利用する開発者やプロジェクトなど。
+- 依存関係（Dependency）
+  - ソフトウェアプロジェクトで、別のパッケージを使用すること。
+  - そのソフトウェアは、そのパッケージに「依存する」。
+    - 開発時の依存性、テスト時の依存性、実行時の依存性などがある。
+- 依存関係管理（Dependency Management）
+  - プロジェクトで使用するパッケージを設定ファイルなどで記録すること。
+  - Python: 
+    - [requirements.txt](https://www.google.com/search?q=python+requirements.tx)
+  - Java: 
+    - [pom.xml](https://www.google.com/search?q=java+pom.xml&oq=java+pom.xml)
+    - [build.gradle](https://www.google.com/search?q=gradle+build.gradle)
+
 
 ## 依存関係のパッケージ化
 
@@ -235,6 +274,7 @@ Fabricam       (Widgets 1.0.0/2.0.0)
 - Gadgetsは2.0.0のみ利用できる。（アップストリームのContosoに保存されているため）
 - Thingsは、どのバージョンも使用できない。（アップストリームのContosoに保存されていないため）
 
+つまり、FabricamからContosoにクエリを実行したとき、ContosoからAdventureWorksへの「推移的なクエリ」は実行されない。これは、循環するアップストリームソースが設定されて、[無限ループが形成されるのを防ぐ](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/concepts/package-graph?view=azure-devops#how-upstream-sources-construct-the-set-of-available-packages)ための仕様となっている。
 
 ### Azure Artifacts
 
@@ -263,37 +303,203 @@ Fabricam       (Widgets 1.0.0/2.0.0)
 
 ## 成果物の移行と統合
 
+
+ユニバーサルパッケージとは。
+
+ユニバーサル パッケージを使用すると、ユーザーは NuGet、npm、Maven、Python パッケージなど、広く使用されているパッケージ**以外**のさまざまな種類のパッケージを格納できます。
+
+アップロードされたパッケージのサイズは異なります (最大 4 TB までテスト済み) が、常に名前とバージョン番号を持つ必要があります。 
+
 ### 既存の成果物リポジトリの識別
 
+※ここは「リリースパイプライン」についての説明だが、これは、Azure Pipelineの「クラシック」パイプラインについての話題なので、スキップする。
+
+参考
+[1](https://blog.beachside.dev/entry/2019/08/26/203000),
+[2](https://blog.shibayan.jp/entry/20190719/1563525611)
+
+対応部分の[Azure Pipelineのドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/release/artifacts?view=azure-devops)
+
 ### アーティファクト リポジトリを移行し、統合する
+
+既存のアーティファクトリポジトリ（オンプレミス サーバー上で運用されていたプライベートなリポジトリ等）を、Azure Artifactに移行することができる。
+
+- [NuGet](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/get-started-nuget?view=azure-devops&tabs=windows&viewFallbackFrom=vsts)
+- [npm](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/get-started-npm?view=azure-devops&tabs=new-nav,windows&viewFallbackFrom=vsts)
+- [Maven](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/get-started-maven?view=azure-devops&tabs=new-nav&viewFallbackFrom=vsts)
+- [Python](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/quickstarts/python-packages?view=azure-devops&tabs=new-nav&viewFallbackFrom=vsts)
+- [ユニバーサル パッケージ](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/quickstarts/universal-packages?view=azure-devops&tabs=azuredevops&viewFallbackFrom=vsts)
+  - 上記以外の成果物をAzure Artifactで扱う場合に利用。
+    - 例
+      - C++の成果物
+      - テストデータ
+      - その他、Gitで管理するのに不向きなもの。
+  - 各パッケージは4TBまで。名前とバージョンを指定。
+  - [参考](https://qiita.com/nkshigeru/items/4eb022f396935429a7a0)
 
 ## パッケージ セキュリティ
 
 ### パッケージ フィードへのアクセスを保護する
 
+■フィードは「信頼できるソース」でなければならない
+
+パッケージフィードに悪意のあるパッケージが紛れ込むと、パッケージの利用者（＝開発者、エンドユーザー）に影響が及んでしまう。
+
+パッケージフィードは、パッケージの利用者にとって「信頼できるソース」でなければならない。
+
+※ここでの「ソース」は「パッケージの取得元」という意味。ソースコードや、パッケージを生成するCIのことではない。
+
+■アクセスのセキュリティ保護 （書き込みの制限、スキャン）
+
+悪意のあるパッケージが紛れ込まないよう、正規のユーザー（アクセスを承認されたアカウント）のみ、パッケージをフィードにプッシュできるようにする必要がある。
+
+また、セキュリティスキャンツール、脆弱性スキャンツールを使用して、フィード内のパッケージをスキャンし、危険なパッケージを発見できるようにしなければならない。
+
+■可用性 （アクセス許可）
+
+※ここでの「可用性」は、「システムが稼働していること」ではなく、適切なユーザーだけがフィードを利用できる、という意味。
+
+プライベートなフィードは、非公開の成果物（パッケージ）を取り扱う場合が多い。
+
+したがって、適切な権限があるユーザーだけが、フィードにアクセスできるようにしなければならない。
+
 ### ロール
+
+Azure Artifactsの「ロール」
+
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops)
+
+※RBACロールやAzure ADロールとは別のしくみである。
+
+- Raeder (リーダー、閲覧者)
+  - パッケージの一覧表示、インストール、および復元が可能
+- Collaborator （コラボレーター）
+  - Raederの権限に加え、アップストリームソースからのパッケージを保存が可能
+- Contributor（コントリビューター、共同作成者）
+  - Collaboratorの権限に加え、パッケージのプッシュ、削除などが可能
+- Owner（オーナー、所有者）
+  - すべての操作が可能
 
 ### アクセス許可
 
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops)
+
+
+個々の「ビュー」にもアクセス許可がある。
+
+
 ### 認証
+
+ユーザーの追加（招待）については[モジュール1](mod01.md)で説明済み。
+
+ユーザーは、Azure AD、Microsoftアカウント、GitHubアカウントを使って認証する。
+
+認証が済むと、Azure DevOps（Boards、Repos、Pipelines、Artifacts）にアクセスすることができる。
 
 ## バージョン管理戦略の実装
 
 ### バージョン管理の概要
 
+- パッケージは、バグの修正や機能の追加で変化し続ける。
+- 使用するパッケージを特定するため、バージョン番号を指定する。
+- パッケージのコンシューマー（利用者）は、プロジェクトで使用するパッケージのバージョン番号を指定する（依存関係管理）。
+
+■パッケージの不変性とは。
+
+- 一度、パッケージにバージョン番号を付けて公開したら、そのバージョンは変更しない。
+- パッケージに修正や機能追加を行ったら、新しいバージョン番号を付けて公開する。
+
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops#immutability)
+
 ### 成果物のバージョンを管理する
+
+[セマンティックバージョニング](https://www.google.com/search?q=%E3%82%BB%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%8B%E3%83%B3%E3%82%B0)に従ってバージョン番号を付ける。
+
 
 ### セマンティック バージョニング
 
+「1.2.3」のように3つの数字を「.」で区切って表される。3つの数字は順に、以下のように呼ばれる。
+
+- メジャーバージョン
+- マイナーバージョン
+- パッチバージョン
+
+- **APIの変更に互換性のない場合**は、メジャーバージョンを上げる。
+- 後方互換性があり、**機能を追加した場合**はマイナーバージョン上げる。
+- 後方互換性を伴う、**バグ修正をした場合**はパッチバージョンを上げる。
+
+さらに、プレリリース バージョンの場合は、後ろに「-rc1」（Release Candidate 1）のような「ラベル」を付与する。アーリー アダプターは、プロジェクトで、プレリリース バージョンを使用できる。
+
 ### リリース ビュー
+
+■ビュー（フィードビュー）とは
+
+[ドキュメント](https://docs.microsoft.com/en-us/azure/devops/artifacts/concepts/views?view=azure-devops)
+
+
+パッケージのバージョンのサブセットを、コンシューマー（パッケージ利用者）に共有することができるしくみ。
+
+つまり、フィードに含まれるパッケージのすべてのバージョンを公開するのではなく、一部の選択されたバージョンのみを、コンシューマーに使用させることができる。
+
+- フィードには、@local, @prerelease, @releaseの3つの「フィードビュー」がある。
+- ビューは追加・削除できる。@prerelease, @release は不要であれば削除してもよい。
+- フィードはデフォルトのビューを1つ持たなければならない。
+- フィードを作成した直後のデフォルトのビューは @local である。
+- @local ビューには以下のものが含まれる。
+  - フィードに直接発行されたパッケージ
+  - フィードのアップストリームソースから保存されたパッケージ
+- @local は、他のフィードが、このフィードをアップストリームソースとして指定した場合に使用される。（「パッケージグラフ」で解説済み）
+
 
 ### パッケージを昇格する
 
+■リリース ビュー（パッケージの昇格）とは
+
+- リリース ビューは @prereleaseや @releaseである。
+- パッケージが特定の品質基準を満たした際に、パッケージを@prereleaseや @releaseに「昇格（promote）」することができる。
+- コンシューマーは、リリースビューを使って、特定の品質基準が満たされたパッケージだけを使用することができる。
+
 ### 実証: パッケージの昇格
+
+ラボで実施
 
 ### バージョン管理のベスト プラクティス
 
+プロジェクトまたは組織で、以下のようなルールに従うとよい。
+
+- バージョン管理方法をドキュメント化する。
+- セマンティックバージョニングを使用する。
+- プロジェクトで1つのフィードのみを参照する。（後述：フィードと決定性）
+- （Azure Pipelines等で）パッケージの作成する時に、パッケージをフィードに自動的に公開する。
+
+■決定的と非決定的
+
+パッケージマネージャの世界では「決定的」「非決定的」という言葉が登場する場合がある。
+
+- 決定的（deterministic）
+  - 依存関係を解決した結果の構成が常に同じとなる
+- 非決定的（non-deterministic）
+  - 依存関係を解決した結果の構成が常に同じとは限らない
+
+たとえば、[パッケージマネージャnpmでは非決定的な動作をする場合がある](https://www.zilverline.com/blog/unraveling-npm-deterministic-dependencies-with-yarn)。
+
+たとえば、あるプロジェクトがパッケージAとパッケージBへの依存関係がある場合、Aからインストールした場合とBからインストールした場合で、プロジェクトに実際に追加される最終的なパッケージの構成が変わってしまう場合がある。
+
+（かなり乱暴なたとえになるが、料理をする場合に、鍋に材料をいれる順番が変われば、完成した料理の味が変わる、ということに少し似ているかもしれない）
+
+npmの後に開発されたパッケージマネージャYarnの場合は、決定的な動作をするための仕組みを持っている。そのため、依存関係の問題は起こらないようになっている。
+
+■フィードと決定性
+
+パッケージマネージャが使用するフィードが1つだけの場合と、複数ある場合で、動作が決定的あるいは非決定的となる場合がある。
+
+たとえば、NuGet では、複数のフィードが指定されている場合、すべてのフィードに対してパッケージを並列で要求し、最初に応答したフィードからパッケージを受信する。したがって、実行するタイミングによって、異なるフィードから受信したパッケージが使用されるため、最終的なパッケージの構成が変わってしまう場合がある。
+
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops#determining-the-package-to-use-search-order)では、「you should ensure that your client's configuration file only references your product feed, and not any other feeds like the public package managers.」（構成ファイルにて「プロダクト用」のフィードだけを参照し、パブリックのパッケージマネージャなどを参照しないようにするべき）とアドバイスがある。
+
 ### パイプラインからのデモンストレーション
+
+ラボで実施
 
 ## ラボ
 

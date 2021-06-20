@@ -6,6 +6,7 @@
 - 組織にどのようにDevOpsを導入するか。
 - DevOpsのプロジェクトの成果物（新機能）をどのように顧客へリリースするか。
 - Azure DevOpsとは何か。
+- Azure DevOpsの組織へユーザーを追加する方法。
 - GitHubとは何か。
 
 ラボ: Azure DevOpsを使い始める
@@ -391,6 +392,24 @@ Azure DevOps Servicesの価格
 - Basic + Test
   - すべてのBasic機能＋テスト機能
   - 5,824 円/ユーザー/月
+
+■ユーザーの追加(招待)
+
+Azure DevOpsでは、以下の種類のユーザーを追加(招待)することができる。
+
+- 「Azure DevOps組織」がAzure ADに接続されている場合:
+  - Azure ADユーザー(組織のユーザー)のメールアドレス
+- 「Azure DevOps組織」がAzure ADに接続されていない場合:
+  - 個人のMicrosoftアカウントのメールアドレス
+  - GitHubユーザー名
+
+```
+Azure Active Directory (Azure AD)を使用してユーザーを認証し、組織のアクセスを制御する予定がない場合は、GitHub アカウントの個人用 Microsoft アカウントと id の電子メールアドレスを追加します。 ユーザーが Microsoft または GitHub のアカウントを持っていない場合は、 Microsoft アカウント または github アカウントにサインアップするようにユーザーに依頼します。
+```
+
+参考
+- [チームメンバーの招待](https://docs.microsoft.com/ja-jp/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#invite-team-members)
+- [Azure DevOpsにおけるユーザーの管理](https://docs.microsoft.com/ja-jp/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=preview-page)
 
 #### GitHub
 
