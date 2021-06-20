@@ -8,8 +8,11 @@
 - Azure DevOpsとは何か。
 - Azure DevOpsの組織へユーザーを追加する方法。
 - GitHubとは何か。
-
-ラボ: Azure DevOpsを使い始める
+- Azure Boardとは。
+- ラボ: Azure DevOpsを使い始める
+  - DevOps組織の作成
+  - ユーザーの追加
+  - Azure Boards
 
 ## 変革の計画 (plan for transformation)
 
@@ -309,6 +312,9 @@ DevOpsができているかどうかは、どうやって評価するか？
 
 https://azure.microsoft.com/ja-jp/services/devops/
 
+- [Azure DevOpsの概要](Azure%20DevOpsの概要.pdf)
+  - Azure DevOpsの全体像
+
 ### GitHub でできること
 
 https://github.co.jp/features
@@ -407,6 +413,10 @@ Azure DevOpsでは、以下の種類のユーザーを追加(招待)すること
 Azure Active Directory (Azure AD)を使用してユーザーを認証し、組織のアクセスを制御する予定がない場合は、GitHub アカウントの個人用 Microsoft アカウントと id の電子メールアドレスを追加します。 ユーザーが Microsoft または GitHub のアカウントを持っていない場合は、 Microsoft アカウント または github アカウントにサインアップするようにユーザーに依頼します。
 ```
 
+■具体的な追加の流れ
+- [メンバーの追加（招待）](メンバーの追加（招待）.pdf)
+  - 組織にメンバーを追加する方法
+
 参考
 - [チームメンバーの招待](https://docs.microsoft.com/ja-jp/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#invite-team-members)
 - [Azure DevOpsにおけるユーザーの管理](https://docs.microsoft.com/ja-jp/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=preview-page)
@@ -419,11 +429,16 @@ https://github.co.jp/pricing.html
 - Team: $4 /ユーザー/月
 - Enterprise: $21 /ユーザー/月
 
+## Azure Board
+
+- [Azure Boards.pdf](Azure%20Boards.pdf)
+  - Azure Boardsの解説
 
 ## ラボ（ハンズオン演習）
 
-- Azure DevOpsにサインインする
-- 組織を作成する
+- [Azure DevOpsの使用を開始する](Azure%20DevOpsの使用を開始する.pdf)
+  - 組織とプロジェクトを作成する
+
 - 基本編: Microsoft Learn: [ソフトウェア開発にアジャイル アプローチを選ぶ](https://docs.microsoft.com/ja-jp/learn/modules/choose-an-agile-approach/) 
   - Azure Board
     - プロジェクトの作成
@@ -432,6 +447,7 @@ https://github.co.jp/pricing.html
     - 作業項目の追加
     - スプリントの定義
     - 作業項目の所有者（Owner）の設定
+
 - 応用編(英語のみ): Azure DevOps Labs: [Agile Planning and Portfolio Management with Azure Boards](https://azuredevopslabs.com//labs/azuredevops/agile/)
   - Azure Board
     - エリア
