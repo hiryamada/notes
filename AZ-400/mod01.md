@@ -414,7 +414,7 @@ Azure Active Directory (Azure AD)を使用してユーザーを認証し、組�
 ```
 
 ■具体的な追加の流れ
-- [メンバーの追加（招待）](メンバーの追加（招待）.pdf)
+- [メンバーの追加（招待）](pdf/メンバーの追加（招待）.pdf)
   - 組織にメンバーを追加する方法
 
 参考
@@ -431,13 +431,16 @@ https://github.co.jp/pricing.html
 
 ## Azure Board
 
-- [Azure Boards.pdf](Azure%20Boards.pdf)
+- [Azure Boards.pdf](pdf/Azure%20Boards.pdf)
   - Azure Boardsの解説
 
 ## ラボ（ハンズオン演習）
 
-- [Azure DevOpsの使用を開始する](Azure%20DevOpsの使用を開始する.pdf)
+- [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
   - 組織とプロジェクトを作成する
+
+- GitHubアカウントの作成
+  - [作成手順](../prep/github.md)
 
 - 基本編: Microsoft Learn: [ソフトウェア開発にアジャイル アプローチを選ぶ](https://docs.microsoft.com/ja-jp/learn/modules/choose-an-agile-approach/) 
   - Azure Board
