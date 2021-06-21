@@ -386,7 +386,7 @@ Azure ADのユーザーは、Azure ADを使用してサインインを完了し�
 
 ### 既存の作業管理ツールの移行または統合
 
-[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存の作業管理ツールとの移行/統合のための拡張機能](https://marketplace.visualstudio.com/search?term=migration&target=AzureDevOps&category=All%20categories&sortBy=Relevance)が提供されている。
+[Azure DevOps 拡張機能](https://marketplace.visualstudio.com/) では、[既存の作業管理ツールとの移行/統合のための拡張機能](https://marketplace.visualstudio.com/search?term=migration&target=AzureDevOps&category=All%20categories&sortBy=Relevance)が提供されている。
 
 - [Trello](https://trello.com/ja) - かんばんツール
   - [Trello と Azure DevOps Boardの統合](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello)
@@ -396,7 +396,7 @@ Azure ADのユーザーは、Azure ADを使用してサインインを完了し�
 
 ### 既存のテスト管理ツールの移行または統合
 
-[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存のテスト管理ツールとの連携するための拡張機能](https://marketplace.visualstudio.com/search?term=test&target=AzureDevOps&category=All%20categories&sortBy=Relevance)が提供されている。
+[Azure DevOps 拡張機能](https://marketplace.visualstudio.com/) では、[既存のテスト管理ツールとの連携するための拡張機能](https://marketplace.visualstudio.com/search?term=test&target=AzureDevOps&category=All%20categories&sortBy=Relevance)が提供されている。
 
 - [Apache JMeter](https://jmeter.apache.org/)
   - [JMeter](https://marketplace.visualstudio.com/items?itemName=AlexandreGattiker.jmeter-tasks)
@@ -442,6 +442,37 @@ Azure Active Directory (Azure AD)を使用してユーザーを認証し、組�
 参考
 - [チームメンバーの招待](https://docs.microsoft.com/ja-jp/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#invite-team-members)
 - [Azure DevOpsにおけるユーザーの管理](https://docs.microsoft.com/ja-jp/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=preview-page)
+
+##### Azure DevOps の地域
+
+Azure DevOps は次の「地域」で利用できる。
+
+- オーストラリア
+- ブラジル
+- カナダ
+- ヨーロッパ
+- インド
+- イギリス
+- 米国
+- アジア太平洋
+  - 2021年3月まで: East Asia (香港)
+  - 2021年3月以降: Southeast Asia (シンガポール) に順次移行
+
+■地域の指定
+
+組織の作成時に、地域を指定できる。
+
+地域の変更は画面上からはできないが、以下の画面から問い合わせを行って変更することができる。
+
+https://azure.microsoft.com/ja-jp/support/devops/
+
+■アジア太平洋の移行について
+
+2021年3月以降、アジア太平洋のすべての Azure DevOps 組織とその関連するサービス資産を、東アジアリージョン (香港) から東南アジアリージョン (シンガポール) に移行する予定。
+
+この移行によるパフォーマンス影響はなく、ユーザー側で実施すべきことはない。
+
+https://docs.microsoft.com/ja-jp/azure/devops/migrate/migration?view=azure-devops
 
 #### GitHub
 
