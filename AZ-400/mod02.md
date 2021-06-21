@@ -41,7 +41,7 @@ Puppet 社、CircleCI 社 が発行している、DevOpsに関するレポート
     - Resources are available via self-service 
     - Applications are rearchitected based on business needs
     - Security teams are involved in technology design and deployment
-  - DevOps変革のステージが上がるにつれて、プログラムのソースコードだけではなく、システム構成、インフラ構成、アプリ構成などもバージョン管理される。
+  - ポイント：DevOps変革のステージが上がる（DevOps変革が進む）につれて、プログラムのソースコードだけではなく、システム構成、インフラ構成、アプリ構成などもバージョン管理されるようになる。
 
 
 ### ソース管理とは？
@@ -204,9 +204,11 @@ TFVC(Team Foundation バージョン管理)から、Azure Reposへ、[移行ツ�
 ## ラボ
 
 - Skillpipe Module 2、「ソース管理システムの種類」の「Gitをローカルで操作」にかかれている手順を実際にやってみましょう
-- GitとVisual Studio Codeが必要です。お手元のPCに以下のものをインストールするか、ラボ環境を起動して使用してください。
+- GitとVisual Studio Codeが必要です。お手元のPCに以下のものをインストールしてください。
   - [Git for Windows](https://gitforwindows.org/)
   - [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
+- または、Azure 上にWindows VMを立ち上げてリモートデスクトップで接続し、その中で上記ソフトウェアをインストールしてください。
+- または、[ラボ環境](https://esi.learnondemand.net/)を起動して使用してください。
 
 - Microsoft Learn: [Git でのバージョン コントロールの概要](https://docs.microsoft.com/ja-jp/learn/paths/intro-to-vc-git/)
   - サンドボックスの起動に失敗する場合は、Azure Passサブスクリプションの環境を利用してください。
