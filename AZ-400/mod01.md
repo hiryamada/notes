@@ -30,6 +30,7 @@ DevOpsとは何か。なぜ必要なのか。
   - [OODA(ウーダ)ループ](https://ja.wikipedia.org/wiki/OODA%E3%83%AB%E3%83%BC%E3%83%97)：Observe(観察) — Orient(判断) — Decide(決断) — Act(実行)
     - [PDCA(Plan-Do-Check-Act)との違い](https://data.wingarc.com/what-is-ooda-11126): OODAは相手の観察から始まる。PDCAは自己計画から始まる。
   - [Validated Learning](https://en.wikipedia.org/wiki/Validated_learning)
+    - Skillpipeテキストでは「検証済みの学習」
     - 各サイクルで目標を設定し、アイデアを試行し、データを集め、目標に近づいたことを確認する
     - Validated Learningは、リーンスタートアップにおける考え方。
   - [リーンスタートアップ](https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97)
@@ -149,12 +150,18 @@ DevOpsを、新規プロジェクト（グリーンフィールド）に導入�
 DevOpsを、SoRプロジェクトに導入すべきか、SoEプロジェクトに導入すべきか。
 
 - SoR: 記録システム (System of Record)
-  - 情報を正しく記録するためのシステム
+  - 情報を正しく記録する/業務を省力化するためのシステム、いわゆる基幹システム
   - 正しい仕様が存在
-  - スケジュールと品質が優先
+  - 開発においてはスケジュールと品質が優先される
 - SoE: エンゲージメントシステム (System of Engatement)
+  - [ジェフリー・ムーア氏が2011年に提唱した考え方](https://www.google.com/search?q=%E3%82%B8%E3%82%A7%E3%83%95%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%A0%E3%83%BC%E3%82%A2+soe)
   - ユーザーや取引先との「絆」を作るシステム
-  - 正しい仕様が存在しない
+    - ショッピングサイト
+    - コミュニケーションツール
+    - スマホアプリ、ゲーム
+    - など
+  - 正しい仕様が存在しないことがある
+  - 変化が早い
   - トライ&エラー
 
 [参考](https://speakerdeck.com/naoya/system-of-record-to-system-of-engagement?slide=4)
@@ -168,6 +175,8 @@ DevOpsの成果物（新機能）を、どのグループの利用者にリリ�
 - カナリア: とても積極的な人々。
 - アーリーアダプター: 積極的な人々。
 - 一般ユーザー: 積極的ではないな人々。安定を望む。
+
+参考：[カナリアリリース](https://www.google.com/search?q=%E3%82%AB%E3%83%8A%E3%83%AA%E3%82%A2%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9)：新機能を一部のユーザーにリリースし、問題がないことを確認しながら段階的に全体に向けてリリースしていく。上記の「カナリア」とは、カナリアリリースのターゲットとなるユーザー。生理学者の John Scott Haldane 氏が、一酸化炭素をすばやく検出するためにカナリア（鳥）を炭鉱に連れて行ったことに由来。カナリアは一酸化炭素に弱く、カナリアを観察することで一酸化炭素の危険を素早く発見できたという。[参考](https://cloud.google.com/blog/ja/products/gcp/how-release-canaries-can-save-your-bacon-cre-life-lessons)
 
 参考：[Azure App Configurationの「機能フラグ」](https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/concept-feature-management)を利用すると、**リリースしたソフトウェアにおいて**、特定のユーザーやグループに対して、特定の機能を有効化することができる。
 
@@ -312,8 +321,21 @@ DevOpsができているかどうかは、どうやって評価するか？
 
 https://azure.microsoft.com/ja-jp/services/devops/
 
+
+
 - [Azure DevOpsの概要](pdf/Azure%20DevOpsの概要.pdf)
 - [Azure DevOpsの機能の連携](pdf/Azure%20DevOps機能の連携.pdf)
+
+```
+Azure DevOpsの画面 (dev.azure.com)
+└Azure DevOps組織 ←ユーザー
+ └プロジェクト - 概要, wiki, dashboard
+  ├Azure Boards - 「エピック」,「作業項目」,「タスク」
+  ├Azure Repos リポジトリ
+  ├Azure Pipelines パイプライン
+  └Azure Artifacts フィード
+※ユーザー：Azure ADユーザー, Microsoftアカウント, GitHubアカウント
+```
 
 ### GitHub でできること
 
@@ -364,7 +386,7 @@ Azure ADのユーザーは、Azure ADを使用してサインインを完了し�
 
 ### 既存の作業管理ツールの移行または統合
 
-[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存の作業管理ツールとの移行/統合(https://marketplace.visualstudio.com/search?term=migration&target=AzureDevOps&category=All%20categories&sortBy=Relevance)のための拡張機能]が提供されている。
+[Extensions for Azure DevOps](https://marketplace.visualstudio.com/) では、[既存の作業管理ツールとの移行/統合のための拡張機能](https://marketplace.visualstudio.com/search?term=migration&target=AzureDevOps&category=All%20categories&sortBy=Relevance)が提供されている。
 
 - [Trello](https://trello.com/ja) - かんばんツール
   - [Trello と Azure DevOps Boardの統合](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello)
@@ -442,7 +464,7 @@ https://github.co.jp/pricing.html
 - GitHubアカウントの作成
   - [作成手順](../prep/github.md)
 
-- 基本編: Microsoft Learn: [ソフトウェア開発にアジャイル アプローチを選ぶ](https://docs.microsoft.com/ja-jp/learn/modules/choose-an-agile-approach/) 
+- 基本編: Microsoft Learn: [ソフトウェア開発にアジャイル アプローチを選ぶ](https://docs.microsoft.com/ja-jp/learn/modules/choose-an-agile-approach/) のユニット3～4に沿って、Azure Boardを使ってみましょう。
   - Azure Board
     - プロジェクトの作成
     - チームの作成
@@ -450,8 +472,11 @@ https://github.co.jp/pricing.html
     - 作業項目の追加
     - スプリントの定義
     - 作業項目の所有者（Owner）の設定
+  - ユニット4が終わったら、プロジェクトや、組織に追加したユーザーは削除します。
 
-- 応用編(英語のみ): Azure DevOps Labs: [Agile Planning and Portfolio Management with Azure Boards](https://azuredevopslabs.com//labs/azuredevops/agile/)
+- 応用編(英語のみ、オプション): Azure DevOps Labs: [Agile Planning and Portfolio Management with Azure Boards](https://azuredevopslabs.com//labs/azuredevops/agile/)
+  - Edgeブラウザの翻訳機能でページの翻訳ができます。
+  - または、[Google翻訳](https://translate.google.co.jp/?hl=ja&sl=auto&tl=en&op=translate)や[Bing翻訳](https://www.bing.com/translator?to=ja&setlang=ja)の左側のテキストボックスにアクセス先のサイトのURLを貼り付けると、翻訳されたページが表示されます。
   - Azure Board
     - エリア
     - ダッシュボード
