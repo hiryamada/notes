@@ -297,7 +297,7 @@ DevOpsができているかどうかは、どうやって評価するか？
 - [スクラム](https://docs.microsoft.com/ja-jp/devops/plan/what-is-scrum)のチーム
   - https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf
   - スクラムのチームはクロスファンクショナルチーム
-  - チームは、各スプリントで価値を想像するスキルを持つ
+  - チームは、各スプリントで価値を創造するスキルを持つ
 
 
 ### ツール
