@@ -10,7 +10,7 @@ GitHubアカウントを作成
 
 # day 1 DevOps, コードの管理、コードの品質
 
-- [モジュール1](mod01.md) DevOpsの概要, Azure DevOps
+- [モジュール1](mod01.md) DevOpsの概要, Azure DevOps, Azure Boards
 - [モジュール2](mod02.md) ソース管理, Git, Azure Repos
 - [モジュール3](mod03.md) 技術的負債, コードの品質
 - [モジュール4](mod04.md) エンタープライズGit

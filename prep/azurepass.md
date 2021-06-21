@@ -1,5 +1,7 @@
 # Azure Pass サブスクリプションの入手
 
+※9:30以降にならないと開始できません
+
 ## 事前の準備
 
 - 今回のコース用に新しく作成したMicrosoftアカウント。まだ準備していない場合は[こちらの手順](msa.md)に従ってご準備ください。
@@ -14,7 +16,7 @@
   - Chrome: [シークレット ウィンドウ](https://support.google.com/chrome/answer/95464)を開きます。
   - Firefox: [プライベート ウィンドウ](https://support.mozilla.org/ja/kb/private-browsing-use-firefox-without-history)を開きます。
   - Safari: [プライベートブラウズ ウィンドウ](https://support.apple.com/ja-jp/guide/safari/ibrw1069/mac)を開きます。
-- InPrivate ウィンドウで、[Azure Pass](https://www.microsoftazurepass.com/)にアクセスします。
+- InPrivate ウィンドウで、[Azure Pass](https://www.microsoftazurepass.com/) （ https://www.microsoftazurepass.com/ ）にアクセスします。
 - ページ内のStartボタンをクリックします。
 - 今回のコース用に作成したMicrosoftアカウントでサインインします。
 - 「Confirm Microsoft Account」ボタンをクリックします。
@@ -23,12 +25,14 @@
 - 「We are processing your request」というページが出ます。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。
 - 「プロフィール（Your profile）」フォームで、氏名などの情報を入力します。
 - 「次へ(Next)」をクリックします。※画面が切り替わるまで少し待ちます。リロードなどの操作を行わないでください。
-- 「サブスクリプション契約(Agreement)」に同意するためのチェックボックス「サブスクリプション契約、オファーの詳細、プライバシーに関する声明に同意します。(I agree to the subscription agreement, offer details, and privacy statement.)」にチェックを入れます。
+- 「サブスクリプション契約、オファーの詳細、プライバシーに関する声明に同意します。(I agree to the subscription agreement, offer details, and privacy statement.)」にチェックを入れます。
 - 「サインアップ（Sign Up）」をクリックします。
-- 「お客様の情報を確認しています...」「アカウントを設定しています...」(Setting up your account...)などのメッセージが出ます。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。この間に画面に表示されるテキストエリアには何も入力する必要はありません。
-- Azure portalの画面に移動し、「Microsoft Azureへようこそ」(Welcome to Microsoft Azure)と表示されます。
-- 「ツアーの開始」(Start tour)をクリックして、Azure portalの各部の使い方を確認します。
+- 「お客様の情報を確認しています...」「アカウントを設定しています...」(Setting up your account...)などのメッセージが出ます。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。この間に画面に表示されるテキストエリア（サインアップ エクスペリエンスのフィードバック）には何も入力する必要はありません。
+- Azure portalの画面が表示されます。
+- 画面中央に「Microsoft Azureへようこそ」(Welcome to Microsoft Azure)と表示されます。「ツアーの開始」(Start tour)をクリックして、Azure portalの各部の使い方を確認します。
 - 画面表示が英語になっている場合は、画面上部の歯車アイコン（Settings）をクリックし、「Languages & region」タブを選択し、「Language」で「日本語」を選択し、「Apply」をクリックします。
+- 「サブスクリプション」をクリックします。
+- 「Azure Pass - スポンサープラン」の行が表示されていることを確認します。
 
 以上で、Microsoftアカウントに、「Azure Pass - スポンサー プラン」というAzureサブスクリプションが作られました。
 
