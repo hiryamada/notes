@@ -313,7 +313,7 @@ DevOpsができているかどうかは、どうやって評価するか？
 https://azure.microsoft.com/ja-jp/services/devops/
 
 - [Azure DevOpsの概要](pdf/Azure%20DevOpsの概要.pdf)
-  - Azure DevOpsの全体像
+- [Azure DevOpsの機能の連携](pdf/Azure%20DevOps機能の連携.pdf)
 
 ### GitHub でできること
 
