@@ -167,10 +167,17 @@ Gitの基本操作(ラボで実施)
 - git log
 
 Gitの入門資料
-- [Git、GitHubを教える時に使いたい資料まとめ](https://qiita.com/yuyakato/items/41751848add5dfd5289c)
+- [サル先生のGit入門](https://backlog.com/ja/git-tutorial/intro/01/) - おすすめ！★★★★★
+- [Learn Git Branching](https://k.swd.cc/learnGitBranching-ja/)
+- [GitHubのGit入門](https://docs.github.com/ja/get-started)
+41751848add5dfd5289c)
 - [Git入門（Slideshare）](https://www.slideshare.net/y-uti/git-41040074)
 - [ドットインストール Git入門 （動画）](https://dotinstall.com/lessons/basic_git)
-- [さる先生のGit入門](https://backlog.com/ja/git-tutorial/intro/01/)
+
+Gitの入門資料集のまとめ
+- [Gitを学び直したい人に見て欲しい。遊んで学べる、無料のGit学習サービス5選！](https://omuriceman.hatenablog.com/entry/enjoy-git)
+- [Git、GitHubを教える時に使いたい資料まとめ](https://qiita.com/yuyakato/items/
+  - Try Gitは現在利用できないもよう。
 
 ## Azure Reposの概要
 
