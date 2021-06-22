@@ -20,3 +20,4 @@
 |-|-|-|
 |Wiki|[Wiki](https://docs.microsoft.com/ja-jp/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser)|[ウィキ](https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about-wikis)|
 |組織での利用|[Azure AD](https://docs.microsoft.com/ja-jp/azure/devops/organizations/accounts/access-with-azure-ad?view=azure-devops)|[Organization](https://docs.github.com/ja/organizations/collaborating-with-groups-in-organizations/about-organizations)|
+
