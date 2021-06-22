@@ -176,7 +176,7 @@ Gitの入門資料
 
 Gitの入門資料集のまとめ
 - [Gitを学び直したい人に見て欲しい。遊んで学べる、無料のGit学習サービス5選！](https://omuriceman.hatenablog.com/entry/enjoy-git)
-- [Git、GitHubを教える時に使いたい資料まとめ](https://qiita.com/yuyakato/items/
+- [Git、GitHubを教える時に使いたい資料まとめ](https://qiita.com/yuyakato/items/41751848add5dfd5289c)
   - Try Gitは現在利用できないもよう。
 
 ## Azure Reposの概要
