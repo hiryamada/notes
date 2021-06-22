@@ -46,7 +46,11 @@ GitHubに組み込まれたCI/CDサービス。ワークフロー（ビルド、
 
 ■Azure DevOpsとの違いは。
 
-（山田の主観）Azure DevOps（Azure Pipelines）は機能がとても多く、パワフル。一方、GitHub Actionsは、シンプルでわかりやすい。
+- Azure DevOps（Azure Pipelines）
+  - 機能が多く、パワフル。
+  - Azureとの連携も便利。
+- GitHub Actions
+  - シンプルでわかりやすい。
 
 使い分けの例:
 
@@ -64,10 +68,10 @@ GitHubに組み込まれたCI/CDサービス。ワークフロー（ビルド、
 
 以下、重要と思われる部分の抜粋。
 
-- GitHub ActionsはGitHub専用ですが、Azure Pipelinesは他のソース管理システムに簡単に使用できます。
-- Azure Pipelinesは承認、ゲート、チェックをサポートしていますが、GitHub Actionsにはそれらがない。
-- Azure Pipelinesでは、パイプラインの実行名（ビルド番号）をカスタマイズできる。GitHub Actionsではできません。
-- Azure Pipelinesを使用すると、ジョブ定義の一部の構造を省略できます。たとえば、ジョブが1つしかない場合は、ジョブを定義する必要はなく、そのステップを定義するだけで済みます。GitHub Actionsには明示的な構成が必要であり、YAML構造を省略できません。 
+- GitHub ActionsはGitHub専用ですが、Azure Pipelinesは他のソース管理システムと連携して使用できる。
+- Azure Pipelinesは承認、ゲート、チェックをサポートしているが、GitHub Actionsにはそれらがない。
+- Azure Pipelinesでは、パイプラインの実行名（ビルド番号）をカスタマイズできる。GitHub Actionsではカスタマイズできない。
+- Azure Pipelinesを使用すると、ジョブ定義の一部の構造を省略できる。たとえば、ジョブが1つしかない場合は、ジョブを定義する必要はなく、そのステップを定義するだけで済みます。GitHub Actionsには明示的な構成が必要であり、YAML構造を省略できない。 
 
 ■移行 または 統合
 
@@ -229,6 +233,5 @@ jobs:
 
 ## ラボ
 
-(1) [GitHub Actions: Hello World](https://lab.github.com/githubtraining/github-actions:-hello-world)を実施してみましょう。
+[GitHub Actions: Hello World](https://lab.github.com/githubtraining/github-actions:-hello-world)を実施してみましょう。
 
-DevOps Starter を使用して GitHub Actions を実装する
