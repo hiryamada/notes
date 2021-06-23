@@ -337,6 +337,18 @@ Azure DevOpsの画面 (dev.azure.com)
 ※ユーザー：Azure ADユーザー, Microsoftアカウント, GitHubアカウント
 ```
 
+### Azure DevOps Server
+
+Azure DevOps Server （オンプレミスでホストするAzure DevOps）
+https://azure.microsoft.com/ja-jp/services/devops/server/
+
+評価版（DevOps Server Express）もご利用いただけます。
+https://docs.microsoft.com/ja-jp/azure/devops/server/install/get-started
+
+DevOps Server / DevOps Server Express ダウンロード
+https://docs.microsoft.com/ja-jp/azure/devops/server/download/azuredevopsserver
+
+
 ### GitHub でできること
 
 https://github.co.jp/features
