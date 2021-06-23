@@ -8,6 +8,7 @@
 - アーティファクトとは。アップロード/ダウンロードとは。
 - ステータスバッジとは。
 - アクションを公開する際のベストプラクティスとは。
+- シークレットとは。
 
 ## GitHub のアクション
 
@@ -213,19 +214,22 @@ jobs:
 
 - ステップを適度にジョブ、ワークフローに分割する。
 - [バージョン（リリース）を管理する](https://docs.github.com/ja/github/administering-a-repository/releasing-projects-on-github/about-releases)。
+  - 以下の「リリースでタグをマークする」を参照。
 - [ドキュメント（README.md）を作る。](https://docs.github.com/ja/actions/creating-actions/about-actions#creating-a-readme-file-for-your-action)
 - [Marketplaceに公開する](https://docs.github.com/ja/actions/creating-actions/publishing-actions-in-github-marketplace)。コミュニティで利用することができる。
 
 ### Git タグでリリースをマークする
 
-- 各リリースには、`v1`, `v2` といったタグを付与する。
-- 新しいメジャーバージョンの開発中中は、`v3-beta`のようなタグを付けて、それが開発中のベータ版であることを明確にする。その後`-bata`などを削除して`v3` とする。
+- アクションの各リリースには、`v1`, `v2` といったタグを付与する。
+- 新しいメジャーバージョンの開発中は、`v3-beta`のようなタグを付けて、それが開発中のベータ版であることを明確にする。その後`-bata`などを削除して`v3` とする。
 
 [ドキュメント](https://docs.github.com/ja/actions/creating-actions/about-actions#using-tags-for-release-management)
 
 ## GitHub アクションのシークレットを保護する
 
-暗号化されたシークレットを使うと、機密情報をOrganization、リポジトリ、あるいはリポジトリの環境に保存できます。
+機密情報（たとえばデータベース接続のユーザー名、パスワードなど）は、ワークフロー（～.yml）や、GitHubリポジトリのファイル内には書き込まないようにしましょう。
+
+「暗号化されたシークレット」を使うと、機密情報をOrganization、リポジトリ、あるいはリポジトリの環境に保存できます。ワークフローからはシークレットを参照することができます。
 
 [ドキュメント](https://docs.github.com/ja/actions/reference/encrypted-secrets)
 
