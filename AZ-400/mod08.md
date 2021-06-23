@@ -183,13 +183,11 @@ jobs:
 
 ### 環境変数
 
-
 - GitHubはそれぞれのGitHub Actionsワークフローの実行に対してデフォルトの環境変数を設定する。
 - ワークフローファイル中でカスタムの環境変数を設定することもできる。
 - たとえば、環境変数の値を `if:` で調べて、条件が成立した場合のみジョブを実行することができる。
 
 [ドキュメント](https://docs.github.com/ja/actions/reference/environment-variables)
-
 
 ### ジョブ間でアーティファクトを渡す
 
@@ -233,5 +231,10 @@ jobs:
 
 ## ラボ
 
-[GitHub Actions: Hello World](https://lab.github.com/githubtraining/github-actions:-hello-world)を実施してみましょう。
+事前にGitHubアカウントを作成します。[GitHubアカウントの作成](https://github.com/hiryamada/notes/blob/main/AZ-400/github-account.md)
 
+(1) [ラボ: DevOps Starter を使用した GitHub アクションの実装](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M08_Implementing_GitHub_Actions_by_using_DevOps_Starter.html)
+
+(2) オプション: [GitHub Learning Lab](https://lab.github.com/) で、[Introduction to GitHub](https://lab.github.com/RSLUP/introduction-to-github) を実施しましょう。Start free courseをクリックし、Languageで「日本語」を選び、「Begin *Introduction to GitHub*」をクリックします。デフォルトでは、GitHub.com ウェブインターフェース を使用する手順となりますが、開始時のオプションで、コマンドラインやVisual Studio Codeを使う手順も選べます。
+
+(3) オプション: [GitHub Learning Lab](https://lab.github.com/) で、[GitHub Actions: Hello World](https://lab.github.com/githubtraining/github-actions:-hello-world) を実施しましょう（英語のみ。ブラウザの翻訳機能を使うか、[Google翻訳](https://translate.google.co.jp/?hl=ja&sl=auto&tl=en&op=translate)や[Bing翻訳](https://www.bing.com/translator?to=ja&setlang=ja)の左側のテキストボックスにアクセス先のサイトのURLを貼り付けると、翻訳されたページが表示されます。）

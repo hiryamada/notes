@@ -5,34 +5,32 @@
 Microsoft Learn
 - [DevOps プラクティスを発展させる](https://docs.microsoft.com/ja-jp/learn/paths/evolve-your-devops-practices/)
 
-GitHubアカウントを作成
-
-
 # day 1 DevOps, コードの管理、コードの品質
 
 - [モジュール1](mod01.md) DevOpsの概要, Azure DevOps, Azure Boards
 - [モジュール2](mod02.md) ソース管理, Git, Azure Repos
 - [モジュール3](mod03.md) 技術的負債, コードの品質
+
+# day 2 継続的インテグレーション(CI)
+
 - [モジュール4](mod04.md) エンタープライズGit
-
-# day 2 継続的インテグレーション(CD)
-
 - [モジュール5](mod05.md) Azure Pipelines 基本
 - [モジュール6](mod06.md) Azure Pipelines 応用
 - ※モジュール7は最終日に移動
+
+# day 3 継続的デリバリー(CD), リリース/デプロイ戦略
+
 - [モジュール8](mod08.md) GitHub Actions
-
-# day 3 継続的デリバリー(CD), IaC
-
 - [モジュール9](mod09.md) Azure Artifacts
-- [モジュール10](mod10.md) リリース戦略
-- [モジュール11](mod11.md) Azure Pipeline によるCD
+
+- [モジュール10](mod10.md) リリース戦略 ※「クラシック」
+- [モジュール11](mod11.md) Azure Pipeline によるCD ※「クラシック」
 - [モジュール12](mod12.md) デプロイパターン
+
+# day 4 IaC, コンテナー仮想化、フィードバックの活用
 
 - [モジュール13](mod13.md) IaC: ARM/CLI/PwerShell/Automation
 - [モジュール14](mod14.md) IaC: Chef/Puppet/Ansible/Terraform
-
-# day 4 コンテナー仮想化、フィードバックの活用
 
 - [モジュール15](mod15.md) Docker
 - [モジュール16](mod16.md) Kubernetes
