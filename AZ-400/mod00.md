@@ -21,13 +21,13 @@ Microsoft Learn
 # day 3 継続的デリバリー(CD), リリース/デプロイ戦略
 
 - [モジュール8](mod08.md) GitHub Actions
-- [モジュール9](mod09.md) Azure Artifacts
+- [モジュール9](mod09.md) Azure Artifacts, パッケージ管理
 
 - [モジュール10](mod10.md) リリース戦略 ※「クラシック」
 - [モジュール11](mod11.md) Azure Pipeline によるCD ※「クラシック」
 - [モジュール12](mod12.md) デプロイパターン
 
-# day 4 IaC, コンテナー仮想化、フィードバックの活用
+# day 4 IaC, コンテナー仮想化
 
 - [モジュール13](mod13.md) IaC: ARM/CLI/PwerShell/Automation
 - [モジュール14](mod14.md) IaC: Chef/Puppet/Ansible/Terraform
@@ -35,10 +35,10 @@ Microsoft Learn
 - [モジュール15](mod15.md) Docker
 - [モジュール16](mod16.md) Kubernetes
 
+# day 5 フィードバックの活用,セキュリティ
+
 - [モジュール17](mod17.md) 開発チーム向けのフィードバック、モニタリング
 - [モジュール18](mod18.md) システムのフィードバック
-
-# day 5 セキュリティ
 
 - [モジュール7](mod07.md) セキュリティ設計, 設定・機密情報の管理
 - [モジュール19](mod19.md) DevSecOps, Security Center, Blueprints, ATP

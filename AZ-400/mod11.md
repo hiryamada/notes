@@ -134,6 +134,7 @@ Webアプリのテストの自動化の[事例](https://azure.microsoft.com/nl-n
 
 - サービスフックを使用すると、Azure DevOps プロジェクトでイベントが発生した場合に、他のサービスに対してタスクを実行することができる。
 - こちらは（人への通知も含む）さまざまな外部サービスに対する連携の方法。
+- [ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/service-hooks/overview?view=azure-devops)
 
 ### 実証: パイプラインを監視するサービス フックの設定
 
