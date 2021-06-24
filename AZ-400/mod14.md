@@ -7,6 +7,7 @@
 - Ansible
 - Terraform
 
+
 ## Chef（シェフ）
 
 Chef社（元 Opscode社, 2013年頃に社名を変更）が開発する構成管理ツール。
@@ -192,9 +193,23 @@ resource "azurerm_resource_group" "test" {
 - `terraform apply -auto-approve`
 - コマンドの実行が完了してから、Azure portal側の一覧に反映されるまで、1分ほどかかる。
 
+## Azure Cloud Shell
+
+参考: [Azure Cloud Shellにインストール済みのツール](https://docs.microsoft.com/ja-jp/azure/cloud-shell/features)
+
+Terraform, Ansible などのコマンドは、Azure Cloud Shellに導入済みであり、すぐに使用することができる。
+
 ## ラボ
 
-(1) クイックスタート: [Azure Cloud Shell を使用した Ansible の構成](https://docs.microsoft.com/ja-jp/azure/developer/ansible/getting-started-cloud-shell?tabs=ansible)
+■Ansible
 
-(2) AZ-400 ラボ: [Ansible と Azure](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M14_Ansible_with_Azure.html)
+(1) クイックスタート: [Azure Cloud Shell を使用した Ansible の構成](https://docs.microsoft.com/ja-jp/azure/developer/ansible/getting-started-cloud-shell)
+
+(2) AZ-400 ラボ: [Ansible](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M14_Ansible_with_Azure.html)
+
+■Terraform
+
+(1) クイックスタート: [Azure Cloud Shell を使用した Terraform の構成](https://docs.microsoft.com/ja-jp/azure/developer/terraform/get-started-cloud-shell)
+
+(2) AZ-400 ラボ: [Terraform](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M14_Automating_infrastructure_deployments_in_the_Cloud_with_Terraform.html)
 
