@@ -92,7 +92,11 @@
 ### 依存関係の特定
 
 - プロジェクトで、既に他のパッケージを導入している場合が多い
-- 
+- 依存関係（プロジェクトで使用しているライブラリ）を一覧取得する仕組みがいくつかある。
+  - [iOSライセンス一覧を生成するツールLicensePlistが便利](https://qiita.com/kazy_dev/items/88ec404cfaf4efcc653e)
+  - [AndroidでOSSライセンス表示をするためのライブラリ比較](https://backport.net/blog/2020/02/22/compare_libraries_for_displaying_oss_licenses_on_android/)
+  - [使用しているOSSの一覧取得やライセンス確認を自動化/CI化したい話](https://tech.kusuwada.com/entry/2018/09/07/023038)
+
 
 ### ソースとパッケージのコンポーネント化
 
@@ -122,6 +126,12 @@
 - [制御の反転(Inversion of Control: IoC)](https://docs.microsoft.com/ja-jp/dotnet/architecture/modern-web-apps-azure/architectural-principles#dependency-inversion)
   - [実質的にDIに同じ。](https://ja.wikipedia.org/wiki/%E5%88%B6%E5%BE%A1%E3%81%AE%E5%8F%8D%E8%BB%A2)
   - 上記のDI処理を、利用者側ではなく、DIコンテナーが実行するという様子を「反転」という。
+
+
+DIコンテナー
+- [ASP.NET Core での依存関係の挿入 | Microsoft Docs](https://docs.microsoft.com/ja-jp/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0)
+- [Spring Framework](https://spring.io/projects/spring-framework)
+
 
 ### 依存関係のコードベースをスキャンする
 
