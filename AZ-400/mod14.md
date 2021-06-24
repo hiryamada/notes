@@ -160,7 +160,7 @@ Red Hat社が開発する構成管理ツール。
 - 冪等性をツール側で保証。
 - HCL(HashiCorp Configuration Language)を使用して構成を定義。
   - ～.tf という名前で保存
-- コマンド（ansible-playbook）がCloud Shellにインストール済みで、すぐに利用できる
+- コマンド（terraform）がCloud Shellにインストール済みで、すぐに利用できる
 
 ■製品群
 
