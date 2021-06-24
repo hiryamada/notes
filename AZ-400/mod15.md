@@ -1,7 +1,5 @@
 # モジュール15 Docker
 
-
-
 ■参考ドキュメント
 
 - [Docker ドキュメント日本語化プロジェクト](https://docs.docker.jp/)
@@ -74,7 +72,7 @@ Dockerを使って、以下の作業を行う。
 ■Dockerとは
 
 - [Dockerの公式サイト](https://www.docker.com/)
-- [Docker今昔](https://speakerdeck.com/inductor/docker-kubernetes-through-the-ages?slide=23)
+- [Docker今昔](https://speakerdeck.com/inductor/docker-kubernetes-through-the-ages)
 - [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
 
 ■Docker Hubとは
@@ -122,11 +120,12 @@ https://docs.docker.jp/engine/reference/glossary.html#repository
 
 ## Azure のコンテナー関連サービス
 
-- Azure Container Instances (ACI)
-- Azure Kubernetes Service (AKS)
-- Azure Container Registory (ACR)
-- Azure App Service
-- Azure Service Fabric
+- [Azure Container Instances (ACI)](https://azure.microsoft.com/ja-jp/services/container-instances/)
+- [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/ja-jp/services/kubernetes-service/)
+- [Azure Container Registory (ACR)](https://azure.microsoft.com/ja-jp/services/container-registry/)
+- [Azure App Service](https://azure.microsoft.com/ja-jp/services/app-service/)
+  - [コンテナーをデプロイすることができる](https://azure.microsoft.com/ja-jp/services/app-service/containers/)
+- [Azure Service Fabric](https://azure.microsoft.com/ja-jp/services/service-fabric/)
 
 ## Docker コンテナーレジストリ
 
