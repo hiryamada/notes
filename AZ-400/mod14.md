@@ -119,7 +119,7 @@ Red Hat社が開発する構成管理ツール。
 
 コミュニティ版
 - Ansible Project: Ansible Engineに相当
-- AWS Project: Ansible Towerに相当
+- AWX Project: Ansible Towerに相当
 
 エンタープライズ版（Red Hat社のサポートあり）
 - Ansible Engine
