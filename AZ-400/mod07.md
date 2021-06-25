@@ -280,7 +280,7 @@ Azure Key Vaultとは。
 - 機密情報（キー、シークレット、証明書）の管理に特化。
 - [FIPS 140-2](https://ja.wikipedia.org/wiki/FIPS_140)に対応した[HSM（ハードウェアセキュリティモジュール）](https://www.google.com/search?q=luna+sa+hsm&tbm=isch)を利用できる。
 
-Key Vault周辺サービスとの比較については[まとめPDF](../az-204/pdf/mod07/キー管理サービス.pdf)を参照。
+Key Vault周辺サービスとの比較については[まとめPDF](../AZ-204/pdf/mod07/キー管理サービス.pdf)を参照。
 
 ### DevOps の内側と外側のループ
 
