@@ -39,7 +39,7 @@ Rugged DevOps / DevSecOpsは、[2016年頃から注目されるようになっ�
 - HPE Security Fortify
 - Checkmarx
 
-[社員のブログ](https://torumakabe.github.io/post/aqua_acr/)で Aqua MicroScanneが取り上げられている。
+[社員のブログ](https://torumakabe.github.io/post/aqua_acr/)で Aqua MicroScannerが取り上げられている。
 
 ### Rugged DevOps パイプライン
 
