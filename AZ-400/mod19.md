@@ -178,6 +178,18 @@ Microsoftの1部門であるCore Services Engineering & Operations (CSEO)と、�
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/governance/blueprints/overview)
 
+さまざまなリソース テンプレートやその他のアーティファクトのデプロイを宣言によって調整する手法。
+
+環境は、組織のコンプライアンスに沿った形で（テンプレートがデプロイされ、ロール、ポリシーが設定された状態で）設定される。
+
+開発チームは新しい環境を迅速に構築して使用することができる。
+
+- ロールの割り当て
+- ポリシーの割り当て
+- Azure Resource Manager テンプレート (ARM テンプレート)
+- リソース グループ
+
+
 ### Azure Advanced Threat Protection (ATP)
 
 Azure Advanced Threat Protection、Azure ATPは、名前が変わり、現在Microsoft Defender for Identityとなっている。
