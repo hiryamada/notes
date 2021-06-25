@@ -420,7 +420,7 @@ Kubernetesクラスターを管理するコマンド。
 https://kubernetes.io/ja/docs/reference/kubectl/overview/
 
 ```
-kubectl apploy -f sample1.yml
+kubectl apply -f sample1.yml
 
 kubectl get node
 kubectl get pods
