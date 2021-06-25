@@ -454,6 +454,8 @@ https://knowledge.sakura.ad.jp/23603/
 
 ### Visual Studio Code用のKubernetes機能拡張
 
+https://code.visualstudio.com/docs/azure/kubernetes
+
 Visual Studio Code上から以下の操作を行うことができる。
 - Kubernetesクラスター（AKS）の作成
 - Kubernetesマニフェストファイルの作成、補完、コードスニペット挿入、検証、クラスターへのデプロイ
