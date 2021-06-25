@@ -7,7 +7,6 @@
 ■Kubernetes
 
 - コンテナー化されたアプリケーションの展開、スケーリング、また管理を自動化するためのオープンソースコンテナープラットフォーム。
-- k8sとも。
 - Googleは2014年にKubernetesプロジェクトをオープンソース化した。
 - 現在は[CNCF（Cloud Native Computing Foundation）](https://www.cncf.io/)によってホストされている。
 
@@ -15,25 +14,37 @@
 - [ドキュメント](https://kubernetes.io/ja/docs/home/)
 - [AzureのKubernetesのページ](https://azure.microsoft.com/ja-jp/topic/what-is-kubernetes/)
 
-■由来
+[読み方](https://www.google.com/search?q=kubernetes+%E8%AA%AD%E3%81%BF%E6%96%B9)：クバネティス/クバネテス/クーべネティス
+
+■Kubernetesの由来
 
 Kubernetesの名称は、ギリシャ語に由来し、操舵手やパイロットを意味する。
 
+略して k8s (ケーエイツ) とも。（K ubernete s と、KとSの間の8文字を略した書き方。[i18n](https://www.google.com/search?q=i18n) のようなもの）
+
 ■Kubernetesのメリット
 
+[Kubernetesが必要な理由と提供する機能](https://kubernetes.io/ja/docs/concepts/overview/what-is-kubernetes/#why-you-need-kubernetes-and-what-can-it-do)
+
+
 - スケーリング
+  - Podを簡単に増減させることができる
+  - 水平ポッドオートスケーラーで、Podを動かすノードを増減させることもできる
 - デプロイのパターンを提供
-  - カナリアデプロイ
-- サービスディスカバリーと負荷分散
+  - [カナリアデプロイ](https://kubernetes.io/ja/docs/concepts/workloads/controllers/deployment/#%E3%82%AB%E3%83%8A%E3%83%AA%E3%82%A2%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4)など
+- [サービスディスカバリー](https://kubernetes.io/ja/docs/concepts/services-networking/service/#%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%81%AE%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%90%E3%83%AA%E3%83%BC)と負荷分散
+  - PodのエンドポイントをAPI Serverに問い合わせることができる
 - ストレージ オーケストレーション
   - ローカルストレージやパブリッククラウドプロバイダーなど、選択したストレージシステムを自動でマウント
-- 自己修復/フェイルオーバー
+  - [AKSにおけるストレージ](https://docs.microsoft.com/ja-jp/azure/aks/concepts-storage)
+- 自己修復/フェイルオーバー: [Liveness Probe](https://kubernetes.io/ja/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)等
   - 処理が失敗したコンテナを再起動
   - 定義したヘルスチェックに応答しないコンテナを強制終了
 - 機密情報の管理
   - パスワードなどの機密の情報を保持し、管理
+  - [Secret](https://kubernetes.io/ja/docs/concepts/configuration/secret/)
+  - [AKS の Secrets Store CSI driver 経由で Key Vault を使う](https://zenn.dev/08thse/articles/31-aks-csi-keyvault)
 
-https://kubernetes.io/ja/docs/concepts/overview/what-is-kubernetes/#why-you-need-kubernetes-and-what-can-it-do
 
 ■Kubernetes以外のクラスター オーケストレーション テクノロジ
 
@@ -57,7 +68,9 @@ https://kubernetes.io/ja/docs/concepts/overview/what-is-kubernetes/#why-you-need
 - Microsoft が「コントロールプレーン」を完全に管理
 - ユーザーは、ノードの管理とメンテナンスだけを実行。
 - 「コントロールプレーン」は無料
-- 「ノード」は有料
+- 「ノード」は有料(VMの料金)
+
+[PDF: AKSの更新について](pdf/AKSの「更新」.pdf)
 
 ■正常性の監視・修復
 
@@ -519,3 +532,4 @@ https://kubernetes.io/ja/docs/tasks/configure-pod-container/configure-liveness-r
 
 (2) クイックスタート: [Helmを使用してAzure Kubernetes Serviceで開発する](https://docs.microsoft.com/ja-jp/azure/aks/quickstart-helm)を実施します。
 
+(3) AZ-400 ラボ: [Azure Kubernetes Services へのマルチコンテナー アプリケーションのデプロイ](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M16_Deploying_multi-container_application_to_Azure_Kubernetes_Services.html): Azure DevOps を使用して、コンテナー化されたアプリケーションとデータベースのデプロイを構成する, Azure DevOps パイプラインを使用して、コンテナー化されたアプリケーションを自動的にデプロイするようビルドする
