@@ -19,6 +19,8 @@
 - コードを書く部分は顧客に対する価値を生み出す部分。その他の部分は価値を生み出すものではないため、できる限り無駄を省くべきである。
 - 無駄を省くには、差分ビルド（変更された部分だけをビルドする）、ビルド結果をキャッシュして再利用する、などの技術を用いることができる。
 
+※このページでは「フィードバックはビルドとテストで収集する」とあるが、実際には運用環境からのフィードバックも活用できる。
+
 ### 継続的監視の紹介
 
 さまざまなモニタリング方法の紹介。量が多いので、本文をご確認ください。
@@ -125,6 +127,8 @@ Azure Monitor のログとメトリックはAPIを使用して取得できるの
 
 ## 発券システムの統合と構成
 
-IT Service Management Connector
+[IT Service Management Connector](https://docs.microsoft.com/ja-jp/azure/azure-monitor/alerts/itsmc-overview)
+
+Azure を、サポートされている IT Service Management (ITSM) 製品またはサービスに接続できます。
 
 Azure Boards との統合

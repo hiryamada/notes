@@ -34,6 +34,8 @@ https://www.simpletraveler.jp/2020/10/06/microsoftazure-certificate-report-azure
 
 https://blog.trainocate.co.jp/blog/415_018
 
+https://onarimon.jp/entry/2020/07/20/181845
+
 # Microsoft Learnコレクション
 
 https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400

@@ -1,5 +1,14 @@
 # モジュール16 Kubernetes
 
+- Kubernetesとは。
+- Azure Kubernetes Serviceとは。
+- クラスターとは。
+  - コントロールプレーンとは。
+  - ノードとは。
+- Pod、Service、Ingressとは。
+- CI/CDからどうやってアプリケーションをデプロイするのか。
+- Helmとは。
+
 ## Azure Kubernetes Service (AKS) の概要
 
 ### Kubernetes の概要
