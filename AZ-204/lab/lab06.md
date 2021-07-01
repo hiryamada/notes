@@ -21,18 +21,18 @@
     - アプリケーション（クライアント）ID
     - ディレクトリ (テナント) ID
   - MSALを使用して、トークンをインタラクティブに取得
-    - IPublicClientApplication app = PublicClientApplicationBuilder...Build()
-    - List<string> scopes
-      - "user.read"
-    - AuthenticationResult result = app.AcquireTokenInteractive(scopes).ExecuteAsync()
+    - `IPublicClientApplication app = PublicClientApplicationBuilder...Build()`
+    - `List<string> scopes`
+      - `"user.read"`
+    - `AuthenticationResult result = app.AcquireTokenInteractive(scopes).ExecuteAsync()`
 
 - 演習3 前半 デバイスコードフロー認証の導入
-  - dotnet add package Microsoft.Graph
-  - DeviceCodeProvider provider = new DeviceCodeProvider(app, scopes)
+  - `dotnet add package Microsoft.Graph`
+  - `DeviceCodeProvider provider = new DeviceCodeProvider(app, scopes)`
 
 - 演習3 後半 Microsoft Graph で、自分の名前とIDを取得する
-  - GraphServiceClient client = new GraphServiceClient(provider);
-  - User myProfile = client.Me.Request()
-  - myProfile.DisplayName
-  - myProfile.Id
+  - `GraphServiceClient client = new GraphServiceClient(provider);`
+  - `User myProfile = client.Me.Request()`
+  - `myProfile.DisplayName`
+  - `myProfile.Id`
 
