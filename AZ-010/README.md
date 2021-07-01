@@ -70,7 +70,7 @@ AWS システム管理者向けの Azure 管理（2日間）
   - [Azure Files](../AZ-104/mod07-03-files.md)
   - [Azure File Sync](../AZ-104/mod07-04-filesync.md)
   - Azure Data Box
-  - [Azure CDN](../AZ-204/mod13-02-cdn.md)
+  - [Azure CDN](../AZ-204/mod12-02-cdn.md)
   - サービス エンドポイント
   - ラボ AZ-104-07
 

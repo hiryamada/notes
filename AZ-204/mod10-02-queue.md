@@ -10,7 +10,7 @@ Azure Queue Storage
 
 # Azure Service Bus と Azure Queue Storage の比較
 
-→[こちら](mod11-01-servicebus.md)
+→[こちら](mod10-01-servicebus.md)
 
 
 # Blob トリガーの問題をQueueで解決

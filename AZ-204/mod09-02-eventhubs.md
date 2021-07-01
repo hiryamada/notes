@@ -17,7 +17,7 @@ Event Grid とは異なり、非常に高いスループット、多数の発行
 
 # Event GridとEvent Hubsの違い
 
-→[こちら](mod10-01-eventgrid.md)
+→[こちら](mod09-01-eventgrid.md)
 
 # [Event Hubs Kafkaエンドポイント](https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview)
 

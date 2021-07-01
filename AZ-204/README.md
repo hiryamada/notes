@@ -49,22 +49,22 @@
   - [Azure API Management](mod08-01-apim.md)
   - ラボ8
 - モジュール9: Logic Apps
-  - [Azure Logic Apps](mod09-01-logicapp.md)
+  - [Azure Logic Apps](mod99-01-logicapp.md)
   - ラボ9
 - モジュール10: イベント
-  - [Azure Event Grid](mod10-01-eventgrid.md)
-  - [Azure Event Hubs](mod10-02-eventhubs.md)
-  - [Azure Notification Hubs](mod10-03-notification-hubs.md)
+  - [Azure Event Grid](mod09-01-eventgrid.md)
+  - [Azure Event Hubs](mod99-02-eventhubs.md)
+  - [Azure Notification Hubs](mod99-03-notification-hubs.md)
   - ラボ10
 - モジュール11: メッセージング
-  - [Azure Service Bus](mod11-01-servicebus.md)
-  - [Azure Queue Storage](mod11-02-queue.md)
+  - [Azure Service Bus](mod10-01-servicebus.md)
+  - [Azure Queue Storage](mod10-02-queue.md)
   - ラボ11
 - モジュール12: 監視
-  - [Azure Monitor](mod12-01-monitor.md)
-  - [Azure App Insights](mod12-02-appinsights.md)
+  - [Azure Monitor](mod11-01-monitor.md)
+  - [Azure App Insights](mod11-02-appinsights.md)
   - ラボ12
 - モジュール13: キャッシュ
-  - [Azure Cache for Redis](mod13-01-redis.md)
-  - [Azure CDN](mod13-02-cdn.md)
+  - [Azure Cache for Redis](mod12-01-redis.md)
+  - [Azure CDN](mod12-02-cdn.md)
   - ラボ13

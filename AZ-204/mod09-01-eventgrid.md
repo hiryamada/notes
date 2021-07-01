@@ -56,8 +56,6 @@ Event Hubs:
 
 [Azure Event Hubs の .NET プログラミング ガイド (レガシー Microsoft.Azure.EventHubs パッケージ)](https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-programming-guide)
 
-※注意：[ラボ10ではこちらを使用しています](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_10_lab_ak.html)
-
 # SDK(新)
 
 [Azure.Messaging.EventHubs](https://www.nuget.org/packages/Azure.Messaging.EventHubs/)

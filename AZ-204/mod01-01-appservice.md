@@ -633,7 +633,7 @@ Cloud Shell で az webapp cors add コマンドを使用して、クライアン
 
 # Application Insights
 
-[Mod12を参照](mod12-02-appinsights.md)
+[Mod12を参照](mod11-02-appinsights.md)
 
 # Azure App Service での OS とランタイムのパッチ適用
 
