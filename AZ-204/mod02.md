@@ -43,7 +43,7 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-versions
 https://docs.microsoft.com/ja-jp/azure/azure-functions/set-runtime-version
 
 バージョンの更改のお知らせ
-https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-versions
+https://github.com/Azure/app-service-announcements/issues
 
 工夫すればできること:
 （バッチ処理のような）長時間にわたる実行 → 基本的に、Azure Functionは10分以内といった短時間での処理を想定。ただし、Durable Functionsを使用すると、複数の「関数の実行」をつなげることで、長期間に渡るワークフローの実行などを実現することは可能。ただしこの場合でも、Durable Functionsに含まれる個々の処理（「アクティビティ関数」の実行）の1回あたりの実行時間の上限は伸びない。
