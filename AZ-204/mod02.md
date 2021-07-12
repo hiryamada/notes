@@ -39,6 +39,7 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-overview#scenar
 
 バージョンについて
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-versions
+
 https://docs.microsoft.com/ja-jp/azure/azure-functions/set-runtime-version
 
 バージョンの更改のお知らせ
@@ -68,6 +69,12 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-versions
 - CosmosDBTrigger
 - IotHubTrigger
 
+■タイマートリガー
+
+https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-timer
+
+「NCRONTAB式」でスケジュールを指定。[CRONTAB](https://ja.wikipedia.org/wiki/Crontab)に似ている。
+
 ■Azureのサービスとの統合
 
 さまざまなAzureサービスと統合されている。
@@ -77,7 +84,9 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-versions
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings
 
 Twilio（トゥイリオ）: これは、サードパーティ製のサービス。APIを使用して、テキストメッセージ（SMS）を送信したりすることができる。
+
 解説動画: https://www.youtube.com/watch?v=1QfaGZ2Gm9g
+
 Functionsのドキュメント: https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-twilio
 
 ■スケーリング
@@ -95,18 +104,19 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/event-driven-scaling#runt
 - App Service プラン: App Service のプラン上で関数を実行。
 
 概要: https://docs.microsoft.com/ja-jp/azure/azure-functions/pricing
+
 詳しい比較: https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale
 
 主な違い:
-タイムアウト: 従量課金プランは最大10分、Premium プランとApp Serviceプランは無制限に設定可能
-最大インスタンス数: 従量課金プランは200、Premiumプランは100、App Serviceプランは10-20。
-自動スケール: 従量課金プランとPremiumプランは自動スケール。App Serviceプランは設定による。
-ネットワーク機能: 従量課金プランは「受信IP制限」のみ利用可能。PremiumプランとApp Serviceプランは「受信IP制限」に加えて「仮想ネットワーク統合」などが利用できる。
+- タイムアウト: 従量課金プランは最大10分、Premium プランとApp Serviceプランは無制限に設定可能
+- 最大インスタンス数: 従量課金プランは200、Premiumプランは100、App Serviceプランは10-20。
+- 自動スケール: 従量課金プランとPremiumプランは自動スケール。App Serviceプランは設定による。
+- ネットワーク機能: 従量課金プランは「受信IP制限」のみ利用可能。PremiumプランとApp Serviceプランは「受信IP制限」に加えて「仮想ネットワーク統合」などが利用できる。
 
 かんたんな選択例:
-すでにApp Serviceプランがあり、その上でAzure Functionsも実行したい場合: App Serviceプラン
-Azure Functionsを継続的に、高頻度で実行する場合: Premiumプラン
-その他の場合(高度なネットワーク機能が不要な場合): 従量課金プラン
+- すでにApp Serviceプランがあり、その上でAzure Functionsも実行したい場合: App Serviceプラン
+- Azure Functionsを継続的に、高頻度で実行する場合: Premiumプラン
+- その他の場合(高度なネットワーク機能が不要な場合): 従量課金プラン
 
 ■常にオン(Always On, 「常時接続」とも)
 
@@ -118,11 +128,13 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan#always-on
 ■ストレージアカウント
 
 Azure Functions では、Function App インスタンスを作成するときに Azure ストレージ アカウントが必要になります。
+
 アカウントが削除されると、関数アプリは実行されません。
 
 最適なパフォーマンスを得るには、関数アプリで同じリージョンのストレージ アカウントを使用する必要があります。
 
 複数の関数アプリで1つのストレージアカウントを共有してもよい。
+
 ただし、パフォーマンスを最大化するには、関数アプリごとに個別のストレージ アカウントを使用する。
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/storage-considerations
@@ -130,21 +142,27 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/storage-considerations
 ■トリガーとバインド
 
 関数では、トリガーとバインドを利用できる。
-トリガーは、関数が実行される原因。
-バインドは、関数に別のリソースを宣言的に接続する方法。
+
+- トリガーは、関数が実行される原因。
+- バインドは、関数に別のリソースを宣言的に接続する方法。
+
+参考資料: [トリガーとバインド](pdf/mod02/トリガー、バインド.pdf)
 
 トリガーとバインドにより、他のサービスへのアクセスのハードコーディングを避けることができる。
+
 （トリガーやバインドを使用できる場合は、他のサービスへの明示的な接続、読み書きをコーディングする必要がない）
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-triggers-bindings
+
+SDKを使用した、Azureのサービスへの明示的なアクセスの例: https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-quickstart-blobs-dotnet#download-blobs
 
 ■トリガー
 
 関数を起動するきっかけとなるもの。
 関数には、ただ1つのトリガーを含める必要がある。
 
-「BlobTrigger」では、Blobがアップロードされたら関数が起動する。
-「TimerTrigger」では、特定の時間間隔で関数が起動する。
+- 「BlobTrigger」では、Blobがアップロードされたら関数が起動する。
+- 「TimerTrigger」では、特定の時間間隔で関数が起動する。
 
 トリガーにはデータが関連付けられる。
 「BlobTrigger」では、Blobがアップロードされたら、Blobの入力ストリームにアクセスできる。
@@ -166,9 +184,9 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/supported-languages
 
 ■各言語でのトリガー・バインドの指定方法:
 
-C#: 属性で指定。
-Java: アノテーションで指定。
-C#スクリプト(～.csx), JavaScript等: function.json ファイルに指定
+- C#: 属性で指定。
+- Java: アノテーションで指定。
+- C#スクリプト(～.csx), JavaScript等: function.json ファイルに指定
 
 ■開発する場所について
 
@@ -224,6 +242,7 @@ Windowsの場合はMSIでインストール。
 
 ■Azure Functions Core Tools（funcコマンド）によるローカルでの関数開発
 
+```
 mkdir func1
 cd func1
 
@@ -233,11 +252,14 @@ func new
 	Function name: testfunc1
 func start
 	http://localhost:7071/api/testfunc1
-
+```
 ※再度、func new を実行すると、関数を追加できる。
 
 ■Visual Studio Codeによるコードの編集
+
+```
 code .
+```
 
 ■httpreplとは？
 Web APIのテストを行うためのコマンドラインツール。
@@ -245,17 +267,26 @@ Web APIのテストを行うためのコマンドラインツール。
 ※REPL: Read-Evaluate-Print Loop
 
 ■httpreplのインストール
+
+```
 dotnet tool install -g Microsoft.dotnet-httprepl
+```
 
 ■httpreplでGETを行う例
+
+```
 httprepl http://localhost:7071/api/testfunc1?name=taro
 get
 exit
+```
 
 ■httpreplでPOSTを行う例
+
+```
 httprepl http://localhost:7071/api/testfunc1
 post -c {"name":"taro"}
 exit
+```
 
 ■Visual Studio CodeのAzure Account拡張機能
 
@@ -263,28 +294,30 @@ Azure Account - a single Azure sign-in and subscription filtering experience for
 https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account
 
 F1 または Ctrl-Shift-P でコマンドパレットを起動
-
+```
 F1, Azure: Sign In
-
+```
 ■Visual Studio CodeのAzure Account拡張機能
 
 Azure Functions - quickly create, debug, manage, and deploy serverless apps directly from VS Code.
 https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions
-
+```
 F1, Azure Functions: Deploy to Function App...
-
+```
 ■ラボ2 
 
 ラボの手順書
 https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_02_lab_ak.html
-※冒頭の「仮想マシンへのログイン」はスキップします。
-※Microsoft Edge（ブラウザ）は、お好きなWebブラウザで代用できます。
-※Windows terminalは、コマンドプロンプト、Windows PowerShell、MacのTerminal等で代用できます。
+
+- ※冒頭の「仮想マシンへのログイン」はスキップします。
+- ※Microsoft Edge（ブラウザ）は、お好きなWebブラウザで代用できます。
+- ※Windows terminalは、コマンドプロンプト、Windows PowerShell、MacのTerminal等で代用できます。
 
 ラボのコードのダウンロード（緑色の「Code」ボタンをクリック、Download Zip）
 https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure
 ZIPを展開すると、AllFiles/Labs以下にファイルがあります。
 
+Azure Function Core Tools
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools
 
 .NET Core SDK 3.1
@@ -304,6 +337,3 @@ https://docs.microsoft.com/ja-jp/learn/paths/create-serverless-applications/
 
 サーバーレスコミュニティライブラリ: 多数のサンプルコード
 https://serverlesslibrary.net/
-
-
-
