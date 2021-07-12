@@ -76,7 +76,7 @@ East USを選択します。
 `httprepl : 用語 'httprepl' は、コマンドレット、関数、スクリプト ファイル、または操作可能なプログラムの名前として認識されません。名前が正しく記述されていることを確認し、パスが含まれている場合はそのパスが正しいことを確認してから、再試行し
 てください。` といったエラーが表示される場合は、https://docs.microsoft.com/en-us/aspnet/core/web-api/http-repl/?view=aspnetcore-5.0&tabs=windows#installation の手順に従って、httpreplをインストールしてください。
 
-Cloud Shellにhttpreplをインストールした場合は、`~/.dotnet/tools/httprepl` で起動できます。
+httpreplをインストールしても、コマンドが見つからなくてエラーになってしまう場合は、`~/.dotnet/tools/httprepl` で起動できます。
 
 # 演習3（エクササイズ3）
 
