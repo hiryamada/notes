@@ -17,6 +17,13 @@ https://docs.microsoft.com/ja-jp/azure/cosmos-db/
   - 無効: 1つのリージョンで読み書き可能、その他のリージョンで読み込み可能
   - 有効: すべてのリージョンで読み書き可能
 
+複数書き込みリージョンの有効化の設定
+https://docs.microsoft.com/ja-jp/azure/cosmos-db/how-to-manage-database-account#configure-multiple-write-regions
+
+新しいリージョンがアカウントに追加された場合、クライアント側では、アプリケーションの更新や再デプロイを行う必要はない。近接するリージョンが自動的に検出されるように設定することが可能。
+https://docs.microsoft.com/ja-jp/azure/cosmos-db/how-to-multi-master
+
+
 ■高可用性
 
 最大で99.999% のSLAを提供。
