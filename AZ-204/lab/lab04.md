@@ -1,10 +1,18 @@
-ラボ4は、
-[Visual Studio Code で Azure Cosmos DB 向けの .NET Core アプリを構築する](https://docs.microsoft.com/ja-jp/learn/modules/build-cosmos-db-app-with-vscode/)
-を実施してください。
+# ラボ4
 
-演習の3つ目（ユニット4）まで実施すればOKです。
-
-以下、演習の3つ目（ユニット4）まで実施した状態のコードです。
+- [山田サンプルコード](../sample/cosmosdb/)を実行してみましょう。
+  - コードを確認します
+  - Program.cs冒頭のコメントに沿って、.NET のプロジェクトを作ります
+  - プロジェクト内にProgram.csとMusic.csの2ファイルを作ります
+  - `dotnet run` で、プロジェクトを実行します
+  - `SetConnectionString` で、Cosmos DBの接続文字列をセットします
+  - `CreateDatabase` で、データベースを作成します
+  - `CreateContainer` で、コンテナーを作成します
+  - `CreateItem` で、項目を作成します
+  - `ListItems` で、すべての項目を取得します
+- (オプション)Microsoft Learn: [Visual Studio Code で Azure Cosmos DB 向けの .NET Core アプリを構築する](https://docs.microsoft.com/ja-jp/learn/modules/build-cosmos-db-app-with-vscode/)を実施してみましょう。
+  - 演習の3つ目（ユニット4）まで実施すればOKです。
+  - 以下、演習の3つ目（ユニット4）まで実施した状態のコードです。
 
 
 ```cs
@@ -285,7 +293,7 @@ namespace learning_module
 ```
 
 
-以下、本家のラボ4のかんたんな説明
+# (参考)本家のラボ4の概要説明
 
 ```
 フォルダ Starter
