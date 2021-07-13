@@ -330,6 +330,12 @@ https://code.visualstudio.com/download
 httprepl
 https://docs.microsoft.com/ja-jp/aspnet/core/web-api/http-repl/#installation
 
+■Durable Functions
+
+Durable: 永続性のある、恒久的な
+
+[参考資料](pdf/mod02/durable-function.pdf)
+
 ■学習に役立つリソース
 
 Microsoft Learn: サーバーレス アプリケーションの作成
