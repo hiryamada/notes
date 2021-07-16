@@ -190,6 +190,11 @@ https://docs.microsoft.com/ja-jp/azure/azure-monitor/faq#should-i-use-connection
 
 # 一時的なエラーへの対処
 
+
+https://docs.microsoft.com/ja-jp/azure/architecture/best-practices/retry-service-specific
+
+https://docs.microsoft.com/ja-jp/azure/architecture/best-practices/transient-faults
+
 # ラボ11
 
 
