@@ -531,9 +531,35 @@ https://docs.microsoft.com/ja-jp/graph/tutorials
 
 ※Megan Bowenの[Twitter](https://twitter.com/meganbowenm365), [LinkedIn](https://www.linkedin.com/in/megan-bowen-b511a7192/)
 
+
+■Azure Storageでのデータ操作の承認
+
+(1)Azure Active Directory統合
+
+- 認証(どうやってユーザーを確認をするか？): Azure ADのユーザーであること
+- 承認(何を許可するか？): ユーザーに割り当てた「Blobデータ閲覧者」などのRBACロールで許可されている操作が許可される
+- 対象サービス: Blob, Queue, Table
+
+(2)共有キー承認
+
+- 認証(どうやってユーザーを確認をするか？): ストレージアカウントのアクセスキーを持っていること
+- 承認(何を許可するか？): ストレージアカウントに対する全操作が許可される
+- 対象サービス: Blob, Files, Table, Queue
+
+(3)Shared Access Signature（共有アクセス署名）
+
+- 認証(どうやってユーザーを確認をするか？): SAS トークン/SAS URLを持っていること
+- 承認(何を許可するか？): SAS作成時に指定された操作が許可される
+- 対象サービス: Blob, Files(REST), Table, Queue
+
+(4)匿名パブリック読み取りアクセス
+
+- 認証(どうやってユーザーを確認をするか？): なし（匿名のため、認証が不要）
+- 承認(何を許可するか？): Blobの読み取り、または、Blobの読み取り＋コンテナーのBlobの一覧表示が許可される（Blobコンテナーの設定による）
+- 対象サービス: Blob
+
 ■ラボ6: アプリの登録、MSALによるトークンの取得、デバイスコードフロー認証の導入、Microsoft Graphの利用
 
 - ソースコードをまだダウンロードしていない場合は[こちらからダウンロード](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/archive/refs/heads/master.zip)します。
 - まず[参考資料](lab/lab06.md)を見て、概要を把握します
 - 次に[手順書](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_06_lab_ak.html)を見ながら演習を行います。
-

@@ -19,7 +19,7 @@ Service Bus:
 - [トピックとサブスクリプション](https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-quickstart-topics-subscriptions-portal)にて、**パブリッシュ/サブスクライブ** モデルをサポート。（参考：[Fanoutパターン](http://aws.clouddesignpattern.org/index.php/CDP:Fanout%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3)）
 - **メッセージの順序をFIFOで保証できる**
 - **キューのサイズは1～80GBの間で指定**
-- メッセージの最大サイズは1MB
+- メッセージの最大サイズは~~1MB~~ → [100MB](https://azure.microsoft.com/ja-jp/updates/public-preview-azure-service-bus-support-for-large-messages/)
 - 複数の通信プロトコル、データ コントラクト、信頼ドメイン、ネットワーク環境などにまたがるアプリケーションやアプリケーション コンポーネントの統合を目的としている
 - セッション、トランザクション、重複削除（自動重複検出）などの高度な機能をサポート
 - 複数のプロトコル(AMQP 1.0, JMS 1.0/2.0)をサポート

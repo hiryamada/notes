@@ -113,6 +113,54 @@ https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/
 - 機能フラグ
   - 「機能マネージャー」で設定
 
+■機能フラグの「機能フィルター」
+
+App Configuraiton の機能マネージャーで、機能フラグの設定の中に「機能フィルターを使用する」があります。
+ここにチェックをつけると、グループとユーザーを入力するテキストボックスが出現します。
+グループやユーザーに何かテキストを入力をすると新しいグループやユーザーの入力ボックスが出てきますので、ここでは複数のグループやユーザーを設定できます。
+
+たとえばグループaには50%, グループbは100%, ユーザーxには50%, ユーザーyには100% といったように、機能を有効化する確率を指定できます。
+（一度、ユーザーがサイトにアクセスして、有効/無効が決まったら、そのユーザーに対して、セッション中ではずっとその有効/無効状態が維持されます）
+
+ここで指定するグループ名やユーザー名は、Webアプリケーションのコード内で、何らかの方法で、各ユーザーから生成します。
+
+以下にサンプルがあります。
+
+https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/howto-targetingfilter-aspnet-core
+
+少し省略したものが下記となります。
+```
+    public class TestTargetingContextAccessor
+    {
+
+        public TargetingContext GetContextAsync()
+        {
+            List<string> groups = new List<string>();
+            groups.Add(ユーザーのメールアドレスの@より後ろの部分);
+            return new TargetingContext
+            {
+                UserId = ユーザーのメールアドレス,
+                Groups = groups
+            };
+        }
+    }
+```
+
+ここでは、たとえば user@example.com というユーザーがサインインしたとすると、
+```
+TargetContext { UserId = "user@example.com", Groups = [ "example.com" ] }
+```
+
+といったオブジェクトが返されるようになっています。
+これはあくまで実装例の一つであり、コード次第でいかようにでも、ユーザーIDとグループを決定できます。
+
+App Configurationは、この情報をもとに、ユーザー名とユーザーのグループを判別します。
+
+TargetingContextクラスのマニュアル
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.featuremanagement.featurefilters.targetingcontext?view=azure-dotnet-preview
+
+
+
 ■ハンズオン: Azure App Configurationの設定
 
 - 「App Configuration」を検索
