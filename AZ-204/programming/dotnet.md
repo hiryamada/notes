@@ -80,6 +80,10 @@ https://docs.microsoft.com/ja-jp/dotnet/standard/clr
 
 # デプロイ モデル
 
+解説:
+https://andrewlock.net/should-i-use-self-contained-or-framework-dependent-publishing-in-docker-images/
+
+
 https://docs.microsoft.com/ja-jp/dotnet/core/deploying/
 
 > .NET Core を使用して作成したアプリケーションは、2 つの異なるモードで発行できます。
@@ -97,6 +101,7 @@ framework-dependent
 > ご自分のアプリを "フレームワーク依存" として発行すると、ご自分のアプリケーション自体とその依存関係のみを含むアプリケーションが生成されます。
 > 
 > そのアプリケーションのユーザーは、.NET Core ランタイムを個別にインストールする必要があります。
+
 
 
 # 実行可能ファイル
