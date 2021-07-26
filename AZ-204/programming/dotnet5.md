@@ -92,3 +92,8 @@ https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-9
 https://forest.watch.impress.co.jp/docs/news/1288541.html
 
 > サポート期間は、次の「.NET 6.0」がリリースされて3カ月後、つまり2022年2月中旬までとなる。「.NET」は毎年11月ごろにリリースされ、偶数バージョンが3年間サポートされる長期サポート（LTS）版となる。「.NET 6.0」の初期ビルドはすでに存在し、Appleの新しいCPU“M1”にも対応するという。
+
+
+# PowerShell 7は.NET 5.0を使用
+
+https://docs.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell?view=powershell-7.1
