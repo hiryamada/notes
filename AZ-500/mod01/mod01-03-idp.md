@@ -2,8 +2,6 @@
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-mfa-howitworks
 
-# ラボ4a(演習1,2) MFA
-
 
 ■MFA(Multi-Factor Authentication)とは？
 - 2 つ目の認証を要求するしくみ
@@ -90,6 +88,10 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/overv
     
 - ユーザーがリソースにアクセスする場合、ユーザーはアクションを完了する必要があるという if-then ステートメント
 - 条件付きアクセス ポリシーを使用すると、必要な場合は適切なアクセス制御を適用して組織のセキュリティを維持し、必要でない場合はユーザーの邪魔にならないようにすることができます。
+
+# ラボ4a(演習1,2) MFA
+
+https://github.com/hiryamada/notes/blob/main/AZ-500/lab/lab04a-mfa.md
 
 # ラボ4b Identity Protection (演習3/4/5)
 
