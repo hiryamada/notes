@@ -28,6 +28,8 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-m
   - (a)も(b)を使わない場合に利用する。
   - 古いやり方。
 
+Azure AD＞管理＞セキュリティ＞MFA＞追加のクラウドベースMFA設定
+
 # mod1-3-1 Azure AD Identity Protection
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/overview-identity-protection

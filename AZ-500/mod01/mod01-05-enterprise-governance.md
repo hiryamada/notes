@@ -77,7 +77,8 @@ https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/overvie
 - 各スコープにポリシー(Azure Policy)を設定できる
 - サブスクリプション、リソースグループ、リソースに、リソースロックを設定できる
 
-[スコープ/ロール/ポリシー/ロックのまとめ](../../az-104/pdf/mod02/ロール・ポリシー全体像.pdf)
+[スコープ/ロール/ポリシー/ロックのまとめ](../../AZ-104/pdf/mod02/ロール・ポリシー全体像.pdf)
+
 
 ■リソースグループ
 
@@ -120,7 +121,8 @@ https://docs.microsoft.com/ja-jp/azure/role-based-access-control/overview
 
 注意: Azure ADのロールとは別のもの。
 
-[スコープ/ロール/ポリシー/ロックのまとめ](../../az-104/pdf/mod02/ロール・ポリシー全体像.pdf)
+[スコープ/ロール/ポリシー/ロックのまとめ](../../AZ-104/pdf/mod02/ロール・ポリシー全体像.pdf)
+
 
 ## Azure RBAC と Azure Policy の比較
 
