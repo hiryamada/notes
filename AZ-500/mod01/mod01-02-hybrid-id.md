@@ -90,9 +90,13 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-phs
 
 ※参考: ハッシュ値
 
+```
 パスワード
- ↓ [ハッシュ関数](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E9%96%A2%E6%95%B0)
+ ↓ ハッシュ関数
 ハッシュ値
+```
+
+ハッシュ値からパスワードを逆算することはできない.
 
 Azure側には、生パスワードではなく、ハッシュ値が保存される。
 
