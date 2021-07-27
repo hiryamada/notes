@@ -103,3 +103,19 @@ https://github.com/hiryamada/notes/blob/main/AZ-500/lab/lab04b-idp.md
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/governance/access-reviews-overview
 
+■アクセスレビューとは？
+
+ロールの割り当てなどを定期的に確認し、不要なロール割り当てを削除すること。
+
+■アクセスレビューの流れ
+
+https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review
+
+- Azure portalで「アクセスレビュー」を作成
+  - 実施日などを指定
+- 実施日になると、レビュー担当者にメールが送信される
+
+https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-how-to-perform-security-review
+
+- ロールの割り当てをレビューし、「承認」または「拒否」を選択する
+
