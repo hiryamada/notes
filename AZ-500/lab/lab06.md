@@ -1,6 +1,6 @@
 # ラボ6 Azure AD Connect
 
-想定時間: 120min
+想定時間: 60min
 
 （まだ準備していない場合は）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
 

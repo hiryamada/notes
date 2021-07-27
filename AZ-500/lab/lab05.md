@@ -1,6 +1,6 @@
 # ラボ5 Privileged Identity Management
 
-想定時間: 120min
+想定時間: 60min
 
 Azure AD Privileged Identity Managementの操作を体験します。
 

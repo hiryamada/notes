@@ -143,3 +143,10 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-c
 - ライセンス: P1(最初のエージェントに1ライセンス、追加のエージェントごとに25ライセンス)
 - 監視結果は、https://aka.ms/aadconnecthealth （Azure AD Connect Healthポータル）で確認できる
 
+
+# ラボ06  ディレクトリ同期の導入
+
+- 60min
+- Azure Passサブスクリプションを使用します
+- 手順書: https://microsoftlearning.github.io/AZ-500JA-AzureSecurityTechnologies/
+- 補足資料: https://github.com/hiryamada/notes/blob/main/AZ-500/lab/lab06.md
