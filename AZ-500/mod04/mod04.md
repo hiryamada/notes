@@ -6,7 +6,7 @@
 
 # Azure Security Center
 
-[まとめ資料](../pdf/mod4/Azure%20Sentinel%20まとめ.pdf)
+[まとめ資料](../pdf/mod4/Azure%20Security%20Center%20まとめ.pdf)
 
 # Azure Sentinel
 
