@@ -1,0 +1,1 @@
+https://azure.microsoft.com/ja-jp/updates/azure-bastion-now-available-for-preview/
