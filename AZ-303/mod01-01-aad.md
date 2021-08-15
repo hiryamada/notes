@@ -2,8 +2,23 @@
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis
 
-- クラウドベースの ID およびアクセス管理サービス
-- 多数のアプリケーションにシングルサインオンできる
+- クラウドベースの「ID およびアクセス管理」サービス
+  - 従来オンプレミスで使われてきた「[Active Directory Domain Services(AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)」とは別のもの。
+  - Azure AD: クラウドベース、インストール作業は不要
+  - AD DS: オンプレミス、Windows Serverへのインストール作業が必要
+  - AD DSからAzure ADへのIDの「同期」を行うことは可能。
+    - Azure AD Connectを使用（後述）
+- Microsoft Azure、Microsoft 365、Microsoft Dynamics 365などのID管理に利用される
+  - これらのサービスを使用する場合、必然的に「Azure AD」を使うことになる
+  - 基本的に1つの組織（会社）で1つの「Azure ADテナント」を作る
+  - Azure, M365, D365のサブスクリプションと関連付けて利用する
+  - ```
+    Azure ADテナント ... 組織（会社）のユーザーID（社員）を管理
+    ├ Microsoft Azure サブスクリプション
+    ├ Microsoft 365 サブスクリプション
+    └ Microsoft Dynamics 365 サブスクリプション
+    ```
+- 数千のアプリケーションにシングルサインオンできる
   - 一度Azure ADにサインインすると、多数のアプリケーションにサインインなしでアクセスできる
   - ユーザーは、それぞれのアプリケーション用のユーザーIDやパスワードを管理する必要がなくなる
   - 管理者は、組織のユーザーIDを集中管理できる
@@ -17,12 +32,19 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
   - Box
   - など、数千のアプリ
     - [Azure Marketplace内のActive Directory Marketplace](https://azuremarketplace.microsoft.com/ja/marketplace/apps/category/azure-active-directory-apps)で検索可能
-    - 多数の[チュートリアル](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/tutorial-list)（構成手順）も利用可能
+    - 実際にアプリをAzure ADに登録する際に利用できる多数の[チュートリアル](https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/tutorial-list)（構成手順）が提供されている
 - さまざまなデバイスで動作
   - Windows
   - macOS
   - iOS
   - Android
+  - ```
+    Azure AD テナント
+          ↑   ↑
+    Windows   iPhone
+          ↑   ↑
+         ユーザー
+    ```
 - ユーザーは、[「マイアプリ」ポータルを使用](https://docs.microsoft.com/ja-jp/azure/active-directory/user-help/my-apps-portal-end-user-access)して、組織のアプリケーションにアクセスできる
   - https://myapplications.microsoft.com/
   - （以前は https://myapps.microsoft.com/ というURLで、「アクセスパネル」とも呼ばれていた）
