@@ -1,4 +1,3 @@
-Azure Storage
 
 # Azure Storage
 
@@ -59,6 +58,13 @@ Microsoft Learn: [リージョン間でストレージ データをレプリケ�
   - ストレージ料金: ホット ＞ クール ＞ アーカイブ
   - 読み取り操作料金: ホット ＝ クール ＜ アーカイブ
   - データ取得料金: ホット ＜ クール ＜ アーカイブ
+- ホットとクールに設定されたBlobには、リアルタイムのアクセスが可能
+- アーカイブに設定されたBlobには、リアルタイムアクセスが不可能
+  - アクセスする前に[「リハイドレート」を実行する](https://docs.microsoft.com/ja-jp/azure/storage/blobs/archive-rehydrate-overview)必要がある
+  - リハイドレートには時間がかかる
+    - 通常: 1～15時間 
+    - 優先度高: 1時間未満
+  - ※rehydrate: 水分補給をする、水を与えてもとに戻す
 - [ライフサイクル管理ポリシーを設定](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal)することで、ホット、クール、アーカイブの変更を自動化することができる。
 - ストレージアカウントの設定で、アクセス層を明示的に指定しないBlobに対するデフォルト値を「ホット」または「クール」に設定できる。
   - Azure portal上では「ホット（推定）」や「クール（推定）」のように表示される。
