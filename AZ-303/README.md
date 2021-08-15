@@ -16,7 +16,7 @@
 - [Module 4 Windows および Linux 用 VM の実装](mod04.md)
 - [Module 5 負荷分散とネットワーク セキュリティの実装](mod05.md)
   - ラボ 5: Load Balancer, Application Gateway, VM Scale Set
-- Module 6 ストレージ アカウントの実装
+- [Module 6 ストレージ アカウントの実装](mod06.md)
   - ラボ 6: Azure Files, Azure Blob Storage
 - Module 7 NoSQL データベースの実装
 - Module 8 Azure SQL Database の実装
