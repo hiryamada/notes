@@ -21,6 +21,9 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
     ├ 365 サブスクリプション
     └ Dynamics 365 サブスクリプション
     ```
+  - Windows 365 でもAzure ADが利用される
+    - [Azure ADテナントとAzureサブスクリプション](https://docs.microsoft.com/ja-jp/windows-365/requirements)
+    - ユーザーへの[Windows 365ライセンス](https://docs.microsoft.com/ja-jp/windows-365/assign-licenses)の割り当て
 - (Microsoftのサービスだけではなく) 数千のアプリケーションにもシングルサインオンができる
   - 一度Azure ADにサインインすると、多数のアプリケーションにサインインなしでアクセスできる
     - シングルサインオン（SSO）
@@ -56,6 +59,13 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
     - [参考](https://azuread.net/archives/9380)
 - オンプレミスのWebアプリケーションにアクセスすることも可能
   - [Azure ADアプリケーション プロキシ](https://docs.microsoft.com/ja-jp/azure/active-directory/app-proxy/what-is-application-proxy)
+
+# Azure ADのエディション
+
+https://www.microsoft.com/ja-jp/security/business/identity-access-management/azure-ad-pricing
+
+- Free
+- Microsoft 365
 
 # Azure ADの概念
 
@@ -151,7 +161,7 @@ Azure ADデバイスID管理を利用するにはAzure AD Premium P1ライセン
 
 ■さらに詳しく
 
-3つのユースケースの詳細については以下資料を参照:
+登録・参加・ハイブリッド参加の違い、ユースケースの詳細については以下資料を参照:
 - https://jpazureid.github.io/blog/azure-active-directory/azure-ad-join-vs-azure-ad-device-registration/
 - https://www.slideshare.net/yamarara/azure-active-directory-151286832
 
