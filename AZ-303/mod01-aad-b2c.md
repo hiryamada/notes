@@ -1,4 +1,4 @@
-Azure Active Directory B2C (Azure AD B2C)
+# Azure Active Directory B2C (Azure AD B2C)
 
 ※B2C = business-to-customer
 

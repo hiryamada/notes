@@ -1,21 +1,37 @@
 
 # ユーザー
 
+テナントの中に作成されるユーザーの種類
+
 - クラウドID
+  - Azure ADテナントに直接[登録](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/add-users-azure-active-directory?context=/azure/active-directory/enterprise-users/context/ugr-context)されたユーザー
 - ディレクトリ同期ID
+  - オンプレミスのAD DSに登録され、Azure AD Connectで同期されたユーザー
 - ゲストユーザー
+  - テナント外で管理され、テナントに[招待](https://docs.microsoft.com/ja-jp/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)されたユーザー。
+
 
 # グループ
 
+https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal?context=/azure/active-directory/enterprise-users/context/ugr-context#group-types
+
+テナントの中に作成されるグループの種類。
+
 - セキュリティグループ
-- Office 365グループ
+- [Office 365グループ](https://docs.microsoft.com/ja-jp/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 
 ■グループへのメンバーの追加
 
+https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal?context=/azure/active-directory/enterprise-users/context/ugr-context#membership-types
+
 - 割り当て済み
+  - グループに直接割り当てされたユーザー
 - 動的ユーザー
+  - 「[動的メンバーシップ ルール](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/groups-create-rule)」を使用してグループに自動的に追加されたユーザー。
+  - セキュリティ グループまたは Microsoft 365 グループに対して、動的メンバーシップがサポートされる
 - 動的デバイス
+  - 「動的なグループ ルール」を使用して、グループに自動的に登録されたデバイス。
 
 # サービス プリンシパル
 

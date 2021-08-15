@@ -1,4 +1,4 @@
-AZ-303: Microsoft Azure Architect **Technologies**
+# AZ-303: Microsoft Azure Architect **Technologies**
 
 5日間
 
@@ -10,12 +10,11 @@ AZ-303: Microsoft Azure Architect **Technologies**
 
 モジュール: 
 
-- Module 0 ようこそ
 - [Module 1 Azure Active Directory の実装](mod01.md)
 - [Module 2 ハイブリッド ID の実装と管理](mod02.md)
 - [Module 3 仮想ネットワークの実装](mod03.md)
 - [Module 4 Windows および Linux 用 VM の実装](mod04.md)
-- Module 5 負荷分散とネットワーク セキュリティの実装
+- [Module 5 負荷分散とネットワーク セキュリティの実装](mod05.md)
   - ラボ 5: Load Balancer, Application Gateway, VM Scale Set
 - Module 6 ストレージ アカウントの実装
   - ラボ 6: Azure Files, Azure Blob Storage

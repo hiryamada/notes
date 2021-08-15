@@ -21,7 +21,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
     ├ 365 サブスクリプション
     └ Dynamics 365 サブスクリプション
     ```
-  - Windows 365 でもAzure ADが利用される
+  - Windows 365（クラウドPC）でもAzure ADが利用される
     - [Azure ADテナントとAzureサブスクリプション](https://docs.microsoft.com/ja-jp/windows-365/requirements)
     - ユーザーへの[Windows 365ライセンス](https://docs.microsoft.com/ja-jp/windows-365/assign-licenses)の割り当て
 - (Microsoftのサービスだけではなく) 数千のアプリケーションにもシングルサインオンができる
@@ -60,12 +60,49 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
 - オンプレミスのWebアプリケーションにアクセスすることも可能
   - [Azure ADアプリケーション プロキシ](https://docs.microsoft.com/ja-jp/azure/active-directory/app-proxy/what-is-application-proxy)
 
-# Azure ADのエディション
+# Azure ADのエディション（ライセンスの種類）
 
 https://www.microsoft.com/ja-jp/security/business/identity-access-management/azure-ad-pricing
 
-- Free
-- Microsoft 365
+■エディション
+
+- Free: 無料
+- Office 365: ※Office 365ユーザーが利用可能
+- Premium P1: ￥650 ユーザー/月（税抜）
+- Premium P2: ￥980 ユーザー/月（税抜）
+
+■概要
+
+- Free ⊂ Office 365 ⊂ Premium P1 ⊂ Premium P2。
+- テナントでP1/P2を購入し、ユーザーに割り当てる。
+- 組織の全ユーザーに同じライセンスを割り当てる必要はない。
+- P2を割り当てたユーザーではP1の機能も利用できる。
+- P1とP2をまとめて「Azure ADプレミアムライセンス」と呼ぶ場合がある。プレミアムライセンスを必要とする機能は、P1またはP2があれば利用できる。
+- Office 365（Microsoft 365）のユーザーは、Azure AD Freeの機能に加えて、Azuer ADの「Office 365」の機能を利用することができる。
+- [Microsoft 365 Business（2020/4/1に「Microsoft 365 Business Premium」に名称変更）では、Premium P1のフル機能が含まれる。](https://blogs.windows.com/japan/2020/04/08/azure-active-directory-premium-p1-is-coming-to-microsoft-365/)
+
+# Azure AD 機能とライセンス
+
+高度な機能を利用するにはP1/P2が必要となる。
+
+- Azure AD Connect: [無料](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#license-requirements-for-using-azure-ad-connect)
+- Azure AD Connect Health: [P1](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#license-requirements-for-using-azure-ad-connect-health)
+- 動的グループ: [P1](https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/groups-create-rule)
+  - 動的グループのメンバーであるユーザーごとに P1 ライセンスが必要
+  - ユーザーを動的グループのメンバーにするために、そのユーザーにライセンスを割り当てる必要はない
+  - 必要なP1ライセンス数がテナントに含まれる必要がある
+  - 動的なデバイス グループのライセンスは不要
+- パスワードの変更/リセット/オンプレミスへのライトバック: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-licensing#compare-editions-and-features)
+  - オンプレミスへのライトバック: P2
+- Azure AD MFA: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-mfa-licensing)
+- デバイスID: [P1](https://docs.microsoft.com/ja-jp/azure/active-directory/devices/overview#license-requirements)
+- Azure AD 条件付きアクセス: [P1](https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/overview#license-requirements)
+- Azure AD Privileged Identity Management: [P2](https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-configure#license-requirements)
+- Azure AD Identity Protection: [P2](https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/overview-identity-protection#license-requirements)
+- Azure AD DS: [価格](https://azure.microsoft.com/ja-jp/pricing/details/active-directory-ds/) ※ライセンスは不要
+- セキュリティ レポート: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/overview-reports#what-azure-ad-license-do-you-need-to-access-a-security-report)
+- レポートと監視: [Azure AD プレミアム ライセンス(P1/P2)](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/overview-monitoring#licensing-and-prerequisites-for-azure-ad-reporting-and-monitoring)
+- Azure AD アクティビティレポート等のデータ保存期間: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 # Azure ADの概念
 
