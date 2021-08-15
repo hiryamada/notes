@@ -79,10 +79,9 @@ https://azure.microsoft.com/ja-jp/products/azure-stack/edge/
 - Azure Stack Edge Mini シリーズ
   - Mini R
 
+※「R」: ラグド Rugged：過酷な環境。砂漠や雪山、工場、建設現場など。野外調査、災害支援、軍事用。「ラグド ソリューション」、「ラグド 端末」などの言葉がある。
 
-※「R」: ラグド Rugged：過酷な環境。砂漠や雪山、工場、建設現場など。野外調査、災害支援、軍事用。 
-
-※ruggedized: 耐久性のある（耐久性を高めた）コンピュータやケース等。ラグド ソリューション、ラグド データセンターなどの言葉がある。
+※ruggedized: 「耐久性のある」。（耐衝撃、防水、防塵性能を持った）コンピュータやケース等。
 
 # AzCopy
 
