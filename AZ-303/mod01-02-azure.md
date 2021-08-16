@@ -11,6 +11,8 @@ https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/manage-
 - 複数のリソースに対するロールやポリシーの設定をまとめることができる
 - 入れ子にすることはできない
 
+PDFまとめ: [ロール・ポリシー](../AZ-104/pdf/mod02/ロール・ポリシー全体像.pdf)
+
 # 管理グループ
 
 ※注意: Azure ADの機能ではない

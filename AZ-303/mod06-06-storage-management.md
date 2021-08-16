@@ -1,14 +1,20 @@
+ストレージの管理（さまざまなデータ転送ソリューション）
+
 # Azure Import/Export
 
 https://docs.microsoft.com/ja-jp/azure/import-export/storage-import-export-service
 
 2016/8/24 GA https://devblogs.microsoft.com/azuregov/azure-import-export-service-generally-available-in-azure-government/
 
-- 大量のデータをインポートまたはエクスポートするサービス
+- 大量のデータ(40TBまで)をインポートまたはエクスポートするサービス
   - Azure Blob Storage と Azure Files にデータをインポート
   - Azure Blob Storageからデータをエクスポート
-- お客様が所有するディスク ドライブを使用
+- お客様が所有するディスク ドライブを使用(1回で10台まで)
+  - ※Microsoft提供のディスクを使用する場合はAzure Data Box の Diskを使用（後述）
 - ディスク ドライブを Azure データセンターに送付
+
+サポートされるディスクの種類:
+https://docs.microsoft.com/ja-jp/azure/import-export/storage-import-export-requirements#supported-hardware
 
 # Azure Data Box
 
@@ -23,9 +29,30 @@ https://azure.microsoft.com/ja-jp/services/databox/
 
 ラインナップ:
 
-- Data Box Disk - 8TB
-- Data Box - 100 TB
-- Data Box Heavy - 1 PB
+- Azure Data Box Disk
+  - メディア1台あたり: 8TBの容量
+  - 1回の注文で 1台～5台 利用可能
+  - 実際に転送可能な容量: 35TB
+  - インターフェイス: USB 3.1 / SATA
+- Azure Data Box
+  - 100 TBの容量:
+  - 1回の注文で 1台 利用可能
+  - 実際に転送可能な容量: 80TB
+  - インターフェイス: 1x1/10 Gbps RJ45、2x10 Gbps SFP+ 
+- Azure Data Box Heavy
+  - メディア1台あたり 1 PB
+  - 1回の注文で 1台 利用可能
+  - 実際に転送可能な容量: 800TB
+  - インターフェイス: 4x1 Gbps、4x40 Gbps
+
+Microsoft Learn: [Azure Data Box ファミリを使用して大量のデータをクラウドに移動する](https://docs.microsoft.com/ja-jp/learn/modules/move-data-with-azure-data-box/)
+
+https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/14
+https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/18
+https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/22
+
+
+
 
 # Azure Data Box Gateway
 
@@ -83,23 +110,62 @@ https://azure.microsoft.com/ja-jp/products/azure-stack/edge/
 
 ※ruggedized: 「耐久性のある」。（耐衝撃、防水、防塵性能を持った）コンピュータやケース等。
 
+
+[Azure Stack Edge(旧: Azure Data Box Edge)と Azure Data Box Gatewayの使い分け](https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/47)
+
+- Azure Stack Edge(旧: Azure Data Box Edge)
+  - ネットワークアプライアンス（ハードウェア）
+  - エッジコンピューティング機能あり
+    - データ変換、フィルタリングなどの前処理
+    - エッジでのマシンラーニングの実行
+- Azure Data Box Gateway
+  - 仮想マシン
+  - エッジコンピューティング機能なし
+    - データ転送のみ可能
+
 # AzCopy
 
 https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10
+
+- Windows, macOS, Linuxに対応したコマンドラインツール
+- Blob/Filesのデータ操作に特化
+  - アップロード, ダウンロード
+  - ストレージアカウント間でのコピー
+  - 同期
+  - Amazon S3, Google Cloud Storageとのデータ転送
 
 # Azure Storage Explorer
 
 https://azure.microsoft.com/ja-jp/features/storage-explorer/
 
-# Azure CLI
+- スタンドアロンのクライアントアプリケーション
+- Windows, macOS, Linuxに対応
+- ストレージアカウントに接続
+- Blob, Files, Table, Queueを操作
 
-https://docs.microsoft.com/ja-jp/cli/azure/storage/blob?view=azure-cli-latest
+# Azure CLIとAzure PowerShell
 
-# Azure PowerShell
+Azure CLI: https://docs.microsoft.com/ja-jp/cli/azure/storage/blob
 
-https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-quickstart-blobs-powershell
+Azure PowerShell: https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-quickstart-blobs-powershell
+
+- コマンドを使って、ストレージアカウントを操作
+- Blobデータの操作なども可能
+
+# blobfuse
+
+https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-how-to-mount-container-linux
+
+Blob StorageをLinuxボリュームとしてマウントできる仮想ファイルシステムドライバー。
+
+# Cyberduck
+
+https://cyberduck.io/
+
+- オープンソースソフトウェア
+- Windos, macOSに対応したGUIクライアント
+- Azure Blob Storageのほか、FTP/SFTP, S3, Google Drive, DropBox, OneDriveなどに接続できる
 
 # データ転送のソリューションの選択
 
 https://docs.microsoft.com/ja-jp/azure/storage/common/storage-choose-data-transfer-solution
-

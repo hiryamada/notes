@@ -106,6 +106,8 @@ https://www.microsoft.com/ja-jp/security/business/identity-access-management/azu
 
 # Azure ADの概念
 
+[まとめPDF](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod01/%E3%83%86%E3%83%8A%E3%83%B3%E3%83%88.pdf)
+
 基本的な用語。
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis#terminology
