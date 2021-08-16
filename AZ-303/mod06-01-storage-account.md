@@ -15,19 +15,25 @@
   - VMやオンプレミスコンピュータから「ファイル共有」をマウントしてファイルを読み書き
 - [Azure Table Storage](https://docs.microsoft.com/ja-jp/azure/storage/tables/table-storage-overview)
   - NoSQLデータストア
+  - テーブルに「エンティティ」を書き込む
+  - エンティティは複数の「プロパティ」から構成される
+  - [Cosmos DB](https://docs.microsoft.com/ja-jp/azure/cosmos-db/introduction)ではTable Storage互換の[Table API](https://docs.microsoft.com/ja-jp/azure/cosmos-db/table/introduction)が利用できる
 - [Azure Queue Storage](https://docs.microsoft.com/ja-jp/azure/storage/queues/storage-queues-introduction)
-  - キューストレージ
-  - メッセージをキューイング、送受信
+  - メッセージをキューイングするサービス
+  - 1メッセージは64KBまで
 
 ■パフォーマンス レベル
 
+https://docs.microsoft.com/ja-jp/azure/storage/common/storage-account-overview#types-of-storage-accounts
+
 - Standard
   - HDDでデータを格納
+  - すべてのサービス(Blob, Files, Table, Queue)をサポート
 - Premium
   - SSDでデータを格納
   - 低い待機時間
   - 高いトランザクションレートをサポート
-  - Files, ブロックBlob, 追加Blobをサポート
+  - Blob(ページBlob、ブロックBlob、追加Blob), Filesをサポート
 
 Premium 登場時のブログ: 
 - Block Blob / 追加Blob(2019/3/25): https://azure.microsoft.com/ja-jp/blog/azure-premium-block-blob-storage-is-now-generally-available/
@@ -38,14 +44,34 @@ https://azure.microsoft.com/en-us/blog/premium-block-blob-storage-a-new-level-of
 
 ■レプリケーション オプション
 
-- LRS: 1つのデータセンター内で3重にデータをレプリケーション
-- ZRS: 3つの可用性ゾーンでデータをレプリケーション
-- GRS: ペアのリージョン間でデータをレプリケーション
-- GZRS: GRS + ZRS
-- RA-GRS: セカンダリリージョンで読み取りが可能なGRS
-- RA-GZRS: セカンダリリージョンで読み取りが可能なGZRS
+- LRS: 1つのデータセンター内でデータをレプリケーション(3重)
+- ZRS: 3つの可用性ゾーンでデータをレプリケーション(3重)
+- GRS: ペアのリージョン間でデータをレプリケーション(6重)
+- GZRS: ZRS + GRS(6重)
+- RA-GRS: プライマリリージョンで読み書き、セカンダリリージョンで読み取りが可能なGRS
+- RA-GZRS: プライマリリージョンで読み書き、セカンダリリージョンで読み取りが可能なGZRS
+
+※RA: Read Access
 
 [解説PDF](../AZ-104/pdf/mod07/ストレージ冗長化.pdf)
+
+■エンドポイント
+
+- プライマリエンドポイント
+  - プライマリリージョンへのアクセス用
+  - 読み書き可能
+- セカンダリエンドポイント
+  - セカンダリリージョンへのアクセス用
+  - RA-GRS, RA-GZRSを選択した場合に利用可能
+  - 読み込みのみ
+
+■フェイルオーバー
+
+セカンダリリージョンにデータをレプリケーションするオプション（GRS, GZRS, RA-GRS, RA-GZRS）のストレージアカウントで、フェイルオーバーを実行できる。
+
+- セカンダリリージョンが新たなプライマリリージョンとなる
+- レプリケーションオプションはLRSになる
+- プライマリエンドポイントは変化しない
 
 Microsoft Learn: [リージョン間でストレージ データをレプリケートし、セカンダリ ロケーションにフェールオーバーすることで、ディザスター リカバリーを実現する](https://docs.microsoft.com/ja-jp/learn/modules/provide-disaster-recovery-replicate-storage-data/)
 
