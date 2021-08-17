@@ -6,3 +6,7 @@ https://docs.microsoft.com/ja-jp/azure/load-balancer/
 
 - パブリック ロード バランサー
 - 内部 ロード バランサー
+
+■Azure Load Balancerの内部コンポーネント
+
+[まとめPDF](../AZ-104/pdf/mod06/ロードバランサー.pdf)
