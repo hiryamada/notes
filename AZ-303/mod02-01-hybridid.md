@@ -101,9 +101,9 @@ https://www.ntt.com/business/services/application/authentication/idf/pingfederat
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-hybrid-identity
 
-- Azure 側にパスワードハッシュ値を保存してもよい場合は、**パスワードハッシュ同期(PHS)**を使用。
+- Azure 側にパスワードハッシュ値を保存してもよい場合は、**パスワードハッシュ同期(PHS)** を使用。
 - Azure 側にパスワードハッシュ値を保存したくない場合は、**パススルー認証(PTA)** または **フェデレーション統合** を使用
-  - オンプレミスの AD DS のセキュリティとパスワード ポリシーを適用する必要がある場合は、**パススルー認証**を使用
+  - オンプレミスの AD DS のセキュリティとパスワード ポリシーを適用する必要がある場合は、**パススルー認証** を使用
   - オンプレミスに Active Directory Federation Service (AD FS) がデプロイされていて、引き続きそれを使用したい場合、オンプレのサードパーティMFAソリューションを使う場合、スマートカード認証をサポートするなどは、**フェデレーション統合** を使用。
 
 ■認証方式1: パスワードハッシュ同期 (Password hash synchronization, PHS)
