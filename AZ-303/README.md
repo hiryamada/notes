@@ -18,9 +18,9 @@
   - ラボ 5: Load Balancer, Application Gateway, VM Scale Set
 - [Module 6 ストレージ アカウントの実装](mod06.md)
   - ラボ 6: Azure Files, Azure Blob Storage
-- Module 7 NoSQL データベースの実装
-- Module 8 Azure SQL Database の実装
-- Module 9 リソースのデプロイと構成の自動化
+- [Module 7 NoSQL データベースの実装](mod07.md)
+- [Module 8 Azure SQL Database の実装](mod08.md)
+- [Module 9 リソースのデプロイと構成の自動化](mod09.md)
 - Module 10 Azure のガバナンス ソリューションの実装と管理
   - ラボ 10: RBACロール
 - Module 11 アプリケーションのセキュリティの管理
