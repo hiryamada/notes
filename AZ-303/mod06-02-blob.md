@@ -38,8 +38,6 @@ https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-pageblob-overv
   - 頻繁なランダムの読み取り/書き込み操作のために設計
   - ホット アクセス層のみ
 
-■静的Webサイトのホスティング
-
 ■ログの記録
 
 (1)Azure Storage Analytics ログ
