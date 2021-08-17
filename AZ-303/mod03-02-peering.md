@@ -31,6 +31,19 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-o
   - https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-faq#what-are-the-constraints-related-to-global-vnet-peering-and-load-balancers
 - この制限を回避するためには、2つのVNetを、ピアリングではなく、VPNで接続する。
 
+```
+VNet1 東日本
+
+↓ ピアリング
+
+VNet2 西日本
+
+フロントエンドIP
+Basic LB
+|   | 
+VM  VM ... 東日本からフロントエンドIP経由ではつながらない
+```
+
 # ピアリングリンク
 
 2つのVNet (たとえばVNet1とVNet2) を接続するピアリングは、2つの「リンク」で構成される。
