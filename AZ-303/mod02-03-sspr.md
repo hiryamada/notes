@@ -16,6 +16,7 @@ Azure ADの一般ユーザーがパスワードを忘れてしまった場合、
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-howitworks
 
+[設定手順例PDF](pdf/mod02/SSPR.pdf)
 
 # 一般ユーザーのSSPR
 

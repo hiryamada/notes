@@ -2,19 +2,50 @@
 
 VNetをオンプレミスにプライベート接続したり、パソコン等からVNetにVPN接続したりする場合に使用するリソース。
 
+Site-to-Site(S2S)接続 (オンプレミスとの接続は「クロスプレミス接続」とも呼ばれる)
+```
+VNet
+└GatewaySubnet
+ └仮想ネットワークゲートウェイ（VPNゲートウェイ）
+  |VPN接続(IPsecトンネル)
+オンプレミス
+```
+
+Point-to-Site(P2S)接続
+```
+VNet
+└GatewaySubnet
+ └仮想ネットワークゲートウェイ（VPNゲートウェイ）
+  |VPN接続(OpenVPN/SSTP等)
+クライアントPC
+```
+
 ■仮想ネットワークゲートウェイの種類
 
 https://docs.microsoft.com/ja-jp/azure/expressroute/expressroute-about-virtual-network-gateways#gateway-types
 
 2種類の仮想ネットワークゲートウェイがある。
 
-仮想ネットワークゲートウェイ作成時に以下のタイプを指定する。
+- VPNゲートウェイ
+- ExpressRouteゲートウェイ
+
+仮想ネットワークゲートウェイ作成時に以下の[タイプ](https://docs.microsoft.com/ja-jp/azure/expressroute/expressroute-about-virtual-network-gateways#gateway-types)を指定する。
 
 - Vpn
 - ExpressRoute
 
 1つのVNetに、これらのゲートウェイを共存させることができる。
 https://docs.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways#can-i-deploy-both-vpn-and-express-route-gateways-in-same-virtual-network
+
+■ExpressRoute接続について
+
+https://docs.microsoft.com/ja-jp/azure/expressroute/expressroute-introduction
+
+Azureの専用線接続。
+
+接続プロバイダーが提供するプライベート接続を介して、オンプレミスのネットワークをMicrosoftクラウドに接続する。
+
+[まとめPDF](../AZ-500/pdf/mod2/ExpressRouteまとめ.pdf)
 
 ■ゲートウェイサブネット
 
@@ -173,7 +204,7 @@ https://azure.microsoft.com/en-us/blog/azure-networking-announcements-for-ignite
 
 有効にした場合は2番目のパブリックIPアドレスを作成して割り当てる。
 
-アクティブ/アクティブ セットアップのコストは、アクティブ/パッシブの場合と同じ。
+アクティブ/アクティブ セットアップのコストは、アクティブ/パッシブの場合と同じ。[追加のコストはかからない](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-vpn-faq#is-there-an-additional-cost-for-setting-up-a-vpn-gateway-as-active-active)。
 
 ■コスト
 

@@ -34,13 +34,26 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-ss
 - パスワードハッシュ同期(PHS) または パススルー同期(PTA)と組み合わせて利用できる
 - フェデレーション統合には適用できない
   - フェデレーション統合ではAD FSサーバーによるSSOを利用できる
-- Azure AD Connectインストール中に、「Enable Single Sign On」にチェックを入れて有効化する。
+- Azure AD Connectインストール中に、「Enable Single Sign On」（シングル サインオンを有効にする）にチェックを入れて有効化する。
+- Active Directory のグループ ポリシーを利用して、対象ユーザーを選択する
 
 SSO（sSSO）の利用パターン:
 
 - PHS + sSSO
 - PTA + sSSO
 - フェデレーション + AD FSのSSO
+
+具体的な設定方法:
+https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-sso-quick-start
+
+■Azure AD Connectのステージングモード
+
+https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-sync-staging-server
+
+- インストール時、サーバーを ステージング モード に設定することを選択できる
+- 新しい構成をテストする際や、高可用性の構成を取る（バックアップのAzure AD Conenctサーバーをステージングモードで動作させておき、メインのAzure AD Connectサーバーの障害発生時にバックアップに切り替える）場合などに利用できる
+- 「インポート」（ADDSとAzure ADからAzure AD Connectサーバーへの情報の取り込み）と「同期」（Azure AD Connectサーバー内での、取り込んだ情報の統合）は行うが「エクスポート」（統合した情報のAzure ADへの反映）は行わない
+  - ※[インポート・同期・エクスポートのわかりやすい解説](https://tech-lab.sios.jp/archives/20631#AADC3)
 
 ■Azure AD Connect Health
 
