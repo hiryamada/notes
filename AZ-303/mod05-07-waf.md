@@ -16,15 +16,15 @@ https://docs.microsoft.com/ja-jp/azure/web-application-firewall/overview
 
 https://docs.microsoft.com/ja-jp/azure/web-application-firewall/ag/ag-overview
 
-- SQLインジェクション攻撃
-- クロスサイトスクリプティング攻撃
-- コマンドインジェクション
-- HTTP 要求スマグリング
-- HTTP レスポンス スプリッティング
-- リモート ファイル インクルード
+- [SQLインジェクション攻撃](https://www.kagoya.jp/howto/network/sql-injection/)
+- [クロスサイトスクリプティング攻撃](https://www.kagoya.jp/howto/network/xss/)
+- [コマンドインジェクション](https://www.shadan-kun.com/blog/measure/2873/)
+- [HTTP 要求スマグリング(Smuggling)](https://yamory.io/blog/about-http-request-smuggling/)
+- [HTTP レスポンス スプリッティング](https://www.techmatrix.co.jp/product/jtest/security/httpresponsesplitting.html)
+- [リモート ファイル インクルード](https://www.shadan-kun.com/blog/measure/2582/)
 - など
 
-OWASP (Open Web Application Security Project) の[コア ルール セット (CRS)](https://docs.microsoft.com/ja-jp/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules?tabs=owasp31#core-rule-sets)に準拠。
+OWASP (Open Web Application Security Project) の[コア ルール セット (CRS)](https://docs.microsoft.com/ja-jp/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules?tabs=owasp31#core-rule-sets)に基づいて定義されている規則が使用される。
 
 ※OWASP
 
