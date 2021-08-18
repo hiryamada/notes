@@ -72,6 +72,8 @@ outputsは、テンプレートのデプロイからの出力を定義する。�
 }
 ```
 
+※[JSON自体の仕様としてはコメントは許容されない](https://www.google.com/search?q=JSON+%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88+%E4%BB%95%E6%A7%98)が、[ARMテンプレート内にはコメントを含めることができる](https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/templates/syntax#comments-and-metadata)。
+
 ■テンプレートの作成方法
 
 - Azure portal

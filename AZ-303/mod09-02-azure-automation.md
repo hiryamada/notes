@@ -5,6 +5,8 @@ https://docs.microsoft.com/ja-jp/azure/automation/automation-intro
 
 Azure 環境と非 Azure 環境を一貫性をもって管理するクラウドベースのオートメーションと構成サービスを提供。
 
+2015/12/7 一般提供開始。https://azure.microsoft.com/en-us/updates/general-availability-azure-automation-2/
+
 ■機能
 - Runbook （後述）
 - Azure Automation State Configuration （後述）
