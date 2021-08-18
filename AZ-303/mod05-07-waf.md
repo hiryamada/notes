@@ -17,6 +17,7 @@ https://docs.microsoft.com/ja-jp/azure/web-application-firewall/overview
 https://docs.microsoft.com/ja-jp/azure/web-application-firewall/ag/ag-overview
 
 - [SQLインジェクション攻撃](https://www.kagoya.jp/howto/network/sql-injection/)
+  - [XKCD](http://www.aoky.net/articles/randall_munroe/exploits_of_a_mom.htm)
 - [クロスサイトスクリプティング攻撃](https://www.kagoya.jp/howto/network/xss/)
 - [コマンドインジェクション](https://www.shadan-kun.com/blog/measure/2873/)
 - [HTTP 要求スマグリング(Smuggling)](https://yamory.io/blog/about-http-request-smuggling/)
