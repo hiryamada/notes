@@ -15,9 +15,9 @@ https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-overview
 
 例:
 
-クライアント: example.trafficmanager.net の名前解決を行う
-Traffic Manager: example.trafficmanager.net に対応するIPアドレスを返す
-クライアント: IPアドレスにリクエストを送信する
+- クライアント: example.trafficmanager.net の名前解決を行う
+- Traffic Manager: example.trafficmanager.net に対応するIPアドレスを返す
+- クライアント: IPアドレスにリクエストを送信する
 
 ■シナリオ1
 

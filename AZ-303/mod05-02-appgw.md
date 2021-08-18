@@ -62,7 +62,7 @@ TLS証明書は[Azure Key Vaultに格納することができる](https://docs.m
 
 ■WAFとは？
 
-- Web Application Fiwrewall
+- Web Application Firewall
 - SQL Injection攻撃などの一般的なWebアプリケーションに対する攻撃を防御
 
 ■v2の機能
