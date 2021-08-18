@@ -99,6 +99,7 @@ https://www.microsoft.com/ja-jp/security/business/identity-access-management/azu
 - Azure AD 条件付きアクセス: [P1](https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/overview#license-requirements)
 - Azure AD Privileged Identity Management: [P2](https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-configure#license-requirements)
 - Azure AD Identity Protection: [P2](https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/overview-identity-protection#license-requirements)
+- [Azure ADアクセスレビュー](mod10-02-access-review.md): [P2](https://docs.microsoft.com/ja-jp/azure/active-directory/governance/access-reviews-overview#license-requirements)
 - Azure AD DS: [価格](https://azure.microsoft.com/ja-jp/pricing/details/active-directory-ds/) ※ライセンスは不要
 - セキュリティ レポート: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/overview-reports#what-azure-ad-license-do-you-need-to-access-a-security-report)
 - レポートと監視: [Azure AD プレミアム ライセンス(P1/P2)](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/overview-monitoring#licensing-and-prerequisites-for-azure-ad-reporting-and-monitoring)

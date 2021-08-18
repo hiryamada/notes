@@ -58,9 +58,14 @@
   - 英語キーボードと日本語キーボードの設定が一致していない
 - 対処
   - ラボ環境内のWindowsで、キーボードの設定を修正します。
+  - [設定手順例](https://qiita.com/Aida1971/items/ea754345828b2613bce6)
+    - 仮想マシン側で Registry Editor (regedit.exe) を起動
+    - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00000411` にある `Layout File` の値 `KBDJPN.DLL` を `KBD106.DLL` に変更
+    - 仮想マシンを再起動
 
 手元のPCからラボ環境へのコピー・ペーストができません。
 - 原因：
+  - 通常のコピー・ペーストはできません。仕様となります。
 - 対処：
   - 画面左上の雷マークのアイコン、テキストの入力、クリップボードのテキストを入力、と選択し、テキストボックスに、テキストを貼り付けます。すると、VMの環境のクリップボードに、そのテキストが転送されます。
 

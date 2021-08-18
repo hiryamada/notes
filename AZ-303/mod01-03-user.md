@@ -73,6 +73,22 @@ https://docs.microsoft.com/ja-jp/powershell/azure/create-azure-service-principal
 
 他の組織のユーザーに、自分の組織で管理しているアプリケーションへのアクセスを許可することができる。
 
+参考:
+- ゲストユーザー追加
+  - Azure portalから: https://docs.microsoft.com/ja-jp/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal
+  - PowerShellから: https://docs.microsoft.com/ja-jp/azure/active-directory/external-identities/b2b-quickstart-invite-powershell
+    - CSVを使用して、一括で多数のユーザーを招待する: https://docs.microsoft.com/ja-jp/azure/active-directory/external-identities/bulk-invite-powershell
+- セルフサービスサインアップについて
+  - https://cloudsteady.jp/post/3912/
+  - https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/directory-self-service-signup
+  - https://azure.microsoft.com/ja-jp/updates/unmanaged-accounts-b2b-update/
+- アンマネージドテナントかどうかの確認
+  - https://docs.microsoft.com/ja-jp/power-automate/gdpr-dsr-delete#delete-the-user-from-unmanaged-tenant
+- Azure における ゲスト ユーザー招待 (B2B) のよくある質問(by Azure Identity サポート チーム)
+  - https://jpazureid.github.io/blog/azure-active-directory/b2bfaq/
+- B2Bのトラブルシューティング
+  - https://docs.microsoft.com/ja-jp/azure/active-directory/external-identities/troubleshoot
+
 # Azure AD B2C (Business-to-Consumer)
 
 アプリケーションに、顧客（一般ユーザー）のサインイン機能を追加するためのしくみ。
@@ -83,5 +99,5 @@ https://docs.microsoft.com/ja-jp/powershell/azure/create-azure-service-principal
 - エンタープライズ(Azure AD等)
 - ローカル アカウント ID(メールアドレス/電話番号/任意のID ＋ パスワード) 
 
-[別ページで解説](mod01-aad-b2c.md)
+[別ページで解説](mod01-08-aad-b2c.md)
 
