@@ -91,9 +91,14 @@ Microsoft Learn: [リージョン間でストレージ データをレプリケ�
     - 通常: 1～15時間 
     - 優先度高: 1時間未満
   - ※rehydrate: 水分補給をする、水を与えてもとに戻す
-- [ライフサイクル管理ポリシーを設定](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal)することで、ホット、クール、アーカイブの変更を自動化することができる。
 - ストレージアカウントの設定で、アクセス層を明示的に指定しないBlobに対するデフォルト値を「ホット」または「クール」に設定できる。
   - Azure portal上では「ホット（推定）」や「クール（推定）」のように表示される。
+
+■ライフサイクル管理ポリシー
+
+- [ライフサイクル管理ポリシーを設定](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal)することで、ホット、クール、アーカイブの変更を自動化することができる。
+
+[まとめPDF: ライフサイクル管理ポリシーの設定例](../AZ-104/pdf/mod07/ライフサイクルルール.pdf)
 
 ■アクセス層による料金
 
@@ -128,14 +133,6 @@ Microsoft Learn: [リージョン間でストレージ データをレプリケ�
   - 2.464円
   - 16.24円(「優先度:高」の場合)
 
-[ライフサイクルルールの設定例](../AZ-104/pdf/mod07/ライフサイクルルール.pdf)
+[まとめPDF: アクセス層と料金の例](../AZ-104/pdf/mod07/アクセス層.pdf)
 
-[アクセス層](../AZ-104/pdf/mod07/アクセス層.pdf)
-
-■セキュリティ
-
-[ストレージアカウントのセキュリテイ](mod06-03-storage-security.md)で詳しく解説。
-
-- アクセス制御: RBACロール等。
-- 暗号化: 転送時と保管時の暗号化。
 

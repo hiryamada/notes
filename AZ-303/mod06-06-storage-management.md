@@ -47,11 +47,11 @@ https://azure.microsoft.com/ja-jp/services/databox/
 
 Microsoft Learn: [Azure Data Box ファミリを使用して大量のデータをクラウドに移動する](https://docs.microsoft.com/ja-jp/learn/modules/move-data-with-azure-data-box/)
 
-https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/14
-https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/18
-https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/22
 
-
+写真:
+- https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/14
+- https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/18
+- https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/22
 
 
 # Azure Data Box Gateway

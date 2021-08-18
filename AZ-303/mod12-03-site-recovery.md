@@ -1,0 +1,3 @@
+- Azure Site Recovery Deployment Planner
+  - Hyper-V から Azure へのディザスター リカバリー シナリオと VMware から Azure へのディザスター リカバリー シナリオの両方で使用できるコマンドライン ツール
+  - https://docs.microsoft.com/ja-jp/azure/site-recovery/site-recovery-deployment-planner

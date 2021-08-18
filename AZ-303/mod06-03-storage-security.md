@@ -65,9 +65,9 @@ Azure Storage に対するすべての要求は、以下のいずれかの方法
 
 - Azure AD統合
   - Azure ADでユーザー認証し、RBACロールで承認
-  - 対象: BlobとQueue
+  - 対象: [Blob](https://docs.microsoft.com/ja-jp/azure/storage/blobs/assign-azure-role-data-access?tabs=portal), [Queue](https://docs.microsoft.com/ja-jp/azure/storage/queues/assign-azure-role-data-access?tabs=portal), [Table](https://docs.microsoft.com/ja-jp/azure/storage/tables/authorize-access-azure-active-directory)
 - SMB
-  - オンプレミスAD DSまたはAAD DSを使用した、SMB経由のIDベース承認
+  - オンプレミスAD DSまたは[AAD DS](https://docs.microsoft.com/ja-jp/azure/active-directory-domain-services/overview)を使用した、SMB経由のIDベース承認
   - 対象: Azure Filesのみ
 - 共有キー (アクセス キー)
   - クライアントにアクセスキーを持たせる

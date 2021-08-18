@@ -1,23 +1,25 @@
 
 # Azure SQL
 
-Microsoft SQL Server（以下SQL Server）は、Microsoftが開発するリレーショナル データベース製品。
+https://docs.microsoft.com/ja-jp/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview
+
+[Microsoft SQL Server（以下SQL Server）](https://docs.microsoft.com/ja-jp/sql/)は、Microsoftが開発するリレーショナル データベース製品。
 
 SQL Serverは、オンプレミスでも、Azure上でも実行できる。
 
 Azure上でSQL Serverを実行するためのサービスは、「Azure SQL」と呼ばれる。
 
-Azure SQLには、以下の3つのサービスが含まれます。
+Azure SQLには、以下の3つのサービスが含まる。
 
-- Azure SQL Database
+- [Azure SQL Database](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/sql-database-paas-overview)
   - PaaS 型のサービス。
   - ほとんどのオンプレミス データベース レベルの機能をサポート
   - 組み込みの高可用性、インテリジェンス、管理などの追加の機能も利用できる
-- Azure SQL Managed Instance (MI)
+- [Azure SQL Managed Instance (MI)](https://docs.microsoft.com/ja-jp/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview)
   - PaaS 型のサービス。
   - オンプレミスの SQL Serverとの100%に近い互換性を持つ
   - 既存のオンプレミス アプリケーションの移行に適する
-- Azure SQL Server on VM
+- [Azure SQL Server on VM](https://docs.microsoft.com/ja-jp/azure/azure-sql/virtual-machines/)
   - IaaS 型のサービス。
   - データベース エンジンと OS に対する完全な管理制御を必要とするアプリケーションに最適
 
@@ -27,15 +29,15 @@ Azure SQLには、以下の3つのサービスが含まれます。
 
 Azure SQL Databaseは、フルマネージドのデータベース。
 
+アップグレード、修正プログラムの適用、バックアップ、監視などのほとんどのデータベース管理機能をユーザーの介入なしで処理。 
+
 他の2つのサービスに比べて、データベース管理の手間を省くことができる。
 
-ただし、よく使われるSQL Server機能をサポートしてはいますが、従来のSQL Serverとの完全な互換性は利用できない。
+よく使われるSQL Server機能をサポートしているが、従来のSQL Serverとの完全な互換性は利用できない。
 
-オンプレミスからの移行など、従来のSQL Serverとの互換性が重要である場合は、Azure SQL Managed Instanceか、SQL Server on VMを使用。Azure SQL Managed Instanceは、既存のアプリケーションをAzureに移行する場合に最適なサービス。
+オンプレミスからの移行など、従来のSQL Serverとの互換性が重要である場合は、Azure SQL Managed Instanceか、SQL Server on VMを使用。
 
-■SQL Databaseの主な特徴
-
-SQL Database は、アップグレード、修正プログラムの適用、バックアップ、監視などのほとんどのデータベース管理機能をユーザーの介入なしで処理する、フル マネージドの PaaS (サービスとしてのプラットフォーム) データベース エンジン。 
+■Azure SQL Databaseの主な特徴
 
 - OSとデータベースエンジンの自動アップグレード
   - アップグレードは継続的に自動で実行
@@ -51,9 +53,9 @@ SQL Database は、アップグレード、修正プログラムの適用、バ�
   - 単一のゾーン構成を取ることも、ゾーン冗長の構成を取ることもできる。
   - ゾーン冗長構成を取ることで、データセンターの壊滅的な障害を含む、大規模な障害から、データベースを回復できるようになる。
 
-■SQL Databaseのリソース
+■Azure SQL Databaseのリソース
 
-SQL Databaseの主なリソースとして「SQLサーバー」「SQLデータベース」「SQLエラスティックプール」がある。
+Azure SQL Databaseの主なリソースとして「SQLサーバー」「SQLデータベース」「SQLエラスティックプール」がある。
 
 ■SQL サーバー
 

@@ -21,16 +21,16 @@
 - [Module 7 NoSQL データベースの実装](mod07.md)
 - [Module 8 Azure SQL Database の実装](mod08.md)
 - [Module 9 リソースのデプロイと構成の自動化](mod09.md)
-- Module 10 Azure のガバナンス ソリューションの実装と管理
+- [Module 10 Azure のガバナンス ソリューションの実装と管理](mod10.md)
   - ラボ 10: RBACロール
-- Module 11 アプリケーションのセキュリティの管理
-- Module 12 Azure でのワークロードの管理
+- [Module 11 アプリケーションのセキュリティの管理](mod11.md)
+- [Module 12 Azure でのワークロードの管理](mod12.md)
   - ラボ 12 Azure Site Recovery
-- Module 13 コンテナー ベースのアプリケーションの実装
-- Module 14 アプリケーション インフラストラクチャの実装
+- [Module 13 コンテナー ベースのアプリケーションの実装](mod13.md)
+- [Module 14 アプリケーション インフラストラクチャの実装](mod14.md)
   - ラボ 14A App Service
   - ラボ 14B Azure Function, Event Grid
-- Module 15 クラウド インフラストラクチャ監視の実装
+- [Module 15 クラウド インフラストラクチャ監視の実装](mod15.md)
 
 ラボ:
 
