@@ -1,31 +1,13 @@
 # Azure Migrate
 
-ドキュメント
 https://docs.microsoft.com/ja-jp/azure/migrate/
 
-わかりやすい解説（山市良氏の記事）
-https://www.atmarkit.co.jp/ait/articles/1908/22/news011.html
 
-AZ-304のラボ「Azure Migrate を使用して Hyper-V VM を Azure に移行する」
-https://microsoftlearning.github.io/AZ-304JA-Microsoft-Azure-Architect-Design/Instructions/Labs/Module_3_Lab.html
+■概要
 
-Microsoft Learn: ASP.NET アプリを Azure に移行する
-https://docs.microsoft.com/ja-jp/learn/paths/migrate-dotnet-apps-azure/
+Azure Migrateは、さまざまな移行プロジェクトの **「ハブ」**（中心となる場所）となるサービスである。
 
-■ISVとは？
-
-Indipendent Software Vendor（独立系ソフトウェアベンダー）。サードパーティ。
-https://ja.wikipedia.org/wiki/ISV
-
-Azure Migrate は、いくつかの ISV オファリング（ISVが提供する、サーバーの評価・移行ソリューション）と統合されている。
-https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview#isv-integration
-
-■Azure Migrateの「ハブ」とは？
-
-
-Azure Migrateは、さまざまな移行プロジェクトの中心となる場所（ハブ）という **位置づけ** のサービスである。
-
-※注意: 「Azure Migrate ハブ」といったリソースがあるわけではない
+※注意: 「Azure Migrate ハブ」といったリソースがあるわけではない。Azure Migrate の、移行における **位置づけ** を表している。
 
 Azure Migrate では、オンプレミスのサーバー、インフラストラクチャ、アプリケーション、データを評価し、Azure への移行を行うための一元化された「ハブ」が提供される。
 https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview
@@ -38,6 +20,20 @@ https://www.atmarkit.co.jp/ait/articles/1908/22/news011.html
 
 
 たとえば、Azure Data Boxを使用した、オンプレからAzureへのデータの移行作業を、Azure Data Boxの画面からも開始できるが、Azure Migrateの画面からも開始できる。
+
+■ISVとの統合
+
+Azure Migrate は、いくつかの ISV オファリング（ISVが提供する、サーバーの評価・移行ソリューション）と統合されている。
+https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview#isv-integration
+
+■参考: ISVとは？
+
+Indipendent Software Vendor。独立系ソフトウェアベンダー。いわゆるサードパーティ。マイクロソフトに対応する製品を開発する、マイクロソフト外の企業。
+
+- https://e-words.jp/w/ISV.html
+- https://ja.wikipedia.org/wiki/ISV
+
+
 
 ■オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順
 
@@ -163,4 +159,13 @@ https://azure.microsoft.com/ja-jp/pricing/details/azure-migrate/
 - Azure Migrate および Azure Migrate のツールは、追加料金なしで利用できる。
 - ただし、サードパーティ製の ISV ツールに対する料金が発生する場合がある。
 
-※ISV: 独立系ソフトウェア ベンダー(Indipendent Sofrware Vendor)。いわゆるサードパーティ。マイクロソフトに対応する製品を開発する、マイクロソフト外の企業。https://e-words.jp/w/ISV.html
+■参考資料/学習ソース
+
+わかりやすい解説（山市良氏の記事）
+https://www.atmarkit.co.jp/ait/articles/1908/22/news011.html
+
+AZ-304のラボ「Azure Migrate を使用して Hyper-V VM を Azure に移行する」
+https://microsoftlearning.github.io/AZ-304JA-Microsoft-Azure-Architect-Design/Instructions/Labs/Module_3_Lab.html
+
+Microsoft Learn: ASP.NET アプリを Azure に移行する
+https://docs.microsoft.com/ja-jp/learn/paths/migrate-dotnet-apps-azure/
