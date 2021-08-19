@@ -8,50 +8,57 @@ https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-o
 - https://azure.microsoft.com/ja-jp/updates/aci-ga/
 - https://azure.microsoft.com/ja-jp/blog/azure-container-instances-now-generally-available/
 
-■参考: Microsoft Learn:
-Azure Container Instances で Docker コンテナーを実行する
-https://docs.microsoft.com/ja-jp/learn/modules/run-docker-with-azure-container-instances/
+
+■ [コンテナーグループ](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-container-groups)
+
+Azure Container Instances の最上位のリソース。
+
+同じホスト コンピューター上にスケジュール設定される (get scheduled) コンテナーの集まり。 
+
+※スケジュール: コンテナーの用語としては、コンテナーを、適切なコンピューターに配置すること（Podを、クラスター内の適切なノードに配置すること）を指す。
+
+コンテナー グループ内のコンテナーでは、ライフサイクル、リソース、ローカル ネットワーク、ストレージ ボリュームを共有する。
+
+Kubernetes におけるポッドの概念に似ている。
 
 
-■ACIで使用されるVMの性能
-
-Fシリーズ または Dシリーズになるが、特にどのサイズが使われるかは決まっていない。
-
-https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-faq#what-underlying-infrastructure-does-aci-run-on
-
-> Azure Container Instances は、サーバーレスのコンテナー オンデマンド サービスであることを目的としているため、コンテナーの開発に集中してください。インフラストラクチャについて心配する必要はありません。 パフォーマンスの比較に関心がある場合、または比較する場合、ACI は主に F シリーズと D シリーズのさまざまな SKU の Azure VM セット上で動作します。 サービスの開発と最適化に伴い、今後これは変わると予想されます。
-
-
-■コンテナーグループ
-
-ACIを使用する際には「コンテナーグループ」（同じホスト コンピューター上にスケジュール設定されるコンテナーのコレクション）を作り、そこにコンテナーをデプロイする。
-
-■コンテナーグループに割り当てるCPUとメモリ
+■コンテナーグループに割り当て可能なCPUとメモリ
 
 https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-container-groups#resource-allocation
 
-ACIでは、グループにインスタンスのリソース要求を追加することで、CPU、メモリ、必要に応じて GPUなどのリソースをマルチコンテナー グループに割り当てる。
+ACIでは、グループにインスタンスのリソース要求を追加することで、CPUやメモリを、コンテナー グループに割り当てる。
 
 最小値: 1 CPU、1 GB メモリ。
 https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-container-groups#minimum-and-maximum-allocation
 
 最大値: 4コア、16 GB メモリ。
-
-https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-faq#can-i-deploy-with-more-than-4-cores-and-16-gb-of-ram。
-
-[リージョンによって異なる](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-region-availability)。
-
-■ [コンテナーグループ](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-container-groups)
-
-Azure Container Instances の最上位のリソースは、コンテナー グループです。
-
-コンテナー グループは、同じホスト コンピューター上にスケジュール設定される (get scheduled) コンテナーのコレクション。 
-
-※[スケジュール：コンテナ（Pod）をコンピューター（ノード、クラスター）に配置すること。](https://access.redhat.com/documentation/ja-jp/openshift_container_platform/3.11/html/cluster_administration/scheduling)
-
-コンテナー グループ内のコンテナーでは、ライフサイクル、リソース、ローカル ネットワーク、ストレージ ボリュームを共有する。（これは、Kubernetes におけるポッドの概念に似ている。）
+https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-faq#can-i-deploy-with-more-than-4-cores-and-16-gb-of-ram。ただし、実際に利用可能な最大値は[リージョンによって異なる](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-region-availability)。
 
 ■az container createコマンド
 
-[コンテナーグループを作る](https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az_container_create)。
+指定したイメージをACIで実行する。多彩なオプションを利用できる。
 
+（コマンド名からは「コンテナー」を作るように感じられるが）まず「コンテナーグループ」が作られ、その中で「コンテナー」を動かす。
+
+https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az_container_create
+
+■参考: ACIで使用されるVMシリーズ
+
+https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-faq#aci----------------------------
+
+> Azure Container Instances は、サーバーレスのコンテナー オンデマンド サービスであることを目的としているため、コンテナーの開発に集中してください。インフラストラクチャについて心配する必要はありません。 パフォーマンスの比較に関心がある場合、または比較する場合、 **ACI は主に F シリーズと D シリーズのさまざまな SKU の Azure VM セット上で動作します** 。 サービスの開発と最適化に伴い、 **今後これは変わると予想されます** 。
+
+
+
+■参考: ACIを定期的に実行するには？
+
+- 方法(1): Azure Automationから起動
+  - [Azure Container Instances + Azure Automationで超格安バッチ実行基盤を構築](https://tech-lab.sios.jp/archives/19859)
+- 方法(2): Logic Appsから起動
+  - [Azure Container InstanceをLogic Appsでスケジューリングする](https://yolo-kiyoshi.com/2021/02/04/post-2586/)
+
+
+■参考: Microsoft Learn
+
+Azure Container Instances で Docker コンテナーを実行する
+https://docs.microsoft.com/ja-jp/learn/modules/run-docker-with-azure-container-instances/
