@@ -144,3 +144,12 @@ https://docs.microsoft.com/ja-jp/azure/cosmos-db/global-dist-under-the-hood
 - 各コンピューターは、数百のレプリカをホストする
 - レプリカは多数のコンピューターに動的に配置され、負荷分散される
 - レプリカは、10～20の障害ドメインに分散される
+
+
+■Azure Cosmos DB Capacity Calculator
+
+※旧: Azure Cosmos DB Capacity Planner
+
+https://cosmos.azure.com/capacitycalculator/
+
+SQL API の使用時における、ワークロードに必要な RU/秒とコストの見積もりを取得するツール。
