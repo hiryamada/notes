@@ -11,7 +11,7 @@ https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-o
 ■特徴
 
 - [ハイパーバイザーレベルの分離](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-overview#hypervisor-level-security)を提供。
-  - 各アプリケーションはVM内であるかのように分離される（アプリケーションから別のアプリケーションに干渉することはできない）。
+  - ACI上で動作する各アプリケーションは、それぞれ別のVM内に配置されているかのように分離される（アプリケーションから別のアプリケーションに干渉することはできない）。
 - Docker Hub, Azure Container Registry(ACR), Microsoft Container Registry(MCR) などからDockerイメージを読み込むことができる。
   - [Docker Hub](https://hub.docker.com/)
   - [Azure Container Registry(ACR)](https://docs.microsoft.com/ja-jp/azure/container-registry/)
