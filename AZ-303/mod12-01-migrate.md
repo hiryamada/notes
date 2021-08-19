@@ -1,14 +1,5 @@
 # Azure Migrate
 
-製品ページ
-https://azure.microsoft.com/ja-jp/services/azure-migrate/
-
-価格
-https://azure.microsoft.com/ja-jp/pricing/details/azure-migrate/
-
-- Azure Migrate および Azure Migrate のツールは、追加料金なしで利用できる。
-- ただし、サードパーティ製の ISV ツールに対する料金が発生する場合がある。
-
 ドキュメント
 https://docs.microsoft.com/ja-jp/azure/migrate/
 
@@ -165,3 +156,11 @@ https://azure.microsoft.com/ja-jp/services/app-service/migration-assistant/
 登場時のブログ（使い方の説明あり）
 https://azure.microsoft.com/ja-jp/blog/introducing-the-app-service-migration-assistant-for-asp-net-applications/
 
+
+■価格
+https://azure.microsoft.com/ja-jp/pricing/details/azure-migrate/
+
+- Azure Migrate および Azure Migrate のツールは、追加料金なしで利用できる。
+- ただし、サードパーティ製の ISV ツールに対する料金が発生する場合がある。
+
+※ISV: 独立系ソフトウェア ベンダー(Indipendent Sofrware Vendor)。いわゆるサードパーティ。マイクロソフトに対応する製品を開発する、マイクロソフト外の企業。https://e-words.jp/w/ISV.html
