@@ -215,5 +215,22 @@ https://draft.sh/
 
 開発者向けのツール。
 
-Kubernetes上で動作するアプリケーションを簡単に構築することができるしくみを提供。
+Kubernetes上で動作するアプリケーションを簡単に構築することができるように、「足場」（スキャフォールド）を作る。また、簡単なコマンドで、アプリケーションをKubernetesで動作させることができる。
 
+
+アプリケーションはPython, Node.js, Java, Ruby, PHP, Goなどで開発することができる。
+
+`draft create`コマンド: アプリケーションをコンテナ化するためのDockerfileと、KubernetesクラスターにアプリケーションをデプロイするためのHelmチャートを作成する。
+
+`draft up`コマンド: アプリケーションをKubernetesクラスターにデプロイして起動する。
+
+`draft connect`コマンド: デプロイしたアプリケーションに接続する。
+
+以降、アプリケーションのコードを更新したら`draft up`コマンドを実行する。
+
+`draft delete`コマンド: アプリケーションをKubernetesクラスターから削除する。
+
+
+ドキュメント: https://github.com/Azure/draft/tree/master/docs
+
+わかりやすい解説: https://www.creationline.com/lab/36378
