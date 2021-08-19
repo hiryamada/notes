@@ -7,7 +7,7 @@ https://docs.microsoft.com/ja-jp/azure/migrate/
 
 Azure Migrateは、さまざまな移行プロジェクトの **「ハブ」**（中心となる場所）となるサービスである。
 
-※注意: 「Azure Migrate ハブ」といったリソースがあるわけではない。Azure Migrate の、移行における **位置づけ** を表している。
+※注意: 「Azure Migrate ハブ」といったリソースがあるわけではない。「ハブ」という言葉は、Azure Migrate というサービスの、移行作業における **位置づけ** を表している。
 
 Azure Migrate では、オンプレミスのサーバー、インフラストラクチャ、アプリケーション、データを評価し、Azure への移行を行うための一元化された **「ハブ」** が提供される。
 https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview
