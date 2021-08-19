@@ -10,7 +10,9 @@ https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-o
 
 ■特徴
 
-- Docker Hub, Azure Container Registry(ACR), Microsoft Container Registry(MCR) からイメージを読み込むことができる。
+- [ハイパーバイザーレベルの分離](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-overview#hypervisor-level-security)を提供。
+  - 各アプリケーションはVM内であるかのように分離される（アプリケーションから別のアプリケーションに干渉することはできない）。
+- Docker Hub, Azure Container Registry(ACR), Microsoft Container Registry(MCR) などからDockerイメージを読み込むことができる。
   - [Docker Hub](https://hub.docker.com/)
   - [Azure Container Registry(ACR)](https://docs.microsoft.com/ja-jp/azure/container-registry/)
     - プライベートなレジストリを運用するためのサービス。
@@ -48,7 +50,29 @@ https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-f
 
 ※注意: 実際に利用可能な最大値は[リージョンによって異なる](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-region-availability)。
 
-■az container createコマンド
+■デプロイ方法
+
+さまざまなデプロイ方法を利用できる。
+
+- [Azure portal](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-quickstart-portal)
+
+コマンド系:
+- [AZ CLI: az containerコマンド](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-quickstart)
+- [Azure PowerShell: New-AzContainerGroupコマンド](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-quickstart-powershell)
+
+テンプレート系:
+- [ARMテンプレート](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-quickstart-template)
+- [YAMLファイル](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-reference-yaml)
+
+Docker系:
+- [Docker (dockerコマンド)](https://docs.microsoft.com/ja-jp/azure/container-instances/quickstart-docker-cli)
+- [Docker Compose (docker-composeコマンド)](https://docs.microsoft.com/ja-jp/azure/container-instances/tutorial-docker-compose)
+
+その他、Azure SDKなどを使用してプログラムからコンテナーグループを作成することもできる。
+
+■az containerコマンド
+
+az container create:
 
 指定したイメージをACIで実行する。多彩なオプションを利用できる。
 
@@ -56,17 +80,17 @@ https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-f
 
 https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az_container_create
 
-■az container deleteコマンド
+az container delete:
 
 コンテナーグループを削除する。
 
-■az container stopコマンド
+az container stop:
 
 https://docs.microsoft.com/ja-jp/cli/azure/container?view=azure-cli-latest#az_container_stop
 
 コンテナー グループ内のすべてのコンテナーを停止。課金も停止する。
 
-■az container startコマンド
+az container start:
 
 https://docs.microsoft.com/ja-jp/cli/azure/container?view=azure-cli-latest#az_container_start
 
