@@ -6,13 +6,13 @@ https://azure.microsoft.com/ja-jp/services/azure-migrate/
 価格
 https://azure.microsoft.com/ja-jp/pricing/details/azure-migrate/
 
-- Azure Migrate および Azure Migrate のツールは、追加料金なしでご利用いただけます。
-- ただし、サードパーティ製の ISV ツールに対する料金が発生する場合があります。
+- Azure Migrate および Azure Migrate のツールは、追加料金なしで利用できる。
+- ただし、サードパーティ製の ISV ツールに対する料金が発生する場合がある。
 
 ドキュメント
 https://docs.microsoft.com/ja-jp/azure/migrate/
 
-わかりやすい解説（山市良 氏の記事）
+わかりやすい解説（山市良氏の記事）
 https://www.atmarkit.co.jp/ait/articles/1908/22/news011.html
 
 AZ-304のラボ「Azure Migrate を使用して Hyper-V VM を Azure に移行する」
@@ -26,23 +26,23 @@ https://docs.microsoft.com/ja-jp/learn/paths/migrate-dotnet-apps-azure/
 Indipendent Software Vendor（独立系ソフトウェアベンダー）。サードパーティ。
 https://ja.wikipedia.org/wiki/ISV
 
-Azure Migrate は、いくつかの ISV オファリング（ISVが提供する、サーバーの評価・移行ソリューション）と統合されています。
+Azure Migrate は、いくつかの ISV オファリング（ISVが提供する、サーバーの評価・移行ソリューション）と統合されている。
 https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview#isv-integration
 
 ■Azure Migrateの「ハブ」とは？
 
-Azure Migrate では、オンプレミスのサーバー、インフラストラクチャ、アプリケーション、データを評価し、Azure への移行を行うための一元化された「ハブ」が提供されます。
+Azure Migrate では、オンプレミスのサーバー、インフラストラクチャ、アプリケーション、データを評価し、Azure への移行を行うための一元化された「ハブ」が提供される。
 https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview
 
-Azure Migrate は、インフラストラクチャからアプリケーションやデータに至るまで、すべての移行ニーズとツールの中央「ハブ」として機能します。
+Azure Migrate は、インフラストラクチャからアプリケーションやデータに至るまで、すべての移行ニーズとツールの中央「ハブ」として機能する。
 https://azure.microsoft.com/ja-jp/blog/introducing-the-new-azure-migrate-a-hub-for-your-migration-needs/
 
-オンプレミスのVMware仮想マシンの移行を支援するサービスとしてスタートした「Azure Migrate」が、2019年7月に新バージョンに刷新。Hyper-V仮想マシン、SQL Serverデータベース、ISV（独立系ソフトウェアベンダー）のソリューションを含む、Azureへの移行プロジェクトの“中央ハブ”として生まれ変わりました。
+> オンプレミスのVMware仮想マシンの移行を支援するサービスとしてスタートした「Azure Migrate」が、2019年7月に新バージョンに刷新。Hyper-V仮想マシン、SQL Serverデータベース、ISV（独立系ソフトウェアベンダー）のソリューションを含む、Azureへの移行プロジェクトの“中央ハブ”として生まれ変わった。
 https://www.atmarkit.co.jp/ait/articles/1908/22/news011.html
 
-「Azure Migrate ハブ」といったリソースがあるわけではない。
+なお「Azure Migrate ハブ」といったリソースがあるわけではない。
 
-Azure Migrateは、さまざまな移行プロジェクトの中心となる場所（ハブ）である、ということを言っている。
+Azure Migrateは、さまざまな移行プロジェクトの中心となる場所（ハブ）という **位置づけ** のサービスである。
 
 たとえば、Azure Data Boxを使用した、オンプレからAzureへのデータの移行作業を、Azure Data Boxの画面からも開始できるが、Azure Migrateの画面からも開始できる。
 
@@ -76,10 +76,6 @@ Azure Migrateの画面で「プロジェクト」を作成する。
 
 プロジェクトには、オンプレミスのサーバーから収集されたメタデータが格納される。
 
-プロジェクトから「プロジェクト キー」を生成できる。生成したキーは、
-
-
-
 https://docs.microsoft.com/ja-jp/azure/migrate/create-manage-projects
 
 ■Azure Migrate アプライアンス
@@ -90,7 +86,6 @@ https://docs.microsoft.com/ja-jp/azure/migrate/create-manage-projects
 - オンプレミスの物理または仮想化されたサーバーの検出と評価
 
 ※Hyper-V の移行に Azure Migrate アプライアンスは使用されない
-
 
 アプライアンスをデプロイし、マシンとパフォーマンスのメタデータを継続的に検出する。
 
@@ -108,8 +103,6 @@ https://docs.microsoft.com/ja-jp/azure/migrate/migrate-appliance
 - VDI（仮想デスクトップインフラストラクチャ）の評価
 
 https://docs.microsoft.com/ja-jp/azure/migrate/how-to-assess
-
-
 
 ■ツール
 
@@ -143,7 +136,6 @@ Azure Migrate で利用できるツール
   - Azure Data Box製品を使って移行
 
 - オンプレミス
-
 
 ■Azure App Service Migration Assistant （オンラインスキャン）
 
