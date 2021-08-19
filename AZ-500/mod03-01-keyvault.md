@@ -15,7 +15,7 @@ https://docs.microsoft.com/ja-jp/azure/key-vault/
 
 2015/6/24 Azure Key Vault 一般提供開始 https://azure.microsoft.com/ja-jp/updates/general-availability-azure-key-vault/
 
-2018/8/11 Azure Dedicated HSM の一般提供開始 https://azure.microsoft.com/ja-jp/blog/announcing-azure-dedicated-hardware-security-module-availability/
+2018/8/11 Azure Dedicated HSM 一般提供開始 https://azure.microsoft.com/ja-jp/blog/announcing-azure-dedicated-hardware-security-module-availability/
 
 2021/6/21 Azure Key Vault Managed HSM 一般提供開始 https://azure.microsoft.com/ja-jp/updates/akv-managed-hsm-ga/
 
@@ -23,11 +23,31 @@ https://docs.microsoft.com/ja-jp/azure/key-vault/
 
 [比較表PDF](../AZ-204/pdf/mod07/キー管理サービス.pdf)
 
-■Key Vaultで管理できるもの
+■参考: HSM (ハードウェア セキュリティ モジュール)
+
+参考: [HSM(Google画像検索)](https://www.google.com/search?q=hsm+luna&tbm=isch)
+
+参考: [HSMのわかりやすい解説](https://www.intellilink.co.jp/business/security/thales_luna_nw_hsm.aspx)
+
+- [Azure Key Vault](https://azure.microsoft.com/ja-jp/services/key-vault/)
+  - Standard レベル - ソフトウェア, FIPS 140-2 Level 1
+  - Premium レベル - **HSM**, FIPS 140-2 Level 2
+- [Azure key Vault Managed HSM](https://docs.microsoft.com/ja-jp/azure/key-vault/managed-hsm/)
+  - Standard B1 - FIPS 140-2 Level 3
+- [Azure Dedicated HSM](https://azure.microsoft.com/ja-jp/services/azure-dedicated-hsm/) 
+  - FIPS 140-2 Level 3
+
+
+■概要
+
+以下のものを管理。
 
 - [シークレット](https://docs.microsoft.com/ja-jp/azure/key-vault/secrets/)
 - [キー](https://docs.microsoft.com/ja-jp/azure/key-vault/keys/)
 - [証明書](https://docs.microsoft.com/ja-jp/azure/key-vault/certificates/)
+
+その他の特徴:
+- サービスエンドポイント、プライベートエンドポイントをサポート
 
 ■ Key Vault へのアクセス
 
@@ -52,9 +72,62 @@ https://docs.microsoft.com/ja-jp/azure/key-vault/
   - トークン、パスワード、接続文字列、APIキーなど
     - [ストレージアカウントのアクセスキー](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)
     - [Cosmos DBのキー](https://docs.microsoft.com/ja-jp/azure/cosmos-db/access-secrets-from-keyvault)
-  - アクセス制御
-  - アクティブ化する日/有効期限
-  - バージョン管理
+
+作成の際に指定する主なプロパティ:
+
+- 名前
+- 値
+- コンテンツの種類(contentType)
+  - オプション
+  - 取得されるときのシークレット データの解釈を支援
+  - 255 文字まで
+- アクティブ化する日
+  - nbf (not before: 有効期間開始日時)
+  - 省略可能、既定値は 現在
+- 有効期限
+  - exp (expiration time: 有効期限)
+  - 省略可能、既定値は 無期限
+- 有効
+  - はい: 値が読み取れる
+  - いいえ: 値は読み取れない
+
+値の取得例:
+
+```
+$ az keyvault secret show --name secret1 --vault-name keycontainer1092387423
+{
+  "attributes": {
+    "created": "2021-08-19T10:25:51+00:00",
+    "enabled": true,
+    "expires": "2021-12-01T10:24:59+00:00",
+    "notBefore": "2021-10-01T10:24:59+00:00",
+    "recoveryLevel": "Recoverable+Purgeable",
+    "updated": "2021-08-19T10:30:15+00:00"
+  },
+  "contentType": "aaa",
+  "id": "https://keycontainer1092387423.vault.azure.net/secrets/secret1/42b7a4b5382249aea343974f735e3b73",
+  "kid": null,
+  "managed": null,
+  "name": "secret1",
+  "tags": {
+    "x": "1",
+    "y": "2",
+    "z": "3"
+  },
+  "value": "hello"
+}
+```
+
+バージョン:
+- シークレットを保存すると「バージョン」が作られ、値は変更不可能となる。
+- バージョンは「42b7a4b5382249aea343974f735e3b73」といったランダムな文字列が自動で割り当てられる。
+- 同じシークレットの新しい「バージョン」として、新しい値を保存できる。
+- シークレットを取得する際に「バージョン」を指定しなければ、最新版の値が取り出される。「バージョン」を指定すればそのバージョンの値が取り出される。
+
+バージョンの指定例:
+```
+az keyvault secret show --name secret1 --vault-name keycontainer1092387423 --version 42b7a4b5382249aea343974f735e3b73
+```
 
 ■キー
 
@@ -126,6 +199,8 @@ https://docs.microsoft.com/ja-jp/azure/key-vault/general/soft-delete-overview
 
 消去保護(Purge protection):
 
+https://docs.microsoft.com/ja-jp/azure/key-vault/general/soft-delete-overview#purge-protection
+
 - 消去: purge(パージ): コンテナー、シークレット、キー、証明書を完全に削除する操作。
 - 消去保護
   - 無効
@@ -154,18 +229,4 @@ https://docs.microsoft.com/ja-jp/azure/key-vault/general/backup
 - この BLOB から、同じ Azure サブスクリプションと Azure 地域内のキー コンテナーに BLOB を復元することができる
 - Azure portalから、または、コマンドから、バックアップと復元を実行できる
 - 現時点では、個々のオブジェクトのバックアップが可能。コンテナー全体のバックアップはできない。
-
-■参考: HSM (ハードウェア セキュリティ モジュール)
-
-参考: [HSM(Google画像検索)](https://www.google.com/search?q=hsm+luna&tbm=isch)
-
-参考: [HSMのわかりやすい解説](https://www.intellilink.co.jp/business/security/thales_luna_nw_hsm.aspx)
-
-- [Azure Key Vault](https://azure.microsoft.com/ja-jp/services/key-vault/)
-  - Standard レベル - ソフトウェア, FIPS 140-2 Level 1
-  - Premium レベル - **HSM**, FIPS 140-2 Level 2
-- [Azure key Vault Managed HSM](https://docs.microsoft.com/ja-jp/azure/key-vault/managed-hsm/)
-  - Standard B1 - FIPS 140-2 Level 3
-- [Azure Dedicated HSM](https://azure.microsoft.com/ja-jp/services/azure-dedicated-hsm/) 
-  - FIPS 140-2 Level 3
 
