@@ -192,7 +192,7 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/supported-languages
 
 Durable: 永続性のある、恒久的な
 
-[参考資料](../az-204/pdf/mod02/durable-function.pdf)
+[参考資料](../AZ-204/pdf/mod02/durable-function.pdf)
 
 ■学習に役立つリソース
 
