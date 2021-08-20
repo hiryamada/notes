@@ -3,7 +3,7 @@
 https://docs.microsoft.com/ja-jp/azure/migrate/
 
 
-■概要
+■Azure Migrateの位置づけ
 
 Azure Migrateは、さまざまな移行プロジェクトの **「ハブ」**（中心となる場所）となるサービスである。
 
@@ -18,8 +18,17 @@ https://azure.microsoft.com/ja-jp/blog/introducing-the-new-azure-migrate-a-hub-f
 > オンプレミスのVMware仮想マシンの移行を支援するサービスとしてスタートした「Azure Migrate」が、2019年7月に新バージョンに刷新。Hyper-V仮想マシン、SQL Serverデータベース、ISV（独立系ソフトウェアベンダー）のソリューションを含む、Azureへの移行プロジェクトの“中央ハブ”として生まれ変わった。
 https://www.atmarkit.co.jp/ait/articles/1908/22/news011.html
 
-
 たとえば、Azure Data Boxを使用した、オンプレからAzureへのデータの移行作業を、Azure Data Boxの画面からも開始できるが、Azure Migrateの画面からも開始できる。
+
+■評価・移行できるワークロード
+
+- Windows 
+- Linux
+- SQL Server
+- Webアプリケーション
+- 仮想デスクトップ（VDI）
+- 大量のデータ
+  - Azure Data Box製品を使って移行
 
 ■ISVとの統合
 
@@ -34,8 +43,26 @@ Indipendent Software Vendor。独立系ソフトウェアベンダー。いわ�
 - https://ja.wikipedia.org/wiki/ISV
 
 
+■Azure Migrateのプロジェクト
 
-■オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順
+Azure Migrateの画面で「プロジェクト」を作成する。
+
+プロジェクトには、オンプレミスのサーバーから収集されたメタデータが格納される。
+
+https://docs.microsoft.com/ja-jp/azure/migrate/create-manage-projects
+
+■評価ツール
+
+プロジェクトに、評価ツールを追加する。
+
+- 物理または仮想サーバーの評価
+- SQL Serverの評価
+- Webアプリの評価
+- VDI（仮想デスクトップインフラストラクチャ）の評価
+
+https://docs.microsoft.com/ja-jp/azure/migrate/how-to-assess
+
+■オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順(★)
 
 Azure Migrate:Server Migration ツールを使用して、オンプレミスの Hyper-V VM を Azure に移行する
 
@@ -51,30 +78,17 @@ Azure Migrate:Server Migration ツールを使用して、オンプレミスの 
 https://docs.microsoft.com/ja-jp/azure/migrate/tutorial-migrate-hyper-v
 
 
-Hyper-V の移行に Azure Migrate アプライアンスは使用されない
+※(★)Hyper-V の移行に [Azure Migrate アプライアンス](https://docs.microsoft.com/ja-jp/azure/migrate/common-questions-appliance#what-is-the-azure-migrate-appliance)は使用されない(VMwareの移行の際に使用される)
 
 
-■VMware 環境でサーバーのアプライアンスを設定する
-
-https://docs.microsoft.com/ja-jp/azure/migrate/how-to-set-up-appliance-vmware
-
-
-■プロジェクト
-
-Azure Migrateの画面で「プロジェクト」を作成する。
-
-プロジェクトには、オンプレミスのサーバーから収集されたメタデータが格納される。
-
-https://docs.microsoft.com/ja-jp/azure/migrate/create-manage-projects
-
-■Azure Migrate アプライアンス
+■Azure Migrate アプライアンス(★)
 
 - VMware 環境で実行されているサーバーの検出と評価
 - VMware 環境で実行されているサーバーのエージェントレス移行
 - Hyper-V 環境で実行されているサーバーの検出と評価
 - オンプレミスの物理または仮想化されたサーバーの検出と評価
 
-※Hyper-V の移行に Azure Migrate アプライアンスは使用されない
+※Hyper-V の移行に Azure Migrate アプライアンスは使用されない(★)
 
 アプライアンスをデプロイし、マシンとパフォーマンスのメタデータを継続的に検出する。
 
@@ -82,16 +96,6 @@ https://docs.microsoft.com/ja-jp/azure/migrate/create-manage-projects
 
 https://docs.microsoft.com/ja-jp/azure/migrate/migrate-appliance
 
-■評価ツール
-
-プロジェクトに、評価ツールを追加する。
-
-- 物理または仮想サーバーの評価
-- SQL Serverの評価
-- Webアプリの評価
-- VDI（仮想デスクトップインフラストラクチャ）の評価
-
-https://docs.microsoft.com/ja-jp/azure/migrate/how-to-assess
 
 ■ツール
 
@@ -114,17 +118,6 @@ Azure Migrate で利用できるツール
   - オフラインデータの移行
 - その他: ISVのツール
 
-■評価・移行できるワークロード
-
-- Windows 
-- Linux
-- SQL Server
-- Webアプリケーション
-- 仮想デスクトップ（VDI）
-- 大量のデータ
-  - Azure Data Box製品を使って移行
-
-- オンプレミス
 
 ■Azure App Service Migration Assistant （オンラインスキャン）
 
