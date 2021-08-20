@@ -16,11 +16,11 @@
 
 ■Azure Advisor
 
-- [Azure Advisor](https://docs.microsoft.com/ja-jp/azure/advisor/advisor-overview)
+- [Azure Advisor(Azureドキュメント)](https://docs.microsoft.com/ja-jp/azure/advisor/advisor-overview)
 
 ■クラウド リソースの正常性の監視
 
-- [Azure Service Health](https://docs.microsoft.com/ja-jp/azure/service-health/overview)
+- [Azure Service Health(Azureドキュメント)](https://docs.microsoft.com/ja-jp/azure/service-health/overview)
   - Azureの状態
     - Azure サービスの停止に関する情報
   - Service Health
@@ -34,7 +34,7 @@
 ■コスト計算
 
 - コスト計算系のサービス
-  - Azure Cost Management
-  - Azure Cost Calculator
-  - TCO Calculator
+  - Azure Cost Management(Azureドキュメント)
+  - [Azure Cost Calculator](https://azure.microsoft.com/ja-jp/pricing/calculator/)
+  - [TCO Calculator](https://azure.microsoft.com/ja-jp/pricing/tco/calculator/)
 
