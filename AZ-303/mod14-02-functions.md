@@ -1,4 +1,4 @@
-■Azure Functionsの概要
+# Azure Functions
 
 サーバーレスアプリケーションの実行を行うサービス。
 コードを実行するためのインフラの管理が不要。必要なリソースはオンデマンドで提供される（「従量課金プラン」の場合）。
@@ -146,7 +146,7 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/storage-considerations
 - トリガーは、関数が実行される原因。
 - バインドは、関数に別のリソースを宣言的に接続する方法。
 
-参考資料: [トリガーとバインド](pdf/mod02/トリガー、バインド.pdf)
+参考資料: [トリガーとバインド](../AZ-204/pdf/mod02/トリガー、バインド.pdf)
 
 トリガーとバインドにより、他のサービスへのアクセスのハードコーディングを避けることができる。
 
@@ -188,153 +188,11 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/supported-languages
 - Java: アノテーションで指定。
 - C#スクリプト(～.csx), JavaScript等: function.json ファイルに指定
 
-■開発する場所について
-
-Azure portal上で関数を作成・コーディング・テスト実行できる。
-本格的な開発の場合は、ローカル環境で関数を開発・テストし、Azure Functionsにデプロイすることができる。
-ローカル環境での開発には、「Azure Functions Core Tools」を利用する。
-
-■開発の概要
-
-プロジェクトのフォルダ構成: 言語により若干異なる。
-
-以下はC#の例。
-
-```
-プロジェクトのフォルダ
-├関数1のコード(～.cs)
-├関数2のコード(～.cs)
-├ host.json
-├ local.settings.json
-└ func.csproj
-```
-
-以下はJavaScriptの例。
-
-```
-プロジェクトのフォルダ
-├関数1のフォルダ
-│ ├index.js
-│ └function.json
-├関数2のフォルダ
-│ ├index.js
-│ └function.json
-├ host.json
-├ local.settings.json
-└ package.json
-```
-
-function.json: それぞれの関数のトリガー、バインド、その他の構成設定を定義します。
-https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-reference
-
-host.json: 関数アプリのすべての関数に影響するグローバル構成を定義します。
-https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-host-json
-
-local.settings.json: ローカル設定
-
-■Azure Functions Core Toolsとは？
-Azure Functions Core Tools を使用すると、ローカル コンピューター上のコマンド プロンプトまたはターミナルから関数を開発およびテストできます。
-
-■Azure Functions Core Toolsのインストール
-https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-run-local
-Windows/Mac/Linuxでインストール方法が異なる。
-Windowsの場合はMSIでインストール。
-
-■Azure Functions Core Tools（funcコマンド）によるローカルでの関数開発
-
-```
-mkdir func1
-cd func1
-
-func new
-	worker runtime: dotnet
-	template: HTTP trigger
-	Function name: testfunc1
-func start
-	http://localhost:7071/api/testfunc1
-```
-※再度、func new を実行すると、関数を追加できる。
-
-■Visual Studio Codeによるコードの編集
-
-```
-code .
-```
-
-■httpreplとは？
-Web APIのテストを行うためのコマンドラインツール。
-.NET Core がサポートされているすべての場所で動作する。
-※REPL: Read-Evaluate-Print Loop
-
-■httpreplのインストール
-
-```
-dotnet tool install -g Microsoft.dotnet-httprepl
-```
-
-■httpreplでGETを行う例
-
-```
-httprepl http://localhost:7071/api/testfunc1?name=taro
-get
-exit
-```
-
-■httpreplでPOSTを行う例
-
-```
-httprepl http://localhost:7071/api/testfunc1
-post -c {"name":"taro"}
-exit
-```
-
-■Visual Studio CodeのAzure Account拡張機能
-
-Azure Account - a single Azure sign-in and subscription filtering experience for all other Azure extensions
-https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account
-
-F1 または Ctrl-Shift-P でコマンドパレットを起動
-```
-F1, Azure: Sign In
-```
-■Visual Studio CodeのAzure Account拡張機能
-
-Azure Functions - quickly create, debug, manage, and deploy serverless apps directly from VS Code.
-https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions
-```
-F1, Azure Functions: Deploy to Function App...
-```
-■ラボ2 
-
-ラボの手順書
-https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_02_lab_ak.html
-
-- ※冒頭の「仮想マシンへのログイン」はスキップします。
-- ※Microsoft Edge（ブラウザ）は、お好きなWebブラウザで代用できます。
-- ※Windows terminalは、コマンドプロンプト、Windows PowerShell、MacのTerminal等で代用できます。
-
-ラボのコードのダウンロード（緑色の「Code」ボタンをクリック、Download Zip）
-https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure
-ZIPを展開すると、AllFiles/Labs以下にファイルがあります。
-
-Azure Function Core Tools
-https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools
-
-.NET Core SDK 3.1
-https://dotnet.microsoft.com/download
-画面中央「.NET Core 3.1」の「SDK」をダウンロード、インストール。
-
-Visual Studio Code
-https://code.visualstudio.com/download
-
-httprepl
-https://docs.microsoft.com/ja-jp/aspnet/core/web-api/http-repl/#installation
-
 ■Durable Functions
 
 Durable: 永続性のある、恒久的な
 
-[参考資料](pdf/mod02/durable-function.pdf)
+[参考資料](../az-204/pdf/mod02/durable-function.pdf)
 
 ■学習に役立つリソース
 

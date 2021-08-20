@@ -1,4 +1,0 @@
-- [Azure Service Health](mod15-04-azure-service-health.md)
-  - Azureの状態
-  - Service Health
-  - Resource Health
