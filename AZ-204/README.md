@@ -1,4 +1,4 @@
-# 本コースの位置づけ
+# AZ-204 Developing Solutions for Microsoft Azure
 
 Azure開発者向けのコースです。
 
