@@ -14,7 +14,7 @@
 - 「How would you like to sign in?」では、「Microsoft Account」をクリックします。
 - Microsoftアカウントへのサイン インが求められますので、今回のコース用に作成したMicrosoftアカウントでサイン インします。
 - 「このアプリがあなたの情報にアクセスすることを許可しますか？」(Let this app access your info?)という画面では、「はい」(Yes)をクリックします。
-- 「名」(First Name)と「姓」(Last Name)を入力し、「わかりました」(OK)をクリックします。
+- 「アカウントの更新」が表示された場合は、「名前」(First Name)と「名字」(Last Name)を入力し、「はい」(OK)をクリックします。
 - 「トレーニングキーを利用する」(Redeem Training Key)をクリックします。
 - トレーニングキーを入力し、「トレーニングキーを利用する」(Redeem Training Key)をクリックします。
 - 「Check Your Connection!」というメッセージが表示された場合は、右下の「はい」をクリックして閉じます。
