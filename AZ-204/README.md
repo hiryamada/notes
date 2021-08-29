@@ -1,70 +1,46 @@
-# AZ-400 Designing and Implementing Microsoft DevOps solutions
+# 本コースの位置づけ
 
-# ラボ
+Azure開発者向けのコースです。
 
-- 各ラボは1時間(予想時間45分+バッファ15分)です。
-- [ラボ手順書](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/)
-  - 「Answer Key」が付いているものを参照してください（より具体的な指示が書かれています）
-- ラボで使用するソースコード: [GitHubのAZ-204リポジトリ](https://github.com/MicrosoftLearning/AZ-204Ja-DevelopingSolutionsforMicrosoftAzure)にアクセスし、「Code」ボタン（緑）＞Download ZIP でダウンロードしてください。展開すると「Allfiles」フォルダがあり、その中にソースコードが入っています。
-- 主に、Azure portal と [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/) を使用します。
-- 言語は主に C# が使用されます。
+開発でよく使われるサービスや、C#などのプログラムからのAzureサービスの利用に重点が置かれています。
 
-# 講義ノート
+- 初級 ★
+  - AZ-900 Azure Fundamentals
+- 中級 ★★
+  - **AZ-204 Developing Solutions for Microsoft Azure**
+- 上級 ★★★
+  - AZ-400: Designing and Implementing Microsoft DevOps Solutions
 
-- モジュール0: 
-  - [コース紹介](mod00.md)
-  - [ラボ環境のセットアップ](pdf/mod00/ラボ環境のセットアップ.pdf)
-- モジュール1: Azure App Service
-  - [Azure App Service](mod01-01-appservice.md)
-  - ラボ1 
-- モジュール2: Azure Functions
-  - [Azure Functions](mod02-01-functions.md)
-  - [Durable Functions](mod02-02-durable-functions.md)
-  - ラボ2 
-- モジュール3: Blob Storage
-  - [Azure Blob Storage](mod03-01-blob.md)
-  - ラボ3 
-- モジュール4: Cosmos DB
-  - [Azure Cosmos DB](mod04-01-cosmosdb.md)
-  - [Table Table Storage](mod04-02-table.md)
-  - ラボ4
-- モジュール5: IaaS
-  - [Azure VM](mod05-01-vm.md)
-  - [ARM](mod05-02-arm.md)
-  - [Docker](mod05-03-docker.md)
-  - [Azure Container Registry](mod05-04-acr.md)
-  - [Azure Container Instance](mod05-05-aci.md)
-  - ラボ5
-- モジュール6: ユーザー認証と承認
-  - [Microsoft ID Platform](mod06-01-idplatform.md)
-  - [Microsoft Authentication Library (MSAL)](mod06-02-msal.md)
-  - [Microsoft Graph](mod06-03-graph.md)
-  - ラボ6 
-- モジュール7: セキュリティ
-  - [Azure key Vault](mod07-01-keyvault.md)
-  - [マネージドID](mod07-02-managed-id.md)
-  - [App Configuration](mod07-03-app-configuration.md)
-  - ラボ7 
-- モジュール8: API Management
-  - [Azure API Management](mod08-01-apim.md)
-  - ラボ8
-- モジュール9: Logic Apps
-  - [Azure Logic Apps](mod99-01-logicapp.md)
-  - ラボ9
-- モジュール10: イベント
-  - [Azure Event Grid](mod09-01-eventgrid.md)
-  - [Azure Event Hubs](mod99-02-eventhubs.md)
-  - [Azure Notification Hubs](mod99-03-notification-hubs.md)
-  - ラボ10
-- モジュール11: メッセージング
-  - [Azure Service Bus](mod10-01-servicebus.md)
-  - [Azure Queue Storage](mod10-02-queue.md)
-  - ラボ11
-- モジュール12: 監視
-  - [Azure Monitor](mod11-01-monitor.md)
-  - [Azure App Insights](mod11-02-appinsights.md)
-  - ラボ12
-- モジュール13: キャッシュ
-  - [Azure Cache for Redis](mod12-01-redis.md)
-  - [Azure CDN](mod12-02-cdn.md)
-  - ラボ13
+本コースの上位コースとして[AZ-400 DevOps](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400)があります。
+
+ [AZ-400認定の前提条件は AZ-104 または AZ-204 となります。](https://docs.microsoft.com/ja-jp/learn/certifications/devops-engineer)
+
+# モジュール構成
+
+全12モジュールで構成されます。
+
+1. [Azure App Service Web Apps の作成](mod01.md)
+1. [Azure Functions の実装](mod02.md)
+1. Blob Storage を使用するソリューションの開発
+1. Cosmos DB ストレージを使用するソリューションを開発する
+1. IaaS ソリューションの実装
+1. 安全なクラウド ソリューションの実装
+1. ユーザー認証と認可を実装する
+1. API Management を理解します
+1. イベントベースのソリューションの開発
+1. メッセージ ベース ソリューションの開発
+1. 監視とロギングをサポートするインストルメント ソリューション
+1. キャッシュとコンテンツ配信をソリューション内で統合
+
+1日2～3モジュールを目安に進めていきます。
+各モジュールにはラボ（演習時間）があります。
+
+# 認定試験との関連
+
+このコースは、
+[AZ-204](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204)
+の準備に役立ちます。
+
+# よくある質問
+
+コース受講に関するよくあるご質問や、試験の対策方法については、[こちら](../faq.md)にまとめていますので、ご覧ください。
