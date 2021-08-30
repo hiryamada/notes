@@ -2,6 +2,10 @@
 
 https://docs.microsoft.com/ja-jp/azure/app-service/overview
 
+[2015/3/24 一般提供開始](https://weblogs.asp.net/scottgu/announcing-the-new-azure-app-service)
+
+以前に「Azure Websites」「Azure Mobile Services」と呼ばれていたものを統合。
+
 2017/9/6 [App Service on Linux](https://azure.microsoft.com/en-us/blog/general-availability-of-app-service-on-linux-and-web-app-for-containers/) 
 
 2017/9/6 [Linuxコンテナーをサポート（App Service Web App for Containers）](https://azure.microsoft.com/en-us/blog/general-availability-of-app-service-on-linux-and-web-app-for-containers/) 
@@ -209,11 +213,17 @@ WindowsとLinuxから選べる。
 
 注: Isolatedプラン以外のプランと、Isolatedのプランの間での変更はできない。
 
+■Freeプランはいくつまで使える？
+
+https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits
+
+リージョンあたり 10 個まで。
+
 ■プランのスケールアウト・スケールイン
 
 https://docs.microsoft.com/ja-jp/azure/app-service/overview-hosting-plans#how-does-my-app-run-and-scale
 
-プランのインスタンス（VM）数を変更することができる。
+よりたくさんのトラフィックを処理するには、App Serviceプランの「インスタンス数」（＝プランを構成する内部のVMの数）を増やす。
 
 ※FreeとSharedを除く。
 
@@ -231,18 +241,32 @@ App Service プラン(インスタンス数: 2)
 
 ※プラン内のアプリは、すべてのインスタンスで実行される。
 
-■料金
+※App Service内にロードバランサーが内蔵されているため、インスタンス数が1個でも複数個でも、特にアクセス方法に変わりはない。
+
+■手動スケールと自動スケール
+
+Free、Sharedでは自動スケールも手動スケールも利用できない。
+
+Basic以上のプランでは、手動スケールを利用することができる。管理者が、状況に応じて、手動でインスタンスを増減させる。
+
+プランの負荷が高いときはインスタンスを増やして処理能力を高めることができる。プランの負荷が低いときはインスタンスを減らしてコストを削減できる。
+
+Standard以上のプランでは、自動スケールを利用することができる。プランの負荷状況に合わせて、自動的にインスタンスを増減させることができる。
+
+■App Serviceの料金
 
 https://azure.microsoft.com/ja-jp/pricing/details/app-service/windows/
 
-- プランに対して発生。
+この料金表は、インスタンスが1個の場合の料金を示している。インスタンスが複数個の場合の料金は[Azure料金計算ツール](https://azure.microsoft.com/ja-jp/pricing/calculator/)を使用して計算できる。
+
+- App Serviceの料金は「プラン」に対して発生。
   - プランの上でいくつアプリを動かしても料金は変わらない
-- プラン内で「インスタンス」を増減できる場合
-  - インスタンスに比例した料金が発生
-- プランの「価格レベル」を変更することができる
-  - Premium P1 から Standard S1 に変更する、など。
-- プランは「停止」することができない
+- （Azure VMとは異なり）プランは「停止」することができない
   - 「停止」して料金の発生をストップさせることはできない
+- プラン内で「インスタンス」を増減できる場合(Basicプラン以上)
+  - インスタンスに比例した料金が発生する
+- プランの「価格レベル」は変更することができる
+  - Premium P1 から Standard S1 に変更する、など。
 
 例: Standard S1 (1コア、1.75 GB メモリ), West US, Windows
 - 1インスタンス: 月73ドル
@@ -250,12 +274,6 @@ https://azure.microsoft.com/ja-jp/pricing/details/app-service/windows/
 - 3インスタンス: 月219ドル
 - ...
 - 10インスタンス: 月730ドル
-
-■Freeプランはいくつまで使える？
-
-https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits
-
-リージョンあたり 10 件まで。
 
 
 ■主なコードのデプロイ方法
@@ -303,11 +321,13 @@ GitHub/BitBucket/Azure Repos
 - [コンテナーのCI/CD](https://docs.microsoft.com/ja-jp/azure/app-service/deploy-ci-cd-custom-container?tabs=acr&pivots=container-linux)
 - [ARMテンプレートによるデプロイ](https://docs.microsoft.com/ja-jp/azure/app-service/deploy-complex-application-predictably)
 
-■App Service組み込みの認証機能（Easy Auth）
+■App Service組み込みのユーザー認証機能（Easy Auth）
 
 https://docs.microsoft.com/ja-jp/azure/app-service/overview-authentication-authorization
 
-最小限のコードで、アプリに認証機能を追加することができる。
+（アプリ自体に認証の仕組みがない場合）デフォルトでは、App Serviceアプリには、ユーザー認証なしでアクセスすることができる。
+
+最小限のコードと設定で、アプリにユーザー認証機能を追加することができる。
 
 - Microsoft IDプラットフォーム
   - Azure ADのユーザー
@@ -317,7 +337,7 @@ https://docs.microsoft.com/ja-jp/azure/app-service/overview-authentication-autho
 - Twitter
 - 任意のOpenID Connectプロバイダー
 
-※App Service組み込みの認証機能を使用せず、Webアプリ独自の認証を使用することもできる。すでにアプリが独自の認証機能を実装している場合は、App Service組み込みの認証機能を使用する必要はない。
+※App Service組み込みのユーザー認証機能を使用せず、アプリ側で独自のユーザー認証を実装することもできる。すでにアプリが独自のユーザー認証機能を実装している場合は、App Service組み込みのユーザー認証機能を使用する必要はない。
 
 ■App ServiceにおけるOSの更新
 
@@ -327,14 +347,16 @@ https://docs.microsoft.com/ja-jp/azure/app-service/overview-patch-os-runtime
 Azure では、2 つのレベルで OS が管理される。
 
 - 物理サーバー
+  - [Windows Hyper-Vを基盤としている](https://docs.microsoft.com/ja-jp/azure/security/fundamentals/hypervisor)
 - App Service を実行するゲスト仮想マシン(VM)
+  - ユーザーが選択したOS(Windows/Linux)
 
 ```
 App Serviceアプリ
 -----------------
- ゲスト仮想マシン
+ ゲスト仮想マシン ← OS
 -----------------
-   物理サーバー
+   物理サーバー ← OS
 ```
 
 
@@ -385,6 +407,8 @@ App Serviceアプリ
 ■App Serviceの言語ランタイムの更新・追加・非推奨化・廃止
 
 https://docs.microsoft.com/ja-jp/azure/app-service/overview-patch-os-runtime#when-are-supported-language-runtimes-updated-added-or-deprecated
+
+[まとめ資料](pdf/mod01/App%20Serviceの「更新」.pdf)
 
 サポートされる言語ランタイムの新しい安定バージョン (メジャー、マイナー、またはパッチ) は、App Service に定期的に追加される。
 
