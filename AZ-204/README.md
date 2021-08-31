@@ -21,8 +21,8 @@ Azure開発者向けのコースです。
 
 1. [Azure App Service Web Apps の作成](mod01.md)
 1. [Azure Functions の実装](mod02.md)
-1. Blob Storage を使用するソリューションの開発
-1. Cosmos DB ストレージを使用するソリューションを開発する
+1. [Blob Storage を使用するソリューションの開発](mod03-01-blob.md)
+1. [Cosmos DB ストレージを使用するソリューションを開発する](mod04.md)
 1. IaaS ソリューションの実装
 1. 安全なクラウド ソリューションの実装
 1. ユーザー認証と認可を実装する

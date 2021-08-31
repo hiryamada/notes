@@ -9,6 +9,93 @@ https://azure.microsoft.com/ja-jp/pricing/details/cosmos-db/
 ドキュメント
 https://docs.microsoft.com/ja-jp/azure/cosmos-db/
 
+特設ページ
+https://gotcosmos.com/
+
+■歴史
+
+2015/4/8 Azure DocumentDB 一般提供開始 https://azure.microsoft.com/ja-jp/blog/nosql-database-service-azure-documentdb-now-generally-available/
+
+完全マネージドのNoSQL データベース サービス、JSONを読み書き、SQLでクエリ可能。
+
+2017/5/10 Azure Cosmos DB 一般提供開始 https://azure.microsoft.com/ja-jp/blog/azure-cosmos-db-microsofts-globally-distributed-multi-model-database-service/
+
+2018/3/12 データエクスプローラー 一般提供開始 https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-data-explorer-ga-2/
+
+2018/9/24 Cassandra APIサポート 一般提供開始 https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-cassandra-api-now-generally-available/
+
+2020/3/6 Freeレベル(Free Tier) 提供開始 https://devblogs.microsoft.com/cosmosdb/build-apps-for-free-with-azure-cosmos-db-free-tier/
+
+
+2021/5/25 Cosmos DB serverless 一般提供開始 https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-serverless-now-in-general-availability/
+
+■ChaosDB脆弱性(2020/8/12)
+
+概要:
+
+- Cosmos DBに統合されている「Jupyter Notebook」を悪用して、別の顧客が所有するCosmos DBアカウントのプライマリーキーを取得できるという脆弱性(ChaosDB)が発見された。
+- プライマリキーにより、Cosmos DBアカウントに対する完全なアクセス権が得られる。
+- この脆弱性はWiz(www.wiz.io)の研究者が発見し、8月9日に脆弱性の影響を確認し、8月12日にマイクロソフトに報告した。
+- マイクロソフトでは、報告を受けてから48時間以内に、脆弱性を修正した。
+- 影響を受ける顧客にはマイクロソフトから対策方法を連絡済み。
+- 技術的な詳細については今後発表予定。
+
+ソース:
+
+- https://www.wiz.io/blog/protecting-your-environment-from-chaosdb
+- https://msrc-blog.microsoft.com/2021/08/27/update-on-vulnerability-in-the-azure-cosmos-db-jupyter-notebook-feature/
+
+■Cosmos DBとは？
+
+NoSQLデータベース。
+
+1桁ミリ秒の読み書き性能。
+
+データをグローバルに分散（レプリケーション）可能。マルチマスターの読み書きも可能。
+
+5種類のAPIをサポート。Cosmos DBアカウントを作成する際に選択する。
+
+- SQL API - ネイティブのAPI. SELECT文でクエリを実行できる。
+- Table API - ストレージアカウントのTable APIと互換
+- MongoDB API - MongoDB互換
+- Gremlin API - Apache Tinkerpop互換
+- Cassandra API - Apache Cassandra互換
+
+各種言語用のクライアントライブラリ（SDK）を使用して、プログラムからデータを読み書きする。
+
+■料金
+
+https://docs.microsoft.com/ja-jp/azure/cosmos-db/understand-your-bill
+
+- プロビジョニング済みのRU（※）
+- ストレージ(GB単位)
+
+※サーバーレスのアカウントの場合は、実際に使用された「要求ユニット（RU）」
+
+■Freeレベルについて
+
+https://docs.microsoft.com/ja-jp/azure/cosmos-db/free-tier
+
+- 開発・テスト用
+- サブスクリプションにつき Free レベルの Azure Cosmos DB アカウントは 1 つまで
+- アカウントでの最初の 1000 RU/秒と 25 GB のストレージが無料
+  - それを超えると有料
+
+■リソースの構造
+
+```
+Cosmos DBアカウント
+└データベース
+ └コンテナー(テーブルに相当)
+  └項目(行に相当)
+```
+
+- データベースおよびコンテナー容量は無制限。
+- 1項目は最大2MBまで（JSON表現のUTF-8の長さ）。
+- 1論理パーティションあたり最大20GBまで。
+
+参考:[Cosmos DBの制限](https://docs.microsoft.com/ja-jp/azure/cosmos-db/concepts-limits)
+
 ■Cosmos DBは「グローバル分散データベース」
 
 - リージョンをいつでも追加・削除することができ、その間、可用性は低下しない
@@ -132,15 +219,6 @@ https://stackoverflow.com/questions/64084499/can-i-use-a-client-constructed-sess
 - 5種類の整合性を選択して、画面に表示される音符のイメージを確認
 - （保存はしない）
 
-■5種類のAPI
-
-Cosmos DBアカウントを作成する際に選択する。
-
-- SQL API - ネイティブのAPI. SELECT文でクエリを実行できる。
-- Table API - ストレージアカウントのTable APIと互換
-- MongoDB API - MongoDB互換
-- Gremlin API - Apache Tinkerpop互換
-- Cassandra API - Apache Cassandra互換
 
 ■要求ユニット（Request Unit, RU）
 
@@ -261,6 +339,9 @@ https://docs.microsoft.com/ja-jp/azure/cosmos-db/partitioning-overview
 
 Microsoft Learn: サーバーレス アプリケーションの作成
 https://docs.microsoft.com/ja-jp/learn/paths/work-with-nosql-data-in-azure-cosmos-db/
+
+Azure Cosmos DB Workshop
+https://azurecosmosdb.github.io/labs/
 
 ■ラボ4: Cosmos DBをC#コードから操作してみよう
 
