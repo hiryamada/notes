@@ -86,6 +86,8 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-timer
 
 「NCRONTAB式」でスケジュールを指定。[CRONTAB](https://ja.wikipedia.org/wiki/Crontab)に似ている。
 
+参考: NCRONTABの式（ `*/30 * * * * *` 等）を入れると、人間の言葉（日本語・英語等）でその意味を説明してくれるサイト https://bradymholt.github.io/cron-expression-descriptor/?locale=ja
+
 ■Azureのサービスとの統合
 
 さまざまなAzureサービスと統合されている。

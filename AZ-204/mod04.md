@@ -18,6 +18,22 @@ https://gotcosmos.com/
 
 完全マネージドのNoSQL データベース サービス、JSONを読み書き、SQLでクエリ可能。
 
+JSONデータの例:
+```
+[
+  {
+    id: 1,
+    name: "taro"
+  },
+  {
+    id: 2,
+    name: "jiro",
+    age: 20
+  },
+]
+```
+
+
 2017/5/10 Azure Cosmos DB 一般提供開始 https://azure.microsoft.com/ja-jp/blog/azure-cosmos-db-microsofts-globally-distributed-multi-model-database-service/
 
 2018/3/12 データエクスプローラー 一般提供開始 https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-data-explorer-ga-2/
