@@ -1,4 +1,4 @@
-■Azure Cosmos DBの概要
+# Azure Cosmos DB
 
 製品ページ
 https://azure.microsoft.com/ja-jp/services/cosmos-db/
