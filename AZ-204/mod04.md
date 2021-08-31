@@ -136,6 +136,8 @@ https://azure.microsoft.com/ja-jp/support/legal/sla/cosmos-db/v1_4/
 
 ■Cosmos DBの「レイテンシ」(待機時間)
 
+https://docs.microsoft.com/ja-jp/azure/cosmos-db/consistency-levels#consistency-levels-and-latency
+
 すべての「整合性レベル」において、以下の性能が常に保証される。
 
 - 書き込み/読み込み待機時間: 99 パーセンタイルで 10 ミリ秒未満
@@ -143,6 +145,20 @@ https://azure.microsoft.com/ja-jp/support/legal/sla/cosmos-db/v1_4/
 ※マルチリージョンかつ厳密な整合性の場合を除く。
 
 ※99パーセンタイル: 100個の測定値を、短い順で並び替えた場合の、99番目の値。
+
+例: 100回の書き込みを行い、待機時間の短い順に並べた場合
+
+```
+1: 1 ms
+2: 1 ms
+3: 2 ms
+4: 2 ms
+5: 2 ms
+...
+98: 9 ms
+99: 9 ms    ← 99 パーセンタイルで10ミリ秒未満
+100: 10 ms
+```
 
 ■ハンズオン: Cosmos DBアカウントを作成しよう
 
@@ -183,7 +199,7 @@ Cosmos DBでは、5種類の「整合性レベル」を指定できる。
 
 Cosmos DBアカウントに対し、デフォルトで適用される整合性は「セッション」。
 
-「セッション」整合性は、多くの現実のシナリオに最適であり、Cosmos DBで推奨されるオプションでもある。
+「セッション」整合性は、多くの現実のシナリオに最適。Cosmos DBで推奨されるオプション。
 
 Cosmos DBに対する各リクエストでも、整合性レベルを指定できる。アカウントレベルのデフォルト値から「弱い」整合性レベルへとオーバーライドできる。
 
@@ -235,7 +251,6 @@ https://stackoverflow.com/questions/64084499/can-i-use-a-client-constructed-sess
 - 5種類の整合性を選択して、画面に表示される音符のイメージを確認
 - （保存はしない）
 
-
 ■要求ユニット（Request Unit, RU）
 
 Cosmos DBに対する操作コストを表す。
@@ -271,11 +286,6 @@ Cosmos DBアカウント
       └ プロパティ ... 列に相当
 ```
 
-1つのサブスクリプションには1つまで「Freeレベル」のCosmos DBアカウントを作成できる。
-
-Freeレベル
-https://docs.microsoft.com/ja-jp/azure/cosmos-db/free-tier
-
 
 ■ハンズオン: コンテナーと項目を作ってみよう
 
@@ -289,11 +299,11 @@ Cosmos DBアカウント
   └コンテナー music (パーティションキー: /artist )
     ├項目 { "artist": "YOASOBI", "id": "夜に駆ける", "lyrics": "沈むように..." }
     ├項目 { "artist": "YOASOBI", "id": "ハルジオン", "lyrics": "過ぎてゆく..." }
-    ├項目 { "artist": "LISA", "id": "炎", "lyrics": "「さよなら」..."}
-    └項目 { "artist": "LISA", "id": "紅蓮華", "lyrics": "強くなれる..."}
+    ├項目 { "artist": "LiSA", "id": "炎", "lyrics": "「さよなら」..."}
+    └項目 { "artist": "LiSA", "id": "紅蓮華", "lyrics": "強くなれる..."}
 ```
 
-上記の例の場合、artistをパーティションキーとしているため、2つの論理パーティションが作られることになる。
+上記の例の場合、2つの論理パーティション(YOASOBIとLISA)が作られることになる。
 
 ■パーティションキー
 
