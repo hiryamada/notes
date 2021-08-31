@@ -1,18 +1,14 @@
-■Azure Functionsの概要
+# Azure Functions
 
 サーバーレスアプリケーションの実行を行うサービス。
 コードを実行するためのインフラの管理が不要。必要なリソースはオンデマンドで提供される（「従量課金プラン」の場合）。
 「関数アプリ」リソース内に複数の「関数」を作成。
-「関数アプリ」作成時に、そのアプリが使用する「価格プラン」を選択する。
 
 製品ページ
 https://azure.microsoft.com/ja-jp/services/functions/
 
 価格プラン
 https://azure.microsoft.com/ja-jp/services/functions/#pricing
-
-価格の詳細
-https://azure.microsoft.com/ja-jp/pricing/details/functions/
 
 ※Azureのサーバーレスのサービス
 https://azure.microsoft.com/ja-jp/solutions/serverless/
@@ -50,7 +46,22 @@ https://github.com/Azure/app-service-announcements/issues
 
 （セッションなどの）状態を持たせる → 基本的にAzure Functionsのようなサーバーレスのアーキテクチャはステートレスが前提。ただし、外部のストレージを利用するなどして、状態を持たせる（複数の実行の間でデータを受け渡す）ことは不可能ではない。
 
+■料金
 
+https://azure.microsoft.com/ja-jp/pricing/details/functions/
+
+「関数アプリ」作成時に、そのアプリが使用する「価格プラン」を選択する。
+
+- [消費 / 使用量 / 従量課金](https://docs.microsoft.com/ja-jp/azure/azure-functions/consumption-plan)
+  - 1 秒あたりのリソースの使用量と実行回数に基づいて課金
+- [Premium プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-premium-plan?tabs=portal)
+  - インスタンス全体にわたって割り当てられたコア秒数とメモリに基づく
+  - コールド スタートなし
+  - 強化されたパフォーマンス
+  - VNetアクセス
+- [専用プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan)
+  - 「App Service プラン」上でAzure Functionsを実行
+  - App Service プランの料金
 
 ■テンプレート
 
