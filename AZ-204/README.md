@@ -24,11 +24,11 @@ Azure開発者向けのコースです。
 1. [Blob Storage を使用するソリューションの開発](mod03-01-blob.md)
 1. [Cosmos DB ストレージを使用するソリューションを開発する](mod04.md)
 1. IaaS ソリューションの実装
-  - [VM](mod05-01-vm.md)
-  - [ARMテンプレート](mod05-02-arm.md)
-  - [Docker](mod05-03-docker.md)
-  - [Azure Container Registry](mod05-04-acr.md)
-  - [Azure Container Instance](mod05-05-aci.md)
+   - [VM](mod05-01-vm.md)
+   - [ARMテンプレート](mod05-02-arm.md)
+   - [Docker](mod05-03-docker.md)
+   - [Azure Container Registry](mod05-04-acr.md)
+   - [Azure Container Instance](mod05-05-aci.md)
 2. 安全なクラウド ソリューションの実装
 3. ユーザー認証と認可を実装する
 4. API Management を理解します
