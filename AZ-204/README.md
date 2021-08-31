@@ -29,8 +29,8 @@ Azure開発者向けのコースです。
    - [Docker](mod05-03-docker.md)
    - [Azure Container Registry](mod05-04-acr.md)
    - [Azure Container Instance](mod05-05-aci.md)
-2. 安全なクラウド ソリューションの実装
-3. ユーザー認証と認可を実装する
+2. [安全なクラウド ソリューションの実装](mod06.md)
+3. [ユーザー認証と認可を実装する](mod07.md)
 4. API Management を理解します
 5. イベントベースのソリューションの開発
 6. メッセージ ベース ソリューションの開発
