@@ -55,7 +55,7 @@ NoSQLデータベース。
 
 5種類のAPIをサポート。Cosmos DBアカウントを作成する際に選択する。
 
-- SQL API - ネイティブのAPI. SELECT文でクエリを実行できる。
+- SQL (Core) API - ネイティブのAPI. SELECT文でクエリを実行できる。
 - Table API - ストレージアカウントのTable APIと互換
 - MongoDB API - MongoDB互換
 - Gremlin API - Apache Tinkerpop互換
