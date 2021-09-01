@@ -562,4 +562,4 @@ https://docs.microsoft.com/ja-jp/graph/tutorials
 
 - ソースコードをまだダウンロードしていない場合は[こちらからダウンロード](https://github.com/MicrosoftLearning/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/archive/refs/heads/master.zip)します。
 - まず[参考資料](lab/lab06.md)を見て、概要を把握します
-- 次に[手順書](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_06_lab_ak.html)を見ながら演習を行います。
+- 次に[手順書](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_06.html)を見ながら演習を行います。
