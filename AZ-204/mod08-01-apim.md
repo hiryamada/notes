@@ -108,6 +108,8 @@ Basic、Standard、Premiumで、スケーリングが可能。
       - TLS 1.0: On/Off(デフォルト)
       - SSL 3.0: On/Off(デフォルト)
 
+※[レガシーな暗号化プロトコルの非推奨化（Azure AD）](https://docs.microsoft.com/ja-jp/troubleshoot/azure/active-directory/enable-support-tls-environment)
+
 API Managementリソースの作成にはかなり時間がかかる。
 
 - Consumption: 1分程度
