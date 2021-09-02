@@ -39,7 +39,12 @@ Azure開発者向けのコースです。
    - [Service Bus](mod10-01-servicebus.md)
    - [Queue Storage](mod10-02-queue.md)
 7. [監視とロギングをサポートするインストルメント ソリューション](mod11.md)
-8. [キャッシュとコンテンツ配信をソリューション内で統合](mod12.md)
+   - [Azure Monitor](mod11-01-monitor.md)
+   - [Application Insights](mod11-02-appinsights.md)
+   - [Log Analytics](mod11-03-loganalytics.md)
+9. [キャッシュとコンテンツ配信をソリューション内で統合](mod12.md)
+   - [Azure Cache for Redis](pdf/mod13/Azure%20Cacheまとめ.pdf)
+   - [Azure CDN](pdf/mod13/Azure%20CDNまとめ.pdf)
 
 1日2～3モジュールを目安に進めていきます。
 各モジュールにはハンズオンラボ（演習時間）があります。

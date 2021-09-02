@@ -65,6 +65,8 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/overv
 
 ■Log Analyticsとは
 
+[詳しい解説](mod11-03-loganalytics.md)
+
 - ログの分析機能。
 - Azure Monitorの「ログ」、
 
