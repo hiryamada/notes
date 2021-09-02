@@ -37,8 +37,13 @@ Event Gridの動作確認のためのWebアプリケーション。
 
 ■ラボの重要ポイント
 
+
+使用するApp Service プランはFreeでOK。
+
+Azure portalとAzure Cloud Shellだけで実施可能。
+
 - 演習1
-  - Cloud Shellを使用して、サブスクリプションに「Microsoft.EventGrid」リソースプロバイダーが含まれていることを確認。
+  - Cloud ShellとAzure CLIを使用して、サブスクリプションに「Microsoft.EventGrid」リソースプロバイダーが含まれていることを確認。
   - 実行例: 
     ```
     $ az provider list --query "[].namespace" |grep -i eventgrid
