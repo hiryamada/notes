@@ -1,91 +1,279 @@
-Azure API Management
+# Azure API Management (APIM)
 
-API Management (APIM) は、**既存のバックエンドのサービスに対して**一貫性のある最新の API ゲートウェイを迅速に作成する手段です。
+- [製品ページ](https://azure.microsoft.com/ja-jp/services/api-management/)
+- [価格](https://azure.microsoft.com/ja-jp/pricing/details/api-management/)
+- [ドキュメント](https://docs.microsoft.com/ja-jp/azure/api-management/api-management-key-concepts)
 
-[製品ページ](https://azure.microsoft.com/ja-jp/services/api-management/)
-
-[価格](https://azure.microsoft.com/ja-jp/pricing/details/api-management/)
-
-[ドキュメント](https://docs.microsoft.com/ja-jp/azure/api-management/api-management-key-concepts)
-
-Microsoft Learn
-
-- [Azure での API 統合の設計](https://docs.microsoft.com/ja-jp/learn/paths/architect-api-integration/)
+2014/9/10 一般提供開始 https://azure.microsoft.com/en-us/updates/general-availability-azure-api-management/
 
 
-[aka.ms/apimlove](https://azure.github.io/api-management-resources/)
+■概要
 
-[API は公開してからが始まりです](https://eventmarketing.blob.core.windows.net/mstechsummit2018-after/AD06_PDF_TS18.pdf)
+(1)「API ゲートウェイ」を作成できる。
 
-# [「APIゲートウェイ」パターン](https://docs.microsoft.com/ja-jp/dotnet/architecture/microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern)
+```
+フロントエンド
+↓
+APIゲートウェイ: 認証、キャッシュ、変換、測定
+↓
+既存のバックエンドのサービス
+```
 
-[本家](https://microservices.io/patterns/apigateway.html)
+「APIゲートウェイ」は、バックエンドに代わり、認証、キャッシュ、変換、測定などの機能を提供する。バックエンドではこれらの機能を作り込む必要がなくなる。
 
-Implement an API gateway that is the single entry point for all clients. 
+(2)「開発者ポータル」を作成できる。
 
-The API gateway handles requests in one of two ways. Some requests are simply proxied/routed to the appropriate service. 
+https://docs.microsoft.com/ja-jp/azure/api-management/api-management-howto-developer-portal
 
-It handles other requests by fanning out to multiple services.
+```
+APIを利用したい開発者
+↓
+開発者ポータル
+```
 
-# 価格レベル
+APIを利用したい開発者に対し、APIのドキュメントを提供する。
 
-- 使用量（Consumption）
-- Developer
+Premium、Standard、Basic、Developer レベルで使用可能。
+
+■URL
+
+API Managementのリソースを「example」という名前で作成した場合.
+
+- APIゲートウェイ: https://example.azure-api.net
+- 開発者ポータル: https://example.developer.azure-api.net
+
+■価格レベル
+
+https://docs.microsoft.com/ja-jp/azure/api-management/api-management-features
+
+価格レベルにより提供される機能が異なる。
+
+- Consumption: 「開発者ポータル」使用不可
+- Developer: SLAなし、非運用環境向け
 - Basic
 - Standard
 - Premium
-- Isolated
+- Isolated: [高レベルの分離](https://docs.microsoft.com/ja-jp/azure/api-management/upgrade-and-scale#compute-isolation)が必要なエンタープライズ向け、プレビュー中
 
-[Azure API Management レベルの機能に基づく比較](https://docs.microsoft.com/ja-jp/azure/api-management/api-management-features) - 価格レベルにより提供される機能が異なる。
+Developerは運用環境向けではない。SLA提供なし。
 
-# [バージョン](https://docs.microsoft.com/ja-jp/azure/api-management/api-management-versions)
+変更（アップグレード・ダウングレード）が可能。例: StandardからPremiumにアップグレード。
 
-バージョンを使用すると、関連する API のグループを開発者に示すことができます。 バージョンを使用すると API の重大な変更を安全に処理できます。 クライアントは、準備ができたら新しい API バージョンを使用することを選択できます。その一方で、既存のクライアントは以前のバージョンを引き続き使用します。 
+■スケーリング
 
-バージョンは (ユーザーが選択する任意の文字列値である) バージョン識別子で区別されるため、バージョン管理スキームにより、クライアントは使用する API のバージョンを識別できます。
+https://docs.microsoft.com/ja-jp/azure/api-management/upgrade-and-scale#upgrade-and-scale
 
-パスベース、ヘッダーベース、クエリ文字列ベースのバージョン管理を利用できます。
+スケーリング（「ユニット」の追加・削除）を行うことで、より多数のトラフィックを処理することができる。
 
-# [リビジョン](https://docs.microsoft.com/ja-jp/azure/api-management/api-management-revisions)
+Basic、Standard、Premiumで、スケーリングが可能。
 
-リビジョンを使用すると、制御された安全な方法で、API に変更を加えることができます。 変更を加える場合は、新しいリビジョンを作成します。 そうすれば、API のコンシューマーに影響を及ぼすことなく、API を編集してテストすることができます。 準備ができたら、そのリビジョンを現在のリビジョンにします。
+- Basic: 1-2
+- Standard: 1-4
+- Premium: 1-10
 
-API の各リビジョンには、特別な形式の URL を使用してアクセスできます。 クエリ文字列の前ではなく、対象の API の URL の末尾に ;rev={revisionNumber} を追加することで、その API の特定のリビジョンにアクセスします。 
+■作成
 
-[バージョンとリビジョンについての説明](https://azure.microsoft.com/ja-jp/blog/versions-revisions/)
+- Azure portalで「API Management」を検索。「API Management サービス」を選択。
+- 作成
+- リソースグループ、リージョン、リソース名を指定。
+- 「Organization name」を指定 例: Contoso
+  - 指定した名前は、「開発者ポータル」で表示されたり、サービスから送信されるメールに記入されたりする。
+- 「Administrator email」を指定
+  - 個々で指定した管理者メールアドレスへ、サービスからの通知メールが送られる
+- Pricing tier（価格レベル）を指定
+  - デフォルト: Developer
+- その他
+  - Application Insights: On/Off Onの場合は既存のApplication Insightsインスタンスを指定
+  - Scale: Basic, Standard, Premiumの場合はユニット数を選択
+  - Managed Identity: マネージドIDを On/Off(デフォルト)
+  - Virtual Network: VNet内にデプロイするかどうか。Developer/Premiumで指定可能。
+    - None (デフォルト)
+    - External: 
+      - APIゲートウェイと開発者ポータルに、パブリック インターネットから外部ロード バランサーを使用してアクセス可
+      - ゲートウェイはVNet内のリソースにアクセス可
+    - Internal
+      - APIゲートウェイと開発者ポータルに、VNet内から内部ロード バランサーを使用してアクセス可
+      - ゲートウェイはVNet内のリソースにアクセス可
+  - Protocol Settings: レガシーな暗号化プロトコルのサポート
+    - Cipher:
+      - Triple DES: On/Off(デフォルト)
+    - Client-side protocols:
+      - HTTP/s: On/Off(デフォルト)
+    - Client-side transport security:
+      - TLS 1.1: On/Off(デフォルト)
+      - TLS 1.0: On/Off(デフォルト)
+      - SSL 3.0: On/Off(デフォルト)
+    - Backend-side transport security:
+      - TLS 1.1: On/Off(デフォルト)
+      - TLS 1.0: On/Off(デフォルト)
+      - SSL 3.0: On/Off(デフォルト)
 
-# 呼び出し元の制限
+API Managementリソースの作成にはかなり時間がかかる。
 
-- OAuth 2.0
-- クライアント証明書
-- 呼び出し元IPの制限
-- サブスクリプションキー
+- Consumption: 1分程度
+- Developer, Basic等: 40分程度
 
-# [サブスクリプション](https://docs.microsoft.com/ja-jp/azure/api-management/api-management-subscriptions)
+リソースの作成が完了すると、Consumptionの状態は「オンライン」、その他(Basic, Developer等)のリソースの状態は「アクティブ」となる。
 
-サブスクリプションは、Azure API Management の重要な概念です。 これは、API ユーザーが API Management インスタンスを介して公開されている API へのアクセス権を取得するための最も一般的な方法です。 
+■APIゲートウェイの設定
 
-API へのアクセスをセキュリティで保護する簡単で一般的な方法は、サブスクリプション キーを使用することです。
+バックエンドとして[天気予報API](https://weather.tsukumijima.net/)を利用。
+- [東京(130010)](https://weather.tsukumijima.net/api/forecast/city/130010)
+- [大阪(270000)](https://weather.tsukumijima.net/api/forecast/city/270000)
+- [場所コード（「一次細分区域」id）の一覧](https://weather.tsukumijima.net/primary_area.xml)
 
-公開された API を使用する必要がある開発者は、これらの API を呼び出すときに、有効なサブスクリプション キーを HTTP 要求に含める必要があります。
+Azure portal＞API Management＞（作成したリソース）
+
+- 画面左メニューの「API」をクリック
+- Add APIをクリック
+- Blank APIをクリック
+  - Display name: tenki
+  - Name: tenki
+  - Web service URL: https://weather.tsukumijima.net/api/forecast/city/130010
+  - Createをクリック
+  - (tenkiというAPIが追加される)
+- All APIsの下のtenkiをクリック
+- Add operationをクリック
+  - Display name: tokyo
+  - Name: tokyo
+  - URL: GET, /
+  - Saveをクリック
+  - (tokyoというオペレーションが追加される)
+- All APIsの下のtenkiの脇の「...」をクリック
+- Add Versionをクリック
+  - Version identifier: v1
+  - Full API version name: tenki-v1
+  - Products: StarterとUnlimitedを選択
+  - Createをクリック
+  - (tenki APIの下に、Originalと、v1が表示される)
+
+■開発者ポータルの設定
+
+Azure portal＞API Management＞（作成したリソース）
+
+- 画面左メニューの「ポータルの概要」をクリック
+  - 画面上部の「開発者ポータル」をクリック
+  - (新しいタブが開く)
+  - (ページが表示されるまで1分ほど待つ)
+  - タブを閉じる
+- 画面左メニューの「ユーザー」をクリック
+- 画面左メニューの「ポータルの概要」をクリック
+  - 「公開」をクリック
+  - 「はい」をクリック
+  - 「CORSを有効にする」をクリック
+  - 「はい」をクリック
+
+■製品の設定
+
+Azure portal＞API Management＞（作成したリソース）
+
+- 画面左メニューの「製品」をクリック
+- Starterをクリック
+- 画面左メニューの「設定」をクリック
+  - 「サブスクリプションを要求する」のチェックを外す
+  - 画面上部の「保存」をクリック
+
+■開発者ポータルの利用
+
+Azure portal＞API Management＞（作成したリソース）
+
+- 画面左メニューの「概要」(一番上)をクリック
+- 「開発者ポータルのURL」をクリップボードにコピー
+- InPrivateウィンドウ（シークレットウィンドウ）を開く。
+  - または、今使っているものとは別のWebブラウザを起動する
+- コピーしたURL（開発者ポータル）にアクセスする
+- Explore APIsをクリック
+- tenki-v1をクリック
+- Try itをクリック
+- （画面下部にスクロールして）Sendをクリック
+- 東京の天気予報の情報が表示される
+
+■バージョン
+
+https://docs.microsoft.com/ja-jp/azure/api-management/api-management-versions
+
+一つのAPIゲートウェイで複数の「APIバージョン」を扱うことができる。
+
+```
+APIバージョン1
+└ GET /users/{id} ... ユーザー情報の取得
+
+APIバージョン2
+├ GET /users/{id} ... ユーザー情報の取得
+└ POST /users ... 新しいユーザーの作成
+```
+
+バージョンは「バージョン識別子」で区別される。
+
+APIゲートウェイに接続するクライアントは、任意のバージョンを使用することができる。パスベース、ヘッダーベース、クエリ文字列ベースのいずれかで、バージョンを指定する。
+
+■リビジョン
+
+https://docs.microsoft.com/ja-jp/azure/api-management/api-management-revisions
+
+https://azure.microsoft.com/ja-jp/blog/versions-revisions/
+
+リビジョンを使用すると、開発者は、API 利用者に影響を及ぼすことなく、API を変更（編集・テスト）することができる。
+
+変更を加える場合は、新しいリビジョンを作成する。
+
+各リビジョンには、API の URL の末尾に `;rev={revisionNumber}` を追加して、アクセスできる。
+
+準備ができたら、そのリビジョンを現在のリビジョンにする。
 
 
-Azure portal の製品の [設定] ページで [サブスクリプションを要求する] オプションをオフにすることができます。 その結果、API キーを使用せずに製品のすべての API にアクセスできるようになります。
+■ サブスクリプション
+
+https://docs.microsoft.com/ja-jp/azure/api-management/api-management-subscriptions
+
+サブスクリプションは、API ユーザーが API Management インスタンスを介して公開されている API へのアクセス権を取得するための方法。 
+
+APIの利用者（開発者）は、「サブスクリプション」を取得する。
+
+サブスクリプションでは、キーが発行される。APIを呼び出すプログラムに、キーを含める必要がある。
+
+※Azure portal の製品の 設定 ページで 「サブスクリプションを要求する」 オプションをオフにすることができ、キーを使用せずに製品のすべての API にアクセスできるようにすることもできる。
 
 
-# Ocp-Apim-Subscription-Key 
+■参考: Ocp-Apim-Subscription-Key 
+
+APIを呼び出すプログラムでは、リクエストのOcp-Apim-Subscription-Key ヘッダーで、キーを送信する。
 
 [What is OCP ?](https://stackoverflow.com/questions/52648362/what-does-the-ocp-stand-for-in-ocp-apim-subscription-key-header-azure-api-man)
 
-Ocp-Apim-Subscription-Key には、この API に関連付けられているサブスクリプション キーの値が自動的に入力されます。
+■ポリシー
 
-# アクセス制限ポリシー
+ポリシーを仕様して、API Managementにさまざまな機能を付与することができる。
 
-Azure API Management (APIM) のポリシーは、発行者がその構成を通じて API の動作を変更できる、システムの強力な機能の 1 つです。 ポリシーは、API の要求または応答に対して順に実行される一連のステートメントのコレクションです。 代表的なステートメントとしては、XML 形式から JSON 形式への変換や、(開発者からの呼び出しの回数を制限する) 呼び出しレート制限が挙げられます。
+- 変換ポリシー
+  - JSONからXML
+  - XMLからJSON
+  - 本文中の文字列の置換
+  - ヘッダーの設定
+  - クエリ文字列パラメーターの設定
+- アクセス制限ポリシー
+  - ヘッダーの確認
+  - 呼び出しレートに基づく制限
+  - 使用量クォータに基づく制限
+  - 呼び出し元IPに基づく制限
+  - JWTの検証
+- キャッシュポリシー
+- クロスドメインポリシー
+- 高度なポリシー
+  - コンカレンシー制限
+  - Event Hubsにログ記録
+  - Mock response
+  - 再試行（条件が満たされるまで囲まれたポリシーステートメントの実行を繰り返す）
+  - 制御フロー（条件付きでポリシーを適用）
+  - 要求を送信する
+  - 変数を設定する
+  - 状態コードを設定する
 
-# ポリシー構成
+■ ポリシー定義
 
-ポリシー定義は、一連の受信ステートメントと送信ステートメントが記述された単純な XML ドキュメントです。 XML は、定義ウィンドウで直接編集できます。
+ポリシー定義は、一連の受信ステートメントと送信ステートメントが記述されたXML ドキュメント。
+
+例:
 
 ```
 <policies>
@@ -105,35 +293,7 @@ Azure API Management (APIM) のポリシーは、発行者がその構成を通�
 </policies> 
 ```
 
-要求の処理中にエラーが発生した場合、inbound、backend、または outbound セクションの残りの手順はスキップされ、実行は on-error セクションのステートメントにジャンプします。 on-error セクションにポリシー ステートメントを配置することで、context.LastError プロパティを使用してエラーを確認し、set-body ポリシーを使用してエラーの検査とカスタマイズを行い、エラーが発生した場合の動作を構成できます。
-
-# ポリシーの主な種類
-
-- アクセス制限ポリシー
-  - ヘッダーの確認
-  - 呼び出しレートに基づく制限
-  - 使用量クォータに基づく制限
-  - 呼び出し元IPに基づく制限
-  - JWTの検証
-- 高度なポリシー
-  - コンカレンシー制限
-  - Event Hubsにログ記録
-  - Mock response
-  - 再試行（条件が満たされるまで囲まれたポリシーステートメントの実行を繰り返す）
-  - 制御フロー（条件付きでポリシーを適用）
-  - 要求を送信する
-  - 変数を設定する
-  - 状態コードを設定する
-- キャッシュポリシー
-- クロスドメインポリシー
-- 変換ポリシー
-  - JSONからXML
-  - XMLからJSON
-  - 本文中の文字列の置換
-  - ヘッダーの設定
-  - クエリ文字列パラメーターの設定
-
-
+ポリシーの実行順:
 
 ```
 (in) 
@@ -144,22 +304,22 @@ Azure API Management (APIM) のポリシーは、発行者がその構成を通�
 -> (out)
 ```
 
-# [ポリシーの式](https://docs.microsoft.com/ja-jp/azure/api-management/api-management-policy-expressions)
+要求の処理中にエラーが発生した場合、inbound、backend、または outbound セクションの残りの手順はスキップされ、実行は on-error セクションのステートメントにジャンプする。
 
-単一ステートメントの式: `@(expression)`
+on-error セクションにポリシー ステートメントを配置することで、エラーが発生した場合の動作を構成できる。
 
-複数ステートメントの式: `@{expressions... return ...;}`
+■リクエストの呼び出しの制限（クォータ）
 
-# rate-limit - 呼び出しレートをサブスクリプション別に制限
+- rate-limit - 呼び出しレートをサブスクリプション別に制限
+- rate-limit-by-key - 呼び出しレートをキー別に制限
+- quota - 使用量のクォータをサブスクリプション別に設定
+- quota-by-key - 使用量のクォータをキー別に設定
 
-429 Too Many Requests
+■その他のリソース
 
-# rate-limit-by-key - 呼び出しレートをキー別に制限
+Microsoft Learn
 
-429 Too Many Requests
+- [Azure での API 統合の設計](https://docs.microsoft.com/ja-jp/learn/paths/architect-api-integration/)
 
-# quota - 使用量のクォータをサブスクリプション別に設定
-
-# quota-by-key - 使用量のクォータをキー別に設定
-
-403 Forbidden
+リンク集:
+[aka.ms/apimlove](https://aka.ms/apimlove)

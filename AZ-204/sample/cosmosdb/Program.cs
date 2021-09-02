@@ -89,7 +89,7 @@ namespace test
         static void Main(string[] args)
         {
 
-        SetConnectionString();
+            SetConnectionString();
 
             while (true)
             {
