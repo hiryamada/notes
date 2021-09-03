@@ -82,7 +82,7 @@ Event Hubs:
 
 
 
-# SDK(レガシー)
+■ SDK(レガシー)
 
 [Microsoft.Azure.EventHubs](https://www.nuget.org/packages/Microsoft.Azure.Management.EventHub/)
 
@@ -90,9 +90,65 @@ Event Hubs:
 
 [Azure Event Hubs の .NET プログラミング ガイド (レガシー Microsoft.Azure.EventHubs パッケージ)](https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-programming-guide)
 
-# SDK(新)
+■ SDK(新)
 
 [Azure.Messaging.EventHubs](https://www.nuget.org/packages/Azure.Messaging.EventHubs/)
 
 [Azure Event Hubs との間でイベントを送受信する](https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send)
 
+■バッチ配信
+
+2019/11/18 バッチ配信 プレビュー開始
+https://azure.microsoft.com/ja-jp/updates/batch-delivery-in-azure-event-grid-for-high-throughput-scenarios-now-in-preview/
+
+(その続報が見つかりませんが、おそらくすでに一般提供も開始されていると思われます)
+
+
+概要
+https://docs.microsoft.com/ja-jp/azure/event-grid/concepts#batching
+
+詳細
+https://docs.microsoft.com/ja-jp/azure/event-grid/delivery-and-retry#output-batching
+
+Azure Functionでの利用例
+https://docs.microsoft.com/ja-jp/azure/event-grid/handler-functions#enable-batching
+
+高スループットの場合に効率を向上させることができるしくみ。多数のイベントを1回の配信にまとめる。Event Gridからの送信回数（サブスクライバー観点では、受信回数）が削減される。
+
+サブスクライバーごとに設定できる。
+
+エンドポイントが「Azure Functions」または「webhook」の場合に指定できる。
+
+「バッチごとの最大イベント数」 = 1 の場合(デフォルト): 各イベントがそれぞれ発行される。
+
+```
+(発行1)
+[
+  {イベント1}
+]
+
+(発行2)
+[
+  {イベント2}
+]
+```
+
+※各発行は常に配列 [ ... ] で行われる
+
+「バッチごとの最大イベント数」 > 1 の場合: 複数のイベントがまとめて発行される。最大5000。
+
+```
+(発行1)
+[
+  {イベント1},
+  {イベント2}
+]
+```
+
+※「バッチごとの最大イベント数」はベストエフォートであり、指定した数よりも少ないイベントが1回のバッチで配信される可能性がある。
+
+「優先(Preferred)バッチサイズ」: KB単位で、バッチサイズの目標上限を指定。1～1024KB。
+
+コスト: バッチの場合も特に変わらない(1バッチの配信＝1操作)。ただし64KBを超えるバッチは、64KB単位で1操作とカウントされる。
+
+https://stackoverflow.com/questions/60033388/azure-event-grid-costing-if-event-are-batched
