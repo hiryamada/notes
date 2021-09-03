@@ -7,6 +7,8 @@
 .NETアプリケーション＋Queue Storageクライアントライブラリ
 ```
 
+Azure portalとAzure Cloud Shellだけで実施可能。
+
 - 演習1
   - ストレージアカウントを作成
   - 接続文字列をコピー

@@ -48,6 +48,40 @@ Event Hubs:
 
 [Azure メッセージング サービスの中から選択する - Azure Event Grid、Event Hubs、および Service Bus](https://docs.microsoft.com/ja-jp/azure/event-grid/compare-messaging-services)
 
+# 料金と性能の比較
+
+■料金
+
+https://azure.microsoft.com/ja-jp/pricing/details/event-grid/
+
+https://azure.microsoft.com/ja-jp/pricing/details/event-hubs/
+
+Event Grid:
+- 100 万操作あたり 67円 （「操作」:イベントの受信や配信など）
+
+Event Hubs:
+- 1スループットユニット(TU)あたり 1226円/月, 最大40TU
+- 1TU: 1000イベント/s受信可, 4096イベント/s 送信可
+- 受信100万イベントあたり 3円
+
+■スループット（性能）
+
+https://docs.microsoft.com/ja-jp/azure/event-grid/quotas-limits
+
+https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-scalability
+
+https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-auto-inflate
+
+Event Grid:
+- トピックからの発行レート: 5000イベント/s または 5MB/s
+
+Event Hubs:
+- 1TU: 1MB/s or 1000イベント/s受信可, 2MB/s or 4096イベント/s 送信可
+- 40TUまで増やせる
+- 自動インフレ（TUを自動で増やす）機能あり
+
+
+
 # SDK(レガシー)
 
 [Microsoft.Azure.EventHubs](https://www.nuget.org/packages/Microsoft.Azure.Management.EventHub/)
