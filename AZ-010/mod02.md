@@ -14,6 +14,8 @@ Web ベースの統合コンソール.
 
 ■Azure CLI
 
+[まとめPDF: Azure CLIとAzure PowerShell](../AZ-104/pdf/mod03/AzurePowerShell-AzureCLI.pdf)
+
 https://docs.microsoft.com/ja-jp/cli/azure/what-is-azure-cli
 
 Azure リソースに対して管理コマンドを実行するためのクロスプラットフォームのコマンド ライン ツール。
