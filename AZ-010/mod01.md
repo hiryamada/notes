@@ -82,7 +82,7 @@ https://www.microsoft.com/ja-jp/security/business/identity-access-management/azu
 - Office 365（Microsoft 365）のユーザーは、Azure AD Freeの機能に加えて、Azuer ADの「Office 365」の機能を利用することができる。
 - [Microsoft 365 Business（2020/4/1に「Microsoft 365 Business Premium」に名称変更）では、Premium P1のフル機能が含まれる。](https://blogs.windows.com/japan/2020/04/08/azure-active-directory-premium-p1-is-coming-to-microsoft-365/)
 
-Azure AD 機能とライセンス
+Azure AD 機能とライセンス:
 
 高度な機能を利用するにはP1/P2が必要となる。
 
@@ -106,7 +106,7 @@ Azure AD 機能とライセンス
 - レポートと監視: [Azure AD プレミアム ライセンス(P1/P2)](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/overview-monitoring#licensing-and-prerequisites-for-azure-ad-reporting-and-monitoring)
 - Azure AD アクティビティレポート等のデータ保存期間: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
-# Azure ADの概念
+■Azure ADの概念
 
 [まとめPDF](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod01/%E3%83%86%E3%83%8A%E3%83%B3%E3%83%88.pdf)
 
@@ -163,7 +163,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/enterprise-users/domains
   - カスタム ドメインを追加後、それをテナントのプライマリ ドメインに設定することができる。
   - プライマリ ドメインは、新しいユーザーを作成したときの既定のドメインになる。
 
-■Azure DNS
+■参考: Azure DNS
 
 https://docs.microsoft.com/ja-jp/azure/dns/
 
@@ -186,21 +186,28 @@ Azure DNSは「ドメイン レジストラ」ではない。
 ユーザーの種類
 
 - クラウドID
+  - テナントに直接登録されたユーザーID
 - ディレクトリ同期 ID
+  - オンプレミスのAD DSに登録され、Azure ADに同期されたユーザーID
 - ゲストユーザー
+  - 「ユーザーの招待」によって招待されたユーザーID
 
 ■グループ
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal
 
-グループの種類
+グループを作り、ユーザーを追加することができる。
+
+グループに対してロール（権限）やライセンスを割り当てることができる。
+
+グループの種類:
 - セキュリティ グループ
   - ユーザー、デバイス、グループ、およびサービス プリンシパルをメンバーとして設定できる
 - Microsoft 365グループ
   - 共有メールボックス、カレンダー、ファイル、SharePoint サイトなどへのアクセスをメンバーに付与する
   - ユーザーのみをメンバーとして設定することができる
 
-メンバーシップの種類
+メンバーシップの種類:
 - 割り当て済み
   - 手動でメンバーをグループに割り当てる
 - 動的ユーザー
@@ -208,11 +215,36 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
 - 動的デバイス
   - ルールに該当するデバイスをメンバーとして追加
 
-■ディレクトリ同期（Azure AD Connect）
 
-■Azure RBAC
+■Azure RBAC(Role-Based Access Control)
+
+https://docs.microsoft.com/ja-jp/azure/role-based-access-control/overview
+
+「セキュリティ プリンシパル」（ユーザー、グループ、サービスプリンシパル、マネージドID）に対し、仮想マシンの作成・削除などのリソース操作権限を割り当てる仕組み。
+
+管理グループ、サブスクリプション、リソースグループ、リソースなどのスコープで、ユーザーにロールを割り当てることができる。
+
+ロールの種類（代表的なもの）:
+
+https://docs.microsoft.com/ja-jp/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles
+
+- Owner 所有者: Contributor + User Access Administrator
+- Contributor 共同作成者: リソースの管理（作成・削除・変更・読み取りなど）ができる
+- Reader: リソースの情報を読み取りできる
+- User Access Administrator ユーザーアクセス管理者: リソースに対するアクセス権を管理する
 
 ■Azure Policy
+
+https://docs.microsoft.com/ja-jp/azure/governance/policy/overview
+
+- リソースに対するポリシー（ルール）を作成し、評価するしくみ
+- ポリシーに一致しないリソースの情報をレポート出力することができる。
+- ポリシー定義: JSON形式で定義される。
+- イニシアチブ: ポリシーの集まり。
+
+たとえば「許可されていない場所」ポリシーを使用して、「東日本リージョンにしかリソースを作成できない」といったルールをサブスクリプションに適用することができる。
+
+GitHub ( https://github.com/Azure/azure-policy )には多数のポリシーサンプルが登録されており、ここから必要なポリシーをインポートして利用することもできる。
 
 ■ラボ1
 最初にP2試用版を有効化しておくとスムーズ

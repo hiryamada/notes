@@ -11,12 +11,21 @@ AWS システム管理者向けの Azure 管理（2日間）
   - 出題範囲が近いものとしては[AZ-900](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-900)や[AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)があります。受講後はぜひこれらの認定試験にチャレンジしてみてください。
   - ただし、このコースはAZ-900やAZ-104の出題範囲をすべてカバーするものではありません。
 
-関連コース
+■関連コース
+
 - [AZ-020: Microsoft Azure solutions for AWS developers](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-020t00)
 - [AZ-030: Microsoft Azure technologies for AWS architects](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-030t00)
 
 
+■講義ノート
 
+- [モジュール1 AzureのID管理](mod01.md)
+- モジュール2 Azureの管理
+- モジュール3 Azureのネットワーク
+- モジュール4 Azureのコンピューティング
+- モジュール5 Azureのストレージ
+
+<!-- 
 # 講義ノート
 
 - モジュール1 AzureのID管理
@@ -74,8 +83,17 @@ AWS システム管理者向けの Azure 管理（2日間）
   - サービス エンドポイント
   - ラボ AZ-104-07
 
+-->
 
-# ラボ
+# ラボ（ハンズオン演習）
 
 https://microsoftlearning.github.io/AZ-010JA-Azure-Administration-for-AWS-SysOps/
+
+本コースのラボは、「AZ-104」コースのラボと共通の内容となります。
+
+本コースでは、AZ-104のラボの一部のみ実施します。したがって、ラボ番号が飛び飛びとなりますが、仕様となります。
+
+日本語翻訳がわかりにくい場合は、英語版（オリジナル）をご参照ください。
+
+https://microsoftlearning.github.io/AZ-010-Azure-Administration-for-AWS-SysOps/
 
