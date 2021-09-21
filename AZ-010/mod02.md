@@ -50,8 +50,8 @@ https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/templates/overview
 
 ARMテンプレート（JSONファイル）に必要なリソースを定義し、テンプレートを使ってリソースをデプロイすることができる。
 
-- 例1
-- 例2 
+- 例1 [ストレージアカウントを作成する](https://github.com/hiryamada/deploytest/blob/master/azuredeploy.json)
+- 例2 [仮想マシンを作成する](https://github.com/hiryamada/labvm/blob/main/azuredeploy.json)
 
 ■クイックスタートテンプレート
 
@@ -76,6 +76,8 @@ https://docs.microsoft.com/ja-jp/azure/advisor/advisor-overview
 ■Azure Security Center
 
 https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduction
+
+[まとめPDF](../AZ-500/pdf/mod4/Azure%20Security%20Center%20まとめ.pdf)
 
 ■ラボ
 
