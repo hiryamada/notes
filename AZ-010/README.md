@@ -85,11 +85,11 @@ AWS システム管理者向けの Azure 管理（2日間）
 
 -->
 
-# ラボ（ハンズオン演習）
+■ラボ（ハンズオン演習）
 
 https://microsoftlearning.github.io/AZ-010JA-Azure-Administration-for-AWS-SysOps/
 
-本コースのラボは、「AZ-104」コースのラボと共通の内容となります。
+本コースのラボは、[「AZ-104」コースのラボ](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/)と共通の内容となります。
 
 本コースでは、AZ-104のラボの一部のみ実施します。したがって、ラボ番号が飛び飛びとなりますが、仕様となります。
 
@@ -97,3 +97,6 @@ https://microsoftlearning.github.io/AZ-010JA-Azure-Administration-for-AWS-SysOps
 
 https://microsoftlearning.github.io/AZ-010-Azure-Administration-for-AWS-SysOps/
 
+事前に、ラボで必要になるファイルは以下からダウンロードして展開してください。
+
+https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator/archive/master.zip
