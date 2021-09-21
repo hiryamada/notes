@@ -106,9 +106,13 @@ Azure AD 機能とライセンス:
 - レポートと監視: [Azure AD プレミアム ライセンス(P1/P2)](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/overview-monitoring#licensing-and-prerequisites-for-azure-ad-reporting-and-monitoring)
 - Azure AD アクティビティレポート等のデータ保存期間: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
+■まとめ: Azure ADとAD DS
+
+[まとめPDF: Azure ADとAD DS](../AZ-104/pdf/mod01/Azure%20AD%20と%20AD%20DS%20の位置づけ.pdf)
+
 ■Azure ADの概念
 
-[まとめPDF](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod01/%E3%83%86%E3%83%8A%E3%83%B3%E3%83%88.pdf)
+[まとめPDF: テナントとサブスクリプション](../AZ-104/pdf/mod01/テナント.pdf)
 
 基本的な用語。
 
