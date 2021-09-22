@@ -215,8 +215,36 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/network-security-group-ho
 
 https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-overview
 
+2つのVNetを接続し、プライベートIPアドレスで通信できるようにする。
+
+```
+VNet1
+| ピアリング
+VNet2
+```
+
 - VNet ピアリング: 同じ Azure リージョン内の2つのVNetを接続
 - グローバルVNet ピアリング: 異なるAzure リージョン間の2つのVNetを接続
+
+推移的な接続はサポートされていない。以下の図で、VNet1とVNet2, VNet2とVNet3の通信は可能だが、VNet1とVNet3の通信はできない。
+
+```
+VNet1
+| ピアリング
+VNet2
+| ピアリング
+VNet3
+```
+
+ただし、以下のように中間のVNetにルータの設定をしたVM（または、Network Virtual Applicance, NVA）を配置し、VNetで「ルートテーブル」を関連付けて適切に設定することで、ルータを経由してVNet1とVNet3が通信できるようにするこは可能。
+
+```
+VNet1 - ルートテーブル
+| ピアリング
+VNet2 - ルータ(NVA)
+| ピアリング
+VNet3 - ルートテーブル
+```
 
 ■VPNゲートウェイ
 
@@ -232,7 +260,21 @@ VNet
 └GatewaySubnet
   └VPNゲートウェイ
     | VPN接続
-   オンプレミス側のVPNルータ(ローカルゲートウェイ)
+   ローカルゲートウェイ(オンプレミス側VPNルータ)
+    |
+   オンプレミスネットワーク
+```
+
+以下のようにピアリングを構成することで、VNet1とオンプレミスを接続することができる。
+
+```
+VNet1
+| ピアリング
+VNet2
+└GatewaySubnet
+  └VPNゲートウェイ
+    | VPN接続
+   ローカルゲートウェイ(オンプレミス側VPNルータ)
     |
    オンプレミスネットワーク
 ```
@@ -253,7 +295,9 @@ https://docs.microsoft.com/ja-jp/azure/load-balancer/load-balancer-overview
 Application Gateway: L7(AWS ALBに相当)
 https://docs.microsoft.com/ja-jp/azure/application-gateway/overview
 
-[PDF図解](../AZ-104/pdf/mod06/ロードバランサー.pdf)
+[Azure Load Balancer/Application Gateaway 図解](../AZ-104/pdf/mod06/ロードバランサー.pdf)
+
+[Azureのロードバランサー系サービスのまとめ](../AZ-500/pdf/mod2/負荷分散サービス.pdf)
 
 ■Network Watcher
 
@@ -264,3 +308,14 @@ Azure Network Watcher は、Azure 仮想ネットワーク内のリソースの�
 [PDFまとめ](../AZ-104/pdf/mod11/Network%20Watcher.pdf)
 
 ■ラボ4,6 仮想ネットワーク/トラフィック管理
+
+解説/補足資料
+
+- [ラボ4](https://github.com/hiryamada/notes/blob/main/AZ-104/lab/lab04.md)
+  - 仮想ネットワーク(VNet)、サブネット、VMのネットワークインターフェースカード（NIC）、IPアドレス、ネットワークセキュリティグループ
+  - Azure DNS
+- [ラボ6a(ラボ6前半)](https://github.com/hiryamada/notes/blob/main/AZ-104/lab/lab06a.md)
+  - 3つのVNetを使用して、ハブ・スポークのネットワークを作成
+  - ハブのルーターを経由して、スポークのVM同士を通信させる
+- [ラボ6b(ラボ6後半)](https://github.com/hiryamada/notes/blob/main/AZ-104/lab/lab06b.md)
+  - Azure Load Balancer/Application Gateway
