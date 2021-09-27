@@ -3,6 +3,7 @@
 https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis
 
 - クラウドベースの「ID およびアクセス管理」サービス
+  - [Azure ADのまとめPDF](../AZ-104/pdf/mod01/テナント.pdf)
   - 従来オンプレミスで使われてきた「[Active Directory Domain Services(AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)」とは別のもの。
   - Azure AD: クラウドベース、インストール作業は不要
   - AD DS: オンプレミスのWindows Serverへのインストール作業が必要
@@ -11,6 +12,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
     - AD DS上に登録されたユーザーIDをAzure AD側に転送
     - この場合、ユーザーID管理は引き続きオンプレミス側のAD DSで実施
     - ユーザーは、同じID・パスワードで、オンプレミスAD DSとAzure AD両方を利用できる（ハイブリッドID）
+  - [AD DSとAzure ADまとめPDF](../AZ-104/pdf/mod01/Azure%20AD%20と%20AD%20DS%20の位置づけ.pdf)
 - Microsoft Azure、Microsoft 365、Microsoft Dynamics 365などのID管理に利用される
   - これらのサービスを使用する場合、必然的に「Azure AD」を使うことになる
   - 基本的に1つの組織（会社）で1つの「Azure ADテナント」を作る
