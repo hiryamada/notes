@@ -3,7 +3,7 @@
 https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis
 
 - クラウドベースの「ID およびアクセス管理」サービス
-  - [Azure ADのまとめPDF](../AZ-104/pdf/mod01/テナント.pdf)
+  - [Azure ADのテナントとサブスクリプションまとめPDF](../AZ-104/pdf/mod01/テナント.pdf)
   - 従来オンプレミスで使われてきた「[Active Directory Domain Services(AD DS)](https://docs.microsoft.com/ja-jp/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)」とは別のもの。
   - Azure AD: クラウドベース、インストール作業は不要
   - AD DS: オンプレミスのWindows Serverへのインストール作業が必要
