@@ -442,6 +442,8 @@ https://docs.microsoft.com/ja-jp/azure/app-service/environment/overview
 
 App ServiceをVNet内で運用したい場合は、「App Service Environments」を使用する。
 
+[App Service Environmentについてのまとめ](mod01-ase.md)
+
 ■アクセスの制限
 
 https://docs.microsoft.com/ja-jp/azure/app-service/networking-features#access-restrictions
