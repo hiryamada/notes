@@ -1,4 +1,4 @@
-# 演習環境での Promo Code の入手
+# ラボ環境での Promo Code の入手
 
 ※8:30以降にならないと開始できません
 
@@ -9,7 +9,7 @@
 
 ## 手順
 
-- [演習環境 - Learn on Demand LMS (LODS) (外部サイト)](https://esi.learnondemand.net/)にアクセスします。
+- [ラボ環境 - Learn on Demand LMS (LODS) (外部サイト)](https://esi.learnondemand.net/)にアクセスします。
 - 「Sign In」ボタンをクリックします。
 - 「How would you like to sign in?」では、「Microsoft Account」をクリックします。
 - Microsoftアカウントへのサイン インが求められますので、今回のコース用に作成したMicrosoftアカウントでサイン インします。
@@ -38,7 +38,7 @@
 - 対処：
   - Microsoftアカウントをサイン アウトします
   - 念の為、Webブラウザを閉じ、再度Webブラウザを開きます。
-  - 前の手順で作成した、新しいMicrosoftアカウントで、[演習環境 - Learn on Demand LMS (LODS) (外部サイト)](https://esi.learnondemand.net/)にサイン インしてください。
+  - 前の手順で作成した、新しいMicrosoftアカウントで、[ラボ環境 - Learn on Demand LMS (LODS) (外部サイト)](https://esi.learnondemand.net/)にサイン インしてください。
 
 「接続の問題？ ラボマシンへの接続が中断されたようです。接続の再試行」という表示が出ます。
 - 原因：

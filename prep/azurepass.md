@@ -5,7 +5,7 @@
 ## 事前の準備
 
 - 今回のコース用に新しく作成したMicrosoftアカウント。まだ準備していない場合は[こちらの手順](msa.md)に従ってご準備ください。
-- [演習環境 - Learn on Demand LMS (LODS)](https://esi.learnondemand.net/)で入手したPromo Code。まだPromo Codeを入手していない場合は、[こちらの手順](lods.md)に従ってPromo Codeを入手してください。
+- [ラボ環境 - Learn on Demand LMS (LODS)](https://esi.learnondemand.net/)で入手したPromo Code。まだPromo Codeを入手していない場合は、[こちらの手順](lods.md)に従ってPromo Codeを入手してください。
 
 ## 手順
 
@@ -20,7 +20,7 @@
 - ページ内のStartボタンをクリックします。
 - 今回のコース用に作成したMicrosoftアカウントでサインインします。
 - 「Confirm Microsoft Account」ボタンをクリックします。
-- 前の手順（演習環境での Promo Code の入手）で入手したPromo Codeを入力します。**トレーニングキーとPromo Codeは別のもの** ですのでご注意ください。
+- 前の手順（ラボ環境での Promo Code の入手）で入手したPromo Codeを入力します。**トレーニングキーとPromo Codeは別のもの** ですのでご注意ください。
 - 「Claim Promo Code」（プロモーションコードの要求）をクリックします。
 - 「We are processing your request」というページが出ます。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。
 - 「プロフィール（Your profile）」フォームで、氏名などの情報を入力します。
@@ -62,6 +62,6 @@ Azure Passサブスクリプションの入手は、1つのMicrosoftアカウン
 - 対処：
   - Microsoftアカウントをサイン アウトします
   - 別のMicrosoftアカウントを作り直してください
-  - 作り直したアカウントで、[演習環境 - Learn on Demand LMS (LODS)](lods.md)にサイン インし、ラボを起動して、Promo Codeを再取得してください
+  - 作り直したアカウントで、[ラボ環境 - Learn on Demand LMS (LODS)](lods.md)にサイン インし、ラボを起動して、Promo Codeを再取得してください
   - 作り直したアカウントで、Azure Pass サブスクリプションの有効化を行ってください。
 

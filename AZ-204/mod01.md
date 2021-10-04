@@ -16,7 +16,7 @@ https://docs.microsoft.com/ja-jp/azure/app-service/overview
 
 ■Azure App Serviceとは？
 
-AzureのPaaSサービスの一つ。
+AzureのPaaSサービスの一つ。([PaaSの説明](https://azure.microsoft.com/ja-jp/overview/what-is-paas/))
 
 Azure上で、HTTPベースのアプリケーション（WebアプリやWeb API）を稼働させることができる。
 
@@ -39,12 +39,14 @@ App Serviceは、自由度はVMよりも低いが、運用が楽。
   - 言語ランタイム（.NET、JRE、Python、Node.js等）はユーザーがインストールする
   - OSやソフトウェアのアップデート（セキュリティパッチ適用等）はユーザーが行う
   - RDPやSSHで接続できる
+  - 開発したアプリのデプロイ方法を確立する必要がある
 - App Service
   - 使用するOSは「Windows」と「Linux」とだけ指定できる
   - 開発したWebアプリ等をデプロイして運用できる
   - 言語ランタイム（.NET、JRE、Python、Node.js等）はあらかじめインストールされている
   - [OSやソフトウェアのアップデート（セキュリティパッチ適用）はAzureが行う](https://docs.microsoft.com/ja-jp/azure/app-service/overview-patch-os-runtime)
   - [RDPやSSHで接続することはできない](https://docs.microsoft.com/ja-jp/azure/app-service/operating-system-functionality#remote-desktop-access)
+  - App Service自身に複数のデプロイ方法が用意されている
 
 ■Azure仮想マシン（VM）とApp Serviceとはどう使い分ければよいのか？
 

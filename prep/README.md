@@ -14,7 +14,7 @@
    - 以前作成したSkillpipeアカウントがあれば、そちらをお使いいただけます。
    - Skillpipeアカウントがない場合は新規作成します。
 3. 個人のMicrosoftアカウント 
-   - 演習環境 - Learn on Demand LMS (LODS)へのサインインに使用
+   - ラボ環境 - Learn on Demand LMS (LODS)へのサインインに使用
    - Azure Passサブスクリプションの取得に使用
    - Azure portalへのサインインに使用
    - すべてのご受講者様に、必ず、**今回のトレーニング用の新しいMicrosoftアカウント**をお作りいただく必要があります。
@@ -41,11 +41,11 @@
 
 すべてのご受講者様に、必ず、**今回のトレーニング用の新しいMicrosoftアカウント**をお作りいただく必要があります。
 
-# [3. 演習環境での Promo Code の入手](lods.md) 
+# [3. ラボ環境での Promo Code の入手](lods.md) 
 
 ※8:30以降にならないと開始できません
 
-「演習環境 - Learn on Demand LMS (LODS)」 にサインインして、Promo Codeを入手します。
+「ラボ環境 - Learn on Demand LMS (LODS)」 にサインインして、Promo Codeを入手します。
 
 # [4. Azure Passサブスクリプションの入手](azurepass.md) 
 
@@ -62,5 +62,5 @@
 # [5. (オプション)ソフトウェアのセットアップ](env.md)
 ご自身のPCでラボの演習を行いたい場合は、[ソフトウェアのセットアップ](env.md)を行ってください。
 
-ブラウザでアクセスできる演習環境である「Learn on Demand LMS (LODS)」をご利用になる場合は、ソフトウェアのセットアップは不要です。
+ブラウザでアクセスできるラボ環境である「Learn on Demand LMS (LODS)」をご利用になる場合は、ソフトウェアのセットアップは不要です。
 -->
