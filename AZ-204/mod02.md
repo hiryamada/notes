@@ -320,7 +320,7 @@ F1, Azure Functions: Deploy to Function App...
 ■ラボ2 
 
 ラボの手順書
-https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_02_lab_ak.html
+https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_02.html
 
 - ※冒頭の「仮想マシンへのログイン」はスキップします。
 - ※Microsoft Edge（ブラウザ）は、お好きなWebブラウザで代用できます。
