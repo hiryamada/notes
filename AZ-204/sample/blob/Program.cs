@@ -40,22 +40,20 @@ void ListContainers()
     var bsc = new BlobServiceClient(connectionString);
     foreach (var container in bsc.GetBlobContainers())
     {
-        Console.WriteLine(container.Name);
+        Print(container.Name);
     }
 }
 
 void CreateContainer() 
 {
-    Console.WriteLine("Container name:");
-    var containerName = Console.ReadLine();
+    var containerName = Read("Container name:");
     var bcc = new BlobContainerClient(connectionString, containerName);
     bcc.CreateIfNotExists();
 }
 
 void DeleteContainer() 
 {
-    Console.WriteLine("Container name:");
-    var containerName = Console.ReadLine();
+    var containerName = Read("Container name:");
     var bcc = new BlobContainerClient(connectionString, containerName);
     bcc.Delete();
 }
@@ -63,17 +61,19 @@ void DeleteContainer()
 void Upload()
 {
     string containerName = Read("Container name:");
-    string localFileName = Read("Local file name:");
-    var bc = new BlobClient(connectionString, containerName, localFileName);
-    bc.Upload(localFileName);
+    string blobPath = Read("Blob Path:");
+    string localFilePath = Read("Local file path:");
+    var bc = new BlobClient(connectionString, containerName, blobPath);
+    bc.Upload(localFilePath);
 }
 
 void Download()
 {
     string containerName = Read("Container name:");
-    string blobName = Read("Blob name:");
-    var bc = new BlobClient(connectionString, containerName, blobName);
-    bc.DownloadTo(blobName);
+    string blobPath = Read("Blob Path:");
+    string localFilePath = Read("Local file path:");
+    var bc = new BlobClient(connectionString, containerName, blobPath);
+    bc.DownloadTo(localFilePath);
 }
 
 void ListBlobs()
