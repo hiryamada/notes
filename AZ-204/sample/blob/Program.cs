@@ -1,19 +1,4 @@
-﻿/*
-
-document: https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-quickstart-blobs-dotnet
-
-dotnet new console -n blobtest
-cd blobtest
-dotnet add package Azure.Storage.Blob
-code .
-
-Ctrl + Shift + Space: パラメータヒントの表示
-F5: デバッグ実行
-Ctrl + F5: デバッグ無しで実行
-
-*/
-
-using System;
+﻿using System;
 using Azure.Storage.Blobs;
 
 // 接続文字列
@@ -40,20 +25,22 @@ void ListContainers()
     var bsc = new BlobServiceClient(connectionString);
     foreach (var container in bsc.GetBlobContainers())
     {
-        Print(container.Name);
+        Console.WriteLine(container.Name);
     }
 }
 
 void CreateContainer() 
 {
-    var containerName = Read("Container name:");
+    Console.WriteLine("Container name:");
+    var containerName = Console.ReadLine();
     var bcc = new BlobContainerClient(connectionString, containerName);
     bcc.CreateIfNotExists();
 }
 
 void DeleteContainer() 
 {
-    var containerName = Read("Container name:");
+    Console.WriteLine("Container name:");
+    var containerName = Console.ReadLine();
     var bcc = new BlobContainerClient(connectionString, containerName);
     bcc.Delete();
 }
@@ -61,19 +48,17 @@ void DeleteContainer()
 void Upload()
 {
     string containerName = Read("Container name:");
-    string blobPath = Read("Blob Path:");
-    string localFilePath = Read("Local file path:");
-    var bc = new BlobClient(connectionString, containerName, blobPath);
-    bc.Upload(localFilePath);
+    string localFileName = Read("Local file name:");
+    var bc = new BlobClient(connectionString, containerName, localFileName);
+    bc.Upload(localFileName);
 }
 
 void Download()
 {
     string containerName = Read("Container name:");
-    string blobPath = Read("Blob Path:");
-    string localFilePath = Read("Local file path:");
-    var bc = new BlobClient(connectionString, containerName, blobPath);
-    bc.DownloadTo(localFilePath);
+    string blobName = Read("Blob name:");
+    var bc = new BlobClient(connectionString, containerName, blobName);
+    bc.DownloadTo(blobName);
 }
 
 void ListBlobs()
@@ -119,4 +104,3 @@ while (true)
             break;
     }
 }
-
