@@ -6,7 +6,7 @@ https://azure.microsoft.com/ja-jp/overview/what-is-iaas/
 
 https://azure.microsoft.com/ja-jp/services/virtual-machines/secure-well-managed-iaas/
 
-Infrastructure as a Service - サービスとしてのインフラストラクチャ
+Infrastructure as a Service - サービスとしてのインフラストラクチャ。インフラを、サービスとして提供。
 
 ■Azure のIaaS
 
