@@ -2,17 +2,30 @@
 
 ■ハイブリッドIDとは？
 
-- 共通のユーザーIDで、オンプレミスとクラウドの両方のアプリにアクセスできるしくみ。
-- Azure AD Connectを使用して実現できる。
-- ライセンス: Freeで利用可能。
-  - テナントで扱うオブジェクト数が500000を超える場合は、P1/P2を有効化したテナントが必要
-  - パスワードライトバック(SSPRのページで説明)はユーザーごとにP1が必要
+https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-hybrid-identity
+
+- オンプレミスとクラウドの両方のアプリにアクセスできる、共通のユーザーID
+- ユーザーは、同じIDを使用して、オンプレミスとクラウドの両方のアプリにアクセスすることができる
+- Azure AD Connectを使用して実現する
+
+```
+Azure AD
+└ユーザーA,B,CのID
+
+↑ Azure AD Connect で同期（IDをコピー）
+
+オンプレミスAD DS
+└ユーザーA,B,CのID
+```
 
 ■Azure AD Connect
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect
 
-オンプレミスAD DSとAzure ADを同期するソフトウェア。オンプレミスのWindows Serverにインストールする。
+- オンプレミスAD DSとAzure ADを同期するソフトウェア。
+- オンプレミスのWindows Serverにインストールする。
+- 以前提供されていた古いID統合ツール（DirSync, Azure AD Sync）を置き換えるもの。
+- 無料で利用できる。
 
 ```
 Azure AD
@@ -26,13 +39,13 @@ Azure AD
 
 ■同期
 
+https://jpazureid.github.io/blog/azure-active-directory-connect/basic-points-directory-synchronization/
+
 Azure AD Connectを使用して、オンプレミス側のID情報をAzure ADへ伝達すること。
 
 同期は、Azure AD Connectに含まれる「[Azure AD Connect Sync](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-sync-whatis)」コンポーネントで実行される。
 
-**同期は、原則として、オンプレミスAD DS → Azure AD の方向で行われる**。
-
-Azure ADに登録されたID情報が、オンプレミスAD DSに反映されることは**ない**。
+同期は、**基本的に** 、オンプレミスAD DS → Azure AD の方向で行われる。
 
 ```
 Azure AD
@@ -43,12 +56,13 @@ Azure AD Connect
 └ユーザーID
 ```
 
-
-※パスワード ライトバックはこの原則の例外。
+※パスワード ライトバックなど、[一部のオプション](https://jpazureid.github.io/blog/azure-active-directory-connect/basic-points-directory-synchronization/#1-AADC-%E3%81%AF%E3%82%AA%E3%83%B3%E3%83%97%E3%83%AC%E3%83%9F%E3%82%B9-AD-%E5%81%B4%E3%81%AE%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%8C-AAD-%E3%81%AB%E5%90%91%E3%81%91%E3%81%A6%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%82%8B)では、Azure ADからオンプレミスAD DSへの情報の書き戻しが利用できる。
 
 ■パスワード ライトバック
 
-「[パスワードライトバック](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/tutorial-enable-sspr-writeback)」を設定すると、Azure AD側のパスワード変更を行った際、オンプレミスAD DS側に反映させることができる。
+https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/tutorial-enable-sspr-writeback
+
+Azure AD側のパスワード変更を行った際、オンプレミスAD DS側に反映させることができる。
 
 ```
 Azure AD ユーザーがパスワードを変更
@@ -69,11 +83,11 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-hybrid-ide
 
 Azure AD Connectのインストール中に、認証方式を選択する。
 
-- パスワードハッシュ同期(Passsword Hash Sync: PHS)
+- パスワードハッシュ同期 (Passsword Hash Sync: PHS)
   - Azure 側に、パスワードのハッシュ値を保存する方式。
-- パススルー認証(Pass Through Auth: PTA)
+- パススルー認証 (Pass Through Auth: PTA)
   - Azure 側で入力されたID/パスワードをオンプレミスのAD DSに送信して検証する方式。
-- フェデレーション統合(Federation, fed)
+- フェデレーション
   - オンプレミスの「AD FS」や「PingFederate」に、認証プロセスを引き継ぐ方式。
 
 [まとめPDF](../AZ-500/pdf/mod1/Azure%20AD%20Connect.pdf)
@@ -88,32 +102,38 @@ https://www.atmarkit.co.jp/fwin2k/operation/adfs2sso03/adfs2sso03_01.html
 - AD DSを使用して、IDを管理
 - AD FSまたはPingFederateを使用して、クラウドアプリケーションへのシングルサインオンを実現
 
-
 ■参考: PingFederate(ピンフェデレート）とは
 
 https://www.ntt.com/business/services/application/authentication/idf/pingfederate.html
 
-- シングルサインオン製品
+https://www.pingidentity.com/en/software/pingfederate.html
+
+- Ping Identity社のシングルサインオン製品
 - オンプレミスのAD DSと連携できる
 - Azure AD Connect でサポートされている。
 
 ■3つの認証方式の選択
 
-https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-hybrid-identity
+https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/choose-ad-authn
 
 - Azure 側にパスワードハッシュ値を保存してもよい場合は、**パスワードハッシュ同期(PHS)** を使用。
-- Azure 側にパスワードハッシュ値を保存したくない場合は、**パススルー認証(PTA)** または **フェデレーション統合** を使用
+- Azure 側にパスワードハッシュ値を保存したくない場合は、**パススルー認証(PTA)** または **フェデレーション** を使用
   - オンプレミスの AD DS のセキュリティとパスワード ポリシーを適用する必要がある場合は、**パススルー認証** を使用
-  - オンプレミスに Active Directory Federation Service (AD FS) がデプロイされていて、引き続きそれを使用したい場合、オンプレのサードパーティMFAソリューションを使う場合、スマートカード認証をサポートするなどは、**フェデレーション統合** を使用。
+  - オンプレミスに Active Directory Federation Service (AD FS) がデプロイされていて、引き続きそれを使用したい場合、オンプレのサードパーティMFAソリューションを使う場合、スマートカード認証をサポートするなどは、**フェデレーション** を使用。
 
 ■認証方式1: パスワードハッシュ同期 (Password hash synchronization, PHS)
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-phs
 
 - パスワードのハッシュ値を同期
+  -  [同期プロセスは 2 分間隔で実行される](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization#how-password-hash-synchronization-works)
 - ダークウェブ等に漏洩した資格情報の検出にも役立つ
+  - [Identity Protection](https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/overview-identity-protection)の[リスク検出「漏洩した資格情報」](https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/concept-identity-protection-risks#user-linked-detections)
+  - [パスワードハッシュ同期が必要](https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/concept-identity-protection-risks#password-hash-synchronization)
 
-※参考: ハッシュ値
+■※参考: ハッシュ値
+
+Azure側には、生パスワードではなく、[ハッシュ関数](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E9%96%A2%E6%95%B0)から計算されたハッシュ値が保存される。
 
 ```
 パスワード
@@ -123,15 +143,13 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-phs
 
 ハッシュ値からパスワードを逆算することはできない.
 
-Azure側には、生パスワードではなく、ハッシュ値が保存される。
-
 ■認証方式2: パススルー同期 (Pass-through authentication, PTA)
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-pta
 
 - Azure ADに送信されたパスワードを、オンプレミスAD DSに送信して検証
 - オンプレミスのインフラストラクチャに障害が発生した場合に、パスワード ハッシュ同期へフェイルオーバー（切り替え）することもできる
-  - 自動でフェイルオーバーはしない。手動で切り替えが必要
+  - [自動でフェイルオーバーはしない](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-pta-faq#---------------------------------------)。手動で切り替えが必要
 
 ■認証方式3: フェデレーション (federation)
 

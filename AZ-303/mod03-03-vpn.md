@@ -63,22 +63,23 @@ https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpngateways
 
 ■SKU
 
+https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpngateways#gateway-skus
+
 ※「サイズ」とも。
 
-VPNゲートウェイのSKUにより、使用できる機能や性能が決まる。
+VPNゲートウェイのSKUにより、使用できるスループットや接続数が決まる。
 
+S2SトンネルはBasic: 10まで、その他: 30まで。
 
-接続数はP2S IKEv2/OpenVPN接続。S2SトンネルはBasic: 10まで、その他: 30まで。
-
-- Generation1
-  - Basic - 100 Mbps, (非サポート)
-  - VpnGw1 - 650 Mbps, 250
+- 世代: Generation1
+  - Basic - スループット: 100 Mbps, P2S IKEv2/OpenVPN接続: (非サポート)
+  - VpnGw1 - 650 Mbps, P2S IKEv2/OpenVPN接続: 250
   - VpnGw2 - 1 Gbps, 500
   - VpnGw3 - 1.25 Gbps, 1000
   - VpnGw1AZ - 650 Mbps, 250
   - VpnGw2AZ - 1 Gbps, 500
   - VpnGw3AZ - 1.25Gbps, 1000
-- Generation2
+- 世代: Generation2
   - VpnGw2 - 1.25Gbps, 500
   - VpnGW3 - 2.5 Gbps, 1000
   - VpnGW4 - 5 Gbps, 5000
@@ -88,14 +89,13 @@ VPNゲートウェイのSKUにより、使用できる機能や性能が決ま�
   - VpnGw4AZ - 5 Gbps, 5000
   - VpnGw5AZ - 10 Gbps, 10000
 
-特徴
+まとめ:
 - Generation1よりもGeneration2のほうが、帯域幅が広く、P2S同時接続数が多い
 - Basic,VpnGw1はGeneration1でのみサポート。
 - VpnGw2,3はGeneration1,2両方でサポート。
 - VpnGw4,5はGeneration2でのみサポート。
-- 末尾の数字が大きいほうが、帯域幅が広く、P2S同時接続数が多い
-- 「AZ」が付くものはゾーン冗長に対応
-
+- 数字(1,2,3,4,5)が大きいほうが、帯域幅が広く、P2S同時接続数が多い
+- 末尾に「AZ」が付くものは[可用性ゾーンに対応](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways)。（後述）
 
 ■SKUの変更（「サイズの変更」とも）
 
@@ -107,24 +107,21 @@ SKUはVPNゲートウェイ作成後に変更することもできる。
 
 https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#resizechange
 
-
-
 ■VPNゲートウェイにおけるゾーンの利用
 
-VPN接続を、ゾーン レベルの障害から保護することができる。
+https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-highlyavailable
 
-VPNゲートウェイの2つのVMを可用性ゾーンに配置する方法は2種類ある。
+※SKUに「AZ」と付くものを選択した場合に利用可能。
 
-- ゾーン冗長（Zone-redundant）ゲートウェイ
-  - 2つのVMを、別の可用性ゾーンに配置。
+1つの「VPNゲートウェイ」インスタンスは内部的に2つのインスタンス（VM）で構成されている。
+
+インスタンスを可用性ゾーンに配置する方法:
+
 - ゾーン（Zonal）ゲートウェイ
-  - 2つのVMを、同じ可用性ゾーンに配置。
-
-これらはSKUに「AZ」と付くものを選択した場合に利用可能。
-
-※AZが付かないVPNゲートウェイは、可用性ゾーンの選択が不可能。
-
-※ゾーン（Zonal）ゲートウェイの場合、どの可用性ゾーンにVPNゲートウェイを配置するかを選択できる。
+  - 2つのインスタンスを、ユーザーが指定した1つの可用性ゾーンに配置。
+- ゾーン冗長（Zone-redundant）ゲートウェイ
+  - 2つのインスタンスを、異なる2つの可用性ゾーンに配置。
+  - ゾーン障害の際もVPNゲートウェイの機能を利用することができる
 
 ■VPNの種類
 
@@ -150,40 +147,37 @@ SKUにAZが付くものの場合はStandard, そうでない場合はBasicのパ
 
 ■VPNゲートウェイのインスタンス
 
-1つの「VPNゲートウェイ」は、内部的には2つのVMで構成される。
+1つの「VPNゲートウェイ」は、内部的には2つのインスタンス(VM)で構成される。
 
-これらのVMに直接接続して構成することはできない。
+これらのインスタンスに直接接続して構成することはできない。
 
 アクティブなインスタンスのリセットを行うことが可能。
 https://docs.microsoft.com/ja-jp/azure/vpn-gateway/tutorial-create-gateway-portal#reset-a-gateway
 
 アクティブ/スタンバイ モード、またはアクティブ/アクティブ モードで運用できる。
 
-アクティブ/スタンバイ モード:
+■アクティブ/スタンバイ モード: 1つのVPNトンネルを使用
 
 ```
 VPNゲートウェイの内部VM1: アクティブ: IPアドレス＋トンネル
 VPNゲートウェイの内部VM2: スタンバイ
 ```
 
-アクティブ/アクティブ モード:
+- アクティブなインスタンスに対して計画的なメンテナンス（または計画外の中断）が発生すると、スタンバイ インスタンスが自動的に引き継ぎ (フェールオーバーし)、S2S VPN または VNet 間接続が再開される。
+- 切り替わる際に、**短い中断が発生**します。
+- 計画的なメンテナンスの場合は、**10 ～ 15 秒以内**に接続が復元される。 
+
+
+■アクティブ/アクティブ モード: 2つのVPNトンネルを使用
+
+2016/11/26 
+
 ```
 VPNゲートウェイの内部VM1: アクティブ: IPアドレス＋トンネル
 VPNゲートウェイの内部VM2: アクティブ: IPアドレス＋トンネル
 ```
 
-■アクティブ/スタンバイ モード
-
-https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-highlyavailable
-
-- アクティブなインスタンスに対して計画的なメンテナンス（または計画外の中断）が発生すると、スタンバイ インスタンスが自動的に引き継ぎ (フェールオーバーし)、S2S VPN または VNet 間接続が再開される。
-- 切り替わる際に、**短い中断が発生**します。
-- 計画的なメンテナンスの場合は、**10 ～ 15 秒以内**に接続が復元される。 
-
-■アクティブ/アクティブ モード
-
-- 「より高い可用性」を実現できる。
-  - ※ダウンタイム等は仕様として明記されていない
+- より高い可用性を実現できる。
 - プロダクション環境向け。
 - VPN接続を2重に冗長化できる。
 
@@ -196,6 +190,7 @@ https://azure.microsoft.com/en-us/blog/azure-networking-announcements-for-ignite
 動作:
 - 1 つのゲートウェイ インスタンスに対して計画的なメンテナンス（または計画外のイベント）が発生すると、そのインスタンスからオンプレミスの VPN デバイスへの IPsec トンネルが切断される。
 - VPN デバイスの対応するルートは自動的に削除または無効にされ、トラフィックはもう一方のアクティブな IPsec トンネルに切り替えられる。
+- トンネル切り替え時[切断は発生しない](https://www.cloudou.net/vpn-gateway/design001/)
 - Azure 側では、影響を受けるインスタンスからアクティブ インスタンスに自動的に切り替わる。
 
 ※Basicでは利用不可
@@ -204,7 +199,7 @@ https://azure.microsoft.com/en-us/blog/azure-networking-announcements-for-ignite
 
 有効にした場合は2番目のパブリックIPアドレスを作成して割り当てる。
 
-アクティブ/アクティブ セットアップのコストは、アクティブ/パッシブの場合と同じ。[追加のコストはかからない](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-vpn-faq#is-there-an-additional-cost-for-setting-up-a-vpn-gateway-as-active-active)。
+アクティブ/アクティブ セットアップのコストは、アクティブ/スタンバイの場合と同じ。[追加のコストはかからない](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-vpn-faq#is-there-an-additional-cost-for-setting-up-a-vpn-gateway-as-active-active)。
 
 ■コスト
 

@@ -1,4 +1,4 @@
-# ピアリング
+# 仮想ネットワークピアリング
 
 https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-overview
 
@@ -8,14 +8,14 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-o
 - トラフィックはMicrosoftのプライベートなネットワークを介してルーティングされる。
   - トラフィックの暗号化を行う必要がない。
 - ピアリングの作成に際してダウンタイムは発生しない
-- 別のAzure サブスクリプションに属するVNetでも作成することもできる
-- 別テナントのサブスクリプションに属するVNetでも作成することができる
+- 別の Azure サブスクリプションに属するVNetともピアリングできる
+- 別テナントの Azure サブスクリプションに属するVNetともピアリングできる
 
 注意
-- 2つのVNetが重複するアドレス空間を保つ場合はピアリングできない
+- 2つのVNetが重複するアドレス空間を持つ場合はピアリングできない
 - ピアリングの作成には料金はかからないが、ピアリング経由のデータ転送には料金がかかる。
 
-# ピアリングの種類
+■ピアリングの種類
 
 - （ローカル）仮想ネットワークピアリング
   - リージョン内でのピアリング
@@ -29,7 +29,7 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-o
 - グローバルピアリングを経由して、BasicロードバランサーのフロントエンドIP経由で、背後のリソースに接続することはできない。
 - API Management等、内部的にBasicロードバランサーを使用している場合がある。
   - https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-faq#what-are-the-constraints-related-to-global-vnet-peering-and-load-balancers
-- この制限を回避するためには、2つのVNetを、ピアリングではなく、VPNで接続する。
+- 制限を回避するためには、2つのVNetを、ピアリングではなく、VPNで接続する。
 
 ```
 VNet1 東日本
@@ -44,7 +44,7 @@ Basic LB
 VM  VM ... 東日本からフロントエンドIP経由ではつながらない
 ```
 
-# ピアリングリンク
+■ピアリングリンク
 
 2つのVNet (たとえばVNet1とVNet2) を接続するピアリングは、2つの「リンク」で構成される。
 - VNet1からVNet2へのピアリングリンク
@@ -55,11 +55,11 @@ VM  VM ... 東日本からフロントエンドIP経由ではつながらない
 - 接続済み - リンクを2つ作成してピアリングがつながった状態
 - 削除済み - リンクの片方を削除した状態. 再度ピアリングするにはいったん削除。
 
-# 推移性
+■推移性
 
 ピアリングによる推移的な接続はサポートされない。
 
-■例1: 以下のような構成で、VNet1とVNet3は通信することができない。
+例1: 以下のような構成で、VNet1とVNet3は通信することができない。
 
 ```
 VNet1
@@ -71,7 +71,7 @@ VNet3
 
 もし必要であれば、VNet1とVNet3もピアリングする必要がある。
 
-■例2: 以下のような構成であれば、ルーターを経由して、VNet1とVNet3が通信することができる。
+例2: 以下のような構成であれば、ルーターを経由して、VNet1とVNet3が通信することができる。
 
 ```
 VNet1
@@ -86,7 +86,7 @@ VNet3
 - VNet1に関連付けたルートテーブルで、VNet3へのトラフィックをルーターへと転送する
 - VNet3に関連付けたルートテーブルで、VNet1へのトラフィックをルーターへと転送する
 
-# ゲートウェイ トランジット（ゲートウェイ転送）
+■ゲートウェイ トランジット（ゲートウェイ転送）
 
 https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-peering-gateway-transit
 
@@ -107,8 +107,7 @@ VNet2: 仮想ネットワークゲートウェイ
 - VNet2からVNet1へのピアリングリンクの設定: 
   - 「この仮想ネットワークのゲートウェイを使用する」にチェック
 
-
-# ルーティング
+■ルーティング
 
 https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-udr-overview
 
