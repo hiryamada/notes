@@ -50,3 +50,22 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/manage-apps/configure-pa
 - 初回アクセス時にユーザー名とパスワードを入力してアプリにサインイン
 - ユーザー名とパスワードがAzure ADに記録される
 - 以降のサインインでは、ユーザーに代わって、Azure ADが、ユーザー名とパスワードをアプリに提供
+
+■チュートリアル
+
+https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/tutorial-list
+
+さまざまなクラウドアプリケーションと と Azure AD を統合する場合に使用することができるチュートリアルが用意されている。
+
+例: Adobe Creative Cloud - SAML
+
+https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/adobe-creative-cloud-tutorial
+
+例: Slack - SAML
+https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/slack-tutorial
+
+例: Qiita - SAML
+https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/qiita-team-tutorial
+
+例: Facebook - SAML
+https://docs.microsoft.com/ja-jp/azure/active-directory/saas-apps/facebook-work-accounts-tutorial

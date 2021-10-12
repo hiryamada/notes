@@ -2,12 +2,14 @@
 
 https://docs.microsoft.com/ja-jp/azure/frontdoor/front-door-overview
 
-レイヤー 7 (HTTP/HTTPS 層) で動作する、スケーラブルなグローバル エントリ ポイント。Webアプリケーションへのグローバル接続の性能を向上させることができる。動的 Web アプリと静的コンテンツに対応。
+- レイヤー 7 (HTTP/HTTPS 層) で動作する、スケーラブルなグローバル エントリ ポイント。
+- Webアプリケーションへのグローバル接続の性能を向上させることができる。
+- 動的 Web アプリと静的コンテンツに対応。
 
 ※「Front Door フロント ドア」: 正面玄関
 
 ```
-エンドユーザー（Webブラウザ等）
+クライアント（Webブラウザ等）
 ↓ 
 Azure Front Door（世界中のエッジロケーション）example.azurefd.net
 ↓ 
@@ -102,18 +104,18 @@ Azure Front Door Standard / Premium (プレビュー)
 Azure Front Doorのドメイン名（example.azurefd.net）を使用して、バックエンド www.example.com に接続する場合
 
 (DNS)
-- Webブラウザー: もしもし、example.azurefd.net に接続したいのですが
+- クライアント: もしもし、example.azurefd.net に接続したいのですが
 - Azure Front DoorのDNSサーバー: はい、example.azurefd.net の IPアドレス はこちらです
 
 (HTTP)
-- Webブラウザー: （そのIPアドレスに接続）
+- クライアント: （そのIPアドレスに接続）
 - （リクエストはエッジロケーションに送信される）
-- Webブラウザー: もしもし、example.azurefd.net さんでしょうか？ トップページを送信してください (GET / HTTP/1.1 Host: example.azurefd.net)
+- クライアント: もしもし、example.azurefd.net さんでしょうか？ トップページを送信してください (GET / HTTP/1.1 Host: example.azurefd.net)
 
 (HTTP)
 - エッジロケーションのサーバー: もしもし、www.example.com さんでしょうか？ トップページを送信してください(GET / HTTP/1.1 Host: www.example.com)
 - Webサーバー: はい、そうです。トップページはこちらです(200 OK)
-- （エッジロケーションのサーバーは、そのレスポンスを受信し、Webブラウザーに返す）
+- （エッジロケーションのサーバーは、そのレスポンスを受信し、クライアントに返す）
 
 ■Azure Front Doorの作成
 
@@ -150,7 +152,7 @@ Azure portalで「フロント ドア」で検索
 
 ※Front Doorリソース作成後は、「Front Doorデザイナー」で確認・編集ができる
 
-※Front Doorのトップページ（概要）の、Front Doorのフロントエンドホストのリンクは、上記の設定にかかわらず「https://～～.azurefd.net」になっているので注意！ （必要に応じて https を http にする）
+※Front Doorのトップページ（概要）の、Front Doorのフロントエンドホストのリンクは、上記の設定(HTTP/HTTPS)にかかわらず常に「https://～～.azurefd.net」というURLになっているので注意！ （必要に応じて https を http に直してアクセスする）
 
 ```
 Webブラウザ等

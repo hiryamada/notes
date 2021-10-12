@@ -5,7 +5,6 @@ https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-overview
 - DNS ベースのロード バランサー
 - パブリックに公開されているアプリケーションへのトラフィックをルーティングする
 
-
 ■Traffic Manager概要
 
 - DNS 応答を送信して、クライアント(Webブラウザ等)を適切なサービス エンドポイント(Webサーバー等)に転送
@@ -19,17 +18,15 @@ https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-overview
 - Traffic Manager: example.trafficmanager.net に対応するIPアドレスを返す
 - クライアント: IPアドレスにリクエストを送信する
 
-■シナリオ1
-
-example.trafficmanager.netで、www.example.com に接続する場合
+■シナリオ(1): クライアントが example.trafficmanager.net に接続する場合
 
 (DNS)
-- Webブラウザー: もしもし、example.trafficmanager.net に接続したいのですが
+- クライアント: もしもし、example.trafficmanager.net に接続したいのですが
 - Traffic Manager: はい、example.trafficmanager.net のIPアドレスはこちらです
 
 (HTTP)
-- Webブラウザー: （そのIPアドレスに接続）
-- Webブラウザー: もしもし、example.trafficmanager.net さんでしょうか？ トップページを送信してください (GET / HTTP/1.1 Host: example.trafficmanager.net)
+- クライアント: （そのIPアドレスに接続）
+- クライアント: もしもし、example.trafficmanager.net さんでしょうか？ トップページを送信してください (GET / HTTP/1.1 Host: example.trafficmanager.net)
 - Webサーバー: はい、トップページはこちらです(200 OK)
 
 ※この場合、Webサーバーが、example.trafficmanager.net に対して応答するように設定する必要がある。
@@ -39,23 +36,33 @@ example.trafficmanager.netで、www.example.com に接続する場合
 
 > 使用しているドメイン名の正しいホスト ヘッダーを受け入れるようにアプリケーションが構成されていることを確認します
 
-■シナリオ2
-
-Traffic Managerのドメイン名（example.trafficmanager.net）を使用せず、www.example.com に接続する場合
+■Traffic Managerに別のドメインを割り当てるには
 
 https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-point-internet-domain
 
+たとえば www.example.com で Traffic Managerのプロファイル example.trafficmanager.net に接続できるようにしたい場合は、www.example.com のDNSサーバー側で、Traffic Manager プロファイルへのCNAMEレコードを作成する。
+
+```
+www.example.com ドメイン
+↓ CNAMEレコードに解決
+example.trafficmanager.net
+↓ Traffic ManagerがIPアドレスを返す
+サービス エンドポイント(Webサーバー等)
+```
+
+■シナリオ(2): クライアントが www.example.com 経由で example.trafficmanager.net に接続する場合
+
 (DNS)
-- Webブラウザー: もしもし、www.example.com に接続したいのですが 
+- クライアント: もしもし、www.example.com に接続したいのですが 
 - DNSサーバー: はい、www.example.com の CNAME は example.trafficmanager.net です
 
 (DNS)
-- Webブラウザー: もしもし、example.trafficmanager.net に接続したいのですが 
+- クライアント: もしもし、example.trafficmanager.net に接続したいのですが 
 - Traffic Manager: はい、example.trafficmanager.net の IPアドレス はこちらです
 
 (HTTP)
-- Webブラウザー: （そのIPアドレスに接続）
-- Webブラウザー: もしもし、www.example.com さんでしょうか？ トップページを送信してください (GET / HTTP/1.1 Host: www.example.com)
+- クライアント: （そのIPアドレスに接続）
+- クライアント: もしもし、www.example.com さんでしょうか？ トップページを送信してください (GET / HTTP/1.1 Host: www.example.com)
 - Webサーバー: はい、そうです。トップページはこちらです(200 OK)
 
 
@@ -66,7 +73,7 @@ DNSのサービス:
 - （基本的には）問い合わせに対して固定のIPアドレスを返す
 
 Traffic Manager:
-- ドメイン名をホストできない(～.trafficmanager.netとなる)
+- カスタムのドメイン名はホストできない(～.trafficmanager.net だけをホストできる)
 - 問い合わせに対してさまざまなIPアドレスを返すことができる（ルーティング）
 
 ■Traffic Managerプロファイル
@@ -75,7 +82,7 @@ Traffic Managerのリソース。
 
 - 名前 
   - たとえば example と入力すると example.trafficmanager.net というDNS名がプロファイルに割り当てられる
-- ルーティング方法
+- ルーティング方法（後述）
   - パフォーマンス
   - 重み付け
   - 優先度
@@ -85,9 +92,7 @@ Traffic Managerのリソース。
 - サブスクリプション
 - リソース グループ
 
-※「Traffic Manager プロファイル」というリソース自体はグローバルな（リージョンに依存しない）サービスであるが、「Traffic Manager プロファイル」の情報を格納するリソース グループは特定のリージョンに保存される。
-
-
+※「Traffic Manager プロファイル」はグローバルなリソースであり、リージョンに依存しない（特定のリージョンの障害の影響を受けない）。
 
 ■ルーティング
 
@@ -166,16 +171,4 @@ Azure エンドポイント / 外部エンドポイント
 
 入れ子になったエンドポイントの説明と例:
 https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-nested-profiles
-
-■Traffic Managerに別のドメインを割り当てるには
-
-たとえば www.example.com で Traffic Managerのプロファイル example.trafficmanager.net に接続できるようにしたい場合は、www.example.com のDNSサーバー側で、Traffic Manager プロファイルへのCNAMEレコードを作成する。
-
-```
-www.example.com ドメイン
-↓ CNAMEレコードに解決
-example.trafficmanager.net
-↓ Traffic ManagerがIPアドレスを返す
-サービス エンドポイント(Webサーバー等)
-```
 

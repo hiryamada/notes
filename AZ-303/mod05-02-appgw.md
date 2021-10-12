@@ -4,7 +4,7 @@ https://docs.microsoft.com/ja-jp/azure/application-gateway/overview
 
 
 - Web アプリケーションに対するトラフィックを管理できる Web トラフィック ロード バランサー。
-- [OSI レイヤー 7](https://ja.wikipedia.org/wiki/OSI%E5%8F%82%E7%85%A7%E3%83%A2%E3%83%87%E3%83%AB)で動作。
+- [OSI レイヤー 7](https://ja.wikipedia.org/wiki/OSI%E5%8F%82%E7%85%A7%E3%83%A2%E3%83%87%E3%83%AB)で動作（HTTPとHTTPSをサポート）
 
 ■Application Gatewayの特徴（Azure Load Balancerとの主な違い）
 
@@ -37,8 +37,7 @@ Host: www.example.com
   - Application Gatewayからバックエンドの間では暗号化なし（HTTP）で通信。
   - バックエンドの負荷を削減できる
 - [エンドツーエンドTLS暗号化](https://docs.microsoft.com/ja-jp/azure/application-gateway/ssl-overview#end-to-end-tls-encryption)
-  - TLSセッションがApplication Gatewayでいったん解除される
-  - Application Gatewayからバックエンドの間で新たなTLS接続を開始する
+  - TLSセッションがApplication Gatewayでいったん解除され、ルーティングが行われる。バックエンドに要求が送られる際に別のTLSセッションを使用する。
   - 用途
     - セキュリティ要件、コンプライアンス要件により、エンドツーエンド暗号化が必要な場合
     - バックエンドがTLS通信しか受け付けない場合
@@ -58,7 +57,7 @@ TLS証明書は[Azure Key Vaultに格納することができる](https://docs.m
 
 ※「WAF v1」: WAF機能が付いたApplication Gateway。2017/3/29 一般提供開始. https://azure.microsoft.com/ja-jp/updates/application-gateway-web-application-firewall-generalavailability/
 
-※「Standard v2」と「WAF v2」: 「Standard」「WAF」にない追加の機能を提供する。[2019/4/30に追加](https://azure.microsoft.com/ja-jp/updates/azure-application-gateway-standardv2-wafv2-skus-generally-available/)。
+※「Standard v2」と「WAF v2」: 「Standard」「WAF」にない追加の機能（自動スケーリングやゾーン冗長等）を提供する。[2019/4/30に追加](https://azure.microsoft.com/ja-jp/updates/azure-application-gateway-standardv2-wafv2-skus-generally-available/)。
 
 ■WAFとは？
 
@@ -76,7 +75,7 @@ TLS証明書は[Azure Key Vaultに格納することができる](https://docs.m
 
 - 最小インスタンス数(0～100)
   - トラフィックに関係なく常に保持されるインスタンスの数
-- 最大インスタンス数(1～125) ※実際は2～125？
+- 最大インスタンス数(1～125) 
   - トラフィックの増加に合わせて増やされるインスタンス数の上限
 
 ※最小インスタンス数＜最大インスタンス数である必要がある。
@@ -120,7 +119,7 @@ CUとは:
 - 最小インスタンス数: 常にお店にいてもらうアルバイトさんの数
 - 最大インスタンス数: アルバイトさんの最大数
 - 予約されたCU: アルバイトさんに毎月支払う最低給与
-- 追加で使用されたCU: アルバイトさんに支払う残業代
+- 追加で使用されたCU: アルバイトさんが残業をした場合に支払う残業代
 
 ■可用性ゾーン(v2)
 
