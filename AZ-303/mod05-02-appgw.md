@@ -95,7 +95,7 @@ TLS証明書は[Azure Key Vaultに格納することができる](https://docs.m
 「予約されたCU」＋「追加で使用されたCU」に基づいて課金。
 
 CUとは:
-- スループット、コンピューティング、接続数(TCPコネクション数)から算出される
+- スループット、コンピューティング、永続的な接続数(TCPコネクション数)から算出される
 - [1CU](https://docs.microsoft.com/ja-jp/azure/application-gateway/understanding-pricing):
   - 2500 個の永続的な接続(TCPコネクション数)
   - 2.22 Mbps のスループット
