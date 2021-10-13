@@ -17,6 +17,31 @@ https://azure.microsoft.com/ja-jp/pricing/details/functions/
 ※Azureのサーバーレスのサービス
 https://azure.microsoft.com/ja-jp/solutions/serverless/
 
+■歴史
+
+2014/1/23 Functionsの前身となる「Windows Azure WebJobs」が利用可能に。App Service上で、「トリガー」により、小さな「ジョブ」を実行。
+https://www.hanselman.com/blog/introducing-windows-azure-webjobs
+
+※[WebJobsとFunctionsの比較](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs#compare-functions-and-webjobs)
+
+2016/11/15 Azure Functions 一般提供開始 Consumptionプラン（消費量または従量課金とも）/App Service(専用)プラン。ローカルで開発・デバッグを行うための「Azure Functions CLI」のBeta版も提供。
+https://azure.microsoft.com/ja-jp/blog/announcing-general-availability-of-azure-functions/
+
+2017/3/18頃 「Azure Functions CLI」 が 「Azure Function Core Tools」に改名された
+https://github.com/Azure/azure-functions-core-tools/issues/92
+
+2017/7/6 Durable Functions アルファプレビュー
+https://azure.github.io/AppService/2017/07/06/Alpha-Preview-for-Durable-Functions.html
+
+2018/5/8 Durable Functions GA Release
+https://github.com/Azure/azure-functions-durable-extension/releases/tag/v1.4.0
+
+2019/11/4 Premiumプランの一般提供開始。コールドスタートの回避、仮想ネットワーク接続（VNet統合）への対応、高速スケールなど、エンタープライズアプリケーション向けの強化。
+https://azure.microsoft.com/ja-jp/updates/azure-functions-premium-plan-is-now-generally-available/
+
+2021/10/8 Dynamic concurrency モデルをサポート（プレビュー）従来の「Static concurrencyモデル」よりも、構成が簡素化され、時間の経過とともに変動する負荷に対応しやすくなった
+https://azure.microsoft.com/ja-jp/updates/public-preview-dynamic-concurrency-in-azure-functions/
+
 ■Azure Functionsでできることの例
 
 - イベント処理
@@ -30,26 +55,26 @@ https://azure.microsoft.com/ja-jp/solutions/serverless/
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-overview#scenarios
 
-■Azure Functionsでできない/苦手なこと
+■Azure Functionsで利用できるランタイムのバージョン
 
-できないこと:
-- 実行環境へのドライバー、ウィルス対策ソフトなどの組み込み
-- エンドユーザー向けのアプリケーションのインストール
-- 古いバージョンの言語ランタイムをずっとサポートする
-
-バージョンについて
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-versions
 
+ランタイムバージョン: 1.x, 2.x, 3.x, 4.xがある。
+
+※実際には[「3.3.1」](https://github.com/Azure/app-service-announcements/issues/345)のようなバージョン番号が使われる。
+
+Function上で動かしたいプログラミング言語のバージョンに対応するランタイムを選択する。
+
+例: .NET, C#
+
+- .NET Core 3.1, .NET 5.0 → Azure Functions ランタイムバージョン 3.x:
+- .NET 6.0 → Azure Functions ランタイムバージョン 4.x
+
+ランタイムバージョンの確認/設定方法: Azure CLI等を使用。
 https://docs.microsoft.com/ja-jp/azure/azure-functions/set-runtime-version
 
-バージョンの更改のお知らせ
+ランタイムバージョンの更新についてはGitHub の Azure/app-service-announcements リポジトリでIssueとして確認できる。
 https://github.com/Azure/app-service-announcements/issues
-
-工夫すればできること:
-（バッチ処理のような）長時間にわたる実行 → 基本的に、Azure Functionは10分以内といった短時間での処理を想定。ただし、Durable Functionsを使用すると、複数の「関数の実行」をつなげることで、長期間に渡るワークフローの実行などを実現することは可能。ただしこの場合でも、Durable Functionsに含まれる個々の処理（「アクティビティ関数」の実行）の1回あたりの実行時間の上限は伸びない。
-
-（セッションなどの）状態を持たせる → 基本的にAzure Functionsのようなサーバーレスのアーキテクチャはステートレスが前提。ただし、外部のストレージを利用するなどして、状態を持たせる（複数の実行の間でデータを受け渡す）ことは不可能ではない。
-
 
 
 ■テンプレート
@@ -69,11 +94,26 @@ https://github.com/Azure/app-service-announcements/issues
 - CosmosDBTrigger
 - IotHubTrigger
 
+Azure Functions Core Toolsで `func init` でプロジェクトを作り、次にそのプロジェクト内で `func new` で「関数」を作る。関数を作るときに、テンプレートを選択する。
+
 ■タイマートリガー
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-timer
 
-「NCRONTAB式」でスケジュールを指定。[CRONTAB](https://ja.wikipedia.org/wiki/Crontab)に似ている。
+（1時間、1週間、1ヶ月、などの）一定間隔ごとに関数を実行したい場合は「タイマートリガー」を使用。
+
+「[NCRONTAB式](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-timer?tabs=csharp#ncrontab-expressions)」でスケジュールを指定。[CRONTAB](https://ja.wikipedia.org/wiki/Crontab)に似ている。
+
+`{second} {minute} {hour} {day} {month} {day-of-week}`
+
+例: 
+- `0 30 9 * * 1-5`
+- 平日の毎日午前 9 時 30 分
+
+参考: [Cron Expression Descriptor](https://bradymholt.github.io/cron-expression-descriptor/?locale=ja): 
+(N)CRONTAB式を、人間にわかる言葉（日本語・英語等）に変換
+
+参考: [NCrontab Expression Tester](https://ncrontab.swimburger.net/): NCRONTAB式を、実際のスケジュールされる日時に展開
 
 ■Azureのサービスとの統合
 
@@ -83,61 +123,81 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-timer
 すべての一覧（サポートされているバインディング）:
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings
 
-Twilio（トゥイリオ）: これは、サードパーティ製のサービス。APIを使用して、テキストメッセージ（SMS）を送信したりすることができる。
+■参考: Azure からのSMS送信
 
-解説動画: https://www.youtube.com/watch?v=1QfaGZ2Gm9g
+[Twilio](https://www.twilio.com/ja/)（トゥイリオ）: サードパーティ製のサービス。APIを使用して、テキストメッセージ（SMS）を送信したりすることができる。Azureでは、[Azure Communication Servicesを使用してSMSを送信することができる](https://docs.microsoft.com/ja-jp/azure/communication-services/concepts/telephony-sms/concepts) が、まだAzure Functionsとは統合されていないので、Twilioバインディングを使う必要がある。
 
 Functionsのドキュメント: https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-twilio
 
-■スケーリング
+解説動画: https://www.youtube.com/watch?v=1QfaGZ2Gm9g
 
-https://docs.microsoft.com/ja-jp/azure/azure-functions/event-driven-scaling#runtime-scaling
-
-拡大縮小はキューの長さや最も古いキュー メッセージの経過時間に基づいて実施されます。
 
 ■ホスティングプラン
 
 関数アプリは以下のいずれかのプラン上で動かすことができる。
 
-- 従量課金プラン(消費, Consumption): 実行数、実行時間、およびメモリの使用量に基づいて課金
-- Premium プラン: 従量課金プランと比較して、予測可能な料金。
-- App Service プラン: App Service のプラン上で関数を実行。
+- 従量課金プラン(消費, Consumption)
+- Premium プラン
+- 専用プラン(App Serviceプラン)
 
 概要: https://docs.microsoft.com/ja-jp/azure/azure-functions/pricing
 
 詳しい比較: https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale
 
 主な違い:
-- タイムアウト: 従量課金プランは最大10分、Premium プランとApp Serviceプランは無制限に設定可能
-- 最大インスタンス数: 従量課金プランは200、Premiumプランは100、App Serviceプランは10-20。
-- 自動スケール: 従量課金プランとPremiumプランは自動スケール。App Serviceプランは設定による。
-- ネットワーク機能: 従量課金プランは「受信IP制限」のみ利用可能。PremiumプランとApp Serviceプランは「受信IP制限」に加えて「仮想ネットワーク統合」などが利用できる。
+- タイムアウト: 従量課金プランは最大10分、Premium プランと専用プランは無制限に設定可能
+- 最大インスタンス数: 従量課金プランは200、Premiumプランは100、専用プランは10-20。
+- 自動スケール: 従量課金プランとPremiumプランは自動スケール。専用プランは設定による。
+- ネットワーク機能: 従量課金プランは「受信IP制限」のみ利用可能。Premiumプランと専用プランは「受信IP制限」に加えて「仮想ネットワーク統合」などが利用できる。
 
-かんたんな選択例:
-- すでにApp Serviceプランがあり、その上でAzure Functionsも実行したい場合: App Serviceプラン
+選択の目安:
+- すでにApp Serviceプランがあり、その上でAzure Functionsも実行したい場合: 専用プラン
 - Azure Functionsを継続的に、高頻度で実行する場合: Premiumプラン
-- その他の場合(高度なネットワーク機能が不要な場合): 従量課金プラン
+- その他の場合(高度なネットワーク機能が不要): 従量課金プラン
 
-■常にオン(Always On, 「常時接続」とも)
+■スケーリング
 
-App Service プランを実行する場合、関数アプリが正常に実行されるように、「常時接続」を「有効」に設定する必要がある。
-この設定は、App Service プランでのみ指定できる。
+https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale#scale
 
-https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan#always-on
+https://docs.microsoft.com/ja-jp/azure/azure-functions/event-driven-scaling#runtime-scaling
+
+関数アプリは、Azureの内部の「Functions host instance」（関数ホストのインスタンス）で実行される。
+
+インスタンスの増減（スケールアウト・スケールイン）は、自動的に実行される。（専用プランでは手動スケーリングも利用できる）
+
+各プランでのスケーリング, 最大インスタンス数
+
+- 従量課金プラン: 自動, 200
+- Premiumプラン: 自動, 100
+- 専用プラン: 自動/手動, 10-20
+
+[専用プランの自動スケーリングは、Premiumプランのスケーリングよりも低速。](https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan#scaling)
+
+■コールドスタート
+
+https://docs.microsoft.com/ja-jp/azure/azure-functions/event-driven-scaling#cold-start
+
+関数アプリがアイドル（呼び出しがない時間が続いた）になると、「Functions host instance」（関数ホストのインスタンス）が 0 にスケールインされる。
+
+0にスケールインした場合、次の関数アプリの要求の処理の際に、0から1へスケールアウトする時間がかかる。（コールドスタート）
+
+コールドスタートを避けるには:
+- [専用プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan) を使用し、[「常時接続」（「常にオン」、「Always On」とも）設定を有効にする](https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan#always-on)
+- [Premiumプラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-premium-plan?tabs=portal) を使用する。インスタンスを常にウォーム状態に維持することでコールド スタートを回避できる。
 
 ■ストレージアカウント
 
-Azure Functions では、Function App インスタンスを作成するときに Azure ストレージ アカウントが必要になります。
-
-アカウントが削除されると、関数アプリは実行されません。
-
-最適なパフォーマンスを得るには、関数アプリで同じリージョンのストレージ アカウントを使用する必要があります。
-
-複数の関数アプリで1つのストレージアカウントを共有してもよい。
-
-ただし、パフォーマンスを最大化するには、関数アプリごとに個別のストレージ アカウントを使用する。
-
 https://docs.microsoft.com/ja-jp/azure/azure-functions/storage-considerations
+
+Azure Functions では、Function App インスタンスを作成するときに Azure ストレージ アカウントが必要になる。
+
+Azure portalを使用して関数アプリを作成すると、一緒にストレージアカウントが作成される。
+
+ストレージアカウントが削除されると、関数アプリは実行されなくなるので、削除しないように注意。
+
+最適なパフォーマンスを得るには、関数アプリで同じリージョンのストレージ アカウントを使用する。
+
+複数の関数アプリで1つのストレージアカウントを共有してもよい。ただし、パフォーマンスを最大化するには、関数アプリごとに個別のストレージ アカウントを使用する。
 
 ■トリガーとバインド
 
@@ -182,11 +242,30 @@ C#（「クラスライブラリ」と「C#スクリプト」）, F#, JavaScript
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/supported-languages
 
+■参考: C#スクリプト
+
+C#スクリプトの解説
+https://docs.microsoft.com/ja-jp/archive/msdn-magazine/2016/january/essential-net-csharp-scripting
+
+C#スクリプトの解説
+https://ufcpp.net/study/csharp/cheatsheet/apscripting/
+
+Azure FunctionsでのC#スクリプトの利用
+https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-reference-csharp
+
+Azure Functionsでは、C#クラスライブラリ（ふつうのC#）に加え、C#スクリプトも利用できる。Azure portal上の開発環境では、C#スクリプトの開発・テストができる。
+
 ■各言語でのトリガー・バインドの指定方法:
 
-- C#: 属性で指定。
+- C#（クラスライブラリ）: 属性で指定。
+  - https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-dotnet-class-library?tabs=v2%2Ccmd#methods-recognized-as-functions
 - Java: アノテーションで指定。
+  - https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-reference-java?tabs=bash%2Cconsumption#triggers-and-annotations
 - C#スクリプト(～.csx), JavaScript等: function.json ファイルに指定
+  - https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-reference-csharp#binding-to-arguments
+  - https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-reference-node?tabs=v2#bindings
+
+C#（クラスライブラリ）/Java では、トリガーやバインドはコード中の属性やアノテーションで指定される。functions.json は自動で生成される。
 
 ■Durable Functions
 

@@ -145,7 +145,7 @@ VM1    VM2
 
 「グローバル（リージョン間）」ロードバランサー: 
 
-- [2022/9/22～ プレビュー](https://azure.microsoft.com/ja-jp/updates/preview-azure-load-balancer-now-supports-crossregion-load-balancing/)
+- [2020/9/22～ プレビュー](https://azure.microsoft.com/ja-jp/updates/preview-azure-load-balancer-now-supports-crossregion-load-balancing/)
 - 複数リージョン間での負荷分散
 - グローバルでトラフィックを受信し、複数のリージョンの「地域」ロードバランサーへ負荷分散
 - TCPのみ

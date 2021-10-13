@@ -11,12 +11,14 @@ Azure上でSQL Serverを実行するためのサービスは、「Azure SQL」�
 
 ■Azure SQLに含まれるサービス(★)
 
+(★): 重要
+
 - [Azure SQL Database](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/sql-database-paas-overview)
-  - PaaS 型のサービス。
+  - PaaS 型のサービス
   - ほとんどのオンプレミス データベース レベルの機能をサポート
   - 組み込みの高可用性、インテリジェンス、管理などの追加の機能も利用できる
 - [Azure SQL Managed Instance (MI)](https://docs.microsoft.com/ja-jp/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview)
-  - PaaS 型のサービス。
+  - PaaS 型のサービス
   - オンプレミスの SQL Serverとの100%に近い互換性を持つ
   - 既存のオンプレミス アプリケーションの移行に適する
 - [Azure SQL Server on VM](https://docs.microsoft.com/ja-jp/azure/azure-sql/virtual-machines/)
@@ -25,17 +27,23 @@ Azure上でSQL Serverを実行するためのサービスは、「Azure SQL」�
 
 いずれも、データベースエンジンとしてSQL Serverを使用。
 
+■可用性（SLA）
+
+https://azure.microsoft.com/ja-jp/support/legal/sla/azure-sql-database/v1_6/
+
+デプロイ方法によるが、99.9% ～ 99.995% の可用性を SLA で保証。
+
 ■Azure SQL Database
 
 Azure SQL Databaseは、フルマネージドのデータベース。
 
 アップグレード、修正プログラムの適用、バックアップ、監視などのほとんどのデータベース管理機能をユーザーの介入なしで処理。 
 
-他の2つのサービスに比べて、データベース管理の手間を省くことができる。
+他の2つのサービス（Azure SQL Managed Instance と SQL Server on VM）に比べて、データベース管理の手間を省くことができる。
 
 よく使われるSQL Server機能をサポートしているが、従来のSQL Serverとの完全な互換性は利用できない。
 
-オンプレミスからの移行など、従来のSQL Serverとの互換性が重要である場合は、Azure SQL Managed Instanceか、SQL Server on VMを使用。
+オンプレミスからの移行など、従来のSQL Serverとの互換性が重要である場合は、Azure SQL Managed Instanceか、SQL Server on VMを使用する。
 
 ■Azure SQL Databaseの主な特徴
 
@@ -44,7 +52,7 @@ Azure SQL Databaseは、フルマネージドのデータベース。
 - スケーラビリティ
   - データベースなどに対する性能の指定をいつでも変更することができる。
   - アプリケーションのダウンタイムは、最小限 (通常、平均で 4 秒未満)。
-  - アプリケーションは、再試行ロジックを使うことで、接続を回復させることができる
+    - アプリケーションは、[再試行ロジック](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/troubleshoot-common-connectivity-issues)を使うことで、接続を回復させることができる
 - [自動バックアップ](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/automated-backups-overview?tabs=single-database)
   - 完全バックアップを毎週、差分バックアップを 12 から 24 時間ごと、そしてトランザクション ログ バックアップを 5 から 10 分ごとに作成
 - ポイントインタイムリストア(PITR)
@@ -64,7 +72,7 @@ Azure SQL Databaseの主なリソースとして「SQLサーバー」「SQLデ�
 
 「SQLサーバー」（以下、「サーバー」）は「SQLデータベース」（後述）や「SQLエラスティックプール」（後述）を管理するための論理的なコンテナー。
 
-サーバーは、リソース グループ以下に作成します。サーバーの作成時に、サーバーの名前を指定する。名前によって、サーバーに接続するための「エンドポイント」も決まる。
+サーバーは、リソース グループ以下に作成する。サーバーの作成時に、サーバーの名前を指定する。名前によって、サーバーに接続するための「エンドポイント」も決まる。
 
 たとえば「server1」という名前でサーバーを作成すると、そのサーバーに「server1.database.windows.net」というエンドポイントが与えられる。
 
@@ -76,12 +84,13 @@ Azure SQL Databaseの主なリソースとして「SQLサーバー」「SQLデ�
 
 サーバー内には、SQLデータベース（以下、「データベース」）を作成することができる。
 
-
 データベースの作成時に、名前や性能（後述）などを指定。
 
 データベース内には、アプリケーションが使用するテーブルやビューなどを作成することができる。
 
 ■SQLエラスティックプール(★)
+
+適用対象: Azure SQL Database のみ
 
 [解説PDF](../AZ-500/pdf/mod3/Elastic%20Pool.pdf)
 
