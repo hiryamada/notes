@@ -13,6 +13,7 @@
 - [AZ-104 Administrator](AZ-104/README.md)
 - [AZ-204 Developing](AZ-204/README.md)
 - [AZ-303 Architect Technology](AZ-303/README.md)
+- [AZ-304 Architect Design](AZ-304/README.md)
 - [AZ-500 Security](AZ-500/README.md)
 - [AZ-400 DevOps](AZ-400/README.md)
 - [AZ-220 IoT](AZ-220/README.md)
