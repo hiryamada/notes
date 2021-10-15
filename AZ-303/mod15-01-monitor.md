@@ -1,5 +1,9 @@
 # Azure Monitor
 
+サービスやリソースの「メトリック」と「ログ」を収集、分析することができるサービス。
+
+[メトリックとログの例](pdf/mod15/メトリックとログの例.pdf)
+
 [まとめPDF](../AZ-104/pdf/mod11/Azure%20Monitor.pdf)
 
 - Azure Monitor ブック https://docs.microsoft.com/ja-jp/azure/azure-monitor/visualize/workbooks-overview
