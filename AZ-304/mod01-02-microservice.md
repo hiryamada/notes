@@ -2,6 +2,7 @@
 
 
 ■マイクロサービスとは
+
 https://docs.microsoft.com/ja-jp/azure/architecture/guide/architecture-styles/microservices
 
 https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9

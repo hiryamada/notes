@@ -45,6 +45,10 @@ GitHubに組み込まれたCI/CDサービス。ワークフロー（ビルド、
   - Azure Pipelinesのエージェントのフォークである。
   - AzureのVM (Standard_DS2_v2) でホスティングされている。
 
+■参考: Azure DevOps と GitHub の機能の関連
+
+https://www.linkedin.com/pulse/azure-devops-future-after-github-acquisition-microsoft-antonio-alvino/
+
 ■Azure DevOpsとの違いは。
 
 - Azure DevOps（Azure Pipelines）

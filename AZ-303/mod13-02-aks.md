@@ -215,6 +215,8 @@ https://draft.sh/
 
 開発者向けのツール。
 
+マイクロソフトがOSSプロジェクトとして立ち上げた。
+
 Kubernetes上で動作するアプリケーションを簡単に構築することができるように、「足場」（スキャフォールド）を作る。また、簡単なコマンドで、アプリケーションをKubernetesで動作させることができる。
 
 
@@ -234,3 +236,21 @@ Kubernetes上で動作するアプリケーションを簡単に構築するこ�
 ドキュメント: https://github.com/Azure/draft/tree/master/docs
 
 わかりやすい解説: https://www.creationline.com/lab/36378
+
+■Brigade
+
+[ブリゲード: 旅団](https://ejje.weblio.jp/content/brigade)
+
+マイクロソフトがOSSプロジェクトとして立ち上げた。
+
+Event-based Scripting for Kubernetes
+
+JavaScriptを使用。イベントを処理する自動化タスクを記述し、Kubernetesのコンテナー上で実行することができる。
+
+https://github.com/brigadecore/brigade
+
+ドキュメント - Overview
+https://docs.brigade.sh/intro/overview/
+
+わかりやすい解説
+https://news.mynavi.jp/article/20190401-800253/
