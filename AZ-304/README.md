@@ -84,3 +84,8 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/
 
 Azureデータの基礎(Microsoft Learn)
 https://docs.microsoft.com/ja-jp/learn/paths/azure-data-fundamentals-explore-core-data-concepts/
+
+■その他のドキュメント
+
+Microsoft セキュリティのベスト プラクティス
+https://docs.microsoft.com/ja-jp/security/compass/compass
