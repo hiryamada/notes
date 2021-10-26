@@ -89,3 +89,5 @@ https://docs.microsoft.com/ja-jp/learn/paths/azure-data-fundamentals-explore-cor
 
 Microsoft セキュリティのベスト プラクティス
 https://docs.microsoft.com/ja-jp/security/compass/compass
+
+※旧称 「Azure セキュリティ コンパス」または 「Microsoft セキュリティ コンパス」

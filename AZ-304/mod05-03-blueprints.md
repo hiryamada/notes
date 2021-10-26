@@ -2,12 +2,15 @@
 
 Azure Resource Manager テンプレート、Azure ロールベースのアクセス制御 (Azure RBAC)、ポリシーなどの成果物を単一のブループリント定義にパッケージ化するしくみ。
 
+組織内のチームは、「ブループリント」を使用して、新しい環境を迅速に立ち上げることができる
+
 https://docs.microsoft.com/ja-jp/azure/governance/blueprints/
 
 2018/9/24 プレビュー https://azure.microsoft.com/ja-jp/updates/azure-blueprints-in-public-preview/
 
+（2021/10現時点でもプレビューとなっている）
 
-※ブループリント: [青図](https://ja.wikipedia.org/wiki/%E9%9D%92%E5%9B%B3)。青焼き。設計図。完成予想図。
+※ブループリント: [青図（あおず）](https://ja.wikipedia.org/wiki/%E9%9D%92%E5%9B%B3)。青焼き。図面。設計図。転じて、完成予想図。
 https://www.google.com/search?q=%E3%83%96%E3%83%AB%E3%83%BC%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88+%E8%A8%AD%E8%A8%88%E5%9B%B3&tbm=isch
 
 ■ブループリントとは？
