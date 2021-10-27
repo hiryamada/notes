@@ -37,9 +37,7 @@
 
 ■Azureアーキテクチャ センター
 
-確立されたパターンと手法を使用して Azure でソリューションを設計するためのドキュメント。多数の有用なガイド、ベストプラクティス、基本原則、パターン集などで構成される。
-
-本コース（AZ-304）でもこのドキュメントを頻繁に参照する。
+確立されたパターンと手法を使用して Azure でソリューションを設計するためのドキュメント。ガイド、ベストプラクティス、基本原則、パターン集など。
 
 ```
 Microsoft Docs
@@ -73,7 +71,8 @@ Cloud Adoption Framework (CAF)
 
 https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/overview
 
-- クラウドのビジネス戦略とテクノロジ戦略を作成して実装するのに役立つガイダンス
+クラウドのビジネス戦略とテクノロジ戦略を作成して実装するのに役立つガイダンス。
+
 - [ベスト プラクティス](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/azure-best-practices/)、ドキュメント、ツールが含まれる
 - [Azureセットアップガイド](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/azure-setup-guide/)
 - [Azure移行ガイド](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/migrate/azure-migration-guide/?tabs=MigrationTools)
@@ -97,9 +96,8 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/
 Azureデータの基礎(Microsoft Learn)
 https://docs.microsoft.com/ja-jp/learn/paths/azure-data-fundamentals-explore-core-data-concepts/
 
-■その他のドキュメント
+■セキュリティのドキュメント
 
 Microsoft セキュリティのベスト プラクティス ※旧称 「Azure セキュリティ コンパス」または 「Microsoft セキュリティ コンパス」
 https://docs.microsoft.com/ja-jp/security/compass/compass
-
 

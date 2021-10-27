@@ -3,7 +3,7 @@
 
 ```
 Azure Monitor ... クラウドインフラのモニタリング
-├Azure Log Analytics ... ログの蓄積と分析
+├Log Analytics ... ログの蓄積と分析
 └Azure Application Insights ... アプリケーションのモニタリング
 ```
 
