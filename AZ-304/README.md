@@ -44,10 +44,15 @@
 ```
 Microsoft Docs
 └Azureアーキテクチャ センター
- └アプリケーション アーキテクチャ ガイド
+ ├アプリケーション アーキテクチャ ガイド
+ ├Microsoft Azure Well-Architected Framework
+ ├クラウド設計パターン
+ ├Azureを使用した業界ソリューション（小売、金融、医療・・・）
+ ├Azureのカテゴリ(コンピュート、データベース・・・)
+ └クラウド導入フレームワーク(CAF)
 ```
 
-Azureアーキテクチャ センター
+Azureアーキテクチャ センター(AAC)
 https://docs.microsoft.com/ja-jp/azure/architecture/
 
 アプリケーション アーキテクチャ ガイド
@@ -56,7 +61,7 @@ https://docs.microsoft.com/ja-jp/azure/architecture/guide/
 クラウド アプリケーションのベスト プラクティス
 https://docs.microsoft.com/ja-jp/azure/architecture/best-practices/index-best-practices
 
-Microsoft Azure Well-Architected Framework
+Microsoft Azure Well-Architected Framework（一連の基本原則。信頼性、セキュリティ、コスト最適化、オペレーショナル・エクセレンス、パフォーマンス効率の5つの柱からなる）
 https://docs.microsoft.com/ja-jp/azure/architecture/framework/
 
 クラウド設計パターン
@@ -66,10 +71,17 @@ https://docs.microsoft.com/ja-jp/azure/architecture/patterns/
 
 Cloud Adoption Framework (CAF)
 
-- クラウドのビジネス戦略とテクノロジ戦略を作成して実装するのに役立つガイダンス
-- ベスト プラクティス、ドキュメント、ツールが含まれる
-
 https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/overview
+
+- クラウドのビジネス戦略とテクノロジ戦略を作成して実装するのに役立つガイダンス
+- [ベスト プラクティス](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/azure-best-practices/)、ドキュメント、ツールが含まれる
+- [Azureセットアップガイド](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/azure-setup-guide/)
+- [Azure移行ガイド](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/migrate/azure-migration-guide/?tabs=MigrationTools)
+- [ガバナンスガイド](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/govern/)
+- [管理ガイド](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/manage/)
+- [セキュリティ](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/secure/)
+- [ツールとテンプレート](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/resources/tools-templates)
+
 
 ■「基礎」(fundamentals)のドキュメント
 
@@ -87,7 +99,7 @@ https://docs.microsoft.com/ja-jp/learn/paths/azure-data-fundamentals-explore-cor
 
 ■その他のドキュメント
 
-Microsoft セキュリティのベスト プラクティス
+Microsoft セキュリティのベスト プラクティス ※旧称 「Azure セキュリティ コンパス」または 「Microsoft セキュリティ コンパス」
 https://docs.microsoft.com/ja-jp/security/compass/compass
 
-※旧称 「Azure セキュリティ コンパス」または 「Microsoft セキュリティ コンパス」
+
