@@ -2,9 +2,9 @@
 
 https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduction
 
-統合インフラストラクチャ セキュリティ管理システム
-
-クラウド セキュリティ態勢管理 (CSPM: Cloud Security Posture Management クラウド セキュリティ ポスチュア マネジメント)
+- 統合インフラストラクチャ セキュリティ管理システム
+- Azure 内かどうかにかかわらずクラウド内とオンプレミス上のハイブリッド ワークロード全体を保護
+- クラウド セキュリティ態勢管理 (CSPM: Cloud Security Posture Management クラウド セキュリティ ポスチュア マネジメント)
 
 2016/7/28 Azure Security Center 一般提供開始
 https://azure.microsoft.com/ja-jp/updates/generally-available-azure-security-center/

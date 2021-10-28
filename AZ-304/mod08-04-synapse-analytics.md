@@ -70,3 +70,6 @@ https://docs.microsoft.com/ja-jp/azure/synapse-analytics/overview-terminology#pi
 
 サービス間でデータを移動したり、アクティビティを調整したりすることができる。
 
+■参考
+
+[Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/modules/introduction-azure-synapse-analytics/)
