@@ -2,8 +2,6 @@
 
 https://docs.microsoft.com/ja-jp/azure/migrate/
 
-(★): 重要ポイント
-
 ■歴史
 
 2017/9/25 Azure Migrate の提供を「アナウンス」
@@ -98,7 +96,7 @@ https://azure.microsoft.com/ja-jp/pricing/details/azure-migrate/
 
 例: [Azure Migrate: Server Migration ツール](https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)を使用して、オンプレミスのVMware VM、オンプレミスのHyper-V VM、オンプレミスの物理サーバーなどを移行する。
 
-■Azure Migrate アプライアンス(★)
+■Azure Migrate アプライアンス
 
 https://docs.microsoft.com/ja-jp/azure/migrate/migrate-appliance
 
@@ -203,7 +201,7 @@ project1(サーバーの移行プロジェクト)
 プロジェクトはARMテンプレートを使用して作成することもできる。
 https://docs.microsoft.com/ja-jp/azure/migrate/quickstart-create-migrate-project
 
-■オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順(★)
+■オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順
 
 https://docs.microsoft.com/ja-jp/azure/migrate/tutorial-migrate-hyper-v
 

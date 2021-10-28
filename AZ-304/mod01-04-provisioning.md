@@ -66,11 +66,11 @@ Azure Automation State Configuration によって管理されるマシン。
 
 ■（組み込みの）プル サーバー
 
-Azure Automation State Configuration では、Windows 機能 DSC サービスに似た DSC プル サーバーが提供されます。
+Azure Automation State Configuration では、Windows 機能 DSC サービスに似た DSC プル サーバーが提供される。
 
 ■ターゲットノード
 
-「ターゲット ノード」では、「プル サーバー」から「構成」を受信し、目的の状態に適合させ、コンプライアンスについて報告することができます。
+「ターゲット ノード」では、「プル サーバー」から「構成」を受信し、目的の状態に適合させ、コンプライアンスについて報告することができる。
 
 [構成方法](https://docs.microsoft.com/ja-jp/azure/automation/automation-dsc-onboarding#enable-physicalvirtual-windows-machines)
 
