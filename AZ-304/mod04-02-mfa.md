@@ -1,25 +1,28 @@
 # Azure AD MFA
 
-https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-mfa-howitworks
-
-https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa
-
-https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa
-
-
 ■MFAとはなにか？
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-mfa-howitworks
 
-■どのような検証方法が利用できるのか？
+```
+ユーザー名・パスワードによる認証
+＋
+スマートフォンのアプリによる検証（通知＋指紋認証）など
+```
+
+■Azure AD MFAでは、どのような検証方法が利用できるのか？
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-mfa-howitworks#available-verification-methods
 
 - Microsoft Authenticator アプリ
-- OATH ハードウェア トークン (プレビュー)
+- OATH ハードウェア トークン (プレビュー, [2018/10/23～](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/hardware-oath-tokens-in-azure-mfa-in-the-cloud-are-now-available/ba-p/276466))
 - OATH ソフトウェア トークン
 - SMS
 - 音声通話
+
+参考: Azure AD ハードウェアトークンによるMFAの設定例
+https://www.cloudou.net/azure-active-directory/mfa005/
+
 
 ■MFAはどのようにして有効化できるのか？
 
@@ -48,7 +51,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/concept-fun
 
 概要:
 - Microsoft によって推奨されている基本的な ID セキュリティ機構のセット。
-- 有効にすると、これらの推奨事項が組織内で自動的に適用さる。
+- 有効にすると、これらの推奨事項が組織内で自動的に適用される。
 - 管理者とユーザーは、一般的な ID 関連の攻撃からより良く保護されるようになる。
 - ライセンス不要。
 
@@ -66,13 +69,21 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/concept-fun
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/overview
 
-(1)よりも、細かい条件で、MFAを要求するように設定できる。
+条件に応じて、MFAを要求するように設定できる。
+
+(1)(3)のように、常にMFAが要求されなくなるので、ユーザーにとって利便性が高い。
+
+例: 
+- あやしいサインインの場合にMFAを要求
+- 重要なアプリケーションにサインインする場合のみMFAを要求
+- Azure portalやコマンドを使用したAzureの操作を行う場合にMFAを要求
+- 社内のIPアドレスからのサインインの際はMFAを省略
 
 使用できる条件（シグナル）:
 
 - ユーザー、グループ、Azure ADの管理者
 - アクセスするアプリ
-  - 「Microsoft Azure Management」: Azure portal、Azure PowerShell、Azure CLI
+  - 「[Microsoft Azure Management](https://docs.microsoft.com/ja-jp/azure/role-based-access-control/conditional-access-azure-management)」: Azure portal、Azure PowerShell、Azure CLIなど（Azureの管理エンドポイント）
 - IPアドレス
 - デバイス
 - サインイン リスク(P2)
@@ -98,4 +109,17 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/overv
 https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/howto-mfa-userstates
 
 「(1)セキュリティの既定値群」も「(2)条件付きアクセス」も使用しない場合に、これを使用する。
+
+ユーザーごとの Azure AD MFA を、必要に応じて各アカウントで有効にすることができる。
+
+基本的に、サインインするたびに多要素認証が実行される。
+
+設定方法（MFA管理UIへの移動）:
+Azure AD ＞ユーザー＞すべてのユーザー＞Multi-Factor Authentication
+
+ユーザーの状態:
+
+- 無効: MFA無効. デフォルト
+- Enabled: MFAの登録を求める。
+- 強制: Enabledで、MFAの登録が完了すると、自動的にこの状態となる。
 

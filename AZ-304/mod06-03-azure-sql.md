@@ -149,16 +149,17 @@ https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tiers-sql-data
 「General Purpose」、「Business Critical」、「Hyperscale」の3種類がある。
 
 - [General Purpose](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tier-general-purpose)
-  - 2018/4/4～
   - 一般的なパフォーマンスと可用性の要件を持つほとんどのワークロード向け
   - 予算を抑えたレベル
   - SLA: 99.99%
-- [ハイパースケール](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tier-hyperscale)
   - 2018/4/4～
+- [Hyperscale](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tier-hyperscale)
   - ほとんどのビジネス ワークロード向け
   - 拡張性の高いストレージ、読み取りスケールアウト、およびデータベースの高速復元機能を備える
   - SLA: 99.95% (セカンダリレプリカが1つの場合) / 99.99% (2つ以上の場合)
+  - 2019/5/6～
 - [Business Critical](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tier-business-critical)
   - 厳しい可用性要件を持つパフォーマンスに依存するワークロード向け
   - SLA: 99.995%
+  - 2018/4/4～
 

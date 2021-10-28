@@ -107,3 +107,14 @@ https://docs.microsoft.com/ja-jp/azure/best-practices-availability-paired-region
 - 可用性: 両方で同時にプラットフォームの更新が実行され、その影響を受ける可能性がある。
 - 災害からの復旧: A, B, C, D全体が災害の影響を受けた場合、BとDが優先的に復旧され、AとCが後回しになる可能性がある。
 
+■Azureのサービスでのペアの利用
+
+ストレージアカウント
+https://docs.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#redundancy-in-a-secondary-region
+
+GRS, RA-GRS, GZRS, RA-GZRSでは、データは、ペアのリージョンにレプリケートされる。
+
+Azure Key Vault
+https://docs.microsoft.com/ja-jp/azure/key-vault/general/disaster-recovery-guidance
+
+キー コンテナーのコンテンツは、ペアのリージョンにレプリケートされる。
