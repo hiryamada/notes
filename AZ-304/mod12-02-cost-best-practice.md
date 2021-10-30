@@ -34,6 +34,13 @@ https://azure.microsoft.com/ja-jp/pricing/tco/calculator/
 Microsoft Azure Well-Architected Framework - コストの最適化
 https://docs.microsoft.com/ja-jp/learn/modules/azure-well-architected-cost-optimization/
 
+■参考: リージョン別のVM価格比較
+
+Average Price Per Azure Region
+https://azureprice.net/regions
+
+※Azure Pass サブスクリプションでは、リージョンによって、使用できるVMサイズがかなり限定されたり（East US 2）、リージョンがVMの起動に使用できなかったり（西日本リージョン）する場合があるので、リージョンの選択には注意が必要。
+
 ■参考: Cosmos DB Capacity Calculator
 
 https://cosmos.azure.com/capacitycalculator/
