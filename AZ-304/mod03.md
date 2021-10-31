@@ -5,7 +5,7 @@
 - [Azure Database Migration Service](mod03-02-azure-dms.md)
   - オンプレデータベースのAzureへの移行
 - [AzCopy](mod03-03-azcopy.md)
-  - オンプレのデータの移行（アップロード）
+  - オンプレのデータのAzureへの移行（アップロード）
 - [ラボ 3 Azure Migrateを 使用した Hyper-V VM の Azure への移行](lab03.md)
 
 

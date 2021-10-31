@@ -8,3 +8,22 @@
 - [B2B 統合のためのソリューション](mod04-06-b2b.md)
 - [管理グループ、サブスクリプション、リソース グループ](mod04-07-mg.md)
 - [ラボ 4 Azure AD の認証と承認の管理](lab04.md)
+
+おすすめ関連資料:
+
+- Microsoft Learn
+  - Azure ADの基本
+    - [Azure Active Directory を構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-active-directory/)
+    - [Azure AD に Azure のユーザーとグループを作成する](https://docs.microsoft.com/ja-jp/learn/modules/create-users-and-groups-in-azure-active-directory/)
+  - Azure ADの応用
+    - [多要素認証によるで Azure AD ユーザーを保護する](https://docs.microsoft.com/ja-jp/learn/modules/secure-aad-users-with-mfa/)
+    - [Azure AD のセルフサービス パスワード リセット](https://docs.microsoft.com/ja-jp/learn/modules/allow-users-reset-their-password/)
+    - [Azure AD B2B を使用して、外部コラボレーションを有効にする](https://docs.microsoft.com/ja-jp/learn/modules/enable-external-collaboration-with-b2b/)
+  - オンプレAD DSとAzure ADのID同期
+    - [ハイブリッド ID の実装と管理](https://docs.microsoft.com/ja-jp/learn/modules/implement-manage-hybrid-identity/)
+    - [Windows Server でハイブリッド ID を実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-hybrid-identity-windows-server/)
+  - Azure ADの高度なセキュリティ機能
+    - [Azure AD の ID の保護およびガバナンスの機能について説明する](https://docs.microsoft.com/ja-jp/learn/modules/describe-identity-protection-governance-capabilities/)
+    - [条件付きアクセスの計画、実装、管理を行う](https://docs.microsoft.com/ja-jp/learn/modules/plan-implement-administer-conditional-access/)
+    - [Azure AD Identity Protection で ID を保護する](https://docs.microsoft.com/ja-jp/learn/modules/protect-identities-with-aad-idp/)
+

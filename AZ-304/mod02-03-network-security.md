@@ -130,6 +130,7 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-o
 - 2つのVNetが重複するアドレス空間を持つ場合はピアリングできない
 - ピアリングの作成には料金はかからないが、ピアリング経由のデータ転送には料金がかかる。
 
+ピアリングの種類:
 
 - （ローカル）仮想ネットワークピアリング
   - リージョン内でのピアリング
@@ -139,7 +140,7 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-o
   - 例: 東日本←→西日本
   - Microsoftのバックボーンインフラストラクチャを使用
 
-制限
+制限:
 - グローバルピアリングを経由して、BasicロードバランサーのフロントエンドIP経由で、背後のリソースに接続することはできない。
 - API Management等、内部的にBasicロードバランサーを使用している場合がある。
   - https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-faq#what-are-the-constraints-related-to-global-vnet-peering-and-load-balancers

@@ -159,7 +159,6 @@ Azure portal画面上部の検索で「Azure Migrate」を検索。
 
 ここから移行の「プロジェクト」を開始することができる。
 
-
 例:
 - オンプレミスのWindows物理マシンを、Azure 仮想マシンへ移行するプロジェクト
 - オンプレミスのSQL Serverを、Azure SQL Databaseへ移行するプロジェクト
@@ -191,7 +190,7 @@ project1(サーバーの移行プロジェクト)
 
 例2:
 ```
-project1(サーバーの移行プロジェクト)
+project1(データベースの移行プロジェクト)
 ├評価ツール Azure Migrate: Database Assessment
 └移行ツール Azure Migrate: Database Migration
 ```
@@ -201,7 +200,59 @@ project1(サーバーの移行プロジェクト)
 プロジェクトはARMテンプレートを使用して作成することもできる。
 https://docs.microsoft.com/ja-jp/azure/migrate/quickstart-create-migrate-project
 
-■オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順
+
+■概要: オンプレミスの物理マシンをAzureに移行する
+
+- 検出: https://docs.microsoft.com/ja-jp/azure/migrate/tutorial-discover-physical
+- 評価: https://docs.microsoft.com/ja-jp/azure/migrate/tutorial-assess-physical
+- 移行: https://docs.microsoft.com/ja-jp/azure/migrate/tutorial-migrate-physical-virtual-machines
+
+
+(1)Azure Migrateプロジェクトの作成
+
+「サーバー、データベース、Webアプリ」の「検出、評価、移行」をクリック。
+
+プロジェクト名を入力
+
+(2)検出と評価
+
+
+移行対象のサーバーにアクセスできる場所に、Windows Serverを設置。
+
+Windows ServerからAzure portalに接続し、プロジェクトから「Azure Migrateアプライアンス」をダウンロードしてインストール。
+
+```
+移行対象のサーバー(Windows/Linux)
+↑検出・評価
+Windows Server＋Azure Migrate アプライアンス
+```
+
+「Azure Migrateアプライアンス」上に、移行対象サーバーの認証情報やアドレスを入力して、検出を行う。
+
+検出が行われたサーバーは、Azure Migrateプロジェクト上に表示される。そこから「評価」を実行。移行対象サーバーのスペックなどが確認できる。
+
+(3)テスト移行
+
+移行対象のサーバーにアクセスできる場所に、（上記とは別の）Windows Serverを設置。
+
+Windows ServerからAzure portalに接続し、プロジェクトから「レプリケーション アプライアンス」をダウンロードしてセットアップ。
+
+```
+移行対象のサーバー(Windows/Linux)
+↓移行（レプリケーション）
+Windows Server＋レプリケーション アプライアンス
+↓
+移行先Azure VM
+```
+
+「テスト移行」を実行し、移行先として作成されたVMに問題がないか確認する。確認が終わったら「テストの完了」を行う。
+
+(4)移行
+
+「移行」を実行し、「完了」（レプリケーションの停止）を行う。
+
+
+■概要: オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順
 
 https://docs.microsoft.com/ja-jp/azure/migrate/tutorial-migrate-hyper-v
 
@@ -217,7 +268,7 @@ Azure Migrate:Server Migration ツールを使用して、オンプレミスの 
   - VMを右クリックして「移行を停止する」を選ぶ
 
 
-■Webアプリの移行 
+■概要: Webアプリの移行 
 
 (1)Azure App Service Migration Assistantの「オンラインスキャン」
 
