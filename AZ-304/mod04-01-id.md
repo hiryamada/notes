@@ -2,6 +2,10 @@
 
 https://docs.microsoft.com/ja-jp/security/compass/identity
 
+■テナント、ディレクトリ、サブスクリプション
+
+[解説PDF](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod01/%E3%83%86%E3%83%8A%E3%83%B3%E3%83%88.pdf)
+
 ■単一のエンタープライズ ディレクトリ（＝Azure AD）を使用する
 
 https://docs.microsoft.com/ja-jp/security/compass/identity#a-single-enterprise-directory
