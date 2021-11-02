@@ -7,6 +7,7 @@
 対応するAzureサービスの例:
 
 - Azure SQL Database
+  - [解説](../AZ-303/mod08-01-sqldb.md)
 - Azure Database for PostgreSQL
 - Azure Database for MySQL
 - Azure Database for MariaDB
@@ -24,6 +25,8 @@
 対応するAzureサービスの例:
 
 - Cosmos DB
+  - [解説](../AZ-204/mod04-01-cosmosdb.md)
+  - [構造](../AZ-204/pdf/mod04/Cosmos%20DBの構造.pdf)
   - [Table API](https://docs.microsoft.com/ja-jp/azure/cosmos-db/table/introduction)
 - [Azure Table Storage](https://docs.microsoft.com/ja-jp/azure/storage/tables/table-storage-overview)
 - Azure Cache for Redis

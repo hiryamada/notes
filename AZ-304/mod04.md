@@ -6,12 +6,19 @@
 - [ハイブリッド ID のソリューション](mod04-04-hybrid-id.md)
 - [シングル サインオン (SSO) のソリューション](mod04-05-sso.md)
 - [B2B 統合のためのソリューション](mod04-06-b2b.md)
-- [管理グループ、サブスクリプション、リソース グループ](mod04-07-mg.md)
+- [管理グループ](mod04-07-mg.md)
 - [ラボ 4 Azure AD の認証と承認の管理](lab04.md)
 
 おすすめ関連資料:
 
+- Azure ADエディション
+  - [Azure Active Directory の価格](https://www.microsoft.com/ja-jp/security/business/identity-access-management/azure-ad-pricing)
 - Microsoft Learn
+  - セキュリティの基礎
+    - [SC-900 パート 1: セキュリティ、コンプライアンス、ID の概念](https://docs.microsoft.com/ja-jp/learn/paths/describe-concepts-of-security-compliance-identity/)
+    - [SC-900 パート 2: Microsoft Identity およびアクセス管理ソリューション](https://docs.microsoft.com/ja-jp/learn/paths/describe-capabilities-of-microsoft-identity-access/)
+    - [SC-300 パート 1: ID 管理ソリューションを実装する](https://docs.microsoft.com/ja-jp/learn/paths/implement-identity-management-solution/)
+    - [SC-300 パート 2: 認証およびアクセス管理ソリューション](https://docs.microsoft.com/ja-jp/learn/paths/implement-authentication-access-management-solution/)
   - Azure ADの基本
     - [Azure Active Directory を構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-active-directory/)
     - [Azure AD に Azure のユーザーとグループを作成する](https://docs.microsoft.com/ja-jp/learn/modules/create-users-and-groups-in-azure-active-directory/)
