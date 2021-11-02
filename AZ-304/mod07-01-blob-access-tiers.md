@@ -89,3 +89,7 @@ https://docs.microsoft.com/ja-jp/azure/storage/files/storage-files-planning#stor
 
 https://docs.microsoft.com/ja-jp/azure/storage/files/storage-files-scale-targets
 
+■参考
+
+[ストレージアカウントの種類, レプリケーション(LRS, ZRS, GRS, GZRS, RA-GRS, RA-GZRS)まとめ](../AZ-104/pdf/mod07/ストレージアカウントの種類.pdf)
+

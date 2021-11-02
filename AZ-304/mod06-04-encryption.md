@@ -8,6 +8,8 @@ https://docs.microsoft.com/ja-jp/azure/security/fundamentals/encryption-models
 
 https://docs.microsoft.com/ja-jp/azure/security/fundamentals/data-encryption-best-practices#protect-data-at-rest
 
+参考: [キー管理のサービスまとめ: Azure Key Vault / Azure Managed HSM / Azure Dedicated HSM](https://github.com/hiryamada/notes/blob/main/AZ-204/pdf/mod07/%E3%82%AD%E3%83%BC%E7%AE%A1%E7%90%86%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9.pdf)
+
 ■転送時の暗号化
 
 https://docs.microsoft.com/ja-jp/azure/security/fundamentals/data-encryption-best-practices#protect-data-in-transit
