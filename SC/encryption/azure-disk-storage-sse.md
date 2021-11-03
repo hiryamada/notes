@@ -55,21 +55,34 @@ Azure Storage（暗号化は行わない）
  └マネージドディスク
 ```
 
+■SSEでCMKを使う手順
+
+https://docs.microsoft.com/ja-jp/azure/virtual-machines/disks-enable-customer-managed-keys-portal
 
 
-
-
-
-
-
-
-
-■Azure Disk Encryptionとの違い
-
-「マネージドディスクのCMK暗号化」は、Azure Disk Encryptionとは別の暗号化オプション。
-
-https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/disk-encryption-portal-quickstart#create-a-virtual-machine
-
-> [ディスク] タブには、 [ディスクのオプション] の下に [Encryption Type](暗号化の種類) フィールドがあります。 このフィールドは、Azure Disk Encryption ではなく Managed Disks + CMK の暗号化オプションを指定するために使用されます。
-
-
+- Key Vaultとキーの準備
+  - 「アクセスポリシー」タブで、**アクセス許可モデルを「Azure ロールベースのアクセス制御」に設定**
+  - **消去保護を有効にする**
+  - アクセス制御（IAM）
+    - 自分自身（操作中のユーザー）にOwnerを割り当て
+  - キーを作成 testkey
+    - ※キー作成が失敗する場合はブラウザでページリロードしてリトライ
+- 「ディスク暗号化セット」を作成
+  - diskencryptionset1
+  - SSE暗号化の種類: 以下のいずれかを選択
+    - カスタマーマネージドキーを使用した保存時の暗号化
+    - プラットフォームマネージドキーとカスタマーマネージドキーを使用した二重暗号化
+    - Key Valut, キー, バージョン: 上記で作成したものを選択
+  - 作成したディスク暗号化セットに移動し、概要ページの「このディスク暗号化セットにディスク、イメージ、またはスナップショットを関連付けるには、キーコンテナー～～にアクセス許可を付与する必要があります。」をクリック
+  - ![](images/ss-2021-11-03-16-26-16.png)
+  - ロールが割り当てられる
+  - ![](images/ss-2021-11-03-16-26-40.png)
+  - キーコンテナー側で割り当てられたロール
+  - ![](images/ss-2021-11-03-16-27-30.png)
+- VMの作成
+  - 「ディスク」タブで、暗号化の種類を以下から選択
+    - カスタマーマネージドキーを使用した保存時の暗号化
+    - プラットフォームマネージドキーとカスタマーマネージドキーを使用した二重暗号化
+    - 上記で作成した暗号化セットを選択
+  - ![](images/ss-2021-11-03-16-30-36.png)
+  - OSディスク、データディスクとも同様の設定
