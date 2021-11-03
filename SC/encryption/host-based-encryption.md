@@ -10,9 +10,8 @@ https://www.sebhook.com/2021/01/28/azure-host-based-encryption/
 ■概要
 
 - VM ホスト上の格納データは、保存時に暗号化され、暗号化された状態でストレージ サービスに送られる
-- 対象: OSとデータディスクのキャッシュ、一時ディスク、エフェメラルOSディスクの暗号化を行う。
 
-■使用されるキー
+■暗号化の対象と、使用されるキー
 
 - OS とデータ ディスクの**キャッシュ**
   - プラットフォーム マネージド キー
@@ -20,6 +19,16 @@ https://www.sebhook.com/2021/01/28/azure-host-based-encryption/
   - プラットフォーム マネージド キー＋カスタマー マネージド キー（二重暗号化）
 - **一時ディスク**と**エフェメラル OS ディスク**
   - プラットフォーム マネージド キー
+
+■制限事項
+
+https://docs.microsoft.com/ja-jp/azure/virtual-machines/disks-enable-host-based-encryption-portal#restrictions
+
+※抜粋
+
+- Ultra Disks はサポートされない
+- Azure Disk Encryptionが有効になっている場合、ホストでの暗号化は有効にすることはできない
+- ホストでの暗号化が有効になっているディスクで Azure Disk Encryption を有効にすることはできない。
 
 ■機能の利用方法
 

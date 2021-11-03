@@ -23,6 +23,7 @@ https://azure.microsoft.com/ja-jp/updates/generally-available-azure-disk-encrypt
   - すべてのOSで使用できるわけではない
     - [動作保証されるLinux(Linux VM)](https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/disk-encryption-overview#supported-operating-systems)
     - [サポートされるOS(Windows VM)](https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/disk-encryption-overview#supported-operating-systems)
+  - 「ホストでの暗号化」が有効になっているディスクで Azure Disk Encryption を有効にすることはできない。
 
 ■設定例1
 
