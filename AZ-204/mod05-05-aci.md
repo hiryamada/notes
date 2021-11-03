@@ -8,6 +8,12 @@ https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-o
 - https://azure.microsoft.com/ja-jp/updates/aci-ga/
 - https://azure.microsoft.com/ja-jp/blog/azure-container-instances-now-generally-available/
 
+■デモ動画
+
+[Azureコンテナインスタンス：コンテナを数秒で起動して実行](https://www.youtube.com/watch?v=oTM3xDpTrBE)
+Corey Sanders
+
+
 ■特徴
 
 ※コンテナーのセキュリティ

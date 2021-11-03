@@ -20,10 +20,10 @@ Azure SQL Database (単一データベース)
   エディション: Web, Business
 ```
 
-2014/5/26頃 Basic, Standard, Premier サービス層、DTU購入モデルを発表。
+2014/5/26頃 Basic, Standard, Premium サービス層、DTU購入モデルを発表。
 https://sqlazure.jp/b/windows-azure/1847/
 
-2014/8/26 Azure SQL Database で、Basic, Standard, Premier サービス層の提供を開始
+2014/8/26 Azure SQL Database で、Basic, Standard, Premium サービス層の提供を開始
 https://azure.microsoft.com/en-us/blog/new-azure-sql-database-service-tiers-generally-available-in-september-with-reduced-pricing-and-enhanced-sla/
 
 2015/9 Web, Businessエディションが廃止
@@ -31,7 +31,7 @@ https://satonaoki.wordpress.com/2015/08/05/azure-sql-db-web-business-retirement/
 
 ```
 Azure SQL Database (単一データベース)
-  DTU購入モデル: サービスレベル Basic, Standard, Premier
+  DTU購入モデル: サービスレベル Basic, Standard, Premium
 ```
 
 2016/5/11 Azure SQL Database で、エラスティック プール の一般提供を開始
@@ -39,7 +39,7 @@ https://azure.microsoft.com/en-us/blog/azure-sql-database-elastic-pools-now-gene
 
 ```
 Azure SQL Database (単一データベース/エラスティック プール)
-  DTU購入モデル: サービスレベル Basic, Standard, Premier
+  DTU購入モデル: サービスレベル Basic, Standard, Premium
 ```
 
 2018/4/4 「購入モデル」として「仮想コア購入モデル」が追加。従来の「DTU 購入モデル」よりも[いくつかのメリットが利用できる](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tiers-sql-database-vcore)。「仮想コア購入モデル」では「General Purpose」 と 「Business Critical」 の 2 つのサービス レベルが導入された。
@@ -47,7 +47,7 @@ https://azure.microsoft.com/ja-jp/blog/a-flexible-new-way-to-purchase-azure-sql-
 
 ```
 Azure SQL Database (単一データベース/エラスティック プール)
-  DTU購入モデル: サービスレベル Basic, Standard, Premier
+  DTU購入モデル: サービスレベル Basic, Standard, Premium
   仮想コア購入モデル: サービスレベル General Purpose, Business Critical
 ```
 
@@ -61,7 +61,7 @@ https://azure.microsoft.com/ja-jp/updates/azure-sql-database-managed-instance-ge
 
 ```
 Azure SQL Database (単一データベース/エラスティック プール)
-  DTU購入モデル: サービスレベル Basic, Standard, Premier
+  DTU購入モデル: サービスレベル Basic, Standard, Premium
   仮想コア購入モデル: サービスレベル General Purpose, Business Critical
 Azure SQL Database Managed Instance
   仮想コア購入モデル: サービスレベル General Purpose
@@ -72,7 +72,7 @@ https://azure.microsoft.com/en-us/updates/azure-sql-database-hyperscale-support-
 
 ```
 Azure SQL Database (単一データベース/エラスティック プール)
-  DTU購入モデル: サービスレベル Basic, Standard, Premier
+  DTU購入モデル: サービスレベル Basic, Standard, Premium
   仮想コア購入モデル: 
     サービスレベル General Purpose, Business Critical, Hyperscale
 Azure SQL Database Managed Instance
@@ -84,7 +84,7 @@ https://techcommunity.microsoft.com/t5/azure-sql/azure-sql-managed-instance-busi
 
 ```
 Azure SQL Database (単一データベース/エラスティック プール)
-  DTU購入モデル: サービスレベル Basic, Standard, Premier
+  DTU購入モデル: サービスレベル Basic, Standard, Premium
   仮想コア購入モデル: 
     サービスレベル General Purpose, Business Critical, Hyperscale
 Azure SQL Database Managed Instance
@@ -96,7 +96,7 @@ https://azure.microsoft.com/ja-jp/updates/azure-sql-database-serverless-is-now-g
 
 ```
 Azure SQL Database (単一データベース/エラスティック プール)
-  DTU購入モデル: サービスレベル Basic, Standard, Premier
+  DTU購入モデル: サービスレベル Basic, Standard, Premium
   仮想コア購入モデル: 
     サービスレベル 
       General Purpose (プロビジョニング/サーバーレス)
@@ -153,15 +153,15 @@ https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tiers-sql-data
   - 予算を抑えたレベル
   - SLA: 99.99%
   - 2018/4/4～
+- [Business Critical](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tier-business-critical)
+  - 厳しい可用性要件を持つパフォーマンスに依存するワークロード向け
+  - SLA: 99.995%
+  - 2018/4/4～
 - [Hyperscale](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tier-hyperscale)
   - ほとんどのビジネス ワークロード向け
   - 拡張性の高いストレージ、読み取りスケールアウト、およびデータベースの高速復元機能を備える
   - SLA: 99.95% (セカンダリレプリカが1つの場合) / 99.99% (2つ以上の場合)
   - 2019/5/6～
-- [Business Critical](https://docs.microsoft.com/ja-jp/azure/azure-sql/database/service-tier-business-critical)
-  - 厳しい可用性要件を持つパフォーマンスに依存するワークロード向け
-  - SLA: 99.995%
-  - 2018/4/4～
 
 ■SQLエラスティックプール
 
