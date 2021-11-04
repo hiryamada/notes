@@ -1,4 +1,4 @@
-■
+# ベストプラクティスと価格計算ツール
 
 Azureコストの最適化に使用できるツールとリソース
 https://azure.microsoft.com/ja-jp/overview/cost-optimization/
@@ -29,10 +29,6 @@ https://azure.microsoft.com/ja-jp/pricing/calculator/
 総保有コスト (TCO) 計算ツール
 https://azure.microsoft.com/ja-jp/pricing/tco/calculator/
 
-■Microsoft Learn
-
-Microsoft Azure Well-Architected Framework - コストの最適化
-https://docs.microsoft.com/ja-jp/learn/modules/azure-well-architected-cost-optimization/
 
 ■参考: リージョン別のVM価格比較
 

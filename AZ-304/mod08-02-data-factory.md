@@ -21,8 +21,8 @@ ETL 、ELT 、データ統合という複雑なハイブリッド プロジェ�
 
 ■歴史
 
-2018/6/27 ADF (V1) 一般提供開始
-https://azure.microsoft.com/ja-jp/blog/azure-data-factory-new-capabilities-are-now-generally-available/
+2015/8/6 ADF (V1) 一般提供開始
+https://docs.microsoft.com/en-us/archive/blogs/machinelearning/announcing-the-general-availability-of-azure-data-factory
 
 2018/6/27 ADV V2 が一般提供開始。[V1は2023/8/31に廃止予定。](https://azure.microsoft.com/ja-jp/updates/migrate-your-azure-data-factory-version-1-to-2-service/) V1からV2への移行ツールが利用可能。
 https://azure.microsoft.com/en-in/blog/azure-data-factory-new-capabilities-are-now-generally-available/
