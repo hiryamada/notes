@@ -1,5 +1,5 @@
 
-# データ プラットフォームの構築
+# データ プラットフォームの概要
 
 https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end
 

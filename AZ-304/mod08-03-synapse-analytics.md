@@ -1,6 +1,6 @@
 # Azure Synapse Analytics
 
-データ ウェアハウスやビッグ データ システム全体にわたって分析情報を取得する時間を早めるエンタープライズ分析サービス
+データ ウェアハウスやビッグ データ システム全体にわたって分析情報を取得する時間を早めるエンタープライズ分析サービス。
 
 2016/6/14 Azure SQL Data Warehouse 一般提供開始
 https://azure.microsoft.com/en-us/updates/general-availability-azure-sql-data-warehouse/
@@ -72,4 +72,4 @@ https://docs.microsoft.com/ja-jp/azure/synapse-analytics/overview-terminology#pi
 
 ■参考
 
-[Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/modules/introduction-azure-synapse-analytics/)
+[Microsoft Learn: Azure Synapse Analytics の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-azure-synapse-analytics/)
