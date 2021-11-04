@@ -1,5 +1,7 @@
 # 暗号化
 
+[※詳細な解説](../SC/encryption/encryption-overview.md)
+
 ■暗号化モデル
 
 https://docs.microsoft.com/ja-jp/azure/security/fundamentals/encryption-models
