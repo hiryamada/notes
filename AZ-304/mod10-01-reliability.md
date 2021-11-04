@@ -122,14 +122,23 @@ https://docs.microsoft.com/ja-jp/azure/architecture/framework/resiliency/reliabi
 - 要件を定義する
   - 可用性メトリック
     - [MTBF - 平均故障間隔 (Mean Time Between Failure)](https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9D%87%E6%95%85%E9%9A%9C%E9%96%93%E9%9A%94)
+      - 故障が発生してから、次回の故障が発生するまでの平均の長さ
       - 故障しにくさ
     - [MTTR - 平均修復時間 (Mean Time To Repair)](https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9D%87%E4%BF%AE%E5%BE%A9%E6%99%82%E9%96%93)
+      - 修理に要する時間
       - 修理しやすさ
   - 復旧メトリック
     - [RPO - 復旧時点目標 (Recovery Point Objective)](https://ja.wikipedia.org/wiki/%E5%9B%9E%E5%BE%A9%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E7%9B%AE%E6%A8%99)
       - 短いほど、障害発生時に、より直近のデータが維持される。
+      - 例: 「RPO=24時間」
+        - 24時間ごとにバックアップ
+        - 最悪ケース:
+          - 次のバックアップが始まる直前に障害発生
+          - 直近24時間分のデータが失われる
     - [RTO - 目標復旧時間 (Recovery Time Objective)](https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%82%B6%E3%82%B9%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA#%E7%9B%AE%E6%A8%99%E5%BE%A9%E6%97%A7%E6%99%82%E9%96%93)
       - 障害発生時から回復までの目標時間。短いほど早く回復。
+        - 例: 「RTO=1時間」
+          - 障害発生時、1時間以内にシステムが復旧し、利用可能になる
 - アーキテクチャのベスト プラクティスを使用する
   - [障害モード分析](https://docs.microsoft.com/ja-jp/azure/architecture/framework/resiliency/design-resiliency#build-resiliency-with-failure-mode-analysis)
 - Azure サービスの依存関係
