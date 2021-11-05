@@ -3,18 +3,23 @@
 ■ストレージアカウントの暗号化
 
 - [Azure Storage 暗号化 (SSE: サーバー側暗号化)](azure-storage-encryption.md)
+  - 2010～？
+  - Microsoft のマネージド キー/カスタマーマネージドキー/ カスタマー指定のキーによる暗号化
 
 ■VMのディスクの暗号化
 
 https://docs.microsoft.com/ja-jp/azure/virtual-machines/disk-encryption-overview
 
 - [Server Side Encryption (SSE)](azure-disk-storage-sse.md)
+  - PMK: 2010～？ / CMK: 2020/4～
   - 「保存時の暗号化」または 「Azure Storage 暗号化」とも呼ばれる
   - PMK（プラットフォームマネージドキー） / CMK（カスタマーマネージドキー）を使用
 - [Azure Disk Encryption (ADE)](azure-disk-encryption.md)
+  - 2016/9～
   - BitLocker / DM-Cryptによる暗号化
   - Key Vaultに格納されるキーを使用
 - [ホストベース暗号化](host-based-encryption.md)
+  - 2021/7頃～？
   - VMが格納するデータを、VM をホストしているサーバーによって暗号化
 
 ■歴史

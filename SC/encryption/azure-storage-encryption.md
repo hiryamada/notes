@@ -18,12 +18,15 @@ Azure Storage（ストレージ アカウント）において、データがク
   - Microsoft のマネージド キー	
     - 対象: すべて
     - キー管理: Microsoft キー ストア
+    - 方法: デフォルトで設定済み
   - **カスタマー マネージド キー**
     - 対象: BLOBとFilesのみ
     - キー管理: 「Azure Key Vault」 または 「Azure Key Vault Managed HSM」に格納する必要がある
+    - 方法: ストレージアカウントの「暗号化」で指定
   - カスタマー指定のキー
     - 対象: BLOBのみ
     - キー管理: 客様側の独自のキーストアで管理
+    - 方法: [クライアントアプリのリクエストヘッダーでキーを指定](https://docs.microsoft.com/ja-jp/azure/storage/blobs/encryption-customer-provided-keys)
 
 ■インフラストラクチャレベルの暗号化
 
