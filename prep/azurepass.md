@@ -9,18 +9,18 @@
 
 ## 手順
 
-[画面写真付きの手順](https://www.microsoftazurepass.com/Home/HowTo)もご利用いただけます（英語）。
-
 - InPrivate ウィンドウを開きます。
   - Edge: [InPrivate ウィンドウ](https://support.microsoft.com/ja-jp/microsoft-edge/microsoft-edge-%E3%81%A7-inprivate-%E3%83%96%E3%83%A9%E3%82%A6%E3%82%BA%E3%82%92%E4%BD%BF%E3%81%86-e6f47704-340c-7d4f-b00d-d0cf35aa1fcc)を開きます。ショートカット キー: Ctrl + Shift + N
   - Chrome: [シークレット ウィンドウ](https://support.google.com/chrome/answer/95464)を開きます。
   - Firefox: [プライベート ウィンドウ](https://support.mozilla.org/ja/kb/private-browsing-use-firefox-without-history)を開きます。
   - Safari: [プライベートブラウズ ウィンドウ](https://support.apple.com/ja-jp/guide/safari/ibrw1069/mac)を開きます。
-- InPrivate ウィンドウで、[Azure Pass](https://www.microsoftazurepass.com/) （ https://www.microsoftazurepass.com/ ）にアクセスします。
+- InPrivate ウィンドウで、Azure Passのサイト（ https://www.microsoftazurepass.com/ ）にアクセスします。
 - ページ内のStartボタンをクリックします。
 - 今回のコース用に作成したMicrosoftアカウントでサインインします。
 - 「Confirm Microsoft Account」ボタンをクリックします。
-- 前の手順（ラボ環境での Promo Code の入手）で入手したPromo Codeを入力します。**トレーニングキーとPromo Codeは別のもの** ですのでご注意ください。
+- **「Microsoft Email」の部分に、「今回のコース用に作成したMicrosoftアカウント」のメールアドレスが表示されていることを確認してください。**
+- ![](images/ss-2021-11-08-13-16-27.png)
+- 「Enter Promo Code」テキストボックスに、前の手順（ラボ環境での Promo Code の入手）で入手したPromo Codeを入力します。**トレーニングキーとPromo Codeは別のもの** ですのでご注意ください。
 - 「Claim Promo Code」（プロモーションコードの要求）をクリックします。
 - 「We are processing your request」というページが出ます。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。
 - 「プロフィール（Your profile）」フォームで、氏名などの情報を入力します。
@@ -35,9 +35,9 @@
 - ![](images/ss-2021-11-01-10-05-44.png)
 - 「移動」の「サブスクリプション」をクリックします。
 - ![](images/ss-2021-11-01-10-05-21.png)
-- 「Azure Pass - スポンサープラン」の行が表示されていることを確認します。
+- **「Azure Pass - スポンサープラン」の行が表示されていることを確認します。**
 
-以上で、Microsoftアカウントに、「Azure Pass - スポンサー プラン」というAzureサブスクリプションが作られました。
+以上で、「今回のコース用に新しく作成したMicrosoftアカウント」で「Azure Pass - スポンサー プラン」Azureサブスクリプションが利用できるようになりました。
 
 このサブスクリプションの有効期限や、クレジットの残高は、[Microsoft Azure Sponsorship クレジット残高](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。
 
