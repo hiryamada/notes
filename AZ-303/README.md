@@ -6,9 +6,19 @@
 
 コース情報: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-303t00
 
-認定試験: https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-303
+認定試験: https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-303 注: 2022/3/31 廃止
 
-モジュール: 
+■対応する資格
+
+[Microsoft Certified: Azure Solutions Architect Expert](https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/)
+
+認定条件: 以下のいずれか
+
+- Microsoft Certified: Azure Administrator Associate(AZ-104) + AZ-305
+- Exam AZ-303 (2022/3/31 廃止) と Exam AZ-304 (2022/3/31 廃止)
+- AZ-303 (2022/3/31 廃止) と Exam AZ-305
+
+■モジュール: 
 
 - [Module 1 Azure Active Directory の実装](mod01.md)
 - [Module 2 ハイブリッド ID の実装と管理](mod02.md)

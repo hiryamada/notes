@@ -12,12 +12,40 @@ https://github.com/dotnet
 
 https://twitter.com/dotnet
 
+https://themesof.net/
+
+■Dotnetのロードマップ
+
+https://github.com/dotnet/core/blob/main/roadmap.md
+
+- .NET 6.0 
+  - 2021/11/9 正式リリース。
+  - LTS(long time support)
+- .NET 7.0 
+  - 2022/11 リリース予定
+  - non-LTS
+- .NET 8.0 
+  - 2023/11 リリース予定
+  - LTS
+
+※LTSとは
+
+https://docs.microsoft.com/ja-jp/dotnet/core/releases-and-support#release-tracks
+
+少なくとも 3 年間、あるいは 次の LTS リリースが出荷されてから 1 年間はサポートされる。
+
 # .NET 5
 
 → [.NET 5](dotnet5.md)
 
+# .NET 6
+
+→ [.NET 6](dotnet6.md)
+
 
 # Visual Studio (Code)
+
+→ [Visual Studio](vs.md)
 
 https://visualstudio.microsoft.com/ja/vs/features/net-development/
 

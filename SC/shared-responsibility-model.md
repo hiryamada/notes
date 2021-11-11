@@ -10,7 +10,9 @@ https://docs.microsoft.com/ja-jp/azure/security/fundamentals/shared-responsibili
   - クラウドベースのセキュリティ機能を活用し、セキュリティ対策の有効性を高めることができる
 - ただし、デプロイの種類に関係なく、次の責任はお客様が必ず負う。
   - データ
-  - エンドポイント
+  - エンドポイント 
+    - [注: ここでのエンドポイントとはユーザーが使用するデバイス（モバイル端末とPC）を指す。](https://docs.microsoft.com/en-us/learn/modules/describe-security-concepts-methodologies/3-describe-shared-responsibility-model)
+    - [ゼロトラストにおけるエンドポイントセキュリティ保護](https://docs.microsoft.com/ja-jp/security/zero-trust/deploy/endpoints)
   - アカウント
   - アクセス管理
 
@@ -18,9 +20,9 @@ https://docs.microsoft.com/ja-jp/azure/security/fundamentals/shared-responsibili
 
 - オンプレミス
   - お客様の責任 
-    - Information and Data
-    - Devices (Mobile and PCs)
-    - Accounts and identities
+    - **Information and Data**
+    - **Devices (Mobile and PCs) - エンドポイントとも**
+    - **Accounts and identities**
     - Identity and directory Infrastructre
     - Applications
     - Network Controls
@@ -32,9 +34,9 @@ https://docs.microsoft.com/ja-jp/azure/security/fundamentals/shared-responsibili
     - （なし）
 - IaaS
   - お客様の責任 
-    - Information and Data
-    - Devices (Mobile and PCs)
-    - Accounts and identities
+    - **Information and Data**
+    - **Devices (Mobile and PCs) - エンドポイントとも**
+    - **Accounts and identities**
     - Identity and directory Infrastructre
     - Applications
     - Network Controls
@@ -45,9 +47,9 @@ https://docs.microsoft.com/ja-jp/azure/security/fundamentals/shared-responsibili
     - Physical datacenter
 - PaaS
   - お客様の責任 
-    - Information and Data
-    - Devices (Mobile and PCs)
-    - Accounts and identities
+    - **Information and Data**
+    - **Devices (Mobile and PCs) - エンドポイントとも**
+    - **Accounts and identities**
     - Identity and directory Infrastructre
   - お客様とマイクロソフトの共同責任 
     - Applications
@@ -59,9 +61,9 @@ https://docs.microsoft.com/ja-jp/azure/security/fundamentals/shared-responsibili
     - Physical datacenter
 - SaaS
   - お客様の責任 
-    - Information and Data
-    - Devices (Mobile and PCs)
-    - Accounts and identities
+    - **Information and Data**
+    - **Devices (Mobile and PCs) - エンドポイントとも**
+    - **Accounts and identities**
   - お客様とマイクロソフトの共同責任 
     - Identity and directory Infrastructre
   - マイクロソフトの責任

@@ -1,8 +1,16 @@
-# ローンチ予定
+# 正式リリース
 
-https://www.atmarkit.co.jp/ait/articles/2106/09/news046.html
-> 2021年11月ローンチ予定
+2021/11/9 正式リリース。
 
+https://www.publickey1.jp/blog/21/net_6netlts.html
+
+```
+$ dotnet version
+
+.NET 6.0 へようこそ!
+---------------------
+SDK バージョン: 6.0.100
+```
 
 # ダウンロード
 

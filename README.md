@@ -278,7 +278,7 @@ MVP(Most Valuable Professional):
 / [Japan Developer Support Core Team Blog](https://jpdscore.github.io/blog/index.html)
 / [Japan Developer Support Internet Team Blog](https://jpdsi.github.io/blog/)
 / [Microsoft Security Response Center Japan Security Team](https://msrc-blog.microsoft.com/category/jpsecurity/)
-[Cloud and Server Product Japan Blog](https://docs.microsoft.com/ja-jp/archive/blogs/mssvrpmj/)
+/ [Cloud and Server Product Japan Blog](https://docs.microsoft.com/ja-jp/archive/blogs/mssvrpmj/)
 
 [日本語のTechNet／MSDNブログの移行先(by山市良さん)](https://www.atmarkit.co.jp/ait/articles/1906/04/news004.html)
 
@@ -812,6 +812,23 @@ JobScheduler
 / [Microsoftのコーポレートスローガンの推移](https://www.quora.com/What-is-Microsofts-corporate-slogan-What-does-it-mean)
 / [ASM](https://www.google.com/search?q=Azure+Service+Manager)
 
+謎の社名:
+Contoso Ltd.
+/ Fabrikam, Inc
+/ LitWare Inc.
+/ ADatum Corporation (adatum.com)
+/ Northwind Traders
+/ Tailwind Traders
+/ ProseWare, Inc.
+/ WoodGrove Groceries (WoodGrove Bank)
+/ AdventureWorks 
+/ Fourth Coffee
+/ Volcano Coffee Company
+/ World Wide Importers
+/ Blue Yonder Airlines
+/ [List of fictional companies used in Microsoft material](https://social.technet.microsoft.com/wiki/contents/articles/1117.list-of-fictional-companies-used-in-microsoft-material.aspx)
+/ [List of fictional Microsoft companies](https://microsoft.fandom.com/wiki/List_of_fictional_Microsoft_companies)
+
 ~~黒歴史/ネタ~~:
 [クラウドガール](https://www.google.com/search?q=%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%AC%E3%83%BC%E3%83%AB)
 / [祝 Azure 日本データセンター](https://channel9.msdn.com/Series/Microsoft-Virtual-Academy-Japan/claudia)
@@ -821,6 +838,8 @@ JobScheduler
 / [マイクロソフト(北海道ならではの風土が育んだ乳脂肪をたっぷり含んだソフトクリーム)](https://www.google.com/search?q=%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88+%E3%82%BD%E3%83%95%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0)
 / [毎月10日はWindows 10の日](https://www.google.com/search?q=%E6%AF%8E%E6%9C%8810%E6%97%A5+Windows+10%E3%81%AE%E6%97%A5)
 / [忍者の能力と自分を関連付けたい個人と企業向けのドメイン](https://docs.aws.amazon.com/ja_jp/Route53/latest/DeveloperGuide/ninja.html)
+/ [Nanoman(Windows Nano Server)](https://www.slideshare.net/mihochannel1/aws-nanoman)
+/ [Posh-chan(PowerShell)](https://blog.shibata.tech/entry/2017/10/14/153510)
 
 その他のAzure:
 [azure（単語）](https://ja.wiktionary.org/wiki/azure)

@@ -1,14 +1,16 @@
-# AZ-304: Microsoft Azure Architect **Design**
+# AZ-305: Microsoft Azure Architect **Design**
 
 4日間
 
 コース目標: ソリューションアーキテクトとして、多数のAzureテクノロジの中から、適切なテクノロジを「推奨」できること。適切なテクノロジを選択し、さまざまなソリューションを「設計」できること。（Recommend/Design a solution for compute / storage / network ...）
 
-※対になるコース: AZ-304: Microsoft Azure Architect **Technologies**
+※対になるコース: AZ-303: Microsoft Azure Architect **Technologies**
 
-コース情報: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-304t00
+コース情報: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-305t00
 
-認定試験: https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-304 注: 2022/3/31 廃止
+認定試験: https://docs.microsoft.com/en-us/learn/certifications/exams/az-305  2021/11/16～受験可能
+
+[AZ-305のアナウンス(Microsoft Learn Blob)](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
 
 ■対応する資格
 
@@ -20,7 +22,45 @@
 - Exam AZ-303 (2022/3/31 廃止) と Exam AZ-304 (2022/3/31 廃止)
 - AZ-303 (2022/3/31 廃止) と Exam AZ-305
 
-■モジュール
+[移行期間中の対応方法](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695):
+
+- 試験 AZ-303 と 試験 AZ-304 の受験準備ができている場合
+  - AZ-303/AZ-304を受験してください（2022/3/31まで）
+- 試験 AZ-303 に合格済みの場合
+  - AZ-305 を受験してください。または、
+  - AZ-304を受験してください（2022/3/31まで）
+- 試験 AZ-304 に合格済みの場合
+  - AZ-303を受験してください（2022/3/31まで）
+- 試験 AZ-303 または試験 AZ-304 の準備を始めたばかりの場合
+  - Azure 管理者アソシエイト認定資格を取得し、 AZ-305 試験を受験してください。
+
+■モジュール(AZ-305)
+
+- Day 1: 
+  - Module 1: ガバナンスとコンピューティング ソリューションを設計する
+    - Lesson 1: ガバナンスを設計する
+    - Lesson 2: コンピューティング ソリューションを設計する
+- Day 2: 
+  - Module 2: Design storage and data integration solutions 
+    - Lesson 1: 非リレーショナルデータのストレージソリューションを設計する
+    - Lesson 2: リレーショナルデータのストレージソリューションを設計する
+    - Lesson 3: データの統合を設計する
+- Day 3: 
+  - Module 3: アプリケーションのアーキテクチャとモニタリングを設計する
+    - Lesson 1: アプリケーションのアーキテクチャを設計する
+    - Lesson 2: 認証と承認のソリューションを設計する
+    - Lesson 3: Azureリソースのログとモニタリングのソリューションを設計する
+- Day 4: 
+  - Module 4: ネットワークと事業継続計画を設計する
+    - Lesson 1: ネットワークソリューションを設計する
+    - Lesson 2: バックアップとディザスタリカバリーを設計する
+    - Lesson 3: 移行を設計する
+
+■ラボ（ケーススタディ）
+
+https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructureSolutions/tree/master/Instructions/Labs
+
+■モジュール(AZ-304)
 
 全14モジュール。目安として、1日に約4モジュールのペースで解説。
 
@@ -120,4 +160,10 @@ https://docs.microsoft.com/ja-jp/learn/paths/azure-data-fundamentals-explore-cor
 
 Microsoft セキュリティのベスト プラクティス ※旧称 「Azure セキュリティ コンパス」または 「Microsoft セキュリティ コンパス」
 https://docs.microsoft.com/ja-jp/security/compass/compass
+
+■Student Materials
+
+https://aka.ms/AZ-305StudentMaterials
+
+AZ-305関連のMicrosoft Learnコレクション。
 
