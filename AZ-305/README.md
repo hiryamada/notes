@@ -58,7 +58,7 @@
 
 ■ラボ（ケーススタディ）
 
-https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructureSolutions/tree/master/Instructions/Labs
+https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructureSolutions/
 
 ■モジュール(AZ-304)
 
@@ -89,7 +89,7 @@ https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructur
   - ラボ13
   - クロージング
 
-■ハンズオン ラボ（演習）
+■ハンズオン ラボ（演習）(AZ-304)
 
 モジュール 3, 4, 6, 13の4ラボのみ。
 

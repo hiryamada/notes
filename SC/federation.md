@@ -4,6 +4,8 @@ https://docs.microsoft.com/ja-jp/learn/modules/describe-identity-principles-conc
 
 各ドメインの ID プロバイダー(IdP)間で信頼関係を確立する
 
+
+
 ■フェデレーションの例
 
 ```
@@ -73,6 +75,19 @@ Azure ADテナント（IDプロバイダー）
 これはフェデレーションではなく、シングルサインオン。
 ```
 
+■信頼の方向
+
+https://docs.microsoft.com/ja-jp/learn/modules/describe-identity-principles-concepts/5-describe-concept-federated-services
+
+信頼は双方向であるとは限らない。
+
+```
+IdP-A
+   ↓信頼
+IdP-B
+```
+
+IdP-AがIdP-Bを信頼する場合、IdP-Bで認証されたユーザーは、IdP-Aのアプリを使用することができる。しかし、その逆が必ず成立するわけではない。
 
 
 ■わかりやすい解説
@@ -98,7 +113,7 @@ https://docs.microsoft.com/ja-jp/windows-server/identity/ad-fs/deployment/how-to
 # Azure AD Connectのフェデレーション
 
 
-Azure AD Connectを使用した認証
+Azure AD Connectを使用した認証は3つある。そのうちの1つにフェデレーションがある。
 
 - PHS（パスワードハッシュ同期）
 - PTA（パススルー認証）

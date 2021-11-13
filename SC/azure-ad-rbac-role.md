@@ -34,12 +34,6 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/roles/custom-overview#sc
 - サービス プリンシパル
   - アプリケーション、ホステッド サービス、自動ツールなどのためのID
 
-■ライセンス
-
-- 組み込みロール: 無料
-- カスタム ロールの利用: Azure AD Premium P1 ライセンスが必要
-
-
 ■カスタムロールの作成
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/roles/custom-overview
@@ -53,5 +47,6 @@ Azure AD ＞ ロールと管理者 ＞ ＋新しいカスタムロール
 
 ■ライセンス
 
-- Azure AD の組み込みロールは無料で使用できる
-- カスタム ロールには Azure AD Premium P1 ライセンスが必要
+- 組み込みロール: 無料
+- カスタム ロールの利用: Azure AD Premium P1 ライセンスが必要
+
