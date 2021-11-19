@@ -11,7 +11,7 @@ https://azure.microsoft.com/ja-jp/updates/generally-available-azure-disk-encrypt
   - [VolumeType パラメーターでALLを指定(Windows VM)](https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/disk-encryption-windows#enable-encryption-on-a-newly-added-data-disk)
   - [EncryptFormatAll 機能を使用(Linux VM)](https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/disk-encryption-linux#use-encryptformatall-feature-for-data-disks-on-linux-vms)
 - Azure Key Vaultを使用
-    - キー コンテナーと VM は、同じ Azure リージョンおよびサブスクリプションに存在している必要がある
+    - **キー コンテナーと VM は、同じ Azure リージョンおよびサブスクリプションに存在している必要がある**
     - アクセスポリシーで「Azure Disk Encryption (ボリューム暗号化用)」を有効化する必要がある
 - サポートされるVM
   - [第 1 世代(Gen1)と第 2 世代(Gen2)の VM](https://docs.microsoft.com/ja-jp/azure/virtual-machines/generation-2) をサポート

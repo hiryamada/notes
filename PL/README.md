@@ -12,11 +12,11 @@ https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CcQL
 測定されるスキル
 https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE43KLw
 
-Power Platform 
-Power BI
-Power Apps
-Power Automate
-Power Virtual Agents
+- Power Platform 
+- Power BI
+- Power Apps
+- Power Automate
+- Power Virtual Agents
 
 
 Dataverse
@@ -25,11 +25,6 @@ https://docs.microsoft.com/ja-jp/learn/paths/get-started-cds/
 
 AI Builder
 
-Power BI Desktop
-https://docs.microsoft.com/ja-jp/power-bi/fundamentals/desktop-what-is-desktop
-
-Power BI サービス
-https://docs.microsoft.com/ja-jp/power-bi/fundamentals/power-bi-service-overview
 
 Power Apps component framework
 https://docs.microsoft.com/ja-jp/powerapps/developer/component-framework/overview
@@ -38,6 +33,9 @@ Power Apps ポータル
 https://docs.microsoft.com/ja-jp/powerapps/maker/portals/overview
 
 ■Microsoft Learn
+
+自分に適した Power BI トレーニングを見つける
+https://docs.microsoft.com/ja-jp/learn/powerplatform/power-bi
 
 Microsoft Power Platform の基本
 https://docs.microsoft.com/ja-jp/learn/paths/power-plat-fundamentals/
