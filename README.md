@@ -840,10 +840,12 @@ Contoso Ltd.
 / [忍者の能力と自分を関連付けたい個人と企業向けのドメイン](https://docs.aws.amazon.com/ja_jp/Route53/latest/DeveloperGuide/ninja.html)
 / [Nanoman(Windows Nano Server)](https://www.slideshare.net/mihochannel1/aws-nanoman)
 / [Posh-chan(PowerShell)](https://blog.shibata.tech/entry/2017/10/14/153510)
+/ [C#たんと学ぶ／わりと硬派なソフトウェア開発講座](https://codezine.jp/article/detail/5346)
 
 その他のAzure:
 [azure（単語）](https://ja.wiktionary.org/wiki/azure)
 / [純米吟醸酒 Azure](https://www.tosatsuru.jp/i/NH-305)
+/ [アズール・ウィンドウ（Azure Window）](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%BB%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%89%E3%82%A6)
 / [アズールレーン](https://www.azurlane.jp/)
 / [TrySail『azure』](https://www.google.com/search?q=TrySail+Azure)
 / [AZURE♯（アズールシャープ）](http://www.bright-co.jp/NewSite/profile/index.html)

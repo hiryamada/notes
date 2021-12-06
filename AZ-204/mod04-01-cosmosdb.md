@@ -37,7 +37,7 @@ Microsoft Learn
 
 [試験 70-777: Implementing Microsoft Azure Cosmos DB Solutions](https://docs.microsoft.com/ja-jp/learn/certifications/exams/70-777)
 
-
+https://github.com/AzureCosmosDB/labs
 
 [NoSQLの「Azure Cosmos DB」は惑星規模のアプリでも使えるデータベース （CodeZine）](https://codezine.jp/article/detail/10719?p=2)
 

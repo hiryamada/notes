@@ -4,7 +4,7 @@
 
 コース目標: ソリューションアーキテクトとして、多数のAzureテクノロジの中から、適切なテクノロジを「推奨」できること。適切なテクノロジを選択し、さまざまなソリューションを「設計」できること。（Recommend/Design a solution for compute / storage / network ...）
 
-※対になるコース: AZ-304: Microsoft Azure Architect **Technologies**
+※対になるコース: AZ-303: Microsoft Azure Architect **Technologies**
 
 コース情報: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-304t00
 

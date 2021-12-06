@@ -1,0 +1,1 @@
+https://devblogs.microsoft.com/azure-sdk/announcing-the-new-azure-data-tables-libraries/

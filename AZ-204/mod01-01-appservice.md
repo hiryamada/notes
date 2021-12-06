@@ -27,6 +27,9 @@ GitHub、Azure DevOps、または任意の Git リポジトリからの自動デ
 
 [Azure App Service のベスト プラクティス](https://docs.microsoft.com/ja-jp/azure/app-service/app-service-best-practices)
 
+[マンガでわかる Azure Static Web Apps](https://msdevjp.github.io/AzureStaticWebApps-ComicBook/)
+
+
 # App Serviceに含まれるもの
 
 [2015年発表時](https://weblogs.asp.net/scottgu/announcing-the-new-azure-app-service)

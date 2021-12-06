@@ -19,7 +19,7 @@ https://powerapps.microsoft.com/en-us/blog/power-fx-open-source-now-available/
 
 ■ローコード
 
-- ローコード (low-code)
+- **ローコード** (low-code)
   - 可能な限りコードを書かないソフトウェア開発手法。
   - [（Wikipedia）ローコード開発プラットフォーム](https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E9%96%8B%E7%99%BA%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0)
 
@@ -51,5 +51,5 @@ https://powerapps.microsoft.com/en-us/blog/power-fx-open-source-now-available/
 
 https://github.com/microsoft/power-fx
 
-- low-code general purpose programming language based on spreadsheet-like formulas（スプレッドシートの数式に基づく、ローコードの汎用目的プログラミング言語）
+- low-code general purpose programming language based on spreadsheet-like formulas（スプレッドシート的な数式に基づく、**ローコード**の汎用目的プログラミング言語）
 - strongly typed, declarative, functional language, with imperative logic and state management available as needed.（強い型付け、宣言的、関数型言語、必要であれば命令的なロジックと状態管理も利用可能）

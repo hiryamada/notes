@@ -236,4 +236,4 @@ https://www.nuget.org/packages/Azure.Identity
 # その他
 
 - https://www.nuget.org/packages/Newtonsoft.Json/
-
+- https://devblogs.microsoft.com/azure-sdk/announcing-the-new-azure-data-tables-libraries/
