@@ -91,5 +91,5 @@ https://docs.microsoft.com/ja-jp/azure/storage/files/storage-files-scale-targets
 
 ■参考
 
-[冗長化（レプリケーション）まとめ - LRS, ZRS, GRS, GZRS, RA-GRS, RA-GZRS](../AZ-104/pdf/mod07/ストレージ冗長化.pdf)
-
+冗長化（レプリケーション）まとめ - LRS, ZRS, GRS, GZRS, RA-GRS, RA-GZRS
+https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod07/%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E5%86%97%E9%95%B7%E5%8C%96.pdf
