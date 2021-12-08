@@ -82,9 +82,9 @@ https://docs.microsoft.com/ja-jp/azure/storage/files/storage-files-planning#stor
 ※コストはEast US(米国東部)。他に操作等に対するコストが発生。https://azure.microsoft.com/ja-jp/pricing/details/storage/files/
 
 パフォーマンスは、ストレージアカウントの種類によって決まる。
-- 「Premium ファイル共有」ストレージアカウント
-  - 最大同時要求レート: 20,000 IOPS
 - 「Standard 汎用 v2」ストレージアカウント
+  - 最大同時要求レート: 20,000 IOPS
+- 「Premium ファイル共有」ストレージアカウント
   - 最大同時要求レート: 100,000 IOPS
 
 https://docs.microsoft.com/ja-jp/azure/storage/files/storage-files-scale-targets
