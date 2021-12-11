@@ -8,11 +8,13 @@
 - 「Create a password」で、新しいパスワードを決めて入力します。「Continue」をクリックします。
 - 「Enter a username」で、GitHubのユーザー名を決めて入力します。「Continue」をクリックします。
 - 「Would you like to receive product updates and announcements via email?」で、yを入力します。「Continue」をクリックします。
-- 「Start puzzle」をクリックし、表示される「クイズ」を解きます（正しい画像を選択するなど）。
+- 「検証する」をクリックし、表示される内容に従います（正しい画像を選択するなど）。
 - 「Create account」をクリックします。
 - https://outlook.live.com/ にアクセスします。
-- GitHubから「[GitHub] Please verify your email address.」というメールが届いています。そのメール内の「Verify email address」をクリックします。
-- GitHubの画面が表示され、「Your email was verified.」「What do you want to do first?」と表示されます。
+- GitHubから「Your GitHub launch code」というメールが届いています。そのメール内の8桁のコードをコピーし、「Open GitHub」をクリックします。
+- 8桁のコードを貼り付けます。以上で、サインアップが完了します。
 - 「Create a repository」をクリックします。
 - 「Repository name」に「test」と入力します。「Create repository」をクリックします。
-- GitHubに「test」リポジトリの作成ができました。このリポジトリで、作業を開始できます。
+- GitHubに「test」リポジトリの作成ができました。このリポジトリで、GitHubの利用を開始できます。
+- 以降の操作については画面内の表示や[GitHubのドキュメント](https://docs.github.com/ja/get-started)を参照してください。
+

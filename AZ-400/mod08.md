@@ -32,23 +32,6 @@ GitHubに組み込まれたCI/CDサービス。ワークフロー（ビルド、
 - [支払い方法のドキュメント](https://docs.github.com/ja/billing/managing-your-github-billing-settings)
 
 
-■Azureとの関係は。
-
-- [2018年10月、MicrosoftはGitHubの買収を完了](https://www.google.com/search?q=microsoft+github+%E8%B2%B7%E5%8F%8E)。
-  - [GitHubの独立性の維持を約束している](https://www.sbbit.jp/article/cont1/35103)
-  - [オープンソースの文化に配慮し、「何も変えない」と宣言している](https://www.itmedia.co.jp/pcuser/articles/1807/01/news011.html)
-  - GitHubがなくなってAzure DevOpsに統一されたり、逆にAzure DevOpsがなくなってGitHubに統一されたりすることはない。引き続きどちらも利用できる。
-- 連携の強化
-  - [Azure DevOpsとGitHubは同じチームが開発している](https://codezine.jp/article/detail/12089)
-  - 機能の連携については、[今後、さらに統合を加速させていく](https://codezine.jp/article/detail/12089)とされている。
-- [GitHub Actionsのランナー（Azure Pipelinesの「エージェント」に相当）](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#about-virtual-environments):
-  - Azure Pipelinesのエージェントのフォークである。
-  - AzureのVM (Standard_DS2_v2) でホスティングされている。
-
-■参考: Azure DevOps と GitHub の機能の関連
-
-https://www.linkedin.com/pulse/azure-devops-future-after-github-acquisition-microsoft-antonio-alvino/
-
 ■Azure DevOpsとの違いは。
 
 - Azure DevOps（Azure Pipelines）

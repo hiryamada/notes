@@ -8,3 +8,8 @@
 - 無料のプライベート Git リポジトリ
 - 容量無制限
 - 任意のGitクライアントのサポート
+
+
+## TFVCからAzure Reposへの移行
+
+TFVC(Team Foundation バージョン管理)から、Azure Reposへ、[移行ツールを利用して移行できる](https://docs.microsoft.com/ja-jp/devops/develop/git/migrate-from-tfvc-to-git)

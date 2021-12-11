@@ -1,12 +1,16 @@
 # AZ-400 Designing and Implementing Microsoft DevOps solutions
 
-AZ-400T00JA-A - Microsoft DevOps ソリューションの設計と実装
+AZ-400 Microsoft DevOps ソリューションの設計と実装
 
 コース情報
 https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
 
 - 日数: 5
 - モジュール: 20
+- レベル: エキスパート
+
+> DevOps の計画、ソース管理の使用、企業向け Git のスケーリング、成果物の統合、依存関係管理戦略の設計、シークレットの管理、継続的インテグレーションの実装、コンテナービルド戦略の実装、リリース戦略の設計、リリース管理ワークフローの設定、デプロイ パターンの実装、フィードバック メカニズムの最適化を行う方法について学習します。
+
 
 # 日程
 
@@ -15,13 +19,14 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
 
 - DevOps
   - [モジュール1](mod01.md) DevOpsの概要, Azure DevOps, Azure Boards
-- ソースコードの管理
+- ソースコードの管理 - Git
   - [モジュール2](mod02.md) ソース管理, Git, Azure Repos
-  - [モジュール3](mod03.md) 技術的負債, コードの品質
+  - ※モジュール3は2日目に解説
+  - [モジュール4](mod04.md) エンタープライズGit
 
 ## day 2 継続的インテグレーション(CI)
 
-- [モジュール4](mod04.md) エンタープライズGit
+- [モジュール3](mod03.md) 技術的負債, コードの品質
 - [モジュール5](mod05.md) Azure Pipelines 基本
 - [モジュール6](mod06.md) Azure Pipelines 応用
 - ※モジュール7（セキュリティ）は最終日に移動
@@ -69,6 +74,8 @@ Azure DevOps Services
 ├Azure Pipelines 5, 6, 10(リリース), 11, 12(デプロイ), 20
 ├Azure Test Plans
 └Azure Artifacts 9
+■Git
+2,4
 ■GitHub
 GitHub Codespaces 3
 GitHubアクション, 8
@@ -87,20 +94,31 @@ Azure Monitor, Application Insights 17
 Teams 18
 ```
 
-# 認定試験
 
-https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400
+# 認定資格
 
-認定の前提条件
-Microsoft Certified: DevOps Engineer Expert の認定を受けるには、次の少なくとも 1 つが必要です。
-- Microsoft Certified: Azure Administrator Associate (AZ-104)
-- Microsoft Certified: Azure Developer Associate (AZ-204)
+https://docs.microsoft.com/ja-jp/learn/certifications/devops-engineer/
+
+(1)認定の前提条件: 次のいずれかに合格。
+
+- [Microsoft Certified: Azure Administrator Associate (AZ-104)](https://docs.microsoft.com/ja-jp/learn/certifications/azure-administrator/)
+- [Microsoft Certified: Azure Developer Associate (AZ-204)](https://docs.microsoft.com/ja-jp/learn/certifications/azure-developer/)
+
+(2)認定試験:AZ-400
+
+- [AZ-400: Microsoft DevOps ソリューションの設計と実装](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400)
+
 
 # 主な関連サイト
 
 [Azure DevOps](https://azure.microsoft.com/ja-jp/services/devops/)
 
+[DevOps Starter](https://docs.microsoft.com/ja-jp/azure/devops-project/overview)
+
 [Azure DevOps Labs](https://azuredevopslabs.com/)
+
+[DevOps リソース センター](https://docs.microsoft.com/ja-jp/devops/)
+
 
 Microsoft Learn
 - [DevOps プラクティスを発展させる](https://docs.microsoft.com/ja-jp/learn/paths/evolve-your-devops-practices/)

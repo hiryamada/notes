@@ -1,1 +1,0 @@
-[README.md](README.md)の「日程」をごらんください
