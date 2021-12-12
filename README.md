@@ -10,14 +10,15 @@
 
 # 講義ノート
 
+- [AZ-010 Administrator for AWS SysOps](AZ-010/README.md)
 - [AZ-104 Administrator](AZ-104/README.md)
 - [AZ-204 Developing](AZ-204/README.md)
+- [AZ-220 IoT](AZ-220/README.md)
 - [AZ-303 Architect Technology](AZ-303/README.md)
 - [AZ-304 Architect Design](AZ-304/README.md)
-- [AZ-500 Security](AZ-500/README.md)
+- [AZ-305 Architect Design](AZ-305/README.md)
 - [AZ-400 DevOps](AZ-400/README.md)
-- [AZ-220 IoT](AZ-220/README.md)
-- [AZ-010 Administrator for AWS SysOps](AZ-010/README.md)
+- [AZ-500 Security](AZ-500/README.md)
 
 ラボ: [AZ-104](https://github.com/MicrosoftLearning/AZ-104JA-MicrosoftAzureAdministrator) - 「Instructions/Labs」内の各Markdownファイル
 
@@ -794,8 +795,6 @@ JobScheduler
 / [Fujitsu Cloud Service A5 for Microsoft Azure](https://jp.fujitsu.com/solutions/cloud/paas/a5/presen-a5/pdf/presen-a5.pdf)
 / [FUJITSU Cloud Service K5](https://jp.fujitsu.com/solutions/cloud/oss/document/pdf/foross-catalog.pdf)
 
-
-
 便利: 
 [窓の杜](https://forest.watch.impress.co.jp/)
 / [Serverless Cost Calculator](http://serverlesscalc.com/)
@@ -811,6 +810,18 @@ JobScheduler
  [Contoso](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%88%E3%82%BD)
 / [Microsoftのコーポレートスローガンの推移](https://www.quora.com/What-is-Microsofts-corporate-slogan-What-does-it-mean)
 / [ASM](https://www.google.com/search?q=Azure+Service+Manager)
+
+Microsoftに在籍する（した）有名人:
+[Erich Gamma エーリヒ（エリック） ガンマ](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%BC%E3%83%AA%E3%83%92%E3%83%BB%E3%82%AC%E3%83%B3%E3%83%9E)
+/ [Guido van Rossum グイド・ヴァンロッサム](https://ja.wikipedia.org/wiki/%E3%82%B0%E3%82%A4%E3%83%89%E3%83%BB%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%AD%E3%83%83%E3%82%B5%E3%83%A0)
+/ [レスリー・B・ランポート](https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%A9%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88)
+/ [アンダース・ヘルスバーグ](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9%E3%83%BB%E3%83%98%E3%83%AB%E3%82%B9%E3%83%90%E3%83%BC%E3%82%B0)
+/ [レイ・オジー](https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%A4%E3%83%BB%E3%82%AA%E3%82%B8%E3%83%BC)
+/ [Rakesh Agrawal](https://japan.cnet.com/article/20112747/)
+/ [チャーリー・ベル](https://www.businessinsider.jp/post-241127)
+/ [James Hamilton](https://japan.zdnet.com/article/20385359/)
+/ [William Stasior](https://gigazine.net/news/20190820-siri-vp-join-microsoft/)
+
 
 謎の社名:
 Contoso Ltd.

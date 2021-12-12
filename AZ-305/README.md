@@ -1,10 +1,8 @@
-# AZ-305: Microsoft Azure Architect **Design**
+# AZ-305: Designing Microsoft Azure Infrastructure Solutions
 
 4日間
 
 コース目標: ソリューションアーキテクトとして、多数のAzureテクノロジの中から、適切なテクノロジを「推奨」できること。適切なテクノロジを選択し、さまざまなソリューションを「設計」できること。（Recommend/Design a solution for compute / storage / network ...）
-
-※対になるコース: AZ-303: Microsoft Azure Architect **Technologies**
 
 コース情報: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-305t00
 
