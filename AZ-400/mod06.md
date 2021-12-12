@@ -17,9 +17,15 @@
 
 ## 継続的な統合の概要
 
-※CI/CDの基本については[モジュール1](mod01.md)で学習済み。
+※パイプラインの基本については[モジュール5](mod05.md)で学習済み。
 
-このモジュールでは一歩踏み込んで、CIの詳細と、Azure Pipelinesでの実装について学ぶ。
+- パイプラインを使用してプロジェクトの作業を自動化することができる
+- Azure Pipelineを使用してパイプラインを構築することができる
+- Azure Reposなどからのソースコードの取得、ビルド、デプロイなどのタスクを実行できる
+
+このモジュールでは一歩踏み込んで、CI（継続的インテグレーション）の詳細と、Azure Pipelinesでの実装について学ぶ。
+
+※CD（継続的デリバリー）についてはモジュール8～12で解説。
 
 ### 継続的な統合の概要
 
@@ -530,4 +536,73 @@ Azure pipelineから、オンプレミスのサーバーにデプロイを行い
 
 ## ラボ
 
+参考:
+- [最初のパイプラインの作成(.NET)](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2%2Cbrowser%2Cnet#create-your-first-pipeline-1)
+- [.NET Core アプリをビルド、テスト、デプロイする](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops&tabs=dotnetfive)
+- [Azure App Service Web アプリをデプロイする](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/targets/webapp?view=azure-devops&tabs=yaml%2Cwindows)
+
+- 基本的な手順
+  - App Service の Webアプリを作成する
+    - ランタイムスタック: .NET Core 3.1
+    - オペーレーティングシステム: Windows
+  - 組織に新しいプロジェクトを作る（＋New Project）
+    - プロジェクト名は任意のものでOK
+  - ソースコードの準備
+    - プロジェクトのAzure Repos をクリック
+    - Importをクリック 
+    - Clone URLに`https://github.com/MicrosoftDocs/pipelines-dotnet-core` を入力し、Importをクリック
+    - インポートが完了するまでしばらく待つ
+  - パイプラインの準備
+    - プロジェクトのAzure Pipelines をクリック
+    - パイプラインを新規作成
+    - Azure Repos Git
+    - プロジェクトのリポジトリを選択
+    - ASP.NET Core を選択 ※ ASP.NET Core (.NET Framework) **ではない**
+    - 生成された azure-pipeline.yml を削除し、以下を貼り付ける。**以下の書き換えを行う**
+      - azureSubscription 内のIDは、ご自身のサブスクリプションのIDに書き換え
+      - WebAppName は、前の手順で作成したWebアプリの名前を指定
+
+```
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: true
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+    artifact: 'web'
+    publishLocation: 'pipeline'
+
+- task: DownloadPipelineArtifact@2
+  inputs:
+    source: 'current'
+    artifact: 'web'
+    path: '$(Build.ArtifactStagingDirectory)'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure Pass - スポンサー プラン (612db016-a3a6-4b6f-b048-9371ae292dda)'
+    appType: 'webApp'
+    WebAppName: 'win9813483'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+```
+
+応用:
 [Integrate Your GitHub Projects With Azure Pipelines](https://azuredevopslabs.com/labs/azuredevops/github-integration/)

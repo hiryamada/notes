@@ -58,7 +58,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
 - セキュリティ
   - [モジュール7](mod07.md) セキュリティ設計, 設定・機密情報の管理
   - [モジュール19](mod19.md) DevSecOps, Security Center, Blueprints, ATP
-  - [モジュール20](mod20.md) コードベース検証
+  - [モジュール20](mod20.md) コードベースの検証
 
 （参考）[Edifist様 短縮3日コース](https://www.edifist.co.jp/it/course/MSCAZ400), [Trainocate 速習コース](https://www.trainocate.co.jp/reference/course_details.aspx?code=MSC0751V)
 
@@ -72,7 +72,7 @@ Azure DevOps Services
 ├Azure Boards 1
 ├Azure Repos 2, 4
 ├Azure Pipelines 5, 6, 10(リリース), 11, 12(デプロイ), 20
-├Azure Test Plans
+├Azure Test Plans - 本コースでは解説なし
 └Azure Artifacts 9
 ■Git
 2,4

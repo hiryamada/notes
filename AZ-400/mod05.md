@@ -1,70 +1,46 @@
 # モジュール5 Azure Pipelinesの構成
 
-- パイプラインとは何か。
-  - どんなメリットがあるのか。
-  - どんなことができるのか。
-- Azure Pipelinesとは。
-  - エージェントとは何か。
-  - エージェントプールとは何か。
-  - ジョブとは何か。
-  - 複数のジョブを並列で実行するには。
-  - 「YAML」と「クラシック」とは。
 
-## DevOpsのパイプラインの概念
+- [DevOps のCI/CDパイプラインの概念](mod05-01-cicd.md)
+- [Azure Pipelines](mod05-02-azure-pipeline.md)
+- [エージェント](mod05-03-agent.md)
+- [エージェントプール](mod05-04-agent-pool.md)
+- [パイプライン](mod05-05-pipeline.md)
+- [オープンソースでのAzure Pipelinesの利用](mod05-06-azure-pipeline-oss.md)
+- [YAMLパイプラインとClassicパイプライン](mod05-07-yaml-and-classic.md)
 
-- パイプラインとは何か。
-  - どんなメリットがあるのか。
-  - どんなことができるのか。
-
-[パイプライン](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)を使用して、CI/CDを自動化することができる。
-
-自動化のメリット
-- 品質の向上: 人手による作業を排除することで、作業のミスや漏れを防ぐ
-- 俊敏性: ビルド・テスト・デプロイをより頻繁に実行できる
-- 速度: 複数の作業を連続的に、高速に実行できる
-- 並列化: 複数のジョブ（ビルドやリリース）を同時に実行できる。
-
-※並列化を行わない場合は、ジョブはキューに格納され、1つずつ実行される。
-
-CI/CDのサービス/ツールの例
-- Azure Pipelines
-- [Google Cloud Build](https://cloud.google.com/build?hl=ja)
-- [AWS CodePipeline](https://aws.amazon.com/jp/codepipeline/)
-- [TeamCity](https://www.jetbrains.com/ja-jp/teamcity/)
-- [Jenkins](https://www.jenkins.io/)
-- [CloudBees](https://cloudbees.techmatrix.jp/)
-- [CircleCI](https://circleci.com/ja/)
-- [Travis CI](https://travis-ci.org/)
-
-## Azure Pipelines
-
-[Azure Pipelines](azure-pipelines.md)を参照。
-
-## ホスト型エージェントと自己ホストエージェント
-
-[Azure Pipelines](azure-pipelines.md)を参照。
-
-## エージェントプール
-
-[Azure Pipelines](azure-pipelines.md)を参照。
-
-## パイプラインとコンカレンシー
-
-[Azure Pipelines](azure-pipelines.md)を参照。
-
-## Azure DevOpsとオープンソースプロジェクト
-
-[Azure Pipelines](azure-pipelines.md)を参照。
-
-## Azure Pipelines YAMLとVisual Designer
-
-[Azure Pipelines](azure-pipelines.md)を参照。
 
 ## ラボ
 
-Azure Pipeline
-
-[Enabling Continuous Integration with Azure Pipelines](https://azuredevopslabs.com//labs/azuredevops/continuousintegration/)
-
-短いラボなので30分ほどで完了できる。
+- 基本
+  - Azure DevOpsの「Organization Settings」に移動
+  ![](images/ss-2021-12-12-22-27-43.png)
+    - PipelinesのParallel Jobsを選択
+    ![](images/ss-2021-12-12-22-28-00.png)
+    - Private projectsのMicrosoft-hostedのChangeをクリック
+    ![](images/ss-2021-12-12-22-28-23.png)
+    - Pipelines for private projectsのMS Hosted CI/CDのPaid parallel jobsを1に変更して、画面下部のSaveをクリック
+    ![](images/ss-2021-12-12-22-28-51.png)
+  - パイプラインの設定と実行
+    - プロジェクトのAzure Pipelines をクリック
+    ![](images/ss-2021-12-12-22-30-59.png)
+    - Create Pipelineをクリック
+    ![](images/ss-2021-12-12-22-31-13.png)
+    - Azure Repos Gitをクリック
+    ![](images/ss-2021-12-12-22-31-24.png)
+    - Gitリポジトリ（プロジェクト名と同じ名前がついている）をクリック
+    ![](images/ss-2021-12-12-22-31-34.png)
+    - Python packageをクリック
+    ![](images/ss-2021-12-12-22-31-52.png)
+    - Save and runをクリック
+    ![](images/ss-2021-12-12-22-32-02.png)
+    - 画面右下のSave and runをクリック
+    ![](images/ss-2021-12-12-22-32-12.png)
+    - しばらく待つ。
+    - パイプライン内で4つのJobが生成され、実行される。
+    ![](images/ss-2021-12-12-22-32-55.png)
+    - 2～3分ですべてのJobが完了し、それぞれのStatusはSuccessとなる。
+- 応用
+  - [Enabling Continuous Integration with Azure Pipelines](https://azuredevopslabs.com//labs/azuredevops/continuousintegration/)
+  - 短いラボなので30分ほどで完了できる。
 

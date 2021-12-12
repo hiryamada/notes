@@ -56,10 +56,10 @@ GitHubに組み込まれたCI/CDサービス。ワークフロー（ビルド、
 
 以下、重要と思われる部分の抜粋。
 
-- GitHub ActionsはGitHub専用ですが、Azure Pipelinesは他のソース管理システムと連携して使用できる。
+- GitHub ActionsはGitHub専用だが、Azure Pipelinesは他のソース管理システムと連携して使用できる。
 - Azure Pipelinesは承認、ゲート、チェックをサポートしているが、GitHub Actionsにはそれらがない。
 - Azure Pipelinesでは、パイプラインの実行名（ビルド番号）をカスタマイズできる。GitHub Actionsではカスタマイズできない。
-- Azure Pipelinesを使用すると、ジョブ定義の一部の構造を省略できる。たとえば、ジョブが1つしかない場合は、ジョブを定義する必要はなく、そのステップを定義するだけで済みます。GitHub Actionsには明示的な構成が必要であり、YAML構造を省略できない。 
+- Azure Pipelinesを使用すると、ジョブ定義の一部の構造を省略できる。たとえば、ジョブが1つしかない場合は、ジョブを定義する必要はなく、そのステップを定義するだけで済む。GitHub Actionsには明示的な構成が必要であり、YAML構造を省略できない。 
 
 ■移行 または 統合
 

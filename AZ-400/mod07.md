@@ -44,7 +44,7 @@ DevOpsにおけるセキュリティ（DevSecOps）とは。
   - Dockerコンテナの脆弱性スキャン - Azure Container Registryで[Qualysスキャナ](https://azure.microsoft.com/ja-jp/updates/vulnerability-scanning-for-images-in-azure-container-registry-is-now-generally-available/)を使用
   - プロジェクトでの脆弱性があるパッケージの使用のチェック - Azure Pipelines[WhiteSource](https://marketplace.visualstudio.com/items?itemName=whitesource.whitesource)
 
-なお、Azureのセキュリティの学習については[AZ-500 Security Technologies](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-500t00)というコースもご利用いただけます。
+※Azureのセキュリティの学習については[AZ-500 Security Technologies](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-500t00)というコースもご利用いただけます。
 
 ### SQL インジェクション攻撃
 
