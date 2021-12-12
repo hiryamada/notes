@@ -17,7 +17,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
 
 ## day 1 DevOps, ソースコードの管理
 
-- DevOps
+- DevOpsの概要と製品
   - [モジュール1](mod01.md) DevOpsの概要, Azure DevOps, Azure Boards
 - ソースコードの管理 - Git
   - [モジュール2](mod02.md) ソース管理, Git, Azure Repos
