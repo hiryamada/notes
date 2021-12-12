@@ -1,4 +1,4 @@
-# gitコマンド / Azure Reposコマンド(az repos pr)
+# 基本的なgitコマンド
 
 ## リポジトリの作成
 
@@ -16,11 +16,11 @@
 
 ## コミットのログを確認
 
-    git log
+	git log
 
-    git log --oneline # 各コミットを1行で表示
+	git log --oneline # 各コミットを1行で表示
 
-    git log --oneline --graph # 各コミットを1行で, コミットグラフ付きで表示
+	git log --oneline --graph # 各コミットを1行で, コミットグラフ付きで表示
 
 ## リモートにプッシュ
 
@@ -113,23 +113,3 @@ Azure Reposでリポジトリを空で(README.mdや.gitignoreなしで)作成し
 
     git reset --hard コミットハッシュ
     git push -f
-
-## プルリクエストを作成する（Azure DevOps）
-
-https://docs.microsoft.com/en-us/cli/azure/repos/pr
-
-ブランチを作ってチェックアウトし、コミット、プッシュを行ってから以下を実行
-
-	az login
-	az repos pr create 
-
-初回実行時、extension azure-devopsをインストールするか確認が入るので、エンターを押して受け入れる。
-
-## プルリクエストを一覧表示する（Azure DevOps）
-
-    az repos pr list -o table
-
-## プルリクエストをマージする
-
-    az repos pr update --id プルリクエストのID --auto-complete
-

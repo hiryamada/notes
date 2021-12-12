@@ -24,18 +24,15 @@
   - 昔の技術や仕様が若い世代に継承されない
   - 新しいプラットフォームへの移行・移植が困難
 - 「2025年の崖」問題: [2025年以降、最大で、毎年12兆円の経済損失が生じる可能性がある（経済産業省）](https://www.meti.go.jp/shingikai/mono_info_service/digital_transformation/pdf/20180907_01.pdf)
-
-[参考（Wikipedia）](https://ja.wikipedia.org/wiki/%E6%8A%80%E8%A1%93%E7%9A%84%E8%B2%A0%E5%82%B5)
+- [技術的負債（Wikipedia）](https://ja.wikipedia.org/wiki/%E6%8A%80%E8%A1%93%E7%9A%84%E8%B2%A0%E5%82%B5)
 
 技術的負債の解決策の一つは、品質重視の文化を作成すること。
-
-（その他の解決策としては、システムの数自体を減らす、コードの開発を自動化する、など）
 
 ### コード品質の定義
 
 コードの品質とは何か。
 
-（「[ソフトウェア工学](https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E5%B7%A5%E5%AD%A6)」の研究領域である。詳しくは専門の書籍などを参照のこと）
+コードの品質を表すいくつかの性質・指標がある。（コードの品質を高めるには、これらを高める）
 
 - 信頼性 reliability
   - 欠陥（バグ）がないこと（仕様通りに動くこと）
@@ -45,12 +42,10 @@
   - サイズが小さいこと
   - 一貫性があること
   - シンプルであること
-  - 参考 [ハルステッド（Halstead）複雑度](https://www.google.com/search?q=%E3%83%8F%E3%83%AB%E3%82%B9%E3%83%86%E3%83%83%E3%83%89%EF%BC%88Halstead%EF%BC%89+%E8%A4%87%E9%9B%91%E6%80%A7)
-    - ソースコードの複雑さを数値化したもの
 - テスト容易性 testability
   - テストができること
   - テストが自動化できること
-  - [参考](https://thinkit.co.jp/article/14136)
+  - [参考 テスタビリティを作り込む](https://thinkit.co.jp/article/14136)
 - 移植性 portability
   - さまざまなコンピュータ構成で容易に動作すること
 - 再利用性 reusability
@@ -58,11 +53,14 @@
     - 依存関係が少ないこと
     - 疎結合であること（モジュール間が直接通信しないこと）
 
+（コードの品質は「[ソフトウェア工学](https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E5%B7%A5%E5%AD%A6)」の研究領域でもある。詳しくは専門の書籍などを参照のこと）
 
 ### 複雑度指標
 
-- 参考 [ハルステッド（Halstead）複雑度](https://www.google.com/search?q=%E3%83%8F%E3%83%AB%E3%82%B9%E3%83%86%E3%83%83%E3%83%89%EF%BC%88Halstead%EF%BC%89+%E8%A4%87%E9%9B%91%E6%80%A7)
-  - ソースコードの複雑さを数値化したもの
+ソースコードの複雑さを表す指標がいくつかある。
+
+- [ハルステッド（Halstead）複雑度](https://www.google.com/search?q=%E3%83%8F%E3%83%AB%E3%82%B9%E3%83%86%E3%83%83%E3%83%89%EF%BC%88Halstead%EF%BC%89+%E8%A4%87%E9%9B%91%E6%80%A7)
+- [サイクロマティック（Cyclomatic）複雑度](https://www.google.com/search?q=%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E8%A4%87%E9%9B%91%E5%BA%A6)
 
 コード分析ツールを使って、コードの複雑さを測定することができる。
 
@@ -122,17 +120,17 @@ SonarCloud（SonarQube）についてはモジュール20で扱う。
 
 ### 技術的負債の測定と管理
 
-SonarCloud（SonarQube）についてはモジュール20で扱う。
+[SonarCloud](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud)（[SonarQube](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube)）についてはモジュール20で扱う。
 
 ### その他のコード品質ツールの統合
 
 - [Code Quality NDepend for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=ndepend.ndependextension)
   - 150以上のルールに基づき、技術的負債や「[コードの臭い(Code smell)](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E8%87%AD%E3%81%84)」を発見
-    - コードの臭い: 重複コード、長すぎるメソッド、巨大すぎるクラスなど、コードにおける、深刻な問題につながる兆候。
-    - リファクタリングが必要。
+    - コードの臭い: 重複コード、長すぎるメソッド、巨大すぎるクラスなど、コードにおける、深刻な問題につながる兆候があるコード。
+    - リファクタリングが必要なコード。
 - [ReSharper Code Quality Analysis](https://marketplace.visualstudio.com/items?itemName=alanwales.resharper-code-analysis)
-  - [ReSharper](https://www.jetbrains.com/ja-jp/resharper/)は.NET開発者向けのコード解析ツール。
-  - Visual Studioアドオンだが、Azure DevOpsと組み合わせて使用することもできる。
+  - [ReSharper](https://www.jetbrains.com/ja-jp/resharper/)は[JetBrains社](https://www.jetbrains.com/ja-jp/)製の、.NET開発者向けのコード解析ツール。
+  - Visual Studioのアドオンだが、Azure DevOpsと組み合わせて使用することもできる。
 
 ### 効果的なコードレビューを計画する
 
@@ -144,6 +142,10 @@ SonarCloud（SonarQube）についてはモジュール20で扱う。
 - 改善が必要なものを指摘するだけではなく、よく書かれたコードを強調する（ほめる）ことも行うとよい。
 - チーム内で知識を共有することも重要。特定の作成者だけではなく、チームの関係者全員が、レビューから学ぶようにするとよい。
 
+参考: 
+- [コードレビューをより効果的にする方法](https://www.infoq.com/jp/articles/effective-code-reviews/)
+- [開発現場に学ぶ、円滑なコードレビューに必要な8つの手法](https://eh-career.com/engineerhub/entry/2018/04/03/110000)
+
 ## チーム内での情報共有
 
 チーム内で情報を共有するには。
@@ -153,6 +155,11 @@ SonarCloud（SonarQube）についてはモジュール20で扱う。
 チームや組織が、教訓を忘れてしまい、再学習することを避けることが重要。
 
 チームや組織が獲得した貴重な知識・教訓を適切に記録し、共有する必要がある。
+
+チームの情報を記録・共有することができるツール:
+
+- Azure DevOps: Azure DevOpsプロジェクトの wiki
+- GitHub: リポジトリ内の wiki
 
 ### ディスカッション: 知識共有ツール
 
@@ -174,16 +181,25 @@ Azure DevOps / Project / Overview / Wiki に、2つのボタンがある。
 - Create project wiki
   - 新しい「プロジェクト用 wiki」を作成する
   - 「Project wiki」以下に「プロジェクト名.wiki」として表示される
+  ![](images/ss-2021-12-12-12-10-23.png)
   - このWikiは1つだけ作成できる（中に復数のページは作れる）
 - Publish code as wiki
   - プロジェクト内のAzure Reposリポジトリに格納されている、Markdownファイル（～.md）が含まれたフォルダを「publish」（Wiki化）する
+  ![](images/ss-2021-12-12-12-14-06.png)
   - プロジェクト内のAzure Reposリポジトリを先に作っておく必要がある
   - 「publish」（Wiki化）するリポジトリ、ブランチ、フォルダ、Wiki名を指定する
   - 復数のフォルダを「publish」（Wiki化）できる
     - Code wikisとして一覧表示される
+    ![](images/ss-2021-12-12-12-15-05.png)
   - unpublish することもできる。
 
-### Wiki の内容 (使用できるマークダウン形式)
+各Wikiには以下のリポジトリを使用してアクセスできる
+
+- Azure Repos: https://組織名@dev.azure.com/組織名/プロジェクト名/_git/リポジトリ名
+- Project Wiki: https://組織名@dev.azure.com/組織名/プロジェクト名/_git/リポジトリ名.wiki
+- Code Wiki: https://組織名@dev.azure.com/組織名/プロジェクト名/_git/リポジトリ名/CodeWikiのフォルダ名/
+
+■Azure Devops Wiki の内容 (使用できるマークダウン形式)
 
 - GFM ([GitHub Flavored Markdown](https://github.github.com/gfm/))
 - [Mermaid](https://mermaid-js.github.io/mermaid/#/)
@@ -196,12 +212,63 @@ Azure DevOps / Project / Overview / Wiki に、2つのボタンがある。
   - User Journey Diagram 
     - [ジャーニーマップ](https://drm.ricoh.jp/lab/glossary/g00053.html)
 
+※参考: 
+- Marmaid
+  - [Marmaid Live Editor](https://mermaid.live/)
+  - Visual Studio Code拡張: [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) 
+- Graphvis
+  - [Graphviz](https://www.graphviz.org/)
+  - [Graphviz Online](https://dreampuf.github.io/GraphvizOnline)
+  - Visual Studio Code拡張: [Graphvis Interactive Preview](https://marketplace.visualstudio.com/items?itemName=tintinweb.graphviz-interactive-preview)
+  - [GitHubにGraphvisを埋め込む](https://qiita.com/kaiinui/items/6d8204c6102e05c1dc77)
+- PlantUML
+  - [解説](https://plantuml.com/ja/)
+  - Visual Studio Code拡張: [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+  - [GitHubのREADMEにPlantUMLを埋め込む](https://qiita.com/takke/items/86a5ddf145cf9693b6e9)
+
+
+
+### GitHubのwiki
+
+https://docs.github.com/ja/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages
+
+各リポジトリの画面上部の「wiki」から、リポジトリのwikiを作成できる。
+
+[フッターやサイドバーを追加することができる。](https://docs.github.com/ja/communities/documenting-your-project-with-wikis/creating-a-footer-or-sidebar-for-your-wiki)
+
+wikiのコンテンツは、リポジトリのコードとは別のGitリポジトリで管理される。
+
+- code: https://github.com/リポジトリ名/プロジェクト名.git
+- Wiki: https://github.com/リポジトリ名/プロジェクト名.wiki.git
+
+wikiのリポジトリでは、ブランチを利用することもできるが、デフォルトのブランチのみがライブとなる（GitHubサイト上に表示される）。
+
 ## GitHub Codespacesを使用したオンライン開発
+
+複数のユーザーでオンライン開発ができる環境を提供。
 
 - https://github.co.jp/features/codespaces
 - https://visualstudio.microsoft.com/ja/services/github-codespaces/
 
 Webブラウザー（またはローカルのVisual Studio Code）から、クラウドの開発環境にアクセスできる。
+
+現在、ベータ版として、一部のGitHubユーザーにのみ提供される。参加の申し込みをすると「ウェイトリスト」に登録され、利用可能になるとメールで通知される。
+
+
+##  GitHubからVisual Studio Code for the Web を呼び出す
+
+Visual Studio Code for the Web: Webブラウザからすぐに使用することができるVisual Studio. https://vscode.dev/
+
+GitHubのリポジトリで（ファイルを選択し）、「.」をタイプすると、Visual Studio Code for the Webでそのファイルの編集をスタートできる。編集後Commitすると、即時GitHubのリポジトリに反映される。
+
+ローカル開発環境へのCloneをすることなく、Visual Studio Codeでファイルを編集・コミットすることができて便利。
+
+- [2021/8/11、「GitHub」上でコードエディタ「Visual Studio Code」のWebブラウザ版を起動できる機能「Codespaces」のβ版を公開](https://www.itmedia.co.jp/news/articles/2108/12/news145.html)
+- [2021/10/20 Visual Studio Code for the Web 提供開始](https://pc.watch.impress.co.jp/docs/news/1360273.html)
+
+参考: GitHub1s（1 second）
+https://github.com/conwnet/github1s
+
 
 ## ラボ（ハンズオン演習）
 

@@ -16,7 +16,7 @@ DevOpsとはなにか、組織にどうやってDevOpsを導入していけば�
 
 DevOpsとは何か。なぜ必要なのか。
 
-参考: [DevOpsとはなにか](https://medium.com/@yuhattor/devops%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B-601c68005371) - [Sam Guckenheimer(サム・グッケンハイマー)](https://devblogs.microsoft.com/devops/author/samgumicrosoft-com/) による記事、[Yuki Hattori](https://www.linkedin.com/in/yukihattori)による翻訳. Skillpipeの内容と一緒だが、Yuki Hattoriによる＋αの解説が加えられていてわかりやすい。
+参考: [DevOpsとはなにか](https://medium.com/@yuhattor/devops%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B-601c68005371) - [Sam Guckenheimer(サム・グッケンハイマー)](https://devblogs.microsoft.com/devops/author/samgumicrosoft-com/) による記事、[Yuki Hattori](https://www.linkedin.com/in/yukihattori)による翻訳. Skillpipeの内容と一緒だが、Yuki Hattoriにより解説が加えられていてわかりやすい。
 
 - DevOpsとは、**顧客に継続的に価値を届ける**ための、人、プロセス、テクノロジの集まり
   - [ドノヴァン・ブラウンによる定義](https://www.donovanbrown.com/post/what-is-devops)

@@ -872,3 +872,4 @@ Contoso Ltd.
 / [アズール顆粒](https://www.google.com/search?q=%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E9%A1%86%E7%B2%92)
 / [アズール＆カンパニー株式会社様](https://www.azureweb.jp/)
 / [アズール（ニンジャスレイヤー）](https://www.google.com/search?q=%E3%83%8B%E3%83%B3%E3%82%B8%E3%83%A3%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC+azure)
+/ [アズール（ミニ四駆）](https://www.tamiya.com/japan/products/18626/index.html)
