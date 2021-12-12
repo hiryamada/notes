@@ -62,9 +62,6 @@ DevOpsの「8の字ループ」（∞: 無限大）の意味: [DevOps (Atlassian
 
 DevOpsのプロセスは繰り返される（反復的）。運用からはフィードバックが得られる。フィードバックをもとに次の開発の方針を決定する。
 
-- [ ] xxx
-- [ ] yyy
-
 ### DevOpsの実践
 
 DevOpsを実践するとは、具体的にどういうことなのか。
@@ -88,6 +85,7 @@ DevOpsを実践するとは、具体的にどういうことなのか。
   - [アジャイル開発の進め方（IPA）](https://www.ipa.go.jp/files/000065606.pdf)
 - アプリケーションのモニタリングを行い、検証に必要なデータを集める
   - [Azure Monitor](https://docs.microsoft.com/ja-jp/azure/azure-monitor/overview)
+  - [Log Analytics](https://docs.microsoft.com/ja-jp/azure/azure-monitor/logs/log-analytics-overview)
   - [Application Insights](https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/app-insights-overview)
 - クラウドを活用する
   - [Azure DevOps](https://azure.microsoft.com/ja-jp/services/devops/): Azureクラウド上ですぐに利用できるDevOps製品。
