@@ -47,11 +47,11 @@ DevOpsとは何か。なぜ必要なのか。
 
 [DevOps (Wikipedia)](https://ja.wikipedia.org/wiki/DevOps)
 
-> DevOpsは、ソフトウェア開発手法の一つ。開発 (Development) と運用 (Operations) を組み合わせ。開発担当者と運用担当者が連携して協力する開発手法。
+> DevOpsは、ソフトウェア開発手法の一つ。開発 (**Dev**elopment) と運用 (**Op**eration**s**) の組み合わせ。開発担当者と運用担当者が連携して協力する開発手法。
 
 [DevOps とは (Microsoft Docs)](https://docs.microsoft.com/ja-jp/devops/what-is-devops)
 
-> 開発 (Dev) と運用 (Ops) の複合である DevOps は、顧客に継続的に価値を提供する人、プロセス、テクノロジの和合(Union、あわせたもの)です。
+> DevOps は、顧客に継続的に価値を提供する人、プロセス、テクノロジの和合(Union、あわせたもの)です。
 
 DevOpsの「8の字ループ」（∞: 無限大）の意味: [DevOps (Atlassian社)](https://www.atlassian.com/ja/devops)
 
@@ -60,7 +60,10 @@ DevOpsの「8の字ループ」（∞: 無限大）の意味: [DevOps (Atlassian
 
 ![](images/ss-2021-12-10-17-28-24.png)
 
-DevOpsのプロセスは繰り返される（反復的）。運用からはフィードバックが得られる。フィードバックをもとに次の開発を行う。
+DevOpsのプロセスは繰り返される（反復的）。運用からはフィードバックが得られる。フィードバックをもとに次の開発の方針を決定する。
+
+- []xxx
+- []yyy
 
 ### DevOpsの実践
 
