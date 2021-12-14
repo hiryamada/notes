@@ -12,4 +12,4 @@
     - GitHubアカウントの作成
 - [認可およびアクセス戦略の設計](mod01-05-access-control.md)
 - [既存ツールの移行または統合](mod01-06-tool-integration.md)
-- [ライセンス（価格）](mod01-07-mod01-07-license.md)
+- [ライセンス（価格）](mod01-07-license.md)
