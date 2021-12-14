@@ -8,7 +8,7 @@
 - 速度: 複数の作業を連続的に、高速に実行できる
 - 並列化: 複数のジョブ（ビルドやリリース）を同時に実行できる。
 
-※並列化を行わない場合は、ジョブはキューに格納され、1つずつ実行される。
+※Azure DevOpsで、並列化を行わない場合（「ホステッド ジョブ」を1個しか使っていない場合）、ジョブはキューに格納され、1つずつ実行される。
 
 CI/CDのサービス/ツールの例
 - [Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)

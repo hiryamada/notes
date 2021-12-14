@@ -11,7 +11,8 @@
   - ビルドパイプライン
   - リリースパイプライン
 - [YAML構文](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax)(azure-pipelines.yml)
-  - YAMLファイルを使用してパイプラインを定義
+  - 基本的にはYAML形式で記述する
+    - ステップを選択・挿入するための簡単なUIも使用できる
   - YAMLファイルは、コードと一緒に、リポジトリに格納される
 
 

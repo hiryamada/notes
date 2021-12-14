@@ -12,6 +12,65 @@
 - セルフ ホステッド ジョブ
   - 追加1ジョブごとに $15/月（時間制限なし）
 
+使用例
+
+- 無料の範囲で、まずAzure Pipelinesで1つのジョブを実行する形で使い始める。
+- 月1800分（＝月30時間）まで無料で使うことができる
+- 無料の範囲を超えて使いたい場合は、追加の1ジョブを購入する（$40/月）。すると時間制限なしでジョブを実行できるようになる。
+- ジョブをたくさん実行すると、ジョブはいったんキューに格納され、1個ずつ実行される。
+- たくさんのジョブを並列で実行したい場合は、必要な分だけのジョブを購入する。
+- 自分が管理するコンピューター上でジョブを実行したい場合は「セルフホステッドジョブ」を購入する。
+
+## ジョブとエージェント
+
+■ジョブとエージェント
+
+https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser
+
+- ジョブ
+  - ビルドなどの作業
+  - 1つ～複数の「ステップ」で構成される
+    - 各ステップはコマンドを実行する等の作業を行う
+  - エージェントのホストコンピューターで実行される
+- エージェント
+  - 一度に1つのジョブを実行するコンピューティングインフラストラクチャ
+  - エージェントのソフトウェアがインストールされる
+  - VMSSやコンテナーを利用することもできる。
+
+```
+エージェント（VM等のコンピュータ）
+└エージェント・ソフトウェア ... コマンド実行などの「ジョブ」を実行
+```
+
+■Microsoft ホステッド ジョブ / Microsoft ホステッド エージェント
+
+https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted#microsoft-hosted-vs-self-hosted-parallel-jobs
+
+- Microsoft が管理するコンピューターでジョブを実行する場合は、 Microsoft がホストする並列ジョブを使用します。
+- ジョブは、 Microsoft がホストするエージェントで実行されます。
+- パイプラインを実行するたびに、パイプライン内の各ジョブに対して新しい仮想マシンが作成される
+- 仮想マシンは、1つのジョブの実行が終わったら破棄される
+
+```
+Microsoft ホステッド エージェント（Microsoftが管理する仮想マシン）
+└エージェント・ソフトウェア ... 「Microsoft ホステッド ジョブ」を実行
+```
+
+■セルフ ホステッド ジョブ / セルフ ホステッド エージェント
+
+https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted#microsoft-hosted-vs-self-hosted-parallel-jobs
+
+- お客様が管理するコンピューターでジョブを実行したい場合に使用。
+- コンピューターにカスタムのアプリケーション等を導入し、ジョブからそのアプリケーションを呼び出すことができる
+- コンピューターの性能を好きなようにカスタマイズできる
+- Microsoft ホステッド エージェントのように環境を毎回破棄することがないので高速に動作
+- 参考: [DevOps の Self-hosted エージェントを構築して使ってみよう！](https://jpdscore.github.io/blog/azuredevops/try-self-hosted-agent/)
+
+```
+セルフ ホステッド エージェント（オンプレミス等のコンピューター。macOS, Linux, Windows）
+└エージェント・ソフトウェア ... 「セルフ ホステッド ジョブ」を実行
+```
+
 ## Azure Pipelineとは
 
 - [継続的インテグレーション (CI)](https://docs.microsoft.com/ja-jp/devops/develop/what-is-continuous-integration)/[継続的デリバリー (CD)](https://docs.microsoft.com/ja-jp/devops/deliver/what-is-continuous-delivery) のサービス
@@ -50,7 +109,7 @@
     - その他
       - [GCP](https://marketplace.visualstudio.com/items?itemName=nexso.azure-devops-google-cloud-tools)
       - [AWS](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools): S3, Beanstalk, Lambda, ECRなどと連携
-- 様々なプログラミング言語
+- 様々なプログラミング言語に対応
   - Java、JavaScript、Node.js、Python、.NET、C++、Go、PHP、XCode など
 - 様々なアプリケーションプロジェクトで利用できる
   - .Net、Java、Node、Android、Xcode
@@ -64,6 +123,14 @@ https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipeline
 - ビルド・テスト・デプロイ（リリース）の手順を定義したもの。
 - YAMLファイルで定義される。
 - トリガーによって起動される
+  - イベントベースのトリガー
+    - [CIトリガー](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/repos/azure-repos-git?view=azure-devops&tabs=yaml#ci-triggers)
+      - 特定のブランチへのコミット/プッシュ等
+    - [PR（プルリクエスト）トリガー](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/repos/azure-repos-git?view=azure-devops&tabs=yaml#pr-triggers)
+    - [別のパイプラインの完了後](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/pipeline-triggers?view=azure-devops)
+    - など
+  - [スケジュールされたトリガー](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml)
+  - 手動で起動することもできる
 - ステージ、ジョブ、ステップによって構成される
 
 ```
@@ -80,6 +147,91 @@ https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipeline
 ※スクリプト: コマンドライン、PowerShell, Bashなど。
 
 ※パイプラインの定義（YAML）については[モジュール6](mod06.md)で詳しく説明する。
+
+■ハンズオン: パイプラインを作って動かしてみよう
+
+パイプラインの作成と実行:
+
+- Azure DevOpsで新しいプロジェクトを作る
+- プロジェクト＞Repos
+  - 画面下部の「Add a README」にチェックが付いた状態で「Initialize」をクリック
+- プロジェクト＞Pipelines
+- Create Pipeline
+- Azure Repos Git
+- プロジェクト名と同名のリポジトリ名をクリック
+- Starter pipeline
+- Save and run
+- （再度）Save and run
+- Errorsに、赤のバツ印「No hosted parallelism has been purchased or granted...」と表示されてしまう場合
+  - 画面左上「Azure DevOps」＞Organization Settings
+  - Pipelines＞Parallel Jobs
+  - Microsoft-hosted＞Change
+  - Set up billing
+  - 「Azure Pass - スポンサー プラン」が選択された状態で「Save」
+  - MS Hosted CI/CD の行の「Paid parallel jobs」に「1」と入力、画面左下「Save」
+- プロジェクト＞Pipelines
+- 「Recently run pipelines」の、エラーになっているパイプライン（プロジェクト名と同名）をクリック
+- 画面右上「Run pipeline」をクリック
+- 「Run」をクリック
+- 2～3分待つ
+- 「Jobs」の「Job」行が緑のチェック印付きで表示され、StatusはSuccessとなる。
+- 「Job」をクリックすると、各ステップの実行結果などの詳細が確認できる。
+
+パイプラインの定義の確認:
+
+- プロジェクト＞Pipelines
+- プロジェクト名と同名のパイプラインをクリック
+- 画面右上「...」の「Edit」
+
+次のようなパイプライン（azure-pipelines.yml）が定義されていることがわかる。これは「YAMLパイプライン」である。
+
+```
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+```
+
+- ポイント: 
+  - `#` で始まる行はコメント。
+  - `trigger`
+    - トリガーの定義 
+    - main ブランチに変更が行われたら、このパイプラインを起動する
+  - `pool` の `vmImage`
+    - [エージェントプール](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/pools-queues?view=azure-devops&tabs=yaml%2Cbrowser)の指定
+    - Azure DevOpsの組織で使用されるエージェントプールはOrganization Settings＞Pipelines＞Agent poolsで確認できる。デフォルトでは「Azure Pipelines」と「Default」の2つのエージェントプールが定義されている。
+      - [「Azure Pipelines」プールには、さまざまな仮想マシンイメージが用意されている。その中に「ubuntu-latest」が含まれている。](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software)
+    - 「Default」には、必要に応じてセルフホステッドエージェントを追加できる。
+  - `steps`
+    - パイプラインのステップの定義
+    - `-` で始まる部分が1つのステップ。
+    - このパイプラインには2つのステップがある。
+    - 1つ目のステップ:
+      - `script` で、任意のコマンド（Ubuntuのbashで実行できるもの）を指定できる。
+      - `displayName` で、このステップに対してわかりやすい名前を指定できる。
+    - 2つ目のステップ:
+      - `|` 記号は、複数行のコマンドを書く際などに用いられる。[解説](https://qiita.com/jerrywdlee/items/d5d31c10617ec7342d56#%E3%81%BE%E3%81%9A%E3%81%AF%E5%9F%BA%E6%9C%AC%E5%BD%A2%E3%81%AEfoo-)
+      - 2つのechoコマンドが1つのステップとして実行される。
+  - このパイプラインでは、ジョブとステージは指定されていない。
+    - この場合、1つのステージ、1つのジョブの中で、これらのステップが実行される。
+    - ジョブが1つであるため、エージェント（Microsoftホステッドエージェント）が1つだけ使用される。
+
+
 
 ■ステップ(step)
 

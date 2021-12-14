@@ -29,9 +29,9 @@
 たとえば「共同作成者」セキュリティグループのメンバーであるユーザーは、プロジェクトの Wiki ページを追加または編集することができる。
 
 - 組織レベルの設定
-  - Azure DevOps / Project Settings / Neneral - Permissions / Groups
-- プロジェクトレベルの設定
   - Azure DevOps / Organization Settings / Security - Permissions / Groups
+- プロジェクトレベルの設定
+  - Azure DevOps / Project Settings / General - Permissions / Groups
 
 ## 多要素認証
 
