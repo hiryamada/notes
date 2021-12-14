@@ -46,8 +46,8 @@ https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure
 
 https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted#microsoft-hosted-vs-self-hosted-parallel-jobs
 
-- Microsoft が管理するコンピューターでジョブを実行する場合は、 Microsoft がホストする並列ジョブを使用します。
-- ジョブは、 Microsoft がホストするエージェントで実行されます。
+- デフォルトのジョブ実行では「Microsoft ホステッド ジョブ」が使用される
+- ジョブは、 Microsoft が管理するエージェントで実行される
 - パイプラインを実行するたびに、パイプライン内の各ジョブに対して新しい仮想マシンが作成される
 - 仮想マシンは、1つのジョブの実行が終わったら破棄される
 
@@ -61,13 +61,15 @@ Microsoft ホステッド エージェント（Microsoftが管理する仮想マ
 https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted#microsoft-hosted-vs-self-hosted-parallel-jobs
 
 - お客様が管理するコンピューターでジョブを実行したい場合に使用。
+- macOS, Linux, Windowsが利用可能
 - コンピューターにカスタムのアプリケーション等を導入し、ジョブからそのアプリケーションを呼び出すことができる
+  - ライセンスが必要なアプリケーションなど
 - コンピューターの性能を好きなようにカスタマイズできる
 - Microsoft ホステッド エージェントのように環境を毎回破棄することがないので高速に動作
 - 参考: [DevOps の Self-hosted エージェントを構築して使ってみよう！](https://jpdscore.github.io/blog/azuredevops/try-self-hosted-agent/)
 
 ```
-セルフ ホステッド エージェント（オンプレミス等のコンピューター。macOS, Linux, Windows）
+セルフ ホステッド エージェント（オンプレミス等のコンピューター）
 └エージェント・ソフトウェア ... 「セルフ ホステッド ジョブ」を実行
 ```
 
@@ -214,7 +216,8 @@ steps:
     - main ブランチに変更が行われたら、このパイプラインを起動する
   - `pool` の `vmImage`
     - [エージェントプール](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/pools-queues?view=azure-devops&tabs=yaml%2Cbrowser)の指定
-    - Azure DevOpsの組織で使用されるエージェントプールはOrganization Settings＞Pipelines＞Agent poolsで確認できる。デフォルトでは「Azure Pipelines」と「Default」の2つのエージェントプールが定義されている。
+    - Azure DevOpsの組織で使用されるエージェントプールはOrganization Settings＞Pipelines＞Agent poolsで確認できる。
+    - デフォルトでは「Azure Pipelines」と「Default」の2つのエージェントプールが定義されている。
       - [「Azure Pipelines」プールには、さまざまな仮想マシンイメージが用意されている。その中に「ubuntu-latest」が含まれている。](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software)
     - 「Default」には、必要に応じてセルフホステッドエージェントを追加できる。
   - `steps`
@@ -303,7 +306,7 @@ https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/phases?view=azur
   - 例: ジョブ1はエージェント1、ジョブ2がエージェント2で実行される
   - エージェントは「Microsoftホステッドエージェント」または「セルフホステッドエージェント」
   - 各エージェントは1度に1つのジョブを実行する。
-    - 複数のジョブを並列で実行するには複数のエージェントが必要。
+  - 複数のジョブを並列で実行するには、複数の「ホステッドジョブ」を購入しておく。
   - [エージェントを使用しない「エージェントレスジョブ」もある。](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#agentless-tasks)
     - エージェントレスジョブでは以下のようなタスクを実行できる
       - ディレイタスク（遅延タスク）: 指定した分だけパイプラインの実行を停止する
