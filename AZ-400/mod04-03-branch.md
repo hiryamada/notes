@@ -15,10 +15,12 @@
 ## フィーチャー（機能）ブランチのワークフロー
 
 注：差別的な言葉を使わないようにするため、2020年後期から、Gitのデフォルトブランチの名前として 「master」ではなく「main」が使われるようになってきている。
+
 - [Git](https://softantenna.com/wp/software/git-2-30-released/) 
 - [GitHub](https://www.publickey1.jp/blog/20/githubmainmastermain.html)
 - [Azure DevOps](https://devblogs.microsoft.com/devops/azure-repos-default-branch-name/) 
-Gitに関する（古い）ドキュメントで「master」と書かれている部分は「main」に置き換えてお読みください。
+
+Gitに関する（古い）ドキュメントで「master」と書かれている部分は「main」に置き換えて読むとよい。
 
 - 機能の追加や、バグの修正を行うためのブランチを作る
   - ブランチ名は、そのブランチで作業するものを表す名前にする

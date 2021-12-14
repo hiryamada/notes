@@ -6,7 +6,7 @@
 - [プルリクエストの運用](mod04-04-pr.md)
 - [Gitフック](mod04-05-git-hooks.md)
 - [インナーソース（内部ソース）](mod04-06-inner-source.md)
-- [Gitリポジトリの運用](mod04-mod04-07-operating-git-repo.md)
+- [Gitリポジトリの運用](mod04-07-operating-git-repo.md)
 
 ハンズオンラボ
 

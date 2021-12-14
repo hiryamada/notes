@@ -68,10 +68,12 @@ https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipeline
 
 ```
 パイプライン: トリガーによって実行
-└ステージ（オプション）: ジョブを整理。「QA（品質管理）」「運用」など。
+└ステージ: ジョブを整理。「QA（品質管理）」「運用」など。
  └ジョブ: 1つのエージェントで実行される、ステップの集まり。
   └ステップ: パイプラインの最小の構成単位。タスクまたはスクリプト。
 ```
+
+※ステージとジョブは不要であれば省略できる
 
 ※タスク: 事前に構成されたスクリプト
 
@@ -79,85 +81,64 @@ https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipeline
 
 ※パイプラインの定義（YAML）については[モジュール6](mod06.md)で詳しく説明する。
 
-■ステージ(stage)
+■ステップ(step)
 
-https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops#stage
+https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops#step
 
-https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml
+- パイプラインの最小の構成ブロック
+- ステップには、スクリプトまたはタスクを指定できる
+  - タスク: 事前に作成されたスクリプト
+  - スクリプト: コマンドライン、PowerShell, Bashなど。
+- ステップの例:
+  - ビルド ステップ
+  - テスト ステップ
 
-- ジョブの集まり
-- 例
-  - アプリをビルドする
-  - テストを実行する
-  - 本番環境にデプロイする
-- オプションなので、不要であれば使用しなくてもよい。
-- 依存関係(dependsOn)を設定することができる
-
-複数のステージがある場合、デフォルトでは、定義された順に実行されていく
+スクリプトの例:
 ```
-stages:
-- stage: A
-  jobs:
-  - job: A1
-  - job: A2
-- stage: B
-  jobs:
-  - job: B1
-  - job: B2
+steps:
+- script: echo Hello world
 ```
-ステージを順に実行（明示的に指定）
+タスク:
+https://docs.microsoft.com/ja-jp/azure/devops/pipelines/tasks/?view=azure-devops
+
+タスクの例(dotnet build)
 ```
-stages:
-- stage: A
-  jobs:
-  - job: A1
-  - job: A2
-- stage: B
-  dependsOn: A
-  jobs:
-  - job: B1
-  - job: B2
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
 ```
 
-ステージを並列で実行
+タスクの例(dotnet publish)
 ```
-stages:
-- stage: A
-  jobs:
-  - job: A1
-  - job: A2
-- stage: B
-  dependsOn: []
-  jobs:
-  - job: B1
-  - job: B2
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: '**/*.csproj'
+    arguments: '-o $(Build.ArtifactStagingDirectory)/Output'
+    zipAfterPublish: true
+    modifyOutputPath: true
 ```
 
-ファンアウト・ファンイン
+タスクの例(dockerでbuildとpush)
 ```
-# ステージBとCは、Aが完了したら実行される（ファンアウト）
-# ステージDは、BとCが完了したら実行される（ファンイン）
-stages:
-- stage: A
-  jobs:
-  - job: A1
-  - job: A2
-- stage: B
-  dependsOn: A
-  jobs:
-  - job: B1
-  - job: B2
-- stage: C
-  dependsOn: A
-  jobs:
-  - job: C1
-  - job: C2
-- stage: D
-  dependsOn: [B,C]
-  jobs:
-  - job: D1
-  - job: D2
+steps:
+- task: Docker@2
+  displayName: Login to Docker Hub
+  inputs:
+    command: login
+    containerRegistry: dockerRegistryServiceConnection2
+- task: Docker@2
+  displayName: Build and Push
+  inputs:
+    command: buildAndPush
+    repository: contosoRepository
 ```
+
+タスクでは @1, @2 などを使用してタスクのメジャーバージョンを指定する。
+
+https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=yaml#task-versions
+
 
 ■ジョブ(job)
 
@@ -246,61 +227,83 @@ jobs:
     maxParallel: 2
 ```
 
-■ステップ(step)
 
-https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops#step
+■ステージ(stage)
 
-- パイプラインの最小の構成ブロック
-- ステップには、スクリプトまたはタスクを指定できる
-  - タスク: 事前に作成されたスクリプト
-  - スクリプト: コマンドライン、PowerShell, Bashなど。
-- ステップの例:
-  - ビルド ステップ
-  - テスト ステップ
+https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops#stage
 
-スクリプトの例:
-```
-steps:
-- script: echo Hhello world
-```
-タスク:
-https://docs.microsoft.com/ja-jp/azure/devops/pipelines/tasks/?view=azure-devops
+https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml
 
-タスクの例(dotnet build)
-```
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-```
+- ジョブの集まり
+- 例
+  - アプリをビルドする
+  - テストを実行する
+  - 本番環境にデプロイする
+- オプションなので、不要であれば使用しなくてもよい。
+- 依存関係(dependsOn)を設定することができる
 
-タスクの例(dotnet publish)
+複数のステージがある場合、デフォルトでは、定義された順に実行されていく
 ```
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'publish'
-    publishWebProjects: false
-    projects: '**/*.csproj'
-    arguments: '-o $(Build.ArtifactStagingDirectory)/Output'
-    zipAfterPublish: true
-    modifyOutputPath: true
+stages:
+- stage: A
+  jobs:
+  - job: A1
+  - job: A2
+- stage: B
+  jobs:
+  - job: B1
+  - job: B2
 ```
-
-タスクの例(dockerでbuildとpush)
+ステージを順に実行（明示的に指定）
 ```
-steps:
-- task: Docker@2
-  displayName: Login to Docker Hub
-  inputs:
-    command: login
-    containerRegistry: dockerRegistryServiceConnection2
-- task: Docker@2
-  displayName: Build and Push
-  inputs:
-    command: buildAndPush
-    repository: contosoRepository
+stages:
+- stage: A
+  jobs:
+  - job: A1
+  - job: A2
+- stage: B
+  dependsOn: A
+  jobs:
+  - job: B1
+  - job: B2
 ```
 
-タスクでは @1, @2 などを使用してタスクのメジャーバージョンを指定する。
+ステージを並列で実行
+```
+stages:
+- stage: A
+  jobs:
+  - job: A1
+  - job: A2
+- stage: B
+  dependsOn: []
+  jobs:
+  - job: B1
+  - job: B2
+```
 
-https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=yaml#task-versions
-
+ファンアウト・ファンイン
+```
+# ステージBとCは、Aが完了したら実行される（ファンアウト）
+# ステージDは、BとCが完了したら実行される（ファンイン）
+stages:
+- stage: A
+  jobs:
+  - job: A1
+  - job: A2
+- stage: B
+  dependsOn: A
+  jobs:
+  - job: B1
+  - job: B2
+- stage: C
+  dependsOn: A
+  jobs:
+  - job: C1
+  - job: C2
+- stage: D
+  dependsOn: [B,C]
+  jobs:
+  - job: D1
+  - job: D2
+```
