@@ -46,6 +46,10 @@ https://www.linkedin.com/pulse/azure-devops-future-after-github-acquisition-micr
 |Webサイトホスティング||[GitHub Pages](https://docs.github.com/ja/pages)|
 |マーケットプレース(拡張機能)|[Visual tudio Marketplace](https://marketplace.visualstudio.com/azuredevops)|[Marketplace](https://github.com/marketplace)|
 
+## GitHubのフォーク
+
+[→GitHubのフォーク・クローン・インポート](pdf/GitHubのフォーク.pdf)
+
 ## ラボ（ハンズオン）
 
 - GitHubアカウントの作成

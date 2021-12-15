@@ -5,6 +5,7 @@ https://azure.microsoft.com/ja-jp/services/devops/
 ## Azure DevOpsの概要
 
 - [→Azure DevOpsの概要](pdf/Azure%20DevOpsの概要.pdf)
+- [→機能の連携](pdf/Azure%20DevOps機能の連携.pdf)
 
 ```
 Azure DevOpsの画面 (dev.azure.com)

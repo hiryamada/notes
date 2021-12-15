@@ -144,6 +144,8 @@ https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipeline
 
 ※ステージとジョブは不要であれば省略できる
 
+[→PDF解説](pdf/Azure%20Pipelines%20ステージ、ジョブの省略.pdf)
+
 ※タスク: 事前に構成されたスクリプト
 
 ※スクリプト: コマンドライン、PowerShell, Bashなど。

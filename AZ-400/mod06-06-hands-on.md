@@ -81,7 +81,7 @@ Azure Web Apps のWebアプリへのデプロイ
     - Azure Repos Git
     - プロジェクトのリポジトリを選択
     - ASP.NET Core を選択 ※ ASP.NET Core (.NET Framework) **ではない**
-    - 生成された azure-pipeline.yml を削除し、以下を貼り付ける。**以下の書き換えを行う**
+    - 生成された azure-pipeline.yml を削除し、以下の「YAMLパイプライン」を貼り付ける。**以下の書き換えを行う**
       - azureSubscription 内のカッコ内のIDは、ご自身のサブスクリプションのIDに書き換える
         - サブスクリプションIDはAzure portalのAzure Passサブスクリプションを表示して確認
       - WebAppName は、前の手順で作成したWebアプリの名前を指定。URLではなく～～.azurewebsites.netの～～の部分
@@ -90,9 +90,10 @@ Azure Web Apps のWebアプリへのデプロイ
     - 「There was a resource authorization issue: "The pipeline is not valid. Job Job: Step AzureRmWebAppDeployment input ConnectedServiceName references service connection Azure Pass - スポンサー プラン (ZZZZ) which could not be found」 というエラーが出たら、その右側の「Authorize resources」をクリックして右上の「Run new」をクリック、「Run」をクリック
     - 「This pipeline needs permission to access a resource before this run can continue」というエラーが出たら、「View」をクリックし、「Permit」をクリック。再度「Permit」をクリック。
 - Azure portal (portal.azure.com)での作業
-  - App Service の Webアプリに「参照」でアクセスする。pipelines_dotnet_coreという、先程とは別のWebが表示されている。
+  - App Service の Webアプリに「参照」でアクセスする。pipelines_dotnet_coreという、先程とは別のWebサイトが表示されている。
   ![](images/ss-2021-12-15-09-30-09.png)
 
+YAMLパイプライン:
 ```
 trigger:
 - master
