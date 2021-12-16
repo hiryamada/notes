@@ -383,10 +383,10 @@ Azure Artifactsの「ロール」
 
 ※RBACロールやAzure ADロールとは別のしくみである。
 
-- Raeder (リーダー、閲覧者)
+- Reader (リーダー、閲覧者)
   - パッケージの一覧表示、インストール、および復元が可能
 - Collaborator （コラボレーター）
-  - Raederの権限に加え、アップストリームソースからのパッケージを保存が可能
+  - Readerの権限に加え、アップストリームソースからのパッケージを保存が可能
 - Contributor（コントリビューター、共同作成者）
   - Collaboratorの権限に加え、パッケージのプッシュ、削除などが可能
 - Owner（オーナー、所有者）
@@ -515,4 +515,6 @@ npmの後に開発されたパッケージマネージャYarnの場合は、決�
 
 ## ラボ
 
-https://docs.microsoft.com/ja-jp/azure/devops/artifacts/get-started-nuget?view=azure-devops&tabs=windows
+Azure Artifacts によるパッケージ管理(40分)
+
+https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M09_Package_Management_with_Azure_Artifacts.html
