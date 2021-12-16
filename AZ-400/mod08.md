@@ -220,9 +220,17 @@ jobs:
 
 機密情報（たとえばデータベース接続のユーザー名、パスワードなど）は、ワークフロー（～.yml）や、GitHubリポジトリのファイル内には書き込まないようにしましょう。
 
-「暗号化されたシークレット」を使うと、機密情報をOrganization、リポジトリ、あるいはリポジトリの環境に保存できます。ワークフローからはシークレットを参照することができます。
+「暗号化されたシークレット」を使うと、機密情報をOrganization、リポジトリ、あるいはリポジトリの環境に保存できます。ワークフローからはシークレットを参照することができる。
 
 [ドキュメント](https://docs.github.com/ja/actions/reference/encrypted-secrets)
+
+## 参考: GitHub CLI
+
+ghコマンドを使用して、ローカルからGitHubのコントロールを行うことができる。
+
+https://cli.github.com/manual/
+
+[gh actionsコマンドで、GitHub Actionsのコントロールも可能。](https://cli.github.com/manual/gh_actions)
 
 ## ハンズオンラボ
 
@@ -231,7 +239,7 @@ jobs:
 ■ハンズオン1: GitHub Action を利用する
 
 - GitHubアカウントの準備
-  - 今回用のMicrosoftアカウントでGitHubアカウントがまだ作っていなければ、作成する。手順
+  - 今回用のMicrosoftアカウントでGitHubアカウントをまだ作っていなければ、作成する。手順
 - GitHubリポジトリの準備
   - https://github.com/new へ移動
   - Repository nameに適当なリポジトリ名を入れる
@@ -286,6 +294,8 @@ jobs:
   - 画面上部「参照」
   - Static Web Apps の Hello world! という画面が出ればデプロイ成功。
   - Your Azure Static Web App is live and waiting for your contentと表示される場合は、まだアクションの実行が終わっておらず、デフォルトのStatic Web Appsの画面が出ている状況。しばらく待ってリロードボタンを押す。
+
+※Blazorアプリの解説: https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/try
 
 ハンズオンラボ（オプション）:
 - (3)  [ラボ: DevOps Starter を使用した GitHub アクションの実装](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M08_Implementing_GitHub_Actions_by_using_DevOps_Starter.html)
