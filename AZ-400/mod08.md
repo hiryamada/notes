@@ -42,6 +42,7 @@ GitHubに組み込まれたCI/CDサービス。ワークフロー（ビルド、
 
 使い分けの例:
 
+
 - オープンソースプロジェクトの開発: GitHub Actions
 - 企業のプロプライエタリなソフトウェアの開発: Azure DevOps
 
@@ -58,7 +59,10 @@ GitHubに組み込まれたCI/CDサービス。ワークフロー（ビルド、
 
 - GitHub ActionsはGitHub専用だが、Azure Pipelinesは他のソース管理システムと連携して使用できる。
 - Azure Pipelinesは承認、ゲート、チェックをサポートしているが、GitHub Actionsにはそれらがない。
-- Azure Pipelinesでは、パイプラインの実行名（ビルド番号）をカスタマイズできる。GitHub Actionsではカスタマイズできない。
+  - ※[承認](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/approvals): [Teamsアプリから承認を行うことができる。](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops#approve-deployments-from-your-channel)
+  - ※[チェック](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass): 「事前に指定した営業時間内にのみステージを実行する」などのチェックを行う。
+  - ※[ゲート](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/release/approvals/?view=azure-devops)([解説](https://qiita.com/taminami/items/bd1ecd0e61166045ac7b)): ＜クラシック＞リリースを行うかどうかの判定を行う
+- Azure Pipelinesでは、[パイプラインの実行名（ビルド番号）をカスタマイズできる](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml)。GitHub Actionsではカスタマイズできない。
 - Azure Pipelinesを使用すると、ジョブ定義の一部の構造を省略できる。たとえば、ジョブが1つしかない場合は、ジョブを定義する必要はなく、そのステップを定義するだけで済む。GitHub Actionsには明示的な構成が必要であり、YAML構造を省略できない。 
 
 ■移行 または 統合
