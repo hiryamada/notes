@@ -136,5 +136,9 @@ Webアプリのテストの自動化の[事例](https://azure.microsoft.com/nl-n
 - こちらは（人への通知も含む）さまざまな外部サービスに対する連携の方法。
 - [ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/service-hooks/overview?view=azure-devops)
 
-### 実証: パイプラインを監視するサービス フックの設定
+## ラボ
+
+- ラボ11a: [YAML を使用したコードとしてのパイプラインの構築](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M11_Configuring_Pipelines_as_Code_with_YAML.html#%E6%BC%94%E7%BF%92-1-azure-devops-%E3%81%A7-yaml-%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6-cicd-%E3%83%91%E3%82%A4%E3%83%97%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%92%E3%82%B3%E3%83%BC%E3%83%89%E3%81%A8%E3%81%97%E3%81%A6%E6%A7%8B%E6%88%90%E3%81%99%E3%82%8B)
+- ラボ 11b: [機能テストの設定と実行](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M11_Setting_Up_and_Running_Functional_Tests.html)
+
 

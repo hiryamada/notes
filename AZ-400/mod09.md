@@ -515,6 +515,4 @@ npmの後に開発されたパッケージマネージャYarnの場合は、決�
 
 ## ラボ
 
-Azure Artifacts によるパッケージ管理(40分)
-
-https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M09_Package_Management_with_Azure_Artifacts.html
+ラボ9: [Azure Artifacts によるパッケージ管理(40分)](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M09_Package_Management_with_Azure_Artifacts.html)
