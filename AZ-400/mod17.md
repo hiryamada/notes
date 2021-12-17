@@ -131,4 +131,3 @@ Azure Monitor のログとメトリックはAPIを使用して取得できるの
 
 Azure を、サポートされている IT Service Management (ITSM) 製品またはサービスに接続できます。
 
-Azure Boards との統合

@@ -44,7 +44,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
 ## day 4 IaC, コンテナー仮想化
 
 - IaC
-  - [モジュール13](mod13.md) IaC: ARM/CLI/PwerShell/Automation
+  - [モジュール13](mod13.md) IaC: ARM/CLI/PowerShell/Automation
   - [モジュール14](mod14.md) IaC: Chef/Puppet/Ansible/Terraform
 - コンテナー仮想化
   - [モジュール15](mod15.md) Docker
