@@ -232,6 +232,7 @@ Azure Advanced Threat Protection、Azure ATPは、名前が変わり、現在Mic
   - Azure DevOpsプロジェクトに戻る
   - プロジェクトのPipelinesに移動
   - WhiteSourceBold-YAMLをクリック
+  - Run pipeline
   - Run
   - Jobが完了するのを待つ
 - 結果を確認する
