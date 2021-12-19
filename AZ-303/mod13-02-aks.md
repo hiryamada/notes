@@ -173,7 +173,7 @@ spec:
 
 ■kubectl
 
-Kubernetesクラスターを管理するコマンド。
+Kubernetesクラスターを管理するコマンド。「キューブシーティーエル」
 
 https://kubernetes.io/ja/docs/reference/kubectl/overview/
 

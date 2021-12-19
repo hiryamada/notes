@@ -29,7 +29,7 @@ Kubernetes は、コンテナー ベース アプリケーションとそれに�
 # Kubernetes 基本用語
 
 - [Kubernetesクラスター](https://kubernetes.io/ja/docs/reference/glossary/?all=true#term-cluster) - コンテナ化されたアプリケーションを実行するマシンの集合。「コントロールプレーン」と「ノード」で構成。
-- [kubectl](https://kubernetes.io/ja/docs/reference/glossary/?all=true#term-kubectl) - コマンドラインツール
+- [kubectl](https://kubernetes.io/ja/docs/reference/glossary/?all=true#term-kubectl) 「キューブシーティーエル」- コマンドラインツール
 
 - [Pod](https://kubernetes.io/ja/docs/concepts/workloads/pods/pod-overview/) - Kubernetesアプリケーションの基本的な実行単位、デプロイ単位
 - [Service](https://kubernetes.io/ja/docs/concepts/services-networking/service/) - Podの集まり。外部からは、個々のPodを意識せず、サービスに対してアクセスすることができる。例:「サムネイル作成サービス」＝「サムネイル作成を行うPodの集まり」

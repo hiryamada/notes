@@ -213,6 +213,8 @@ spec:
 kubectl get pods
 ```
 
+「キューブシーティーエル」
+
 ■Deployment
 
 通常、Podを直接デプロイする代わりに、Deploymentを使う場合が多い。
@@ -372,7 +374,7 @@ https://kubernetes.io/ja/docs/concepts/services-networking/ingress-controllers/
 
 ■CI/CDパイプラインからKubernetesへのデプロイ
 
-- ビルドエージェントでkubectlを使用する
+- ビルドエージェントでkubectl「キューブシーティーエル」を使用する
 - KubernetesManifestタスクを使用する
 
 ■タスクの例
@@ -424,7 +426,7 @@ Dockerfileに指定するベースイメージ（FROM）のバージョン（タ
 
 ### kubectl
 
-Kubernetesクラスターを管理するコマンド。
+Kubernetesクラスターを管理するコマンド。「キューブシーティーエル」
 
 https://kubernetes.io/ja/docs/reference/kubectl/overview/
 
