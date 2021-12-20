@@ -6,7 +6,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
 
 - ID の管理サービス
 - シングルサインオン機能を提供
-- オンプレミスのAzure ADと統合（同期）できる
+- オンプレミスのAD DS (Active Directory Domain Services)と統合（同期）できる
   - Azure AD Connect
 
 ■参考: Azure ADのデプロイガイド
@@ -55,7 +55,14 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/roles/permissions-refere
 - ライセンス管理者
   - ユーザーにライセンスを割り当てる/取り消す
 
+
+■テナント/ディレクトリ/サブスクリプション
+
+[→解説PDF](../../AZ-104/pdf/mod01/テナント.pdf)
+
 ■Azure AD DS (Domain Services)
+
+Azure上で、Active Directory ドメインコントローラを運用するためのマネージド・サービス。従来 Windows Server で運用していたドメイン コントローラーと完全な互換性がある。
 
 https://docs.microsoft.com/ja-jp/azure/active-directory-domain-services/overview
 
@@ -100,4 +107,14 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-a
 
 マイクロソフトのCISOが語る--なぜパスワードをなくそうとしているのか
 https://japan.zdnet.com/article/35172673/
-パスワードをなくすためには、MFAを導入する。
+
+■ハンズオン: Azure Active Directory Premium P2 無料試用版 のアクティブ化
+- Azure portalにアクセス https://portal.azure.com/ 
+- 画面左上メニューのボタン＞Azure Active Directory
+- 画面左の「ライセンス」
+- 「すべての製品」
+- 「＋試用/購入」
+- AZURE AD PREMIUM P2 の下の「無料試用版」を展開
+- 「アクティブ化」
+- Webブラウザで、ページを何度かリロードする
+- 「すべての製品」の「＋試用/購入」の下に、「Azure Active Directory Premium P2」が出てくればOK
