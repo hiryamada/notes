@@ -2,7 +2,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500
 
 # AZ-500
 
-- モジュール1
+- [モジュール1](mod01/mod01.md)
   - エンタープライズ ガバナンス
     - ロール
     - ポリシー
@@ -17,7 +17,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500
       - ラボ5
     - Azure AD Connect
       - ラボ6
-- モジュール2
+- [モジュール2](mod02/mod02.md)
   - 境界セキュリティ(VNet,DDoS, Firewall)
     - ラボ8
   - ネットワークセキュリティ(NSG, ASG, Endpoint, App GW, WAF, Front Door, UDR, ExpressRoute)
@@ -25,7 +25,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500
   - ホストセキュリティ
   - コンテナセキュリティ
     - ラボ9
-- モジュール3
+- [モジュール3](mod03/mod03.md)
   - Key Vault
     - ラボ10 Key Vault
   - アプリケーションセキュリティ
@@ -34,7 +34,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500
     - ラボ11
   - DBセキュリティ
     - ラボ12
-- モジュール4
+- [モジュール4](mod04/mod04.md)
   - Azure Monitor
   - Azure Security Center
   - Azure Sentinel
