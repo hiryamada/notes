@@ -4,6 +4,8 @@
 
 ラボ4の3, 4, 5を行います。
 
+[ラボの手順書](https://microsoftlearning.github.io/AZ-500JA-AzureSecurityTechnologies/)の「04 - MFA、条件付きアクセス、AAD ID 保護」を見ながら実施します。また、本ページの補足事項も合わせてご確認ください。
+
 演習1, 2は[ラボ4a](lab04a-mfa.md)で実施済みです。
 
 （まだ準備していない場合は）事前に[ラボのファイル](https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies/archive/master.zip)をダウンロードして展開しておきましょう。
