@@ -2,6 +2,25 @@
 
 https://docs.microsoft.com/ja-jp/azure/security/fundamentals/shared-responsibility
 
+■概要
+
+「お客様」が責任を持つべきセキュリティの範囲と、「Microsoft」が責任を持つべきセキュリティの範囲を定めたモデル。
+
+サービスの種類により、「お客様」または「Microsoft」が責任を持つ範囲が異なる。
+
+注意:「データ」「エンドポイント」「アカウント(ID)」「アクセス管理」については、常に「お客様」が責任を持つ範囲となる。
+
+具体的には:
+
+- 「データ」に適切なアクセス制限やバックアップを設定する
+- 「エンドポイント」（エンドユーザーが使用しているデバイス）の保護を行う
+- 「アカウント」（Azure ADのユーザー等）を適切に管理する
+- 「アクセス管理」（ユーザーへロールの割り当て等）を適切に管理する
+
+IaaSよりもPaaS、PaaSよりもSaaSのほうが、Microsoftの責任範囲が大きくなる（お客様の責任範囲が小さくなるため、セキュリティ対策の手間やコストが、より削減される）。
+
+■オンプレミスとクラウドにおける責任範囲の比較
+
 - オンプレミスのデータセンターでは、
   - お客様がスタック（物理インフラ、ソフトウェア、データ）全体を所有し、そのすべての責任を持つ
 - クラウドに移行することで、
@@ -75,7 +94,7 @@ https://docs.microsoft.com/ja-jp/azure/security/fundamentals/shared-responsibili
     - Physical datacenter
 
 
-■クラウドサービスの分類: IaaS, PaaS, SaaS (FaaS)
+■クラウドサービスの分類: IaaS, PaaS, SaaS
 
 https://docs.microsoft.com/ja-jp/azure/architecture/guide/technology-choices/compute-decision-tree#understand-the-hosting-models
 
@@ -83,8 +102,16 @@ https://docs.microsoft.com/ja-jp/azure/architecture/guide/technology-choices/com
   - Azure VM
 - PaaS
   - Azure App Service
+- SaaS
+  - [Office 365](https://www.microsoft.com/ja-jp/microsoft-365/enterprise/compare-office-365-plans) / [Microsoft 365](https://www.microsoft.com/ja-jp/microsoft-365/compare-microsoft-365-enterprise-plans)
 - FaaS
   - Azure Functions
+- IDaaS
+  - Azure AD
+- DRaaS
+  - Azure Site Recovery
+- Container as a Service
+  - Azure Container Instances
 
 ■IaaS
 
