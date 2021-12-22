@@ -51,7 +51,7 @@
 - Azure Database Auditing
 - データ検出と分類
 - 脆弱性評価
-- Azure Defender for SQL (Security Cetner と統合)
+- Azure Defender for SQL 
 - 動的データ マスク
 - Transparent Data Encryption (TDE)
 - Always Encrypted

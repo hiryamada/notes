@@ -25,7 +25,7 @@ https://docs.microsoft.com/ja-jp/azure/security/fundamentals/threat-detection#th
 
 > 研究員も、大手クラウド サービス プロバイダー間で共有されている脅威インテリジェンス情報を入手しているほか、サード パーティから脅威インテリジェンス フィードをサブスクライブしています。
 
-> Azure Security Center はこの情報を基に、既知の有害因子から生じる脅威について利用者に警告を発することができます。
+> Microsoft Defender for Cloud はこの情報を基に、既知の有害因子から生じる脅威について利用者に警告を発することができます。
 
 https://www.microsoft.com/en-us/insidetrack/microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats
 
@@ -56,11 +56,11 @@ https://docs.microsoft.com/ja-jp/azure/firewall/threat-intel
 
 > この IP アドレスとドメインのソースは、Microsoft の脅威インテリジェンス フィードです。
 
-■Microsoft Defender for Cloud（旧 Azure Security Center）での「脅威インテリジェンス」
+■Microsoft Defender for Cloud での「脅威インテリジェンス」
 
 https://docs.microsoft.com/ja-jp/azure/security-center/threat-intelligence-reports
 
-Defender for Cloud は、検出された脅威に関する情報を含む脅威インテリジェンス レポートを提供します。 レポートには次のような情報が含まれます。
+Microsoft Defender for Cloud は、検出された脅威に関する情報を含む脅威インテリジェンス レポートを提供します。 レポートには次のような情報が含まれます。
 
 - 攻撃者の ID または所属団体 (この情報が利用可能な場合)
 - 攻撃者の目的

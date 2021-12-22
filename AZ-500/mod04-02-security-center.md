@@ -1,16 +1,16 @@
-# Azure Security Center
+# Microsoft Defender for Cloud
 
 統合インフラストラクチャ セキュリティ管理システム
 
 クラウド内とオンプレミス上のハイブリッド ワークロード全体を保護する高度な脅威防止機能があります。
 
-[製品ページ](https://azure.microsoft.com/ja-jp/services/security-center/)
+[製品ページ](https://azure.microsoft.com/ja-jp/services/defender-for-cloud/)
 
-[価格](https://azure.microsoft.com/ja-jp/pricing/details/security-center/)
+[価格](https://azure.microsoft.com/ja-jp/pricing/details/defender-for-cloud/)
 
-[ドキュメント](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduction)
+[ドキュメント](https://docs.microsoft.com/ja-jp/azure/defender-for-cloud/defender-for-cloud-introduction)
 
-[Azure Security Center Labs](https://github.com/Azure/Azure-Security-Center/tree/master/Labs)
+[Microsoft Defender for Cloud Labs](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Labs)
 
 Microsoft Learn: [Azure Security Center を使用してセキュリティ上の脅威を解決する](https://docs.microsoft.com/ja-jp/learn/modules/resolve-threats-with-azure-security-center/)
 
@@ -18,14 +18,13 @@ Microsoft Learn: [Azure Security Center を使用してセキュリティ上の�
 
 **これは Azure Security Center の Standard 価格レベル オプションに代わるものです**。
 
-
 [2020/9にリリースされた](https://docs.microsoft.com/ja-jp/azure/security-center/release-notes#azure-defender-released)。
 
 Azure Defender は、Azure とハイブリッド ワークロードを高度かつインテリジェントに保護するために Security Center 内に統合された、クラウド ワークロード保護プラットフォーム (CWPP) です。 
 
 Azure Defenderは、[複数の「Defender プラン」から構成されます](https://docs.microsoft.com/ja-jp/azure/security-center/azure-defender#what-resource-types-can-azure-defender-secure)。
 
-Azure Security Center の 価格と設定 の領域から Azure Defender を有効にすると、次の Defender プランが同時にすべて有効になります。
+Microsoft Defender for Cloud の 価格と設定 の領域から Azure Defender を有効にすると、次の Defender プランが同時にすべて有効になります。
 
 - [Azure Defender for servers](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-servers-introduction) - [JIT VMアクセス](https://docs.microsoft.com/ja-jp/azure/security-center/just-in-time-explained)などを含む。
 - [Azure Defender for App Service](https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-app-service-introduction)

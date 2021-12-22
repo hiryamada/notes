@@ -167,15 +167,15 @@ IoT一般
   - ラボ:
     - 17 Azure IoT Hub でのメトリックとログの構成
     - ~~18 接続不具合の監視とデバッグ~~
-- M10：Azure Security Center および IoT のセキュリティに関する考慮事項
+- M10：Microsoft Defender for IoT および IoT のセキュリティに関する考慮事項
   - レッスン:
     - IoT ソリューション向けのセキュリティの基礎
-    - IoT 向け Azure Security Center の概要
-    - IoT エージェント向け Azure Security Center での保護の強化
+    - Microsoft Defender for IoT の概要
+    - IoT エージェント向け Microsoft Defender for IoT での保護の強化
   - サービス:
-    - [Azure Defender for IoT](defender-for-iot.md)
+    - [Microsoft Defender for IoT](defender-for-iot.md)
   - ラボ:
-    - 19 IoT 向け Azure Security Center の実装
+    - 19 Microsoft Defender for IoT の実装
 - M11：IoT Central を使用して IoT ソリューションを構築する
   - レッスン:
     - IoT Central の概要

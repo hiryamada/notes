@@ -1,4 +1,4 @@
-# Azure Security Center
+# Microsoft Defender for Cloud
 
 https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduction
 
@@ -6,14 +6,14 @@ https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduct
 - Azure 内かどうかにかかわらずクラウド内とオンプレミス上のハイブリッド ワークロード全体を保護
 - クラウド セキュリティ態勢管理 (CSPM: Cloud Security Posture Management クラウド セキュリティ ポスチュア マネジメント)
 
-2016/7/28 Azure Security Center 一般提供開始
+2016/7/28 Microsoft Defender for Cloud 一般提供開始
 https://azure.microsoft.com/ja-jp/updates/generally-available-azure-security-center/
 
 [PDFまとめ](../AZ-500/pdf/mod4/Azure%20Security%20Center%20まとめ.pdf)
 
 
-■ハンズオン: Azure Security Centerの使用を開始する
-- Azure Security Centerを表示する
+■ハンズオン: Microsoft Defender for Cloudの使用を開始する
+- Microsoft Defender for Cloudを表示する
 - 画面下部の「スキップ」をクリックする
 - 「セキュア スコア」「規制コンプライアンス」「分析情報」などに「表示するデータはありません」と表示される
 - 「Azure Defender」には「Azure Defender による保護なし」と表示される。
@@ -26,7 +26,7 @@ https://azure.microsoft.com/ja-jp/services/azure-defender/#overview
 
 クラウド ワークロード保護 (CWP: Cloud Workload Protection)
 
-Azure Security Centerと統合されている。
+Microsoft Defender for Cloudと統合されている。
 
 セキュリティセンターを使い始める際に、Azure Defenderを有効にする（「アップグレード」）または、無効にする（「スキップ」）することができる。
 
@@ -88,7 +88,7 @@ https://docs.microsoft.com/ja-jp/azure/security-center/security-center-enable-da
 
 ■ハンズオン: Azure Defenderの使用を開始する
 
-- Azure Security Centerを表示する
+- Microsoft Defender for Cloudを表示する
 - 画面左の「はじめに」をクリック
 - 画面下部の「アップグレード」をクリックする。
 - 「エージェントのインストール」をクリックする（Log Analyticsエージェントが、選択されたサブスクリプションのすべてのVMにインストールされる）

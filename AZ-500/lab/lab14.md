@@ -2,22 +2,22 @@
 
 想定時間: 30min
 
-Azure Security Center （統合的なセキュリティ監視、セキュリティアラート）について学びます。
+Microsoft Defender for Cloud （統合的なセキュリティ監視、セキュリティアラート）について学びます。
 
 
 
 ## ラボの重要ポイント
 
 - タスク1
-  - Security Centerの「アップグレード」を実行します。
-    - Security Centerは無償の製品です。[クラウドとオンプレミスのセキュリティを評価・強化します。](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduction)
+  - Microsoft Defender for Cloudの「アップグレード」を実行します。
+    - Microsoft Defender for Cloudは無償の製品です。[クラウドとオンプレミスのセキュリティを評価・強化します。](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduction)
     - Azure Defender は、[高度でインテリジェントな保護を実現します](https://docs.microsoft.com/ja-jp/azure/security-center/azure-defender)。
       - Azure Defender には、「for servers」「for App Service」などの「プラン」があります。
-    - Security CenterにてAzure Defenderを有効化（アップグレード）することができます。30 日間の無料試用版が利用できます。
-    - Security CenterやAzure Defenderの機能をターゲットに対して有効化し、監視対象とすることを「オンボードする」(Onboarding your X into Security Center / on-board Security Center)といいます。例：「[AWS アカウントを Security Center にオンボードする](https://docs.microsoft.com/ja-jp/azure/security-center/quickstart-onboard-aws)」
-  - Azure VMに、Log Analyticsエージェントがインストールされます。[Security Center では、Log Analyticsエージェントを使用して、必要なデータを収集します](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-enable-data-collection#how-does-security-center-collect-data)。
+    - Microsoft Defender for CloudにてAzure Defenderを有効化（アップグレード）することができます。30 日間の無料試用版が利用できます。
+    - Microsoft Defender for CloudやAzure Defenderの機能をターゲットに対して有効化し、監視対象とすることを「オンボードする」(Onboarding your X into Microsoft Defender for Cloud / on-board Microsoft Defender for Cloud)といいます。例：「[AWS アカウントを Microsoft Defender for Cloud にオンボードする](https://docs.microsoft.com/ja-jp/azure/security-center/quickstart-onboard-aws)」
+  - Azure VMに、Log Analyticsエージェントがインストールされます。[Microsoft Defender for Cloud では、Log Analyticsエージェントを使用して、必要なデータを収集します](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-enable-data-collection#how-does-security-center-collect-data)。
 - タスク2
-  - Security Center の[推奨事項](https://docs.microsoft.com/ja-jp/azure/security-center/recommendations-reference)を実装します。
+  - Microsoft Defender for Cloud の[推奨事項](https://docs.microsoft.com/ja-jp/azure/security-center/recommendations-reference)を実装します。
     - [Endpoint Protection](https://www.microsoft.com/ja-jp/microsoft-365/security/endpoint-defender)を有効にします
       - [Microsoft Antimalware](https://docs.microsoft.com/ja-jp/azure/security/fundamentals/antimalware)をインストールします
 - タスク3

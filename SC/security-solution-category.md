@@ -16,7 +16,7 @@ https://docs.microsoft.com/ja-jp/learn/modules/describe-security-capabilities-of
 
 [posture（ポスチャー）: 姿勢、身のこなし、態勢、心構え、態度、視点、戦力・軍事力、ポーズを取る](https://ejje.weblio.jp/content/posture)
 
-対応製品: [Azure Defender for Cloud (旧: Azure Security Center）](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
+対応製品: [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 https://atmarkit.itmedia.co.jp/ait/articles/2011/13/news002.html
 
@@ -36,7 +36,7 @@ https://www.fireeye.jp/products/cloudvisory/cloud-security-posture-management-an
 
 クラウドワークロード保護プラットフォーム
 
-対応製品: [Azure Defender for Cloud (旧: Azure Security Center）](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
+対応製品: [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 https://www.fireeye.jp/products/cloudvisory/cloud-security-posture-management-and-workload-protection.html
 

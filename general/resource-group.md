@@ -6,7 +6,7 @@ cloud-shell-storage-southeastasia
 ```
 
 
-■Azure Security Center
+■Microsoft Defender for Cloud
 https://docs.microsoft.com/ja-jp/azure/security-center/security-center-enable-data-collection
 
 

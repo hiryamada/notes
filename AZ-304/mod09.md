@@ -11,7 +11,7 @@ Azure Monitor ... クラウドインフラのモニタリング
 - [Azure Monitor](mod09-02-azure-monitor.md)
 - [Log Analytics](mod09-03-log-analytics.md)
 - [Application Insights](mod09-04-application-insights.md)
-- [Azure Security Center](mod09-05-security-center.md) 2016/7～
+- [Microsoft Defender for Cloud](mod09-05-security-center.md) 2016/7～
 - [Azure Sentinel](mod09-06-azure-sentinel.md) 2019/9～
 
 

@@ -62,12 +62,12 @@ ACRは「プライベートなレジストリ」である。つまり、使用�
   - レジストリに対する完全なアクセス権がある
   - `docker login レジストリ名.azurecr.io` に続き、ユーザー名とパスワードを入力
 
-■脆弱性スキャン(Azure Security Centerとの統合)
+■脆弱性スキャン(Microsoft Defender for Cloudとの統合)
 
 https://azure.microsoft.com/ja-jp/updates/vulnerability-scanning-for-images-in-azure-container-registry-is-now-generally-available/
 
-https://docs.microsoft.com/ja-jp/azure/security-center/defender-for-container-registries-introduction
+https://docs.microsoft.com/ja-jp/azure/defender-for-cloud/defender-for-container-registries-introduction
 
-- ACR にイメージをプッシュすると、Azure Security Center によってそのイメージが自動的にスキャンされ、パッケージまたはファイルで定義されている依存関係の既知の脆弱性が確認される。
-- スキャンが完了すると(通常2分以内)、検出された各脆弱性の詳細およびセキュリティの分類と共に、問題を修正して脆弱な攻撃面を保護する方法についてのガイダンスが Azure Security Center によって提供される。
+- ACR にイメージをプッシュすると、Microsoft Defender for container registries によってそのイメージが自動的にスキャンされ、パッケージまたはファイルで定義されている依存関係の既知の脆弱性が確認される。
+- スキャンが完了すると(通常2分以内)、検出された各脆弱性の詳細およびセキュリティの分類と共に、問題を修正して脆弱な攻撃面を保護する方法についてのガイダンスが Microsoft Defender for container registries によって提供される。
 - この機能は、情報セキュリティの主要プロバイダーである Qualys によって提供されている。(Qualysスキャナー)

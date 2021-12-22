@@ -4,7 +4,7 @@
 - ソフトウェア構成解析 (SCA)とは。
 - CI/CDパイプラインのセキュリティ
 - Secure DevOps Kit for Azure (AzSK)とは。
-- Azure Security Centerとは。
+- Microsoft Defender for Cloudとは。
 - Azure Blueprintsとは。
 
 ## パイプラインでのセキュリティ
@@ -127,7 +127,7 @@ CI/CDパイプライン自体のセキュリティ対策。
 - ロールを適切にユーザーに割り当てる
   - 最小特権の原則
 - 生産モニタリング（インシデントの発見）
-  - Azure Security Centerについては後述。
+  - Microsoft Defender for Cloudについては後述。
 
 ※以下は（CI/CDパイプラインのセキュリティ実装に含めて説明されているが）パイプラインセキュリティではなく、開発中のアプリケーションに対するセキュリティテストと思われる。
 
@@ -154,11 +154,11 @@ Microsoftの1部門であるCore Services Engineering & Operations (CSEO)と、�
 
 ※注意：2021年中に[廃止予定](https://azsk.azurewebsites.net/ReleaseNotes/AzSKSunsetNotice.html)となっている。AzSKの利用者に対して、後継である[AzTS](https://github.com/azsk/AzTS-docs)への移行が推奨されている。
 
-## Azure Security Center
+## Microsoft Defender for Cloud
 
-### Azure Security Center
+### Microsoft Defender for Cloud
 
-[PDFまとめ資料: Azure Security Center](../AZ-500/pdf/mod4/Azure%20Security%20Center%20まとめ.pdf)
+[PDFまとめ資料: Microsoft Defender for Cloud](../AZ-500/pdf/mod4/Azure%20Security%20Center%20まとめ.pdf)
 
 ### Azure Policy
 

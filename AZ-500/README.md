@@ -36,7 +36,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500
     - ラボ12
 - [モジュール4](mod04/mod04.md)
   - Azure Monitor
-  - Azure Security Center
+  - Microsoft Defender for Cloud
   - Azure Sentinel
     - ラボ13/14/15
 

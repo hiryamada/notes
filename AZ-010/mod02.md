@@ -75,7 +75,7 @@ https://docs.microsoft.com/ja-jp/azure/advisor/advisor-overview
 
 たとえば、使用率が極端に低い仮想マシンがある場合、「コスト」タブで、その仮想マシンのシャットダウンやサイズ変更が提案される。
 
-■Azure Security Center
+■Microsoft Defender for Cloud
 
 https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduction
 

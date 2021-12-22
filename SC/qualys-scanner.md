@@ -7,7 +7,7 @@ https://docs.microsoft.com/ja-jp/azure/defender-for-cloud/deploy-vulnerability-a
 
 https://qiita.com/hisnakad/items/e8cb3687b964d71e93b9
 
-Azure Defender for Cloud (Azure Security Center) には、マシンの脆弱性スキャナ（Qualys脆弱性スキャナー）が組み込まれている。
+Azure Defender for Cloud には、マシンの脆弱性スキャナ（Qualys脆弱性スキャナー）が組み込まれている。
 
 Qualysライセンスやアカウントは必要ない。
 

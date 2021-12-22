@@ -63,7 +63,7 @@ https://news.microsoft.com/stories/microsoft-datacenter-tour/
 
 ■セキュリティ
 
-- [Azure Security Center](mod15-03-azure-security-center.md)
+- [Microsoft Defender for Cloud](mod15-03-azure-security-center.md)
 
 ■コスト
 

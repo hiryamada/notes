@@ -23,15 +23,15 @@ https://microsoft.github.io/AzureTipsAndTricks/blog/tip241.html
 
 [Become an Azure Sentinel Ninja: The complete level 400 training](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310)
 
-# Azure Security Center と Azure Centinelの関係
+# Microsoft Defender for Cloud と Azure Sentinelの関係
 
 https://azure.microsoft.com/ja-jp/blog/securing-the-hybrid-cloud-with-azure-security-center-and-azure-sentinel/
 
 Azure Sentinel は、脅威からの保護に関する情報を多数のデータ ソースから収集し、組織全体を把握できるようにします。Security Center はそのソースの 1 つです。
 
-Azure Security Center は、わずか数クリックで Azure Sentinel に接続できます。
+Microsoft Defender for Cloud は、わずか数クリックで Azure Sentinel に接続できます。
 
-Azure Sentinel から Security Center のデータにアクセスできるようになったら、ファイアウォール、ユーザー、デバイスなどの他のソースと組み合わせて、高度なクエリや人工知能によるプロアクティブな捜索や脅威の軽減が可能になります。
+Azure Sentinel から Microsoft Defender for Cloud のデータにアクセスできるようになったら、ファイアウォール、ユーザー、デバイスなどの他のソースと組み合わせて、高度なクエリや人工知能によるプロアクティブな捜索や脅威の軽減が可能になります。
 
 # Azure Monitor Log Analyticsとの関係
 
@@ -60,7 +60,7 @@ Azure Sentinel は、最初の 31 日間は追加費用なしで Azure Monitor L
 Sentinel
 - ワークスペース
 - データソース
-  - Security Center
+  - Microsoft Defender for Cloud
   - Aaure AD
   - Office 365
   - AWS

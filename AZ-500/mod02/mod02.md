@@ -35,7 +35,7 @@
 - 仮想マシンの更新
 - ディスクの暗号化
 - Windows Defender
-- Azure Security Center の推奨事項
+- Microsoft Defender for Cloud の推奨事項
 - Azure セキュリティ ベンチマークによる Azure ワークロードのセキュリティ保護
 
 # コンテナー セキュリティ

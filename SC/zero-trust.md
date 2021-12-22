@@ -32,9 +32,9 @@ https://www.slideshare.net/kazukitakai/powershell-50-jea-just-enough-administrat
 
 ■Just-In-Time (JIT)
 
-→ Azure Security Center の JIT VMアクセス
+→ Microsoft Defender for Cloud の JIT VMアクセス
 
-■Azure Security Center の JIT VMアクセス
+■Microsoft Defender for Cloud の JIT VMアクセス
 
 2017/9/14 JIT VM アクセス プレビュー
 https://azure.microsoft.com/ja-jp/updates/just-in-time-virtual-machine-access/

@@ -576,7 +576,7 @@ AWSとのインテグレーション:
 / [Azureポータルから、AWS上のEC2インスタンスを作成する](https://dev.classmethod.jp/articles/azure-automation-runbook-using-aws-ec2-instance/)
 / [AzCopy を使用して Amazon S3 から Azure Storage にデータをコピーする](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-s3)
 / [AWSのMFA認証にMicrosoft Authenticatorを使用する](https://www.google.com/search?q=microsoft+authenticator+aws)
-/ [Azure Security Center を AWS に接続してワークロードを保護する](https://docs.microsoft.com/ja-jp/azure/security-center/quickstart-onboard-aws) 
+/ [Microsoft Defender for Cloud を AWS に接続してワークロードを保護する](https://docs.microsoft.com/ja-jp/azure/defender-for-cloud/quickstart-onboard-aws) 
 / [Azure Sentinel を AWS CloudTrail に接続して管理イベントをストリーミングする](https://docs.microsoft.com/ja-jp/azure/sentinel/connect-aws)
 / [Azure Arc enabled servers(AWSやオンプレなどの環境で稼働するVM・SQL Server等をAzureから管理)](https://www.publickey1.jp/blog/20/windowslinuxazureazure_arc_enabled_serversignite_2020.html)
 / [Azure Arc enabled data services(AWSやオンプレなどの環境で稼働するSQL Managed InstanceやPostgreSQLをAzureから管理)](https://www.publickey1.jp/blog/20/azure_sqlawsazure_arc_enabled_data_servicesignite_2020.html)
