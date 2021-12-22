@@ -50,6 +50,18 @@ Azure Passサブスクリプションの入手は、1つのMicrosoftアカウン
 
 ## トラブルシューティング
 
+エラーメッセージ「**Azure Pass Sponsorship Associated Account** - You already have an active Azure Pass Sponsorship associated with this account. 」
+
+![](images/ss-2021-12-22-17-24-30.png)
+
+- 原因:
+  - 以前、Azure Passサブスクリプションをすでに関連付けたことがある Microsoftアカウントを使用しています。
+  - 1つのMicrosoftアカウントには、1つだけしか、Azure Passサブスクリプションを関連付けることができません。
+- 対応:
+  - 画面右上の「SIGN OUT」をクリックしてサインアウトします。
+  - 今回のトレーニング用に、新しいMicrosoftアカウントを作ります。
+  - このページの手順を再度実行してください。途中、新しいMicrosoftアカウントでサインインしてください。
+
 エラーメッセージ「Try again later - Sorry there's something templrarily wrong with this site.」
 
 - 原因：
@@ -61,7 +73,7 @@ Azure Passサブスクリプションの入手は、1つのMicrosoftアカウン
   - 作り直したアカウントで、再度、Azure Pass サブスクリプションの入手を行ってください。
 
 エラーメッセージ「This promo code has already been redeemed by another user. Please contact your Microsoft representative for a new Azure Pass promo code.」
-
+![](images/ss-2021-12-22-17-44-25.png)
 - 原因：
   - このPromo Codeはすでに使用済みとなっていて、使用できません。
   - 新しいPromo Codeを作るところからやり直す必要があります。
@@ -71,3 +83,11 @@ Azure Passサブスクリプションの入手は、1つのMicrosoftアカウン
   - 作り直したアカウントで、[ラボ環境 - Learn on Demand LMS (LODS)](lods.md)にサイン インし、ラボを起動して、Promo Codeを再取得してください
   - 作り直したアカウントで、Azure Pass サブスクリプションの有効化を行ってください。
 
+エラーメッセージ「Promo code is invalid.」
+![](images/ss-2021-12-22-17-45-44.png)
+- 原因:
+  - Promo Codeの入力に誤りがあります
+  - 欠けている、または、余計な文字が追加されている
+- 対処:
+  - Promo Codeを正確に入力してください。余分な空白記号などが付かないようにしてください。
+  - Promo Codeは18文字で、Qから始まる、大文字または数字のコードです。

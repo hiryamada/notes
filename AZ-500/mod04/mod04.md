@@ -6,8 +6,8 @@
 
 # Microsoft Defender for Cloud
 
-[まとめ資料](../pdf/mod4/Azure%20Security%20Center%20まとめ.pdf)
+[まとめ資料](../pdf/mod4/Microsoft%20Defender%20for%20Cloud%20まとめ.pdf)
 
-# Azure Sentinel
+# Microsoft Sentinel
 
-[まとめ資料](../pdf/mod4/Azure%20Sentinel%20まとめ.pdf)
+[まとめ資料](../pdf/mod4/Microsoft%20Sentinel%20まとめ.pdf)
