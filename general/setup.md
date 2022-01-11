@@ -1,0 +1,18 @@
+- Azure AD
+  - Azure ADのP2試用版を有効化
+  - Azure ADで昇格
+  - MFAを有効化
+- Azure
+  - Azure Passクレジットを確認する
+  - Cloud Shellを起動
+  - Key Vaultを作る
+  - リソースグループを作る
+  - VNet
+    - Azure Bastionを作る
+  - 演習用のVMを作る
+  - Network Watcherを起動する
+  - Microsoft Defender for Cloudを有効化する
+- Microsoftアカウント
+- GitHubアカウントを作る
+- 講義ノートへのリンクを作る
+- リソースプロバイダーの登録

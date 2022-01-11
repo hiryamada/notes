@@ -73,7 +73,7 @@ Gitの弱点とは。
   - [第1話](https://next.rikunabi.com/journal/20160526_t12_iq/)
   - [書籍「改訂2版 わかばちゃんと学ぶ Git使い方入門」](https://www.amazon.co.jp/%E6%94%B9%E8%A8%822%E7%89%88-%E3%82%8F%E3%81%8B%E3%81%B0%E3%81%A1%E3%82%83%E3%82%93%E3%81%A8%E5%AD%A6%E3%81%B6-Git%E4%BD%BF%E3%81%84%E6%96%B9%E5%85%A5%E9%96%80%E3%80%88GitHub%E3%80%81SourceTree%E3%80%81%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E6%93%8D%E4%BD%9C%E5%AF%BE%E5%BF%9C%E3%80%89-%E6%B9%8A%E5%B7%9D-%E3%81%82%E3%81%84/dp/4863543433)
 - [Git をはじめからていねいに](https://github.com/Shinpeim/introduction-to-git)
-
+- [Gitスタイルガイド](https://github.com/objectx/git-style-guide)
 
 ■Gitの入門資料へのリンク集
 - [Gitを学び直したい人に見て欲しい。遊んで学べる、無料のGit学習サービス5選！](https://omuriceman.hatenablog.com/entry/enjoy-git)

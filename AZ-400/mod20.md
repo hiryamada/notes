@@ -24,6 +24,16 @@
 
 利用するソフトウェアの各ライセンスを確認し、それを遵守することが重要。
 
+[TLDRLegal](https://tldrlegal.com/) - ソフトウェアのライセンスの概要、Can, Cannot, Mustをわかりやすく説明。
+
+[FOSSA](https://www.hitachi-solutions.co.jp/fossa/) - OSSライセンス管理ツール
+
+プロジェクトで使用しているライブラリのライセンスの一覧を生成するツール:
+
+- [LicensePlist](https://medium.com/swift-column/license-plist-c0363a008c67) - iOS/Androidアプリ用
+- [Nuget License Utility](https://github.com/tomchavakis/nuget-license) - .NETアプリ用
+- [licensee](https://backport.net/blog/2021/12/18/licensee/) - Androidアプリ向け。依存関係グラフに含まれる各ライブラリのライセンスが期待通りのものかどうかを検証してくれるGradleプラグイン
+
 ■オープンソースとクローズドソース
 
 
@@ -124,11 +134,22 @@ SonarSource社による情報:
 
 ### GitHub Dependabot アラートとセキュリティ更新プログラム
 
-脆弱性があるライブラリをプロジェクトで使用している場合、自動的にプルリクエストを作って知らせてくれるツール。
+脆弱性があるライブラリをプロジェクトで使用している場合、自動的に通知したり、プルリクエストを作って知らせてくれたりするツール。
 
-使用条件はページ下部に記載されている。（GitHubでホスティングされているオープンソースであること等）
+[対応するパッケージ管理ツール](https://docs.github.com/ja/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#supported-package-ecosystems)
+
+- [Dependabot アラート](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-alerts-for-vulnerable-dependencies)
+  - 脆弱性のある依存関係を検出すると通知（アラート）を作成。
+  - リポジトリの通知設定に従って通知を行う
+- [Dependabot セキュリティアップデート](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-dependabot-security-updates)
+  - 脆弱性のある依存関係を修正するプルリクエストを自動生成
+- [Dependabot バージョンアップデート](https://docs.github.com/ja/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates)
+  - 古い依存関係を最新バージョンに更新するプルリクエストを発行
+  - （脆弱性の有無に関係なく、古いバージョンの依存関係を発見して最新化）
 
 [Dependabot](https://dependabot.com/)
+
+使用条件はページ下部に記載されている。（GitHubでホスティングされているオープンソースであること等）
 
 [Dependabotを導入してみた](https://dev.classmethod.jp/articles/dependabot-101/)
 

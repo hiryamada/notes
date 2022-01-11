@@ -10,7 +10,10 @@
     - プルリクエストのマージ記録
     - その他の（プロジェクト内部の重要な変更点など）
 - 多くの場合 CHANGELOG.md というファイル名で、リポジトリのトップに置かれる
-- サンプル[1](https://github.com/rails/rails/blob/main/activerecord/CHANGELOG.md), [2](https://github.com/git-chglog/git-chglog/blob/master/CHANGELOG.md)
+- サンプル
+  - [1](https://github.com/rails/rails/blob/main/activerecord/CHANGELOG.md)
+  - [2](https://github.com/git-chglog/git-chglog/blob/master/CHANGELOG.md)
+    - [※Chore（チョーア）：雑用](https://ejje.weblio.jp/content/chore)
 - [良いChangeLog、良くないChangeLog](https://efcl.info/2015/06/18/good-changelog/)
 
 ## ジェネレータ

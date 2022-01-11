@@ -57,7 +57,7 @@ https://weblogs.asp.net/scottgu/announcing-the-new-azure-app-service
 https://azure.microsoft.com/ja-jp/blog/a-new-way-to-send-custom-metrics-to-azure-monitor/
 
 - Azure portal上では「タイプ」を「Standard」として作成
-  - （従来のLogic Appsリソースは「消費」として作成。ドキュメント状は「従量課金」）
+  - （従来のLogic Appsリソースは「消費」として作成。ドキュメント上は「従量課金」とも）
 - [シングルテナント](https://docs.microsoft.com/ja-jp/azure/logic-apps/single-tenant-overview-compare)
   - （従来のLogic Appsは「マルチテナント」と呼ばれる）
 - [1つのロジックアプリ上に複数の「ワークフロー」を含めることができる](https://docs.microsoft.com/ja-jp/azure/logic-apps/single-tenant-overview-compare#stateful-and-stateless-workflows)
