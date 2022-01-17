@@ -22,6 +22,6 @@ https://docs.microsoft.com/ja-jp/azure/architecture/framework/cost/optimize-chec
 - 自動スケーリングを行う
   - VMスケールセット
   - App Serviceプラン
-- [適切なストレージ層（ホット、クール、アーカイブ）を選択する](mod07-01-blob-access-tiers.md)
+- [適切なストレージ層（ホット、クール、アーカイブ）を選択する()](mod07-01-blob-access-tiers.md)
 - [適切なデータストアを選択する](mod08-01-data-platform.md)
 - [Azure CDN](https://docs.microsoft.com/ja-jp/azure/cdn/cdn-overview)などのグローバルキャッシュを使用して、オリジンサーバーの負荷を削減する

@@ -10,13 +10,13 @@
 
 ■対応する資格
 
-[Microsoft Certified: Azure Solutions Architect Expert](https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/)
+[Microsoft Certified: Azure Solutions Architect Expert](https://docs.microsoft.com/ja-jp/learn/certifications/azure-solutions-architect/)
 
 認定条件: 以下のいずれか
 
-- Microsoft Certified: Azure Administrator Associate(AZ-104) + AZ-305
-- Exam AZ-303 (2022/3/31 廃止) と Exam AZ-304 (2022/3/31 廃止)
-- AZ-303 (2022/3/31 廃止) と Exam AZ-305
+- [試験 AZ-303](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-303) (2022/3/31 廃止) と [試験 AZ-304](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-304) (2022/3/31 廃止)
+- [試験 AZ-303](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-303) (2022/3/31 廃止) と [試験 AZ-305](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-305)
+- [Microsoft Certified: Azure Administrator Associate(AZ-104)](https://docs.microsoft.com/ja-jp/learn/certifications/azure-administrator/) + [試験 AZ-305](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-305)
 
 ■モジュール: 
 

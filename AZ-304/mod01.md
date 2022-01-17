@@ -23,6 +23,7 @@
     - [Docker の日本語ドキュメント](https://docs.docker.jp/get-started/index.html)
     - [Docker コンテナーの概要](https://docs.microsoft.com/ja-jp/learn/modules/intro-to-docker-containers/)
     - [Docker を使用してコンテナー化された Web アプリケーションを構築する](https://docs.microsoft.com/ja-jp/learn/modules/intro-to-containers/)
+    - [入門 Docker](https://y-ohgi.com/introduction-docker/) - DMM.comの社内勉強会に使用された資料の一部が公開されている
   - Kubernetes
     - [Kubernetesの日本語ドキュメント](https://kubernetes.io/ja/docs/concepts/overview/what-is-kubernetes/)
     - [Azure での Kubernetes 入門](https://docs.microsoft.com/ja-jp/learn/paths/intro-to-kubernetes-on-azure/)
