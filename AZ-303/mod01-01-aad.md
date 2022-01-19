@@ -20,7 +20,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
   - ```
     Azure ADテナント ... 組織（会社）のユーザーID（社員）を管理
     ├ Azure サブスクリプション
-    ├ 365 サブスクリプション
+    ├ Microsoft 365 サブスクリプション
     └ Dynamics 365 サブスクリプション
     ```
   - Windows 365（クラウドPC）でもAzure ADが利用される
@@ -108,8 +108,6 @@ https://www.microsoft.com/ja-jp/security/business/identity-access-management/azu
 - Azure AD アクティビティレポート等のデータ保存期間: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 # Azure ADの概念
-
-[まとめPDF](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod01/%E3%83%86%E3%83%8A%E3%83%B3%E3%83%88.pdf)
 
 基本的な用語。
 

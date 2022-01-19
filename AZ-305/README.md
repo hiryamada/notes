@@ -10,6 +10,11 @@
 
 [AZ-305のアナウンス(Microsoft Learn Blob)](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
 
+■コース資料 - MS Learn Collections
+
+AZ-305
+https://docs.microsoft.com/ja-jp/users/msftofficialcurriculum-4292/collections/zwm5cy2ownzz08
+
 ■対応する資格
 
 [Microsoft Certified: Azure Solutions Architect Expert](https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/)
