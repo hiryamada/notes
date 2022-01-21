@@ -15,6 +15,12 @@ Azure開発者向けのコースです。
 
  [AZ-400認定の前提条件は AZ-104 または AZ-204 となります。](https://docs.microsoft.com/ja-jp/learn/certifications/devops-engineer)
 
+# コース資料 (Microsoft Learn)
+
+https://aka.ms/CourseAZ-204
+
+※日本語で表示されない場合は、URLの「docs.microsoft.com/XX-XX/」の部分を「docs.microsoft.com/ja-jp/」に書き換えてください。
+
 # モジュール構成
 
 全12モジュールで構成されます。
