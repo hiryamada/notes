@@ -63,7 +63,10 @@ https://news.microsoft.com/stories/microsoft-datacenter-tour/
 
 ■セキュリティ
 
-- [Microsoft Defender for Cloud](mod15-03-azure-security-center.md)
+- [Microsoft Defender for Cloud]
+  - [まとめPDF](../AZ-500/pdf/mod4/Microsoft%20Defender%20for%20Cloud%20まとめ.pdf)
+- Microsoft Sentinel
+  - [まとめPDF](../AZ-500/pdf/mod4/Azure%20Sentinel%20まとめ.pdf)
 
 ■コスト
 
