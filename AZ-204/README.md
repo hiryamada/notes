@@ -21,9 +21,13 @@ https://aka.ms/CourseAZ-204
 
 ※日本語で表示されない場合は、URLの「docs.microsoft.com/XX-XX/」の部分を「docs.microsoft.com/ja-jp/」に書き換えてください。
 
-# モジュール構成
+# 知識チェックの解説
 
-全12モジュールで構成されます。
+[解説](check.md)
+
+# セクション構成
+
+全12セクションで構成されます。
 
 1. [Azure App Service Web Apps の作成](mod01.md)
 1. [Azure Functions の実装](mod02.md)
@@ -54,11 +58,6 @@ https://aka.ms/CourseAZ-204
 
 1日2～3モジュールを目安に進めていきます。
 各モジュールにはハンズオンラボ（演習時間）があります。
-
-# ハンズオンラボの説明
-
-https://github.com/hiryamada/notes/blob/main/AZ-204/lab/lab00.md
-をご参照ください
 
 # 認定試験との関連
 
