@@ -63,3 +63,35 @@ https://docs.microsoft.com/ja-jp/azure/app-service/networking-features#access-re
 
 詳細: ハイブリッド接続
 https://docs.microsoft.com/ja-jp/azure/app-service/networking-features#hybrid-connections
+
+# Azure Functions セクション2-モジュール1
+
+https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-functions/5-knowledge-check
+
+## 1. 予測的なスケーリングとコストが必要な場合、次の Azure Functions ホスティング プランのうちどれが最適ですか?
+
+
+- Functions Premium プラン
+- App Service プラン
+- 従量課金プラン
+
+
+解説: 
+
+- スケーリングが「予測的である」とは、「スケーリングがどの程度になるかが事前にわかる」「スケーリングの規模をユーザーが指定できる」という意味。App Serviceプランであれば、インスタンスの台数を1～5の範囲といった形で指定することができるので「予測的である」。
+- コストが「予測的である」とは、「（利用量がどのように変化しようとも）コストの範囲が事前にわかる）」という意味。App Serviceプランであれば、プランとスケーリング（インスタンス数）を指定することで、下限～上限のコスト範囲がその時点で明確にわかるので「予測的」である。
+- 「FunctionのPremiumプラン」「従量課金プラン」は、処理量によりインスタンス数が動的に変化するため、予測が難しい。
+
+詳細: https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-scale
+
+※App Serviceプランは上記のページで「専用プラン」と表示されている。
+
+## 2. ある組織が、ビジネス上の問題を解決するためにサーバーレス ワークフローを導入しようとしています。 要件の 1 つは、デザイナー第一 (宣言型) 開発モデルを使用するソリューションにする必要があることです。 次の選択肢のうち、どれがこの要件を満たしていますか?
+
+- Azure Functions
+- Azure Logic Apps
+- WebJobs
+
+解説:
+
+Logic Appsは、コードを書かず、GUIでロジック（ワークフロー）を開発することができるので、「コード第一」ではなく「デザイナー第一」である。
