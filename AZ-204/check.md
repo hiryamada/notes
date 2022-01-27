@@ -95,3 +95,25 @@ https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-functions/5-knowled
 解説:
 
 Logic Appsは、コードを書かず、GUIでロジック（ワークフロー）を開発することができるので、「コード第一」ではなく「デザイナー第一」である。
+
+# Azure Key Vault セクション7-モジュール1
+
+## 1. ほとんどのシナリオで推奨される Azure Key Vault への認証方法は次のうちどれですか?
+
+- サービス プリンシパルと証明書
+- サービス プリンシパルとシークレット
+- マネージド ID
+
+正解: マネージドID。
+
+解説: マネージドIDは、サービスプリンシパルの一種であるが、パスワードを利用者が扱う必要がないのでより安全である。サービス プリンシパルは、利用者が、明示的にIDとパスワード（またはIDと証明書）を発行し、安全に保管する必要があり、また定期的にローテーションする必要があるので、運用により手間がかかる。VM、App Service, Functions, ACI, AKSなど、多くのAzureのコンピューティングサービスで、マネージドIDを使用することができる。
+
+## 2. Azure Key Vault は、Azure Key Vault とクライアント間を移動するときにデータを保護します。 暗号化にはどのようなプロトコルが使用されますか?
+
+- セキュア ソケット レイヤー (Secure Sockets Layer, SSL)
+- トランスポート層セキュリティ (Transport Layer Security, TLS)
+- プレゼンテーション層
+
+解説: [Key Vault自身は、転送中のデータの暗号化にTLSを使用している](https://docs.microsoft.com/ja-jp/azure/key-vault/general/basic-concepts#encryption-of-data-in-transit)。一般的に、ネットワークで情報を送受信する際に、SSLまたはTLSを使用して暗号化を行う場合がある。[TLSはSSLの後継のプロトコルである](https://www.infraexpert.com/study/security7.html)。
+
+なお、Key Vault内に記録される「[証明書](https://docs.microsoft.com/ja-jp/azure/key-vault/certificates/about-certificates)」としては、TLS/SSLの証明書を扱うことができる。

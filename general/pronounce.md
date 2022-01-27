@@ -14,10 +14,16 @@ https://youtu.be/B55viclEWLc?t=400
 アジュア（Scott Hanselman）
 https://www.youtube.com/watch?v=pG82RVO3mEI
 
-アジュール: azur（色の一種。#007FFF）
-
 **アー**ジャー（英語）、**ア**ジュー（フランス語）
 https://translate.google.com/?hl=ja&sl=en&tl=fr&text=azure&op=translate
+
+※参考: アジュール: azur（色の一種。#007FFF）
+https://mtool.work/colordic/color/007fff
+
+■SKU
+
+スキュー
+https://www.youtube.com/watch?v=2zmZJi5t3Aw&t=98s
 
 ■ARM（テンプレート）
 
