@@ -153,6 +153,29 @@ BlobContainerClientは、Blobコンテナーレベルの操作と、そのコン
 
 # Cosmos DB - セクション4
 
+https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-cosmos-db/9-knowledge-check
+
+## 1. Azure Cosmos DB を設定する場合は、3 つのアカウントの種類のオプションがあります。 アプリケーションの RU 数を秒単位で指定するために使用されるのは、以下のアカウントの種類のオプションのうちどれですか?
+
+- プロビジョニング スループット
+- サーバーレス
+- 自動スケール
+
+解説: Cosmos DBアカウント作成時に、「プロビジョニングスループット」または「サーバーレス」を選択する。「プロビジョニングスループット」では、データベースまたはコンテナーで、RUを指定できる。「サーバーレス」の場合はRU指定が不要。
+
+「自動スケール」は、「プロビジョニングスループット」の中のオプション。こちらは「RUの最大値」を指定する。
+
+## 2. 最高のスループットが提供されるのは、次の整合性レベルのうちどれですか?
+
+- Strong
+- Session
+- 最終的
+
+解説: 最も「弱い」整合性である「最終的」(Eventual Consistency)を選択することで、最もスループットが高くなる。
+
+![](images/ss-2022-01-28-17-28-14.png)
+
+https://docs.microsoft.com/ja-jp/azure/cosmos-db/consistency-levels
 
 # Azure VM - セクション5-モジュール1
 
@@ -173,6 +196,8 @@ BlobContainerClientは、Blobコンテナーレベルの操作と、そのコン
 解説: VMをグループ化する仕組みは「可用性セット」。「可用性セット」のリソースを作り、VMを作成する際に「可用性セット」を指定することで、そのグループに含めることができる。VMは復数のFD・UDに分散し、可用性が向上する。(99.9% → 99.95%)
 
 # Microsoft ID Platform セクション6-モジュール1
+
+https://docs.microsoft.com/ja-jp/learn/modules/explore-microsoft-identity-platform/6-knowledge-check
 
 ## 1. サインインしているユーザーが存在するアプリで、Microsoft ID プラットフォームによってサポートされるアクセス許可の中でどの種類が使用されますか?
 
@@ -212,6 +237,8 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/develop/v2-conditional-a
 
 # Azure Key Vault セクション7-モジュール1
 
+https://docs.microsoft.com/ja-jp/learn/modules/implement-azure-key-vault/6-knowledge-check
+
 ## 1. ほとんどのシナリオで推奨される Azure Key Vault への認証方法は次のうちどれですか?
 
 - サービス プリンシパルと証明書
@@ -231,6 +258,28 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/develop/v2-conditional-a
 解説: [Key Vault自身は、転送中のデータの暗号化にTLSを使用している](https://docs.microsoft.com/ja-jp/azure/key-vault/general/basic-concepts#encryption-of-data-in-transit)。一般的に、ネットワークで情報を送受信する際に、SSLまたはTLSを使用して暗号化を行う場合がある。[TLSはSSLの後継のプロトコルである](https://www.infraexpert.com/study/security7.html)。
 
 なお、Key Vault内に記録される「[証明書](https://docs.microsoft.com/ja-jp/azure/key-vault/certificates/about-certificates)」としては、TLS/SSLの証明書を扱うことができる。
+
+# API Management セクション8 - モジュール1
+
+https://docs.microsoft.com/ja-jp/learn/modules/explore-api-management/9-knowledge-check
+
+## 1. アカウントを作成して API キーを取得するためにサブスクライブする必要がある場合、管理者は、API Management サービスの次のどのコンポーネントを使用しますか?
+
+- API ゲートウェイ
+- Azure portal
+- 開発者ポータル
+
+解説: APIの利用者に対し、「開発者ポータル」で、サブスクリプションやAPIキーを発行することができる。
+
+## 2. 条件に基づいて API Management ポリシーを適用する場合は、次のどのポリシーを使用しますか?
+
+- forward-request
+- choose
+- return-response
+
+解説: choose ポリシーは、プログラミング言語の if-then-else や switch 構造のように、式の評価結果に基づいて、含まれているポリシー ステートメントを適用する。
+
+https://docs.microsoft.com/ja-jp/azure/api-management/api-management-advanced-policies#control-flow
 
 # Azure Event Grid セクション9-モジュール1
 
@@ -259,3 +308,102 @@ Event Grid トピック の管理 ← Event Gridの共同作成者
 └サブスクリプション の管理 ← サブスクリプション共同作成者
 ```
 
+# メッセージベースのソリューション - セクション 10 - モジュール1
+
+https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/9-knowledge-check
+
+## 1. 先入れ先出し (FIFO) 保証を作成するのは、Azure Service Bus の次の高度な機能のうちどれですか。
+
+- トランザクション
+- スケジュールされた配信
+- メッセージ セッション
+
+解説: FIFOを利用するにはAzure Service Busの「メッセージセッション」を利用する。
+
+https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/message-sessions
+
+## 2. Azure Service Bus ではメッセージは永続的に格納されるため、負荷を平準化することができます。 使用中のアプリケーションのパフォーマンスと比較して、負荷平準化の利点を適切に示しているのは次のどれですか。
+
+- ピーク時の負荷に対処するために必要なパフォーマンス
+- 平均的な負荷に対処するために必要なパフォーマンス
+- 低い負荷に対処するために必要なパフォーマンス
+
+解説: キューを使用すると「負荷を平準化」（ロードレベリング）することができる。この場合、メッセージの処理側は「平均的な負荷」に対応すればよい。
+
+https://docs.microsoft.com/ja-jp/azure/architecture/patterns/queue-based-load-leveling
+
+> ピーク時の負荷ではなく、平均負荷に対応するのに十分な数のサービス インスタンスをデプロイするだけでよいため、コスト管理に役立ちます。
+
+# アプリのパフォーマンスを監視する - セクション11, モジュール1
+
+https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/8-knowledge-check
+
+## 1. 認証テストに推奨される可用性テストは次のうちどれですか?
+
+- URL の ping
+- Standard （標準テスト）
+- カスタム TrackAvailability テスト
+
+解説:
+
+Application Insightsの「可用性テスト」では、上記3つと「複数手順のWebテスト」の、4種類のテストを設定できる。
+
+https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/availability-overview#types-of-tests
+
+ただし「複数手順のWebテスト」は非推奨となり、現在は「カスタム TrackAvailability テスト」が推奨されている。
+
+https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/availability-multistep#multi-step-webtest-alternative
+
+> カスタム可用性テストは、複数ステップ Web テストではなく、TrackAvailability を使用して送信することをお勧めします。 これは複数の要求または認証テストのシナリオで長期的にサポートされるソリューションです。 TrackAvailability() とカスタム可用性テストを使用すると、任意のコンピューティングでテストを実行でき、また、C# を使用して容易に新しいテストを作成することができます。
+
+※「認証テスト」は、サインインの処理を含むテスト。
+
+https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/availability-multistep#dealing-with-sign-in
+
+## 2. メトリックのディメンションに関するほぼリアルタイムのクエリとアラートと、応答性の高いダッシュボードを提供するメトリック コレクションの種類は次のうちどれですか?
+
+- ログベース
+- 事前に集計済み
+- Azure Service Bus
+
+解説:
+
+Application Insights では、以下のメトリックをできる。
+
+- 「ログベースのメトリック」
+  - 収集されたすべてのイベントが Application Insights バックエンドでログとして格納される
+  - Azure portal の Application Insights ブレードで、ログからのイベントベースのデータを視覚化、分析、診断
+- 「事前に集計されたメトリック」
+  - メトリックは、タイム シリーズ用に最適化された特殊なリポジトリに格納される
+  - 事前に集計されたタイム シリーズとして格納される
+  - 新しいメトリックはクエリ時に適したものとなり、データはより速く取得され、必要となるコンピューティング能力が減る
+  - メトリックのディメンションに関するほぼリアルタイムのアラートや応答性の高いダッシュボードなど、新しいシナリオが有効になる
+
+https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/pre-aggregated-metrics-log-metrics#pre-aggregated-metrics
+
+# キャッシュとコンテンツ配信をソリューション内に統合する - セクション12, モジュール1
+
+https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/6-knowledge-check
+
+## 1. 次の Azure Cache for Redis のサービス レベルの中で、運用シナリオで使用するために推奨される最低レベルはどれですか?
+
+- Basic
+- Standard
+- Premium
+
+解説: Standard以上ではSLAが提供されるため運用シナリオに向く。https://docs.microsoft.com/ja-jp/azure/azure-cache-for-redis/cache-overview#service-tiers
+
+## 2. キャッシュは、よく使用される値をメモリに格納することができるため、重要です。 ただし、値が古くなったときに期限切れにする手段も必要です。 Redis では、キーに Time to Live (TTL) を適用することによって、それが行われます。 有効期限の分解能(expire time resolution)を表す値は次のうちどれですか?
+
+- 1 ミリ秒
+- 10 ミリ秒
+- 秒またはミリ秒
+
+解説:
+
+- 有効期限は、秒またはミリ秒の精度で設定することができる。
+  - https://redis.io/commands/set
+  - 秒: EX
+  - ミリ秒: PX
+- 有効期限切れの時刻の精度は、常に 1 ミリ秒である。
+  - https://redis.io/commands/expire#expires-and-persistence
