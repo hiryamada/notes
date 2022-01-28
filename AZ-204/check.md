@@ -96,7 +96,30 @@ https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-functions/5-knowled
 
 Logic Appsは、コードを書かず、GUIでロジック（ワークフロー）を開発することができるので、「コード第一」ではなく「デザイナー第一」である。
 
-# Blob Storage - セクション3
+# Blob Storage - セクション3、モジュール1
+
+https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-blob-storage/7-knowledge-check
+
+
+## 1. 仮想ハード ドライブ ファイルの格納に使用される BLOB の種類はどれですか?
+
+- ブロック blob
+- 追加 BLOB
+- ページ blob
+
+解説: ページBlobは、VHD（Virtual Hard Disk）形式の格納に利用される。
+
+## 2. Azure Storage を使用するほとんどのシナリオで推奨されるストレージ アカウントの種類はどれですか?
+
+- 汎用 v2
+- 汎用 v1
+- FileStorage
+
+解説: ストレージアカウントとして汎用 v2が推奨される。Blob, Files, Table, Queueをサポート、復数のレプリケーションオプション(LRS, GRS, ZRS, GZRS, RA-GRS, RA-GZRS)をサポートする。
+
+# Blob Storage - セクション3, モジュール3
+
+https://docs.microsoft.com/ja-jp/learn/modules/work-azure-blob-storage/6-knowledge-check
 
 ## 1. 次の標準 HTTP ヘッダーのうち、REST を使用してプロパティを設定するときに、コンテナーと BLOB の両方でサポートされているものはどれですか。
 
@@ -111,7 +134,6 @@ Last-Modified は、リソースが最後に変更された日時。
 https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Last-Modified
 
 Last-Modifed は、BLOBコンテナーと、BLOBの両方でサポートされている。
-
 
 ## 2. 次に示す .NET 用 Azure Storage クライアント ライブラリのクラスのうち、Azure Storage コンテナーとその BLOB の両方で操作できるものはどれですか。
 
