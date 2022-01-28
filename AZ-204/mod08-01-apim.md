@@ -128,7 +128,7 @@ Azure portal＞API Management＞（作成したリソース）
 
 - 画面左メニューの「API」をクリック
 - Add APIをクリック
-- Blank APIをクリック
+- HTTP APIをクリック
   - Display name: tenki
   - Name: tenki
   - Web service URL: https://weather.tsukumijima.net/api/forecast/city/130010
@@ -158,7 +158,6 @@ Azure portal＞API Management＞（作成したリソース）
   - (新しいタブが開く)
   - (ページが表示されるまで1分ほど待つ)
   - タブを閉じる
-- 画面左メニューの「ユーザー」をクリック
 - 画面左メニューの「ポータルの概要」をクリック
   - 「公開」をクリック
   - 「はい」をクリック
