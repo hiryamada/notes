@@ -96,6 +96,98 @@ https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-functions/5-knowled
 
 Logic Appsは、コードを書かず、GUIでロジック（ワークフロー）を開発することができるので、「コード第一」ではなく「デザイナー第一」である。
 
+# Blob Storage - セクション3
+
+## 1. 次の標準 HTTP ヘッダーのうち、REST を使用してプロパティを設定するときに、コンテナーと BLOB の両方でサポートされているものはどれですか。
+
+- 更新日時 (Last-Modified)
+- Content-Length
+- 出発地 (Origin)
+
+解説: 
+
+Last-Modified は、リソースが最後に変更された日時。
+
+https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Last-Modified
+
+Last-Modifed は、BLOBコンテナーと、BLOBの両方でサポートされている。
+
+
+## 2. 次に示す .NET 用 Azure Storage クライアント ライブラリのクラスのうち、Azure Storage コンテナーとその BLOB の両方で操作できるものはどれですか。
+
+- BlobClient
+- BlobContainerClient
+- BlobUriBuilder
+
+解説: 
+
+```
+ストレージアカウント  .... BlobServiceClient
+└Blobコンテナー ......... BlobContainerClient
+ └Blob  ................. BlobClient
+```
+
+BlobContainerClientは、Blobコンテナーレベルの操作と、そのコンテナー内のBlobの一覧取得といった一部のBlobレベルの操作をサポートする。
+
+# Cosmos DB - セクション4
+
+
+# Azure VM - セクション5-モジュール1
+
+## 1. 次の Azure 仮想マシンの種類のうち、テストと開発に最適なものはどれですか?
+
+- コンピューティング最適化
+- General Purpose
+- ストレージ最適化
+
+解説: 開発・テストには、CPUコアとメモリがバランス良く配置された「General Purpose」（汎用）が適している。具体的にはDシリーズ等。
+
+## 2. 冗長性と可用性を実現するためのアプリケーションの構築方法を Azure で理解できるようにする VM の論理的なグループ化を表しているのは次のうちのどれですか?
+
+- Load Balancer
+- 可用性ゾーン
+- 可用性セット
+
+解説: VMをグループ化する仕組みは「可用性セット」。「可用性セット」のリソースを作り、VMを作成する際に「可用性セット」を指定することで、そのグループに含めることができる。VMは復数のFD・UDに分散し、可用性が向上する。(99.9% → 99.95%)
+
+# Microsoft ID Platform セクション6-モジュール1
+
+## 1. サインインしているユーザーが存在するアプリで、Microsoft ID プラットフォームによってサポートされるアクセス許可の中でどの種類が使用されますか?
+
+- デリゲート(委任)されたアクセス許可
+- アプリケーションのアクセス許可
+- 委任されたアクセス許可とアプリケーションのアクセス許可の両方
+
+解説:
+
+「デリゲート(委任)されたアクセス許可」が正しい。
+
+- 「委任されたアクセス許可」
+  - ユーザーがサインインして利用するタイプのアプリで使用する許可
+  - 各ユーザーまたは管理者が同意する。
+- 「アプリケーションのアクセス許可」
+  - ユーザーがサインインせず利用するタイプのアプリ（サービス、デーモン等）で使用する許可。
+  - 管理者が同意する。
+
+## 2. 条件付きアクセス チャレンジを処理するコードが必要なアプリ シナリオは次の中のうちどれですか?
+
+- デバイスコード フローを実行するアプリ
+- On-Behalf-Of フローを実行するアプリ
+- 統合 Windows 認証フローを実行するアプリ
+
+解説:
+
+「条件付きアクセス」は、Azure ADの機能の一種。たとえば、特定のアプリケーションへのアクセス時に、多要素認証（MFA）を要求する、といった条件を追加できる。
+
+OAuth 2.0 の On-Behalf-Of (OBO) フローは、アプリケーションがサービス/Web API を呼び出し、それがさらに別のサービス/Web API を呼び出す必要のあるユース ケース。
+
+On-Behalf-Of フローを実行するアプリでは、条件付きアクセスを処理するために、コード（の変更）が必要となる。
+
+https://docs.microsoft.com/ja-jp/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow
+
+https://docs.microsoft.com/ja-jp/azure/active-directory/develop/v2-conditional-access-dev-guide#scenario-app-performing-the-on-behalf-of-flow
+
+
 # Azure Key Vault セクション7-モジュール1
 
 ## 1. ほとんどのシナリオで推奨される Azure Key Vault への認証方法は次のうちどれですか?
@@ -117,3 +209,31 @@ Logic Appsは、コードを書かず、GUIでロジック（ワークフロー�
 解説: [Key Vault自身は、転送中のデータの暗号化にTLSを使用している](https://docs.microsoft.com/ja-jp/azure/key-vault/general/basic-concepts#encryption-of-data-in-transit)。一般的に、ネットワークで情報を送受信する際に、SSLまたはTLSを使用して暗号化を行う場合がある。[TLSはSSLの後継のプロトコルである](https://www.infraexpert.com/study/security7.html)。
 
 なお、Key Vault内に記録される「[証明書](https://docs.microsoft.com/ja-jp/azure/key-vault/certificates/about-certificates)」としては、TLS/SSLの証明書を扱うことができる。
+
+# Azure Event Grid セクション9-モジュール1
+
+## 1. 値が必要なイベント スキーマ プロパティは、次のうちどれですか?
+
+- トピック
+- データ
+- サブジェクト
+
+解説: イベントはJSONで送信される。JSONのフォーマット（形式）は「スキーマ」と呼ばれる。スキーマの形式の1つとして「[Azure Event Grid イベント スキーマ](https://docs.microsoft.com/ja-jp/azure/event-grid/event-schema)」がある。このスキーマの「subject」（イベントの対象のパス）は、必須のプロパティとなっており、イベントの発行元側で、必ず値を指定しなればならない。たとえば、Blobがアップロードされたというイベントの場合、その「subject」の値として、Blobのパスが指定される。
+
+## 2. Event Grid リソースの管理に適している Event Grid 組み込みロールは、次のうちどれですか?
+
+- Event Grid の共同作成者
+- Event Grid サブスクリプションの共同作成者
+- Event Grid データ送信者
+
+解説: 
+
+Event Grid リソース（＝トピック）を管理するユーザーには、「Event Gridの共同作成者」ロールを割り当てる。
+
+```
+イベント
+↓ イベントの送信 ← Event Grid データ送信者
+Event Grid トピック の管理 ← Event Gridの共同作成者
+└サブスクリプション の管理 ← サブスクリプション共同作成者
+```
+
