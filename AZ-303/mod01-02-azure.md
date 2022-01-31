@@ -89,6 +89,7 @@ https://docs.microsoft.com/ja-jp/azure/role-based-access-control/elevate-access-
 - Tenant Root Groupのツリー内の「＞」をクリックして展開し
 - 以下のような構成になっていればOK。
 
+
 ```
 Tenant Root Group（ルート管理グループ）
 └mg1 （新しく作成した管理グループ）
