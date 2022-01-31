@@ -47,7 +47,7 @@ Azure ADの「プリンシパル」
   └ マネージドID
 ```
 
-サービス プリンシパルは、テナント内のリソースへのアクセスを許可するために利用される。
+サービス プリンシパルは、オンプレミス（Azureの外側）で動作するプログラムやサービスに割り当てるためのID。テナント内のリソースへのアクセスを許可するために利用される。
 
 ■サービス プリンシパルの作成: Azure portalから
 
@@ -59,6 +59,20 @@ https://docs.microsoft.com/ja-jp/cli/azure/ad/sp
 
 - az ad sp create: サービスプリンシパルを作成する
 - az ad sp create-for-rbac: サービスプリンシパルを作成し、RBACロールを割り当てる
+
+■ハンズオン: サービスプリンシパルの作成と削除
+
+- Azure portalのトップ画面の画面下部の「サブスクリプション」をクリック
+- Azure Passサブスクリプションの「サブスクリプションID」をコピーしておく
+- 画面上部の検索ボックスの右側のアイコン（Cloud Shell）をクリック
+- 画面下部に「Azure Cloud Shell へようこそ」が出てきた場合は、「Bash」、「ストレージの作成」をクリック
+- 「Azure Cloud Shell へようこそ」が出ない場合は、画面下部の黒い部分の左上のプルダウンで「Bash」を選択
+- `az ad sp create-for-rbac --scope /subscriptions/（サブスクリプションのID） --role 'Storage Blob Data Reader'` を実行する。
+- 画面に、appId, displayName, password, tenantが表示されることを確認。
+  - オンプレミスで動作するプログラムに対して、この認証情報を設定ファイルのような形で割り当てる（今回は省略）。
+    - この認証情報を使用して、Azure ADで認証を行う。
+    - IDに割り当てられたロールにより、ストレージアカウントのBlobデータの読み取りができる。
+- `az ad sp delete --id (表示されたappId)` で、作成したサービスプリンシパルを削除。
 
 ■サービス プリンシパルの作成: Azure PowerShellから
 
