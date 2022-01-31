@@ -12,6 +12,8 @@ Microsoft Certified: Azure Network Engineer Associate
 
 試験: https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-700
 
+試験時間 120分, 
+
 認定: https://docs.microsoft.com/ja-jp/learn/certifications/azure-network-engineer-associate/
 
 難易度: アソシエイト(中級)

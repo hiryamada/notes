@@ -67,6 +67,23 @@ https://docs.microsoft.com/ja-jp/azure/role-based-access-control/elevate-access-
 - Azure AD の全体管理者は、自分自身を「昇格」できる。
 - 「昇格」を行うと、その管理者に、ルート管理グループのレベルで、[ユーザーアクセス管理者ロール（User Access Administrator）](https://docs.microsoft.com/ja-jp/azure/role-based-access-control/built-in-roles#user-access-administrator)が割り当てされる。
 
+
+■ハンズオン: 昇格
+
+- Azure portalの画面上部の検索で「Azure Active Directory」を検索し、「Azure Active Directory」へ移動
+- 画面左側のメニュー「プロパティ」をクリック
+- 画面下部の「Azure リソースのアクセス管理」を「はい」に設定
+- 画面上部の「保存」をクリック
+
+■ハンズオン: 管理グループの作成
+
+- Azure portalの画面上部の検索で「管理」を検索し、「管理グループ」へ移動
+- 「管理グループの使用を開始します」をクリック
+- 「管理グループID」と「管理グループの表示名」両方に「mg1」と入力し、画面下の「Submit」をクリック
+- Webブラウザーで、ページをリロードする（Ctrl + R）
+- 「mg1」をクリック
+- 
+
 # サブスクリプション
 
 ※注意: Azure ADの機能ではない

@@ -107,6 +107,20 @@ https://www.microsoft.com/ja-jp/security/business/identity-access-management/azu
 - レポートと監視: [Azure AD プレミアム ライセンス(P1/P2)](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/overview-monitoring#licensing-and-prerequisites-for-azure-ad-reporting-and-monitoring)
 - Azure AD アクティビティレポート等のデータ保存期間: [参照](https://docs.microsoft.com/ja-jp/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
+■ハンズオン: Azure AD P2 試用版の有効化
+
+- Azure portalの画面上部の検索で「Azure Active Directory」を検索し、「Azure Active Directory」の画面に移動
+- 画面左メニュー「ライセンス」をクリック
+- 「すべての製品」をクリック
+- 画面上部の「試用/購入」をクリック
+- 「AZURE AD PREMIUM P2」の「無料試用版」をクリック
+- 「アクティブ化」をクリック
+- 画面右上に「Azure AD Premium P2 試用版が正常にアクティブ化されました」と通知が表示される。通知は5秒ほどで消える。
+- Webブラウザーで、ページをリロードする（Ctrl + R）
+- 「試用/購入」の下の一覧に「Azure Active Directory Premium P2」が表示されていればOK
+
+※「Azure Active Directory」の「概要」の「ライセンス」の表示が「Free」から「Azure AD Premium P2」に変わるまで、5分ほどかかる。
+
 # Azure ADの概念
 
 基本的な用語。
@@ -220,5 +234,5 @@ https://docs.microsoft.com/ja-jp/mem/intune/fundamentals/what-is-intune
 ひと目でわかるAzure Active Directory 第3版 2020/12/14
 https://www.nikkeibp.co.jp/atclpubmkt/book/20/P86590/
 
-ひと目でわかるIntune　改訂新版 2021/6/14
+ひと目でわかるIntune 改訂新版 2021/6/14
 https://www.nikkeibp.co.jp/atclpubmkt/book/21/S80000/
