@@ -102,3 +102,74 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-for-azure
   - Standard または WAF SKU: 最小サイズ /26 推奨
   - Standard_v2 または WAF_v2 SKU: 最小サイズ /24 推奨
 
+■ハンズオン: VNetとサブネットの作成
+
+```
+az group create -l eastus -n rg1
+
+az network vnet create \
+	-n vnet1 \
+	-g rg1 \
+	--address-prefixes 10.0.0.0/16 \
+	--subnet-name subnet1 \
+	--subnet-prefix 10.0.0.0/24 
+
+az network vnet create \
+	-n vnet2 \
+	-g rg1 \
+	--address-prefixes 10.1.0.0/16 \
+	--subnet-name subnet1 \
+	--subnet-prefix 10.1.0.0/24 
+```
+
+■ハンズオン: VMの作成
+
+```
+
+az vm create \
+	-n vm1 \
+	-g rg1 \
+	--vnet-name vnet1 \
+	--subnet subnet1 \
+	--size Standard_D2s_v5 \
+	--image UbuntuLTS \
+	--admin-username azureuser \
+	--generate-ssh-keys \
+	--public-ip-sku Standard \
+	--private-ip-address 10.0.0.4 \
+
+```
+
+publicIpAddress が表示されるので、記録しておく。
+
+ssh azureuser@(表示されたvm1のpublicIpAddress)
+...
+Are you sure you want to continue connecting (yes/no)? yes
+
+azureuser@vm1:~$ exit
+
+```
+
+publicIpAddress が表示されるので、記録しておく。
+
+ssh azureuser@(表示されたvm1のpublicIpAddress)
+...
+Are you sure you want to continue connecting (yes/no)? yes
+
+azureuser@vm1:~$ exit
+
+```
+az vm create \
+	-n vm2 \
+	-g rg1 \
+	--vnet-name vnet2 \
+	--subnet subnet1 \
+	--size Standard_D2s_v5 \
+	--image UbuntuLTS \
+	--admin-username azureuser \
+	--generate-ssh-keys \
+	--public-ip-sku Standard \
+	--private-ip-address 10.1.0.4 \
+
+publicIpAddress が表示されるので、記録しておく。
+```
