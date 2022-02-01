@@ -136,7 +136,7 @@ az vm create \
 	--admin-username azureuser \
 	--generate-ssh-keys \
 	--public-ip-sku Standard \
-	--private-ip-address 10.0.0.4 \
+	--private-ip-address 10.0.0.4
 
 ```
 
@@ -169,7 +169,7 @@ az vm create \
 	--admin-username azureuser \
 	--generate-ssh-keys \
 	--public-ip-sku Standard \
-	--private-ip-address 10.1.0.4 \
+	--private-ip-address 10.1.0.4
 
 publicIpAddress が表示されるので、記録しておく。
 ```
