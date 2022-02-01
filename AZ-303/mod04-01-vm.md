@@ -48,6 +48,17 @@ https://docs.microsoft.com/ja-jp/azure/virtual-machines/sizes
 - ハイ パフォーマンス コンピューティング タイプ
   - [Hシリーズ(H)](https://docs.microsoft.com/ja-jp/azure/virtual-machines/h-series)
 
+■ハンズオン: VMのサイズ変更
+
+※vm1, vm2はここまでのハンズオンで作成済み
+
+- 画面上部の検索で「vm」→「Virtual Machines」
+- vm1をクリック
+- サイズ
+- D2s_v5が選択されている。
+- D4s_v5を選択して、「サイズの変更」をクリック
+- VMが再起動され、サイズが変更される
+
 ■VMのサイズの名前付け規則
 
 https://docs.microsoft.com/ja-jp/azure/virtual-machines/vm-naming-conventions
@@ -102,7 +113,7 @@ Dシリーズ の Standard_D1 など。
 
 ■version
 
-- サイズ末尾についている「v2」「v3」「v4」など。
+- サイズ末尾についている「v2」「v3」「v4」「v5」など。
 - 数字が大きいほうがより新しい
 - 数字が大きいほうが、VMを稼働させるホストコンピュータのハードウェアもより新しいものとなる。
 
@@ -112,13 +123,15 @@ Dシリーズ の Standard_D1 など。
 - Dv2 シリーズ ... D シリーズの後継。2016/3～
 - Dv3 シリーズ ... 2017/7～
 - Dv4 シリーズ ... 2020/6～
+- Dv5 シリーズ ... 2021/4～
 
 参考
 - D https://azure.microsoft.com/ja-jp/blog/new-d-series-virtual-machine-sizes/
 - Dv2 https://azure.microsoft.com/ja-jp/updates/announcing-new-dv2-series-virtual-machine-size/
 - Dv3 https://azure.microsoft.com/en-us/blog/introducing-the-new-dv3-and-ev3-vm-sizes/
 - Dv4 https://azure.microsoft.com/ja-jp/blog/new-general-purpose-and-memoryoptimized-azure-virtual-machines-with-intel-now-available/
-
+- Dv5 https://azure.microsoft.com/ja-jp/updates/new-azure-vms-for-general-purpose-and-memory-intensive-workloads-now-in-public-preview/
+ 
 # Azureの予約
 
 リソースを長期間（1年以上）利用する場合におすすめ。

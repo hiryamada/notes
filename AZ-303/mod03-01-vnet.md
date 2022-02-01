@@ -124,6 +124,7 @@ az network vnet create \
 
 ■ハンズオン: VMの作成
 
+Cloud Shellを開き、Bashを選択する。
 
 vnet1のsubnet1にvm1を作成する
 
@@ -141,6 +142,8 @@ az vm create \
 	--private-ip-address 10.0.0.4
 
 ```
+
+※ 各サブネットの先頭4つ(10.0.0.0-10.0.0.3等)と末尾1つ(10.0.0.255等)のIPアドレスは予約されており、VM等で使用できない。
 
 publicIpAddress が表示されるので、記録しておく。
 
