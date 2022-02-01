@@ -124,8 +124,10 @@ az network vnet create \
 
 ■ハンズオン: VMの作成
 
-```
 
+vnet1のsubnet1にvm1を作成する
+
+```
 az vm create \
 	-n vm1 \
 	-g rg1 \
@@ -142,21 +144,17 @@ az vm create \
 
 publicIpAddress が表示されるので、記録しておく。
 
-ssh azureuser@(表示されたvm1のpublicIpAddress)
-...
-Are you sure you want to continue connecting (yes/no)? yes
-
-azureuser@vm1:~$ exit
+vm1への接続確認例
 
 ```
-
-publicIpAddress が表示されるので、記録しておく。
-
 ssh azureuser@(表示されたvm1のpublicIpAddress)
 ...
 Are you sure you want to continue connecting (yes/no)? yes
 
 azureuser@vm1:~$ exit
+```
+
+続いて、vnet2のsubnet1にvm2を作成する
 
 ```
 az vm create \
@@ -171,5 +169,5 @@ az vm create \
 	--public-ip-sku Standard \
 	--private-ip-address 10.1.0.4
 
-publicIpAddress が表示されるので、記録しておく。
 ```
+publicIpAddress が表示されるので、記録しておく。
