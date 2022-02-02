@@ -76,7 +76,6 @@ Azure Storage に対するすべての要求は、以下のいずれかの方法
 - 共有アクセス署名（SAS）
   - セキュリティトークンを含む文字列（SASトークン）をURIに追加してアクセス
   - クライアントに、アクセスを「委任」することができる
-  - （詳しい説明は後述）
   - 対象: すべて(Blob, Files, Table, Queue)
 - [匿名パブリック読み取りアクセス](https://docs.microsoft.com/ja-jp/azure/storage/blobs/anonymous-read-access-configure?tabs=portal)
   - 個々のBlobの読み込みを許可
