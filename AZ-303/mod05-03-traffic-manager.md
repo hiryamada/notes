@@ -179,7 +179,7 @@ https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-nested-pr
 ```
 appname="app$RANDOM"
 az appservice plan create -g rg1 -n plan1 --sku S1
-az webapp create -g rg1 -p plan1 -n app$RANDOM --runtime 'DOTNET|6.0'
+az webapp create -g rg1 -p plan1 -n "$appname" --runtime 'DOTNET|6.0'
 az webapp list --query '[].hostNames' --output tsv
 ```
 表示されるホスト名にアクセスして、Webアプリが動作することを確認します。
