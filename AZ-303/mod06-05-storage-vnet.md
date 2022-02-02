@@ -1,3 +1,6 @@
+■まとめPDF
+
+[まとめPDF](../AZ-104/pdf/mod06/サービスエンドポイントvsプライベートエンドポイント.pdf)
 
 Azure Storage ファイアウォールおよび仮想ネットワークを構成する
 https://docs.microsoft.com/ja-jp/azure/storage/common/storage-network-security
