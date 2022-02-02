@@ -288,3 +288,122 @@ Azure Load Balancer
 ■Azure Load Balancerの内部コンポーネント
 
 [まとめPDF](../AZ-104/pdf/mod06/ロードバランサー.pdf)
+
+
+■ハンズオン: Azure Load Balancer
+
+VMを使用してWebサーバを2台(web1, web2)作成します。Azure Load Balancer, Application Gateway, Front Doorのバックエンドとして使用します。
+
+```
+az group create -n rg1 -l eastus
+
+az network vnet create \
+	-n vnet1 \
+	-g rg1 \
+	--address-prefixes 10.0.0.0/16 \
+	--subnet-name subnet1 \
+	--subnet-prefix 10.0.0.0/24 
+
+cat <<EOF >cloud-init.txt
+#cloud-config
+package_upgrade: true
+packages:
+- apache2
+runcmd:
+- [ sh, -c, "echo hello > /var/www/html/index.html" ]
+EOF
+
+az vm create \
+	--location eastus \
+	--resource-group rg1 \
+	--name web1 \
+	--image UbuntuLTS \
+	--size Standard_B1s \
+	--vnet-name vnet1 \
+	--subnet subnet1 \
+	--zone 1 \
+	--public-ip-sku Standard \
+	--admin-username azureuser \
+	--generate-ssh-keys \
+	--custom-data cloud-init.txt
+
+az vm create \
+	--location eastus \
+	--resource-group rg1 \
+	--name web2 \
+	--image UbuntuLTS \
+	--size Standard_B1s \
+	--vnet-name vnet1 \
+	--subnet subnet1 \
+	--zone 2 \
+	--public-ip-sku Standard \
+	--admin-username azureuser \
+	--generate-ssh-keys \
+	--custom-data cloud-init.txt
+
+az vm open-port -g rg1 -n web1 --port 80
+az vm open-port -g rg1 -n web2 --port 80
+
+az vm list-ip-addresses \
+--query '[].virtualMachine.[name, network.publicIpAddresses[0].ipAddress]' \
+--output tsv
+```
+
+以下の手順でAzure Load Balancerを作成します。
+
+```
+ロードバランサー
+作成
+リソースグループrg1
+名前 lb1
+地域 eastus
+SKU Standard
+種類 パブリック
+レベル 地域 
+
+次
+＋フロントエンドIP構成の追加
+名前 lb1ip
+新規作成
+名前 lb1ip
+OK, 追加
+
+次
+＋バックエンドプールの追加
+名前 be1
+仮想ネットワーク vnet1
+仮想マシンの追加
+web1,web2にチェック
+追加
+追加
+
+次
+＋負荷分散規則の追加
+名前 rule1
+フロントエンドIPアドレス: lb1ip
+バックエンドプール be1
+ポート 80
+バックエンドポート 80
+正常性プローブ: 新規作成
+名前: probe1
+プロトコル: HTTP
+OK
+
+追加
+
+確認および作成
+作成
+リソースに移動
+```
+
+作成したAzure Load Balancer経由で、Webサーバーにアクセスします。
+
+```
+画面左で、フロントエンドIP構成をクリック
+
+画面内のIPアドレスをコピー
+
+新しいWebブラウザタブでそのアドレスにアクセス
+
+hello と表示されればOK
+```

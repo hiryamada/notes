@@ -172,3 +172,48 @@ Azure エンドポイント / 外部エンドポイント
 入れ子になったエンドポイントの説明と例:
 https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-nested-profiles
 
+■ハンズオン
+
+以下の手順で、App Serviceを使用して、Webアプリを作成します。Traffic Managerのバックエンドとして使用します。
+
+```
+appname="app$RANDOM"
+az appservice plan create -g rg1 -n plan1 --sku S1
+az webapp create -g rg1 -p plan1 -n app$RANDOM --runtime 'DOTNET|6.0'
+az webapp list --query '[].hostNames' --output tsv
+```
+表示されるホスト名にアクセスして、Webアプリが動作することを確認します。
+（グラフィックとともに Hey, App Service developers! と表示されます）
+
+以下の手順で、Traffic Managerを設定します。
+
+```
+画面上部の検索で「ロード」検索、ロードバランサーの画面へ移動します。
+
+Traffic Managerをクリックします。
+
+＋作成
+
+名前: example(乱数) ※乱数はキーボードから数字を10桁ほど適当に打ち込んで生成
+リソースグループ: rg1
+作成
+
+デプロイが完了するのを待ち、「リソースへ移動」をクリック
+（または、一覧画面で「更新」をクリックして、作成されたプロファイルをクリック）
+
+画面左「エンドポイント」をクリック
+＋追加
+種類: Azureエンドポイント
+名前: webapp1
+ターゲットリソースの種類: App Service
+ターゲットリソース: (作成済みのApp Service Webアプリ名を選択)
+追加
+
+画面左「概要」をクリック
+画面上部の「最新の情報を更新」をクリックして画面を更新。
+画面下の「webapp1」の「モニターの状態」が、「エンドポイントを確認しています」から「オンライン」に変わるまで何度か更新する。(数分かかります)
+「DNS名」をコピー
+
+Webブラウザの新しいタブにてその「DNS名」にアクセスします。グラフィックとともに Hey, App Service developers! と表示されます。
+
+```
