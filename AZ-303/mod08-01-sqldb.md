@@ -117,3 +117,131 @@ Azure SQL Databaseの主なリソースとして「SQLサーバー」「SQLデ�
 
 「サーバーレス」は、データベースにおける性能の指定時にのみ選択することができ、1秒単位で課金が計算される。
 
+■ハンズオン: SQL Database
+
+まず、Windows Server の VMを作成します。このVMは、Azure Data Studioを実行するために使用します。
+
+Cloud Shell (bash) を起動し、以下を入力します。
+
+```
+git clone https://github.com/hiryamada/labvm2
+cd labvm2
+sh deploy.sh
+```
+すると、以下のようなプロンプトが表示されます。
+```
+Please provide securestring value for 'adminPassword' (? for help):
+```
+ここで、VMのパスワード(12文字以上、大文字・小文字・数字・記号の組み合わせ)を決めて、それを入力し、エンターキーを押します。
+
+VMの作成が始まります。Cloud Shellはそのままにしておいて、VMを作成しつつ、続いてSQLサーバーとSQLデータベースを作成します。
+
+Azure portalで、以下の手順を実行します。
+
+```
+画面上部の検索で「SQL」を入力→「SQL データベース」
+＋作成
+リソースグループ: 新規作成、「rg1」
+データベース名「db1」
+サーバー: 「新規作成」をクリック
+
+サーバー名: 「dbsv(乱数)」
+場所「(US) East US」
+サーバー管理者ログイン: 「azureuser」
+パスワード/パスワードの確認: (適当なパスワードを入力、記録しておく)
+OK
+
+コンピューティングとストレージ: 「データベースの構成」をクリック
+コンピューティングレベル: サーバーレス
+最大仮想コア数: 1
+データの最大サイズ: 1GB
+適用
+
+バックアップ ストレージの冗長性: ローカル冗長バックアップ ストレージ
+
+次: ネットワーク
+次: セキュリティ
+次: 追加設定
+次: タグ
+次: 確認および作成
+作成
+```
+
+作成が完了すると以下のような構成となります。
+
+```
+リソースグループ rg1
+└SQLサーバー dbsvNNNNNN
+  └SQLデータベース db1
+```
+
+画面上部の検索で「SQL」を入力→「SQL データベース」として、作成したSQLデータベース「db1」を表示し、画面左の「接続文字列」をクリックします。表示された接続文字列をコピーしておきます。
+
+画面上部の検索で「vm」を入力→「Virtual Machines」として、先ほど起動しておいたVM「labvm」を表示します。
+
+「labvm」のパブリックIPアドレスをコピーします。
+
+画面上部の検索で「SQL」を入力→「SQL データベース」として、作成したSQLデータベース「db1」を表示し、「概要」画面の「サーバー名」のリンクをクリックします。
+
+サーバーの概要画面が表示されます。「ファイアウォール設定の表示」をクリックします。
+
+「規則名」「開始IP」「終了IP」に以下を入力します。
+
+- 規則名: labvm
+- 開始IP / 終了IP: コピーしたIPアドレス
+
+「保存」をクリックします。
+
+画面上部の検索で「vm」を入力→「Virtual Machines」として、先ほど起動しておいたVM「labvm」を表示します。「labvm」にリモートデスクトップで接続します。
+
+```
+ユーザー名: azureuser
+パスワード: （自分で決めたパスワード）
+```
+
+以降、リモートデスクトップ内で作業します。
+
+Webブラウザーを起動し、以下のページを開きます。
+
+https://docs.microsoft.com/ja-jp/sql/azure-data-studio/download-azure-data-studio
+
+ページ内の、Azure Data Studioの「Windows」の「ユーザーインストーラー」をクリックし、インストーラーをダウンロードし、実行します。
+
+Setupダイアログで「This User Installer is not meant to be run as Administrator...」というメッセージが出た場合「OK」をクリックして先に進みます。
+
+「I Accept...」にチェックし、「Next」「Next」「Next」「Next」「Install」とクリックします。インストールが完了したら「Finish」をクリックします。
+
+Azure Data Studioが起動します。
+
+New Connectionをクリックします。
+
+- ここで、クリップボードに接続文字列が入っていなかった場合は、「Server」の部分が空欄となります。そこに、さきほどコピーしておいた接続文字列を貼り付けます。
+- クリップボードに接続文字列が入っていた場合は、「Server」などが入力された状態となります。
+
+Passwordは、いったん削除して打ち直す必要があります。SQLデータベース「db1」の作成時に決めたパスワードをここで入力します。
+
+Connectをクリックします。データベースに接続されます。
+
+画面上部「New Query」をクリックします。
+
+以下を入力します。
+
+```
+CREATE TABLE items (
+	id INT PRIMARY KEY,
+	name VARCHAR(100),
+	price INT
+);
+
+INSERT INTO items (id, name, price) VALUES (1, 'apple', 100);
+INSERT INTO items (id, name, price) VALUES (2, 'banana', 200);
+INSERT INTO items (id, name, price) VALUES (3, 'cherry', 300);
+
+SELECT * FROM items ORDER BY id ASC;
+```
+画面上部の「Run」ボタンをクリックします。テーブルの作成、データのINSERTED、SELECTが実行され、検索結果が表示されます。
+
+VM上から、SQL Databaseに接続し、SQL文を実行することができました。
+
+ハンズオンは以上です。リモートデスクトップを切断し、Azure portalで、リソースグループ rg1 と labvmrg を削除してください。
+

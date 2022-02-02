@@ -59,7 +59,10 @@ https://aidanfinn.com/?p=21661
 
 # ExpressRoute FastPath
 
-ExpressRouteゲートウェイをバイパスしてトラフィックを直接VMに送信することで、オンプレミスネットワークとVNet間のデータパスパフォーマンスを改善。
+- 仮想ネットワーク ゲートウェイが Ultra Performance または ErGw3AZ である場合は、ExpressRoute FastPath を有効にすることができる。
+- オンプレミス ネットワークと仮想ネットワークの間のデータ パスのパフォーマンスを向上させる.
+- ExpressRouteゲートウェイをバイパスしてトラフィックを直接VMに送信することで、オンプレミスネットワークとVNet間のデータパスパフォーマンスを改善する。
+- すべての ExpressRoute 回線で使用できる。
 
 2021/11/2 パブリックプレビュー
 https://azure.microsoft.com/en-us/updates/public-preview-expressroute-fastpath-improvements/
