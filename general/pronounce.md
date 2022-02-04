@@ -20,6 +20,22 @@ https://translate.google.com/?hl=ja&sl=en&tl=fr&text=azure&op=translate
 ※参考: アジュール: azur（色の一種。#007FFF）
 https://mtool.work/colordic/color/007fff
 
+■WAF (Web Application Firewall)
+
+ワーフ
+https://www.youtube.com/watch?v=Kgn_Y9nkv94&t=280s
+
+ワフ
+https://ja.wikipedia.org/wiki/Web_Application_Firewall
+
+■OWASP (Open Web Application Security Project)
+
+オワスプ
+
+https://www.youtube.com/watch?v=sbEGxAqIyT8
+
+https://www.itmanage.co.jp/column/about-owasp/
+
 ■SKU
 
 スキュー

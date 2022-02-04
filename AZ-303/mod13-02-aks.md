@@ -258,3 +258,16 @@ https://docs.brigade.sh/intro/overview/
 
 わかりやすい解説
 https://news.mynavi.jp/article/20190401-800253/
+
+■Azure Service Operator
+
+https://azure.github.io/azure-service-operator/
+
+Kubernetesの「オペレーター」の仕組みを使用して、マニュフェストを使用して、Azureのリソースをデプロイする仕組み。
+
+■KEDA
+
+https://keda.sh/
+
+標準のPodスケーリング（水平ポッドスケーラー）を拡張し、アプリケーションのイベントデータに基づくオートスケーリングを提供。アプリケーションでのリクエスト処理量など、より細かなパラメータに基づくPodスケーリングが可能となる。
+

@@ -120,8 +120,8 @@ Cosmos DBアカウント
   └コンテナー music (パーティションキー: /artist )
     ├項目 { "artist": "YOASOBI", "id": "夜に駆ける", "lyrics": "沈むように..." }
     ├項目 { "artist": "YOASOBI", "id": "ハルジオン", "lyrics": "過ぎてゆく..." }
-    ├項目 { "artist": "LISA", "id": "炎", "lyrics": "「さよなら」..."}
-    └項目 { "artist": "LISA", "id": "紅蓮華", "lyrics": "強くなれる..."}
+    ├項目 { "artist": "LiSA", "id": "炎", "lyrics": "「さよなら」..."}
+    └項目 { "artist": "LiSA", "id": "紅蓮華", "lyrics": "強くなれる..."}
 ```
 
 ■パーティション分割
