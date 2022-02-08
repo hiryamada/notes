@@ -46,3 +46,8 @@ https://docs.microsoft.com/ja-jp/azure/vpn-gateway/point-to-site-how-to-radius-p
 
 https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-certificates-point-to-site
 
+# Azure VPN Client
+
+https://www.microsoft.com/en-us/p/azure-vpn-client-preview
+
+The Azure VPN Client lets you connect to Azure securely from anywhere in the world. It supports Azure Active Directory, certificate-based and RADIUS authentication.

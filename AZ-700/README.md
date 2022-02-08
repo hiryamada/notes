@@ -24,7 +24,7 @@ Microsoft Certified: Azure Network Engineer Associate
 - ラーニング パス: https://docs.microsoft.com/ja-jp/learn/paths/design-implement-microsoft-azure-networking-solutions-az-700/
   - コレクションと同内容
 
-※Skillpipeにもテキストがある。Learnコンテンツと同内容のようだ。
+※Skillpipeにもテキストがある。Learnコンテンツと同内容。
 
 ■コース構成
 

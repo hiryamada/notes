@@ -20,6 +20,11 @@ https://translate.google.com/?hl=ja&sl=en&tl=fr&text=azure&op=translate
 ※参考: アジュール: azur（色の一種。#007FFF）
 https://mtool.work/colordic/color/007fff
 
+■App Service
+
+アップサービス
+https://www.youtube.com/watch?v=jCfJWYocz1M
+
 ■WAF (Web Application Firewall)
 
 ワーフ
