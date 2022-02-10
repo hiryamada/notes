@@ -25,6 +25,17 @@ https://mtool.work/colordic/color/007fff
 アップサービス
 https://www.youtube.com/watch?v=jCfJWYocz1M
 
+■ACI (Azure Container Instance)
+
+エーシーアイ
+https://www.youtube.com/watch?v=giQLmxMKAKE
+
+■ACR (Azure Container Registry)
+
+エーシーアール
+
+https://www.youtube.com/watch?v=VcZH6AWhUGk
+
 ■WAF (Web Application Firewall)
 
 ワーフ
@@ -88,6 +99,27 @@ https://ja.wikipedia.org/wiki/PostgreSQL
 
 クーバネーティス
 https://www.youtube.com/watch?v=xL6lixC4D8Q
+
+■kubectl
+
+キューブシーティーエル
+
+キューブコントロール
+
+https://qiita.com/si1242/items/a21b44bb049c7937146a
+
+■kubelet
+
+キューブレット
+
+https://qiita.com/ksoma105/items/6a1e1c5b047690d26d6d
+
+■etcd
+
+エトセディー
+https://www.redhat.com/ja/topics/containers/what-is-etcd
+
+https://youtu.be/OmphHSaO1sE?t=10
 
 ■MARS （エージェント）
 
