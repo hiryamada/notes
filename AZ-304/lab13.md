@@ -1,4 +1,4 @@
-# ラボ13 Azure SQL Database ベースのアプリケーションを実装する
+# ラボ13 Azure Logic Apps と Azure Event Grid の統合を実装する
 
 時間: 60分
 

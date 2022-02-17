@@ -20,6 +20,12 @@ https://translate.google.com/?hl=ja&sl=en&tl=fr&text=azure&op=translate
 ※参考: アジュール: azur（色の一種。#007FFF）
 https://mtool.work/colordic/color/007fff
 
+■IaaS, PaaS, SaaS
+
+アイアース、パーズ、サーズ
+
+https://www.youtube.com/watch?v=WAqVsb7QhXw
+
 ■App Service
 
 アップサービス
@@ -57,6 +63,17 @@ https://www.itmanage.co.jp/column/about-owasp/
 スキュー
 https://www.youtube.com/watch?v=2zmZJi5t3Aw&t=98s
 
+■YAML
+
+ヤムル
+https://www.youtube.com/watch?v=ORy3OeqLZlE
+
+■TOML
+
+トムル
+https://www.youtube.com/watch?v=BRWvtcV1T94
+
+
 ■ARM（テンプレート）
 
 アーム
@@ -82,6 +99,11 @@ https://www.youtube.com/watch?v=E9YWmbUb9Ps
 シークェル
 https://www.youtube.com/watch?v=p7X8lH_XMtI
 
+■SQL Database
+
+シークェル データベース
+https://www.youtube.com/watch?v=Z9AFnKI7sfI
+
 ■MySQL
 
 マイシークェル
@@ -94,6 +116,11 @@ https://www.youtube.com/watch?v=YPXhi6WaDZI
 
 ポストグレス キューエル
 https://ja.wikipedia.org/wiki/PostgreSQL
+
+■AKS
+
+エイケイエス
+https://www.youtube.com/watch?v=E9YWmbUb9Ps
 
 ■Kubernetes
 
@@ -157,6 +184,11 @@ https://www.youtube.com/watch?v=_sUf0wqJYXo
 デブセクオプス
 https://www.youtube.com/watch?v=ctCLx7_sT88
 
+■（Azure） Repos
+
+リーポース
+https://www.youtube.com/watch?v=-5QzZzkBpF8
+
 ■CI/CD
 
 シーアイ シーディー
@@ -171,11 +203,6 @@ https://www.youtube.com/watch?v=DqUeQFgue-M
 
 バスチョン
 https://www.youtube.com/watch?v=WElUQm02BTU
-
-■AKS
-
-エイケイエス
-https://www.youtube.com/watch?v=E9YWmbUb9Ps
 
 ■Purview
 
@@ -255,3 +282,100 @@ https://www.youtube.com/watch?v=dcSFOxBXxh4
 スリーシックスティーファイブ
 https://www.youtube.com/watch?v=LQwsn1AcDPY
 
+
+■Diagnostics
+
+ダイグノースティクス
+https://youtu.be/syT-9KNfug8?t=16
+
+■Elastic
+
+エラスティック
+
+https://www.youtube.com/watch?v=Meq3hyrH85Y
+
+■Embedded
+
+エンベデッド
+
+■Chaos (Azure Chaos Studio)
+
+ケイオス
+
+https://www.youtube.com/watch?v=pSEDDiWfnVY
+
+■fuzzing
+
+ファジング
+
+https://www.youtube.com/watch?v=FYmiPoRwEbE
+
+
+■analytics
+
+アナリティクス
+
+※分析論、解析学
+
+- Azure Log **Analytics**
+- Azure Synapse **Analytics**
+- Microsoft Data **Analytics**
+- My**Analytics** Dashboard
+- Workplace **Analytics**
+
+https://www.youtube.com/watch?v=dvP0JwchjfI
+
+■analysis
+
+アナリシス
+
+※分析、解析
+
+- Azure **Analysis** Services
+- SQL Server **Analysis** Services
+- Azure **Analysis** Services
+
+※アナリシスとアナリティクス
+
+https://www.watershedlrs.com/blog/business-and-data-alignment/difference-between-analytics-and-analysis/
+
+https://www.hrstorm.net/entry/2018/03/16/%E5%88%86%E6%9E%90%E3%82%92%E8%8B%B1%E8%AA%9E%E3%81%A7%E8%A8%80%E3%81%86%E3%81%A8_analysis%E3%81%A8analytics%E3%81%AE%E9%81%95%E3%81%84
+
+
+■synapse
+
+シナープス
+
+- Azure **Synapse** Analytics
+- Azure **Synapse** Link for Azure Cosmos DB
+- Azure **Synapse** Link for Dataverse
+
+https://www.youtube.com/watch?v=dvP0JwchjfI
+
+■Bitnami
+
+ビッナーミー
+
+(ナにアクセント)
+
+https://www.youtube.com/watch?v=SGQUBNO68U4
+
+■Heroku
+
+ヘロク
+
+※heroic + haiku
+
+※実際の名前は日本語の「広く」に近い発音をされる。
+
+https://ja.wikipedia.org/wiki/Heroku
+
+https://www.youtube.com/watch?v=UqLTlCoAhJc
+
+■Dapr
+
+ダーパ
+
+https://www.youtube.com/watch?v=mPVnu4W0xzQ
+
+※ [DARPA(アメリカ国防高等研究計画局)](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%98%B2%E9%AB%98%E7%AD%89%E7%A0%94%E7%A9%B6%E8%A8%88%E7%94%BB%E5%B1%80)

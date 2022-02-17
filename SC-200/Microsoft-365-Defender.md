@@ -17,7 +17,7 @@ https://docs.microsoft.com/ja-jp/microsoft-365/security/defender/get-started?vie
 - Microsoft Defender for Endpoint	強力な行動センサー、クラウド分析、脅威インテリジェンスを中心に構築されたエンドポイント保護スイート
 - Microsoft Defender for Office 365	メールなどのコラボレーション ツールを含む、Office 365データの高度な保護
 - Microsoft Defender for Identity	関連付けされた Active Directory シグナルを使用して、高度な脅威、侵害された ID、悪意のあるインサイダーから防御する
-- Microsoft Defender for Cloud Apps Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処する0966
+- Microsoft Defender for Cloud Apps Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処する
 
 ■評価環境を作る
 

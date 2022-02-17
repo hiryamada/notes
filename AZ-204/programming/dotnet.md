@@ -91,6 +91,8 @@ https://docs.microsoft.com/ja-jp/dotnet/standard/clr
 
 # アセンブリ
 
+https://docs.microsoft.com/ja-jp/dotnet/standard/assembly/
+
 > アセンブリは、.NET ベースのアプリケーションの配置、バージョン管理、再利用、アクティベーション スコープ、およびセキュリティ権限の基本単位です。 
 > 
 > アセンブリは、相互に連携して 1 つの論理的な機能単位を形成するように構築された型やリソースの集合です。 

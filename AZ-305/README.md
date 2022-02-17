@@ -8,7 +8,10 @@
 
 認定試験: https://docs.microsoft.com/en-us/learn/certifications/exams/az-305  2021/11/16～受験可能
 
-[AZ-305のアナウンス(Microsoft Learn Blob)](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
+2021/10/7 [AZ-305のアナウンス(Microsoft Learn Blob)](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
+
+2022/2/8 [AZ-305 正式化 (live) のお知らせ](https://techcommunity.microsoft.com/t5/microsoft-learn/now-live-exam-az-305-designing-microsoft-azure-infrastructure/m-p/3138200)
+
 
 # コース資料 (Microsoft Learn)
 
