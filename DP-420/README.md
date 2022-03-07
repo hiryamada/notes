@@ -24,6 +24,9 @@ https://techcommunity.microsoft.com/t5/microsoft-learn-blog/exam-dp-420-beta-pro
 Study Guide
 https://www.thomasmaurer.ch/2021/10/dp-420-study-guide-microsoft-azure-cosmos-db-developer/
 
+Learn Live: Azure Cosmos DB Certification Study Hall
+https://docs.microsoft.com/ja-jp/events/learntv/learnlive-azure-cosmos-db-certification-study-hall/
+
 焦げlog
 - https://kogelog.com/2021/10/17/20211017-01/
 - https://kogelog.com/2021/12/01/20211201-01/
