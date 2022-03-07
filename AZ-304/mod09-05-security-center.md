@@ -12,10 +12,10 @@ https://docs.microsoft.com/ja-jp/azure/security-center/security-center-introduct
 
 ■歴史
 
-2016/7/28 Microsoft Defender for Cloud 一般提供開始
+2016/7/28 Azure Security Center 一般提供開始
 https://azure.microsoft.com/ja-jp/updates/generally-available-azure-security-center/
 
-2020/9/22 「Azure Standard Center Standard edition」が、「Azure Defender」にリブランド（ブランド再構築）された。[Azure Standard Centerのプランは「Free」と「Azure Defender」となった](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-pricing#what-are-the-plans-offered-by-security-center)。
+2020/9/22 「Azure Security Center Standard edition」が、「Azure Defender」にリブランド（ブランド再構築）された。[Azure Standard Centerのプランは「Free」と「Azure Defender」となった](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-pricing#what-are-the-plans-offered-by-security-center)。
 https://azure.microsoft.com/en-us/blog/protect-multicloud-workloads-with-new-azure-security-innovations/?WT.mc_id=AZ-MVP-5004198
 
 2020/12/2 Azure Defender for SQL Server 一般提供開始

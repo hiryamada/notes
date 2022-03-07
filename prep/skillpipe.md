@@ -1,12 +1,21 @@
-<!--
 # テキストについて
 
-今後のコースでは、テキストとして、[Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/)のコンテンツを使用するようになりました。
+今後のコースでは、テキストとして、[Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/)のコンテンツを参照するようになりました。
 
-これまで使用していた Skillpipe（スキルパイプ）は、順次、使用されなくなります。
+ご参加のコースの公式サイトの下部、「準備する 2 つの方法」の「オンライン - 無料」以下に、講義で参照するMicrosoft Learnのドキュメントへのリンクがあります。
 
+例:
+
+- [AZ-104](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-104)
+- [AZ-204](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-204)
+- [AZ-305](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-305)
+- [AZ-400](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400)
+- [AZ-500](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500)
+
+これまで使用していた [Skillpipe](https://skillpipe.com/)（スキルパイプ）は、順次、使用されなくなります。入手済みのテキストは引き続きご利用いただけます。
+
+<!--
 **以下は、以前の説明となります。メールで Skillpipeの「ライセンス キー」を受け取っている場合のみ、ご実施ください。**
--->
 
 # Skillpipeについて
 
@@ -119,3 +128,5 @@ Description:
     Delivery ID: (デリバリーID)
     Course: (コース名)
 ```
+
+-->
