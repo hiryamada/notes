@@ -121,6 +121,7 @@ https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-authentication-aut
   - アプリを登録したテナントには「アプリケーションオブジェクト」が作られる。
 - サービスプリンシパル
   - アプリを利用するテナントには「アプリケーションオブジェクト」に対応する「サービスプリンシパル」が作られる
+  - https://docs.microsoft.com/ja-jp/azure/active-directory/develop/active-directory-how-applications-are-added#how-are-application-objects-and-service-principals-related-to-each-other
 
 ■モジュール: Microsoft ID プラットフォームを調べる
 
@@ -145,10 +146,9 @@ https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-authentication-aut
     - MSALの機能を呼び出して、認証・認可を処理する
 - ★アプリによる「アクセス許可」の要求
   - ★デリゲート（委任）されたアクセス許可:
-    - ★ユーザーがサインインして使用するタイプのアプリ（Webアプリ等）で使用。
-    - サインインしたユーザーが、アプリに、自分の代理として振る舞う権限を与える（委任）
+    - ★一般ユーザーがサインインして使用するタイプのアプリ（Webアプリ等）で使用。
+    - サインインしたユーザーが、アプリに、自分の代理として振る舞う権限を与える（委任）。例: 自分に代わって、アプリが、Outlookからメールを送信する、など。
   - アプリケーションのアクセス許可: 
-    - ユーザーがサインインしないタイプのアプリ（オンプレで動くコンソールアプリ等）で使用。
     - 管理者が、必要な権限をアプリに与える
 - Azure ADの「条件付きアクセス」
   - Microsoft ID プラットフォームでも使用できる
