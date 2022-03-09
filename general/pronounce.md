@@ -379,3 +379,22 @@ https://www.youtube.com/watch?v=UqLTlCoAhJc
 https://www.youtube.com/watch?v=mPVnu4W0xzQ
 
 ※ [DARPA(アメリカ国防高等研究計画局)](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%98%B2%E9%AB%98%E7%AD%89%E7%A0%94%E7%A9%B6%E8%A8%88%E7%94%BB%E5%B1%80)
+
+■MSAL
+
+エムサル
+
+https://www.youtube.com/watch?v=zufQ0QRUHUk&t=24s
+
+■ADAL
+
+エダール
+
+https://www.youtube.com/watch?v=q-TDszj2O-4
+
+■MFA
+
+エムエフエー
+
+https://www.youtube.com/watch?v=FxW8vLxAjSk
+
