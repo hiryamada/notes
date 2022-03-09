@@ -90,7 +90,7 @@ https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-iaas-solutions/
 - 知識チェック: コンテナーグループの作成方法
 - デモ: ACRに格納したDockerコンテナーをACIで実行する
 
-■ラボ5 
+■ラボ5
 
 
 ■ランチ 12:00-13:00
@@ -101,7 +101,7 @@ https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-authentication-aut
 
 ■（前知識）Azure AD
 
-- Azure ADとは？ 
+- Azure ADとは？ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis
   - Azure, Microsoft 365、その他のクラウドアプリケーションで利用される認証プラットフォーム
 - テナント、ディレクトリ、サブスクリプション https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod01/%E3%83%86%E3%83%8A%E3%83%B3%E3%83%88.pdf
 - ユーザー、グループ
