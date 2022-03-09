@@ -119,8 +119,11 @@ https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-authentication-aut
   - デモ: 「条件付きアクセス」の設定
 - アプリケーションオブジェクト
   - アプリを登録したテナントには「アプリケーションオブジェクト」が作られる。
+  - https://docs.microsoft.com/ja-jp/azure/active-directory/develop/active-directory-how-applications-are-added#what-are-application-objects-and-where-do-they-come-from
 - サービスプリンシパル
   - アプリを利用するテナントには「アプリケーションオブジェクト」に対応する「サービスプリンシパル」が作られる
+  - https://docs.microsoft.com/ja-jp/azure/active-directory/develop/active-directory-how-applications-are-added#what-are-service-principals-and-where-do-they-come-from
+- アプリケーションオブジェクトとサービスプリンシパルの関係の図
   - https://docs.microsoft.com/ja-jp/azure/active-directory/develop/active-directory-how-applications-are-added#how-are-application-objects-and-service-principals-related-to-each-other
 
 ■モジュール: Microsoft ID プラットフォームを調べる
