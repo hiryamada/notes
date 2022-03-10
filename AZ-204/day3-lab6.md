@@ -1,5 +1,8 @@
 # ラボ6補足
 
+ラボ6
+https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_06.html
+
 ■必要なもの
 
 - .NET 6 SDK （最新）
