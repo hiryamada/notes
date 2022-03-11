@@ -14,13 +14,13 @@
   - 送信側・受信側は、相手の状態を気にしなくてよい（メンテナンス、障害対応等で有利）
   - 送信側・受信側は、相手のアドレスを知らなくてよい（構成の変更に強い）
   - タイトカップリング（tight coupling、密結合）→ルーズカップリング（loose coupling、疎結合）
-- Azure Service Bus
+- Azure Service Bus - 高度な機能
   - 「FIFO」をサポートしている
   - 「At-Most-Once」の配信保証
   - ノンブロッキング受信のみ
   - 最大キューサイズ 500 TB
   - 最大メッセージサイズ 64 KB
-- Azure Queue Storage
+- Azure Queue Storage - シンプル
   - 「FIFO」をサポートしていない
   - 「At-Least-Once」の配信保証
   - ノンブロッキング受信・ブロッキング受信をサポート
