@@ -2,14 +2,36 @@
 
 ## モジュール: Azure メッセージ キューを検出する[🐾](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/)
 
+- 「キュー」「メッセージ」とはなにか？ なぜ使うのか？
+  - 「キュー」: 「メッセージ」をためておく場所
+  - 基本的に、メッセージはキューに到着順にたまり、先に到着したものから取り出される ※FIFO
+  - メッセージを送受信するアプリ・システム等を「コンポーネント」と呼ぶ
+    - 送信側は「プロデューサー」とも
+    - 受信側は「コンシューマー」とも
+  - コンポーネント間を「キュー」でつなぐ
+  - 負荷分散
+  - 負荷平準化
+  - 送信側・受信側は、相手の状態を気にしなくてよい（メンテナンス、障害対応等で有利）
+  - 送信側・受信側は、相手のアドレスを知らなくてよい（構成の変更に強い）
+  - タイトカップリング（tight coupling、密結合）→ルーズカップリング（loose coupling、疎結合）
 - Azure Service Bus
+  - 「FIFO」をサポートしている
+  - 「At-Most-Once」の配信保証
+  - ノンブロッキング受信のみ
+  - 最大キューサイズ 500 TB
+  - 最大メッセージサイズ 64 KB
 - Azure Queue Storage
+  - 「FIFO」をサポートしていない
+  - 「At-Least-Once」の配信保証
+  - ノンブロッキング受信・ブロッキング受信をサポート
+  - 最大キューサイズ 80 GB
+  - 最大メッセージサイズ 100 MB ※Premiumの場合
 - 知識チェック https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/9-knowledge-check
   - Azure Service Bus
     - 先入れ先出し (FIFO) を提供する機能
-      - メッセージ セッション https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/message-sessions
+      - **メッセージ セッション** https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/message-sessions
     - [負荷平準化](https://docs.microsoft.com/ja-JP/azure/architecture/patterns/queue-based-load-leveling)の利点
-      - コンシューマー側アプリケーションは、平均時の負荷を処理すればよい
+      - コンシューマー側アプリケーションは、**平均時の負荷** を処理すればよい
 - [ラボ10](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_10.html) Service Bus
 
 # ラーニングパス: AZ-204: 監視とログ記録をサポートするソリューションをインストルメントする (Instrument solutions to support monitoring and logging)[🐾](https://docs.microsoft.com/ja-jp/learn/paths/az-204-instrument-solutions-support-monitoring-logging/)
