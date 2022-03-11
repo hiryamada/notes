@@ -17,13 +17,13 @@
 - Azure Service Bus - 高度な機能
   - 「FIFO」をサポートしている
   - 「At-Most-Once」の配信保証
-  - ノンブロッキング受信のみ
+  - ノンブロッキング受信・ブロッキング受信をサポート
   - 最大キューサイズ 500 TB
   - 最大メッセージサイズ 64 KB
 - Azure Queue Storage - シンプル
   - 「FIFO」をサポートしていない
   - 「At-Least-Once」の配信保証
-  - ノンブロッキング受信・ブロッキング受信をサポート
+  - ノンブロッキング受信のみ
   - 最大キューサイズ 80 GB
   - 最大メッセージサイズ 100 MB ※Premiumの場合
 - 知識チェック https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/9-knowledge-check
