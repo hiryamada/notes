@@ -22,7 +22,7 @@
   - 最大メッセージサイズ 100 MB ※Premiumの場合
 - Azure Queue Storage - シンプル
   - 「FIFO」をサポートしていない
-  - 「At-Least-Once」の配信保証
+  - 「At-Least-Once」の配信
   - ノンブロッキング受信のみ
   - 最大キューサイズ 500 TB
   - 最大メッセージサイズ 64 KB
@@ -85,7 +85,7 @@
     - [CDNプロファイルはサブスクリプションあたり25個までに制限される](https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits#content-delivery-network-limits)
     - 参考: 
       - [ストレージアカウント: 250](https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits#storage-limits)
-      -リソースグループ: 800（？） [参考1](https://build5nines.com/azure-subscription-resource-limits-and-quotas/) [参考2](https://muratsenelblog.wordpress.com/2016/02/09/azure-subscription-limitations-and-others/)
+      - リソースグループ: 800（？） [参考1](https://build5nines.com/azure-subscription-resource-limits-and-quotas/) [参考2](https://muratsenelblog.wordpress.com/2016/02/09/azure-subscription-limitations-and-others/)
   - ファイルにTTL(Time to live, 有効期限)を指定しない場合のデフォルト値
     - [大きなファイルの最適化: 1日](https://docs.microsoft.com/ja-jp/azure/cdn/cdn-manage-expiration-of-cloud-service-content)
 - [ラボ12](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_12.html) Azure CDN
