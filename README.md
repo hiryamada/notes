@@ -307,6 +307,7 @@ MVP(Most Valuable Professional):
 / [Azureブログ｜SB C&amp;S株式会社](https://licensecounter.jp/azure/blog/)
 / [株式会社LIG](https://liginc.co.jp/?s=azure)
 / [SIOS TECH.LAB](https://tech-lab.sios.jp/)
+/ [Alternative Architecture Dojo (オルターブース)](https://aadojo.alterbooth.com/)
 
 Azureのコンサルティング・プロジェクト支援・設計・構築・運用・監視・保守・運用代行・契約管理・請求管理等:
 [Azureの最上位SIパートナー24社はこれだ](https://xtech.nikkei.com/it/atcl/column/16/102800248/102800002/)

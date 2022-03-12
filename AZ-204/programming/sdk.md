@@ -59,34 +59,36 @@ https://github.com/Azure/azure-functions-vs-build-sdk
 クライアントライブラリ
 
 - https://www.nuget.org/packages/Microsoft.Azure.Storage.Blob/ 11.2.3 (deprecated)
-- https://www.nuget.org/packages/Azure.Storage.Blobs/ 12.9.1
+- https://www.nuget.org/packages/Azure.Storage.Blobs/ 12.11.0
 
-クライアントライブラリ - 旧
+クライアントライブラリ
 
-- https://www.nuget.org/packages/WindowsAzure.Storage/
-
-マネジメントライブラリ
-
-- https://www.nuget.org/packages/Microsoft.Azure.Management.Storage.Fluent/
+- https://www.nuget.org/packages/WindowsAzure.Storage/ 9.3.3 (deprecated)
+- https://www.nuget.org/packages/Microsoft.Azure.Management.Storage/ 23.1.0
+- https://www.nuget.org/packages/Microsoft.Azure.Management.Storage.Fluent/ 1.38.0
+- https://www.nuget.org/packages/Azure.ResourceManager.Storage/ 1.0.0-beta.6
 
 # mod 4 Azure Cosmos DB
 
 クライアントライブラリ(SQL API)
 
-- https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core 2.15.0 - DocumentDB (SQL) API
-- https://www.nuget.org/packages/Microsoft.Azure.Cosmos 3.20.1 - SQL API
+- https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core 2.17.0 - DocumentDB (SQL) API
+- https://www.nuget.org/packages/Microsoft.Azure.Cosmos 3.25.5 - SQL API
 - https://www.nuget.org/packages/Azure.Cosmos 4.0.0-preview3 - SQL API
+  - 注意: "Have version 4 been abandoned?" https://github.com/Azure/azure-cosmos-dotnet-v3/issues/2976
 
 クライアントライブラリ(SQL API以外)
-- https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table 2.0.0-preview - Table
-- https://www.nuget.org/packages/MongoDB.Driver 2.13.0
-- https://www.nuget.org/packages/CassandraCSharpDriver 3.16.3 - DataStax C# Driver for Apache Cassandra
-- https://tinkerpop.apache.org/dotnetdocs/3.3.11/
+- https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table 1.0.8
+- https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table 2.0.0-preview
+- https://www.nuget.org/packages/MongoDB.Driver 2.15.0
+- https://www.nuget.org/packages/CassandraCSharpDriver 3.17.1 - for Apache Cassandra and DataStax Enterprise
+- https://www.nuget.org/packages/Gremlin.Net/ 3.5.2
 
 マネジメントライブラリ
 
-- https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB.Fluent 1.37.1
-- https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB 3.1.0
+- https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB.Fluent 1.38.0
+- https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB 3.3.0
+- https://www.nuget.org/packages/Azure.ResourceManager.CosmosDB 1.0.0-bata.3
 
 Entity Framework 
 

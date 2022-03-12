@@ -12,7 +12,10 @@
 - [AZ-400](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400)
 - [AZ-500](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-500)
 
-これまで使用していた [Skillpipe](https://skillpipe.com/)（スキルパイプ）は、順次、使用されなくなります。入手済みのテキストは引き続きご利用いただけます。
+また、以下のリンクからは、すべてのトレーニングコースのコンテンツを参照できます。（コース名をクリックし、開かれたページの画面下部の「コレクションの内容」を参照）
+- https://aka.ms/AccessESItrainingcontent_JP
+
+これまで使用していた [Skillpipe](https://skillpipe.com/)（スキルパイプ）は、今後は、使用されなくなります。入手済みのテキストは引き続きご利用いただけます。
 
 <!--
 **以下は、以前の説明となります。メールで Skillpipeの「ライセンス キー」を受け取っている場合のみ、ご実施ください。**
