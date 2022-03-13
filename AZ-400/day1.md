@@ -200,6 +200,7 @@
 ## [モジュール2: Git ブランチとワークフローの管理](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/)
 
 - 講義: [ブランチの運用](mod04-03-branch.md)
+- 講義: [GitHubにおけるフォーク、プルリクエスト、マージ](pdf/GitHub%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF.pdf)
 - ブランチ ワークフローの種類（いわゆる「[ブランチ戦略](https://www.google.com/search?q=%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%88%A6%E7%95%A5)」）
   - [機能ブランチ ワークフロー](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/3-explore-feature-branch-workflow)
     - 機能開発を専用のブランチで行う
@@ -223,7 +224,6 @@
 ## [モジュール3: Azure Repos で pull request を使用して共同作業する](https://docs.microsoft.com/ja-jp/learn/modules/collaborate-pull-requests-azure-repos/)
 
 - 講義: [プルリクエストの運用](mod04-04-pr.md)
-- 講義: [GitHubにおけるフォーク、プルリクエスト、マージ](pdf/GitHub%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF.pdf)
 - ★プルリクエスト
   - ★共同作業するチームや組織でよく使用される
   - ★全員が 1 つのリポジトリを共有し、機能を開発したり、変更を分離したりするためにトピック ブランチが使用される
