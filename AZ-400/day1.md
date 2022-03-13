@@ -9,6 +9,7 @@
 ## [モジュール1: DevOps の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-devops/)
 
 - 講義: [DevOpsとは](mod01-01-devops.md)
+- 講義: [参考: MicrosoftにおけるDevOpsの導入](mod01-10-microsoft-devops.md)
 - ★DevOpsの定義:
   - ★**エンド ユーザーに対して継続的に価値を提供するための、人、プロセス、および製品の組み合わせ**
 - ★**継続的インテグレーション**
@@ -20,6 +21,7 @@
 ## [モジュール2: 適切なプロジェクトを選択する](https://docs.microsoft.com/ja-jp/learn/modules/choose-right-project/)
 
 - 講義: [適切なプロジェクトを選択する](mod01-08-devops-team-project.md)
+- 講義: [参考: Microsoftにおけるアジャイルの導入](mod01-11-microsoft-agile.md)
 - 技術的負債
 - ★プロジェクトの種類
   - グリーンフィールド
