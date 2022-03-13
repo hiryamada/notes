@@ -49,10 +49,8 @@
 
 ## [モジュール3: チーム構造を記述する](https://docs.microsoft.com/ja-jp/learn/modules/describe-team-structures/)
 
-- 講義: [PDF:Azure DevOpsの概要](pdf/Azure%20DevOpsの概要.pdf)
-- 講義: [PDF:Azure DevOpsの機能の連携](pdf/Azure%20DevOps機能の連携.pdf)
-- 講義: [PDF:Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
-- 講義: [Azure Boards](mod01-09-azure-board.md)
+- 講義: [かんばんボード](mod01-13-kanban.md)
+- 講義: [アジャイルなソフトウェア開発](mod01-12-agile.md)
 - ★**かんばんボード**
   - ★ステージ（列）の左から右に、タスクを移動し、作業を管理および視覚化
 - ★ウォーターフォールとアジャイル
