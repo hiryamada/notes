@@ -100,10 +100,10 @@
 
 - Azure DevOps
   - Azure DevOps組織とプロジェクトを作成しましょう
-  - [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
+  - 手順書: [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
 - GitHub
   - GitHubアカウントを作成しましょう
-  - [GitHubアカウントの作成](github-account.md)
+  - 手順書: [GitHubアカウントの作成](github-account.md)
 
 ## [モジュール5: ソース管理の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-source-control/)
 
