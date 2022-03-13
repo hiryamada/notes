@@ -117,9 +117,6 @@ SonarCloud（SonarQube）についてはモジュール20で扱う。
 
 なにか思い出や教訓などがございましたら、ぜひチャットに書き込んでください。
 
-### 技術的負債の測定と管理
-
-[SonarCloud](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud)（[SonarQube](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube)）についてはモジュール20で扱う。
 
 ### その他のコード品質ツールの統合
 

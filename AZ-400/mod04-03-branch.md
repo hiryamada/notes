@@ -14,11 +14,13 @@
 
 ## フィーチャー（機能）ブランチのワークフロー
 
-注：差別的な言葉を使わないようにするため、2020年後期から、Gitのデフォルトブランチの名前として 「master」ではなく「main」が使われるようになってきている。
+注：[差別的な言葉、センシティブ（取り扱いに最新の注意を要する）とみなされる言葉を使わないようにするため、2020年後期から、Gitのデフォルトブランチの名前として 「master」ではなく「main」が使われるようになってきている。](https://www.publickey1.jp/blog/20/githubmainmastermain.html)
 
 - [Git](https://softantenna.com/wp/software/git-2-30-released/) 
 - [GitHub](https://www.publickey1.jp/blog/20/githubmainmastermain.html)
 - [Azure DevOps](https://devblogs.microsoft.com/devops/azure-repos-default-branch-name/) 
+
+[用語の置き換えの例(Twitter)](https://twitter.com/TwitterEng/status/1278733305190342656?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1278733305190342656%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.publickey1.jp%2Fblog%2F20%2Ftwitterwhitelistblacklistmasterslavedummy_value.html)
 
 Gitに関する（古い）ドキュメントで「master」と書かれている部分は「main」に置き換えて読むとよい。
 
@@ -39,7 +41,3 @@ Gitに関する（古い）ドキュメントで「master」と書かれてい�
 - フィーチャー（機能）ブランチ
   - 新機能とバグ修正を行う
 
-プルリクエスト
-
-- プルリクエストの一部として、検査・検証（コードの静的分析等）を自動化する
-- [Azure CLI (azコマンド)を使用してプルリクエストを作成](https://docs.microsoft.com/ja-jp/cli/azure/repos/pr?view=azure-cli-latest#az_repos_pr_create)することができる

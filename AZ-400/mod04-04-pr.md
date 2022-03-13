@@ -16,9 +16,6 @@
   - 必要に応じてフィードバックを行う（コメントする）
   - プルリクエストをマージする（または、却下する）
 
-## デモンストレーション
-
-（Skillpipe資料を参照）
 
 ## GitHubモバイルアプリ
 
@@ -33,4 +30,10 @@ https://docs.microsoft.com/ja-jp/azure/devops/project/navigation/mobile-work?vie
 
 Webブラウザーを使用して、作業項目を表示および更新することができる。
 
-※現在のところ、Azure DevOpsの公式モバイルアプリは存在しない。
+※現在のところ、Azure DevOpsの公式モバイルアプリは存在しない。[Azure mobile app](https://azure.microsoft.com/ja-jp/get-started/azure-portal/mobile-app/)というものはあるが、ここからAzure DevOps Servicesを操作することはできない。
+
+## 参考
+
+- プルリクエストの一部として、検査・検証（コードの静的分析等）を自動化することができる
+- [Azure CLI (azコマンド)を使用してプルリクエストを作成](https://docs.microsoft.com/ja-jp/cli/azure/repos/pr?view=azure-cli-latest#az_repos_pr_create)することができる
+- [GitHub CLIのprコマンドでプルリクエストを作成](https://cli.github.com/manual/gh_pr_create)
