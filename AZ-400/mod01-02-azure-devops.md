@@ -5,7 +5,7 @@ https://azure.microsoft.com/ja-jp/services/devops/
 ## Azure DevOpsの概要
 
 - [→Azure DevOpsの概要](pdf/Azure%20DevOpsの概要.pdf)
-- [→機能の連携](pdf/Azure%20DevOps機能の連携.pdf)
+- [→Azure DevOpsの機能の連携](pdf/Azure%20DevOps機能の連携.pdf)
 
 ```
 Azure DevOpsの画面 (dev.azure.com)
@@ -17,11 +17,6 @@ Azure DevOpsの画面 (dev.azure.com)
   └Azure Artifacts フィード
 ※ユーザー：Azure ADユーザー, Microsoftアカウント, GitHubアカウント
 ```
-
-## Azure DevOpsの機能
-
-- [→Azure DevOpsの機能の連携](pdf/Azure%20DevOps機能の連携.pdf)
-
 
 ## ユーザーの追加(招待)
 

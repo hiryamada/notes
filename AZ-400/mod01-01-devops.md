@@ -16,7 +16,7 @@ DevOpsとはなにか、組織にどうやってDevOpsを導入していけば�
 
 DevOpsとは何か。なぜ必要なのか。
 
-参考: [DevOpsとはなにか](https://medium.com/@yuhattor/devops%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B-601c68005371) - [Sam Guckenheimer(サム・グッケンハイマー)](https://devblogs.microsoft.com/devops/author/samgumicrosoft-com/) による記事、[Yuki Hattori](https://www.linkedin.com/in/yukihattori)による翻訳. Skillpipeの内容と一緒だが、Yuki Hattoriにより解説が加えられていてわかりやすい。
+参考: [DevOpsとはなにか](https://medium.com/@yuhattor/devops%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B-601c68005371) - [Yuki Hattori](https://www.linkedin.com/in/yukihattori)さんによる翻訳. 解説が加えられていてわかりやすい。この記事はもともと[Sam Guckenheimer(サム・グッケンハイマー)](https://www.kinokuniya.co.jp/f/dsg-01-9784822294687) によって書かれた。
 
 - DevOpsとは、**顧客に継続的に価値を届ける**ための、人、プロセス、テクノロジの集まり
   - [ドノヴァン・ブラウンによる定義](https://www.donovanbrown.com/post/what-is-devops)
@@ -25,7 +25,7 @@ DevOpsとは何か。なぜ必要なのか。
     - Microsoft社員
     - 元 DevOpsのプログラムマネージャ/クラウドアドボケイトマネージャ
     - 現 パートナープログラムマネージャ
-    - [Youtube](https://www.youtube.com/c/DonovanBrown)
+    - [YouTube](https://www.youtube.com/c/DonovanBrown)
     - [LinkedIn](https://www.linkedin.com/in/darquewarrior/)
 - サイクルをなるべく早く回す。
   - DevOpsにおける「サイクル」 = OODAループ
@@ -74,13 +74,13 @@ DevOpsを実践するとは、具体的にどういうことなのか。
 
 参考: [DevOpsとはなにか](https://medium.com/@yuhattor/devops%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B-601c68005371)
 
-- [継続的インテグレーション(CI)](https://docs.microsoft.com/ja-jp/devops/develop/what-is-continuous-integration)を行う
+- [継続的インテグレーション(CI)](https://docs.microsoft.com/ja-jp/devops/develop/what-is-continuous-integration)を行う - Day2前半で学習
   - チーム メンバーがバージョン管理 に変更をコミットするたび、コードのビルドとテストを自動的に行う
-- [継続的デリバリー(CD)](https://docs.microsoft.com/ja-jp/devops/deliver/what-is-continuous-delivery)を行う
+- [継続的デリバリー(CD)](https://docs.microsoft.com/ja-jp/devops/deliver/what-is-continuous-delivery)を行う - Day2後半～Day3前半で学習
   - ビルドされた成果物のデプロイを自動的に行う。
   - デプロイ先はステージング環境や本番環境
   - CI/CDで、エンドユーザーに対して新機能をリリースすることを[継続的デプロイ](https://azure.microsoft.com/ja-jp/overview/continuous-delivery-vs-continuous-deployment/)と呼ぶ場合もある
-- バージョンコントロールを利用する
+- バージョンコントロールを利用する - Day1後半・Day2前半で学習
   - [Git (Wikipedia)](https://ja.wikipedia.org/wiki/Git)
   - [Gitとは (Microsoft Docs)](https://docs.microsoft.com/ja-jp/devops/develop/git/what-is-git)
   - [Microsoft Learn: Gitでのバージョンコントロール](https://docs.microsoft.com/ja-jp/learn/paths/intro-to-vc-git/)
@@ -89,17 +89,17 @@ DevOpsを実践するとは、具体的にどういうことなのか。
   - [アジャイルソフトウェア開発宣言](https://agilemanifesto.org/iso/ja/manifesto.html)
   - [リーンスタートアップ](https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97)
   - [アジャイル開発の進め方（IPA）](https://www.ipa.go.jp/files/000065606.pdf)
-- アプリケーションのモニタリングを行い、検証に必要なデータを集める
+- アプリケーションのモニタリングを行い、検証に必要なデータを集める - OODAループを形成する
   - [Azure Monitor](https://docs.microsoft.com/ja-jp/azure/azure-monitor/overview)
   - [Log Analytics](https://docs.microsoft.com/ja-jp/azure/azure-monitor/logs/log-analytics-overview)
   - [Application Insights](https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/app-insights-overview)
 - クラウドを活用する
   - [Azure DevOps](https://azure.microsoft.com/ja-jp/services/devops/): Azureクラウド上ですぐに利用できるDevOps製品。
-- IaCを活用する（インフラをコード化する）
+- IaCを活用する（インフラをコード化する） - Day3後半で学習
   - [IaC (Microsoft Docs)](https://docs.microsoft.com/ja-jp/dotnet/architecture/cloud-native/infrastructure-as-code)
 - マイクロサービスアーキテクチャを採用する
   - [マイクロサービス アーキテクチャ (Microsoft Docs)](https://docs.microsoft.com/ja-jp/azure/architecture/guide/architecture-styles/microservices#what-are-microservices)
-- コンテナー技術を活用する
+- コンテナー技術を活用する - Day4後半で学習
   - [イメージとコンテナ](https://docs.docker.jp/get-started/index.html#images-and-containers)
   - [Docker とは (Red Hat社)](https://www.redhat.com/ja/topics/containers/what-is-docker)
 

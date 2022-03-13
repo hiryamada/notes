@@ -11,11 +11,14 @@
 - 講義: [DevOpsとは](mod01-01-devops.md)
 - 講義: [参考: MicrosoftにおけるDevOpsの導入](mod01-10-microsoft-devops.md)
 - ★DevOpsの定義:
-  - ★**エンド ユーザーに対して継続的に価値を提供するための、人、プロセス、および製品の組み合わせ**
+  - ★**エンド ユーザーに対して継続的に価値を提供するための、人、プロセス、および製品の集まり**
+  - 「継続的インテグレーション(CI)」や「コードとしてのインフラストラクチャ（IaC）」を活用する
 - ★**継続的インテグレーション**
   - コードのマージとテストを継続的に行うこと
+  - ※詳細はDay2前半に解説
 - ★**コードとしてのインフラストラクチャ (IaC)**
   - ★環境をコードで定義し、自動的に作成できるようにする
+  - ※詳細はDay3後半に解説
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-devops/6-knowledge-check)
 
 ## [モジュール2: 適切なプロジェクトを選択する](https://docs.microsoft.com/ja-jp/learn/modules/choose-right-project/)
@@ -46,6 +49,9 @@
 
 ## [モジュール3: チーム構造を記述する](https://docs.microsoft.com/ja-jp/learn/modules/describe-team-structures/)
 
+- 講義: [PDF:Azure DevOpsの概要](pdf/Azure%20DevOpsの概要.pdf)
+- 講義: [PDF:Azure DevOpsの機能の連携](pdf/Azure%20DevOps機能の連携.pdf)
+- 講義: [PDF:Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
 - 講義: [Azure Boards](mod01-09-azure-board.md)
 - ★**かんばんボード**
   - ★ステージ（列）の左から右に、タスクを移動し、作業を管理および視覚化
