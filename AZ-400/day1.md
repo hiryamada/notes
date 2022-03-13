@@ -1,7 +1,14 @@
+- 1日目
+  - ラーニングパス1: DevOpsの概要
+    - モジュール1～4: DevOps
+    - モジュール5～7: ソース管理 / バージョン管理
+  - ラーニングパス2: Git
+
 # [ラーニング パス1: DevOps 変換の過程を開始する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-get-started-devops-transformation-journey/)
 
 ## [モジュール1: DevOps の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-devops/)
 
+- 講義: [DevOpsとは](mod01-01-devops.md)
 - ★DevOpsの定義:
   - ★**エンド ユーザーに対して継続的に価値を提供するための、人、プロセス、および製品の組み合わせ**
 - ★**継続的インテグレーション**
@@ -12,6 +19,7 @@
 
 ## [モジュール2: 適切なプロジェクトを選択する](https://docs.microsoft.com/ja-jp/learn/modules/choose-right-project/)
 
+- 講義: [適切なプロジェクトを選択する](mod01-08-devops-team-project.md)
 - 技術的負債
 - ★プロジェクトの種類
   - グリーンフィールド
@@ -36,6 +44,7 @@
 
 ## [モジュール3: チーム構造を記述する](https://docs.microsoft.com/ja-jp/learn/modules/describe-team-structures/)
 
+- 講義: [Azure Boards](mod01-09-azure-board.md)
 - ★**かんばんボード**
   - ★ステージ（列）の左から右に、タスクを移動し、作業を管理および視覚化
 - ★ウォーターフォールとアジャイル
@@ -48,6 +57,10 @@
 
 ## [モジュール4: DevOps への移行](https://docs.microsoft.com/ja-jp/learn/modules/migrate-to-devops/)
 
+- 講義: [Azure DevOps Services](mod01-02-azure-devops.md)
+- 講義: [Azure DevOps Server](mod01-03-devops-server.md)
+- 講義: [GitHub](mod01-04-github.md)
+- 講義: [価格](mod01-07-license.md)
 - ★[Azure DevOps Services](https://azure.microsoft.com/ja-jp/services/devops/#overview) - [ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)
   - ★[Azure Boards](https://azure.microsoft.com/ja-jp/services/devops/boards/)
   - ★[Azure Repos](https://azure.microsoft.com/ja-jp/services/devops/repos/)
@@ -133,6 +146,8 @@
 
 ## [モジュール1: Git リポジトリを構成する](https://docs.microsoft.com/ja-jp/learn/modules/structure-your-git-repo/)
 
+- 講義: [モノレポ vs 複数リポジトリ](mod04-01-monorepo.md)
+- 講義: [プロジェクトの変更ログ（CHANGELOG.md）](mod04-02-changelog.md)
 - ★リポジトリの構成（戦略）:
   - 「マルチリポ」:
     - プロジェクトごとにリポジトリをつくる
@@ -150,6 +165,7 @@
 
 ## [モジュール2: Git ブランチとワークフローの管理](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/)
 
+- 講義: [ブランチの運用](mod04-03-branch.md)
 - ブランチ ワークフローの種類（いわゆる「[ブランチ戦略](https://www.google.com/search?q=%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%88%A6%E7%95%A5)」）
   - [機能ブランチ ワークフロー](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/3-explore-feature-branch-workflow)
     - 機能開発を専用のブランチで行う
@@ -171,6 +187,7 @@
 
 ## [モジュール3: Azure Repos で pull request を使用して共同作業する](https://docs.microsoft.com/ja-jp/learn/modules/collaborate-pull-requests-azure-repos/)
 
+- 講義: [プルリクエストの運用](mod04-04-pr.md)
 - ★プルリクエスト
   - ★共同作業するチームや組織でよく使用される
   - ★全員が 1 つのリポジトリを共有し、機能を開発したり、変更を分離したりするためにトピック ブランチが使用される
@@ -182,6 +199,7 @@
 
 ## [モジュール4: Git フックを探索する](https://docs.microsoft.com/ja-jp/learn/modules/explore-git-hooks/)
 
+- 講義: [Gitフック](mod04-05-git-hooks.md)
 - ★[Gitフック](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF)の種類
   - post-checkout
   - pre-commit
@@ -199,6 +217,7 @@
 
 ## [モジュール5: 内部ソースの推進を計画する](https://docs.microsoft.com/ja-jp/learn/modules/plan-fostering-inner-source/)
 
+- 講義: [インナーソース（内部ソース）](mod04-06-inner-source.md)
 - ★フォークとは
   - ★リポジトリのコピー
   - ★フォークの目安
@@ -213,6 +232,7 @@
 
 ## [モジュール6: Git リポジトリの管理](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-repositories/)
 
+- 講義: [Gitリポジトリの運用](mod04-07-operating-git-repo.md)
 - ★Git LFS
   - ★リポジトリで大規模なファイルを扱う場合に使用
 - ★Gitリポジトリの履歴からのファイルの削除

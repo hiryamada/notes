@@ -6,7 +6,7 @@ AZ-400 Microsoft DevOps ソリューションの設計と実装
 https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
 
 - 日数: 5
-- モジュール: 20
+- ラーニングパス: 10
 - レベル: エキスパート
 
 > DevOps の計画、ソース管理の使用、企業向け Git のスケーリング、成果物の統合、依存関係管理戦略の設計、シークレットの管理、継続的インテグレーションの実装、コンテナービルド戦略の実装、リリース戦略の設計、リリース管理ワークフローの設定、デプロイ パターンの実装、フィードバック メカニズムの最適化を行う方法について学習します。
@@ -14,7 +14,32 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
 
 # 日程
 
+- [1日目](day1.md)
+  - ラーニングパス1: DevOpsの概要
+    - モジュール1～4: DevOps
+    - モジュール5～7: ソース管理 / バージョン管理
+  - ラーニングパス2: Git
+- [2日目](day2.md)
+  - ラーニングパス3: CI
+    - モジュール1～5: Azure Pipelines
+    - モジュール6～7: GitHub Actions
+  - ラーニングパス4: CD その1
+- [3日目](day3.md)
+  - ラーニングパス5: CD その2
+    - モジュール1～4: Azure Pipelines リリースパイプライン
+    - モジュール5: セキュリティ
+    - モジュール6: Key Vault
+    - モジュール7: 認証
+    - モジュール8: App Configuration
+  - ラーニングパス6: IaC
+- [4日目](day4.md)
+  - ラーニングパス7: パッケージ管理(Azure Artifacts)
+  - ラーニングパス8: コンテナー型仮想化
+- [5日目](day5.md)
+  - ラーニングパス9: フィードバック、分析
+  - ラーニングパス10: セキュリティ
 
+<!-- 
 ## day 1 DevOps, ソースコードの管理
 
 - DevOpsの概要と製品
@@ -93,6 +118,7 @@ Azure Monitor, Application Insights 17
 ■フィードバック
 Teams 18
 ```
+-->
 
 
 # 認定資格
@@ -104,7 +130,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/devops-engineer/
 - [Microsoft Certified: Azure Administrator Associate (AZ-104)](https://docs.microsoft.com/ja-jp/learn/certifications/azure-administrator/)
 - [Microsoft Certified: Azure Developer Associate (AZ-204)](https://docs.microsoft.com/ja-jp/learn/certifications/azure-developer/)
 
-(2)認定試験:AZ-400
+(2)認定試験: AZ-400 に合格。
 
 - [AZ-400: Microsoft DevOps ソリューションの設計と実装](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400)
 
@@ -124,29 +150,38 @@ Microsoft Learn
 - [DevOps プラクティスを発展させる](https://docs.microsoft.com/ja-jp/learn/paths/evolve-your-devops-practices/)
 
 # 参考ブログ
-
+AZ-400: Designing and Implementing Microsoft DevOps Solutions 更新情報 (6/15)
 https://qiita.com/ymasaoka/items/d3c89ff52e0ef2b568b0
 
+AZ-400 Microsoft Azure DevOps Solutions に合格してきた
 https://yomon.hatenablog.com/entry/2020/02/az400_cert
 
+楽しくレベルを上げてAZ-400に合格した話
 https://tech-blog.cloud-config.jp/2020-09-01-a-story-that-passed-the-az-400-after-happily-raising-the-level/
 
+DevOps未経験の僕がAZ-400をどのように合格したのか？
 https://satton-infra.com/az400-devops/
 
+ポンコツエンジニアのAZ-400受験期
 https://www.slideshare.net/KentaroHigashi/az400-205871188
 
+【Microsoft Azure資格】Azure DevOps Engineer Expert (AZ-400)を取得した話【2020年度最新】
 https://www.simpletraveler.jp/2020/10/06/microsoftazure-certificate-report-azuredevopsengineerexpert/
 
+【2019年9月版】Microsoft Azure「新資格」についてまとめました
 https://blog.trainocate.co.jp/blog/415_018
 
+Micorosoft 認定資格「AZ-400: Designing and Implementing Microsoft DevOps Solutions」に合格したので受験記を書く
 https://onarimon.jp/entry/2020/07/20/181845
 
 # Microsoft Learnコレクション
 
 https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400
 
+AZ-400 Azure DevOps Expert受験対策に向いてると思うものを纏めました。
 https://docs.microsoft.com/ja-jp/users/khigashi/collections/631ybyrz26n72
 
 # その他
 
+Azure DevOps Tips and Tricks
 https://www.azuredevops.tips/

@@ -1,3 +1,6 @@
+- 4日目
+  - ラーニングパス7: パッケージ管理(Azure Artifacts)
+  - ラーニングパス8: コンテナー型仮想化
 
 # [ラーニング パス7: 依存関係の管理戦略の設計と実装](https://docs.microsoft.com/ja-jp/learn/paths/az-400-design-implement-dependency-management-strategy/)
 
