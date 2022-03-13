@@ -6,6 +6,13 @@
 
 # [ラーニング パス1: DevOps 変換の過程を開始する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-get-started-devops-transformation-journey/)
 
+※DevOps**変換**: DevOps **transformation**, DevOpsを採用していない組織がDevOpsを使用するようになること. 参考: [DX(デジタル トランスフォーメーション)](https://www.google.com/search?q=dx)
+
+※DevOps変換の**過程**: DevOps transformation **process**, DevOps transformationの導入には、組織における多数の変革が必要（ある程度の時間がかかる）
+- 人の変革: Dev(開発チーム)とOps(運用チーム)が協力する
+- プロセスの変革: ウォーターフォールからアジャイルへ移行する
+- ツールの変革: さまざまなDevOps製品を活用する
+
 ## [モジュール1: DevOps の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-devops/)
 
 - 講義: [DevOpsとは](mod01-01-devops.md)
@@ -100,6 +107,8 @@
 
 - Azure DevOps
   - Azure DevOps組織とプロジェクトを作成しましょう
+  - お手元のブラウザから [Azure portal](https://portal.azure.com/) にアクセスします
+  - トレーニング開始時に作成したMicrosoftアカウントでサインインします
   - 手順書: [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
 - GitHub
   - GitHubアカウントを作成しましょう
