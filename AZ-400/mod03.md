@@ -9,7 +9,6 @@
 - GitHub Codespacesとは何か。
 - SonarCloudとは何か。
 
-ラボ: Azure DevOps の Wiki を使う
 
 ## 技術的負債の特定
 
@@ -268,16 +267,4 @@ GitHubのリポジトリで（ファイルを選択し）、「.」をタイプ�
 
 参考: GitHub1s（1 second）
 https://github.com/conwnet/github1s
-
-
-## ラボ（ハンズオン演習）
-
-[Wiki、Readme、Markdown について](https://docs.microsoft.com/ja-jp/azure/devops/project/wiki/about-readme-wiki?view=azure-devops)
-
-- Azure DevOps Labs: [Collaborating using Azure DevOps Wiki](https://azuredevopslabs.com/labs/azuredevops/wiki/)
-  - Azure DevOps Overview
-    - プロジェクトのWikiを作る
-  - Azure Repos
-    - コードをWikiとしてパブリッシュする
-
 

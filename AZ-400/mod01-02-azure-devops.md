@@ -76,9 +76,3 @@ Azure DevOps は次の「地域」で利用できる。
 
 https://azure.microsoft.com/ja-jp/support/devops/
 
-
-## ラボ（ハンズオン演習）
-
-- [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
-  - 組織とプロジェクトを作成する
-

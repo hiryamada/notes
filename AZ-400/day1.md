@@ -25,6 +25,7 @@
 
 - 講義: [適切なプロジェクトを選択する](mod01-08-devops-team-project.md)
 - 講義: [参考: Microsoftにおけるアジャイルの導入](mod01-11-microsoft-agile.md)
+- 講義: [技術的負債の管理](mod03.md)
 - 技術的負債
 - ★プロジェクトの種類
   - グリーンフィールド
@@ -95,8 +96,18 @@
   - ★[GitHub Enterprise](https://github.co.jp/enterprise.html)
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/migrate-to-devops/8-knowledge-check)
 
+## ハンズオン(演習)
+
+- Azure DevOps
+  - Azure DevOps組織とプロジェクトを作成しましょう
+  - [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
+- GitHub
+  - GitHubアカウントを作成しましょう
+  - [GitHubアカウントの作成](github-account.md)
+
 ## [モジュール5: ソース管理の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-source-control/)
 
+- 講義: [ソース管理の重要性](mod02-01-source-management.md)
 - ソース管理システム
   - Source Control System = Version Control System と定義されている。
     - [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-source-control/3-what-source-control)
@@ -119,6 +130,9 @@
 
 ## [モジュール6: ソース管理システムの種類について説明する](https://docs.microsoft.com/ja-jp/learn/modules/describe-types-of-source-control-systems/)
 
+- 講義: [ソースコード管理システムの種類](mod02-06-scm-type.md)
+- 講義: [Git](mod02-02-git.md)
+- 講義: [Gitのコマンド](mod02-02-01-git-commands.md)
 - ソース管理とは
   - コードに対する変更を追跡および管理する方法
 - [分散型ソース（バージョン）管理](https://docs.microsoft.com/ja-jp/learn/modules/describe-types-of-source-control-systems/3-understand-distributed) - Git
@@ -134,6 +148,8 @@
 
 ## [モジュール7: Azure Repos と GitHub を操作する](https://docs.microsoft.com/ja-jp/learn/modules/work-azure-repos-github/)
 
+- 講義: [Azure Repos](mod02-03-azure-repos.md)
+- 講義: [GitHub](mod02-04-github.md)
 - ★Azure Repos がサポートする形式
   - Git
   - Team Foundation Version Control
