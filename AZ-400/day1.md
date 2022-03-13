@@ -203,10 +203,11 @@
 - ブランチ ワークフローの種類（いわゆる「[ブランチ戦略](https://www.google.com/search?q=%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%88%A6%E7%95%A5)」）
   - [機能ブランチ ワークフロー](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/3-explore-feature-branch-workflow)
     - 機能開発を専用のブランチで行う
-  - [Gitflow ワークフロー](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/5-explore-gitflow-branch-workflow)
-    - プロジェクトのリリースを中心に設計されている
+  - ★[Gitflow ワークフロー](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/5-explore-gitflow-branch-workflow)
+    - ★プロジェクトのリリースを中心に設計されている
     - [git-flow拡張機能](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/5-explore-gitflow-branch-workflow)
-      - `git flow feature start feature_branch`
+      - [拡張機能のGitHubリポジトリ](https://github.com/petervanderdoes/gitflow-avh)
+      - ★機能ブランチの作成: `git flow feature start feature_branch`
     - [Gitflowは難しすぎる説](https://itnews.org/news_contents/please-stop-recommending-git-flow)
   - [Forking ワークフロー](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/6-explore-fork-workflow)
     - ※GitHubのやりかた
@@ -216,12 +217,13 @@
   - [トランクベース開発](https://www.atlassian.com/ja/continuous-delivery/continuous-integration/trunk-based-development)
     - 開発者が細かく頻繁なアップデートを main ブランチ（「[トランク](https://tracpath.com/bootcamp/learning_subversion_tutorial1.html#trunk)」）にマージするバージョン管理手法
     - Gitflowワークフローよりも単純
-  - ※「SmartFlowワークフロー」というものはない
+  - ★※「SmartFlowワークフロー」というものはない
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/manage-git-branches-workflows/7-knowledge-check)
 
 ## [モジュール3: Azure Repos で pull request を使用して共同作業する](https://docs.microsoft.com/ja-jp/learn/modules/collaborate-pull-requests-azure-repos/)
 
 - 講義: [プルリクエストの運用](mod04-04-pr.md)
+- 講義: [GitHubにおけるフォーク、プルリクエスト、マージ](pdf/GitHub%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF.pdf)
 - ★プルリクエスト
   - ★共同作業するチームや組織でよく使用される
   - ★全員が 1 つのリポジトリを共有し、機能を開発したり、変更を分離したりするためにトピック ブランチが使用される
