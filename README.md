@@ -28,7 +28,6 @@
 
 トレーニング関連: 
 [Azure portal](https://portal.azure.com/) 
-/ [Skillpipe](https://www.skillpipe.com/) 
 / [Azure Pass](https://www.microsoftazurepass.com/) 
 / [Azure Passのクレジット確認](https://www.microsoftazuresponsorships.com/balance)
 / [演習環境 - Learn on Demand LMS (LODS)](https://esi.learnondemand.net/) 

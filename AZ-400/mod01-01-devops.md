@@ -35,7 +35,6 @@ DevOpsとは何か。なぜ必要なのか。
     - [PDCA(Plan-Do-Check-Act)との違い](https://data.wingarc.com/what-is-ooda-11126): OODAは **Observe(データの収集)** から始まる。PDCAは **Plan(自己計画)** から始まる。
 - 各サイクルで、データに基づく学習(Validated Learning)を行う
   - [Validated Learning](https://en.wikipedia.org/wiki/Validated_learning)
-    - Skillpipeテキストでは「検証済みの学習」
     - 各サイクルで目標を設定し、アイデアを試行し、データを集め、**目標に近づいたことを確認** する
     - Validated Learningは、リーンスタートアップにおける考え方。
   - [リーンスタートアップ](https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97)
