@@ -13,8 +13,16 @@
 - https://outlook.live.com/ にアクセスします。
 - GitHubから「Your GitHub launch code」というメールが届いています。そのメール内の8桁のコードをコピーし、「Open GitHub」をクリックします。
 - 8桁のコードを貼り付けます。以上で、サインアップが完了します。
+  - 「How many members will be working with you?」といった画面が出てきた場合は、画面下部の「Skip personalization」でスキップできます。
+
+## リポジトリの作成
+
 - 「Create a repository」をクリックします。
-- 「Repository name」に「test」と入力します。「Create repository」をクリックします。
+  - ※ リンクが見つからない場合は、https://github.com/ へ移動し、「New」をクリックします。
+- 「Repository name」に「test」と入力します。
+- `Private`を選択します。
+- `Add a README file` にチェックします。
+- 「Create repository」をクリックします。
 - GitHubに「test」リポジトリの作成ができました。このリポジトリで、GitHubの利用を開始できます。
 - 以降の操作については画面内の表示や[GitHubのドキュメント](https://docs.github.com/ja/get-started)を参照してください。
 
