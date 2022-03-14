@@ -24,4 +24,4 @@
 - [Azure Pipelinesとの統合(YAMLパイプライン詳細)](mod06-03-yaml.md)
 - [外部ソース管理をAzure Pipelinesと統合する](mod06-04-scm-integration.md)
 - [セルフホステッド エージェントの設定](mod06-05-self-hosted-agent.md)
-- [ハンズオン1/2/3](mod06-06-hands-on.md)
+- [ハンズオン1/2/3](mod06-06-hands-on-web-app-deploy.md)

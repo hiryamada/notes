@@ -4,14 +4,27 @@
     - モジュール6～7: GitHub Actions
   - ラーニングパス4: CD その1
 
-# [ラーニング パス3: Azure Pipelines と GitHub Actions での CI の実装](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-ci-azure-pipelines-github-actions/)
+# 講義
 
+- 講義: [DevOps のCI/CDパイプラインの概念](mod05-01-cicd.md)
+- 講義: [Azure Pipelines](mod05-02-azure-pipeline.md)
+- ハンズオン:[基本的なパイプライン](mod06-hands-on-basic-azure-pipeline.md)
+- ハンズオン:[基本的なWebアプリのデプロイ](mod06-hands-on-web-app-deploy.md)
+- 講義: [エージェント](mod05-03-agent.md)
+- 講義: [エージェントプール](mod05-04-agent-pool.md)
+- 講義: [ジョブ](mod05-05-job.md)
+- ハンズオン:[複数のジョブ](mod06-hands-on-multiple-jobs.md)
+- 講義: [継続的インテグレーション(CI)](mod06-01-ci.md)
+- 講義: [ビルド戦略の実装](mod06-02-build.md)
+- 講義: [Azure Pipelinesとの統合(YAMLパイプライン詳細)](mod06-03-yaml.md)
+- ハンズオン:[ビルド・リリースパイプライン](mod06-hands-on-build-and-release-pipeline.md)
+- 講義: [外部ソース管理をAzure Pipelinesと統合する](mod06-04-scm-integration.md)
+- 講義: [セルフホステッド エージェントの設定](mod06-05-self-hosted-agent.md)
+
+# [ラーニング パス3: Azure Pipelines と GitHub Actions での CI の実装](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-ci-azure-pipelines-github-actions/)
 
 ## [モジュール1: Azure Pipelines について確認する](https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-pipelines/)
 
-- [講義: DevOps のCI/CDパイプラインの概念](mod05-01-cicd.md)
-- [Azure Pipelines](mod05-02-azure-pipeline.md)
-  - ※ハンズオン: Azure Pipelines を含む
 - ★パイプラインの特徴
   - 信頼性が高い
   - 反復可能
@@ -27,9 +40,6 @@
 
 [モジュール2: Azure Pipelines エージェントとプールを管理する](https://docs.microsoft.com/ja-jp/learn/modules/manage-azure-pipeline-agents-pools/)
 
-- 講義: [エージェント](mod05-03-agent.md)
-- 講義: [エージェントプール](mod05-04-agent-pool.md)
-- 講義: [ジョブ](mod05-05-job.md)
 - ★エージェント
   - ★セルフホステッド
   - ★Microsoftホステッド

@@ -1,8 +1,6 @@
 
 ## セルフホステッド エージェントの設定
 
-
-
 ### Azure Pipelines との通信
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#communication)
@@ -21,9 +19,11 @@
 
 Azure pipelineから、オンプレミスのサーバーにデプロイを行いたい場合、オンプレミスの「セルフホステッド エージェント」からデプロイを行う必要がある。
 
+<!-- 
 なお、Skillpipeドキュメントに「LOS」「見通し線」「視界」などと書かれているもの「Line of sight」（見通し、直接通信ができること）の略およびその日本語訳だが、デプロイやファイアウォールの分野における一般的な表現（IT用語）ではないと思われる。
 - 無線通信の[LOS](https://www.sophia-it.com/content/LOS) - 無線通信における送信機（トランスミッタ）と受信機（レシーバ）の間を結ぶ直線距離
 - 軍事（火気、射撃）用語の「[照準線(line of sight)](https://www.mod.go.jp/atla/nds/Y/Y0005B.pdf)」 - 照準具又は照準装置と目標を結ぶ線
+-->
 
 オンプレミスのKubernetesクラスターをコントロールすることもできる。[事例](https://yomon.hatenablog.com/entry/2020/04/pipeline_private)
 
