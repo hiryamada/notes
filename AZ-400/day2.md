@@ -1,7 +1,7 @@
 - 2日目
   - ラーニングパス3: CI
-    - モジュール1～5: Azure Pipelines
-    - モジュール6～7: GitHub Actions
+    - モジュール1～6: Azure Pipelines
+    - モジュール7～8: GitHub Actions
   - ラーニングパス4: CD その1
 
 # 講義
@@ -105,12 +105,6 @@
   - ★対話型（対話モード）
     - ★人手によるUIテストの実行など
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/integrate-azure-pipelines/10-knowledge-check)
-
-## ハンズオン(演習)
-
-- Webアプリのビルドと、Azure App Service へのデプロイを、パイプライン化します
-- Azure Pipelines の、ビルドパイプライン、リリースパイプラインを使用します
-- 手順書: [Azure Pipelines](handson-azure-pipelines.md)
 
 [モジュール7: GitHub Actions の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-github-actions/)
 
