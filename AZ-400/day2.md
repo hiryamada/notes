@@ -238,8 +238,24 @@
 
 [モジュール6: カナリア リリースとダーク ローンチを実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-canary-releases-dark-launching/)
 
-- 知識チェック
+- [Azure Traffic Manager](https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-overview)
+  - Webトラフィックの一部を新しいバージョンのWebサイトへ転送できる（[荷重トラフィックルーティング](https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-routing-methods#weighted-traffic-routing-method)）
+  - ※Azure Load Balancer、Azure Application Gatewayは、到着したトラフィックをバックエンドに負荷分散することができるが、一定の割合のトラフィックを別のWebサイトに転送する機能はない。
+- カナリア デプロイ（「カナリア」ユーザー）
+  - ユーザーが、問題に対して許容できることが必要（問題があっても新機能を使いたいといったようなユーザー向け）
+- ダークローンチ（機能フラグ、フィーチャーフラグとも）
+  - フロントエンド（ユーザーが直接触れることができる機能）に対する反応を調べるために使用する
+- [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/implement-canary-releases-dark-launching/5-knowledge-check)
 
 [モジュール7: A/B テストと段階的公開型デプロイを実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-test-progressive-exposure-deployment/)
 
-- 知識チェック
+- ★段階的公開デプロイ（Progressive Exposure deployment）
+  - 「リングベース デプロイ（ring-based deployment）」とも
+  - 中央のリング、その外側のリング、全ユーザーのリング、・・といった順で、新機能をデプロイしていく
+  - 実質的に「カナリアリリース（Canary Release）」に近い。
+    - ★（カナリアリリースの「拡張版」といえる）
+- A/Bテスト（A/B testing）
+  - 1 つの Web ページまたはアプリの 2 つのバージョンを公開し、どちらのバージョンが適している（より収益を上げる等）かを判断
+  - ★「分割テスト（Split testing）」「バケットテスト（Bucket testing）」とも呼ばれる
+  - ★継続的デリバリーの一部または前提条件ではない
+- [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/implement-test-progressive-exposure-deployment/5-knowledge-check)
