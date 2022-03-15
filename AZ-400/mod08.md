@@ -70,7 +70,7 @@ GitHubに組み込まれたCI/CDサービス。ワークフロー（ビルド、
 - [Azure と GitHubの統合（Microsoft Docs）](https://docs.microsoft.com/ja-jp/azure/developer/github/github-actions): 組み合わせての使い方の解説
 - [Azure PipelinesからGitHub Actionsへの移行ガイド](https://docs.github.com/ja/actions/learn-github-actions/migrating-from-azure-pipelines-to-github-actions)
 
-### アクションとは何ですか?
+### アクションとは?
 
 GitHub Actionsの基本的な構造・用語。
 
@@ -231,73 +231,3 @@ ghコマンドを使用して、ローカルからGitHubのコントロールを
 https://cli.github.com/manual/
 
 [gh actionsコマンドで、GitHub Actionsのコントロールも可能。](https://cli.github.com/manual/gh_actions)
-
-## ハンズオンラボ
-
-事前にGitHubアカウントを作成します。[GitHubアカウントの作成](https://github.com/hiryamada/notes/blob/main/AZ-400/github-account.md)
-
-■ハンズオン1: GitHub Action を利用する
-
-- GitHubアカウントの準備
-  - 今回用のMicrosoftアカウントでGitHubアカウントをまだ作っていなければ、作成する。手順
-- GitHubリポジトリの準備
-  - https://github.com/new へ移動
-  - Repository nameに適当なリポジトリ名を入れる
-  - Create repository
-- GitHub Actionsの構成
-  - 画面上の「Actions」をクリック
-  - Simple workflow の 「Set up this workflow」をクリック
-  - YAMLファイルが作成される。内容をチェックしてください
-  - Start commitをクリック
-  - Commit new fileをクリック
-  - blank.yml というファイルが リポジトリ/.github/workflows/ ディレクトリに作成される
-- アクションの実行を確認
-  - 画面上部の Actionsをクリック
-  - There are no workflow runs yet. と表示された場合は、しらばく待つ。自動的に画面が遷移する
-  - Create blank.yml に 緑色の点 または くるくる回転するもの が表示される場合、しばらく待つ。
-  - Create blank.yml に 緑色の丸アイコン（中に白いチェックマーク）が付く
-  - Create blank.yml をクリック
-  - build をクリック
-  - いくつかのスクリプトが実行されていることが確認できる。
-
-■ハンズオン2: GitHub Action による、GitHub から Azure Static Web Appへのデプロイ
-
-- テンプレートを使用してGitHubリポジトリを作成
-  - https://github.com/staticwebdev/blazor-starter に移動
-  - Use this template をクリック
-  - Repository nameに適当なリポジトリ名を入力
-  - Create repository from template
-  - (この時点ではGitHub Actionsはセットアップされていない)
-- Azure Static Web Appを作成
-  - Azure portalに移動 https://portal.azure.com/#home
-  - 画面上部の検索で「静的」または「static」で検索し「静的 Web アプリ」をクリック
-  - 作成
-  - リソースグループを新規作成（名前は適当に）
-  - 名前を適当に入力
-  - GitHubアカウントでサインイン をクリック
-  - Authorize Azure-App-Servicce-Web-Appsをクリック
-  - Passwordの入力が出た場合はGitHubのパスワードを入力してConfirm passwordをクリック
-  - 組織: GitHubのアカウント名
-  - リポジトリ: 上の手順で作ったリポジトリ名
-  - 分岐: main
-  - ビルドのプリセット: Blazor
-  - 確認および作成
-  - 作成
-- アクションの実行を確認
-  - GitHubのリポジトリに戻る
-  - 画面上部の Actionsをクリック
-  - ci: add Azure Static Web Apps workflow... の実行が終わるまで待つ
-- デプロイされたWebアプリを確認
-  - Azure portalに移動
-  - 画面上部の検索で「静的」または「static」で検索し「静的 Web アプリ」をクリック
-  - 作成した静的アプリをクリック
-  - 画面上部「参照」
-  - Static Web Apps の Hello world! という画面が出ればデプロイ成功。
-  - Your Azure Static Web App is live and waiting for your contentと表示される場合は、まだアクションの実行が終わっておらず、デフォルトのStatic Web Appsの画面が出ている状況。しばらく待ってリロードボタンを押す。
-
-※Blazorアプリの解説: https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/try
-
-ハンズオンラボ（オプション）:
-- (3)  [ラボ: DevOps Starter を使用した GitHub アクションの実装](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M08_Implementing_GitHub_Actions_by_using_DevOps_Starter.html)
-- (4)  [GitHub Learning Lab](https://lab.github.com/) で、[Introduction to GitHub](https://lab.github.com/RSLUP/introduction-to-github) を実施しましょう。Start free courseをクリックし、Languageで「日本語」を選び、「Begin *Introduction to GitHub*」をクリックします。デフォルトでは、GitHub.com ウェブインターフェース を使用する手順となりますが、開始時のオプションで、コマンドラインやVisual Studio Codeを使う手順も選べます。
-- (5)  [GitHub Learning Lab](https://lab.github.com/) で、[GitHub Actions: Hello World](https://lab.github.com/githubtraining/github-actions:-hello-world) を実施しましょう（英語のみ。ブラウザの翻訳機能を使うか、[Google翻訳](https://translate.google.co.jp/?hl=ja&sl=auto&tl=en&op=translate)や[Bing翻訳](https://www.bing.com/translator?to=ja&setlang=ja)の左側のテキストボックスにアクセス先のサイトのURLを貼り付けると、翻訳されたページが表示されます。）

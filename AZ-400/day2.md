@@ -25,6 +25,9 @@
   - 講義: [セルフホステッド エージェントの設定](mod06-05-self-hosted-agent.md)
 - GitHub Actions
   - 講義: [GitHub Actions](mod08.md)
+  - ハンズオン: [基本的な使い方](mod08-handson-basic-github-actions.md)
+  - ハンズオン: [App Serviceへのデプロイ](mod08-handson-deploy-to-azure-app-service.md)
+  - ハンズオン: [発展](mod08-hands-on-options.md)
 
 
 # [ラーニング パス3: Azure Pipelines と GitHub Actions での CI の実装](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-ci-azure-pipelines-github-actions/)
@@ -255,7 +258,8 @@
   - 実質的に「カナリアリリース（Canary Release）」に近い。
     - ★（カナリアリリースの「拡張版」といえる）
 - A/Bテスト（A/B testing）
-  - 1 つの Web ページまたはアプリの 2 つのバージョンを公開し、どちらのバージョンが適している（より収益を上げる等）かを判断
+  - 1 つの Web ページまたはアプリの 2 つのバージョンを公開
+    - どちらのバージョンが適している（より収益を上げるか・コンバージョンレートが高いか等）かを判断
   - ★「分割テスト（Split testing）」「バケットテスト（Bucket testing）」とも呼ばれる
   - ★継続的デリバリーの一部または前提条件ではない
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/implement-test-progressive-exposure-deployment/5-knowledge-check)
