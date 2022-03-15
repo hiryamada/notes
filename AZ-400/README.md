@@ -21,8 +21,8 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
   - ラーニングパス2: Git
 - [2日目](day2.md)
   - ラーニングパス3: CI
-    - モジュール1～5: Azure Pipelines
-    - モジュール6～7: GitHub Actions
+    - モジュール1～6: Azure Pipelines
+    - モジュール7～8: GitHub Actions
   - ラーニングパス4: CD その1
 - [3日目](day3.md)
   - ラーニングパス5: CD その2
