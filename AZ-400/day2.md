@@ -226,6 +226,14 @@
 [モジュール5: ブルーグリーン デプロイとフィーチャー トグルの実装](https://docs.microsoft.com/ja-jp/learn/modules/implement-blue-green-deployment-feature-toggles/)
 
 - App Serviceのデプロイスロット
+  - ブルーグリーンデプロイ
+    - デプロイスロットとして本番環境スロットとステージングスロットを利用
+    - スワップ
+  - A/Bテスト
+    - デプロイスロットとして「A」と「B」の2パターンを利用
+    - 「A」に60%、「B」に40%のトラフィックを流すといったように、各スロットにアクセスする割合を指定できる
+- App Configurationの機能フラグ
+  - 新しく追加した機能の有効・無効を切り替えることができる
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/implement-blue-green-deployment-feature-toggles/7-knowledge-check)
 
 [モジュール6: カナリア リリースとダーク ローンチを実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-canary-releases-dark-launching/)
