@@ -50,3 +50,7 @@ steps:
 ![](images/ss-2021-12-15-15-09-55.png)
 
 ※手順冒頭の「Parallel Jobs」の設定で、ジョブの数を2や3に設定し、「Run Pipeline」で再度パイプラインを実行すると、よりたくさんのジョブが並列で実行される様子が確認できます。
+
+## 参考
+
+- [Python バージョンの使用タスク](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/tasks/tool/use-python-version?view=azure-devops)

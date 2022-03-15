@@ -23,5 +23,5 @@
       - など
   - 作成方法
     - 組織の設定で、エージェントプールを作成
-  - エージェントのアップデート
+  - [エージェントのアップデート](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#agent-version-and-upgrades)
     - エージェントプールのエージェントをすべて（あるいは選択したものを）アップデートできる
