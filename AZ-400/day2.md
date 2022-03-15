@@ -6,21 +6,26 @@
 
 # 講義
 
-- 講義: [DevOps のCI/CDパイプラインの概念](mod05-01-cicd.md)
-- 講義: [Azure Pipelines](mod05-02-azure-pipeline.md)
-- ハンズオン:[基本的なパイプライン](mod06-hands-on-basic-azure-pipeline.md)
-- ハンズオン:[基本的なWebアプリのデプロイ](mod06-hands-on-web-app-deploy.md)
-- PDF資料: [基本的なWebアプリのデプロイ](pdf/Azure%20Pipelines%20web%20app%20deploy.pdf)
-- 講義: [エージェント](mod05-03-agent.md)
-- 講義: [エージェントプール](mod05-04-agent-pool.md)
-- 講義: [ジョブ](mod05-05-job.md)
-- ハンズオン:[複数のジョブ](mod06-hands-on-multiple-jobs.md)
-- 講義: [継続的インテグレーション(CI)](mod06-01-ci.md)
-- 講義: [ビルド戦略の実装](mod06-02-build.md)
-- 講義: [Azure Pipelinesとの統合(YAMLパイプライン詳細)](mod06-03-yaml.md)
-- ハンズオン:[ビルド・リリースパイプライン](mod06-hands-on-build-and-release-pipeline.md)
-- 講義: [外部ソース管理をAzure Pipelinesと統合する](mod06-04-scm-integration.md)
-- 講義: [セルフホステッド エージェントの設定](mod06-05-self-hosted-agent.md)
+- CI/CDの基礎
+  - 講義: [DevOps のCI/CDパイプラインの概念](mod05-01-cicd.md)
+- Azure Pipelines
+  - 講義: [Azure Pipelines](mod05-02-azure-pipeline.md)
+  - ハンズオン:[基本的なパイプライン](mod06-hands-on-basic-azure-pipeline.md)
+  - ハンズオン:[基本的なWebアプリのデプロイ](mod06-hands-on-web-app-deploy.md)
+  - PDF資料: [基本的なWebアプリのデプロイ](pdf/Azure%20Pipelines%20web%20app%20deploy.pdf)
+  - 講義: [エージェント](mod05-03-agent.md)
+  - 講義: [エージェントプール](mod05-04-agent-pool.md)
+  - 講義: [ジョブ](mod05-05-job.md)
+  - ハンズオン:[複数のジョブ](mod06-hands-on-multiple-jobs.md)
+  - 講義: [継続的インテグレーション(CI)](mod06-01-ci.md)
+  - 講義: [ビルド戦略の実装](mod06-02-build.md)
+  - 講義: [Azure Pipelinesとの統合(YAMLパイプライン詳細)](mod06-03-yaml.md)
+  - ハンズオン:[ビルド・リリースパイプライン](mod06-hands-on-build-and-release-pipeline.md)
+  - 講義: [外部ソース管理をAzure Pipelinesと統合する](mod06-04-scm-integration.md)
+  - 講義: [セルフホステッド エージェントの設定](mod06-05-self-hosted-agent.md)
+- GitHub Actions
+  - 講義: [GitHub Actions](mod08.md)
+
 
 # [ラーニング パス3: Azure Pipelines と GitHub Actions での CI の実装](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-ci-azure-pipelines-github-actions/)
 
@@ -198,15 +203,30 @@
 
 [モジュール3: 高品質なリリース パイプラインの構築](https://docs.microsoft.com/ja-jp/learn/modules/build-high-quality-release-pipeline/)
 
-- 知識チェック
+- リリース プロセス
+  - プロセスであるため、品質を直接測定することはできない
+- リリース ノート
+  - 顧客にリリースされた情報を伝達する必要がある場合に不可欠
+- リリース管理ツール
+  - Azure Pipeline
+  - Jenkins
+  - ※Azure Reposはソース管理ツール
+- [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/build-high-quality-release-pipeline/8-knowledge-check)
 
 [モジュール4: デプロイ パターンの概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-deployment-patterns/)
 
-- 知識チェック
+- マイクロサービス
+  - 自律的で、独立してデプロイできる、スケーラブルなソフトウェア コンポーネント
+  - あるマイクロサービスの仕様の変更が、それを使用する他のマイクロサービスに影響を与えてはならない
+    - つまり、APIを変更してはならない
+- （マイクロサービス以前の）従来型のデプロイパターン
+  - 開発、テスト、ステージング、運用
+- [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-deployment-patterns/5-knowledge-check)
 
 [モジュール5: ブルーグリーン デプロイとフィーチャー トグルの実装](https://docs.microsoft.com/ja-jp/learn/modules/implement-blue-green-deployment-feature-toggles/)
 
-- 知識チェック
+- App Serviceのデプロイスロット
+- [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/implement-blue-green-deployment-feature-toggles/7-knowledge-check)
 
 [モジュール6: カナリア リリースとダーク ローンチを実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-canary-releases-dark-launching/)
 

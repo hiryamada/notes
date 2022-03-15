@@ -35,6 +35,26 @@
   - App Service の Webアプリに「参照」でアクセスする。pipelines_dotnet_coreという、先程とは別のWebサイトが表示されている。
   ![](images/ss-2021-12-15-09-30-09.png)
 
+
+※「The pipeline is not valid. Job Job: Step AzureRmWebAppDeployment input ConnectedServiceName references service connection Azure Pass - スポンサー プラン (ZZZZ) which could not be found」エラーが消えない場合は、以下の設定をお願いします。
+
+■サービスコネクションの作成
+
+- Project Settings > Pipelines > Service Connections
+- New Service connection
+- Azure Resource Managerをクリックして画面下Next
+- Service Principal(automatic)をクリックしてNext
+- ポップアップでサインイン画面が出るので、トレーニング用に作成したMicrosoftアカウントでサインイン
+- ※Resource groupは選択しない
+- Grant access permission to all pipelinesにチェック
+- service connection name に「sc1」と入力してSave
+
+■サービスコネクションの指定
+
+- YAML内の最後のタスクのazureSubscriptionにサービスコネクションを指定する
+  -  `azureSubscription: sc1`
+
+
 YAMLパイプライン:
 ```
 trigger:
