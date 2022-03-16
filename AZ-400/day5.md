@@ -1,6 +1,10 @@
+# ラーニングパスとモジュールの概要
+
 - 5日目
   - ラーニングパス9: フィードバック、分析
   - ラーニングパス10: セキュリティ
+
+# 講義とハンズオン
 
 # [ラーニング パス9: 継続的フィードバックを実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-continuous-feedback/)
 
