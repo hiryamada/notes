@@ -6,9 +6,13 @@
 
 # 講義とハンズオン
 
-# [ラーニング パス9: 継続的フィードバックを実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-continuous-feedback/)
+- [継続的フィードバック](mod17.md)
+- [サイト信頼性エンジニアリング(SRE)](mod18.md)
+- [非難のない文化](mod18.md) ※要分割
+- [セキュリティ](mod19.md)
+- [コードスキャン](mod20.md)
 
-# [ラーニングパス: AZ-400: 継続的フィードバックを実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-continuous-feedback/)
+# [ラーニング パス9: 継続的フィードバックを実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-continuous-feedback/)
 
 ## [モジュール1: 使用状況とフローを追跡するためのツールを実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-tools-track-usage-flow/)
 
@@ -44,8 +48,6 @@
 
 
 # [ラーニング パス10: コンプライアンスのためにセキュリティを実装し、コード ベースを検証する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-security-validate-code-bases-compliance/)
-
-# [ラーニングパス: AZ-400: コンプライアンスのためにセキュリティを実装し、コード ベースを検証する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-security-validate-code-bases-compliance/)       
 
 ## [モジュール1: パイプラインのセキュリティについて](https://docs.microsoft.com/ja-jp/learn/modules/understand-security-pipeline/)
 

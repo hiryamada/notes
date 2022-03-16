@@ -9,7 +9,7 @@
 - パッケージグラフとは。
 - ユニバーサルパッケージとは。
 
-[Azure Artifactの位置づけについて、まずはこちらのPDFをご覧ください](pdf/Azure%20DevOps機能の連携.pdf)
+[Azure Artifactを含む、Azure DevOpsの全体像](pdf/Azure%20DevOps機能の連携.pdf)
 
 用語集:
 
