@@ -19,7 +19,7 @@
 # 講義とハンズオン
 
 - 講義: [Azure Board](mod01-09-azure-board.md)
-- ハンズオン: [Azure Board](mod01-13-handson-board.md)
+- ハンズオン: [Azure Board](mod01-14-handson-board.md)
 - 講義: [セキュリティの設計](mod07-01-security.md)
 - 講義: [設定値や機密情報の扱い方](mod07-02-configuration.md)
 - 講義: [インフラストラクチャと構成の管理(IaC)](mod13.md)
