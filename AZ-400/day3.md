@@ -1,5 +1,5 @@
 - 3日目
-  - ラーニングパス1 補足
+  - ラーニングパス1 補足 Azure Boards
   - ラーニングパス5: CD その2
     - モジュール1～4: Azure Pipelines リリースパイプライン
     - モジュール5: セキュリティ
@@ -18,8 +18,8 @@
 
 # 講義とハンズオン
 
-- 講義: [Azure Board](mod01-09-azure-board.md)
-- ハンズオン: [Azure Board](mod01-14-handson-board.md)
+- 講義: [Azure Boards](mod01-09-azure-board.md)
+- ハンズオン: [Azure Boards](mod01-14-handson-board.md)
 - 講義: [セキュリティの設計](mod07-01-security.md)
 - 講義: [設定値や機密情報の扱い方](mod07-02-configuration.md)
 - 講義: [インフラストラクチャと構成の管理(IaC)](mod13.md)
@@ -206,7 +206,19 @@
 
 ## [モジュール6: Chef と Puppet の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-chef-puppet/)
 
-- （Ansibleに比べて利用者が少ないと思われるため、解説は省略）
+- ★Chefのコンポーネント
+  - Chefサーバー
+  - Chefクライアント
+  - Chefワークステーション
+  - ★Knife（Chefクライアント管理用のコマンド）
+  - ★※「Chefファクト」というものはない
+- ★Chef Aotomate
+  - Azure Marketplaceからイメージを入手できる
+  - HabitatとInSpecが含まれる
+  - ★※Console Servicesは含まれない
+- ★Puppet
+  - ★Puppet Master
+    - ★エージェント カタログを作成するためのコードのコンパイルを担当
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/introduction-chef-puppet/9-knowledge-check)
 
 ## [モジュール7: Ansible を実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-ansible/)

@@ -54,8 +54,6 @@ SQLインジェクション攻撃（SQL Injection、SQLi）とは何か。
 - [Azure Web アプリケーション ファイアウォール（Azure WAF）](https://azure.microsoft.com/ja-jp/services/web-application-firewall/)で防ぐ
 - [IPA「安全なウェブサイトの作り方」](https://www.ipa.go.jp/security/vuln/websecurity.html)の別冊[「安全なSQLの呼び出し方」](https://www.ipa.go.jp/files/000017320.pdf)
 
-※このページに書かれた「シミュレーション」手順についてはラボで実施
-
 ## 安全な開発プロセスの実装
 
 重要ポイント
@@ -160,17 +158,22 @@ SDL には、潜在的な問題の解決が比較的容易でコスト効率に�
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/security/develop/threat-modeling-tool-getting-started)
 
-※Skillpipeには「セキュリティ要件の定義」をあわせて5つの手順と説明している。
-
 ■Threat Modeling Toolとは
 
 脅威モデリングを行うためのツール。Windows用。
 
-[Microsoft Threat Modeling Tool](https://docs.microsoft.com/ja-jp/azure/security/develop/threat-modeling-tool) は、Microsoft セキュリティ開発ライフサイクル (SDL) の主要な要素です。 これを使用すると、ソフトウェア アーキテクトは早い段階で潜在的なセキュリティの問題を特定し、危険を軽減することができます。
+[Microsoft Threat Modeling Tool (TMT)](https://docs.microsoft.com/ja-jp/azure/security/develop/threat-modeling-tool) を使用し、ソフトウェア アーキテクトは早い段階で潜在的なセキュリティの問題を特定し、危険を軽減することができる。
 
-### デモンストレーション: 脅威モデリング
+簡単な使い方:
 
-※このページに書かれた「デモンストレーション」手順についてはラボで実施
+- TMTを起動する https://aka.ms/threatmodelingtool
+- Create A Model
+- 画面右側のStencilから、「Azure App Service Web App」と「Azure Storage」をドラッグ・ドロップして、Diagramに入れる
+- Diagram内で、Shiftを押しながら、上記2つのアイコンをクリックして選択状態にして、右クリックで「Connect」を選択
+- ViewメニューのAnalysis Viewを選択
+- 画面下部のThreat Listに、想定されるThreat（脅威）、「STRIDE脅威分析モデル」（[参考1](https://www.ipa.go.jp/files/000013812.pdf)）（[参考2](https://www.ffri.jp/assets/files/monthly_research/MR201609_Introduction_of_Threat_Analysis_Methods_JPN.pdf)）による分類、説明、軽減策などが表示される。
+  - Ensure that communication to Azure Storage is over HTTPS. It is recommended to enable the secure transfer required option to force communication with Azure Storage to be over HTTPS. Use Client-Side Encryption to store sensitive data in Azure Storage.（Azure Storageへの通信が HTTPS を介していることを確認してください。 Azure Storageとの通信をHTTPS経由で強制するために、「[セキュリティで保護された転送が必要](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-require-secure-transfer)」オプションを有効にすることをお勧めします。 「[クライアント側の暗号化](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-client-side-encryption?tabs=dotnet)」を使用して、機密データをAzure Storageに保存します。）
+
 
 ### 重要な検証ポイント
 
@@ -180,9 +183,9 @@ SDL には、潜在的な問題の解決が比較的容易でコスト効率に�
 - CI（ビルド、単体テスト、パッケージング）
 - ステージング環境へのデプロイ
 
-※Skillpipeのこのページの図で「筆記試験」とある部分は、「Pen Test」（[ペネトレーションテスト](https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%8D%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88)、侵入テスト）を表している。[ドキュメントの図](https://docs.microsoft.com/ja-jp/azure/devops/migrate/security-validation-cicd-pipeline?view=azure-devops)を参照のこと。
+※「Pen Test」は（[ペネトレーションテスト](https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%8D%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88)、侵入テスト）を表している。[ドキュメントの図](https://docs.microsoft.com/ja-jp/azure/devops/migrate/security-validation-cicd-pipeline?view=azure-devops)を参照のこと。
 
-※図の「Passive Pen Test」（パッシブな侵入テスト）とは、システムの可用性に影響を与えない（DoS攻撃やデータの改ざんまでは行わない）テストのこと。「Active Pen Test」（アクティブな侵入テスト）とは、実際の攻撃に近い侵入テスト。
+※「Passive Pen Test」（パッシブな侵入テスト）とは、システムの可用性に影響を与えない（DoS攻撃やデータの改ざんまでは行わない）テストのこと。「Active Pen Test」（アクティブな侵入テスト）とは、実際の攻撃に近い侵入テスト。
 
 ### 継続的インテグレーション
 
@@ -191,8 +194,8 @@ SDL には、潜在的な問題の解決が比較的容易でコスト効率に�
 Azure Pipelineに組み込んで使用することができる「静的コード解析ツール」が多数存在する。
 
 - [SonarQube](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube)
-- [Visual Studio Code Analysis](https://docs.microsoft.com/ja-jp/azure/security/develop/security-code-analysis-overview)
-  - **これは Microsoft の Microsoft セキュリティ開発ライフサイクル (SDL) の専門家が推奨する分析です**。
+- [Microsoft Security Code Analysis](https://docs.microsoft.com/ja-jp/azure/security/develop/security-code-analysis-overview)
+  - 2022 年 7 月 1 日より、Microsoft Security Code Analysis (MSCA) 拡張機能は廃止される予定
 - [Checkmarx](https://marketplace.visualstudio.com/items?itemName=checkmarx.cxsast)
 - [BinSkim Binary Analyzer](https://github.com/microsoft/binskim)
   - [BinSkimタスク](https://docs.microsoft.com/ja-jp/azure/security/develop/security-code-analysis-customize#binskim-task)として利用できる
