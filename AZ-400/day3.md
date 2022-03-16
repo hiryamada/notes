@@ -1,4 +1,5 @@
 - 3日目
+  - ラーニングパス1 補足
   - ラーニングパス5: CD その2
     - モジュール1～4: Azure Pipelines リリースパイプライン
     - モジュール5: セキュリティ
@@ -15,12 +16,21 @@
     - モジュール7: Ansible
     - モジュール8: Terraform
 
+# 講義とハンズオン
+
+- 講義: [Azure Board](mod01-09-azure-board.md)
+- ハンズオン: [Azure Board](mod01-13-handson-board.md)
+- 講義: [セキュリティの設計](mod07-01-security.md)
+- 講義: [設定値や機密情報の扱い方](mod07-02-configuration.md)
+- 講義: [インフラストラクチャと構成の管理(IaC)](mod13.md)
+- 講義: [Chef/Puppet/Ansible/Terraform](mod14.md)
+
 # [ラーニング パス5: Azure Pipelines を使用して、セキュリティで保護された継続的配置を実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-secure-continuous-deployment/)
 
 ## [モジュール1: リリース パイプラインを作成する](https://docs.microsoft.com/ja-jp/learn/modules/create-release-pipeline-devops/)
 
-- 実行できるジョブの種類
-  - 複数構成
+- [実行できるジョブの種類](https://docs.microsoft.com/ja-jp/learn/modules/create-release-pipeline-devops/5-explore-multi-configuration-multi-agent)
+  - 複数構成 - [（ドキュメント）](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#multi-job-configuration)
   - 複数エージェント
     - 指定された数のエージェントを使用して、複数エージェントで同じタスクのセットを実行
   - なし
@@ -53,12 +63,12 @@
 
 ## [モジュール4: 正常性の検査を自動化する](https://docs.microsoft.com/ja-jp/learn/modules/automate-inspection-health/)
 
-- リリースゲート
+- [リリースゲート](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/release/approvals/?view=azure-devops)
   - 外部サービスから正常性シグナルを自動的に収集
   - すべてのシグナルが同時に成功した場合にリリースしたり、タイムアウトでデプロイを停止したりすることができる
-- イベント
+- [イベント](https://docs.microsoft.com/ja-jp/azure/devops/notifications/concepts-events-and-notifications?view=azure-devops)
   - 特定のアクション（リリースの開始時やビルドの完了時）に生成される
-- 通知
+- [通知](https://docs.microsoft.com/ja-jp/azure/devops/notifications/oob-built-in-notifications?view=azure-devops)
   - サブスクライブしているイベントが発生した際に、電子メールで受信
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/automate-inspection-health/6-knowledge-check)
 
