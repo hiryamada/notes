@@ -61,6 +61,8 @@ Puppet社が開発する構成管理ツール。
 
 [公式サイト](https://puppet.com/)
 
+[わかりやすい解説（Oracle社）](https://docs.oracle.com/cd/E62101_01/html/E77933/gqqvw.html)
+
 ■特徴
 
 - Rubyで実装。

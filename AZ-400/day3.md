@@ -24,6 +24,8 @@
 - 講義: [設定値や機密情報の扱い方](mod07-02-configuration.md)
 - 講義: [インフラストラクチャと構成の管理(IaC)](mod13.md)
 - 講義: [Chef/Puppet/Ansible/Terraform](mod14.md)
+- ハンズオン: [Ansible](mod14-handson-ansible.md)
+- ハンズオン: [Terraform](mod14-handson-terraform.md)
 
 # [ラーニング パス5: Azure Pipelines を使用して、セキュリティで保護された継続的配置を実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-secure-continuous-deployment/)
 
@@ -212,11 +214,11 @@
   - Chefワークステーション
   - ★Knife（Chefクライアント管理用のコマンド）
   - ★※「Chefファクト」というものはない
-- ★Chef Aotomate
+- ★Chef Automate
   - Azure Marketplaceからイメージを入手できる
   - HabitatとInSpecが含まれる
   - ★※Console Servicesは含まれない
-- ★Puppet
+- ★[Puppet](https://docs.oracle.com/cd/E62101_01/html/E77933/gqqvw.html)
   - ★Puppet Master
     - ★エージェント カタログを作成するためのコードのコンパイルを担当
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/introduction-chef-puppet/9-knowledge-check)

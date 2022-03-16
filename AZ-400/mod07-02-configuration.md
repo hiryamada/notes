@@ -240,11 +240,3 @@ Azure App ConfigurationとAzure Key Vaultは補完関係にあるサービスで
   - [MVCビュー内の特定の区画を描画する/しない](https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/use-feature-flags-dotnet-core?tabs=core5x#mvc-views)
   - [MVCフィルターの有効化/無効化](https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/use-feature-flags-dotnet-core?tabs=core5x#mvc-filters)
 
-## ラボ
-
-(1) Skillpipe モジュール7 「アプリケーション構成とシークレットの管理 / セキュリティの概要 / SQLインジェクション攻撃」のページを参照しながら、実際にSQLインジェクション攻撃をシミュレーションしてしてみましょう。
-
-(2) Skillpipe モジュール7 「アプリケーション構成とシークレットの管理 / 安全な開発プロセスの実装 / デモンストレーション: 脅威モデリング」のページを参照しながら、Threat Modeling Toolを使用してしてみましょう。
-
-(3)[チュートリアル: Azure Pipelines で Azure Key Vault シークレットを使用する](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/release/azure-key-vault?view=azure-devops#create-a-project) を実施してみましょう。
-
