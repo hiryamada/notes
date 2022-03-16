@@ -26,6 +26,7 @@
 - 講義: [Chef/Puppet/Ansible/Terraform](mod14.md)
 - ハンズオン: [Ansible](mod14-handson-ansible.md)
 - ハンズオン: [Terraform](mod14-handson-terraform.md)
+- ハンズオン: [Bicep](mod14-handson-bicep.md)
 
 # [ラーニング パス5: Azure Pipelines を使用して、セキュリティで保護された継続的配置を実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-secure-continuous-deployment/)
 
