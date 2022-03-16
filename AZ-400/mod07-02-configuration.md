@@ -134,7 +134,6 @@ AzureやGitHubにおけるID（認証）の管理方法
 
 「サービスプリンシパル」に対して、RBACロールを設定して、Blobデータの読み書き、Key Vaultからのシークレットの利用などの権限を設定することができる。
 
-
 ## サービスコネクション（サービス接続）
 
 「[サービスコネクション](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)」: Azure Pipelinesから、外部サービスに接続するための設定。
@@ -158,6 +157,7 @@ Azure ADテナント  ↓
   └ストレージアカウント
     └Blob
 ```
+
 
 ### 管理サービス ID → 「マネージドID」
 
