@@ -471,10 +471,6 @@ Azure Artifactsの「ロール」
 - パッケージが特定の品質基準を満たした際に、パッケージを@prereleaseや @releaseに「昇格（promote）」することができる。
 - コンシューマーは、リリースビューを使って、特定の品質基準が満たされたパッケージだけを使用することができる。
 
-### 実証: パッケージの昇格
-
-ラボで実施
-
 ### バージョン管理のベスト プラクティス
 
 プロジェクトまたは組織で、以下のようなルールに従うとよい。
@@ -508,11 +504,3 @@ npmの後に開発されたパッケージマネージャYarnの場合は、決�
 たとえば、NuGet では、複数のフィードが指定されている場合、すべてのフィードに対してパッケージを並列で要求し、最初に応答したフィードからパッケージを受信する。したがって、実行するタイミングによって、異なるフィードから受信したパッケージが使用されるため、最終的なパッケージの構成が変わってしまう場合がある。
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops#determining-the-package-to-use-search-order)では、「you should ensure that your client's configuration file only references your product feed, and not any other feeds like the public package managers.」（構成ファイルにて「プロダクト用」のフィードだけを参照し、パブリックのパッケージマネージャなどを参照しないようにするべき）とアドバイスがある。
-
-### パイプラインからのデモンストレーション
-
-ラボで実施
-
-## ラボ
-
-ラボ9: [Azure Artifacts によるパッケージ管理(40分)](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M09_Package_Management_with_Azure_Artifacts.html)
