@@ -90,11 +90,10 @@ Key Vault周辺サービスとの比較については[まとめPDF](../AZ-204/p
 
 参考：[KubernetesとAzure key Vaultの利用](https://docs.microsoft.com/ja-jp/azure/key-vault/general/key-vault-integrate-kubernetes)
 
+
 ## ID 管理システムとの統合
 
 AzureやGitHubにおけるID（認証）の管理方法
-
-### GitHub とシングル サインオン (SSO) の統合
 
 ### サービス プリンシパル
 
@@ -134,6 +133,31 @@ AzureやGitHubにおけるID（認証）の管理方法
 ■サービスプリンシパルへのAzure RBACロールの割り当て
 
 「サービスプリンシパル」に対して、RBACロールを設定して、Blobデータの読み書き、Key Vaultからのシークレットの利用などの権限を設定することができる。
+
+
+## サービスコネクション（サービス接続）
+
+「[サービスコネクション](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)」: Azure Pipelinesから、外部サービスに接続するための設定。
+
+たとえば、Azureのリソース（App Service等）を操作するための「サービスコネクション」を作ることができる。
+
+```
+Azure DevOps
+├Azure Pipeline
+│  ↓
+└サービスコネクション (sc1)
+Azure ADテナント  ↓
+│└サービスプリンシパル (sp1)
+│  └マネージドID (app1)
+└サブスクリプション (sp1: 共同作成者）
+  ├App Service アプリ (app1)
+  ├Key Vault (app1: シークレットユーザー）
+  │  └シークレット
+  │     └ストレージアカウントの接続文字列
+  │        ↓
+  └ストレージアカウント
+    └Blob
+```
 
 ### 管理サービス ID → 「マネージドID」
 
