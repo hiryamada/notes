@@ -74,7 +74,7 @@
   ```
   az provider register --namespace Microsoft.ContainerRegistry # acr
   az provider register --namespace Microsoft.ContainerService # aks
-  az provider register --namespace Microsoft.OperationsManagement # monitoring
+  az provider register --namespace Microsoft.OperationalInsights # monitoring
   az group create --name hello_rg --location japaneast
   ```
 - リソースプロバイダーの登録（上記）が実際に終わるまで少し時間がかかるので3分ほど待つ
@@ -100,6 +100,7 @@
 - Where is your code? → Azure Repos Git
 - Select a repository →  `dockerwebapp1`
 - Configure your pipeline: Deploy to Azure Kubernetes Service
+  - ※「Deploy to Kubernetes - Review app with Azure DevSpaces」という似たようなものがあるので注意
 - サブスクリプションの選択: Azure Pass - スポンサー プラン
 - Continue
 - 別ウィンドウで認証が求められるので、トレーニング開始時に作成したMicrosoftアカウントでサインイン
@@ -112,8 +113,15 @@
 - (パイプラインのYAMLが生成される)
 - Save and run
 - 再度 Save and run
+  - ここで、3つのファイルがリポジトリに追加される
 - BuildとDeployのステージが表示され、ジョブ実行が進行する。
-  - `This pipeline needs permissin to access a resource ...` と表示された場合は、View, Permit, Permit とクリック
+  - `No hosted parallelism has been purchased ...`と表示された場合
+    - Project Settings＞Pipelines＞Parallel Jobs、Microsoft-hostedの「0」の脇の「Change」をクリック。Set Up Billingをクリック。「Azure Pass - スポンサー プラン」を選択し、「Save」。「MS Hosted CI/CD」に「1」をセットし、画面下「Save」。
+    - Pipelinesの画面に戻り、赤い✕が付いたパイプラインをクリック。
+    - Runsのテーブルの行「Set up CI with Azure Pipelines」をクリック
+    - Rerun failed jobsをクリック。
+    - Yes
+  - `This pipeline needs permissin to access a resource ...` と表示された場合は、View, Permit, Permit とクリック。
 - Deployステージが正常に完了（緑の丸にチェック）したらOK
 
 
