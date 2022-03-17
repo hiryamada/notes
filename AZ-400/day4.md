@@ -139,20 +139,64 @@
 
 ## [モジュール1: コンテナーのビルド戦略を考える](https://docs.microsoft.com/ja-jp/learn/modules/design-container-build-strategy/)
 
+- [dockerコマンド](http://docs.docker.jp/v19.03/engine/reference/commandline/index.html)
+  - docker pull: イメージの取得
+  - docker build: イメージのビルド
+  - docker run: イメージをコンテナーとして実行
+- AzureでDockerを実行できるサービス
+  - Azure App Service（の、[Web App for Containers](https://azure.microsoft.com/ja-jp/services/app-service/containers/#overview)）
+  - [Azure Container Instance](https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-overview)
+  - [Azure Kubernetes Service](https://docs.microsoft.com/ja-jp/azure/aks/intro-kubernetes)
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/design-container-build-strategy/11-knowledge-check)
 
 ## [モジュール2: Docker マルチステージ ビルドを実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-docker-multi-stage-builds/)
 
+- [マルチステージビルド](http://docs.docker.jp/v19.03/engine/userguide/eng-image/multistage-build.html#:~:text=%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%93%E3%83%AB%E3%83%89%E3%81%AF%E3%80%81Docker,%E9%9D%9E%E5%B8%B8%E3%81%AB%E3%81%82%E3%82%8A%E3%81%8C%E3%81%9F%E3%81%84%E3%82%82%E3%81%AE%E3%81%A7%E3%81%99%E3%80%82)
+  - 複数の`FROM`が使われる（複数のベースイメージを使い分ける）
+  - `FROM ... as build` といったように「as」を使用してステージにエイリアス（別名）を付けることができる
+    - [0から連番で振られる番号を使うこともできるが、FROMの数が変わった場合に番号も変わってしまうのであまり使い勝手は良くない](https://qiita.com/carimatics/items/01663d32bf9983cfbcfe#%E3%83%93%E3%83%AB%E3%83%89%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%81%AB%E5%90%8D%E5%89%8D%E3%82%92%E3%81%A4%E3%81%91%E3%82%8B)
+- [ビルダーパターン](https://docs.microsoft.com/ja-jp/learn/modules/implement-docker-multi-stage-builds/5-explore-builder-pattern)
+  - マルチステージビルド以前に使用されていたやり方
+  - 現在はマルチステージビルドを使えば良い
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/implement-docker-multi-stage-builds/8-knowledge-check)
 
 ## [モジュール3: Azure Kubernetes Service (AKS) を実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-azure-kubernetes-service/)
 
+- ポッド
+  - Kubernetesデプロイの最小単位
+  - 1つ以上のコンテナーが含まれる
+- ノード
+  - Kubernetesクラスターを形成するVM
+  - ノード上でポッドが動く
+  - NodePort
+    - ノードのIPアドレスとポートを使用してKubernetes上のアプリケーションにアクセスするしくみ
+- AKS（Azure Kubernetes Service）
+  - [ネットワークモデル](https://docs.microsoft.com/ja-jp/azure/aks/operator-best-practices-network#choose-the-appropriate-network-model)
+    - Kubenetネットワーク（基本）
+    - Azure CNI（高度）
+    - ※「ネイティブ」というモデルはない
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/implement-azure-kubernetes-service/11-knowledge-check)
 
 ## [モジュール4: Kubernetes ツールを探索する](https://docs.microsoft.com/ja-jp/learn/modules/explore-kubernetes-tooling/)
 
+- ★kubectl - Kubernetesの管理コマンド（CLI）
+  - [kubectl run](https://qiita.com/sourjp/items/f0c8c8b4a2a494a80908)
+  - [kubectl apply](https://www.memotansu.jp/kubernetes/3830/)
+  - ★[kubectl exec](https://kubernetes.io/ja/docs/tasks/debug-application-cluster/get-shell-running-container/)
+- ★Helm
+  - ★Kubernetes用のパッケージ管理ツール
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/explore-kubernetes-tooling/5-knowledge-check)
 
 ## [モジュール5: AKS をパイプラインに統合する](https://docs.microsoft.com/ja-jp/learn/modules/integrate-aks-pipelines/)
 
+- AKSとコンテナーレジストリ（ACR）
+  - AKSはコンテナー レジストリからイメージを取得する
+- AKS のサービス プリンシパル
+  - コンテナー レジストリへのアクセス許可が必要
+- Azure Key Vault
+  - 「Secure Store as a Service」※あまり一般的な用語/分類ではないと思われる
+  - シークレット管理、キー管理、証明書管理の機能を提供
+- [Kubernetesのprobe](https://kubernetes.io/ja/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+  - 通信できないコンテナを検出して再起動する
+  - startupProbe、livenessProbe、readinessProbeなど
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/integrate-aks-pipelines/5-knowledge-check)
