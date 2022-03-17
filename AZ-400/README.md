@@ -79,11 +79,11 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
 
 - フィードバックの活用
   - [モジュール17](mod17.md) 開発チーム向けのフィードバック、モニタリング
-  - [モジュール18](mod18.md) システムのフィードバック
+  - [モジュール18](mod18-01-sre.md) システムのフィードバック
 - セキュリティ
   - [モジュール7](mod07.md) セキュリティ設計, 設定・機密情報の管理
   - [モジュール19](mod19.md) DevSecOps, Security Center, Blueprints, ATP
-  - [モジュール20](mod20.md) コードベースの検証
+  - [モジュール20](mod20-02-security-scan.md) コードベースの検証
 
 （参考）[Edifist様 短縮3日コース](https://www.edifist.co.jp/it/course/MSCAZ400), [Trainocate 速習コース](https://www.trainocate.co.jp/reference/course_details.aspx?code=MSC0751V)
 
@@ -177,6 +177,9 @@ https://onarimon.jp/entry/2020/07/20/181845
 # Microsoft Learnコレクション
 
 https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400
+
+（旧版？）AZ-400シリーズ
+https://docs.microsoft.com/ja-jp/learn/paths/az-400-develop-security-compliance-plan/
 
 AZ-400 Azure DevOps Expert受験対策に向いてると思うものを纏めました。
 https://docs.microsoft.com/ja-jp/users/khigashi/collections/631ybyrz26n72
