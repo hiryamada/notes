@@ -254,4 +254,4 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 - Webブラウザを閉じる
 - CONTAINERSの「Individual Containers」→「hello:latest」を右クリックし、「Stop」
 
-■（後編に続く）
+■前編はここまでです。お疲れさまでした！（後編に続く）
