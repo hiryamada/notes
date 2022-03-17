@@ -1,4 +1,20 @@
-# ハンズオン Docker
+# ハンズオン（前編） Kubernetes
+
+■ハンズオンの概要
+
+- 前編
+  - 作業用環境として labvm (Windows VM) を準備します
+  - Docker実行のため、dockervm（Linux VM）を準備します
+  - .NET で、Webアプリを作成します
+  - WebアプリをDockerコンテナー化します
+- 後編
+  - Azure Reposに、開発したコード一式を格納します
+  - Azure Container RegistryとAzure Kubernetes Serviceを準備します
+  - Azure Pipelinesで、次のパイプラインを作成します
+    - Dockerイメージをビルド
+    - Azure Container Registryにイメージをプッシュ
+    - イメージをAzure Kubernetes Serviceにデプロイ
+  - Azure Kubernetes ServicesでWebアプリの動作を確認します
 
 ■ハンズオン用のWindows VM (labvm) の作成
 
@@ -227,85 +243,9 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 - 画面左「Docker」アイコンをクリック
 - IMAGESの「hello」を展開し、「latest」を右クリックして「Run」
 - CONTAINERSの「Individual Containers」→「hello:latest」を右クリックし、「Open in Browser」
-- Select the container port to browse to.: 選択肢に表示されたポート番号を選択してエンター
+- Select the container port to browse to.: 8080 と入力してエンター。
 - Webブラウザが開き「Hello World!」と表示されればOK
 - Webブラウザを閉じる
 - CONTAINERSの「Individual Containers」→「hello:latest」を右クリックし、「Stop」
 
-■Gitリポジトリの初期化
-
-- 以下のコマンドを投入
-  ```
-  dotnet new gitignore
-  git init
-  git add -A
-  git config --global user.name 'test'
-  git config --global user.email 'test@example.com'
-  git commit -m 'initial commit'
-  git branch --move master main
-  ```
-
-■新しいプロジェクトを作成
-
-- Webブラウザを開く
-- Azure DevOpsの画面に移動 https://dev.azure.com
-- `+ New Project`
-- Project name: `dockerwebapp1`
-- Visibility: `Private`
-- Create
-
-■Git用のPersonal Access Tokenの取得
-
-- 画面右上の、右から2番めのアイコンをクリック
-- Personal Access Tokens
-- `+ New Token`
-- Name: gitpassword2 （など、適当に）
-- Codeの`Full`にチェック
-- Create
-- 表示されたTokenをコピーしておく。後で使うのでメモ帳等にコピー
-
-■Azure ReposにコードをPushする
-
-- プロジェクトのReposに移動
-- 「Push an existing repository from command line」の下のテキストボックス内のコマンドをコピー
-- Visual Studio Codeに切り替える
-- Terminalに、コピーしたコマンドを投入
-- パスワードの入力が求められるので、先程コピーしたTokenを貼り付ける
-- ReposのFilesをクリック
-- Files（ファイル一覧）に、`Program.cs`等のファイルが入ってきたことを確認
-
-■Azure Container Registry (ACR) と Azure Kubernetes Service (AKS) の準備
-
-- Cloud Shellを起動
-  - https://shell.azure.com にアクセスする
-  - Bash / PowerShellどちらでもよい
-- 以下のコマンドを投入。
-  ```
-  az provider register --namespace Microsoft.ContainerRegistry # acr
-  az provider register --namespace Microsoft.ContainerService # aks
-  az provider register --namespace Microsoft.OperationsManagement # monitoring
-  az group create --name hellorg --location japaneast
-  ```
-- リソースプロバイダーの登録（上記）は少し時間がかかるので3分ほど待つ
-- 以下のコマンドを投入。※12341234（2箇所）は、適当な乱数に置き換える
-  ```
-  az acr create \
-    --name myContainerRegistry12341234 \
-    --resource-group hellorg \
-    --sku Basic
-  az aks create \
-    --resource-group myapp-rg \
-    --name myapp12341234 \
-    --node-count 1 \
-    --enable-addons monitoring \
-    --generate-ssh-keys
-  ```
-
-■Azure Pipelinesの準備
-
-- Azure DevOpsの画面に移動 https://dev.azure.com
-- 
-
-■ハンズオン用のWindows VMの削除
-
-- `labvmrg_(乱数)` リソースグループを削除する
+■（後編に続く）
