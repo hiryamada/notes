@@ -62,7 +62,7 @@
   - 画面左に「Remote Explorer」アイコンが追加される
 - `azure` と検索し、`Azure Tools`をインストール
   - 画面左に「Azure」アイコンと「Docker」アイコンが追加される
-- 画面左に「Azure」アイコンをクリック
+- 画面左の「Azure」アイコンをクリック
 - 「VIRTUAL MACHINES」の「Sign in to Azure...」をクリック
 - Webブラウザが起動し、Azureへのサインインが求められるので、トレーニング用に作成したMicrosoftアカウントでサインイン
 - 「VIRTUAL MACHINES」の「Sign in to Azure...」が消え「Azure Pass - スポンサー プラン」と表示されればOK
@@ -83,13 +83,14 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 - dockervm を右クリックし、「Connect to Host via Remote SSH」
 - 新しいVisual Studio Codeウィンドウが開く
   - 新しいVisual Studio Codeウィンドウの左下には「SSH: dockervm」と表示されているので、ここでウィンドウを判別できる
+  - 以降の作業はこの新しいVisual Studio Codeウィンドウ側で行う。
 - Select the platform ... : Linux
 - Are you sure ... : Continue
 - 画面右下「You selected linux as the remote platform...」が出た場合→✕を押して閉じる
 
 ■Linux VMに.NET SDKをインストール
 
-- 新しいVisual Studio Codeウィンドウ（左下には「SSH: dockervm」と表示）でTerminalメニュー＞New Terminal
+- 新しいVisual Studio Codeウィンドウ（左下には「SSH: dockervm」と表示）で、メニュー＞Terminal＞New Terminal
 - 以下のコマンドを投入
     ```
     wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -109,10 +110,12 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
     ```
     dotnet new web -n hello
     cd hello
-    dotnet run
+    dotnet run --urls=http://localhost:8080
     ```
-- 画面左下に確認が出てくるので「Open in browser」をクリック
+- 画面右下に確認（Your application running on ...）が出てくるので「Open in browser」をクリック
 - Webブラウザが開き「Hello World!」と表示されればOK
+  - ※うまく接続場合はいったん下記の手順で`dotnet run`を停止させ、再度`dotnet run --urls=http://localhost:8080` を行う
+  - ※または、TERMINALの右のPORTSを開き、地球儀のアイコンをクリック。![](images/ss-2022-03-17-14-31-55.png)
 - Webブラウザを閉じる
 - Terminal内をクリックしてアクティブにし、`Ctrl + C` を押して`dotnet run`を止める（「Application is shutting down...」と表示され、次のコマンドをが投入できる状態になればOK）
 
@@ -178,7 +181,7 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
     sudo reboot
     ```
 - 「Cannot reconnect. Please reload the window.」→ 30秒ほど待ってから「Reload Window」
-- 以下のコマンドを投入
+- 以下のコマンドを投入 ※sudoを付けていない
     ```
     docker version
     ```
@@ -225,6 +228,7 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 - 「Do you trust...」→「Yes」
 - 画面左の「Extensions」アイコンをクリック
 - C#と検索→C#の「Install」をクリック
+- しばらくすると右下に「Required assets to build and debug are missing...」と出る。「Yes」をクリック。![](images/ss-2022-03-17-14-36-20.png)
 - dockerと検索
 - 「Docker」（薄く表示されている）の「Install in SSH: dockervm」をクリック
   - 画面左に「Docker」アイコンが追加される
