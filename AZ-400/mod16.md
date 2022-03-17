@@ -5,7 +5,6 @@
 - クラスターとは。
   - コントロールプレーンとは。
   - ノードとは。
-- Pod、Service、Ingressとは。
 - CI/CDからどうやってアプリケーションをデプロイするのか。
 - Helmとは。
 
@@ -70,9 +69,11 @@ Kubernetesの名称は、ギリシャ語に由来し、操舵手やパイロッ�
 - [価格](https://azure.microsoft.com/ja-jp/pricing/details/kubernetes-service/)
 - [ドキュメント](https://docs.microsoft.com/ja-jp/azure/aks/)
 
+PDF資料: [AKSクラスターの作成](https://github.com/hiryamada/notes/blob/main/AZ-303/pdf/mod13/AKS%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90.pdf)
+
 ■特徴
 
-- Kubernetes のバージョン アップグレードやパッチ適用、正常性の監視やメンテナンスなどのクリティカルなタスクを管理（後述）
+- Kubernetes のバージョン アップグレードやパッチ適用、正常性の監視やメンテナンスなどの運用が簡単にできる
 - クラスター スケーリングをかんたんに実行
 - Microsoft が「コントロールプレーン」を完全に管理
 - ユーザーは、ノードの管理とメンテナンスだけを実行。
@@ -112,6 +113,7 @@ https://docs.microsoft.com/ja-jp/azure/aks/upgrade-cluster
 - バージョンアップは手動で実行する。
   - [事例](https://qiita.com/shingo_kawahara/items/73c80bb72ffa73577b29)
 
+<!--
 ■バージョンアップ（アップグレード）の動作
 
 アップグレード プロセスにより、次のことが安全に行われます。
@@ -146,6 +148,8 @@ https://docs.microsoft.com/ja-jp/azure/aks/upgrade-cluster#customize-node-surge-
 https://docs.microsoft.com/ja-jp/azure/aks/node-image-upgrade
 
 https://azure.microsoft.com/en-us/updates/azure-kubernetes-service-aks-now-supports-node-image-autoupgrade-in-public-preview/
+
+-->
 
 ### AKS アーキテクチャ コンポーネント
 
@@ -250,6 +254,7 @@ spec:
         - containerPort: 80
 ```
 
+<!-- 
 ### Kubernetes ネットワーク
 
 ■Serviceとは
@@ -364,13 +369,13 @@ https://kubernetes.io/ja/docs/concepts/services-networking/ingress/#ingress%E3%8
 
 https://kubernetes.io/ja/docs/concepts/services-networking/ingress-controllers/
 
+-->
 
-### 展開単位
+### デプロイ単位
 
 ■Pod
 
-（Podについては説明済み）
-
+1つ以上のコンテナーのあつまり。
 
 ■CI/CDパイプラインからKubernetesへのデプロイ
 
@@ -396,15 +401,7 @@ https://kubernetes.io/ja/docs/concepts/services-networking/ingress-controllers/
 
 https://docs.microsoft.com/ja-jp/azure/devops/pipelines/ecosystems/kubernetes/aks-template?view=azure-devops
 
-■継続的デリバリー
-
-（パイプラインを起動するしくみについてはモジュール5で説明済み）
-
-
-### 実証: AKS クラスターへのデプロイと接続
-
-（略）
-
+<!-- 
 ### 継続的デプロイ
 
 Kubernetesでは（Deploymentを使用することで）ローリングアップデートを使用してサービスを更新することができる。
@@ -421,6 +418,8 @@ Dockerfileに指定するベースイメージ（FROM）のバージョン（タ
 「latest」などを指定した場合、ベースイメージが変わってしまう可能性があり、各回のビルドで同じベースイメージを使っているという保証がなくなってしまう。
 
 （たとえば2021年6月のビルドでは latest でベースイメージ 1.2.3 プルされ、2021年7月のビルドでは latest でベースイメージ 2.0.0 がプルされる可能性がある。）
+
+-->
 
 ## Kubernetesツール
 
@@ -490,6 +489,7 @@ Visual Studio Code上から以下の操作を行うことができる。
 
 パイプラインからコンテナーをデプロイするには、AKSクラスターとACR（コンテナーレジストリ）を作成する必要がある。
 
+<!-- 
 ### KubernetesとKey Vault
 
 Kubernetesで、Azure Key Valutから機密情報（データベースに接続するためのパスワードなど）を読み込み、Podで使用することができる。
@@ -546,3 +546,5 @@ https://kubernetes.io/ja/docs/tasks/configure-pod-container/configure-liveness-r
 (2) クイックスタート: [Helmを使用してAzure Kubernetes Serviceで開発する](https://docs.microsoft.com/ja-jp/azure/aks/quickstart-helm)を実施します。
 
 (3) AZ-400 ラボ: [Azure Kubernetes Services へのマルチコンテナー アプリケーションのデプロイ](https://microsoftlearning.github.io/AZ-400JA-Designing-and-Implementing-Microsoft-DevOps-solutions/Instructions/Labs/AZ400_M16_Deploying_multi-container_application_to_Azure_Kubernetes_Services.html): Azure DevOps を使用して、コンテナー化されたアプリケーションとデータベースのデプロイを構成する, Azure DevOps パイプラインを使用して、コンテナー化されたアプリケーションを自動的にデプロイするようビルドする
+
+-->
