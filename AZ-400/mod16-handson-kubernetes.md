@@ -2,12 +2,12 @@
 
 ■ハンズオンの概要
 
-- 前編
+- 前編（実施済み）
   - 作業用環境として labvm (Windows VM) を準備します
   - Docker実行のため、dockervm（Linux VM）を準備します
   - .NET で、Webアプリを作成します
   - WebアプリをDockerコンテナー化します
-- 後編
+- 後編（ここからスタート）
   - Azure Reposに、開発したコード一式を格納します
   - Azure Container RegistryとAzure Kubernetes Serviceを準備します
   - Azure Pipelinesで、次のパイプラインを作成します
@@ -16,8 +16,14 @@
     - イメージをAzure Kubernetes Serviceにデプロイ
   - Azure Kubernetes ServicesでWebアプリの動作を確認します
 
+■（前編）からの続き
+
+- 作業用の「labvm」にリモートデスクトップ接続（またはBastionで接続）した状態です。
+- 新しいVisual Studio Codeウィンドウ（左下には「SSH: dockervm」と表示）を操作しています。
+
 ■Gitリポジトリの初期化
 
+- メニュー＞Terminal＞New Terminal を開く
 - 以下のコマンドを投入
   ```
   dotnet new gitignore
@@ -41,12 +47,13 @@
 ■Git用のPersonal Access Tokenの取得
 
 - 画面右上の、右から2番めのアイコンをクリック
-- Personal Access Tokens
+- Personal access tokens
 - `+ New Token`
 - Name: gitpassword2 （など、適当に）
 - Codeの`Full`にチェック
 - Create
 - 表示されたTokenをコピーしておく。後で使うのでメモ帳等にコピー
+- Close
 
 ■Azure ReposにコードをPushする
 
