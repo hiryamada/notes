@@ -243,11 +243,13 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 - 以下のようなメッセージが最後に出力されればOK
     ```
     Successfully tagged hello:latest
+
+    Terminal will be reused by tasks, press any key to close it.
     ```
 - 画面左「Docker」アイコンをクリック
 - IMAGESの「hello」を展開し、「latest」を右クリックして「Run」
 - CONTAINERSの「Individual Containers」→「hello:latest」を右クリックし、「Open in Browser」
-- Select the container port to browse to.: 8080 と入力してエンター。
+- 「Select the container port to browse to.」と質問が出た場合は 8080 と入力してエンター。
 - Webブラウザが開き「Hello World!」と表示されればOK
 - Webブラウザを閉じる
 - CONTAINERSの「Individual Containers」→「hello:latest」を右クリックし、「Stop」
