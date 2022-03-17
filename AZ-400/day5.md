@@ -11,7 +11,7 @@
   - [継続的フィードバック](mod17.md)
   - [サイト信頼性エンジニアリング(SRE)](mod18-01-sre.md)
   - [非難のない文化](mod18-02-blameless-retrospective.md)
-  - [DevOps プロmod20-02-security-scan.mdュリティの実装](mod19.md)
+  - [DevOps プロジェクトでのセキュリティの実装](mod19.md)
   - [ライセンス](mod20-01-license.md)
   - [コードスキャン](mod20-02-security-scan.md)
 - 午後: ハンズオン
