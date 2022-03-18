@@ -113,25 +113,75 @@
 
 ## [モジュール1: パイプラインのセキュリティについて](https://docs.microsoft.com/ja-jp/learn/modules/understand-security-pipeline/)
 
+- Rugged DevOps
+  - DevOpsとセキュリティを結合した考え方（DevSecOpsと同じ）
+  - 特に、（ビルド・リリース等の）パイプラインをセキュリティで保護することを指す
+- ソフトウェア コンポジション分析
+  - オープンソース ソフトウェア (OSS) を分析して潜在的なセキュリティの脆弱性を特定し、ソフトウェアがパイプラインで使用するために定義された基準を満たしていることを検証すること
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/understand-security-pipeline/12-knowledge-check)
 
 ## [モジュール2: Azure Security Center 入門](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-azure-security-center/)
 
+※Azure Security Centerは、現在「Microsoft Defender for Cloud」と呼ばれている
+
+- Azure Security Center（Microsoft Defender for Cloud）
+  - Azure とオンプレミスのすべてのサービスに対して脅威からの保護を提供する監視サービス
+- Azure Policy
+  - ポリシーの作成と割り当てができる
+  - ポリシーに違反するリソースを検出できる
+    - 組織内の暗号化されていないすべての SQL データベースを検出するなど。
+- （リソースの）ロック
+  - リソースを「読み取り専用（削除・変更が不可能）」や「削除禁止（削除は不可能だが変更は可能）」に設定できる機能
+  - うっかり削除してはまずいような重要なリソースにロックを設定する
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-azure-security-center/10-knowledge-check)
 
 ## [モジュール3: オープンソース ソフトウェアを実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-open-source-software/)
 
+- オープンソース ソフトウェアとは
+  - コード ユーザーがソフトウェアをレビュー、変更、配布できるソフトウェア
+- オープンソース ライブラリの問題点
+  - バグ
+  - セキュリティ脆弱性
+  - ライセンスの問題
+- コピーレフト ライセンス
+  - コピーレフト ライセンスのソースコードを使用したソフトウェアはコピーレフト ライセンスにしなければならないため「バイラル（拡散する、感染する）」であるとみなされる
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/implement-open-source-software/8-knowledge-check)
 
 ## [モジュール4: マルウェア対策とスパム対策のポリシーを管理する](https://docs.microsoft.com/ja-jp/learn/modules/manage-anti-malware-spam-policies/)
 
+- OWASP（Open Web Application Security Project）
+  - セキュリティ向上を目的とするアメリカの非営利団体
+  - セキュアコーディングのガイドラインを提供
+    - コードスメル（コードの臭い）についてはこのガイドラインには含まれない
+  - OWASP ZAP
+    - OWASPが提供するセキュリティテストツール
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/manage-anti-malware-spam-policies/4-knowledge-check)
 
 ## [モジュール5: ライセンス スキャンと脆弱性スキャンの統合](https://docs.microsoft.com/ja-jp/learn/modules/integrate-license-vulnerability-scans/)
 
+- [CodeQL](https://codeql.github.com/)
+  - 脆弱性の検出ツール
+  - コードに対して（データのように）[クエリ](https://docs.microsoft.com/ja-jp/windows-hardware/drivers/devtest/static-tools-and-codeql#queries)を実行できる
+  - [Microsoftドキュメントの解説](https://docs.microsoft.com/ja-jp/windows-hardware/drivers/devtest/static-tools-and-codeql)
+- GitHub Dependabot
+  - リポジトリ内の依存関係を検査し、問題があれば警告。
+  - [GitHub Advisory Database](https://github.com/advisories) に新たな脆弱性が追加された場合に、関連するアラートを送信する
+    - ※[GitHubのドキュメントの解説](https://docs.github.com/ja/code-security/dependabot/dependabot-alerts/browsing-security-vulnerabilities-in-the-github-advisory-database#)
+- [WhiteSource Bolt](https://www.whitesourcesoftware.com/free-developer-tools/bolt/)
+  - オープンソースの脆弱性の検索と修正
+  - オープンソースのセキュリティとライセンスのコンプライアンスを評価
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/integrate-license-vulnerability-scans/10-knowledge-check)
 
 ## [モジュール6: 技術的負債を特定する](https://docs.microsoft.com/ja-jp/learn/modules/identify-technical-debt/)
 
+- コードスメル（コードの臭い）
+  - 問題になる可能性があるコード
+- 静的ソースコード解析ツール
+  - [SonarCloud](https://sonarcloud.io/)
+    - コード品質のチェック
+    - コードスメル（コードの臭い）を発見できる
+  - [WhiteSource Bolt](https://www.whitesourcesoftware.com/free-developer-tools/bolt/)
+    - オープンソースの脆弱性の検索と修正
+    - オープンソースのセキュリティとライセンスのコンプライアンスを評価
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/identify-technical-debt/8-knowledge-check)
 
