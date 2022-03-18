@@ -146,9 +146,6 @@ https://docs.microsoft.com/ja-jp/learn/certifications/devops-engineer/
 [DevOps リソース センター](https://docs.microsoft.com/ja-jp/devops/)
 
 
-Microsoft Learn
-- [DevOps プラクティスを発展させる](https://docs.microsoft.com/ja-jp/learn/paths/evolve-your-devops-practices/)
-
 # 参考ブログ
 AZ-400: Designing and Implementing Microsoft DevOps Solutions 更新情報 (6/15)
 https://qiita.com/ymasaoka/items/d3c89ff52e0ef2b568b0
@@ -178,8 +175,10 @@ https://onarimon.jp/entry/2020/07/20/181845
 
 https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400
 
-（旧版？）AZ-400シリーズ
-https://docs.microsoft.com/ja-jp/learn/paths/az-400-develop-security-compliance-plan/
+その他のAZ-400 / DevOps関連シリーズ
+- https://docs.microsoft.com/ja-jp/learn/paths/az-400-develop-security-compliance-plan/
+- https://docs.microsoft.com/ja-jp/learn/paths/evolve-your-devops-practices/
+- https://docs.microsoft.com/ja-jp/learn/paths/devops-dojo-white-belt-foundation/
 
 AZ-400 Azure DevOps Expert受験対策に向いてると思うものを纏めました。
 https://docs.microsoft.com/ja-jp/users/khigashi/collections/631ybyrz26n72
