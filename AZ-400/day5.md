@@ -115,7 +115,7 @@
 
 - 「拡張検索」の分析アルゴリズム
   - エラー、リスク要因、および問題インジケーターが自動的に特定される
-  - ・・・とあるが、元ネタがおそらく [こちらの記事](https://www.devopsdigest.com/automated-log-analytics-for-devops-troubleshooting-at-the-speed-of-agile-development) で、Azure あるいは DevOpsにはあまり関係がなく、一般的なIT知識でもないように思わえる
+  - ・・・とあるが、元ネタがおそらく [こちらの記事](https://www.devopsdigest.com/automated-log-analytics-for-devops-troubleshooting-at-the-speed-of-agile-development) で、Azure あるいは DevOpsにはあまり関係がなく、一般的なIT知識でもないように思われる
   - 暗記する必要はないように思われる
 - テレメトリ
   - フィードバックを自動化するうえでの重要な要素となる
@@ -125,10 +125,18 @@
       - ユーザーがテレメトリ収集をOFFにする場合がある
 - 監視ツールの選択
   - 統合監視、アラート管理、デプロイの自動化、分析などの機能があることが重要
+  - 元ネタはおそらく [こちらの記事](https://devops.com/continuous-monitoring-role-devops-and-apm/) で、こちらも暗記の必要はないように思える
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/design-processes-automate-application-analytics/5-knowledge-check)
 
-## [モジュール8: アラート、ブレイムレス レトロスペクティブ (誰も責めることのないふりかえり)、およびジャ スト カルチャを管理する](https://docs.microsoft.com/ja-jp/learn/modules/manage-alerts-blameless-retrospectives-just-culture/)
+## [モジュール8: アラート、ブレイムレス レトロスペクティブ (誰も責めることのないふりかえり)、およびジャスト カルチャを管理する](https://docs.microsoft.com/ja-jp/learn/modules/manage-alerts-blameless-retrospectives-just-culture/)
 
+- Application Insights
+  - スマート検出
+    - [「サーバーの応答時間の低下」（Server Response Time Degradation）](https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/proactive-performance-diagnostics#server-response-time-degradation)
+      - 「スマート検出」に含まれる検出機能の一つ
+      - アプリが要求に対する応答を開始する速度が以前よりも遅くなった場合を指す。
+      - 「影響を受けているユーザーの数」、「対象の操作における低下と関連する依存関係における低下の相関関係」、「検出日とその 7 日前における対象の操作の要求の数」などが示される
+  - 「アプリケーションの依存関係管理」はApplication Insightsの機能ではない
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/manage-alerts-blameless-retrospectives-just-culture/10-knowledge-check)
 
 
