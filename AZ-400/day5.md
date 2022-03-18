@@ -93,15 +93,38 @@
 - 製品に対するエンド ユーザーの満足度を追跡するメトリック
   - CSAT
   - NPS
-  - ※STARは満足度メトリックではない
+  - ※「STAR」は満足度メトリックではない。
+  - ※「STAR」とは・・・ 不明
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/explore-sre-design-practices-measure-end-user-satisfaction/6-knowledge-check)
 
 ## [モジュール6: ユーザー フィードバックを収集して分析するプロセスを設計する](https://docs.microsoft.com/ja-jp/learn/modules/design-processes-capture-analyze-user-feedback/)
 
+- お客様に対する顧客の考えが理解しやすい
+- リリースゲートの種類
+  - Invoke Azure function(Azure 関数を呼び出す)
+  - Query Azure monitor alerts(Azure Monitor アラートのクエリ)
+  - Invoke REST API(REST API を呼び出す)
+  - Query Work items(作業項目のクエリ)
+  - コンプライアンスの評価。
+  - Twitter sentiment release gate
+    - Azure DevOps、Azure Functions、Microsoft AI（Cognitive Servicesのテキスト分析）を組み合わせて実装できる
+  - ※「PowerShellの呼び出し」はない
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/design-processes-capture-analyze-user-feedback/4-knowledge-check)
 
 ## [モジュール7: アプリケーション分析を自動化するプロセスを設計する](https://docs.microsoft.com/ja-jp/learn/modules/design-processes-automate-application-analytics/)
 
+- 「拡張検索」の分析アルゴリズム
+  - エラー、リスク要因、および問題インジケーターが自動的に特定される
+  - ・・・とあるが、元ネタがおそらく [こちらの記事](https://www.devopsdigest.com/automated-log-analytics-for-devops-troubleshooting-at-the-speed-of-agile-development) で、Azure あるいは DevOpsにはあまり関係がなく、一般的なIT知識でもないように思わえる
+  - 暗記する必要はないように思われる
+- テレメトリ
+  - フィードバックを自動化するうえでの重要な要素となる
+  - 「ログ」との違い:
+    - 「ログ」: エラーやコード フローを診断するために使用
+    - 「テレメトリ」: ユーザーがアプリをどのように利用しているかという情報を収集
+      - ユーザーがテレメトリ収集をOFFにする場合がある
+- 監視ツールの選択
+  - 統合監視、アラート管理、デプロイの自動化、分析などの機能があることが重要
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/design-processes-automate-application-analytics/5-knowledge-check)
 
 ## [モジュール8: アラート、ブレイムレス レトロスペクティブ (誰も責めることのないふりかえり)、およびジャ スト カルチャを管理する](https://docs.microsoft.com/ja-jp/learn/modules/manage-alerts-blameless-retrospectives-just-culture/)
