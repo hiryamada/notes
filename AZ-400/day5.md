@@ -99,6 +99,8 @@
 
 ## [モジュール6: ユーザー フィードバックを収集して分析するプロセスを設計する](https://docs.microsoft.com/ja-jp/learn/modules/design-processes-capture-analyze-user-feedback/)
 
+- 「パルスを得る」
+- 顧客が自社について何を言っているか
 - お客様に対する顧客の考えが理解しやすい
 - リリースゲートの種類
   - Invoke Azure function(Azure 関数を呼び出す)

@@ -1,6 +1,8 @@
 
 # ハンズオン: WhiteSource Bolt による脆弱性レポート
 
+- 組織の設定で、Security＞Policiesと進み、Third-party application access via OAuth をONにする。[参考(GitHub Issue)](https://github.com/microsoft/AzureDevOpsDemoGenerator/issues/626)
+![](images/ss-2022-03-18-17-10-23.png)
 - MarketplaceでWhiteSource Bolt拡張機能を追加
   - Marketplace に移動 https://marketplace.visualstudio.com/azuredevops
   - WhiteSourceで検索
@@ -19,7 +21,7 @@
   - New Project Name: lab18
   - Select Organization: 自分のAzure DevOps組織名
   - Selected Template: Choose Template, DevOps LabsのWhiteSource Bolt をクリック、Select Template
-  - The extension(s) are ... にチェック
+  - The extension(s) are ... にチェック![](images/ss-2022-03-18-17-15-11.png)
   - Create Project
   - しばらく待つ
   - Navigate to project
