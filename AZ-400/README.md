@@ -39,6 +39,9 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-400t00
   - ラーニングパス9: フィードバック、分析
   - ラーニングパス10: セキュリティ
 
+おまけ:
+[Microsoft Learnの全ラーニングパス・モジュール・ユニットの一覧](index-az-400-ja-jp.md)
+
 <!-- 
 ## day 1 DevOps, ソースコードの管理
 
