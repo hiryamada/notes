@@ -100,16 +100,17 @@
 ## [モジュール6: ユーザー フィードバックを収集して分析するプロセスを設計する](https://docs.microsoft.com/ja-jp/learn/modules/design-processes-capture-analyze-user-feedback/)
 
 - 「パルスを得る」
-- 顧客が自社について何を言っているか
-- お客様に対する顧客の考えが理解しやすい
-- リリースゲートの種類
+  - →[パルスサーベイ](https://jinjibu.jp/keyword/detl/930/)
+  - 顧客が自社についてどのような意見を持つかを把握
+  - お客様に対する顧客の考えが理解しやすい
+- [リリースゲート](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/release/approvals/?view=azure-devops)の種類
   - Invoke Azure function(Azure 関数を呼び出す)
   - Query Azure monitor alerts(Azure Monitor アラートのクエリ)
   - Invoke REST API(REST API を呼び出す)
   - Query Work items(作業項目のクエリ)
   - コンプライアンスの評価。
-  - Twitter sentiment release gate
-    - Azure DevOps、Azure Functions、Microsoft AI（Cognitive Servicesのテキスト分析）を組み合わせて実装できる
+  - [Twitter sentiment release gate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-twittersentimentanalysis)
+    - Azure DevOps、Azure Functions、Microsoft AI（Cognitive Servicesのテキスト分析）を組み合わせて実装したもの
   - ※「PowerShellの呼び出し」はない
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/design-processes-capture-analyze-user-feedback/4-knowledge-check)
 

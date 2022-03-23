@@ -766,10 +766,6 @@ ITサービス管理:
 / Terraform
 / [Red Hat Ansible Tower](https://www.ansible.com/products/tower)
 
-ジョブスケジューラ
-Rundeck
-JobScheduler
-
 [Prometheus](https://prometheus.io/)
 [Alertmanager](https://github.com/prometheus/alertmanager)
 [StatsD](https://github.com/statsd/statsd)
@@ -824,7 +820,7 @@ Microsoftに在籍する（した）有名人:
 / [William Stasior](https://gigazine.net/news/20190820-siri-vp-join-microsoft/)
 
 
-謎の社名:
+謎の社名（「試験名＋社名」で検索すると・・・？）:
 Contoso Ltd.
 / Fabrikam, Inc
 / LitWare Inc.
@@ -838,6 +834,7 @@ Contoso Ltd.
 / Volcano Coffee Company
 / World Wide Importers
 / Blue Yonder Airlines
+/ Coho Winery
 / [List of fictional companies used in Microsoft material](https://social.technet.microsoft.com/wiki/contents/articles/1117.list-of-fictional-companies-used-in-microsoft-material.aspx)
 / [List of fictional Microsoft companies](https://microsoft.fandom.com/wiki/List_of_fictional_Microsoft_companies)
 
