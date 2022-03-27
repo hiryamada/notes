@@ -29,35 +29,25 @@ https://aka.ms/CourseAZ-305
 - Exam AZ-303 (2022/3/31 廃止) と Exam AZ-304 (2022/3/31 廃止)
 - AZ-303 (2022/3/31 廃止) と Exam AZ-305
 
-[移行期間中の対応方法](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695):
-
-- 試験 AZ-303 と 試験 AZ-304 の受験準備ができている場合
-  - AZ-303/AZ-304を受験してください（2022/3/31まで）
-- 試験 AZ-303 に合格済みの場合
-  - AZ-305 を受験してください。または、
-  - AZ-304を受験してください（2022/3/31まで）
-- 試験 AZ-304 に合格済みの場合
-  - AZ-303を受験してください（2022/3/31まで）
-- 試験 AZ-303 または試験 AZ-304 の準備を始めたばかりの場合
-  - Azure 管理者アソシエイト認定資格を取得し、 AZ-305 試験を受験してください。
+[移行期間中の対応方法](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
 
 ■モジュール(AZ-305)
 
-- Day 1: 
+- Day 1:
   - Module 1: ガバナンスとコンピューティング ソリューションを設計する
     - Lesson 1: ガバナンスを設計する
     - Lesson 2: コンピューティング ソリューションを設計する
-- Day 2: 
+- Day 2:
   - Module 2: Design storage and data integration solutions 
     - Lesson 1: 非リレーショナルデータのストレージソリューションを設計する
     - Lesson 2: リレーショナルデータのストレージソリューションを設計する
     - Lesson 3: データの統合を設計する
-- Day 3: 
+- Day 3:
   - Module 3: アプリケーションのアーキテクチャとモニタリングを設計する
     - Lesson 1: アプリケーションのアーキテクチャを設計する
     - Lesson 2: 認証と承認のソリューションを設計する
     - Lesson 3: Azureリソースのログとモニタリングのソリューションを設計する
-- Day 4: 
+- Day 4:
   - Module 4: ネットワークと事業継続計画を設計する
     - Lesson 1: ネットワークソリューションを設計する
     - Lesson 2: バックアップとディザスタリカバリーを設計する
