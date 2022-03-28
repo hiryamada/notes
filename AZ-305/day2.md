@@ -42,6 +42,7 @@
         - [Azure Logic Apps](../AZ-204/mod99-01-logicapp.md)
       - バッチ
         - [Azure Batch](azure-batch.md)
+    - [知識チェックとケーススタディ](day3-lp4-m1-check.md)
 
 ## 3日目 後半
 
