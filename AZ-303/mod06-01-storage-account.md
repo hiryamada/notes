@@ -10,9 +10,13 @@
 
 - [Azure Blob Storage](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blobs-overview)
   - オブジェクトストレージ
-  - 主にHTTPSを使用してファイルをアップロード・ダウンロード
+  - HTTPSを使用してファイルをアップロード・ダウンロードできる
+  - 非構造化データ（画像・動画・テキストファイルなど）の格納に適する
+    - ※構造化データはSQL/NoSQLデータベースに格納
 - [Azure Files](https://docs.microsoft.com/ja-jp/azure/storage/files/)
+  - ファイル共有
   - VMやオンプレミスコンピュータから「ファイル共有」をマウントしてファイルを読み書き
+  - SMB/NFSでアクセスできる
   - [Azure File Sync](../AZ-104/pdf/mod07/Azure%20File%20Sync.pdf)
 - [Azure Table Storage](https://docs.microsoft.com/ja-jp/azure/storage/tables/table-storage-overview)
   - NoSQLデータストア
@@ -22,6 +26,7 @@
 - [Azure Queue Storage](https://docs.microsoft.com/ja-jp/azure/storage/queues/storage-queues-introduction)
   - メッセージをキューイングするサービス
   - 1メッセージは64KBまで
+  - [負荷平準化](https://docs.microsoft.com/ja-jp/azure/architecture/patterns/queue-based-load-leveling)に利用される
 
 ■パフォーマンス レベル
 
@@ -36,7 +41,7 @@ https://docs.microsoft.com/ja-jp/azure/storage/common/storage-account-overview#t
   - 高いトランザクションレートをサポート
   - Blob(ページBlob、ブロックBlob、追加Blob), Filesをサポート
 
-Premium 登場時のブログ: 
+Premium 登場時のブログ:
 - Block Blob / 追加Blob(2019/3/25): https://azure.microsoft.com/ja-jp/blog/azure-premium-block-blob-storage-is-now-generally-available/
 - Files(2019/6/26): https://azure.microsoft.com/ja-jp/updates/azure-premium-files-is-now-generally-available/
 
@@ -138,6 +143,8 @@ Microsoft Learn: [リージョン間でストレージ データをレプリケ�
   - ※rehydrate: 水分補給をする、水を与えてもとに戻す
 - ストレージアカウントの設定で、アクセス層を明示的に指定しないBlobに対するデフォルト値を「ホット」または「クール」に設定できる。
   - Azure portal上では「ホット（推定）」や「クール（推定）」のように表示される。
+
+参考: [Azure Storageの「アーカイブ」では、コスト、エラー率の低さ、安全性、長期耐久性の観点から、テープストレージを採用](https://www.fujifilm.com/jp/ja/business/data-management/data-archive/tips/efficiency/007)
 
 ■ライフサイクル管理ポリシー
 

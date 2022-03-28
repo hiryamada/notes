@@ -2,6 +2,7 @@
 
 ■アクセスキーとは？
 
+![](images/ss-2022-03-28-21-05-43.png)
 ```
 ストレージアカウント
 └Blobコンテナー
@@ -10,7 +11,15 @@
 クライアント（ストレージアカウントの「アクセスキー」）
 ```
 
-ストレージアカウントから振り出される「アクセスキー」を持つクライアントは、そのストレージアカウントのBlob、ファイル共有、テーブル、キューに対するフルアクセスが可能。
+ストレージアカウントの「アクセスキー」を持つクライアントは、そのストレージアカウントのBlob、ファイル共有、テーブル、キューに対するフルアクセスが可能。
+
+※アクセスキーは、[サービスへのリクエストに署名を行う](https://docs.microsoft.com/ja-jp/rest/api/communication/authentication#access-key-authentication)ために使用される。リクエストの際にアクセスキー自体をサービスに送信するわけではない。
+
+※「接続文字列」は、以下のような形式であり、アクセスキー、DefaultEndpointsProtocol、AccountName、EndpointSuffixなど、ストレージアカウントを特定して接続するために必要なすべての情報を含んでいる。クライアントには通常こちらを設定する。
+
+```
+DefaultEndpointsProtocol=https;AccountName=st12345;AccountKey=BASE64STR;EndpointSuffix=core.windows.net
+```
 
 ■SASとは？
 
@@ -127,3 +136,5 @@ SASはこのパターンに該当する。
 > バレー［バレット］キー◆車の鍵の一種。バレーサービス（駐車代行）の係員に渡すことを主目的としたもの。ドア解錠・エンジン始動などの、駐車に必要な最小限の機能だけを持つ。この鍵ではトランクなどを開けられないので、所持品を盗まれたり勝手に使われたりするリスクが減る。
 
 https://eow.alc.co.jp/search?q=valet+key
+
+最近の車は物理のバレットキーの代わりに「バレットモード」を持つ。http://www.neostreet.co.jp/iida_yuko/p93/p93.htm
