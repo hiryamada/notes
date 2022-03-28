@@ -11,7 +11,7 @@ https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructur
 あなたは、Tailwind Traders社の[クラウドアーキテクト](https://www.google.com/search?q=%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88)です。
 
 - 上記の「ケーススタディ」ページの「要件」を読んでください。
-- Tailwind Traders社の問題点を分析し、改善案を一つ以上提案してください。
+- Tailwind Traders社の問題点を分析し、改善案をできるだけ多く提案してください。
   - 例: 配信速度を向上させるために～～を～～に配置する
   - 例: コストを削減するために～～を～～に配置する
   - 例: 原稿としてのOfficeファイルは～～に配置し、それらのWebサイト公開用のPDFは～～に配置する
