@@ -13,6 +13,7 @@
   - 主にHTTPSを使用してファイルをアップロード・ダウンロード
 - [Azure Files](https://docs.microsoft.com/ja-jp/azure/storage/files/)
   - VMやオンプレミスコンピュータから「ファイル共有」をマウントしてファイルを読み書き
+  - [Azure File Sync](../AZ-104/pdf/mod07/Azure%20File%20Sync.pdf)
 - [Azure Table Storage](https://docs.microsoft.com/ja-jp/azure/storage/tables/table-storage-overview)
   - NoSQLデータストア
   - テーブルに「エンティティ」を書き込む
@@ -42,6 +43,8 @@ Premium 登場時のブログ:
 性能比較: 
 https://azure.microsoft.com/en-us/blog/premium-block-blob-storage-a-new-level-of-performance/
 
+Premiumストレージは、レイテンシが低く、スループットが高い。
+
 ■レプリケーション オプション
 
 - LRS: 1つのデータセンター内でデータをレプリケーション(3重)
@@ -65,6 +68,8 @@ https://azure.microsoft.com/en-us/blog/premium-block-blob-storage-a-new-level-of
   - RA-GRS, RA-GZRSを選択した場合に利用可能
   - 読み込みのみ
 
+[解説PDF](../AZ-104/pdf/mod06/サービスエンドポイントvsプライベートエンドポイント.pdf)
+
 ■フェイルオーバー
 
 セカンダリリージョンにデータをレプリケーションするオプション（GRS, GZRS, RA-GRS, RA-GZRS）のストレージアカウントで、フェイルオーバーを実行できる。
@@ -76,6 +81,46 @@ https://azure.microsoft.com/en-us/blog/premium-block-blob-storage-a-new-level-of
 Microsoft Learn: [リージョン間でストレージ データをレプリケートし、セカンダリ ロケーションにフェールオーバーすることで、ディザスター リカバリーを実現する](https://docs.microsoft.com/ja-jp/learn/modules/provide-disaster-recovery-replicate-storage-data/)
 
 [ペアのリージョンの一覧](https://docs.microsoft.com/ja-jp/azure/best-practices-availability-paired-regions#azure-regional-pairs)
+
+■RA-GRSでの運用例
+
+平常時: アプリケーションは「読み書き」モードで運用
+
+```
+                  アプリケーション
+                  ↓
+    プライマリエンドポイント(rw)  セカンダリエンドポイント(r)
+                  ↓
+プライマリリージョン         セカンダリリージョン
+└データ ------------------> └データ
+           レプリケーション
+```
+
+プライマリリージョンでの障害発生時:アプリケーションを「読み取り専用」のモードで運用
+- アプリケーションは、セカンダリエンドポイントを使用して、データの読み取りだけを実行できる
+
+```
+                  アプリケーション
+                                  ↓
+    プライマリエンドポイント(rw)  セカンダリエンドポイント(r)
+                                  ↓
+プライマリリージョン（障害）      セカンダリリージョン
+└データ                           └データ
+```
+
+フェールオーバーを実行し、フェールオーバーが完了: アプリケーションは「読み書き」モードで運用。
+- 読み書きを行うためのプライマリエンドポイントのアドレスは変わらない
+- ストレージアカウントの冗長性は「LRS」となる。
+  - セカンダリエンドポイントはなくなる
+
+```
+                  アプリケーション
+                  ↓
+    プライマリエンドポイント(rw)
+                              ↓
+プライマリリージョン（障害）  セカンダリリージョン
+                              └データ
+```
 
 ■アクセス層
 
