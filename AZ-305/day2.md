@@ -1,3 +1,64 @@
+# 2日目 後半 ～ 3日目: 山田
+
+## 2日目 後半
+
+- ラーニングパス3: データ
+  - モジュール1: ストレージアカウント
+    - 冗長化オプション
+    - Blob Storage
+    - Files
+  - モジュール2: SQLとNoSQL
+    - Azure SQL Database
+    - Cosmos DB
+  - モジュール3: データ統合/データ分析
+    - Azure Data Factory
+    - Azure Databricks
+    - Azure Synapse Analytics
+
+## 3日目 前半
+
+- ラーニングパス4: インフラ
+  - モジュール1: コンピューティング
+    - コンピューティング
+      - 仮想マシン
+        - VM
+        - VMSS
+      - PaaS
+        - Azure App Service
+      - コンテナー型仮想化
+        - Azure Container Instances
+        - Azure Kubernetes Service
+      - Function as a Service
+        - Azure Function
+      - ローコード/ノーコード/統合
+        - Azure Logic Apps
+      - バッチ
+        - Azure Batch
+
+## 3日目 後半
+
+- ラーニングパス4: インフラ
+  - モジュール2: アプリケーション アーキテクチャ
+    - メッセージング
+      - Azure Queue Storage
+      - Azure Service Bus
+    - イベント
+      - Azure Event Hub
+      - Azure Event Grid
+    - キャッシュ
+      - Azure Cache for Redis
+    - API統合
+      - Azure API Management
+  - モジュール3: ネットワーク ソリューション
+    - オンプレミス接続
+      - VPN
+      - ExpressRoute
+    - NSG, ASG
+    - Azure Firewall
+  - モジュール4: 移行
+    - Azure Migrate
+
+
 # ラーニングパス 3: [AZ-305: Design data storage ソリューション](https://docs.microsoft.com/ja-jp/learn/paths/design-data-storage-solutions/)
 ## モジュール 1: [非リレーショナルデータ用にデータ ストレージ ソリューションを設計する](https://docs.microsoft.com/ja-jp/learn/modules/design-data-storage-solution-for-non-relational-data/)
 - ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/design-data-storage-solution-for-non-relational-data/1-introduction)

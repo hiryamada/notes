@@ -6,22 +6,15 @@
 
 コース情報: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-305t00
 
-認定試験: https://docs.microsoft.com/en-us/learn/certifications/exams/az-305  2021/11/16～受験可能
+認定試験: https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-305  2021/11/16～受験可能
 
 2021/10/7 [AZ-305のアナウンス(Microsoft Learn Blob)](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
 
 2022/2/8 [AZ-305 正式化 (live) のお知らせ](https://techcommunity.microsoft.com/t5/microsoft-learn/now-live-exam-az-305-designing-microsoft-azure-infrastructure/m-p/3138200)
 
-
-# コース資料 (Microsoft Learn)
-
-https://aka.ms/CourseAZ-305
-
-※日本語で表示されない場合は、URLの「docs.microsoft.com/XX-XX/」の部分を「docs.microsoft.com/ja-jp/」に書き換えてください。
-
 ■対応する資格
 
-[Microsoft Certified: Azure Solutions Architect Expert](https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/)
+[Microsoft Certified: Azure Solutions Architect Expert](https://docs.microsoft.com/ja-jp/learn/certifications/azure-solutions-architect/)
 
 認定条件: 以下のいずれか
 
@@ -31,68 +24,27 @@ https://aka.ms/CourseAZ-305
 
 [移行期間中の対応方法](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
 
-■モジュール(AZ-305)
+■ラーニングパス
 
-- Day 1:
-  - Module 1: ガバナンスとコンピューティング ソリューションを設計する
-    - Lesson 1: ガバナンスを設計する
-    - Lesson 2: コンピューティング ソリューションを設計する
-- Day 2:
-  - Module 2: Design storage and data integration solutions 
-    - Lesson 1: 非リレーショナルデータのストレージソリューションを設計する
-    - Lesson 2: リレーショナルデータのストレージソリューションを設計する
-    - Lesson 3: データの統合を設計する
-- Day 3:
-  - Module 3: アプリケーションのアーキテクチャとモニタリングを設計する
-    - Lesson 1: アプリケーションのアーキテクチャを設計する
-    - Lesson 2: 認証と承認のソリューションを設計する
-    - Lesson 3: Azureリソースのログとモニタリングのソリューションを設計する
-- Day 4:
-  - Module 4: ネットワークと事業継続計画を設計する
-    - Lesson 1: ネットワークソリューションを設計する
-    - Lesson 2: バックアップとディザスタリカバリーを設計する
-    - Lesson 3: 移行を設計する
-
-■ラボ（ケーススタディ）
-
-https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructureSolutions/
-
-■モジュール(AZ-304)
-
-全14モジュール。目安として、1日に約4モジュールのペースで解説。
-
-- 1日目
-  - オープニング・環境準備
-  - [モジュール 1 コンピューティング ソリューションを設計する](mod01.md)
-  - [モジュール 2 ネットワーク ソリューションを設計する](mod02.md)
-  - [モジュール 3 移行を設計する](mod03.md)
-  - ラボ3
-- 2日目
-  - [モジュール 4 認証と承認を設計する](mod04.md)
-  - [モジュール 5 ガバナンスを設計する](mod05.md)
-  - [モジュール 6 データベースのソリューションを設計する](mod06.md)
-  - [モジュール 7 適切なストレージ アカウントを選択する](mod07.md)
-  - ラボ4
-- 3日目
-  - [モジュール 8 データ統合を設計する](mod08.md)
-  - [モジュール 9 ロギングと監視のソリューションを設計する](mod09.md)
-  - [モジュール 10 バックアップとリカバリのソリューションを設計する](mod10.md)
-  - ラボ6
-- 4日目
-  - [モジュール 11 高可用性用の設計](mod11.md)
-  - [モジュール 12 コスト最適化を設計する](mod12.md)
-  - [モジュール 13 アプリケーション アーキテクチャを設計する](mod13.md)
-  - [モジュール 14 アプリケーションのセキュリティを設計する](mod14.md)
-  - ラボ13
+- [Day 1](day1.md):
+  - ラーニングパス 1: AZ-305: ID、ガバナンス、および監視ソリューションの設計
+  - ラーニングパス 2: AZ-305: ビジネス継続性ソリューションを設計する
+- [Day 2](day2.md):
+  - ラーニングパス 3: AZ-305: Design data storage ソリューション
+  - ラーニングパス 4: AZ-305: インフラストラクチャ ソリューションを設計する
+- [Day 3](day3.md):
+  - ラーニングパス 5: Microsoft Azure Well-Architected Framework を使用して優れたソリューションを構築する
+- [Day 4](day4.md):
+  - ラーニングパス 6: [Azure 向けの Microsoft クラウド導入フレームワークでクラウド導入を加速する
   - クロージング
 
-■ハンズオン ラボ（演習）(AZ-304)
+# コース資料 (Microsoft Learn)
 
-モジュール 3, 4, 6, 13の4ラボのみ。
+https://aka.ms/CourseAZ-305
 
-[lab.md](lab.md)
+※日本語で表示されない場合は、URLの「docs.microsoft.com/XX-XX/」の部分を「docs.microsoft.com/ja-jp/」に書き換えてください。
 
-■Azureアーキテクチャ センター
+■参考: Azureアーキテクチャ センター
 
 確立されたパターンと手法を使用して Azure でソリューションを設計するためのドキュメント。ガイド、ベストプラクティス、基本原則、パターン集など。
 
@@ -122,7 +74,7 @@ https://docs.microsoft.com/ja-jp/azure/architecture/framework/
 クラウド設計パターン
 https://docs.microsoft.com/ja-jp/azure/architecture/patterns/
 
-■クラウド導入フレームワーク(CAF)
+■参考: クラウド導入フレームワーク(CAF)
 
 Cloud Adoption Framework (CAF)
 
@@ -139,7 +91,7 @@ https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/overview
 - [ツールとテンプレート](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/resources/tools-templates)
 
 
-■「基礎」(fundamentals)のドキュメント
+■参考: 「基礎」(fundamentals)のドキュメント
 
 Azureのセキュリティの基礎
 https://docs.microsoft.com/ja-jp/azure/security/fundamentals/
@@ -153,12 +105,12 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/
 Azureデータの基礎(Microsoft Learn)
 https://docs.microsoft.com/ja-jp/learn/paths/azure-data-fundamentals-explore-core-data-concepts/
 
-■セキュリティのドキュメント
+■参考: セキュリティのドキュメント
 
 Microsoft セキュリティのベスト プラクティス ※旧称 「Azure セキュリティ コンパス」または 「Microsoft セキュリティ コンパス」
 https://docs.microsoft.com/ja-jp/security/compass/compass
 
-■Student Materials
+■参考: Student Materials
 
 https://aka.ms/AZ-305StudentMaterials
 

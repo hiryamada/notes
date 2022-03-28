@@ -1,8 +1,39 @@
+# 4日目 後半
+
+- クラウド導入フレームワーク (Cloud Adoption Framework)
+  - [CAFの概要](caf.md)
+  - [CAFのステージ](caf-stages.md)
+  - [CAF 重要ポイントまとめ・知識チェック](caf-check.md)
+
+以下、Microsoft Learn の ラーニングパス、モジュール、ユニットへのリンク集。
+
+- モジュール1: CAFの概要
+- モジュール2: 戦略
+- モジュール3: 計画
+- モジュール4: ランディングゾーン
+- モジュール5: 移行
+- モジュール6: ガバナンス
+- モジュール7: 運用の最適化
+- モジュール8: イノベーション
+
+CAFのステージとモジュールの対応関係:
+- (1)CCoEの構成
+- (2)戦略定義 - Define Strategy → モジュール2: 戦略
+- (3)計画 - Plan → モジュール3: 計画
+- (4)準備(導入準備) - Ready → モジュール4: ランディングゾーン
+- (5)導入(採用) - Adopt 
+  - Migrate → モジュール5: 移行
+  - Innovate → モジュール8: イノベーション
+- (6)統制管理 - Govern → モジュール6: ガバナンス
+- (7)管理 - Manage → モジュール7: 運用の最適化
+
+
 # ラーニングパス 6: [Azure 向けの Microsoft クラウド導入フレームワークでクラウド導入を加速する](https://docs.microsoft.com/ja-jp/learn/paths/cloud-adoption-framework/)
 ## モジュール 1: [Azure 用の Microsoft クラウド導入フレームワークの概要](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-getting-started/)
 - ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-getting-started/1-introduction)
 - ユニット 2: [お客様のストーリー](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-getting-started/2-customer-narrative)
 - ユニット 3: [一般的な阻害要因](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-getting-started/3-common-blockers)
+- ※以下の知識チェックは、「[入門ガイド](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/get-started/)」（「概要ガイド」、「getting started guides」）のページ内の見出し「[基盤を調整する](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/get-started/#align-foundation)」「[導入を加速する](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/get-started/#accelerate-adoption)」「[コントロールを改善する](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/get-started/#improve-controls)」「[チームの確立](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/get-started/#establish-teams)」について、「このような状況の際にはどの見出しの中の「入門ガイド」を見ればよいかについて、6題、出題されているが、これを記憶して正答できるようにする必要はないと思われる。
 - ユニット 4: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-getting-started/4-knowledge-check)
 - ユニット 5: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-getting-started/5-summary)
 ## モジュール 2: [明確に定義された戦略でクラウド導入を成功させるための準備](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-strategy/)
@@ -13,6 +44,14 @@
 - ユニット 5: [財務上の考慮事項を評価する](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-strategy/5-evaluate-financial-considerations)
 - ユニット 6: [技術的な考慮事項を把握する](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-strategy/6-understand-technical-considerations)
 - ユニット 7: [ビジネス ケースを作成する](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-strategy/7a-create-a-business-case)
+- 戦略の目標
+  - 企業戦略の明確化、共通の目標の定義、評価指標の確立、財務上の考慮事項の評価、技術的な考慮事項の評価
+- クラウドに移行する動機
+  - コストを節約し、新しい技術機能を導入し、ワークロードの最適化を推進し、スケールと機敏性を実現し、カスタマー エクスペリエンスを向上させる
+- クラウド導入のメリット
+  - ベンダーの複雑さの軽減、運用コストの改善、技術的な機能と運用機能の強化
+- クラウド導入戦略の定義に関与させる必要がある役職（ペルソナ）
+  - 財務、マーケティング、営業、人事、役員のリーダー
 - ユニット 8: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-strategy/7-knowledge-check)
 - ユニット 9: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-strategy/8-summary)
 ## モジュール 3: [データドリブン計画を使用してクラウドの導入を準備する](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-plan/)
@@ -38,6 +77,14 @@
 - ユニット 4: [移行ツール](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-migrate/4-migration-tools)
 - ユニット 5: [一般的な技術プラットフォーム](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-migrate/5-common-tech-platforms)
 - ユニット 6: [演習 - サーバーの移行](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-migrate/6-vm-migration)
+- ユーザー ルートのテスト
+  - ユーザー トラフィックのトラフィック パターンとルーティングの検証
+- 移行プロジェクトのワークロードの評価フェーズで実施すべきこと
+  - クラウドの互換性およびサーバーと資産の間の依存関係に関する情報を収集する
+- 移行プロジェクトの阻害要因
+  - 戦略上の阻害要因
+    - チームが役員レベルのチームと共に適切な期待値を設定していない
+    - 期間や予算の要件などの要因について組織全体で適切な期待値を設定することが重要
 - ユニット 7: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-migrate/7-knowledge-check)
 - ユニット 8: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-migrate/8-summary)
 ## モジュール 6: [Azure 向けクラウド導入フレームワークのガバナンス手法によって明確なリスクに対処する](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-govern/)
