@@ -23,6 +23,7 @@
     - データ分析
       - [Azure Databricks](../AZ-304/mod08-04-databricks.md)
       - [Azure Synapse Analytics](../AZ-304/mod08-03-synapse-analytics.md)
+      - 操作例: [Azure Data Lake Storage Gen2 と Azure Synapse Analyticsによるビッグデータ分析](pdf/datalake-synapse.pdf)
     - [知識チェック](day2-lp3-m3-check.md)
 
 
