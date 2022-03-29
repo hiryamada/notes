@@ -1,6 +1,7 @@
 
 # Azure Storage
 
+![](images/ss-2022-03-29-10-16-02.png)
 - 「ストレージ アカウント」を作成。
 - Blob, Files, Table, Queueのサービスを利用できる
 - マネージド: サーバーなどの管理をお客様が実施する必要がない
@@ -17,7 +18,7 @@
   - ファイル共有
   - VMやオンプレミスコンピュータから「ファイル共有」をマウントしてファイルを読み書き
   - SMB/NFSでアクセスできる
-  - [Azure File Sync](../AZ-104/pdf/mod07/Azure%20File%20Sync.pdf)
+  - PDF解説: [Azure File Sync](../AZ-104/pdf/mod07/Azure%20File%20Sync.pdf)
 - [Azure Table Storage](https://docs.microsoft.com/ja-jp/azure/storage/tables/table-storage-overview)
   - NoSQLデータストア
   - テーブルに「エンティティ」を書き込む
@@ -129,6 +130,9 @@ Microsoft Learn: [リージョン間でストレージ データをレプリケ�
 
 ■アクセス層
 
+![](images/ss-2022-03-29-10-13-57.png)
+![](images/ss-2022-03-29-10-14-33.png)
+![](images/ss-2022-03-29-10-15-16.png)
 - Blob個々の単位でホット、クール、アーカイブの「アクセス層」を設定できる
 - 料金が変わる
   - ストレージ料金: ホット ＞ クール ＞ アーカイブ
@@ -143,6 +147,8 @@ Microsoft Learn: [リージョン間でストレージ データをレプリケ�
   - ※rehydrate: 水分補給をする、水を与えてもとに戻す
 - ストレージアカウントの設定で、アクセス層を明示的に指定しないBlobに対するデフォルト値を「ホット」または「クール」に設定できる。
   - Azure portal上では「ホット（推定）」や「クール（推定）」のように表示される。
+
+
 
 参考: [Azure Storageの「アーカイブ」では、コスト、エラー率の低さ、安全性、長期耐久性の観点から、テープストレージを採用](https://www.fujifilm.com/jp/ja/business/data-management/data-archive/tips/efficiency/007)
 
