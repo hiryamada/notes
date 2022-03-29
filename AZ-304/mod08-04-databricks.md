@@ -32,7 +32,26 @@ https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%96%E3%83%AA%E3%8
 ■Databrics（プラットフォーム）とは
 
 - Databrics社が開発した分析プラットフォーム
-- Apache Spark、
+
+■「Azure Databricksワークスペース」の作成
+![](images/ss-2022-03-29-19-48-02.png)
+
+価格レベル:
+- Standard
+- Premium
+- 試用版（Trial）: Premium機能、14日間、無料のDBUを利用可能）
+
+※DBU: Databricks Unit. 1時間あたりの処理能力の単位。1秒あたりの使用量で課金される。
+
+価格の説明: [Azure公式](https://azure.microsoft.com/ja-jp/pricing/details/databricks/) / [Databricks社公式](https://databricks.com/jp/product/azure-pricing)
+
+■Databricksワークスペースへの接続
+
+概要:
+![](images/ss-2022-03-29-20-06-56.png)
+
+ワークスペースを起動:
+![](images/ss-2022-03-29-20-06-06.png)
 
 ■参考
 
