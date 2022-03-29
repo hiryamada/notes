@@ -1,6 +1,5 @@
 # Azure Table Storage
 
-
 [製品ページ](https://azure.microsoft.com/ja-jp/services/storage/tables/)
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/storage/tables/table-storage-overview)
@@ -9,7 +8,7 @@
 
 [REST APIドキュメント](https://docs.microsoft.com/ja-jp/rest/api/storageservices/table-service-rest-api)
 
-[Table Storage設計ガイド](https://docs.microsoft.com/ja-jp/azure/cosmos-db/table-storage-design-guide) - この記事の内容は、従来の Azure Table Storage を対象としています。
+[Table Storage設計ガイド](https://docs.microsoft.com/ja-jp/azure/cosmos-db/table-storage-design-guide)
 
 [テーブルの設計パターン](https://docs.microsoft.com/ja-jp/azure/storage/tables/table-storage-design-patterns)
 

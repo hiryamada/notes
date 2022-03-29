@@ -14,6 +14,7 @@
       - [Azure SQL Databaseのサーバー/データベース](../AZ-303/mod08-01-sqldb.md)
       - [Azure SQL Edge](sql-edge.md)
     - NoSQL
+      - [Azure Table Storage](../AZ-104/mod07-07-table.md)
       - [Cosmos DB](../AZ-303/mod07-02-cosmosdb.md)
     - [知識チェック](day2-lp3-m2-check.md)
   - モジュール3: データ統合/データ分析
