@@ -30,9 +30,42 @@ https://azure.microsoft.com/en-in/blog/azure-data-factory-new-capabilities-are-n
 2019/10/7 ADF「マッピングデータフロー」一般提供開始。ブラウザーベースのデザイナーを使用して、データ パイプラインを作成。コーディング不要。組み込みの変換機能を使用して、結合、集計、ピボット、並べ替えなどを実行できる。
 https://azure.microsoft.com/ja-jp/blog/azure-data-factory-mapping-data-flows-are-now-generally-available/
 
-■Azure portalからのリソース作成
+■基本的な操作例 - Blobコンテナー間でのBlobのコピー
 
-- 画面上部の検索で「データ ファクトリ」を検索
+Azure portal 画面上部の検索で「データ ファクトリ」を検索
+
+基本:
+![](images/ss-2022-03-29-11-38-23.png)
+
+Git構成:
+![](images/ss-2022-03-29-11-40-20.png)
+
+「概要」から「Azure Data Factory Studio」を開く:
+![](images/ss-2022-03-29-11-45-01.png)
+
+GitHubにログイン:
+![](images/ss-2022-03-29-11-45-44.png)
+
+パイプラインの定義. コピー アクティビティを追加:
+![](images/ss-2022-03-29-12-02-16.png)
+
+コピー アクティビティの「ソース」（コピー元）と「シンク」（コピー先）を指定:
+![](images/ss-2022-03-29-12-05-09.png)
+
+Azure Data Factory でパイプラインの変更を保存:
+![](images/ss-2022-03-29-12-08-59.png)
+
+GitHubリポジトリにパイプラインの情報が保存される:
+![](images/ss-2022-03-29-12-09-25.png)
+
+デバッグ実行:
+![](images/ss-2022-03-29-12-11-36.png)
+
+実行結果:
+![](images/ss-2022-03-29-12-11-54.png)
+
+実行結果の詳細:
+![](images/ss-2022-03-29-12-12-28.png)
 
 ■コネクタ
 
@@ -52,6 +85,8 @@ https://docs.microsoft.com/ja-jp/azure/data-factory/connector-overview
 - ファイルシステム
 - FTP
 - など
+
+[コネクターの一覧](https://docs.microsoft.com/ja-jp/azure/data-factory/connector-overview#supported-data-stores)
 
 ■Azure Data FactoryとAzure Synapse Analytics
 

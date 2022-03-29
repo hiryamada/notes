@@ -53,36 +53,63 @@ Premiumストレージは、レイテンシが低く、スループットが高�
 
 ■レプリケーション オプション
 
-- LRS: 1つのデータセンター内でデータをレプリケーション(3重)
-- ZRS: 3つの可用性ゾーンでデータをレプリケーション(3重)
-- GRS: ペアのリージョン間でデータをレプリケーション(6重)
-- GZRS: ZRS + GRS(6重)
-- RA-GRS: プライマリリージョンで読み書き、セカンダリリージョンで読み取りが可能なGRS
-- RA-GZRS: プライマリリージョンで読み書き、セカンダリリージョンで読み取りが可能なGZRS
+ストレージアカウントの作成画面:
+![](images/ss-2022-03-29-10-24-08.png)
+
+上記の設定(RA-GRS)で作成したストレージアカウントの「概要」:
+![](images/ss-2022-03-29-10-23-22.png)
+
+
+- [LRS](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#locally-redundant-storage): 1つのリージョンの1つのデータセンター内でデータをレプリケーション(3重)
+- [ZRS](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#zone-redundant-storage): 1つのリージョンの3つの可用性ゾーンでデータをレプリケーション(3重)
+- [GRS](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#geo-redundant-storage): ペアのリージョン間でデータをレプリケーション(6重)
+- [GZRS](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#geo-zone-redundant-storage): ZRS + GRS(6重)
+- [RA-](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#read-access-to-data-in-the-secondary-region)GRS: プライマリリージョンで読み書き、セカンダリリージョンで読み取りが可能なGRS
+- [RA-](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#read-access-to-data-in-the-secondary-region)GZRS: プライマリリージョンで読み書き、セカンダリリージョンで読み取りが可能なGZRS
 
 ※RA: Read Access
+
+- LRS/ZRS: 
+  - セカンダリリージョンへのレプリケーションはされない
+- GRS/GZRS: 
+  - セカンダリリージョンへレプリケーションされる
+  - フェールオーバー実行前、セカンダリリージョンのデータにはアクセスできない
+- RA-GRS/RA-GZRS: 
+  - セカンダリリージョンへレプリケーションされる
+  - フェールオーバー実行前、セカンダリリージョンのデータに読み取りアクセスができる
 
 [解説PDF](../AZ-104/pdf/mod07/ストレージ冗長化.pdf)
 
 ■エンドポイント
 
+LRSで作成したストレージアカウントのBlobのエンドポイント:
+![](images/ss-2022-03-29-10-35-16.png)
+
+RA-GRSで作成したストレージアカウントのBlobのエンドポイント:
+![](images/ss-2022-03-29-10-27-17.png)
+
 - プライマリエンドポイント
   - プライマリリージョンへのアクセス用
   - 読み書き可能
+  - `http://ストレージアカウント名.blob.core.windows.net/` のようなアドレス
 - セカンダリエンドポイント
   - セカンダリリージョンへのアクセス用
   - RA-GRS, RA-GZRSを選択した場合に利用可能
   - 読み込みのみ
+  - `http://ストレージアカウント名-seconday.blob.core.windows.net/` のようなアドレス
 
 [解説PDF](../AZ-104/pdf/mod06/サービスエンドポイントvsプライベートエンドポイント.pdf)
 
 ■フェイルオーバー
 
+「geoレプリケーション」の画面:
+![](images/ss-2022-03-29-10-37-28.png)
+
 セカンダリリージョンにデータをレプリケーションするオプション（GRS, GZRS, RA-GRS, RA-GZRS）のストレージアカウントで、フェイルオーバーを実行できる。
 
 - セカンダリリージョンが新たなプライマリリージョンとなる
-- レプリケーションオプションはLRSになる
 - プライマリエンドポイントは変化しない
+- フェイルオーバー完了後、レプリケーションオプションはLRSになる
 
 Microsoft Learn: [リージョン間でストレージ データをレプリケートし、セカンダリ ロケーションにフェールオーバーすることで、ディザスター リカバリーを実現する](https://docs.microsoft.com/ja-jp/learn/modules/provide-disaster-recovery-replicate-storage-data/)
 
@@ -130,29 +157,47 @@ Microsoft Learn: [リージョン間でストレージ データをレプリケ�
 
 ■アクセス層
 
+Blobの一覧:
 ![](images/ss-2022-03-29-10-13-57.png)
+
+アクセス層「アーカイブ」で保存されたのBlobのメニュー:
 ![](images/ss-2022-03-29-10-14-33.png)
+
+アクセス層「アーカイブ」で保存されたのBlobの、アクセス層の変更:
 ![](images/ss-2022-03-29-10-15-16.png)
+
+ストレージアカウントの「構成」、デフォルト（規定）の「BLOBのアクセス レベル」
+![](images/ss-2022-03-29-10-20-08.png)
+
 - Blob個々の単位でホット、クール、アーカイブの「アクセス層」を設定できる
 - 料金が変わる
   - ストレージ料金: ホット ＞ クール ＞ アーカイブ
   - 読み取り操作料金: ホット ＝ クール ＜ アーカイブ
   - データ取得料金: ホット ＜ クール ＜ アーカイブ
-- ホットとクールに設定されたBlobには、リアルタイムのアクセスが可能
+- ホットとクールに設定されたBlobには、リアルタイムのアクセス（ダウンロード等）が可能
 - アーカイブに設定されたBlobには、リアルタイムアクセスが不可能
   - アクセスする前に[「リハイドレート」を実行する](https://docs.microsoft.com/ja-jp/azure/storage/blobs/archive-rehydrate-overview)必要がある
   - リハイドレートには時間がかかる
-    - 通常: 1～15時間 
+    - 通常: 1～15時間
     - 優先度高: 1時間未満
   - ※rehydrate: 水分補給をする、水を与えてもとに戻す
 - ストレージアカウントの設定で、アクセス層を明示的に指定しないBlobに対するデフォルト値を「ホット」または「クール」に設定できる。
   - Azure portal上では「ホット（推定）」や「クール（推定）」のように表示される。
 
-
+※推定: 英語UIでは「inferred」となっている。「あるBlobに対して明示的にアクセス層が設定されていないので、ストレージアカウントのデフォルト（規定）の「BLOBのアクセス レベル」に記録している」という状態。ストレージアカウントのデフォルト（規定）の「BLOBのアクセス レベル」を変更すると、それに伴って、**推定（inferred）として保存されているすべてのBlobの層が変更される**ので注意。
 
 参考: [Azure Storageの「アーカイブ」では、コスト、エラー率の低さ、安全性、長期耐久性の観点から、テープストレージを採用](https://www.fujifilm.com/jp/ja/business/data-management/data-archive/tips/efficiency/007)
 
 ■ライフサイクル管理ポリシー
+
+ライフサイクル管理:
+![](images/ss-2022-03-29-10-40-59.png)
+
+「アクセス追跡」の有効化:
+![](images/ss-2022-03-29-10-41-39.png)
+
+ライフサイクル管理ルールの設定画面:
+![](images/ss-2022-03-29-10-42-27.png)
 
 - [ライフサイクル管理ポリシーを設定](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal)することで、ホット、クール、アーカイブの変更を自動化することができる。
 

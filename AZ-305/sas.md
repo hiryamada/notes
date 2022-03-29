@@ -30,7 +30,7 @@ DefaultEndpointsProtocol=https;AccountName=st12345;AccountKey=BASE64STR;Endpoint
      ↑SASを使用してBlobにアクセス（Blobのダウンロード・アップロード等）
      モバイルアプリ
      ↑「SAS」を発行
-SASを発行するサーバー（ストレージアカウントの「アクセスキー」）
+SASを発行するサーバー（ストレージアカウントの「アクセスキー」を持つ）
 ```
 
 上の図で、「モバイルアプリ」は「アクセスキー」を持たないが、「SASを発行するサーバー」は「アクセスキー」を持つ。
@@ -60,6 +60,8 @@ SASを発行するサーバー（ストレージアカウントの「アクセ�
 SASはカードキーに例えることができる。
 
 ■委任 (delegate)
+
+※デリゲート [delegate](https://eow.alc.co.jp/search?q=delegate): （動）権限・任務を人に委任する。（名）他者の代わりに行動する権限を与えられた代理人。
 
 SASは「委任」を行うための仕組み。
 
