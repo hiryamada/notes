@@ -1,4 +1,4 @@
-# モジュール16 Kubernetes
+# Kubernetes
 
 - Kubernetesとは。
 - Azure Kubernetes Serviceとは。
@@ -8,9 +8,8 @@
 - CI/CDからどうやってアプリケーションをデプロイするのか。
 - Helmとは。
 
-## Azure Kubernetes Service (AKS) の概要
 
-### Kubernetes の概要
+## Kubernetes の概要
 
 ■Kubernetes
 
@@ -61,7 +60,7 @@ Kubernetesの名称は、ギリシャ語に由来し、操舵手やパイロッ�
   - [Apache Mesos](http://mesos.apache.org/)に基づく
 - [Docker Swarm](https://docs.docker.jp/swarm/overview.html)
 
-### Azure Kubernetes Service (AKS)
+## Azure Kubernetes Service (AKS)
 
 マネージドKubernetesクラスターをAzureに簡単にデプロイすることができるサービス。
 
@@ -80,6 +79,7 @@ PDF資料: [AKSクラスターの作成](https://github.com/hiryamada/notes/blob
 - 「コントロールプレーン」は無料
 - 「ノード」は有料(VMの料金)
 
+<!-- 
 [PDF: AKSの更新について](pdf/AKSの「更新」.pdf)
 
 ■正常性の監視・修復
@@ -113,7 +113,6 @@ https://docs.microsoft.com/ja-jp/azure/aks/upgrade-cluster
 - バージョンアップは手動で実行する。
   - [事例](https://qiita.com/shingo_kawahara/items/73c80bb72ffa73577b29)
 
-<!--
 ■バージョンアップ（アップグレード）の動作
 
 アップグレード プロセスにより、次のことが安全に行われます。
@@ -151,7 +150,7 @@ https://azure.microsoft.com/en-us/updates/azure-kubernetes-service-aks-now-suppo
 
 -->
 
-### AKS アーキテクチャ コンポーネント
+## AKS アーキテクチャ コンポーネント
 
 ```
 Kubernetes クラスター
@@ -484,12 +483,12 @@ Visual Studio Code上から以下の操作を行うことができる。
 [1](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/),
 [2](https://kubernetes.io/ja/docs/setup/learning-environment/minikube/)
 
+<!-- 
 
 ## AKSとパイプラインの統合
 
 パイプラインからコンテナーをデプロイするには、AKSクラスターとACR（コンテナーレジストリ）を作成する必要がある。
 
-<!-- 
 ### KubernetesとKey Vault
 
 Kubernetesで、Azure Key Valutから機密情報（データベースに接続するためのパスワードなど）を読み込み、Podで使用することができる。
