@@ -26,13 +26,14 @@
     - [メッセージング](messaging.md)
       - Azure Queue Storage
       - Azure Service Bus
-    - イベント
-      - Azure Event Hubs
+    - [イベント](event.md)
       - Azure Event Grid
+      - Azure Event Hubs
     - キャッシュ
       - [Azure Cache for Redis](../AZ-204/mod12-01-redis.md)
     - API統合
       - [Azure API Management](../AZ-204/mod08-01-apim.md)
+    - [知識チェック](day3-lp4-m2-check.md)
   - モジュール3: ネットワーク ソリューション
     - オンプレミス接続
       - [VPN](../AZ-303/mod03-03-vpn.md)
@@ -40,8 +41,10 @@
     - ネットワークアクセスの制御
       - [NSG と ASG](../AZ-303/mod05-05-nsg-asg.md)
     - [Azure Firewall](../AZ-303/mod05-06-azure-firewall.md)
+    - [知識チェック](day3-lp4-m3-check.md)
   - モジュール4: 移行
     - [Azure Migrate](../AZ-303/mod12-01-migrate.md)
+    - [知識チェック](day3-lp4-m4-check.md)
 
 # ラーニングパス 4: [AZ-305: インフラストラクチャ ソリューションを設計する](https://docs.microsoft.com/ja-jp/learn/paths/design-infranstructure-solutions/)
 ## モジュール 1: [コンピューティング ソリューションを設計する](https://docs.microsoft.com/ja-jp/learn/modules/design-compute-solution/)
