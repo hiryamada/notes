@@ -2,22 +2,21 @@
 ## 3日目 前半
 
 - ラーニングパス4: インフラ
-  - モジュール1: [コンピューティング](../AZ-304/mod01.md)
-    - コンピューティング
-      - 仮想マシン
-        - [VM](../AZ-303/mod04-01-vm.md)
-        - [VMSS](../AZ-303/mod04-03-vmss.md)
-      - PaaS
-        - Azure App Service
-      - コンテナー型仮想化
-        - [Azure Container Instances](../AZ-303/mod13-01-aci.md)
-        - [Azure Kubernetes Service](../AZ-400/mod16.md)
-      - Function as a Service
-        - [Azure Function](../AZ-303/mod14-02-functions.md)
-      - ローコード/ノーコード/統合
-        - [Azure Logic Apps](../AZ-204/mod99-01-logicapp.md)
-      - バッチ
-        - [Azure Batch](azure-batch.md)
+  - モジュール1: コンピューティング
+    - 仮想マシン
+      - [VM](../AZ-303/mod04-01-vm.md)
+      - [VMSS](../AZ-303/mod04-03-vmss.md)
+    - PaaS
+      - [Azure App Service](app-service.md)
+    - コンテナー型仮想化
+      - [Azure Container Instances](../AZ-303/mod13-01-aci.md)
+      - [Azure Kubernetes Service](../AZ-400/mod16.md)
+    - Function as a Service
+      - [Azure Function](../AZ-303/mod14-02-functions.md)
+    - ローコード/ノーコード/統合
+      - [Azure Logic Apps](../AZ-204/mod99-01-logicapp.md)
+    - バッチ
+      - [Azure Batch](azure-batch.md)
     - [知識チェックとケーススタディ](day3-lp4-m1-check.md)
 
 ## 3日目 後半
