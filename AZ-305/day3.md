@@ -23,7 +23,7 @@
 
 - ラーニングパス4: インフラ
   - モジュール2: アプリケーション アーキテクチャ
-    - メッセージング
+    - [メッセージング](messaging.md)
       - Azure Queue Storage
       - Azure Service Bus
     - イベント
