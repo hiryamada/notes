@@ -11,6 +11,16 @@
 
 ■Cosmos DBアカウント
 
+APIの選択:
+![](images/ss-2022-03-30-08-55-11.png)
+
+概要の指定:
+![](images/ss-2022-03-30-08-55-46.png)
+
+バックアップポリシーの指定（継続モードでは、過去 30 日以内の日時を秒単位で指定して復元を実行できる。[詳細](https://docs.microsoft.com/ja-jp/azure/cosmos-db/migrate-continuous-backup)）
+![](images/ss-2022-03-30-08-56-53.png)
+
+
 - Cosmos DBを使用する際は「Cosmos DBアカウント」を作成する
 - APIを指定する
 - 容量モード
