@@ -26,8 +26,8 @@ https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructur
 
 ■進め方
 
-- 前半30分: お手元でメモ帳やPowerPoint等を使用して、改善案をまとめてください
-- 後半30分: まとめた内容をKlaxoonに投稿してください
+- 前半20分: お手元でメモ帳やPowerPoint等を使用して、改善案をまとめてください
+- 後半20分: まとめた内容をKlaxoonに投稿してください
 
 ■ヒント
 
