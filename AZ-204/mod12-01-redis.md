@@ -17,7 +17,11 @@
 - [Azure Cache for Redis を使用して .NET Framework ASP.NET Web アプリのセッション スケーラビリティを向上する](https://docs.microsoft.com/ja-jp/learn/modules/aspnet-session/)
 - [Azure Cache for Redis で変更可能な部分的データを処理する](https://docs.microsoft.com/ja-jp/learn/modules/work-with-mutable-and-partial-data-in-a-redis-cache/)
 
+■インタラクティブにRedisコマンドを学べるサイト
+
 [Try Redis](https://try.redis.io/)
+
+■キャッシュ戦略
 
 [キャッシュ アサイド パターン](https://docs.microsoft.com/ja-jp/azure/architecture/patterns/cache-aside) - オンデマンドでデータをデータ ストアからキャッシュに読み込みます（データがキャッシュになければデータストアからデータを読み込み、キャッシュに書き込む）。アプリケーションは、情報を更新したら、データ ストアに変更を加え、キャッシュ内の対応する項目を無効にします。
 
