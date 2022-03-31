@@ -16,7 +16,6 @@ https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructur
   - 例: コストを削減するため～～を導入する
   - 例: バックエンド層へのリクエストを削減するため～～を導入する
   - 例: 静的コンテンツは～～を使用して配信する
-- 改善案は、Klaxoonに記入してください。
 - 上記「ケーススタディ」ページ内の「タスク」はスキップしてください。
 - このコースでここまでに学習した知識に限定する必要はありません。
 - 「要件」に書かれていないことについて、講師に質問してはっきりさせる必要はなく、適当に仮定を置いて大丈夫です。その場合は改善案に仮定も添えてください。
@@ -26,6 +25,11 @@ https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructur
   - あまりよくない例: 「アプリケーションをRustで再実装します」
   - あまりよくない例: 「お客様にアクセスしやすい時間帯をご案内します」
   - あまりよくない例: 「[犬を表示します](https://www.google.com/search?q=amazon%E3%82%A8%E3%83%A9%E3%83%BC+%E7%8A%AC)」
+
+■進め方
+
+- 前半30分: お手元でメモ帳やPowerPoint等を使用して、改善案をまとめてください
+- 後半30分: まとめた内容をKlaxoonに投稿してください
 
 ■ヒント
 

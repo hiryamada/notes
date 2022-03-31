@@ -1,17 +1,20 @@
 # 4日目 後半
 
-- クラウド導入フレームワーク (Cloud Adoption Framework)
-  - [CAFの概要](caf.md)
-  - [CAFのステージ](caf-stages.md)
-  - [CAF 重要ポイントまとめ・知識チェック](caf-check.md)
-  - [CAFをさらに理解するための参考資料](caf-ref.md)
+- ラーニングパス5 WAF
+  - Microsoft Azure Well-Architected Framework
+- ラーニングパス6 CAF
+  - クラウド導入フレームワーク (Cloud Adoption Framework)
+    - [CAFの概要](caf.md)
+    - [CAFのステージ](caf-stages.md)
+    - [CAF 重要ポイントまとめ・知識チェック](caf-check.md)
+    - [CAFをさらに理解するための参考資料](caf-ref.md)
 
 ケーススタディ: 30分演習、30分発表
 
-- 14:00 - 15:00 認証の設計
-- 15:00 - 16:00 [非リレーショナル・データ](casestudy1.md)
-- 16:00 - 17:00 [コンピュート](casestudy2.md)
-
+- [認証および承認ソリューションを設計する](https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructureSolutions.ja-jp/blob/main/Instructions/CaseStudy/07-Access.md)
+- [非リレーショナル・データ](casestudy1.md)
+- [コンピュート](casestudy2.md)
+- 4日間のまとめ・クロージング
 
 # ラーニングパス 5: [Microsoft Azure Well-Architected Framework を使用して優れたソリューションを構築する](https://docs.microsoft.com/ja-jp/learn/paths/azure-well-architected-framework/)
 ## モジュール 1: [Microsoft Azure Well-Architected Framework の概要](https://docs.microsoft.com/ja-jp/learn/modules/azure-well-architected-introduction/)

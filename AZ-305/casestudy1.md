@@ -15,7 +15,6 @@ https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructur
   - 例: 容量が極端に大きなファイルを検出して～～する
   - 例: ファイルサーバーの性能を向上させるため～～する
   - 例: あるシーズンだけアクセスが多くなるファイルを～～に配置する
-- 改善案は、Klaxoonに記入してください。
 - 上記「ケーススタディ」ページ内の「タスク」はスキップしてください。
 - このコースでここまでに学習した知識に限定する必要はありません。
 - 「要件」に書かれていないことについて、講師に質問してはっきりさせる必要はなく、適当に仮定を置いて大丈夫です。
@@ -24,6 +23,11 @@ https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructur
 - できればAzureを活用して問題を解決してください。
   - あまりよくない例: 「MP4の公開を停止します」
   - あまりよくない例: 「Webアプリに[遅延ロード](https://www.google.com/search?q=%E7%94%BB%E5%83%8F+%E9%81%85%E5%BB%B6%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF)を実装します」
+
+■進め方
+
+- 前半30分: お手元でメモ帳やPowerPoint等を使用して、改善案をまとめてください
+- 後半30分: まとめた内容をKlaxoonに投稿してください
 
 ■ヒント
 
