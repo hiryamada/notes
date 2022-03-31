@@ -4,28 +4,14 @@
   - [CAFの概要](caf.md)
   - [CAFのステージ](caf-stages.md)
   - [CAF 重要ポイントまとめ・知識チェック](caf-check.md)
+  - [CAFをさらに理解するための参考資料](caf-ref.md)
 
-以下、Microsoft Learn の ラーニングパス、モジュール、ユニットへのリンク集。
+ケーススタディ: 30分演習、30分発表
 
-- モジュール1: CAFの概要
-- モジュール2: 戦略
-- モジュール3: 計画
-- モジュール4: ランディングゾーン
-- モジュール5: 移行
-- モジュール6: ガバナンス
-- モジュール7: 運用の最適化
-- モジュール8: イノベーション
+- 14:00 - 15:00 認証の設計
+- 15:00 - 16:00 [非リレーショナル・データ](casestudy1.md)
+- 16:00 - 17:00 [コンピュート](casestudy2.md)
 
-CAFのステージとモジュールの対応関係:
-- (1)CCoEの構成
-- (2)戦略定義 - Define Strategy → モジュール2: 戦略
-- (3)計画 - Plan → モジュール3: 計画
-- (4)準備(導入準備) - Ready → モジュール4: ランディングゾーン
-- (5)導入(採用) - Adopt 
-  - Migrate → モジュール5: 移行
-  - Innovate → モジュール8: イノベーション
-- (6)統制管理 - Govern → モジュール6: ガバナンス
-- (7)管理 - Manage → モジュール7: 運用の最適化
 
 # ラーニングパス 5: [Microsoft Azure Well-Architected Framework を使用して優れたソリューションを構築する](https://docs.microsoft.com/ja-jp/learn/paths/azure-well-architected-framework/)
 ## モジュール 1: [Microsoft Azure Well-Architected Framework の概要](https://docs.microsoft.com/ja-jp/learn/modules/azure-well-architected-introduction/)
@@ -73,6 +59,31 @@ CAFのステージとモジュールの対応関係:
 - ユニット 6: [ネットワークのセキュリティ](https://docs.microsoft.com/ja-jp/learn/modules/azure-well-architected-security/6-network-security)
 - ユニット 7: [アプリケーションのセキュリティ](https://docs.microsoft.com/ja-jp/learn/modules/azure-well-architected-security/7-application-security)
 - ユニット 8: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/azure-well-architected-security/8-summary)
+
+■ラーニングパス6 CAF 
+
+ラーニングパス、モジュール、ユニットの構成:
+
+- モジュール1: CAFの概要
+- モジュール2: 戦略
+- モジュール3: 計画
+- モジュール4: ランディングゾーン
+- モジュール5: 移行
+- モジュール6: ガバナンス
+- モジュール7: 運用の最適化
+- モジュール8: イノベーション
+
+CAFのステージとモジュールの対応関係:
+- (1)CCoEの構成
+- (2)戦略定義 - Define Strategy → モジュール2: 戦略
+- (3)計画 - Plan → モジュール3: 計画
+- (4)準備(導入準備) - Ready → モジュール4: ランディングゾーン
+- (5)導入(採用) - Adopt 
+  - Migrate → モジュール5: 移行
+  - Innovate → モジュール8: イノベーション
+- (6)統制管理 - Govern → モジュール6: ガバナンス
+- (7)管理 - Manage → モジュール7: 運用の最適化
+
 
 # ラーニングパス 6: [Azure 向けの Microsoft クラウド導入フレームワークでクラウド導入を加速する](https://docs.microsoft.com/ja-jp/learn/paths/cloud-adoption-framework/)
 ## モジュール 1: [Azure 用の Microsoft クラウド導入フレームワークの概要](https://docs.microsoft.com/ja-jp/learn/modules/cloud-adoption-framework-getting-started/)
