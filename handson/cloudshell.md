@@ -4,23 +4,29 @@ WebブラウザでAzure portalを開く
 https://portal.azure.com/
 
 画面上に並ぶアイコンの一番左「Cloud Shell」ボタンをクリック
+
 ![](images/ss-2022-04-01-10-13-54.png)
 
 以下のような画面が表示された場合は「ストレージの作成」をクリック
+
 ![](images/ss-2022-04-01-10-17-11.png)
 
 「Bash」（黒い背景）または「PowerShell」（青い背景）が起動する。
 
 ※「Bash」が起動した場合:
+
 ![](images/ss-2022-04-01-10-18-18.png)
 
 「Bash」・「PowerShell」の切り替えが必要な場合は、画面左上のプルダウンで行う。
+
 ![](images/ss-2022-04-01-10-18-31.png)
 
 ※「PowerShell」に切り替えた場合:
+
 ![](images/ss-2022-04-01-10-30-24.png)
 
 さらに詳しい使い方については、Cloud Shell上部の「？」アイコンをクリックすると表示される。
+
 ![](images/ss-2022-04-01-10-31-46.png)
 
 
