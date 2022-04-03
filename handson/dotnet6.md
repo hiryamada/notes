@@ -4,11 +4,11 @@ Webブラウザで以下のサイトを開く。
 
 https://dotnet.microsoft.com/en-us/download
 
-「Download .NET SDK」をクリックする。
+「.NET 6.0」の「Download .NET SDK」をクリックする。
 
 ![](images/ss-2022-04-02-02-14-07.png)
 
-ダウンロードされたインストーラを開く。
+ダウンロードされたインストーラを開く。※ダウンロードされたインストーラをクリックしてから、インストーラの画面が出るまで、15秒ほどかかるので、クリックしたらしばらく待つこと。
 
 ![](images/ss-2022-04-02-02-15-41.png)
 
@@ -16,7 +16,9 @@ https://dotnet.microsoft.com/en-us/download
 
 ![](images/ss-2022-04-02-02-16-07.png)
 
-「Close」をクリック。
+しばらく待つ。※途中で「Cancel」をクリックしないこと。
+
+「Close」が表示されたら、クリック。
 
 ![](images/ss-2022-04-02-02-17-01.png)
 
@@ -24,9 +26,11 @@ https://dotnet.microsoft.com/en-us/download
 
 ![](images/ss-2022-04-02-02-18-14.png)
 
-`dotnet --version` を入力する。`6.0.201` といった、インストールした.NETのバージョン情報が出ればOK。
+`dotnet --version` を入力する。`6.0.201` といった、インストールした.NETのバージョン情報が出ればOK。PowerShellを閉じる。
 
 ![](images/ss-2022-04-02-02-19-02.png)
 
-PowerShellを閉じる。
+※バージョン情報が出ない場合は、いったん **すべての** PowerShellウィンドウを閉じてから、再度PowerShellウィンドウを開き、`dotnet --version` を入力する。
+
+※それでもだめな場合は、インストールがうまく完了していないので、ダウンロードとインストーラ実行をやり直す。
 
