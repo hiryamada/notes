@@ -15,19 +15,23 @@ Azure開発者向けのコースです。
 
  [AZ-400認定の前提条件は AZ-104 または AZ-204 となります。](https://docs.microsoft.com/ja-jp/learn/certifications/devops-engineer)
 
-# コース資料 (Microsoft Learn)
+# 日程
 
-https://aka.ms/CourseAZ-204
+- [1日目](day1.md)
+- [2日目](day2.md)
+- [3日目](day3.md)
+- [4日目](day4.md)
+- [5日目](day5.md)
 
-※日本語で表示されない場合は、URLの「docs.microsoft.com/XX-XX/」の部分を「docs.microsoft.com/ja-jp/」に書き換えてください。
+# 教材 (Microsoft Learn)
 
-# 知識チェックの解説
+https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
 
-[解説](check.md)
+ページ下部に、Microsoft Learnへのリンクがあります。
 
-# セクション構成
+# ラーニングパスの構成
 
-全12セクションで構成されます。
+全12ラーニングパスで構成されます。
 
 1. [Azure App Service Web Apps の作成](mod01.md)
 1. [Azure Functions の実装](mod02.md)
@@ -58,6 +62,10 @@ https://aka.ms/CourseAZ-204
 
 1日2～3モジュールを目安に進めていきます。
 各モジュールにはハンズオンラボ（演習時間）があります。
+
+# 知識チェックの解説
+
+[解説](check.md)
 
 # 認定試験との関連
 

@@ -55,15 +55,13 @@ https://docs.microsoft.com/ja-jp/azure/architecture/guide/technology-choices/com
 - VM
   - OSのアップデートのタイミングをコントロールしたい
   - 好きな言語ランタイムをインストールしたい
-  - VMに追加のソフトウェアを組み込みたい
   - VMにRDPやSSHで接続してOSを細かくコントロールしたい
-  - ロードバランサーを自分でこまかく設定したい
+  - 負荷分散やスケーリングを自分でこまかく設定したい
 - App Service
   - OSのアップデートはAzureに任せたい
   - App Serviceが提供する言語ランタイムを使用したい
-  - VMに追加のソフトウェアを組み込む必要がない
   - VMにRDPやSSHで接続する必要がない
-  - App Serviceに組み込まれたロードバランサーを使用したい
+  - App Serviceが提供する負荷分散やスケーリングを使用したい
 
 ■Webアプリとは？
 

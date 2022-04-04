@@ -1,3 +1,9 @@
+# 5日目
+
+- ラーニングパス 10 メッセージング（キュー）
+- ラーニングパス 11 ログ記録（Application Insights）
+- ラーニングパス 12 キャッシュ（Azure CDN、Azure Cache for Redis）
+
 # ラーニングパス: AZ-204: メッセージ ベースのソリューションを開発する[🐾](https://docs.microsoft.com/ja-jp/learn/paths/az-204-develop-message-based-solutions/)
 
 ## モジュール: Azure メッセージ キューを検出する[🐾](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/)
@@ -89,3 +95,32 @@
   - ファイルにTTL(Time to live, 有効期限)を指定しない場合のデフォルト値
     - [大きなファイルの最適化: 1日](https://docs.microsoft.com/ja-jp/azure/cdn/cdn-manage-expiration-of-cloud-service-content)
 - [ラボ12](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_12.html) Azure CDN
+
+
+# ラーニングパス 11: [AZ-204: 監視とログ記録をサポートするソリューションをインストルメントする](https://docs.microsoft.com/ja-jp/learn/paths/az-204-instrument-solutions-support-monitoring-logging/)
+## モジュール 1: [アプリのパフォーマンスを監視する](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/1-introduction)
+- ユニット 2: [Azure Monitor の調査](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/2-azure-monitor-overview)
+- ユニット 3: [Application Insights について](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/3-application-insights-overview)
+- ユニット 4: [ログベースのメトリックを検出する](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/4-logs-based-metrics)
+- ユニット 5: [監視用アプリをインストルメント化する](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/5-app-instrumentation)
+- ユニット 6: [可用性テストを選択する](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/6-availability-tests)
+- ユニット 7: [アプリケーション マップを使用してアプリのパフォーマンスのトラブルシューティングを行う](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/7-application-map)
+- ユニット 8: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/8-knowledge-check)
+- ユニット 9: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/9-summary)
+# ラーニングパス 12: [AZ-204: キャッシュとコンテンツ配信をソリューション内に統合する](https://docs.microsoft.com/ja-jp/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/)
+## モジュール 1: [Azure Cache for Redis の開発](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/1-introduction)
+- ユニット 2: [Azure Cache for Redis を探索する](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/2-azure-cache-redis-overview)
+- ユニット 3: [Azure Cache for Redis を構成する](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/3-configure-azure-cache-redis)
+- ユニット 4: [.NET を使用して、Azure Cache for Redis と対話する](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/4-interact-redis-api)
+- ユニット 5: [演習: .NET Core を使用してアプリを Azure Cache for Redis に接続する](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/5-console-app-azure-cache-redis)
+- ユニット 6: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/6-knowledge-check)
+- ユニット 7: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/7-summary)
+## モジュール 2: [CDN 上のストレージ用の開発](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-storage-cdns/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-storage-cdns/1-introduction)
+- ユニット 2: [Azure Content Delivery Network を探索する](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-storage-cdns/2-azure-content-delivery-network-overview)
+- ユニット 3: [Azure Content Delivery Network でキャッシュ動作を制御する](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-storage-cdns/3-control-cache-behavior)
+- ユニット 4: [.NET を使用して Azure Content Delivery Networks と対話する](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-storage-cdns/4-azure-cdn-libraries-dotnet)
+- ユニット 5: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-storage-cdns/5-knowledge-check)
+- ユニット 6: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/develop-for-storage-cdns/6-summary)

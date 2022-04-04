@@ -1,6 +1,6 @@
 知識チェックの解説
 
-# App Service セクション1-モジュール1
+# App Service ラーニングパス1-モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-azure-app-service/8-knowledge-check
 
@@ -64,7 +64,7 @@ https://docs.microsoft.com/ja-jp/azure/app-service/networking-features#access-re
 詳細: ハイブリッド接続
 https://docs.microsoft.com/ja-jp/azure/app-service/networking-features#hybrid-connections
 
-# Azure Functions セクション2-モジュール1
+# Azure Functions ラーニングパス2-モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-functions/5-knowledge-check
 
@@ -96,7 +96,7 @@ https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-functions/5-knowled
 
 Logic Appsは、コードを書かず、GUIでロジック（ワークフロー）を開発することができるので、「コード第一」ではなく「デザイナー第一」である。
 
-# Blob Storage - セクション3、モジュール1
+# Blob Storage - ラーニングパス3、モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-blob-storage/7-knowledge-check
 
@@ -117,7 +117,7 @@ https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-blob-storage/7-know
 
 解説: ストレージアカウントとして汎用 v2が推奨される。Blob, Files, Table, Queueをサポート、復数のレプリケーションオプション(LRS, GRS, ZRS, GZRS, RA-GRS, RA-GZRS)をサポートする。
 
-# Blob Storage - セクション3, モジュール3
+# Blob Storage - ラーニングパス3, モジュール3
 
 https://docs.microsoft.com/ja-jp/learn/modules/work-azure-blob-storage/6-knowledge-check
 
@@ -151,7 +151,7 @@ Last-Modifed は、BLOBコンテナーと、BLOBの両方でサポートされ�
 
 BlobContainerClientは、Blobコンテナーレベルの操作と、そのコンテナー内のBlobの一覧取得といった一部のBlobレベルの操作をサポートする。
 
-# Cosmos DB - セクション4
+# Cosmos DB - ラーニングパス4
 
 https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-cosmos-db/9-knowledge-check
 
@@ -177,7 +177,7 @@ https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-cosmos-db/9-knowled
 
 https://docs.microsoft.com/ja-jp/azure/cosmos-db/consistency-levels
 
-# Azure VM - セクション5-モジュール1
+# Azure VM - ラーニングパス5-モジュール1
 
 ## 1. 次の Azure 仮想マシンの種類のうち、テストと開発に最適なものはどれですか?
 
@@ -195,7 +195,7 @@ https://docs.microsoft.com/ja-jp/azure/cosmos-db/consistency-levels
 
 解説: VMをグループ化する仕組みは「可用性セット」。「可用性セット」のリソースを作り、VMを作成する際に「可用性セット」を指定することで、そのグループに含めることができる。VMは復数のFD・UDに分散し、可用性が向上する。(99.9% → 99.95%)
 
-# Microsoft ID Platform セクション6-モジュール1
+# Microsoft ID Platform ラーニングパス6-モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/explore-microsoft-identity-platform/6-knowledge-check
 
@@ -235,7 +235,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/develop/v2-oauth2-on-beh
 https://docs.microsoft.com/ja-jp/azure/active-directory/develop/v2-conditional-access-dev-guide#scenario-app-performing-the-on-behalf-of-flow
 
 
-# Azure Key Vault セクション7-モジュール1
+# Azure Key Vault ラーニングパス7-モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/implement-azure-key-vault/6-knowledge-check
 
@@ -259,7 +259,7 @@ https://docs.microsoft.com/ja-jp/learn/modules/implement-azure-key-vault/6-knowl
 
 なお、Key Vault内に記録される「[証明書](https://docs.microsoft.com/ja-jp/azure/key-vault/certificates/about-certificates)」としては、TLS/SSLの証明書を扱うことができる。
 
-# API Management セクション8 - モジュール1
+# API Management ラーニングパス8 - モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/explore-api-management/9-knowledge-check
 
@@ -281,7 +281,7 @@ https://docs.microsoft.com/ja-jp/learn/modules/explore-api-management/9-knowledg
 
 https://docs.microsoft.com/ja-jp/azure/api-management/api-management-advanced-policies#control-flow
 
-# Azure Event Grid セクション9-モジュール1
+# Azure Event Grid ラーニングパス9-モジュール1
 
 ## 1. 値が必要なイベント スキーマ プロパティは、次のうちどれですか?
 
@@ -308,7 +308,7 @@ Event Grid トピック の管理 ← Event Gridの共同作成者
 └サブスクリプション の管理 ← サブスクリプション共同作成者
 ```
 
-# メッセージベースのソリューション - セクション 10 - モジュール1
+# メッセージベースのソリューション - ラーニングパス 10 - モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/9-knowledge-check
 
@@ -334,7 +334,7 @@ https://docs.microsoft.com/ja-jp/azure/architecture/patterns/queue-based-load-le
 
 > ピーク時の負荷ではなく、平均負荷に対応するのに十分な数のサービス インスタンスをデプロイするだけでよいため、コスト管理に役立ちます。
 
-# アプリのパフォーマンスを監視する - セクション11, モジュール1
+# アプリのパフォーマンスを監視する - ラーニングパス11, モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/monitor-app-performance/8-knowledge-check
 
@@ -381,7 +381,7 @@ Application Insights では、以下のメトリックをできる。
 
 https://docs.microsoft.com/ja-jp/azure/azure-monitor/app/pre-aggregated-metrics-log-metrics#pre-aggregated-metrics
 
-# キャッシュとコンテンツ配信をソリューション内に統合する - セクション12, モジュール1
+# キャッシュとコンテンツ配信をソリューション内に統合する - ラーニングパス12, モジュール1
 
 https://docs.microsoft.com/ja-jp/learn/modules/develop-for-azure-cache-for-redis/6-knowledge-check
 
