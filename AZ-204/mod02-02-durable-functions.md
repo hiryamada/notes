@@ -1,5 +1,7 @@
 # Durable Functions
 
+[解説PDF](pdf/mod02/durable-function.pdf)
+
 [Durable Functions](https://docs.microsoft.com/ja-jp/azure/azure-functions/durable/durable-functions-overview) は、サーバーレス コンピューティング環境でステートフル関数を記述できる Azure Functions の拡張機能です。 
 
 オーケストレーター関数から、複数の関数を呼び出すことができます。
