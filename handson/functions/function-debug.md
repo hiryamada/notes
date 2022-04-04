@@ -1,12 +1,12 @@
 # ハンズオン: Azure Function 「関数アプリ」のデバッグ
 
-F5を押してデバッグを開始する。
+F5、または、メニューの「Run＞Start Debugging」で、デバッグを開始する。
 
 以下のようなダイアログが表示される。Learn moreをクリック。
 
 ![](images/ss-2022-04-04-01-39-50.png)
 
-Webブラウザが起動し、以下のような、「Azure Functions Core Tools」インストーラのダウンロード用リンクが表示される。「Windows 64-bit」をクリック。
+Webブラウザが起動し、以下のような、「Azure Functions Core Tools」インストーラのダウンロード用リンクが表示される。「v4」の「Windows 64-bit」をクリック。
 
 ![](images/ss-2022-04-04-01-40-59.png)
 
@@ -29,6 +29,10 @@ Azure Function 関数アプリのプロジェクトのフォルダが開かれ�
 ※もし、フォルダが開かれていない場合は、FileメニューのOpen Folder...から、関数アプリのプロジェクトのフォルダを開く。
 
 ![](images/ss-2022-04-04-01-48-40.png)
+
+There are unresolved dependencies ... と表示された場合は「Restore」をクリック。
+
+![](images/ss-2022-04-04-16-17-22.png)
 
 F5を押して、関数アプリのデバッグを開始する。
 

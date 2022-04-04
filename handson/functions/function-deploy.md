@@ -1,6 +1,6 @@
 # ハンズオン: Azure Functions 「関数アプリ」のデプロイ
 
-※一時的に、Azure Accountsのバージョンを最新化する必要がある。
+F1を押して「deploy func」と検索し、「Azure Functions: Deploy to Function App...」を選択。
 
 ![](images/ss-2022-04-04-01-56-59.png)
 
