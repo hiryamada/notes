@@ -4,6 +4,10 @@ F1を押して「deploy func」と検索し、「Azure Functions: Deploy to Func
 
 ![](images/ss-2022-04-04-01-56-59.png)
 
+「＋Create new Funciton App in Azure... Advanced」を選択
+
+![](images/ss-2022-04-04-16-25-38.png)
+
 - Enter a globally unique name...
   - func（乱数）
 - Select a runtime stack
