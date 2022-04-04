@@ -25,7 +25,13 @@ F1, Azure Functions: Create New Project...
   - Company.Function
 - AccessRights
   - Function
+- Select how you would like to open your project
+  - Open in current window
 
 プロジェクトが作成される。
 
 ![](images/ss-2022-04-04-01-35-06.png)
+
+There are unresolved dependencies ... と表示された場合は「Restore」をクリック。
+
+![](images/ss-2022-04-04-16-17-22.png)
