@@ -58,6 +58,22 @@ Application Insightsの選択。「Skip for now」を選択。
 
 ![](images/ss-2022-04-04-00-57-16.png)
 
+Webアプリが作成されたら、「Deploy」をクリック。
+
+![](images/ss-2022-04-04-14-18-09.png)
+
+または、APP SERVICEの中で、作成したアプリを右クリックし、「Deploy to Web App...」をクリック。
+
+![](images/ss-2022-04-04-14-20-20.png)
+
+![](images/ss-2022-04-04-14-21-29.png)
+
+![](images/ss-2022-04-04-14-21-48.png)
+
+![](images/ss-2022-04-04-14-22-07.png)
+
+![](images/ss-2022-04-04-14-22-28.png)
+
 無事デプロイが完了したら、以下のようなダイアログが表示される。「Browse Website」をクリックする。
 
 ![](images/ss-2022-04-04-01-07-19.png)
