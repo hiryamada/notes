@@ -28,9 +28,9 @@ Azure portalのサインイン画面が表示される。
 
 ![](../webapp/images/ss-2022-04-04-00-24-44.png)
 
-Azure portalにサインインできた。「Translate ...?」が表示された場合は「Not now」をクリック。
+Azure portalにサインインできた。「Translate page to ...?」が表示された場合は「Not now」をクリック。
 
-![](../webapp/images/ss-2022-04-04-00-25-23.png)
+![](images/ss-2022-04-04-13-51-15.png)
 
 続いて、Visual Studio Code 側で操作を行う。
 

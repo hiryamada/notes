@@ -2,13 +2,17 @@
 
 [解説PDF](pdf/mod02/durable-function.pdf)
 
-[Durable Functions](https://docs.microsoft.com/ja-jp/azure/azure-functions/durable/durable-functions-overview) は、サーバーレス コンピューティング環境でステートフル関数を記述できる Azure Functions の拡張機能です。 
+[Durable Functions](https://docs.microsoft.com/ja-jp/azure/azure-functions/durable/durable-functions-overview) は、サーバーレス コンピューティング環境でステートフル関数を記述できる Azure Functions の拡張機能。 
 
-オーケストレーター関数から、複数の関数を呼び出すことができます。
+オーケストレーター関数から、複数の関数を呼び出すことができる。
 
-それぞれの関数を非同期で扱うことができる。Func1が終わったらFunc2を呼び出す、といったことができる（チェーン）。そこを制御するのがオーケストレーター。
+それぞれの関数を非同期で扱うことができる。Func1が終わったらFunc2を呼び出す、といったことができる（チェーン）。
+
+「オーケストレーター関数」が、全体のコントロールを行う。
 
 # 構成例：チェーン
+
+関数Aが終了したら、関数Bを開始する・・・というように、複数の関数を連続的に呼び出すことができる
 
 # 構成例：ファンアウト
 
@@ -20,9 +24,8 @@
 
 スリープ中はコストが発生しない
 
-CreateTimer
 
 # 構成例：人間相互作用
 
-途中で人間が承認を挟むようなパターン
+関数Aと関数Bの途中で、人間が承認を挟むパターン
 
