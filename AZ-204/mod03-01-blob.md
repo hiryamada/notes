@@ -128,7 +128,3 @@ bcc.CreateIfNotExists();
 - Blobのアップロード・ダウンロード・一覧表示
 
 [サンプル](../AZ-204/sample/blob/Program.cs)
-
-■ラボ3
-
-https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_03.html
