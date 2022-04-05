@@ -1,5 +1,21 @@
 # ストレージアカウントの準備
 
-あらかじめAzure portalでストレージアカウントを作成し、Blobのエンドポイントをコピーしておく。
+![](images/ss-2022-04-05-09-23-52.png)
 
-ストレージアカウントにて、ユーザーに「ストレージ BLOB データ共同作成者」と「共同作成者」を与えておく。
+- Enter a globally unique name
+  - blob（乱数）
+- Select a resource group...
+  - ＋Create new resource group
+- Enter the name of the new resource group
+  - エンターキーを押す
+- Would youlike to enable static website hosting?
+  - No
+- Select a location
+  - East US
+
+Blobの「エンドポイント」をコピーしておく。
+
+![](images/ss-2022-04-05-09-26-54.png)
+
+![](images/ss-2022-04-05-09-27-33.png)
+
