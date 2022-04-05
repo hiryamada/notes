@@ -9,7 +9,5 @@ Visual Stuido Codeでターミナルを開く
 追加するパッケージの例:
 
 - Azure.Identity ([NuGet](https://www.nuget.org/packages/Azure.Identity/))
-- Azure.Storage.Blobs ([NuGet](https://www.nuget.org/packages/Azure.Storage.Blobs/))
-- Microsoft.Azure.Cosmos ([NuGet](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/))
 
 ![](images/ss-2022-04-05-12-56-59.png)
