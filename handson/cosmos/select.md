@@ -11,7 +11,8 @@ using Azure.Identity;
 using Microsoft.Azure.Cosmos;
 using Newtonsoft.Json;
 
-var endpoint = "https://cosmos9827349234.documents.azure.com:443/";
+// var endpoint = "https://cosmos9827349234.documents.azure.com:443/";
+var endpoint = "(Cosmos DBのエンドポイント)";
 var cred = new DefaultAzureCredential();
 var client = new CosmosClient(endpoint, cred);
 
@@ -21,10 +22,10 @@ while (true)
     switch (command)
     {
         case "CreateItem":
-            CreateItem();
+            await CreateItem();
             break;
         case "ListItems":
-            ListItems();
+            await ListItems();
             break;
         case "Exit":
         case "Quit":
@@ -46,7 +47,7 @@ string Read(string prompt)
     return Console.ReadLine();
 }
 
-void CreateItem()
+async Task CreateItem()
 {
     var databaseId = "musicdb";
     var containerName = "music";
@@ -56,10 +57,10 @@ void CreateItem()
 
     var db = client.GetDatabase(databaseId);
     var container = db.GetContainer(containerName);    
-    container.CreateItemAsync(music);
+    await container.CreateItemAsync(music);
 }
 
-async void ListItems()
+async Task ListItems()
 {
     var databaseId = "musicdb";
     var containerName = "music";
