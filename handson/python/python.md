@@ -9,7 +9,7 @@ https://docs.microsoft.com/ja-jp/azure/developer/python/configure-local-developm
 
 - Python 3.10.4
   - https://www.python.org/downloads/
-  - インストール中に「環境変数への追加」を選ぶ
+  - インストール中「Advanced Options」にて「Add Python to environment variables」を選ぶ
 - Visual Studio CodeにPython拡張機能 (Microsoft)を入れる
   - https://marketplace.visualstudio.com/items?itemName=ms-python.python
 - hello world を実行
