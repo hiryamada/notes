@@ -6,12 +6,41 @@
 
 ![](images/ss-2022-04-05-12-32-13.png)
 
-JSONファイルの例 - music1.json
-```
+JSONファイルの例
+
+music1.json
+```json
 {
     "artist": "YOASOBI",
     "id": "夜に駆ける",
     "lyrics": "沈むように..."
+}
+```
+
+music2.json
+```json
+{
+    "artist": "YOASOBI",
+    "id": "ハルジオン",
+    "lyrics": "過ぎてゆく..."
+}
+```
+
+music3.json
+```json
+{
+    "artist": "LiSA",
+    "id": "炎",
+    "lyrics": "「さよなら」..."
+}
+```
+
+music4.json
+```json
+{
+    "artist": "LiSA",
+    "id": "紅蓮華",
+    "lyrics": "強くなれる..."
 }
 ```
 
