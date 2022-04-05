@@ -59,7 +59,7 @@ void CreateItem()
     container.CreateItemAsync(music);
 }
 
-void ListItems()
+async void ListItems()
 {
     var databaseId = "musicdb";
     var containerName = "music";
@@ -70,7 +70,7 @@ void ListItems()
     using var fe = container.GetItemQueryIterator<Music>(query);
     while (fe.HasMoreResults)
     {
-        foreach (var music in fe.ReadNextAsync().Result)
+        foreach (var music in await fe.ReadNextAsync())
         {
             Print("id: " + music.Id + ", artist: " + music.Artist);
         }
