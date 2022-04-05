@@ -1,5 +1,17 @@
 # Cosmos DBアカウントにて、VMに、必要なロールを割り当てる
 
+```
+Cosmos DBアカウント (ユーザー: Cosmos DB Data Contributor）
+↑
+Azure ADユーザー
+```
+
+```
+Cosmos DBアカウント (VMのマネージドID: Cosmos DB Data Contributor）
+↑
+VM + マネージドID
+└C#プログラム + Azure SDK
+```
 
 (1)「Cosmos DB アカウント名」を調べる。
 

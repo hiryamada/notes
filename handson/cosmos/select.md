@@ -1,6 +1,10 @@
 # サンプルコード: 項目の作成と検索
 
+以下のコードをProgram.csに上書きします。
 
+endpoint には、Cosmos DBのエンドポイントを指定します（Cosmos DBアカウントの「概要」ページにURLが書かれています）
+
+`dotnet run` で実行して、ListItems や CreateItem の2つのコマンドを投入します。
 
 ```c#
 using Azure.Identity;
