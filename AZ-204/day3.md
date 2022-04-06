@@ -6,6 +6,7 @@
   - [ARMテンプレート](mod05-02-arm.md)
   - [ACI](mod05-05-aci.md)
   - [ACR](mod05-04-acr.md)
+  - [ハンズオン](../handson/az-204.md)
 - ラーニングパス 6: ユーザー認証（Azure AD, Microsoft Graph）
   - [ユーザー認証にAzure ADを使用する](mod06.md)
   - [Microsoft Graph](mod06.md)
