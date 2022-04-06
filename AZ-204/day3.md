@@ -9,9 +9,12 @@
   - [ハンズオン](../handson/az-204.md)
 - ラーニングパス 6: Microsoft ID Platform, Microsoft Graph
   - [Microsoft ID Platform](mod06-04-id-platform.md)
+  - [ハンズオン: アプリの登録](day3-handson.md)
   - [Microsoft Authentication Library](mod06-05-msal.md)
   - [アプリケーションオブジェクトとサービスプリンシパル](mod06-07-application-object.md)
   - [Microsoft Graph](mod06-08-graph.md)
+  - [ハンズオン: Graph Explorer](../handson/idplatform/graph-explorer.md)
+  - ハンズオン: Webアプリでサインイン機能を実装
 
 # ラーニングパス: AZ-204: サービスとしてのインフラストラクチャ ソリューションを実装する
 
