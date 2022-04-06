@@ -7,9 +7,11 @@
   - [ACI](mod05-05-aci.md)
   - [ACR](mod05-04-acr.md)
   - [ハンズオン](../handson/az-204.md)
-- ラーニングパス 6: ユーザー認証（Azure AD, Microsoft Graph）
-  - [ユーザー認証にAzure ADを使用する](mod06.md)
-  - [Microsoft Graph](mod06.md)
+- ラーニングパス 6: Microsoft ID Platform, Microsoft Graph
+  - [Microsoft ID Platform](mod06-04-id-platform.md)
+  - [Microsoft Authentication Library](mod06-05-msal.md)
+  - [アプリケーションオブジェクトとサービスプリンシパル](mod06-07-application-object.md)
+  - [Microsoft Graph](mod06-08-graph.md)
 
 # ラーニングパス: AZ-204: サービスとしてのインフラストラクチャ ソリューションを実装する
 
