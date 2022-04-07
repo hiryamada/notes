@@ -115,8 +115,6 @@ API Managementリソースの作成にはかなり時間がかかる。
 - Consumption: 1分程度
 - Developer, Basic等: 40分程度
 
-リソースの作成が完了すると、Consumptionの状態は「オンライン」、その他(Basic, Developer等)のリソースの状態は「アクティブ」となる。
-
 ■APIゲートウェイの設定
 
 バックエンドとして[天気予報API](https://weather.tsukumijima.net/)を利用。
