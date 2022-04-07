@@ -1,7 +1,14 @@
 # 4日目
 
 - ラーニングパス 7: セキュリティ（Key Vault, マネージドID, App Configuration）
+  - [Key Vault](mod07.md)
+  - [App Configuration](mod07-02-appcfg.md)
+  - [ハンズオン](../handson/az-204.md)
+  - [知識チェック（試験対策） - Key Vault, マネージドID, App Configuration](check.md)
 - ラーニングパス 8 API Management
+  - [API Management](mod08-01-apim.md)
+  - [ハンズオン](../handson/az-204.md)
+  - [知識チェック（試験対策） - API Management](check.md)
 - ラーニングパス 9 イベント（Event Grid, Event Hubs）
 
 # ラーニングパス 7: [AZ-204: セキュリティで保護されたクラウド ソリューションを実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-secure-cloud-solutions/)
