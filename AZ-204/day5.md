@@ -1,8 +1,49 @@
 # 5日目
 
+- ラーニングパス 9 イベント（Event Grid, Event Hubs）
+  - [Event Grid, Event Hubs](../AZ-305/event.md)
 - ラーニングパス 10 メッセージング（キュー）
+  - [Azure Queue Storage, Azure Service Bus](../AZ-305/messaging.md)
 - ラーニングパス 11 ログ記録（Application Insights）
+  - [PDF: Application Insights](pdf/mod12/Application%20Insightsの主な機能.pdf)
 - ラーニングパス 12 キャッシュ（Azure CDN、Azure Cache for Redis）
+  - [Azure Cache for Redis](pdf/mod13/Azure%20Cache%E3%81%BE%E3%81%A8%E3%82%81.pdf)
+  - [Azure CDN](pdf/mod13/Azure%20CDN%E3%81%BE%E3%81%A8%E3%82%81.pdf)
+  - [知識チェック（試験対策） - Key Vault, マネージドID, App Configuration](check.md)
+
+# ラーニングパス 9: [AZ-204: イベントベースのソリューションの開発](https://docs.microsoft.com/ja-jp/learn/paths/az-204-develop-event-based-solutions/)
+## モジュール 1: [Azure Event Grid について調べる](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/1-introduction)
+- ユニット 2: [Azure Event Grid について調べる](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/2-event-grid-overview)
+- ユニット 3: [イベントスキーマを検出する](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/3-event-grid-schema)
+- ユニット 4: [イベント配信の耐久性について調べる](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/4-event-grid-delivery-retry)
+- ユニット 5: [イベントへのアクセスを制御する](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/5-authorize-access-event-grid)
+- ユニット 6: [Webhook を使用してイベントを受信する](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/6-webhook-event-delivery)
+- ユニット 7: [イベントのフィルター処理](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/7-event-grid-filtering)
+- ユニット 8: [演習: Azure CLI を使用して、カスタムイベントを Web エンドポイントにルーティングする](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/8-event-grid-custom-events)
+- ユニット 9: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/9-knowledge-check)
+- ユニット 10: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/10-summary)
+## モジュール 2: [Azure Event Hubs について調べる](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/1-introduction)
+- ユニット 2: [Azure Event Hubs を検出する](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/2-event-hubs-overview)
+- ユニット 3: [Event Hubs Capture について調べる](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/3-event-hubs-capture)
+- ユニット 4: [処理アプリケーションをスケーリングする](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/4-event-processing)
+- ユニット 5: [イベントへのアクセスを制御する](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/5-event-hubs-authentication-authorization)
+- ユニット 6: [Event Hubs クライアント ライブラリで一般的な操作を実行する](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/6-event-hubs-programming-guide)
+- ユニット 7: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/7-knowledge-check)
+- ユニット 8: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-hubs/8-summary)
+# ラーニングパス 10: [AZ-204: メッセージ ベースのソリューションを開発する](https://docs.microsoft.com/ja-jp/learn/paths/az-204-develop-message-based-solutions/)
+## モジュール 1: [Azure メッセージ キューを検出する](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/1-introduction)
+- ユニット 2: [メッセージ キュー ソリューションを選択する](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/2-choose-queue-solution)
+- ユニット 3: [Azure Service Bus を探索する](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/3-azure-service-bus-overview)
+- ユニット 4: [Service Bus のキュー、トピック、サブスクリプションを検出する](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/4-queues-topics-subscriptions)
+- ユニット 5: [Service Bus メッセージのペイロードとシリアル化を探索する](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/5-messages-payloads-serialization)
+- ユニット 6: [演習: .NET を使用して、Service Bus キューからメッセージを送受信します。](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/6-send-receive-messages-service-bus)
+- ユニット 7: [Azure Queue Storage を探索する](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/7-azure-queue-storage-overview)
+- ユニット 8: [.NET を使用して Azure Queue Storage でキューとメッセージを作成して管理する](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/8-queue-storage-code-examples)
+- ユニット 9: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/9-knowledge-check)
+- ユニット 10: [まとめ](https://docs.microsoft.com/ja-jp/learn/modules/discover-azure-message-queue/10-summary)
 
 # ラーニングパス: AZ-204: メッセージ ベースのソリューションを開発する[🐾](https://docs.microsoft.com/ja-jp/learn/paths/az-204-develop-message-based-solutions/)
 
