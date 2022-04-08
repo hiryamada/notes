@@ -43,12 +43,12 @@ var uri = new Uri("https://127.0.0.1:10000/devstoreaccount1");
 var client = new BlobServiceClient(uri, cred);
 
 var containername = "container" + DateTime.Now.ToString("yyyyMMddHHmmss");
-System.Console.WriteLine("creating container:" + containername);
+Console.WriteLine("creating container:" + containername);
 client.CreateBlobContainer(containername);
 
-System.Console.WriteLine("listing container");
+Console.WriteLine("listing container");
 
 foreach (var blobcontainer in client.GetBlobContainers()) {
-    System.Console.WriteLine(blobcontainer.Name);
+    Console.WriteLine(blobcontainer.Name);
 }
 ```
