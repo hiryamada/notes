@@ -41,3 +41,29 @@ Azureの操作例
 ![](images/ss-2022-04-07-21-58-34.png)
 
 ![](images/ss-2022-04-07-21-59-46.png)
+
+Azureへのログインが行われ、続いてAzure CLIのコマンドの実行が行われていることがわかる。
+
+■参考: GitHub Action for Azure CLI
+
+https://github.com/marketplace/actions/azure-cli-action
+
+AZ CLIコマンドを直接記述する代わりにこちらのアクションを使ってもよい。
+
+■参考: Azure key vault - Get Secrets
+
+https://github.com/marketplace/actions/azure-key-vault-get-secrets
+
+Key Vault Secretを取得するためにこちらのアクションを使ってもよい。
+
+■参考: Get Azure App Configuration
+
+https://github.com/marketplace/actions/get-azure-app-configuration
+
+App Configurationの値を取得するためにこちらのアクションを使ってもよい。
+
+■参考: Azure関連のすべてのGitHub Action
+
+https://github.com/marketplace?query=Azure&type=actions
+
+App SerivceやAzure Functionsへのデプロイなど多数のアクションが利用できる。

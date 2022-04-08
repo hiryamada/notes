@@ -71,121 +71,14 @@ Basic、Standard、Premiumで、スケーリングが可能。
 - Standard: 1-4
 - Premium: 1-10
 
-■作成
 
-- Azure portalで「API Management」を検索。「API Management サービス」を選択。
-- 作成
-- リソースグループ、リージョン、リソース名を指定。
-- 「Organization name」を指定 例: Contoso
-  - 指定した名前は、「開発者ポータル」で表示されたり、サービスから送信されるメールに記入されたりする。
-- 「Administrator email」を指定
-  - 個々で指定した管理者メールアドレスへ、サービスからの通知メールが送られる
-- Pricing tier（価格レベル）を指定
-  - デフォルト: Developer
-- その他
-  - Application Insights: On/Off Onの場合は既存のApplication Insightsインスタンスを指定
-  - Scale: Basic, Standard, Premiumの場合はユニット数を選択
-  - Managed Identity: マネージドIDを On/Off(デフォルト)
-  - Virtual Network: VNet内にデプロイするかどうか。Developer/Premiumで指定可能。
-    - None (デフォルト)
-    - External: 
-      - APIゲートウェイと開発者ポータルに、パブリック インターネットから外部ロード バランサーを使用してアクセス可
-      - ゲートウェイはVNet内のリソースにアクセス可
-    - Internal
-      - APIゲートウェイと開発者ポータルに、VNet内から内部ロード バランサーを使用してアクセス可
-      - ゲートウェイはVNet内のリソースにアクセス可
-  - Protocol Settings: レガシーな暗号化プロトコルのサポート
-    - Cipher:
-      - Triple DES: On/Off(デフォルト)
-    - Client-side protocols:
-      - HTTP/s: On/Off(デフォルト)
-    - Client-side transport security:
-      - TLS 1.1: On/Off(デフォルト)
-      - TLS 1.0: On/Off(デフォルト)
-      - SSL 3.0: On/Off(デフォルト)
-    - Backend-side transport security:
-      - TLS 1.1: On/Off(デフォルト)
-      - TLS 1.0: On/Off(デフォルト)
-      - SSL 3.0: On/Off(デフォルト)
+■API Management「インスタンス」の作成
 
-※[レガシーな暗号化プロトコルの非推奨化（Azure AD）](https://docs.microsoft.com/ja-jp/troubleshoot/azure/active-directory/enable-support-tls-environment)
-
-API Managementリソースの作成にはかなり時間がかかる。
+API Management「インスタンス」の作成にはかなり時間がかかる。
 
 - Consumption: 1分程度
 - Developer, Basic等: 40分程度
 
-■APIゲートウェイの設定
-
-バックエンドとして[天気予報API](https://weather.tsukumijima.net/)を利用。
-- [東京(130010)](https://weather.tsukumijima.net/api/forecast/city/130010)
-- [大阪(270000)](https://weather.tsukumijima.net/api/forecast/city/270000)
-- [場所コード（「一次細分区域」id）の一覧](https://weather.tsukumijima.net/primary_area.xml)
-
-Azure portal＞API Management＞（作成したリソース）
-
-- 画面左メニューの「API」をクリック
-- Add APIをクリック
-- HTTP APIをクリック
-  - Display name: tenki
-  - Name: tenki
-  - Web service URL: https://weather.tsukumijima.net/api/forecast/city/130010
-  - Createをクリック
-  - (tenkiというAPIが追加される)
-- All APIsの下のtenkiをクリック
-- Add operationをクリック
-  - Display name: tokyo
-  - Name: tokyo
-  - URL: GET, /
-  - Saveをクリック
-  - (tokyoというオペレーションが追加される)
-- All APIsの下のtenkiの脇の「...」をクリック
-- Add Versionをクリック
-  - Version identifier: v1
-  - Full API version name: tenki-v1
-  - Products: StarterとUnlimitedを選択
-  - Createをクリック
-  - (tenki APIの下に、Originalと、v1が表示される)
-
-■開発者ポータルの設定
-
-Azure portal＞API Management＞（作成したリソース）
-
-- 画面左メニューの「ポータルの概要」をクリック
-  - 画面上部の「開発者ポータル」をクリック
-  - (新しいタブが開く)
-  - (ページが表示されるまで1分ほど待つ)
-  - タブを閉じる
-- 画面左メニューの「ポータルの概要」をクリック
-  - 「公開」をクリック
-  - 「はい」をクリック
-  - 「CORSを有効にする」をクリック
-  - 「はい」をクリック
-
-■製品の設定
-
-Azure portal＞API Management＞（作成したリソース）
-
-- 画面左メニューの「製品」をクリック
-- Starterをクリック
-- 画面左メニューの「設定」をクリック
-  - 「サブスクリプションを要求する」のチェックを外す
-  - 画面上部の「保存」をクリック
-
-■開発者ポータルの利用
-
-Azure portal＞API Management＞（作成したリソース）
-
-- 画面左メニューの「概要」(一番上)をクリック
-- 「開発者ポータルのURL」をクリップボードにコピー
-- InPrivateウィンドウ（シークレットウィンドウ）を開く。
-  - または、今使っているものとは別のWebブラウザを起動する
-- コピーしたURL（開発者ポータル）にアクセスする
-- Explore APIsをクリック
-- tenki-v1をクリック
-- Try itをクリック
-- （画面下部にスクロールして）Sendをクリック
-- 東京の天気予報の情報が表示される
 
 ■バージョン
 
@@ -242,7 +135,10 @@ APIを呼び出すプログラムでは、リクエストのOcp-Apim-Subscriptio
 
 ■ポリシー
 
-ポリシーを仕様して、API Managementにさまざまな機能を付与することができる。
+
+![](images/ss-2022-04-08-09-25-52.png)
+
+ポリシーを使用して、API Managementにさまざまな機能を付与することができる。
 
 - 変換ポリシー
   - JSONからXML
@@ -268,29 +164,13 @@ APIを呼び出すプログラムでは、リクエストのOcp-Apim-Subscriptio
   - 変数を設定する
   - 状態コードを設定する
 
-■ ポリシー定義
+■ポリシー定義
+
+![](images/ss-2022-04-08-09-27-51.png)
+
+![](images/ss-2022-04-08-09-28-06.png)
 
 ポリシー定義は、一連の受信ステートメントと送信ステートメントが記述されたXML ドキュメント。
-
-例:
-
-```
-<policies>
-  <inbound>
-    <!-- statements to be applied to the request go here -->
-  </inbound>
-  <backend>
-    <!-- statements to be applied before the request is forwarded to 
-         the backend service go here -->
-  </backend>
-  <outbound>
-    <!-- statements to be applied to the response go here -->
-  </outbound>
-  <on-error>
-    <!-- statements to be applied if there is an error condition go here -->
-  </on-error>
-</policies> 
-```
 
 ポリシーの実行順:
 

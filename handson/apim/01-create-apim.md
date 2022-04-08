@@ -4,6 +4,12 @@
 
 ※トレーニング開始時に作成したMicrosoftアカウントのメールアドレス、または、普段お使いのメールアドレスをご準備ください
 
+![](images/ss-2022-04-08-08-33-48.png)
+
+![](images/ss-2022-04-08-08-33-20.png)
+
+![](images/ss-2022-04-08-08-34-14.png)
+
 Azure portalで「API Management」を検索。「API Management サービス」を選択。
 
 ![](images/ss-2022-04-07-11-30-51.png)

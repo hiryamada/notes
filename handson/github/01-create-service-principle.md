@@ -26,7 +26,7 @@ az ad sp create-for-rbac \
 
 これで、「github-sp1」というサービスプリンシパルが作成され、サブスクリプションのスコープで [「共同作成者（Contributor）」ロール](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor) が割り当てされる。
 
-表示されたJSONをコピーしておく。後ほどGitHubの
+表示されたJSONをコピーしておく。後ほどGitHubの「repository secret」に設定する。
 
 ![](images/ss-2022-04-07-21-17-10.png)
 
