@@ -17,9 +17,13 @@
 ハンズオン(オプション):
 
 - ラーニングパス 09: [イベントベースのソリューションの開発](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_09.html)
+  - Event Grid トピック
 - ラーニングパス 10: [メッセージ ベース ソリューションを開発する](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_10.html)
+  - Service Busキュー
 - ラーニングパス 11: [Azure ソリューションの監視と最適化](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_11.html)
+  - Application Insights
 - ラーニングパス 12: [キャッシュとコンテンツ配信をソリューション内で統合する](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_12.html)
+  - Blob + Azure CDN
 
 # ラーニングパス 9: [AZ-204: イベントベースのソリューションの開発](https://docs.microsoft.com/ja-jp/learn/paths/az-204-develop-event-based-solutions/)
 ## モジュール 1: [Azure Event Grid について調べる](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/)
