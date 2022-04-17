@@ -37,7 +37,7 @@ https://docs.microsoft.com/ja-jp/azure/role-based-access-control/overview
     └リソース
 ```
 
-[モジュール6](mod06-04-storage-aad.md)で学習したように、リソースによっては、Blobコンテナー、テーブル、キューなどの（追加の）スコープを持つ場合がある。
+リソースによっては、Blobコンテナー、テーブル、キューなどの（追加の）スコープを持つ場合がある。
 
 ```
 管理グループ

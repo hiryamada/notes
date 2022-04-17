@@ -1,10 +1,6 @@
-
 # 管理グループ
 
-※注意: Azure ADの機能ではない
-
 https://docs.microsoft.com/ja-jp/azure/governance/management-groups/overview
-
 
 - 「管理グループ」と呼ばれるコンテナーにサブスクリプションを整理することができる。
 - 最上位には「ルート管理グループ」が存在する
@@ -12,7 +8,6 @@ https://docs.microsoft.com/ja-jp/azure/governance/management-groups/overview
 - 複数のサブスクリプションに対するロールやポリシーの設定をまとめることができる
 - 単一の管理グループ内のすべてのサブスクリプションは、同じ Azure Active Directory テナントを信頼する必要がある。
   - つまり、テナント1のサブスクリプションとテナント2のサブスクリプションを1つの管理グループに入れることはできない。
-
 
 ■初期状態
 
@@ -45,23 +40,7 @@ https://docs.microsoft.com/ja-jp/azure/governance/management-groups/overview
     └ リソース
 ```
 
-■昇格
-
-https://docs.microsoft.com/ja-jp/azure/role-based-access-control/elevate-access-global-admin
-
-- Azure AD の全体管理者（グローバル管理者）には、テナントのすべてのサブスクリプションと管理グループにアクセスする権限が与えられていない場合がある。
-- Azure AD の全体管理者は、自分自身を「昇格」できる。
-- 「昇格」を行うと、その管理者に、ルート管理グループのレベルで、[ユーザーアクセス管理者ロール（User Access Administrator）](https://docs.microsoft.com/ja-jp/azure/role-based-access-control/built-in-roles#user-access-administrator)が割り当てされる。
-
-
-■ハンズオン: 昇格
-
-- Azure portalの画面上部の検索で「Azure Active Directory」を検索し、「Azure Active Directory」へ移動
-- 画面左側のメニュー「プロパティ」をクリック
-- 画面下部の「Azure リソースのアクセス管理」を「はい」に設定
-- 画面上部の「保存」をクリック
-
-■ハンズオン: 管理グループの作成
+■管理グループの作成例
 
 - Azure portalの画面上部の検索で「管理」を検索し、「管理グループ」へ移動
 - 「管理グループの使用を開始します」をクリック
@@ -75,12 +54,27 @@ https://docs.microsoft.com/ja-jp/azure/role-based-access-control/elevate-access-
 - Tenant Root Groupのツリー内の「＞」をクリックして展開し
 - 以下のような構成になっていればOK。
 
-
 ```
 Tenant Root Group（ルート管理グループ）
 └mg1 （新しく作成した管理グループ）
   └Azure Pass スポンサー プラン
 ```
+
+■昇格
+
+https://docs.microsoft.com/ja-jp/azure/role-based-access-control/elevate-access-global-admin
+
+- Azure AD の全体管理者（グローバル管理者）には、テナントのすべてのサブスクリプションと管理グループにアクセスする権限が与えられていない場合がある。
+- Azure AD の全体管理者は、自分自身を「昇格」できる。
+- 「昇格」を行うと、その管理者に、ルート管理グループのレベルで、[ユーザーアクセス管理者ロール（User Access Administrator）](https://docs.microsoft.com/ja-jp/azure/role-based-access-control/built-in-roles#user-access-administrator)が割り当てされる。
+
+
+■「昇格」の操作例
+
+- Azure portalの画面上部の検索で「Azure Active Directory」を検索し、「Azure Active Directory」へ移動
+- 画面左側のメニュー「プロパティ」をクリック
+- 画面下部の「Azure リソースのアクセス管理」を「はい」に設定
+- 画面上部の「保存」をクリック
 
 # サブスクリプション
 
@@ -98,7 +92,6 @@ Azureサポートに問い合わせて、クォータの「引き上げ」を要
 https://docs.microsoft.com/ja-jp/azure/azure-portal/supportability/per-vm-quota-requests#request-a-standard-quota-increase-from-help--support
 
 ※「引き上げ」ができない「ハードリミット」も存在する。サブスクリプションのハードリミットに近づいた場合は、サブスクリプションそのものを追加して対応する。
-
 
 # リソース グループ
 

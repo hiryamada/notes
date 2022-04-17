@@ -7,20 +7,34 @@
   - [ロールベースのアクセス制御（RBAC）](../AZ-303/mod10-01-rbac.md)
   - [Azure Policy](../AZ-303/mod10-03-azure-policy.md)
   - [Azure Blueprints](../AZ-303/mod10-04-azure-blueprints.md)
+  - [知識チェック](day1-lp01-m01-check.md)
 - モジュール2 認証・認可ソリューションの設計
   - [ID およびアクセス管理のベスト プラクティス](../AZ-304/mod04-01-id.md)
   - [多要素認証のソリューション](../AZ-304/mod04-02-mfa.md)
   - [ID インフラストラクチャをセキュリティ保護するステップ](../AZ-304/mod04-03-secure-identity.md)
-  - [ハイブリッド ID のソリューション](../AZ-304/mod04-04-hybrid-id.md)
   - [シングル サインオン (SSO) のソリューション](../AZ-304/mod04-05-sso.md)
-  - [Azure Active Directory B2B (External Identity)](../AZ-304/mod04-06-b2b.md)
+  - [Azure Active Directory B2B](../AZ-304/mod04-06-b2b.md)
   - [Azure Active Directory B2C](../AZ-303/mod01-08-aad-b2c.md)
   - [条件付きアクセス](../AZ-303/mod01-06-conditional-access.md)
   - [Identity Protection](../AZ-303/mod01-05-idp.md)
   - [アクセスレビュー](../AZ-303/mod10-02-access-review.md)
   - [Azure Key Vaults](../AZ-303/mod11-02-keyvault.md)
+  - [知識チェック](day1-lp01-m02-check.md)
 - [モジュール3 ログ記録・監視ソリューションの設計](../AZ-304/mod09.md)
-
+  - [知識チェック](day1-lp01-m03-check.md)
+- ケーススタディ: [ガバナンス ソリューションを設計する](https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructureSolutions.ja-jp/blob/main/Instructions/CaseStudy/01-Governance.md)
+  - 状況
+    - 複数の事業部があり、各事業部には複数の部門がある。
+    - 各部門でAzureサブスクリプションを利用している。
+    - 監査担当者は、すべての事業部のAzureサブスクリプションの使用状況を把握する必要がある。
+    - 仮想マシンのサイズを制限する必要がある。
+    - 仮想マシンが特定の命名規則に従っている必要がある。
+  - 設計 - 各自でここを考えてください
+    - 管理グループはどのように構成すべきか？
+    - 監査担当者には、どんな権限（ロール）があればよいか？ そのロールはどのスコープで割り当てればよいか？
+    - 仮想マシンのサイズを制限したい。どうすればよいか？
+    - 仮想マシンのサイズを制限するにはどうすればよいか？
+    - 仮想マシンが特定の命名規則に従っているようにするにはどうすればよいか？
 
 # ラーニングパス 1: [AZ-305: ID、ガバナンス、および監視ソリューションの設計](https://docs.microsoft.com/ja-jp/learn/paths/design-identity-governance-monitor-solutions/)
 ## モジュール 1: [ガバナンスの設計](https://docs.microsoft.com/ja-jp/learn/modules/design-governance/)
