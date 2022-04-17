@@ -1,18 +1,4 @@
 
-# リソース グループ
-
-※注意: Azure ADの機能ではない
-
-https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group
-
-- リソース グループは、Azure ソリューションの関連するリソースを保持するコンテナー
-- リソースをリソースグループにまとめることができる
-- リソースグループを削除すると、中のリソースは同時に削除される
-- 複数のリソースに対するロールやポリシーの設定をまとめることができる
-- 入れ子にすることはできない
-
-PDFまとめ: [ロール・ポリシー](../AZ-104/pdf/mod02/ロール・ポリシー全体像.pdf)
-
 # 管理グループ
 
 ※注意: Azure ADの機能ではない
@@ -98,8 +84,6 @@ Tenant Root Group（ルート管理グループ）
 
 # サブスクリプション
 
-※注意: Azure ADの機能ではない
-
 ■クォータ
 
 https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits
@@ -114,4 +98,15 @@ Azureサポートに問い合わせて、クォータの「引き上げ」を要
 https://docs.microsoft.com/ja-jp/azure/azure-portal/supportability/per-vm-quota-requests#request-a-standard-quota-increase-from-help--support
 
 ※「引き上げ」ができない「ハードリミット」も存在する。サブスクリプションのハードリミットに近づいた場合は、サブスクリプションそのものを追加して対応する。
+
+
+# リソース グループ
+
+https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group
+
+- リソース グループは、Azure ソリューションの関連するリソースを保持するコンテナー
+- リソースをリソースグループにまとめることができる
+- リソースグループを削除すると、中のリソースは同時に削除される
+- 複数のリソースに対するロールやポリシーの設定をまとめることができる
+- 入れ子にすることはできない
 

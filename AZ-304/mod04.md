@@ -1,14 +1,17 @@
-# モジュール 4 認証と承認を設計する
+# 認証と承認を設計する
 
 - [ID およびアクセス管理のベスト プラクティス](mod04-01-id.md)
 - [多要素認証のソリューション](mod04-02-mfa.md)
 - [ID インフラストラクチャをセキュリティ保護するステップ](mod04-03-secure-identity.md)
 - [ハイブリッド ID のソリューション](mod04-04-hybrid-id.md)
 - [シングル サインオン (SSO) のソリューション](mod04-05-sso.md)
-- [B2B 統合のためのソリューション](mod04-06-b2b.md)
+- [Azure Active Directory B2B (External Identity)](mod04-06-b2b.md)
+- [Azure Active Directory B2C](../AZ-303/mod01-08-aad-b2c.md)
+
+<!-- 
 - [管理グループ](mod04-07-mg.md)
 - [ラボ 4 Azure AD の認証と承認の管理](lab04.md)
-
+-->
 おすすめ関連資料:
 
 - Azure ADエディション
