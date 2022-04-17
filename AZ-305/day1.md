@@ -8,7 +8,7 @@
   - 注意事項
     - 「ラボ」（ハンズオン）はありません。「ケーススタディ」という、設計を考えていただく時間があります。
     - 教材は「Microsoft Learn」を使用します。[コースの紹介ページ下部の「コレクション」](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-305t00)からたどれます。
-    - 1日めは「ガバナンスの設計」「認証・認可ソリューションの設計」「ログ記録・監視ソリューションの設計」の3モジュールを解説します。
+    - 1日目は、「ラーニングパス」の1つ目「[AZ-305: ID、ガバナンス、および監視ソリューションの設計](https://docs.microsoft.com/ja-jp/learn/paths/design-identity-governance-monitor-solutions/)」に含まれる「[ガバナンスの設計](https://docs.microsoft.com/ja-jp/learn/modules/design-governance/)」「[認証・認可ソリューションの設計](https://docs.microsoft.com/ja-jp/learn/modules/design-authentication-authorization-solutions/)」「[ログ記録・監視ソリューションの設計](https://docs.microsoft.com/ja-jp/learn/modules/design-solution-to-log-monitor-azure-resources/)」の3つのモジュールを解説します。
 
 ■講義:
 
