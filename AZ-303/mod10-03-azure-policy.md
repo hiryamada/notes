@@ -11,8 +11,8 @@ https://docs.microsoft.com/ja-jp/azure/governance/policy/overview
 - 継続的なモニタリングのためのUI
 - イニシアチブ
 - 追加の「効果」
-  - AuditIfNotExist
-  - DeployIfNotExist
+  - AuditIfNotExists
+  - DeployIfNotExists
 
 [まとめPDF](../AZ-104/pdf/mod02/ロール・ポリシー全体像.pdf)
 
@@ -21,9 +21,7 @@ https://docs.microsoft.com/ja-jp/azure/governance/policy/overview
 
 サブスクリプションで作成できるVMのサイズを制限する(Deny)
 
-VMに「マルウェア対策拡張機能」が追加されていなければ追加する(AuditIfNotExist)
-
-
+VMに「[マルウェア対策拡張機能](https://docs.microsoft.com/ja-jp/azure/virtual-machines/extensions/iaas-antimalware-windows)」が追加されていなければ追加する([DeployIfNotExists](https://docs.microsoft.com/ja-jp/azure/governance/policy/concepts/effects#deployifnotexists))
 
 ■ポリシーの定義の例
 
@@ -96,7 +94,7 @@ https://docs.microsoft.com/ja-jp/azure/governance/policy/samples/pattern-paramet
     ]
   },
   "then": {
-    "effect": "Allow"
+    "effect": "Deny"
   }
 }
 ```
