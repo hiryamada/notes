@@ -22,7 +22,6 @@
   - [ID およびアクセス管理のベスト プラクティス](../AZ-304/mod04-01-id.md)
   - [多要素認証のソリューション](../AZ-304/mod04-02-mfa.md)
   - [ID インフラストラクチャをセキュリティ保護するステップ](../AZ-304/mod04-03-secure-identity.md)
-  - [シングル サインオン (SSO) のソリューション](../AZ-304/mod04-05-sso.md)
   - [Azure Active Directory B2B](../AZ-304/mod04-06-b2b.md)
   - [Azure Active Directory B2C](../AZ-303/mod01-08-aad-b2c.md)
   - [条件付きアクセス](../AZ-303/mod01-06-conditional-access.md)
