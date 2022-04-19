@@ -1,30 +1,51 @@
 # 2日目 後半 ～ 3日目: 山田
 
-## 2日目 後半
 
-- ラーニングパス3: データ
-  - モジュール1: ストレージアカウント
-    - [ストレージアカウントの概要](../AZ-303/mod06-01-storage-account.md)
-    - [共有アクセス署名(SAS)](sas.md)
-    - [アクセス ポリシー](blob-container-access-policy.md)
-    - [知識チェックとケーススタディ](day2-lp3-m1-check.md)
-  - モジュール2: SQLとNoSQL
-    - SQL
-      - [Azure SQL Databaseの概要](../AZ-304/mod06-03-azure-sql.md)
-      - [Azure SQL Databaseのサーバー/データベース](../AZ-303/mod08-01-sqldb.md)
-      - [Azure SQL Edge](sql-edge.md)
-    - NoSQL
-      - [Azure Table Storage](../AZ-104/mod07-07-table.md)
-      - [Cosmos DB](../AZ-303/mod07-02-cosmosdb.md)
-    - [知識チェック](day2-lp3-m2-check.md)
-  - モジュール3: データ統合/データ分析
-    - データ統合
-      - [Azure Data Factory](../AZ-304/mod08-02-data-factory.md)
-    - データ分析
-      - [Azure Databricks](../AZ-304/mod08-04-databricks.md)
-      - [Azure Synapse Analytics](../AZ-304/mod08-03-synapse-analytics.md)
-      - 操作例: [Azure Data Lake Storage Gen2 と Azure Synapse Analyticsによるビッグデータ分析](pdf/datalake-synapse.pdf)
-    - [知識チェック](day2-lp3-m3-check.md)
+- ラーニングパス4: インフラ
+  - モジュール1: コンピューティング
+    - 仮想マシン
+      - [VM](../AZ-303/mod04-01-vm.md)
+      - [VMSS](../AZ-303/mod04-03-vmss.md)
+    - PaaS
+      - [Azure App Service](app-service.md)
+    - コンテナー型仮想化
+      - [Azure Container Instances](../AZ-303/mod13-01-aci.md)
+      - [Azure Kubernetes Service](../AZ-400/mod16.md)
+    - Function as a Service
+      - [Azure Function](../AZ-303/mod14-02-functions.md)
+    - ローコード/ノーコード/統合
+      - [Azure Logic Apps](../AZ-204/mod99-01-logicapp.md)
+    - バッチ
+      - [Azure Batch](azure-batch.md)
+    - [知識チェックとケーススタディ](day3-lp4-m1-check.md)
+
+
+- ラーニングパス4: インフラ
+  - モジュール2: アプリケーション アーキテクチャ
+    - [メッセージング](messaging.md)
+      - Azure Queue Storage
+      - Azure Service Bus
+    - [イベント](event.md)
+      - Azure Event Grid
+      - Azure Event Hubs
+    - キャッシュ
+      - [Azure Cache for Redis](../AZ-204/mod12-01-redis.md)
+    - API統合
+      - [Azure API Management](../AZ-204/mod08-01-apim.md)
+    - [知識チェック](day3-lp4-m2-check.md)
+  - モジュール3: ネットワーク ソリューション
+    - オンプレミス接続
+      - [VPN](../AZ-303/mod03-03-vpn.md)
+      - [ExpressRoute](../AZ-304/mod02-04-hybrid-network.md)
+    - ネットワークアクセスの制御
+      - [NSG と ASG](../AZ-303/mod05-05-nsg-asg.md)
+    - [Azure Firewall](../AZ-303/mod05-06-azure-firewall.md)
+    - [知識チェック](day3-lp4-m3-check.md)
+  - モジュール4: 移行
+    - [Azure Migrate](../AZ-303/mod12-01-migrate.md)
+    - [知識チェック](day3-lp4-m4-check.md)
+
+## 2日目 後半
 
 # ラーニングパス 2: [AZ-305: ビジネス継続性ソリューションを設計する](https://docs.microsoft.com/ja-jp/learn/paths/design-business-continuity-solutions/)
 ## モジュール 1: [高可用性向けの設計](https://docs.microsoft.com/ja-jp/learn/modules/design-for-high-availability/)
