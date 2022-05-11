@@ -1,3 +1,4 @@
+
 # CS8618 警告について
 
 ```
@@ -74,3 +75,19 @@ class X5
 //     <Nullable>enable</Nullable>
 // の値を、disable にするか、この行を削除する
 ```
+
+# null safe
+
+参考: null safeな言語
+https://qiita.com/koher/items/e4835bd429b88809ab33
+
+null safeな言語では、コンパイル時に、変数の値が null になる可能性があることを発見でき、null 参照のエラーを回避しやすい。
+
+```
+string x = null;
+int len = x.Length; // null reference exception
+```
+
+参考: C# 8.0 で、null 許容参照型 が導入された
+https://ufcpp.net/blog/2018/12/cs8nrt/
+
