@@ -8,7 +8,9 @@ Webブラウザーで https://portal.azure.com/ (Azure portal) にアクセス�
 
 ![](images/ss-2022-04-06-00-15-57.png)
 
-registry で検索
+画面左メニューの「リソースプロバイダー」をクリック。
+
+「名前でフィルター」テキストボックスで、`registry` で検索
 
 ![](images/ss-2022-04-06-00-16-44.png)
 
