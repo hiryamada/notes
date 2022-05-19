@@ -37,11 +37,6 @@
 - オプション
   - [ラーニングパス 5: Microsoft Azure Well-Architected Framework を使用して優れたソリューションを構築する](lp05.md)
   - [ラーニングパス 6: Azure 向けの Microsoft クラウド導入フレームワークでクラウド導入を加速する](lp06.md)
-  - ケーススタディ
-    - 認証の設計
-    - ストレージ、DB系
-    - ネットワーク系
-    - アプリアーキテクチャ系
 
 # コース資料 (Microsoft Learn)
 
