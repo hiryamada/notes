@@ -1,3 +1,6 @@
+
+[→ ラーニングパス2](lp2.md)
+
 - ラーニングパス1 Azure 管理者向けの前提条件
   - Azure portal
     - Azure Cloud Shell
@@ -9,10 +12,10 @@
   - Azure CLI
 - [知識チェック](lp1-check.md)
 - ラボ
-  - [3a: Azure portal](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/Instructions/Labs/LAB_03a-Manage_Azure_Resources_by_Using_the_Azure_Portal.html)
-  - [3b: ARMテンプレート](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/Instructions/Labs/LAB_03b-Manage_Azure_Resources_by_Using_ARM_Templates.html)
-  - [3c: Azure PowerShell](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/Instructions/Labs/LAB_03c-Manage_Azure_Resources_by_Using_Azure_PowerShell.html)
-  - [3d: Azure CLI](https://microsoftlearning.github.io/AZ-104JA-MicrosoftAzureAdministrator/Instructions/Labs/LAB_03d-Manage_Azure_Resources_by_Using_Azure_CLI.html)
+  - [3a: Azure portal](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03a-Manage_Azure_Resources_by_Using_the_Azure_Portal.md)
+  - [3b: ARMテンプレート](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03b-Manage_Azure_Resources_by_Using_ARM_Templates.md)
+  - [3c: Azure PowerShell](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03c-Manage_Azure_Resources_by_Using_Azure_PowerShell.md)
+  - [3d: Azure CLI](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03d-Manage_Azure_Resources_by_Using_Azure_CLI.md)
 
 # ラーニングパス 1: [AZ-104:Azure 管理者向けの前提条件](https://docs.microsoft.com/ja-jp/learn/paths/az-104-administrator-prerequisites/)
 ## モジュール 1: [ツールを使用して Azure リソースを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-resources-tools/)

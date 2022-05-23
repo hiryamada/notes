@@ -1,6 +1,20 @@
 [← ラーニングパス1](lp1.md)
 [→ ラーニングパス3](lp3.md)
 
+- ラーニングパス2 IDとガバナンスの管理
+  - Azure Active Directory
+    - モジュール1 Azure Active Directory vs Active Directory Domain Services
+    - モジュール2/6 ユーザーとグループ
+    - モジュール8 セルフサービスリセット
+    - 知識チェック
+    - [ラボ1](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.md)
+  - Azureの管理
+    - モジュール3 サブスクリプション
+    - モジュール4 ポリシー
+    - モジュール5/7 ロール
+    - 知識チェック
+    - [ラボ2a](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_02a_Manage_Subscriptions_and_RBAC.md)
+
 # ラーニングパス 2: [AZ-104:Azure での ID とガバナンスの管理](https://docs.microsoft.com/ja-jp/learn/paths/az-104-manage-identities-governance/)
 ## モジュール 1: [Azure Active Directory を構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-active-directory/)
 - ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-active-directory/1-introduction)
