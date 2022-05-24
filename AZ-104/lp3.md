@@ -3,20 +3,32 @@
 
 - ラーニングパス3 ストレージアカウント
   - ストレージアカウント
-    - モジュール1 ストレージアカウントの概要
-    - モジュール6 ストレージアカウントの作成
+    - 対応モジュール
+      - モジュール1 ストレージアカウントの概要
+      - モジュール6 ストレージアカウントの作成
+    - [講義資料](mod07-01-storage.md)
   - ストレージアカウントに含まれるサービス
-    - モジュール2 Blobストレージ
-    - モジュール4 Azure Files / Azure File Sync
+    - 対応モジュール
+      - モジュール2 Blobストレージ
+      - モジュール4 Azure Files / Azure File Sync
+    - 講義資料
+      - [Azure Blob Storage](mod07-02-blob.md)
+      - [Azure Files](mod07-03-files.md)
+      - [Auzre File Sync](mod07-04-filesync.md)
   - ストレージアカウントを操作するためのツール
-    - モジュール5 Azure Storage Explorer/インポート・エクスポートサービス/AzCopy
-    - モジュール8 Azure Storage Explorer
+    - 対応モジュール
+      - モジュール5 Azure Storage Explorer/AzCopy 等
+      - モジュール8 Azure Storage Explorer
+    - 講義資料
+      - [ストレージの管理ツール](../AZ-303/mod06-06-storage-management.md)
   - ストレージアカウントのセキュリティ
-    - モジュール3 ストレージセキュリティ
-      - SAS
-      - SSE
-    - モジュール7 SAS
-  - 知識チェック
+    - 対応モジュール
+      - モジュール3 ストレージセキュリティ（SAS, SSE）
+      - モジュール7 SAS
+    - 講義資料
+      - [SAS](../AZ-305/sas.md)
+      - [SSE](../SC/encryption/azure-storage-encryption.md)
+  - [知識チェック](lp3-check.md)
   - [ラボ7](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_07-Manage_Azure_Storage.md)
 
 # ラーニングパス 3: [AZ-104:Azure でのストレージの実装と管理](https://docs.microsoft.com/ja-jp/learn/paths/az-104-manage-storage/)

@@ -12,7 +12,8 @@
       - 解説PDF1 [Azure ADの概要](pdf/mod01/mod01.pdf)
       - 解説PDF2 [Azure ADとAD DSの違い](pdf/mod01/Azure%20AD%20%E3%81%A8%20AD%20DS%20%E3%81%AE%E4%BD%8D%E7%BD%AE%E3%81%A5%E3%81%91.pdf)
       - 解説PDF3 [デバイスの登録/参加](pdf/mod01/デバイスID.pdf)
-    - 知識チェック
+      - [セルフサービス パスワードリセット(SSPR)](mod01-03-sspr.md)
+    - [知識チェック](lp2-1-aad-check.md)
     - [ラボ1](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.md)
   - Azureの管理
     - 対応モジュール
@@ -23,7 +24,7 @@
       - [Azureのリージョン、データセンター、サブスクリプション](mod02-01-subscription.md)
       - [ポリシー](mod02-02-policy.md)
       - [ロール](mod02-03-rbac.md)
-    - 知識チェック
+    - [知識チェック](lp2-2-subscription-check.md)
     - [ラボ2a](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_02a_Manage_Subscriptions_and_RBAC.md)
 
 
