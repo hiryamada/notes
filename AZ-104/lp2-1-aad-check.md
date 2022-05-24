@@ -16,12 +16,6 @@
   - ※ページ下部に知識チェックあり
   - 第1問 ユーザーは削除から30日以内であれば復元することができる
   - 第2問 外部の組織のユーザーをゲストとして招待する（「ゲストユーザー」アカウントを作成する）ことができる。ゲストユーザーは、招待されたテナントで作業を行うことができる。
-## モジュール 7: [Azure ロールベースのアクセス制御 (Azure RBAC) を使用した Azure リソースのセキュリティ保護](https://docs.microsoft.com/ja-jp/learn/modules/secure-azure-resources-with-rbac/)
-- ユニット 7: [知識チェック - Azure RBAC を使用する](https://docs.microsoft.com/ja-jp/learn/modules/secure-azure-resources-with-rbac/7-knowledge-check-rbac)
-  - 第1問 「アクセスの確認」では、ユーザーIDを指定して、そのユーザーのアクセス（ロール割り当て）を確認できる（正解）。「ロールの割り当て」でも確認できるが、指定したユーザーではなく、リソースに対するアクセス（ロール割り当て）を持つ全ユーザーのリストが表示される。
-  - 第2問 （部門のVMがあるリソースグループに含まれている場合）そのリソースグループのスコープで、VM管理用のロールを割り当てると、部門のVMをすべて管理できる。
-  - 第3問 あるユーザーが「リソース グループへのフル アクセスを必要としている」ので、そのリソースグループで「所有者」ロールを割り当てる。[最小権限の原則](https://ja.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E6%A8%A9%E9%99%90%E3%81%AE%E5%8E%9F%E5%89%87)に基づく場合、ユーザーに余分な権限を与える（より上位のスコープでユーザーにロールを割り当てる）べきではない。
-  - 第4問 アクティビティログを使用して、指定した期間の操作（ロール割り当て等の操作を含む）の一覧を取得できる。
 ## モジュール 8: [Azure Active Directory のセルフサービス パスワード リセット を使用して、ユーザーがパスワードをリセットできるようにする](https://docs.microsoft.com/ja-jp/learn/modules/allow-users-reset-their-password/)
 - ユニット 2: [Azure Active Directory のセルフサービス パスワード リセット とは](https://docs.microsoft.com/ja-jp/learn/modules/allow-users-reset-their-password/2-self-service-password-reset)
   - ※ページ下部に知識チェックあり
