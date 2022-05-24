@@ -24,6 +24,7 @@
       - [Azureのリージョン、データセンター、サブスクリプション](mod02-01-subscription.md)
       - [ポリシー](mod02-02-policy.md)
       - [ロール](mod02-03-rbac.md)
+      - 解説PDF [ロール](pdf/mod02/ロール・ポリシー全体像.pdf)
     - [知識チェック](lp2-2-subscription-check.md)
     - [ラボ2a](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_02a_Manage_Subscriptions_and_RBAC.md)
 
