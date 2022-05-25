@@ -1,5 +1,71 @@
 [← ラーニングパス5](lp5.md)
 
+- バックアップ（モジュール1,2)
+  - Azure Backup
+  - バックアップセンター
+  - Recovery Services コンテナー
+  - バックアップコンテナー
+  - 仮想マシンのバックアップ
+  - オンプレミスのバックアップ
+- モニタリング（モジュール3-9)
+  - Network Watcher
+  - Azure Monitor
+  - Azure Monitor VM Insights
+- [知識チェック](lp6-check.md)
+- ラボ
+  - [ラボ10](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_10-Implement_Data_Protection.md)
+    - バックアップ
+  - [ラボ11](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_11-Implement_Monitoring.md)
+    - モニタリング
+
+# ラーニングパス 6: [AZ-104:Azure リソースの監視とバックアップ](https://docs.microsoft.com/ja-jp/learn/paths/az-104-monitor-backup-resources/)
+## モジュール 1: [ファイルとフォルダーのバックアップを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/1-introduction)
+- ユニット 2: [Azure Backup のベネフィットについて説明する](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/2-describe-azure-backup-benefits)
+- ユニット 3: [Azure バックアップ センターを実装する](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/3-implement-azure-backup-center)
+- ユニット 4: [Recovery Services コンテナーのバックアップ オプションを設定する](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/4-setup-recovery-service-vault-backup-options)
+- ユニット 5: [オンプレミスのファイルとフォルダーのバックアップを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/5-configure-premises)
+- ユニット 6: [Azure Recovery Services エージェントを管理する](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/6-manage-azure-recovery-services-agent)
+- ユニット 7: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/7-knowledge-check)
+- ユニット 8: [まとめとリソース](https://docs.microsoft.com/ja-jp/learn/modules/configure-file-folder-backups/8-summary-resources)
+## モジュール 2: [仮想マシンのバックアップを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/1-introduction)
+- ユニット 2: [仮想マシンのデータを保護する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/2-protect-data)
+- ユニット 3: [仮想マシンのスナップショットを作成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/3-create-snapshots)
+- ユニット 4: [Recovery Services コンテナーのバックアップ オプションを設定する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/4-setup-recovery-services-vault-backup-options)
+- ユニット 5: [仮想マシンのバックアップ](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/5-backup-virtual-machines)
+- ユニット 6: [仮想マシンの復元](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/6-restore-virtual-machines)
+- ユニット 7: [Azure Backup Server を実装する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/7-implement-azure-backup-server)
+- ユニット 8: [バックアップ オプションを比較する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/8-compare-backup-options)
+- ユニット 9: [論理的な削除を管理する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/9-manage-soft-delete)
+- ユニット 10: [Azure Site Recovery を実装する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/10-implement-azure-site-recovery)
+- ユニット 11: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/11-knowledge-check)
+- ユニット 12: [まとめとリソース](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machine-backups/12-summary-resources)
+## モジュール 3: [Azure Monitor を構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/1-introduction)
+- ユニット 2: [Azure Monitor の主な機能を説明する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/2-describe-key-capabilities)
+- ユニット 3: [Azure Monitor のコンポーネントを説明する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/3-describe-components)
+- ユニット 4: [メトリックとログを定義する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/4-define-metrics-logs)
+- ユニット 5: [データの種類を確認する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/5-identify-data-types)
+- ユニット 6: [アクティビティ ログ イベントを説明する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/6-describe-activity-log-events)
+- ユニット 7: [アクティビティ ログに対してクエリを実行する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/7-query-activity-log)
+- ユニット 8: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/8-knowledge-check)
+- ユニット 9: [まとめとリソース](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-monitor/9-summary-resources)
+## モジュール 4: [Azure アラートを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-alerts/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-alerts/1-introduction)
+- ユニット 2: [Azure Monitor アラートを管理する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-alerts/2-manage-azure-monitor-alerts)
+- ユニット 3: [アラート ルールの作成](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-alerts/3-create-alert-rules)
+- ユニット 4: [アクション グループを作成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-alerts/4-create-action-groups)
+- ユニット 5: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-alerts/5-knowledge-check)
+- ユニット 6: [まとめとリソース](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-alerts/6-summary-resources)
+## モジュール 5: [Log Analytics の構成](https://docs.microsoft.com/ja-jp/learn/modules/configure-log-analytics/)
+- ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/configure-log-analytics/1-introduction)
+- ユニット 2: [Log Analytics の使用を決定する](https://docs.microsoft.com/ja-jp/learn/modules/configure-log-analytics/2-determine-uses)
+- ユニット 3: [ワークスペースの作成](https://docs.microsoft.com/ja-jp/learn/modules/configure-log-analytics/3-create-workspace)
+- ユニット 4: [Log Analytics データの視覚化](https://docs.microsoft.com/ja-jp/learn/modules/configure-log-analytics/4-visualize-data)
+- ユニット 5: [Log Analytics クエリを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-log-analytics/5-structure-queries)
+- ユニット 6: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-log-analytics/6-knowledge-check)
+- ユニット 7: [まとめとリソース](https://docs.microsoft.com/ja-jp/learn/modules/configure-log-analytics/7-summary-resources)
 ## モジュール 6: [Network Watcher を構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-network-watcher/)
 - ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/configure-network-watcher/1-introduction)
 - ユニット 2: [Network Watcher の機能を説明する](https://docs.microsoft.com/ja-jp/learn/modules/configure-network-watcher/2-describe-features)

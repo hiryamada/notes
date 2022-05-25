@@ -54,5 +54,6 @@
 ## モジュール 11: [Azure Automation State Configuration を使用して仮想マシンの設定を保護する](https://docs.microsoft.com/ja-jp/learn/modules/protect-vm-settings-with-dsc/)
 - ユニット 2: [Azure Automation State Configuration とは何ですか?](https://docs.microsoft.com/ja-jp/learn/modules/protect-vm-settings-with-dsc/2-what-is-azure-automation-state-configuration)
   - ※ページ下部に知識チェックあり
-  - 問題1 
-  - 問題2 
+  - 問題1 「[State Configuration](https://docs.microsoft.com/ja-jp/azure/automation/automation-dsc-overview)」は「[Azure Automation](https://docs.microsoft.com/ja-jp/azure/automation/overview)」に含まれるサービス。PowerShell Desired State Configuration (DSC) の構成の記述、管理、コンパイルを行う。
+  - 問題2 PowerShell DSCでは、システムの「望ましい状態」（Desired State）を「宣言」（記述）する。たとえば、「IISがインストールされている」「ユーザーが作成されている」など。
+  - 問題3 DSCには「プッシュモード」と「プルモード」がある。「プッシュモード」では、管理者が、ノード（管理対象のVM等）に構成をプッシュ（送信）する。「プルモード」では、構成情報を「プルサーバー」に登録し、各ノードが構成情報を「プル」（受信）する。「プルモード」は「プルサーバー」の運用などが必要だが、複雑な環境の運用に適している。

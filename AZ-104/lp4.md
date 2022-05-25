@@ -29,7 +29,7 @@
   - 対応モジュール: 7
   - [講義資料](../AZ-303/mod13-02-aks.md)
   - 解説PDF: [AKSクラスターの作成](../AZ-303/pdf/mod13/AKSクラスターの作成.pdf)
-- [知識チェック](lp4-chedk.md)
+- [知識チェック](lp4-check.md)
 - ラボ
   - [ラボ8 VM](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_08-Manage_Virtual_Machines.md)
     - 想定: 30分

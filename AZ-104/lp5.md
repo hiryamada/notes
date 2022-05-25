@@ -1,6 +1,40 @@
 [← ラーニングパス4](lp4.md)
 [→ ラーニングパス6](lp6.md)
 
+- 仮想ネットワーク(VNet)の基本
+  - [VNet、サブネット（モジュール1）](mod04-01-vnet.md)
+  - [IPアドレス（モジュール1,11）](mod04-02-ip.md)
+  - [VNetピアリング（モジュール5/12）](mod05-01-peering.md)
+- トラフィックのフィルタリング
+  - [ネットワークセキュリティグループ（モジュール2）](mod04-03-nsg.md)
+  - [Azure Firewall（モジュール3）](mod04-04-firewall.md)
+- 名前解決
+  - [Azure DNS（モジュール4/13）](mod04-05-dns.md)
+- トラフィックの負荷分散（ロードバランサー）
+  - PDF資料: [ロードバランサーのサービス全体像](../AZ-500/pdf/mod2/負荷分散サービス.pdf)
+  - [Azure Load Balancer（モジュール9/15）](mod06-02-lb.md)
+  - [Azure Application Gateway（モジュール10）](mod06-03-appgw.md)
+- トラフィックのルーティング
+  - [ルートテーブル（モジュール8/14）](mod06-01-routing.md)
+  - [ネットワーク仮想アプライアンス(NVA)によるルーティング（モジュール14）](../AZ-500/mod02-02-08-nva.md)
+- VNetからAzureサービスへの接続
+  - [サービスエンドポイント/プライベートエンドポイント（モジュール8）](../AZ-303/mod06-05-storage-vnet.md)
+- VNetとオンプレミスの接続
+  - [VPN（モジュール6）](../AZ-303/mod03-03-vpn.md)
+  - [ExpressRoute（モジュール7）](../AZ-500/pdf/mod2/ExpressRouteまとめ.pdf)
+  - [Virtual WAN（モジュール7）](mod05-04-virtualwan.md)
+- [知識チェック](lp5-check.md)
+- ラボ
+  - [ラボ4](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_04-Implement_Virtual_Networking.md)
+    - VNetの作成
+    - VMのデプロイ
+    - ネットワークセキュリティグループの構成
+    - Azure DNSによる名前解決
+  - オプション - [ラボ5](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.md)
+    - グローバルピアリングとローカルピアリング
+  - オプション - [ラボ6](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.md)
+    - ハブ&スポーク型トポロジーのVNet構成、NVAによるスポーク間の通信(タスク1-4)
+    - Azure Load Balancer, Azure Application Gateway(タスク5-6)
 
 # ラーニングパス 5: [AZ-104:Azure 管理者向けの仮想ネットワークの構成と管理](https://docs.microsoft.com/ja-jp/learn/paths/az-104-manage-virtual-networks/)
 ## モジュール 1: [仮想ネットワークを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-networks/)

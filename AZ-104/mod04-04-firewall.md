@@ -1,5 +1,7 @@
 # [Azure Firewall](https://docs.microsoft.com/ja-jp/azure/firewall/overview)
 
+[解説PDF](pdf/mod04/Azure%20Firewall.pdf)
+
 Azure Firewall は、クラウドネイティブのサービスとしてのファイアウォール (FWaaS) オファリングです。
 
 お客様のすべてのトラフィック フローを一元的に管理し、ログに記録することができます。
