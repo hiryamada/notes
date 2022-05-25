@@ -32,7 +32,7 @@
 ## モジュール 7: [Shared Access Signature を使用して Azure Storage へのアクセスを制御する](https://docs.microsoft.com/ja-jp/learn/modules/control-access-to-azure-storage-with-sas/)
 - ユニット 2: [Azure Storage の承認オプション](https://docs.microsoft.com/ja-jp/learn/modules/control-access-to-azure-storage-with-sas/2-authorization-options-azure-storage)
   - ※ページ下部に知識チェックあり
-  - 問題1 ※この問題は「Azure Active Directory を使用する。 Azure AD を使用すると、サービス プリンシパルを作成してアプリを認証できます。」が正解となっているが、サービスプリンシパルを作る必要はないと思われる。「認証にはAzure AD認証を使用し、承認にはRBACロールを使用する。」が適切な文章と思われる。
+  - 問題1 ※この問題は「Azure Active Directory を使用する。 Azure AD を使用すると、サービス プリンシパルを作成してアプリを認証できます。」が正解となっているが、サービスプリンシパルを作る必要はないと思われる。「認証にはAzure AD認証を使用し、承認にはRBACロールを使用する。」がより適切な文章と思われる。
   - 問題2 BlobコンテナーをPublicアクセス可能に設定する。
 ## モジュール 8: [Azure Storage Explorer を使用してデータをアップロード、ダウンロード、管理する](https://docs.microsoft.com/ja-jp/learn/modules/upload-download-and-manage-data-with-azure-storage-explorer/)
 - ※知識チェックなし

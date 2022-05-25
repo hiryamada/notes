@@ -1,6 +1,45 @@
 [← ラーニングパス3](lp3.md)
 [→ ラーニングパス5](lp5.md)
 
+ラーニングパス4 コンピューティング(VM, App Service, ACI, AKS)
+
+- 仮想マシン
+  - 対応モジュール: 1,2,3,8,9,11
+    - VMの作成と接続
+    - VMを構成するリソース
+    - サイズ
+    - 可用性
+    - 拡張機能([カスタムスクリプト拡張機能](https://docs.microsoft.com/ja-jp/azure/virtual-machines/extensions/custom-script-windows)、[DSC拡張機能](https://docs.microsoft.com/ja-jp/azure/virtual-machines/extensions/dsc-windows))
+    - 仮想マシンスケールセット
+  - 講義資料
+    - [VM](../AZ-303/mod04-01-vm.md)
+    - [VMの可用性オプション](../AZ-303/mod04-02-vm-ha.md)
+    - [VMSS](../AZ-303/mod04-03-vmss.md)
+- App Service
+  - 対応モジュール: 4,5,10
+    - アプリとプラン
+    - アプリのデプロイ
+    - プランのスケールアップ
+    - プランのスケールアウト
+  - [講義資料](../AZ-204/mod01.md)
+- ACI
+  - 対応モジュール: 6
+  - [講義資料](../AZ-204/mod05-05-aci.md)
+- AKS
+  - 対応モジュール: 7
+  - [講義資料](../AZ-303/mod13-02-aks.md)
+  - 解説PDF: [AKSクラスターの作成](../AZ-303/pdf/mod13/AKSクラスターの作成.pdf)
+- [知識チェック](lp4-chedk.md)
+- ラボ
+  - [ラボ8 VM](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_08-Manage_Virtual_Machines.md)
+    - 想定: 30分
+    - タスク1,2と末尾のクリーンアップを実施してください。
+    - タスク3～7は省略します。
+  - [ラボ9a App Service](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_09a-Implement_Web_Apps.md)
+    - 想定: 30分
+  - オプション(省略) - [ラボ9b ACI](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_09b-Implement_Azure_Container_Instances.md)
+  - オプション(省略) - [ラボ9c AKS](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_09c-Implement_Azure_Kubernetes_Service.md)
+
 # ラーニングパス 4: [AZ-104:Azure のコンピューティング リソースのデプロイと管理](https://docs.microsoft.com/ja-jp/learn/paths/az-104-manage-compute-resources/)
 ## モジュール 1: [仮想マシンの構成](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machines/)
 - ユニット 1: [はじめに](https://docs.microsoft.com/ja-jp/learn/modules/configure-virtual-machines/1-introduction)
