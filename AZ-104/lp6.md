@@ -7,10 +7,18 @@
   - バックアップコンテナー
   - 仮想マシンのバックアップ
   - オンプレミスのバックアップ
+  - PDFまとめ資料
+    - [バックアップセンター・コンテナー](../AZ-305/pdf/Azure%20Backup.pdf)
+    - [バックアップの例](pdf/mod10/データ保護とバックアップ.pdf)
 - モニタリング（モジュール3-9)
-  - Network Watcher
   - Azure Monitor
   - Azure Monitor VM Insights
+  - Network Watcher
+  - PDFまとめ資料
+    - [メトリックとログ](../AZ-303/pdf/mod15/メトリックとログの例.pdf)
+    - [Azure Monitor](pdf/mod11/Azure%20Monitor.pdf)
+    - [Azure Log Analytics](pdf/mod11/Log%20Analytics.pdf)
+    - [Network Watcher](pdf/mod11/Network%20Watcher.pdf)
 - [知識チェック](lp6-check.md)
 - ラボ
   - [ラボ10](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_10-Implement_Data_Protection.md)

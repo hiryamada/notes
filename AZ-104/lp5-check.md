@@ -23,14 +23,14 @@
   - 問題3 （自分でDNSサーバーをセットアップして運用したりするといった）カスタムのDNSソリューションを導入せずに使用できるのがAzure DSNのメリットである。
 ## モジュール 5: [仮想ネットワーク ピアリングを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-vnet-peering/)
 - ユニット 6: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-vnet-peering/6-knowledge-check)
-  - 問題1 
-  - 問題2 
-  - 問題3 
+  - 問題1 1つのピアリングは2つの「ピアリングリンク」で構成されている。vnet1とvnet2を接続する場合、vnet1→vnet2のピアリングリンク、vnet2→vnet1のピアリングリンクが両方とも Connected にならないと接続されない。[参考](https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-manage-peering)
+  - 問題2 ピアリングの設定の「ゲートウェイ転送」（ゲートウェイトランジット）を使用することで、たとえばスポークのvnetから、ハブのvnetのVPNゲートウェイ・ExpressRouteゲートウェイを使用して、オンプレミスに接続することができる。
+  - 問題3 ピアリングのトラフィックはAzure内部（バックボーンネットワーク）を流れる。
 ## モジュール 6: [VPN Gateway を構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-vpn-gateway/)
 - ユニット 12: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-vpn-gateway/12-knowledge-check)
-  - 問題1 
-  - 問題2 
-  - 問題3 
+  - 問題1 ExpressRouteを使用する場合、オンプレ側としてはルートベースのVPNを使用する。
+  - 問題2 VPNゲートウェイには多数のSKUが用意されている。選択したSKUにより帯域幅や同時接続数が決まる。
+  - 問題3 VPNの接続を行う際、PSK（PreSharedKey）を両方のVPNデバイスに正しく設定する必要がある。
 ## モジュール 7: [ExpressRoute と Virtual WAN を構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-expressroute-virtual-wan/)
 - ユニット 7: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-expressroute-virtual-wan/7-knowledge-check)
   - 問題1 
