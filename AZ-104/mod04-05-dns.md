@@ -64,7 +64,7 @@ Azure のリソースとして、[DNSゾーン](https://docs.microsoft.com/ja-jp
 「リンク」されたVNet内での名前解決に使用される。
 
 ```
-パブリックDNSゾーン contosoprivate.com
+プライベートDNSゾーン contosoprivate.com
 |リンク   ↑名前解決↓IPアドレス
 VNet       |        |
 └VM ------+--------+
