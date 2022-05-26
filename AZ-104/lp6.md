@@ -8,8 +8,8 @@
   - 仮想マシンのバックアップ
   - オンプレミスのバックアップ
   - PDFまとめ資料
-    - [バックアップセンター・コンテナー](../AZ-305/pdf/Azure%20Backup.pdf)
-    - [バックアップの例](pdf/mod10/データ保護とバックアップ.pdf)
+    - [Azureのバックアップ機能](../AZ-305/pdf/Azure%20Backup.pdf)
+    - [バックアップの例(18スライド～)](pdf/mod10/データ保護とバックアップ.pdf)
 - モニタリング（モジュール3-9)
   - Azure Monitor
   - Azure Monitor VM Insights
