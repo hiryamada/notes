@@ -27,24 +27,21 @@
   - 問題3 Log Analytics エージェントは他クラウドやオンプレミスを含むさまざまな環境にインストールできる。
 ## モジュール 6: [Network Watcher を構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-network-watcher/)
 - ユニット 6: [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/configure-network-watcher/6-knowledge-check)
-  - 問題1 
-  - 問題2 
-  - 問題3 
+  - 問題1 Network Watcher「トポロジ」を使用してVNetを可視化できる。
+  - 問題2 Network Watcher「IPフロー検証」で、NSGのデバッグができる
+  - 問題3 Network Watcherは、VNet、仮想マシンの問題をトラブルシューティングするために使用する。
 ## モジュール 7: [Azure のアラートを使用したインシデント対応の向上](https://docs.microsoft.com/ja-jp/learn/modules/incident-response-with-alerting-on-azure/)
 - ユニット 2: [Azure Monitor でサポートされるさまざまなアラートの種類を確認する](https://docs.microsoft.com/ja-jp/learn/modules/incident-response-with-alerting-on-azure/2-explore-azure-monitor-alert-types)
   - ※ページ下部に知識チェックあり
-  - 問題1 
-  - 問題2 
-  - 問題3 
+  - 問題1 [アラートの構成](https://docs.microsoft.com/ja-jp/azure/azure-monitor/alerts/alerts-overview#overview)：リソース、条件、アクションなど
+  - 問題2 HTTP応答レコード（Webサーバーが出力するアクセスログなどのことか？）は「ログ」の例といえる。
 ## モジュール 8: [Azure Monitor ログを使用して Azure インフラストラクチャを分析する](https://docs.microsoft.com/ja-jp/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)
 - ユニット 2: [Azure Monitor ログの特徴](https://docs.microsoft.com/ja-jp/learn/modules/analyze-infrastructure-with-azure-monitor-logs/2-features-azure-monitor-log)
   - ※ページ下部に知識チェックあり
-  - 問題1 
-  - 問題2 
-  - 問題3 
+  - 問題1 [「アクティビティログ」「リソースログ」「仮想マシンのゲストOSのログ」など。](https://docs.microsoft.com/ja-jp/azure/azure-monitor/essentials/monitor-azure-resource#monitoring-data-from-azure-resources)
+  - 問題2 Azure Monitorは「ログ」と「メトリック」を集める。
 ## モジュール 9: [Azure Monitor VM Insights を使用して仮想マシンのパフォーマンスを監視する](https://docs.microsoft.com/ja-jp/learn/modules/monitor-performance-using-azure-monitor-for-vms/)
 - ユニット 2: [Azure Monitor ログと Azure Monitor VM Insights とは](https://docs.microsoft.com/ja-jp/learn/modules/monitor-performance-using-azure-monitor-for-vms/2-what-are-azure-monitor-logs-vms)
   - ※ページ下部に知識チェックあり
-  - 問題1 
-  - 問題2 
-  - 問題3 
+  - 問題1 "リソース コンテキスト" は、アクセスできるすべてのテーブル内のリソースのログを表示するためのアクセスを提供（正解）。"ワークスペース コンテキスト" は、アクセス許可が割り当てられているワークスペース内のすべてのログへのアクセスを提供。[参考](https://docs.microsoft.com/ja-jp/azure/azure-monitor/logs/manage-access)
+  - 問題2 Azure Monitor VM Insights は、仮想マシンのデータ収集のための追加の可視性と機能を提供する.
