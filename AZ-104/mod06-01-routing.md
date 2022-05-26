@@ -1,5 +1,50 @@
-
 # ルーティング
+
+■ハブ&スポーク型のVNetピアリング接続で、スポーク間で通信したい場合
+
+```
+VNet1（スポーク）10.0.0.0/16
+│└サブネット - ルートテーブル (10.1.0.0/16 -> NVA)
+│   └vm1
+│ピアリング
+VNet（ハブ）
+│└サブネット
+│  └NVA（ルーターとしてセットアップされたVM）
+│ピアリング
+VNet2（スポーク）10.1.0.0/16
+ └サブネット - ルートテーブル (10.0.0.0/16 -> NVA)
+    └VM2
+```
+
+※NVA: [ネットワーク仮想アプライアンス](https://azure.microsoft.com/ja-jp/solutions/network-appliances/)
+
+■Azure Firewallを経由してインターネットに接続したい場合
+
+```
+VNet
+├AzureFirewallSubnet
+│ └Azure Firewall
+└サブネット - ルートテーブル (0.0.0.0 -> Azure Firewall)
+  └VM1
+```
+
+■オンプレミスのファイアウォールを経由してインターネットに接続したい場合
+
+※「[強制トンネリング](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm)」とも
+
+```
+     インターネット
+                 ↑
+オンプレミス     ↑
+      ├ファイアウォール
+      │         ↑
+      └VPNルーター等
+VNet             ↑
+├GatewaySubnet  ↑VPN
+│ └仮想ネットワークゲートウェイ(type:VPN / ExpressRoute)
+└サブネット - ルートテーブル (0.0.0.0 -> Azure Firewall)
+  └VM1
+```
 
 [Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/modules/control-network-traffic-flow-with-routes/2-azure-virtual-network-route)を参照。
 

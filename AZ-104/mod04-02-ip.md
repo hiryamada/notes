@@ -1,5 +1,15 @@
 # IPアドレス
 
+```
+VNet1 ............ 10.0.0.0/16
+├サブネット1 .... 10.0.0.0/24
+│└NIC .......... 10.0.0.4(プライベートIPアドレス), a.b.c.d(パブリックIPアドレス)
+│  └VM1
+└サブネット2 .... 10.0.1.0/24
+  └NIC .......... 10.0.1.4(プライベートIPアドレス), e.f.g.h(パブリックIPアドレス)
+    └VM2
+```
+
 ドキュメント
 
 - [パブリックIPアドレス](https://docs.microsoft.com/ja-jp/azure/virtual-network/public-ip-addresses)
@@ -39,8 +49,28 @@ VPN GateawayやExpressRoute回線を使用してオンプレミスとVNetを接�
 
 動的：IPアドレスを割り当てられたVMが起動したときに、IPアドレスの値が動的に決まります。VMを停止すると、IPアドレスの値はなくなります。
 
-# [IPアドレスのSKU](https://docs.microsoft.com/ja-jp/azure/virtual-network/public-ip-addresses#sku)
+# [パブリックIPアドレスのSKU](https://docs.microsoft.com/ja-jp/azure/virtual-network/public-ip-addresses#sku)
 
 BasicとStandardがあります。Standardは、可用性ゾーンのシナリオをサポートします。
 
-ロード バランサー リソースとパブリック IP リソースには一致する SKU を使用する必要があります。 
+ロード バランサー リソースとパブリック IP リソースには一致する SKU を使用する必要があります。
+
+```
+ユーザー
+↓
+パブリックIPアドレス(Basic)
+↓
+ロードバランサー(Basic)
+↓
+バックエンド（VM等）
+```
+
+```
+ユーザー
+↓
+パブリックIPアドレス(Standard)
+↓
+ロードバランサー(Standard)
+↓
+バックエンド（VM等）
+```

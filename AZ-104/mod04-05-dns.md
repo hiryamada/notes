@@ -1,5 +1,20 @@
 # [Azure DNS](https://azure.microsoft.com/ja-jp/services/dns/)
 
+(1)パブリックDNSゾーン
+
+インターネットでの名前解決に使用される。
+
+```
+パブリックDNSゾーン contoso.com
+↑名前解決↓IPアドレス
+インターネット上のクライアント
+↓
+パブリックIPアドレス
+↓
+VM,ロードバランサー等
+```
+
+
 ドメイン ネーム システム (DNS) を Azure でホストすることができるサービスです。
 
 DNS クエリは、Microsoftのネームサーバーのグローバルネットワークで、最も近くのネーム サーバーで応答されます。
@@ -43,6 +58,19 @@ Azure のリソースとして、[DNSゾーン](https://docs.microsoft.com/ja-jp
 - www.contoso.com. 3600 IN A 5.6.7.8
 
 # [プライベートDNSゾーン](https://docs.microsoft.com/ja-jp/azure/dns/dns-overview#customizable-virtual-networks-with-private-domains)
+
+(2)プライベートDNSゾーン
+
+「リンク」されたVNet内での名前解決に使用される。
+
+```
+パブリックDNSゾーン contosoprivate.com
+|リンク   ↑名前解決↓IPアドレス
+VNet       |        |
+└VM ------+--------+
+ ↓
+別のVM,ロードバランサー等
+```
 
 仮想ネットワーク（VNet）で、独自のカスタム ドメイン名を使用することができる機能です。独自のDNSサーバーをホストする必要がなくなります。
 

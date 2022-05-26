@@ -1,7 +1,20 @@
 # VNetピアリング
 
-[ピアリング接続](https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-overview)
+同じリージョン内の「ピアリング」
+```
+VNet1 ... 東日本
+| ピアリング
+VNet2 ... 東日本
+```
 
+異なるリージョン間の「グローバルVNetピアリング」
+```
+VNet1 ... 東日本
+| グローバルVNetピアリング
+VNet2 ... 西日本
+```
+
+[ピアリング接続](https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-peering-overview)
 
 2つ以上のVNetを接続します。
 
