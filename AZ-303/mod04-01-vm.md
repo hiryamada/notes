@@ -3,10 +3,10 @@
 ■VM作成前の検討事項
 
 Linux:
-https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/overview#what-do-i-need-to-think-about-before-creating-a-vm
+https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/overview#what-do-i-need-to-think-about-before-creating-a-vm
 
 Windows:
-https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/overview#what-do-i-need-to-think-about-before-creating-a-vm
+https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/overview#what-do-i-need-to-think-about-before-creating-a-vm
 
 - ネットワーク(VNet)を事前に計画・設計しておく
 - 名前

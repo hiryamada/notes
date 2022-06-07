@@ -48,7 +48,7 @@ Azure Container Appsは、内部的には Kubernetes（Azure Kubernetes Service�
 
 ■オープンソースのテクノロジ
 
-内部では、Dapr（「ダーパー」: マイクロサービス間通信）、KEDA（「ケイダー」: Kubernetes向けイベントドリブンスケーラー）、Envoy（エンヴォイ: プロキシ）などのテクノロジが内部で利用されている。
+内部では、Dapr（「ダーパー」: マイクロサービス間通信）、KEDA（「ケイダー」: Kubernetes向けイベントドリブンスケーラー）、Envoy（「エンヴォイ」: プロキシ）などのテクノロジが利用されている。
 
 → [Daprの解説](container-apps-dapr.md)
 
@@ -91,13 +91,22 @@ Container Apps 環境 -> Log Analyticsワークスペース
 
 1つの「Container Apps 環境」で複数の「コンテナー アプリ」を動かすことができる。
 
-[同じ環境内のコンテナーはDaprを使用して相互に通信できる。](https://docs.microsoft.com/ja-jp/azure/container-apps/environment)
-
 ```
-Container Apps 環境 -> Log Analyticsワークスペース
+Container Apps 環境
 ├コンテナー アプリ1
 └コンテナー アプリ2
 ```
+
+[同じ環境内のコンテナーはDaprを使用して相互に通信できる。](https://docs.microsoft.com/ja-jp/azure/container-apps/environment) アプリ間の通信をしたくない場合は、別の環境に分ける。
+
+```
+Container Apps 環境1
+└コンテナー アプリ1
+
+Container Apps 環境2
+└コンテナー アプリ2
+```
+
 # コンテナー アプリ
 
 https://docs.microsoft.com/ja-jp/azure/container-apps/containers#multiple-containers
@@ -133,7 +142,7 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/ingress
 
 「イングレス」を有効にすることで、コンテナー アプリにHTTPSでアクセスできる。アプリケーションには完全修飾ドメイン名 (FQDN) が割り当てられる。
 
-※https://my-container-apps.ambitioussky-73f3e33c.japaneast.azurecontainerapps.io」のような形式になる。
+FQDNは https://my-container-apps.ambitioussky-123456.japaneast.azurecontainerapps.io のような形式になる。
 
 # スケーリング
 
@@ -151,9 +160,11 @@ Container Apps 環境
   └リビジョン
     └レプリカ1
       └コンテナー
+```
 
 ↓スケールアウト ↑スケールイン
 
+```
 Container Apps 環境
 └コンテナーアプリ (名前: example)
   └リビジョン
@@ -188,7 +199,10 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/environment#billing
   - 100 万あたり ¥50.850
 - 毎月最初の 180,000 vCPU 秒、360,000 GiB 秒、200 万件のリクエストは無料
 
-※
+※インスタンス数が0になったレプリカは「アイドル料金」のカテゴリで課金される。
+
+※最新の価格は次を参照: https://azure.microsoft.com/ja-jp/pricing/details/container-apps/
+
 
 # リビジョン
 
@@ -215,14 +229,14 @@ Container Apps 環境
 
 - リビジョンの切り替え（切り戻し）ができる
 - 「ブルーグリーンデプロイ」ができる
-  - リビジョン2の準備ができたらトラフィックをリビジョン2に切り替える
+  - リビジョン2の準備ができたら、トラフィックをリビジョン2に流す
 - 「A/Bテスト」ができる
   - リビジョン1に90%, リビジョン2に10%のトラフィックを流す、など
   - この場合は複数のリビジョンを「アクティブ化」する
 
 リビジョンは一度作られると変更できない。
 
-最大 100 個のリビジョンを保持できる。
+最大 100 個のリビジョンを保持できる。不要なリビジョンは削除できる。
 
 リビジョンには「サフィックス」（接尾辞）を付けて区別できる。
 
@@ -233,7 +247,7 @@ Container Apps 環境
   └リビジョン2 (サフィックス:ver2)
 ```
 
-各リビジョンは「example--ver1」「example--ver2」といった「リビジョン名」となる。リビジョン名は「コンテナーアプリ名--サフィックス」となる。
+各リビジョンは「example--ver1」「example--ver2」といった「リビジョン名」となる（「コンテナーアプリ名--サフィックス」）。
 
 リビジョンは、「アクティブ」「非アクティブ」のいずれかに設定できる（[アプリケーションライフサイクル管理](https://docs.microsoft.com/ja-jp/azure/container-apps/application-lifecycle-management)）。
 
@@ -243,7 +257,9 @@ Container Apps 環境
 
 Microsoft、Apple、Facebook、GitHub、Google、Twitter、OpenID Connectを使用したサインイン機能を追加できる。
 
-Microsoftでサインインした場合はMicrosoft API呼び出し、Appleでサインインした場合はApple APIの呼び出し、・・・（以下同様 Facebook, Google, Twitter API）が可能となる。
+たとえば、「Microsoft」IDプロバイダーを追加して、Azure ADでサインインしたユーザーだけがアプリにアクセスできるように設定できる。
+
+Microsoftでサインインした場合はMicrosoft API呼び出し、Appleでサインインした場合はApple APIの呼び出し、・・・（以下同様 Facebook, Google, Twitter のAPI呼び出し）が可能となる。
 
 # マネージドID
 
@@ -256,6 +272,8 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/managed-identity
 https://docs.microsoft.com/ja-jp/azure/container-apps/manage-secrets
 
 コンテナーアプリ独自のしくみ「シークレット」（キー・値）管理が利用できる。
+
+使用例: Azure Service Busキューを使用して[イベントドリブンのスケーリング](https://docs.microsoft.com/ja-jp/azure/container-apps/scale-app#event-driven)を行う場合に、キューへの接続文字列をシークレットとして記録しておく。
 
 # カスタム ドメイン
 
