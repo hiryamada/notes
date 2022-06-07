@@ -11,7 +11,7 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/overview
 価格
 https://azure.microsoft.com/ja-jp/pricing/details/container-apps/
 
-公式による解説
+公式による解説（英語）「Introducing Azure Container Apps: a serverless container service for running modern apps at scale」
 https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-azure-container-apps-a-serverless-container-service/ba-p/2867265?ocid=AID3042118
 
 # 使用例(クイックスタート手順・改)
