@@ -1,6 +1,6 @@
 # Azure Container Apps
 
-「コンテナー化されたアプリ」を実行する、マネージドなサーバーレスコンテナーサービス
+「コンテナーアプリ」を実行する、マネージドなサーバーレスコンテナーサービス。マイクロサービスの運用向け。
 
 公式サイト
 https://azure.microsoft.com/ja-jp/services/container-apps/
@@ -14,6 +14,12 @@ https://azure.microsoft.com/ja-jp/pricing/details/container-apps/
 公式による解説
 https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-azure-container-apps-a-serverless-container-service/ba-p/2867265?ocid=AID3042118
 
+# 使用例(クイックスタート手順・改)
+
+[Azure portalからの利用例](container-apps-portal.md)
+
+[Azure CLIからの利用例](container-apps-azcli.md)
+
 # 歴史
 
 2021/11/2 パブリックプレビュー
@@ -22,17 +28,13 @@ https://azure.microsoft.com/ja-jp/updates/public-preview-azure-container-apps/
 2022/5/24 一般提供開始
 https://azure.microsoft.com/ja-jp/updates/generally-available-azure-container-apps/
 
-# 報道記事
-
-Microsoft、フルマネージドサーバレスコンテナ「Azure Container Apps」を一般提供
-https://codezine.jp/article/detail/15991
-
-
-# 特徴
+# Azure Container Appsの特徴
 
 ■「コンテナー化されたアプリ」を実行するサービス
 
 任意の言語を使用してアプリを開発できる。
+
+Linux ベースの x86-64 (linux/amd64) コンテナー を運用できる。
 
 ■マネージド型
 
@@ -46,7 +48,7 @@ Azure Container Appsは、内部的には Kubernetes（Azure Kubernetes Service�
 
 ■オープンソースのテクノロジ
 
-内部では、Dapr（マイクロサービス間通信）、KEDA（スケーラー）、Envoy（プロキシ）などのテクノロジが内部で利用されている。
+内部では、Dapr（「ダーパー」: マイクロサービス間通信）、KEDA（「ケイダー」: Kubernetes向けイベントドリブンスケーラー）、Envoy（エンヴォイ: プロキシ）などのテクノロジが内部で利用されている。
 
 → [Daprの解説](container-apps-dapr.md)
 
@@ -54,12 +56,19 @@ Azure Container Appsは、内部的には Kubernetes（Azure Kubernetes Service�
 
 → [Envoyの解説](container-apps-envoy.md)
 
-■Log Analytics ワークスペース
+→ [Dapr vs Envoy](https://itnext.io/dapr-vs-envoy-when-to-use-what-6c2ac3caaed2)
 
-コンテナー アプリから収集されたデータ、標準出力 (stdout) または標準エラー (stderr)への出力は、Log Analytics ワークスペースへと書き込まれる。
+Azure Container Appsでは[「Dapr」を有効化することで、コンテナーでDaprの「ビルディングブロック」を利用できる。](https://docs.microsoft.com/ja-jp/azure/container-apps/dapr-overview)
+
+Azure Container Appsでは、[KEDAでサポートされているすべてのイベントがサポートされており、例えばService Busのキューのメッセージに比例したスケーリングが実行できる。](https://docs.microsoft.com/ja-jp/azure/container-apps/scale-app#event-driven)
+
+Azure Container Appsでは、[Envoy は エッジ HTTP プロキシとして使用されている。](https://docs.microsoft.com/ja-jp/azure/container-apps/networking#http-edge-proxy-behavior)
+
+■Log Analytics ワークスペース
 
 https://docs.microsoft.com/ja-jp/azure/container-apps/monitor
 
+コンテナー アプリから収集されたデータ、標準出力 (stdout) または標準エラー (stderr)への出力は、Log Analytics ワークスペースへと書き込まれる。
 
 # 用途
 
@@ -69,6 +78,8 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/monitor
 
 # リソースの構成
 
+「Container Apps 環境」の中で「コンテナー アプリ」を動かすことができる。
+
 ```
 Container Apps 環境 -> Log Analyticsワークスペース
 └コンテナー アプリ
@@ -76,25 +87,51 @@ Container Apps 環境 -> Log Analyticsワークスペース
 
 ※Azure portalでは「コンテナー アプリ」を作成すると一緒に「Container Apps 環境」「Log Analyticsワークスペース」が作成される。
 
+※App Serviceのプランとアプリの関係に似ているが、「Container Apps 環境」に対しての料金は発生しない。「サーバーレス」のサービスらしく、料金は「アプリで使われたvCPU＊時間」＋「アプリで使われたメモリ＊時間」＋「アプリで受け付けたリクエスト数」に応じて発生（後述）。
+
 1つの「Container Apps 環境」で複数の「コンテナー アプリ」を動かすことができる。
+
+[同じ環境内のコンテナーはDaprを使用して相互に通信できる。](https://docs.microsoft.com/ja-jp/azure/container-apps/environment)
 
 ```
 Container Apps 環境 -> Log Analyticsワークスペース
 ├コンテナー アプリ1
 └コンテナー アプリ2
 ```
+# コンテナー アプリ
+
+https://docs.microsoft.com/ja-jp/azure/container-apps/containers#multiple-containers
+
+1つのコンテナーアプリの中で、1つ～複数のコンテナーを運用できる。
+
+アプリ内のハード ディスクとネットワーク リソースを共有し、同じアプリケーション ライフサイクルを共有する。
+
+アプリ内のコンテナーは通信が可能。
+
+```
+Container Apps 環境
+└コンテナーアプリ
+  └リビジョン
+    └レプリカ
+      ├コンテナー1（メイン）
+      └コンテナー2（サイドカー）
+```
+
+※リビジョン、レプリカについては後述。
 
 # Container Apps 環境
 
 https://docs.microsoft.com/ja-jp/azure/container-apps/environment
 
+「Container Apps 環境」は、システム（環境内の1つ～複数のコンテナー アプリ）を囲む「安全な境界」である。要するに、環境＝仮想ネットワーク（VNet）である。
+
 同じ環境内のコンテナー アプリは、同じ仮想ネットワークにデプロイされ、同じ Log Analytics ワークスペースにログを書き込む。
 
-# HTTPSイングレス
+# イングレス
 
 https://docs.microsoft.com/ja-jp/azure/container-apps/ingress
 
-イングレスを有効にすることで、コンテナー アプリにHTTPSでアクセスできる。アプリケーションには完全修飾ドメイン名 (FQDN) が割り当てられる。
+「イングレス」を有効にすることで、コンテナー アプリにHTTPSでアクセスできる。アプリケーションには完全修飾ドメイン名 (FQDN) が割り当てられる。
 
 ※https://my-container-apps.ambitioussky-73f3e33c.japaneast.azurecontainerapps.io」のような形式になる。
 
@@ -138,9 +175,20 @@ Container Apps 環境
 
 https://docs.microsoft.com/ja-jp/azure/container-apps/environment#billing
 
-課金は、個々のコンテナー アプリとそのリソース使用量にのみ関連する。
+課金は、個々のコンテナー アプリとそのリソース使用量にのみ関連する。Container Apps 環境に関連付けられている基本料金はない。
 
-Container Apps 環境に関連付けられている基本料金はない。
+- 1 秒あたりのリソース割り当て
+  - vCPU (秒)
+    - アクティブ使用料金 1 秒あたり ¥0.0030510
+    - アイドル使用料金 1 秒あたり ¥0.0003814
+  - メモリ (GiB 秒)
+    - アクティブ使用料金 1 秒あたり 1 秒あたり ¥0.0003814
+    - アイドル使用料金 1 秒あたり ¥0.0003814
+- リクエスト
+  - 100 万あたり ¥50.850
+- 毎月最初の 180,000 vCPU 秒、360,000 GiB 秒、200 万件のリクエストは無料
+
+※
 
 # リビジョン
 
@@ -174,6 +222,8 @@ Container Apps 環境
 
 リビジョンは一度作られると変更できない。
 
+最大 100 個のリビジョンを保持できる。
+
 リビジョンには「サフィックス」（接尾辞）を付けて区別できる。
 
 ```
@@ -184,6 +234,10 @@ Container Apps 環境
 ```
 
 各リビジョンは「example--ver1」「example--ver2」といった「リビジョン名」となる。リビジョン名は「コンテナーアプリ名--サフィックス」となる。
+
+リビジョンは、「アクティブ」「非アクティブ」のいずれかに設定できる（[アプリケーションライフサイクル管理](https://docs.microsoft.com/ja-jp/azure/container-apps/application-lifecycle-management)）。
+
+非アクティブ化すると、リビジョンの実行中のすべてのレプリカが停止する。非アクティブなリビジョンには課金されない。
 
 # IDプロバイダーによる認証
 
@@ -209,3 +263,21 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/custom-domains-certificate
 
 オプションで、アプリにカスタムドメインを割り当て可能。
 
+# Azure Container Apps vs Azureのコンテナー系サービス
+
+https://docs.microsoft.com/ja-jp/azure/container-apps/compare-options
+
+- マイクロサービスの運用 → Azure Container Apps
+- Webアプリの運用 → App Service
+- 単純なタスクの実行 → ACI
+- Kubernetesを使いたい → AKS
+- イベントドリブンな処理がしたい → Azure Functions
+- Java＋Spring Framework → Azure Spring Cloud
+
+# 参考
+
+Hack Azure! #8 - Azure Container Apps の使いドコロを探る！
+https://www.youtube.com/watch?v=oKUX3Px1FOU
+
+Microsoft、フルマネージドサーバレスコンテナ「Azure Container Apps」を一般提供
+https://codezine.jp/article/detail/15991
