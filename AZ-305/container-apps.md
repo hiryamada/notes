@@ -292,7 +292,7 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/compare-options
 - 単純なタスクの実行（Kubernetes不要、プロビジョニング不要） → ACI
 - Webアプリの運用（非コンテナーにも対応） → App Service
 - イベントドリブンな処理がしたい（非コンテナーにも対応） → Azure Functions
-- Java＋Spring Framework → Azure Spring Cloud
+- Java＋[Spring Boot](https://spring.io/projects/spring-boot) → [Azure Spring Apps](https://docs.microsoft.com/ja-jp/azure/spring-cloud/overview)(旧 Azure Spring Cloud)
 
 # 参考
 

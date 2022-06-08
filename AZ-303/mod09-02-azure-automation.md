@@ -12,7 +12,6 @@ Azure 環境と非 Azure 環境を一貫性をもって管理するクラウド�
 - Azure Automation State Configuration （後述）
 - Update Management
   - Windows と Linux 仮想マシンに対するOSの更新プログラムを管理
-  - 
 - 仮想マシン (VM) の起動と停止
 - GitHub、Azure DevOps Git、Team Foundation バージョン管理 (TFVC) リポジトリとの統合
 - アマゾン ウェブ サービス (AWS) のリソースの自動化

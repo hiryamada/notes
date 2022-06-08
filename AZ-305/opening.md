@@ -24,9 +24,9 @@ https://aka.ms/courseAZ-305
   - 04 RDBデータストレージソリューション
   - 05 データ統合
 - Day3 Design app architecture, access, and monitoring solutions
-  - 06 アプリケーション アーキテクチャ設計
-  - 07 認証・認可
-  - 08 監視ソリューション
+  - [06 アプリケーション アーキテクチャ設計](m06.md)
+  - [07 認証・認可](m07.md)
+  - [08 監視ソリューション](m08.md)
 - Day4 Design network, continuity, and migration solutions
   - 09 ネットワークソリューション
   - 10 バックアップ・DR
