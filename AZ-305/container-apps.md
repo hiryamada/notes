@@ -287,11 +287,11 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/custom-domains-certificate
 
 https://docs.microsoft.com/ja-jp/azure/container-apps/compare-options
 
-- マイクロサービスの運用 → Azure Container Apps
-- Webアプリの運用 → App Service
-- 単純なタスクの実行 → ACI
-- Kubernetesを使いたい → AKS
-- イベントドリブンな処理がしたい → Azure Functions
+- マイクロサービスの運用（Kubernetes不要） → Azure Container Apps
+- マイクロサービスの運用（Kubernetesを使いたい） → AKS
+- 単純なタスクの実行（Kubernetes不要、プロビジョニング不要） → ACI
+- Webアプリの運用（非コンテナーにも対応） → App Service
+- イベントドリブンな処理がしたい（非コンテナーにも対応） → Azure Functions
 - Java＋Spring Framework → Azure Spring Cloud
 
 # 参考
