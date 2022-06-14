@@ -6,7 +6,8 @@
     - [ストレージアカウントの概要](../AZ-303/mod06-01-storage-account.md)
     - [共有アクセス署名(SAS)](sas.md)
     - [アクセス ポリシー](blob-container-access-policy.md)
-    - [知識チェックとケーススタディ](day2-lp3-m1-check.md)
+    - [知識チェック](day2-lp3-m1-check.md)
+    - [ケーススタディ](casestudy1.md)
   - モジュール2: SQLとNoSQL
     - SQL
       - [Azure SQL Databaseの概要](../AZ-304/mod06-03-azure-sql.md)
