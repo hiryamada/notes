@@ -17,7 +17,8 @@
       - [Azure Logic Apps](../AZ-204/mod99-01-logicapp.md)
     - バッチ
       - [Azure Batch](azure-batch.md)
-    - [知識チェックとケーススタディ](day3-lp4-m1-check.md)
+    - [知識チェック](day3-lp4-m1-check.md)
+    - [ケーススタディ](casestudy2.md)
   - モジュール2: アプリケーション アーキテクチャ
     - [メッセージング](messaging.md)
       - Azure Queue Storage
