@@ -10,6 +10,7 @@
     - コンテナー型仮想化
       - [Azure Container Instances](../AZ-303/mod13-01-aci.md)
       - [Azure Kubernetes Service](../AZ-400/mod16.md)
+      - [Azure Container Apps](container-apps.md)
     - Function as a Service
       - [Azure Function](../AZ-303/mod14-02-functions.md)
     - ローコード/ノーコード/統合
