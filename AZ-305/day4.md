@@ -37,14 +37,22 @@
       - [ExpressRoute](../AZ-304/mod02-04-hybrid-network.md)
     - ネットワークアクセスの制御
       - [NSG と ASG](../AZ-303/mod05-05-nsg-asg.md)
-    - [Azure Firewall](../AZ-303/mod05-06-azure-firewall.md)
+      - [Azure Firewall](../AZ-303/mod05-06-azure-firewall.md)
+      - [Virtual WAN](../AZ-104/mod05-04-virtualwan.md)
+      - [Azure Bastion](../AZ-303/mod05-08-bastion.md)
+    - 負荷分散のサービス
+      - [Azure Load Balancer](../AZ-303/mod05-01-lb.md)
+      - [Application Gateway](../AZ-303/mod05-02-appgw.md)
+      - [Azure Traffic Manager](../AZ-303/mod05-03-traffic-manager.md)
+      - [Azure Front Door](../AZ-303/mod05-04-frontdoor.md)
+      - [各サービスの比較](https://docs.microsoft.com/ja-jp/azure/architecture/guide/technology-choices/load-balancing-overview)
+      - [まとめPDF](../AZ-500/pdf/mod2/負荷分散サービス.pdf)
     - [知識チェック](day3-lp4-m3-check.md)
   - モジュール4: 移行
     - [Azure Migrate](../AZ-303/mod12-01-migrate.md)
     - [知識チェック](day3-lp4-m4-check.md)
-
 - ラーニングパス5 WAF
-  - Microsoft Azure Well-Architected Framework
+  - [Microsoft Azure Well-Architected Framework](lp05.md)
 - ラーニングパス6 CAF
   - クラウド導入フレームワーク (Cloud Adoption Framework)
     - [CAFの概要](caf.md)
