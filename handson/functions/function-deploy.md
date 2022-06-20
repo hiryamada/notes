@@ -1,12 +1,8 @@
 # ハンズオン: Azure Functions 「関数アプリ」のデプロイ
 
-F1を押して「deploy func」と検索し、「Azure Functions: Deploy to Function App...」を選択。
+F1 を押し、コマンドパレットで「＋Create new Funciton App in Azure... Advanced」を選択
 
-![](images/ss-2022-04-04-01-56-59.png)
-
-「＋Create new Funciton App in Azure... Advanced」を選択
-
-![](images/ss-2022-04-04-16-25-38.png)
+![](images/ss-2022-06-20-16-53-20.png)
 
 - Enter a globally unique name...
   - func（乱数）
@@ -37,7 +33,7 @@ F1を押して「deploy func」と検索し、「Azure Functions: Deploy to Func
 
 ![](images/ss-2022-04-04-02-08-49.png)
 
-Azure拡張機能のFUNCTIONSで、サブスクリプション、関数アプリ、と展開していく。Functionsの下に「HttpTrigger1」がある。右クリックして「Execute Function Now...」
+RESOURCES以下でAzure Passサブスクリプション、Function Apps、と展開していく。「HttpTrigger1」がある。右クリックして「Execute Function Now...」
 
 ![](images/ss-2022-04-04-02-10-14.png)
 
