@@ -29,11 +29,16 @@ F1 を押し、コマンドパレットで「＋Create new Funciton App in Azure
 
 ![](images/ss-2022-04-04-02-07-43.png)
 
+
+RESOURCES以下でAzure Passサブスクリプション、Function App、作成した関数アプリ、Functionsと展開していく。`Deploy to Function App...`をクリック。
+
+![](images/ss-2022-06-20-17-01-08.png)
+
 画面右下に、以下のようなダイアログが出ればデプロイが成功。ダイアログはしばらくすると消える。
 
 ![](images/ss-2022-04-04-02-08-49.png)
 
-RESOURCES以下でAzure Passサブスクリプション、Function Apps、と展開していく。「HttpTrigger1」がある。右クリックして「Execute Function Now...」
+RESOURCES以下でAzure Passサブスクリプション、Function App、作成した関数アプリ、Functionsと展開していく。「HttpTrigger1」がある。右クリックして「Execute Function Now...」
 
 ![](images/ss-2022-04-04-02-10-14.png)
 
