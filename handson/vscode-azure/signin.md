@@ -46,6 +46,6 @@ Webブラウザで先程サインインしたアカウントが表示される�
 
 ![](../webapp/images/ss-2022-04-04-00-30-38.png)
 
-Visual Studio Code画面左側「Azure」拡張機能のボタンをクリックし、「APP SERVICE」等の区画内に、「Azure pass」といったサブスクリプション名が表示されていれば、サインインが正しく完了している。
+Visual Studio Code画面左側「Azure」拡張機能のボタンをクリックし、「RESOURCES」等の区画内に、「Azure pass」といったサブスクリプション名が表示されていれば、サインインが正しく完了している。
 
-![](../webapp/images/ss-2022-04-04-00-32-01.png)
+![](images/ss-2022-06-20-14-24-24.png)
