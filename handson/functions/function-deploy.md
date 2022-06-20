@@ -25,7 +25,7 @@ F1 を押し、コマンドパレットで「＋Create new Funciton App in Azure
 - Select an Application Insights resource for your app.
   - Skip for now
 
-関数のデプロイが進行する。しばらく待つ。
+関数アプリの作成が進行する。しばらく待つ。
 
 ![](images/ss-2022-04-04-02-07-43.png)
 
