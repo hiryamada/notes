@@ -2,7 +2,7 @@
 
 .NET (C#) を使用して、「ASP.NET Core」のWebアプリを作成する。
 
-「Visual Studio Code」を起動する。
+「Visual Studio Code」が起動している場合は、いったん終了させて、再度起動する。これにより、「Visual Studio Code」ターミナル内で「code」コマンドが利用できるようになる。
 
 ![](images/ss-2022-04-03-23-35-50.png)
 

@@ -2,9 +2,9 @@
 
 Azure拡張機能のアイコンをクリック。
 
-APP SERVICE内に表示されているAzureサブスクリプション（鍵のマークのアイコン）を右クリックし、「Create New Web App...(Advanced)」をクリック。
+RESOURCES内に表示されているAzureサブスクリプション（鍵のマークのアイコン）を展開し、App Servicesを右クリックし、「Create New Web App...(Advanced)」をクリック。
 
-![](images/ss-2022-04-04-00-39-37.png)
+![](images/ss-2022-06-20-14-36-10.png)
 
 「Enter a globally unique name...」→「app（8桁程度の乱数）」といった適当な名前を入力。乱数部分はキーボードをランダムに叩いて決める。
 

@@ -2,6 +2,7 @@
 
 - ラーニングパス1 App Service
   - [App Service](mod01.md)
+    - [App Service Environment / App ServiceのVNet統合](app-service-vnet.md)
   - [知識チェック（試験対策）](check.md)
   - [ハンズオン](../handson/az-204.md)
     - 準備、App Service
