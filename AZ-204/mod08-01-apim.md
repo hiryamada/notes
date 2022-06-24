@@ -77,7 +77,7 @@ Basic、Standard、Premiumで、スケーリングが可能。
 API Management「インスタンス」の作成にはかなり時間がかかる。
 
 - Consumption: 1分程度
-- Developer, Basic等: 40分程度
+- Developer, Basic等: 1時間程度
 
 
 ■バージョン
