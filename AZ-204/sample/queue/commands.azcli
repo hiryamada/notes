@@ -1,0 +1,35 @@
+# Web APIプロジェクトの作成
+dotnet new webapi
+
+# 必要なパッケージを追加
+dotnet add package Azure.Storage.Queues
+dotnet add package Azure.Identity
+dotnet add package Microsoft.Extensions.Azure
+
+# ランダムな名前を生成
+name=app$(date|md5sum|head -c6)
+
+# リソースグループを作成
+az group create -n $name
+
+# ストレージアカウントを作成
+az storage account create -n $name -g $name --sku Standard_LRS
+
+# キュー `queue1` を作成
+az storage queue create --account-name $name -n queue1
+
+# ロール「ストレージ キュー データ メッセージ送信者」を自分に割り当て
+az role assignment create \
+--scope $(az storage account show -n $name -g $name --query 'id' -o tsv) \
+--role 'Storage Queue Data Message Sender' \
+--assignee $(az account show --query 'user.name' -o tsv)
+
+# ロール「ストレージ キュー データのメッセージ プロセッサ」を自分に割り当て
+az role assignment create \
+--scope $(az storage account show -n $name -g $name --query 'id' -o tsv) \
+--role 'Storage Queue Data Message Processor' \
+--assignee $(az account show --query 'user.name' -o tsv)
+
+# キューのservice uriを表示（appsettings.jsonに記録する）
+echo https://$name.queue.core.windows.net/
+
