@@ -352,7 +352,7 @@ https://www.hrstorm.net/entry/2018/03/16/%E5%88%86%E6%9E%90%E3%82%92%E8%8B%B1%E8
 
 https://www.youtube.com/watch?v=dvP0JwchjfI
 
-■Bitnami
+■[Bitnami](https://bitnami.com/)
 
 ビッナーミー
 
@@ -360,7 +360,7 @@ https://www.youtube.com/watch?v=dvP0JwchjfI
 
 https://www.youtube.com/watch?v=SGQUBNO68U4
 
-■Heroku
+■[Heroku](https://jp.heroku.com/home)
 
 ヘロク
 
@@ -372,13 +372,35 @@ https://ja.wikipedia.org/wiki/Heroku
 
 https://www.youtube.com/watch?v=UqLTlCoAhJc
 
-■Dapr
+■[Dapr](https://dapr.io/)
 
-ダーパ
+ダパァ / ダーパー / ダーパ
+
+[Dapperのように発音](https://www.google.com/search?q=Dapper)
+
+https://twitter.com/daprdev/status/1184934948756570112?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1184934948756570112%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fkiliware.hateblo.jp%2Fentry%2F2019%2F10%2F22%2F210000
+
+https://kiliware.hateblo.jp/entry/2019/10/22/210000
 
 https://www.youtube.com/watch?v=mPVnu4W0xzQ
 
 ※ [DARPA(アメリカ国防高等研究計画局)](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%98%B2%E9%AB%98%E7%AD%89%E7%A0%94%E7%A9%B6%E8%A8%88%E7%94%BB%E5%B1%80)
+
+※[Dapper](https://github.com/DapperLib/Dapper) (ORマッパー)
+
+https://github.com/dapr/dapr/issues/2818
+
+https://github.com/dapr/dapr/issues/715
+
+■[KEDA](https://keda.sh/)
+
+ケイダー
+
+https://www.youtube.com/watch?v=TftaxqNFsZY
+
+■[Envoy](https://www.envoyproxy.io/)
+
+オンヴォイ
 
 ■MSAL
 
