@@ -156,6 +156,7 @@ https://docs.microsoft.com/ja-jp/azure/cosmos-db/consistency-levels#consistency-
   - 場所（リージョン）: 米国東部 (East US)
   - 容量モード: 「プロビジョニングされたスループット」
   - Freeレベル割引の適用：適用しない
+  - このアカウントでプロビジョニングできるスループットの総量を制限する: チェックしない
   - その他はすべてデフォルト値
   - レビュー+作成、作成
 - デプロイに5分ほどかかります
