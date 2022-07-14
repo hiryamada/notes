@@ -67,7 +67,7 @@ https://ja.wikipedia.org/wiki/Automated_Certificate_Management_Environment
 - 作成したストレージアカウントを表示
 - 画面左 アクセスキー
 - キーの表示
-- key1とkey2の「接続文字列」をコピーし、それぞれ、メモ帳などに記録しておく
+- key1の「接続文字列」をコピーし、メモ帳などに記録しておく
 - 「Key Vault」を検索（「キー コンテナー」をクリック）
 - ＋作成
 - リソースグループ、Key Vault名、地域（リージョン）を入力/選択
@@ -79,5 +79,3 @@ https://ja.wikipedia.org/wiki/Automated_Certificate_Management_Environment
   - 名前: StorageAccountConnectionString
   - 値: 前の手順でコピーした、key1の「接続文字列」を貼り付け
   - 作成
-
-
