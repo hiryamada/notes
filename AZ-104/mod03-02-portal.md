@@ -1,5 +1,7 @@
 # Azure Portal
 
+URL: http://portal.azure.com/
+
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/azure-portal/)
 
 Azureの管理画面です。Webブラウザーからアクセスできます。
