@@ -12,7 +12,7 @@
 - [知識チェック](lp1-check.md)
 - ラボ
   - 事前に「[ラボで使用するファイル](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/archive/refs/heads/main.zip)」(ZIP)をダウンロードして、適当な場所に展開してください。展開すると「AllFiles」というフォルダがあり、その中に、ラボに必要なファイルが含まれています。
-  - 手順書で「ラボ コンピューター」と書かれている場所は、ご自身
+  - 手順書で「ラボ コンピューター」と書かれている場合は「現在ご受講に使用しているコンピュータ」と読み替えてください。
   - [3a: Azure portal](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03a-Manage_Azure_Resources_by_Using_the_Azure_Portal.md)
   - [3b: ARMテンプレート](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03b-Manage_Azure_Resources_by_Using_ARM_Templates.md)
   - [3c: Azure PowerShell](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03c-Manage_Azure_Resources_by_Using_Azure_PowerShell.md)
