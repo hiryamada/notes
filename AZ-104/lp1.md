@@ -14,9 +14,13 @@
   - 事前に「[ラボで使用するファイル](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/archive/refs/heads/main.zip)」(ZIP)をダウンロードして、適当な場所に展開してください。展開すると「AllFiles」というフォルダがあり、その中に、ラボに必要なファイルが含まれています。
   - 手順書で「ラボ コンピューター」と書かれている場合は「現在ご受講に使用しているコンピュータ」と読み替えてください。
   - [3a: Azure portal](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03a-Manage_Azure_Resources_by_Using_the_Azure_Portal.md)
+    - 概要: Azure portalを使用して、VMで使用する「ディスク」を作成します。
   - [3b: ARMテンプレート](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03b-Manage_Azure_Resources_by_Using_ARM_Templates.md)
+    - 概要: 作成済みのディスクからARMテンプレートをエクスポートし（「ディスク＞テンプレートのエクスポート」からコピー）、「カスタム テンプレートのデプロイ」画面で、ARMテンプレートを使用して、同じリソースをデプロイします。
   - [3c: Azure PowerShell](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03c-Manage_Azure_Resources_by_Using_Azure_PowerShell.md)
+    - 概要: Cloud Shell内でAzure PowerShellを使用して、ディスクを作成します。リソースグループ「az104-03b-rg1」（リージョン: eastus）は予め作成しておきます。
   - [3d: Azure CLI](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_03d-Manage_Azure_Resources_by_Using_Azure_CLI.md)
+    - 概要: Cloud Shell内でAzure CLIを使用してディスクを作成します。
 
 # ラーニングパス 1: [AZ-104:Azure 管理者向けの前提条件](https://docs.microsoft.com/ja-jp/learn/paths/az-104-administrator-prerequisites/)
 ## モジュール 1: [ツールを使用して Azure リソースを構成する](https://docs.microsoft.com/ja-jp/learn/modules/configure-azure-resources-tools/)
