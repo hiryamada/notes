@@ -21,6 +21,8 @@ APIゲートウェイ: 認証、キャッシュ、変換、測定
 
 「APIゲートウェイ」は、バックエンドに代わり、認証、キャッシュ、変換、測定などの機能を提供する。バックエンドではこれらの機能を作り込む必要がなくなる。
 
+※測定: 使用量クォータ, レート制限
+
 (2)「開発者ポータル」を作成できる。
 
 https://docs.microsoft.com/ja-jp/azure/api-management/api-management-howto-developer-portal

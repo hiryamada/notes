@@ -2,26 +2,73 @@
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/azure-portal/)
 
+Azureの管理画面です。Webブラウザーからアクセスできます。
 
-# Cloud Shell
+## メニューを表示
+
+![](images/ss-2022-07-19-08-48-50.png)
+
+クリックするとメニューが表示されます。
+
+![](images/ss-2022-07-19-09-02-04.png)
+
+## トップページに戻る
+
+クリックするとAzure portalのトップページに戻ります。
+
+![](images/ss-2022-07-19-08-50-06.png)
+
+## 検索
+
+ここにテキストを入力して対応する機能やリソースを検索できます。例: 「virtual machines」「ストレージ アカウント」
+
+![](images/ss-2022-07-19-08-51-04.png)
+
+## Cloud Shellを開く
 
 [ドキュメント](https://docs.microsoft.com/ja-jp/azure/cloud-shell/overview)
 
-Azure portal以外のさまざまな場所から、Cloud Shellを使用することができます。
+Azure portalの中でCloud Shellが使用できます。Cloud Shellでは、コマンドを使用した操作が可能です。
 
-Azure portal内のCloud Shellでは、組み込みのエディタを使用できます。
+![](images/ss-2022-07-19-08-51-54.png)
 
-Bashで `pwsh` とタイプすると、PowerShellに切り替えられます。
+クリックするとCloud Shellが起動します。初回の起動では、「ストレージがマウントされていません」という表示が出ます。「ストレージの作成」をクリックしてください。
 
-PowerShell で `bash` とタイプすると、Bashに切り替えられます。
+![](images/ss-2022-07-19-08-54-39.png)
 
-# セッション
+しばらくすると「Bash」または「PowerShell」が起動します。
 
-Cloud Shellは、20分間操作を行なわないと、セッションが削除されてしまいます。
+```
+Azure portal
+└ Cloud Shell
+   ├ PowerShell
+   └ Bash
+```
 
-セッションが削除されてしまった場合は「Cloud shellの再起動」（電源ボタン）をクリックします。
+## BashからPowerShellへの切り替え
 
-# Cloud Shell 発展的な知識
+![](images/ss-2022-07-19-08-58-07.png)
+
+![](images/ss-2022-07-19-08-56-54.png)
+
+## PowerShellからBashへの切り替え
+
+![](images/ss-2022-07-19-08-59-15.png)
+
+
+![](images/ss-2022-07-19-08-57-41.png)
+
+## Cloud Shell用のリソースグループ
+
+Cloud Shellを起動すると、「cloud-shell-storage-southeastasia」というリソースグループが作成されます。Cloud Shellが内部的に使用するリソースが格納されます。これは削除しないでください。
+
+![](images/ss-2022-07-19-09-05-38.png)
+
+### セッション
+
+Cloud Shellは、20分間操作を行なわないと、切断されてしまい、操作ができなくなります。その場合は「Cloud shellの再起動」（電源ボタン）をクリックすると再接続できます。
+
+## Cloud Shell 発展的な知識
 
 [組み込まれているオープンソースツール](https://docs.microsoft.com/ja-jp/azure/cloud-shell/features#deep-integration-with-open-source-tooling)
 
@@ -36,7 +83,7 @@ Cloud Shellは、20分間操作を行なわないと、セッションが削除�
 [ローカルDockerでCloud Shellを実行する](https://github.com/Azure/CloudShell)
 
 
-# 参考
+## 参考
 
 [AzureのCloud Shell (Linux: 2017/5～)](https://www.publickey1.jp/blog/17/azurebashcloud_shellpowershellbuild_2017.html)
 
