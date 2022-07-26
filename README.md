@@ -874,6 +874,7 @@ Contoso Ltd.
 / [マイクロまいこ (結川愛寿加)](https://www.google.com/search?q=%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%81%BE%E3%81%84%E3%81%93)
 / Megan Bowen ([Twitter](https://twitter.com/meganbowenm365), [LinkedIn](https://www.linkedin.com/in/megan-bowen-b511a7192/))
 / [GitHubミュージックビデオ「Better Together」](https://www.youtube.com/watch?v=qv_UKAoCwN4) ([解説](https://tech.a-listers.jp/2013/10/29/github-publish-a-song/))
+/ [高階ことり](http://tkotori.github.io/)
 
 その他のAzure:
 [azure（単語）](https://ja.wiktionary.org/wiki/azure)
