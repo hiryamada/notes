@@ -56,3 +56,4 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 - Kubernetesサービス（クラスター cluster1 ）が作成できた
 
 ![bg right:60% 95%](images/20220726-210713.png)
+
