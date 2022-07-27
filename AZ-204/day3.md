@@ -7,6 +7,7 @@
   - [ACI](mod05-05-aci.md)
   - [ACR](mod05-04-acr.md)
   - [ハンズオン](../handson/az-204.md)
+- ご参考: [コンテナーサービスの比較](../AZ-204/pdf/mod05/コンテナー比較.pdf)
 - ご参考: Azure Kubernetes Service
   - [Azure DevOps + AKSの構築例](../AZ-400/pdf/Azure%20DevOps%20and%20AKS.pdf)
 - ラーニングパス 6: Microsoft ID Platform, Microsoft Graph
