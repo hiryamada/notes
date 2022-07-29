@@ -1,0 +1,75 @@
+name=app$(date|md5sum|head -c6)
+
+az group create -n $name
+
+# Event Gridトピックを作る
+
+az eventgrid topic create -n $name -g $name
+
+# ストレージアカウントを作る
+
+az storage account create -n $name -g $name
+
+# キューを作る
+
+az storage queue create --account-name $name -n $name
+
+# トピックのサブスクリプションとしてキューを接続
+
+az eventgrid event-subscription create -n $name \
+--source-resource-id $(az eventgrid topic show -n $name -g $name --query id -o tsv) \
+--endpoint-type storagequeue \
+--endpoint $(az storage account show -n $name -g $name --query id -o tsv)/queueservices/default/queues/$name
+
+# ACRを作る
+
+az acr create -n $name -g $name --sku Basic
+
+# UMI(ユーザー割り当てマネージドID)を作る
+
+az identity create -n $name -g $name
+
+# UMIにACRPullを割り当てる
+
+az role assignment create --role acrpull \
+--assignee $(az identity show -n $name -g $name --query clientId -o tsv) \
+--scope $(az acr show -n $name -g $name --query id -o tsv)
+
+# プロジェクトを作る
+
+dotnet new console
+dotnet add package Azure.Identity
+dotnet add package Azure.Messaging.EventGrid
+dotnet add package ConsoleAppFramework
+
+# コードを書く
+
+# SPにロールを割り当てる
+
+az role assignment create --role 'EventGrid Data Sender' \
+--assignee $AZDEVSP_OBJECT_ID \
+--scope $(az eventgrid topic show -n $name -g $name --query id -o tsv)
+
+# ローカルで実行する
+
+EVENTGRID_ENDPOINT=$(az eventgrid topic show -n $name -g $name --query endpoint -o tsv) dotnet run --subject aa --event-type bb --data-version '1.2' --data '{"a":1,"b":2}'
+
+# Dockerfileを追加
+
+## (Visual Studio Codeで生成)
+
+# ACRでビルドする
+
+az acr login -n $name
+
+az acr build --image $name:v1 -r $name .
+
+# ACIで実行する
+
+az container create --role 'EventGrid Data Sender' --scope $(az eventgrid topic show -n $name -g $name --query id -o tsv) \
+--assign-identity '[system]' $(az identity show -n $name -g $name --query id -o tsv) \
+--acr-identity $(az identity show -n $name -g $name --query id -o tsv) \
+--restart-policy Never --image $name.azurecr.io/$name:v1 -n $name -g $name \
+--environment-variables EVENTGRID_ENDPOINT="$(az eventgrid topic show -n $name -g $name --query endpoint -o tsv)" \
+--command-line 'dotnet temp3.dll --subject aa --event-type bb --data-version cc --data dd'
+

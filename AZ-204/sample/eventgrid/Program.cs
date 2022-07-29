@@ -3,9 +3,7 @@
 document: https://azuresdkdocs.blob.core.windows.net/$web/dotnet/Azure.Messaging.EventGrid/4.0.0-beta.4/index.html
 
 dotnet add package Azure.Messaging.EventGrid
-→error: 利用可能な安定バージョンがありません。利用可能な中では 4.0.0-beta.4 が最善です。--prerelease オプションを追加することをご検討ください
-
-dotnet add package Azure.Messaging.EventGrid --prerelease
+dotnet add package Azure.Identity
 
 */
 
