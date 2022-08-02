@@ -2,9 +2,12 @@
 
 - ラーニングパス2
   - モジュール1 高可用性向けの設計
+    - [可用性とSLA](availability.md)
     - [高可用性設計](../AZ-304/mod11-01-availability-zones.md)
     - [複数のリージョンの利用](../AZ-304/mod11-02-multi-regions.md)
     - [高可用性アプリケーションの設計](../AZ-304/mod11-03-ha-app.md)
+    - [Azure Front Door](../AZ-303/mod05-04-frontdoor.md)
+    - [Azure Traffic Manager](../AZ-303/mod05-03-traffic-manager.md)
     - [知識チェック](day2-lp2-m1-check.md)
   - モジュール2 バックアップとディザスターリカバリー
     - [Azure Backup](../AZ-303/mod12-02-backup.md)

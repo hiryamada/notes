@@ -6,7 +6,7 @@
 
 コース情報: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-305t00
 
-認定試験: https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-305  2021/11/16～受験可能
+認定試験: https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-305
 
 2021/10/7 [AZ-305のアナウンス(Microsoft Learn Blob)](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
 
@@ -15,14 +15,6 @@
 ■対応する資格
 
 [Microsoft Certified: Azure Solutions Architect Expert](https://docs.microsoft.com/ja-jp/learn/certifications/azure-solutions-architect/)
-
-認定条件: 以下のいずれか
-
-- Microsoft Certified: Azure Administrator Associate(AZ-104) + AZ-305
-- Exam AZ-303 (2022/3/31 廃止) と Exam AZ-304 (2022/3/31 廃止)
-- AZ-303 (2022/3/31 廃止) と Exam AZ-305
-
-[移行期間中の対応方法](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
 
 ■ラーニングパス
 
@@ -110,9 +102,11 @@ https://docs.microsoft.com/ja-jp/learn/paths/azure-data-fundamentals-explore-cor
 Microsoft セキュリティのベスト プラクティス ※旧称 「Azure セキュリティ コンパス」または 「Microsoft セキュリティ コンパス」
 https://docs.microsoft.com/ja-jp/security/compass/compass
 
+<!--
 ■参考: Student Materials
 
 https://aka.ms/AZ-305StudentMaterials
 
 AZ-305関連のMicrosoft Learnコレクション。
 
+-->
