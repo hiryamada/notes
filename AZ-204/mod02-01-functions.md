@@ -16,7 +16,7 @@ NuGet や NPM などのパッケージ マネージャーのサポートも含�
 
 [登場時のブログ](https://azure.microsoft.com/en-us/blog/introducing-azure-functions/)
 
-[Product teamのTwitterもあるよ！](https://twitter.com/AzureFunctions)
+[Product teamのTwitter](https://twitter.com/AzureFunctions)
 
 Microsoft Learn
 
