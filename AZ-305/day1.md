@@ -43,6 +43,7 @@
     - 監査担当者には、どんな権限（ロール）があればよいか？ そのロールはどのスコープで割り当てればよいか？
     - 仮想マシンのサイズを制限するにはどうすればよいか？
     - 仮想マシンが特定の命名規則に従っているようにするにはどうすればよいか？
+      - ご参考: [名前付けルールのイニシアチブ](https://github.com/matthiasguentert/azure-naming-convention-initiative)
 
 # ラーニングパス 1: [AZ-305: ID、ガバナンス、および監視ソリューションの設計](https://docs.microsoft.com/ja-jp/learn/paths/design-identity-governance-monitor-solutions/)
 ## モジュール 1: [ガバナンスの設計](https://docs.microsoft.com/ja-jp/learn/modules/design-governance/)

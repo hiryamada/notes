@@ -11,6 +11,7 @@
       - [Azure Container Instances](../AZ-303/mod13-01-aci.md)
       - [Azure Kubernetes Service](../AZ-400/mod16.md)
       - [Azure Container Apps](container-apps.md)
+      - [コンテナー系サービスの比較](../AZ-204/pdf/mod05/コンテナー比較.pdf)
     - Function as a Service
       - [Azure Function](../AZ-303/mod14-02-functions.md)
     - ローコード/ノーコード/統合
