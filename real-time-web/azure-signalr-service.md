@@ -71,9 +71,16 @@ https://docs.microsoft.com/ja-jp/aspnet/core/signalr/configuration?view=aspnetco
 
 https://docs.microsoft.com/ja-jp/azure/azure-signalr/concept-service-mode
 
-- 既定モード
+- 既定モード（portalから作成する場合のデフォルト）
+  - サービスへのサーバー接続を確立するアプリケーション サーバーがある場合に使用
+  - SignalR ライブラリの動作について既によく理解していて、セルフホステッドの SignalR から Azure SignalR Service の使用に移行したい場合は、既定モードを選択
 - サーバーレス モード
+  - サービスへのサーバー接続を確立するアプリケーション サーバーがない場合に使用
+  - 新しいアプリケーションを作成していて、ハブ サーバーとサーバーの接続を維持したくない場合
 - クラシック モード
+  - 既存のアプリケーションの下位互換性のために用意されているため、**新しいアプリケーションには使用しないでください**
+
+[`既定`、`サーバーレス`、`クラシック` の各サービス モードの意味は何ですか。 どのように選べばよいでしょうか?](https://docs.microsoft.com/ja-jp/azure/azure-signalr/signalr-resource-faq?WT.mc_id=Portal-fx#----------------------------------------------------------)
 
 
 ■ネゴシエート要求

@@ -1,0 +1,53 @@
+# Fluid Framework
+
+luid Framework は、共有状態を配布および同期するためのクライアント ライブラリのコレクション。複数のクライアントが、共有データ構造を同時に作成および操作できる。
+
+
+公式サイト https://fluidframework.com/
+
+GitHubリポジトリ https://github.com/microsoft/FluidFramework
+
+■歴史
+
+2019/5/6 Build 2019にてFluid Frameworkを発表 https://www.microsoft.com/en-us/microsoft-365/blog/2019/05/06/build-2019-people-centered-experiences-microsoft-365-productivity-cloud/
+
+
+■アーキテクチャ
+
+https://fluidframework.com/docs/concepts/architecture/
+
+
+distributed data structures (DDSes)
+
+■WebSocketを使用？
+
+→ Yes
+
+https://fluidframework.com/docs/faq/#how-is-data-synchronized
+
+内部でWebSocketを使用しているが、開発者はそれを意識する必要はない。（「WebSocket接続を提供する仕組み」ではない）
+
+> Fluid clients connect to the Fluid service using the WebSocket protocol. However, the Fluid runtime manages all of the connections so that Fluid client developers can focus on local experiences.
+
+■各言語用のクライアントは？
+
+→ ない
+
+→ 他のテクノロジと組み合わせることは可能
+
+https://fluidframework.com/docs/faq/#can-i-use-aspnet-aspnet-core-and-c
+
+> Fluid Framework は TypeScript で記述されています
+> 
+> Fluid を他のコーディング フレームワークに移植することは現実的ではありません。
+> 
+> これは、Blazor、Xamarin、MAUI、およびその他のモバイル フレームワークにも適用されます。
+
+■SignalRとの使い分けは？
+
+https://fluidframework.com/docs/faq/#whats-the-difference-between-fluid-framework-and-signalr
+
+> Where SignalR is a technology principally aimed at simplifying real-time communication between servers and clients, the Fluid Framework further abstracts that communication and, more significantly, focuses on distributing state between multiple clients. So, while you might use Fluid to solve some of the same problems you solve with SignalR today, the two are not interchangeable. Notably, the server component of a Fluid solution is lightweight and general-purpose while a SignalR solution designed to distribute state would require additional server development.
+
+> SignalR は、主にサーバーとクライアント間のリアルタイム通信を簡素化することを目的としたテクノロジですが、Fluid Framework はその通信をさらに抽象化し、複数のクライアント間で状態を分散することに重点を置いています。そのため、現在 SignalR で解決しているのと同じ問題のいくつかを Fluid を使用して解決することもできますが、この 2 つは互換性がありません。
+
