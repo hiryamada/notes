@@ -117,3 +117,6 @@ https://qiita.com/akiojin/items/ad8b61f63b129c40ed6d
 > SignalR.Client では HubConnection というクラスがありますが、このクラスが SignalR に接続する際にデフォルトでは最初に negotiate 関数にアクセスを行います。
 > negotiate 関数では SignalR に接続するための URL やアクセストークンなどの情報をクライアントに返す役割を持っている
 
+■参考
+
+[Microsoft Build 2019レポート 2日目〜「Azure SignalR Service の Service Mode の話」](https://tech-lab.sios.jp/archives/15427)

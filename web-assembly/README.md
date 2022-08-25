@@ -16,6 +16,6 @@
 
 - Xamarin (企業): 2011/5～
   - Xamarin.Forms: 2014/5/8～ (Xamarin 3)
-- [.NET MAUI](maui.md)
+- [.NET MAUI](../gui/maui.md)
   - .NET MAUIの発表: 2020/5
   - .NET MAUI アプリ / .NET MAUI Blazor アプリ

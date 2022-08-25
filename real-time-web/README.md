@@ -10,6 +10,8 @@
   - JavaScriptとXMLを使用した非同期通信
 - JSON: 2000～ ([wikipedia](https://en.wikipedia.org/wiki/JSON))
   - データフォーマット
+- Server-sent events(SSE) ([wikipedia](https://en.wikipedia.org/wiki/Server-sent_events))
+  - サーバープッシュ技術
 - [MessagePack](messagepack.md): 2008頃～
   - データフォーマット
 - [WebRTC](webrtc.md): 2010頃～
@@ -36,3 +38,7 @@
 
 [その他メモ](memo.md)
 
+■参考
+
+- [UnityのXRで使いたいリアルタイム技術・サービスの整理](https://zenn.dev/toutou/articles/fd52ceff690c1a)
+- [gRPCを使ったWebアプリケーション開発](https://zenn.dev/dictav/articles/grpc-web-app)
