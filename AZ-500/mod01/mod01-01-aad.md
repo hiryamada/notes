@@ -1,8 +1,11 @@
 # mod1-1 Azure AD (Azure Active Directory)
 
+
 ■Azure ADとは
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis
+
+まとめPDF: https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod01/mod01.pdf
 
 - ID の管理サービス
 - シングルサインオン機能を提供
