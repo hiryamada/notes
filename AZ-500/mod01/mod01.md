@@ -1,6 +1,10 @@
 # Azure ADと関連サービス
 
+解説:
+
 [モジュール1-1(Azure Active Directory)](mod01-01-aad.md)で解説。
+
+公式ドキュメントへのリンクとライセンス:
 
 クラウド(Azure):
 - [Azure Active Directory (Azure AD)](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis)
@@ -12,14 +16,22 @@
 
 # ハイブリッドID
 
+解説:
+
 [モジュール1-2(ハイブリッドID)](mod01-02-hybrid-id.md)で解説。
+
+公式ドキュメントへのリンクとライセンス:
 
 - [Azure AD Connect](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect): オンプレミスAD DSとAzure ADの同期。ライセンス: Free。500000個を超えるオブジェクト同期の場合はPremium (P1, P2)
 - [Azure AD Connect Health](https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#why-use-azure-ad-connect-health) - Azure AD Connect, AD DS, AD FSなどを監視。ライセンス: P1(最初のエージェントに1ライセンス、追加のエージェントごとに25ライセンス)
 
 # Azure ADに含まれる機能
 
-[モジュール1-3(Azure AD Identity Protection)](mod01-03-idp.md)、[モジュール1-4(Azure AD Privileged Identity Management)](mod01-04-pim.md)で解説。
+解説:
+
+[モジュール1-3(Azure AD Identity Protection)](mod01-03-idp.md)、[アクセスレビュー](../../AZ-303/mod10-02-access-review.md)、[モジュール1-4(Azure AD Privileged Identity Management)](mod01-04-pim.md)で解説。
+
+公式ドキュメントへのリンクとライセンス:
 
 [Azure AD Identity Protection](https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/overview-identity-protection): 不審なサインインなどを検出。ライセンス: P2が必要だが、Free, Microsoft 365 Apps, P1でもセキュリティレポート（限定的な情報）が利用可能。
 
