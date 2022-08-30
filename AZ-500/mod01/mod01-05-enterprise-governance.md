@@ -159,6 +159,8 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
 - [コスト管理](https://docs.microsoft.com/ja-jp/azure/cost-management-billing/cost-management-billing-overview)
 - テナントにサブスクリプションを追加することができる
 
+[→ コスト管理の解説](../../AZ-304/mod12-01-cost-management.md)
+
 # ラボ01～03
 
 - 60min
