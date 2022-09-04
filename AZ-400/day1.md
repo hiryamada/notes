@@ -12,10 +12,12 @@
 
 ※DevOps**変換**: DevOps **transformation**, DevOpsを採用していない組織がDevOpsを使用するようになること. 参考: [DX(デジタル トランスフォーメーション)](https://www.google.com/search?q=dx)
 
-※DevOps変換の**過程**: DevOps transformation **process**, DevOps transformationの導入には、組織における多数の変革が必要（ある程度の時間がかかる）
+※DevOps変換の**過程**: DevOps transformation **journey**, DevOps transformationの導入には、組織における多数の変革が必要（ある程度の時間がかかり、困難も伴う。）
 - 人の変革: Dev(開発チーム)とOps(運用チーム)が協力する
 - プロセスの変革: ウォーターフォールからアジャイルへ移行する
 - ツールの変革: さまざまなDevOps製品を活用する
+
+※journey（ジャーニー）: 長旅。[TripやTravelと比べ、Journeyは少し「長旅」のイメージ。](https://www.r-pics.com/success/column/_62dx.html)
 
 ## [モジュール1: DevOps の概要](https://docs.microsoft.com/ja-jp/learn/modules/introduction-to-devops/)
 
@@ -54,7 +56,7 @@
     - アジャイル開発に向く場合がある
   - ※[他に「Systems of Insight」などもある](https://www.cyzen.cloud/magazine/soe_sor)
   - ※「Systems of History」という言葉はない
-- ★ユーザーの種類
+- ★継続的デリバリーにおける一般的なユーザーのカテゴリー
   - ★カナリア
   - ★早期導入者（アーリーアダプター）
   - ★（一般）ユーザー
