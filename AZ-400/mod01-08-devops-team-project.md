@@ -79,6 +79,8 @@ DevOpsの成果物（新機能）を、どのグループの利用者にリリ�
 
 参考：[カナリアリリース](https://www.google.com/search?q=%E3%82%AB%E3%83%8A%E3%83%AA%E3%82%A2%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9)：新機能を一部のユーザーにリリースし、問題がないことを確認しながら段階的に全体に向けてリリースしていく。上記の「カナリア」とは、カナリアリリースのターゲットとなるユーザー。生理学者の John Scott Haldane 氏が、一酸化炭素をすばやく検出するためにカナリア（鳥）を炭鉱に連れて行ったことに由来。カナリアは一酸化炭素に弱く、カナリアを観察することで一酸化炭素の危険を素早く発見できたという。[参考](https://cloud.google.com/blog/ja/products/gcp/how-release-canaries-can-save-your-bacon-cre-life-lessons)
 
+参考: [カナリアのエアモニター（物理）](https://www.gizmodo.jp/2022/05/sensor-with-canary-to-inform-air-pollution.html)
+
 参考：[Azure App Configurationの「機能フラグ」](https://docs.microsoft.com/ja-jp/azure/azure-app-configuration/concept-feature-management)を利用すると、**リリースしたソフトウェアにおいて**、特定のユーザーやグループに対して、特定の機能を有効化することができる。
 
 リリースの粒度: 新機能をどの程度の粒度でリリースするか。
