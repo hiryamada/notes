@@ -8,9 +8,11 @@ https://www.kagoya.jp/howto/it-glossary/develop/cicd/
 - CI: Continuous Integration
   - ビルド、テスト
 - CD: Continuous Delivery
-  - ビルド、テスト、開発環境へのデプロイ
+  - ビルド、テスト、開発環境・本番環境へのデプロイ
+  - ※本番環境での新機能等のリリースは手動で実施
 - CD: Continuous Deploy
-  - ビルド、テスト、開発環境へのデプロイ、本番環境へのデプロイ
+  - ビルド、テスト、開発環境・本番環境へのデプロイ、顧客へのリリース
+  - ※本番環境での新機能等のリリースも自動
 
 パイプラインのイメージ:
 https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipelines-concepts
@@ -56,7 +58,8 @@ https://docs.microsoft.com/ja-jp/azure/devops/pipelines/get-started/key-pipeline
     - ジョブを実行するコンピューターのこと
     - エージェントが1つしかない場合は、複数のジョブはそのエージェントで順に実行される
     - エージェント増やせば増やすほど大量のジョブを並列で実行できるが、追加料金がかかる
-    - Windows/Linux
+    - Windows環境、Linux環境など
+      - [AppVayor](https://qiita.com/y_shinoda/items/9dda5a203b0ad52a93db): ビルドにWindows環境が使用できるCI/CDサービス
     - （普通の）エージェント
       - クラウドプロバイダ等が用意・提供する標準的なコンピューター / ソフトウェア環境
     - セルフホステッドエージェント
