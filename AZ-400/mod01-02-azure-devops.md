@@ -18,6 +18,8 @@ Azure DevOpsの画面 (dev.azure.com)
 ※ユーザー：Azure ADユーザー, Microsoftアカウント, GitHubアカウント
 ```
 
+※Azure Reposの読み方: [アジュール リーポーズ](https://www.youtube.com/watch?v=-5QzZzkBpF8)
+
 ## ユーザーの追加(招待)
 
 Azure DevOpsでは、以下の種類のユーザーを追加(招待)することができる。
@@ -41,6 +43,8 @@ Azure Active Directory (Azure AD)を使用してユーザーを認証し、組�
 - [Azure DevOpsにおけるユーザーの管理](https://docs.microsoft.com/ja-jp/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=preview-page)
 
 ## Azure DevOps が利用できる地域
+
+https://docs.microsoft.com/ja-jp/azure/devops/organizations/security/data-location?view=azure-devops
 
 「組織」を作成するときに、そのデータを保存する「地域」を指定する。
 

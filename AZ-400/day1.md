@@ -117,6 +117,7 @@
   - お手元のブラウザから [Azure portal](https://portal.azure.com/) にアクセスします
   - トレーニング開始時に作成したMicrosoftアカウントでサインインします
   - 手順書: [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
+  - [追加設定](ado-org-settings.md)
 - GitHub
   - GitHubアカウントを作成しましょう
   - 手順書: [GitHubアカウントの作成](github-account.md)
