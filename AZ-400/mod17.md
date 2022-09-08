@@ -22,7 +22,8 @@
 
 ### Application Insights
 
-[PDF: Application Insightsまとめ](../az-204/pdf/mod12/Application%20Insightsの主な機能.pdf)
+[PDF: Application Insightsまとめ](../AZ-204/pdf/mod12/Application%20Insightsの主な機能.pdf)
+
 
 ## モバイル アプリケーション クラッシュ レポート データのルーティングを実装する
 
