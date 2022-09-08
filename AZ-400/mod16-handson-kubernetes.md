@@ -90,7 +90,7 @@
     --node-count 1 \
     --enable-addons monitoring \
     --generate-ssh-keys \
-    node-vm-size Standard_D2as_v4
+    --node-vm-size Standard_D2as_v4
   ```
 
 ■Azure Pipelinesの準備
