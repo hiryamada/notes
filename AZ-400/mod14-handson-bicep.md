@@ -8,7 +8,8 @@ Bicep は、宣言型の構文を使用して Azure リソースをデプロイ�
 
 JSONよりも簡潔な構文を使用して、リソースを宣言することができる。
 
-Bicepテンプレートの例
+Bicepテンプレートの例 (sample.bicep)
+
 ```
 param location string = resourceGroup().location
 param namePrefix string = 'storage'

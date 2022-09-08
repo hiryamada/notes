@@ -1,7 +1,6 @@
 # ラーニングパスとモジュールの概要
 
 - 3日目
-  - ラーニングパス1 補足 Azure Boards
   - ラーニングパス5: CD その2
     - モジュール1～4: Azure Pipelines リリースパイプライン
     - モジュール5: セキュリティ
@@ -20,8 +19,6 @@
 
 # 講義とハンズオン
 
-- 講義: [Azure Boards](mod01-09-azure-board.md)
-- ハンズオン: [Azure Boards](mod01-14-handson-board.md)
 - 講義: [セキュリティの設計](mod07-01-security.md)
 - 講義: [設定値や機密情報の扱い方](mod07-02-configuration.md)
 - 講義: [インフラストラクチャと構成の管理(IaC)](mod13.md)

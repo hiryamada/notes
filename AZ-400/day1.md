@@ -5,6 +5,8 @@
     - モジュール1～4: DevOps
     - ハンズオン: Azure DevOps Services 組織の作成
     - ハンズオン: GitHubアカウントの作成
+    - 講義: [Azure Boards](mod01-09-azure-board.md)
+    - ハンズオン: [Azure Boards](mod01-14-handson-board.md)
     - モジュール5～7: ソース管理 / バージョン管理
   - ラーニングパス2: Git
 

@@ -81,7 +81,7 @@
 - 以下のコマンドを投入。※12341234（2箇所）は、適当な乱数に置き換える
   ```
   az acr create \
-    --name myContainerRegistry12341234 \
+    --name mycontainerregistry12341234 \
     --resource-group hello_rg \
     --sku Basic
   az aks create \
@@ -89,7 +89,8 @@
     --name myapp12341234 \
     --node-count 1 \
     --enable-addons monitoring \
-    --generate-ssh-keys
+    --generate-ssh-keys \
+    node-vm-size Standard_D2as_v4
   ```
 
 ■Azure Pipelinesの準備

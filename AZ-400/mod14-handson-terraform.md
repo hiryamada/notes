@@ -20,3 +20,7 @@ resource "azurerm_resource_group" "test" {
 - `terraform apply -auto-approve`
 - コマンドの実行が完了してから、Azure portal側の一覧に反映されるまで、1分ほどかかる。
 - Azure portalの「リソースグループ」画面で、リソースグループが作成されたことを確認
+
+実行結果例:
+
+![](images/ss-2022-09-07-15-32-13.png)
