@@ -1,4 +1,4 @@
-# mod1-1 Azure AD (Azure Active Directory)
+# Azure AD (Azure Active Directory)の基礎
 
 ■Azure ADとは
 
