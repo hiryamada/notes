@@ -2,24 +2,7 @@
 
 ■Azure ADとは
 
-https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis
-
-クラウドベースの、「IDおよびアクセス管理」(identity and access management, IAM)サービス
-
-[★まとめPDF「Azure AD」](../../AzureAD/Azure%20AD入門.pdf)
-
-■参考: Azure ADのデプロイガイド
-
-https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2
-
-Azure ADの多数の機能について、かんたんな説明とリンクが記述されている。
-
-大規模な組織では、30日、60日、90日といった期間をかけてセットアップを進めていく。
-
-■参考: Azure ADと、オンプレミスのAD DSの違い
-
-https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad
-
+- [Azure ADの基礎](../../AzureAD/azure-ad.md)
 
 ■ライセンス
 
@@ -44,6 +27,17 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dire
 ■パスワードまわり
 
 - PDF資料: [セルフサービスパスワードリセット](../../AzureAD/セルフサービス%20パスワード%20リセット.pdf)
+
+■セキュリティの既定値（群）、MFA
+
+プライマリ認証（通常、ユーザー名/パスワード）＋追加の認証（MFA）
+
+- [セキュリティの既定値（群）](../../AzureAD/security-defaults.md)
+- [Azure ADにおけるMFA](../../AzureAD/mfa.md)
+
+■パスワードレス認証
+
+※プライマリ認証（通常、ユーザー名/パスワード）のパスワードそのものを廃止するしくみ
+
 - [パスワードレス認証](../../AzureAD/passwordless.md)
 - [一時アクセスパス(TAP)](../../AzureAD/tap.md)
-

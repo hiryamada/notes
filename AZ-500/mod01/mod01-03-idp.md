@@ -1,35 +1,5 @@
 # mod1-3-2 Azure AD MFA (Multi-Factor Authentication)
 
-https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-mfa-howitworks
-
-
-■MFA(Multi-Factor Authentication)とは？
-- 2 つ目の認証を要求するしくみ
-
-■Azure ADでMFAを有効化する方法
-
-- (a)「セキュリティの既定値群」を有効化
-  - 無料でセキュリティを向上させる仕組み
-  - 新しく作られたテナントではデフォルトで有効になっている
-  - Microsoft Authenticatorを利用
-  - Azure AD＞プロパティ＞セキュリティの既定値群
-- (b)「条件付きアクセス」
-  - 例1
-    - 社内ネットワークアクセスの場合は追加の認証をスキップする
-    - インターネットからのアクセスの場合は、追加の認証を要求する
-  - 例2
-    - 重要なアプリケーションへのアクセスの場合は、追加の認証を要求する
-    - 重要度が低いアプリケーションへのアクセスの場合は、追加の認証をスキップする
-  - 利用者にとって、より便利なしくみ
-  - 有料（ライセンスが必要）
-  - Microsoft Authenticatorのほか、電話、SMSなども利用できる
-- (c)Azure AD＞ユーザー＞MFA
-  - ユーザーごとにMFAを有効化する仕組み
-  - (a)も(b)を使わない場合に利用する。
-  - 古いやり方。
-
-Azure AD＞管理＞セキュリティ＞MFA＞追加のクラウドベースMFA設定
-
 # mod1-3-1 Azure AD Identity Protection
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/overview-identity-protection
