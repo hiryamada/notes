@@ -23,3 +23,5 @@ https://learn.microsoft.com/ja-jp/azure/active-directory/external-identities/wha
 
 ゲストユーザーについてのよくある質問:
 https://jpazureid.github.io/blog/azure-active-directory/b2bfaq/
+
+

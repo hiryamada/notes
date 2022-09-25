@@ -13,3 +13,4 @@
 - 「すべての製品」の「＋試用/購入」の下に、「Azure Active Directory Premium P2」が出てくればOK
 
 
+
