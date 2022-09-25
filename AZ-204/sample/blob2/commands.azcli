@@ -1,0 +1,8 @@
+dotnet new console
+dotnet add package Azure.Storage.Blobs
+dotnet add package Azure.Identity
+dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+
+dotnet user-secrets init
+dotnet user-secrets set endpoint '(Blobのエンドポイント)'
+
