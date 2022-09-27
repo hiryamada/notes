@@ -8,6 +8,18 @@
   - テナントで扱うオブジェクト数が500000を超える場合は、P1/P2を有効化したテナントが必要
   - パスワードライトバックはユーザーごとにP1が必要
 
+■アーキテクチャ
+
+```
+オンプレミスNW
+├Windows Server
+│ └AD DS機能を有効化, ユーザーIDを管理
+└Windows Server
+  └Azure AD Connect
+    ↓ 同期
+Azure AD
+```
+
 ■Azure AD Connect
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect
@@ -17,11 +29,17 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-c
 - 以前DirSync や Azure AD Syncと呼ばれていたツールの後継
 - Windowsアプリケーション
 - オンプレミスのWindows Server 2012,2012 R2, 2016, 2019 にインストールする
+  - [インストール要件の詳細](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites#installation-prerequisites)
+  - Windows Server 2022はまだサポートされていない
+  - GUI操作が必要なため、Windows Server Coreは不可
 - ドメインコントローラに同居させることもできる
 - 複数のAzure AD Connectをデプロイして、可用性を向上させることもできる
 
-ダウンロードはこちら:
+ダウンロード:
 https://www.microsoft.com/en-us/download/details.aspx?id=47594
+
+またはAzure portal＞Azure AD＞Azure AD Connectから:
+![](images/ss-2022-09-26-12-42-08.png)
 
 ■同期
 
@@ -55,16 +73,25 @@ Azure AD Connectのインストール中に、認証方式を選択する。
 - フェデレーション統合(Federation, fed)
   - オンプレミスの「AD FS」や「PingFederate」に、認証プロセスを引き継ぐ方式。
 
-■参考: フェデレーション
+![](images/ss-2022-09-26-12-45-12.png)
 
+■参考: フェデレーションとは？
+
+ID連携の仕組み。オンプレミスでAD DSと「AD FS」（またはPingFederate）を組み合わせて、クラウドアプリへのシングルサインオンを実現する仕組み。
+
+参考:
 https://www.atmarkit.co.jp/fwin2k/operation/adfs2sso03/adfs2sso03_01.html
+
+注意: この記事は2010/9のものであり、Azure ADの正式リリース（2013/4）以前の状況についての解説であることに注意。
+
+![](images/ss-2022-09-26-12-45-34.png)
 
 - オンプレミスに 以下をデプロイ
   - AD DS
-  - 「Active Directory Federation Service (AD FS) 」または 「PingFederate(ピンフェデレート）」
+  - 「Active Directory Federation Service (AD FS) 」
+  - または 「PingFederate(ピンフェデレート）」
 - AD DSを使用して、IDを管理
 - AD FSまたはPingFederateを使用して、クラウドアプリケーションへのシングルサインオンを実現
-
 
 ■参考: PingFederate(ピンフェデレート）
 
@@ -108,7 +135,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-pt
 - オンプレミスのインフラストラクチャに障害が発生した場合に、パスワード ハッシュ同期へフェイルオーバー（切り替え）することもできる
   - 自動でフェイルオーバーはしない。手動で切り替えが必要
 
-■認証方式3: フェデレーション (federation)
+■認証方式3: フェデレーション (federation with AD FS)
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-fed
 
@@ -122,11 +149,13 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-fed
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-sso
 
 - ユーザーが企業ネットワークに接続される会社のデバイスを使用するときに、自動的にサインインを行う仕組み。
-- ユーザーは、オンプレミスとクラウドベースの両方のアプリケーションに自動的にサインインすることができる。
-- Windows 10 + Microsoft Edge 等。さまざまなOS・ブラウザーの組み合わせをサポート
+- デバイスのサインインによる認証情報を使用してクラウドアプリとオンプレミスアプリにSSOできる
+- Windows 10 + Microsoft Edge 等、さまざまなOS・ブラウザーの組み合わせをサポート
 - パスワードハッシュ同期(PHS) または パススルー同期(PTA)と組み合わせて利用できる
 - フェデレーション統合には適用できないが、フェデレーション統合ではAD FSサーバーによるSSOを利用できる
 - Azure AD Connectインストール中に、「Enable Single Sign On」にチェックを入れて有効化する。
+
+![](images/ss-2022-09-26-12-53-58.png)
 
 SSO（sSSO）の利用パターン:
 
@@ -148,9 +177,20 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-c
 - 監視結果は、https://aka.ms/aadconnecthealth （Azure AD Connect Healthポータル）で確認できる
 
 
-# ラボ06  ディレクトリ同期の導入
+# ラボ06  ディレクトリ同期の導入（非常に時間がかかるため、オプション）
 
 - 60min
 - Azure Passサブスクリプションを使用します
 - 手順書: https://microsoftlearning.github.io/AZ-500JA-AzureSecurityTechnologies/
 - 補足資料: https://github.com/hiryamada/notes/blob/main/AZ-500/lab/lab06.md
+
+概要:
+
+```
+Azure VM（オンプレミスAD DSの代わり）
+├ユーザー
+└Azure AD Connect
+ ↓ ユーザー情報を同期
+Azure AD
+```
+

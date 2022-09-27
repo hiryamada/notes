@@ -2,6 +2,12 @@
 
 講義: [Azure Active Directoryの概要](mod01-01-aad.md)
 
+ハンズオン:
+
+- [ユーザーの追加](../../AzureAD/handson/adduser.md)
+- [ユーザーの最初のサインイン](../../AzureAD/handson/first-signin.md)
+- [MFAの設定](../../AzureAD/handson/mfa.md)
+
 # Azure ADのセキュリティ機能
 
 講義:
@@ -15,12 +21,12 @@
 - [Azure AD Privileged Identity Management](mod01-04-pim.md)
   - 時間/承認ベースで、特権アクセスのロールをJIT(ジャストインタイム)で割り当て
 
-ラボ:
+ハンズオン:
 
-- ラボ4a(演習1,2) MFA
-  - https://github.com/hiryamada/notes/blob/main/AZ-500/lab/lab04a-mfa.md
-- ラボ4b Identity Protection (演習3/4/5)
-  - https://github.com/hiryamada/notes/blob/main/AZ-500/lab/lab04b-idp.md
+- [条件付きアクセスの設定](../../AzureAD/handson/conditional-access.md)
+- [動的グループの作成](../../AzureAD/handson/group.md)
+- [Idenitty Protectionの設定](../../AzureAD/handson/identity-protection.md)
+- [Privileged Identity Managementの設定](../../AzureAD/handson/pim.md)
 
 公式ドキュメントへのリンクとライセンス:
 

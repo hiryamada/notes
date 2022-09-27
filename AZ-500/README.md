@@ -27,20 +27,24 @@ Microsoft Learnは以下のような構成となっています。
 ■コース日程
 
 - [day 1](mod01/mod01.md)
-  - Azure AD
+  - Azure ADの基礎
     - MFA
       - ラボ4a(演習1,2)
+  - Azure ADのセキュリティ機能
+    - MFA
+    - 条件付きアクセス
+    - アクセスレビュー
     - Identity Protection
-      - ラボ4b(演習3,4,5)
-    - Privileged Identiy Management
-      - ラボ5
-    - Azure AD Connect
-      - ラボ6
+      - ラボ4 MFA / 条件付きアクセス / Identity Protection
+    - Privileged Identiy Management (PIM)
+      - ラボ5 PIM
+    - ハイブリッドID (Azure AD Connect)
+      - ラボ6 Azure AD Connect
   - エンタープライズ ガバナンス
     - ロール
     - ポリシー
     - ロック
-      - ラボ1/2/3
+      - ラボ1/2/3 Azure RBAC / ポリシー / ロック
 - [day 2](mod02/mod02.md)
   - 境界セキュリティ(VNet,DDoS, Firewall)
     - ラボ8

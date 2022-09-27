@@ -12,7 +12,8 @@
 ■ユーザーとグループの管理
 
 - [ユーザーの管理](../../AzureAD/user.md)
-- [グループの管理](../../AzureAD/group.md)
+- [ユーザーの管理](../../AzureAD/group.md)
+- [ハンズオン: グループの管理](../../AzureAD/handson/group.md)
 
 ■ロールの管理
 
