@@ -2,7 +2,7 @@
 
 ■多層防御
 
-- [多層防御](../../network/ddos-protection.md)
+- [多層防御](../../network/defense-in-depth.md)
 - 参考: [ゼロトラスト戦略](../../SC/zero-trust.md)
 - 参考: [LAPS](../../network/laps.md)
 
