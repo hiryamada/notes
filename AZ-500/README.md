@@ -45,7 +45,7 @@ Microsoft Learnは以下のような構成となっています。
     - ポリシー
     - ロック
       - ラボ1/2/3 Azure RBAC / ポリシー / ロック
-- [day 2](mod02/mod02.md)
+- [day 2](mod02/mod02.md) プラットフォーム保護
   - 境界セキュリティ(VNet,DDoS, Firewall)
     - ラボ8
   - ネットワークセキュリティ(NSG, ASG, Endpoint, App GW, WAF, Front Door, UDR, ExpressRoute)
