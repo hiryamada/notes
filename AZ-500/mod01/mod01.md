@@ -5,7 +5,7 @@
 ハンズオン:
 
 - [ユーザーの追加](../../AzureAD/handson/adduser.md)
-- [ユーザーの最初のサインイン](../../AzureAD/handson/first-signin.md)
+- [ユーザーの最初のサインイン（パスワードの変更）](../../AzureAD/handson/first-signin.md)
 - [MFAの設定](../../AzureAD/handson/mfa.md)
 
 # Azure ADのセキュリティ機能
@@ -23,9 +23,8 @@
 
 ハンズオン:
 
-- [条件付きアクセスの設定](../../AzureAD/handson/conditional-access.md)
-- [動的グループの作成](../../AzureAD/handson/group.md)
 - [Idenitty Protectionの設定](../../AzureAD/handson/identity-protection.md)
+- [条件付きアクセスの設定](../../AzureAD/handson/conditional-access.md)
 - [Privileged Identity Managementの設定](../../AzureAD/handson/pim.md)
 
 公式ドキュメントへのリンクとライセンス:
