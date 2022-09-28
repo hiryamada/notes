@@ -8,6 +8,7 @@
 
 ■仮想ネットワーク(VNet)の基礎
 
+- [PDF: ハブ&スポーク トポロジー](../../network/ハブ・スポーク.pdf)
 - [仮想ネットワーク(VNet)](../../network/vnet.md)
 - [サブネット](../../network/subnet.md)
 - [ネットワークインターフェースカード(NIC)](../../network/nic.md)
@@ -48,6 +49,7 @@
 
 ■ロードバランサー（負荷分散）サービス
 
+- [PDF: 負荷分散サービスまとめ](../pdf/mod2/負荷分散サービス.pdf)
 - [Azure Application Gateway](../../network/appgw.md)
 - [Azure Front Door](../../network/front-door.md)
 - [Web アプリケーション ファイアウォール(Azure WAF)](waf.md)

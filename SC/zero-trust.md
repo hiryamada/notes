@@ -15,12 +15,7 @@ https://docs.microsoft.com/ja-jp/security/zero-trust/
 - セキュリティ侵害はあるものと想定して対策(Assume breach)
   - セグメント化により被害拡大を防ぐ
 
-■具体的には
-
-- 企業ネットワーク内からのアクセスであっても、信頼できると仮定しない
-- 
-
-■Just Enough Administration (JEA) 
+■Just Enough Administration (JEA)
 
 https://docs.microsoft.com/ja-jp/powershell/scripting/learn/remoting/jea/overview?view=powershell-7.1
 

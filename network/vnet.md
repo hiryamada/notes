@@ -2,7 +2,7 @@
 
 ■VNetとは？
 
-https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-overview
+https://learn.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-overview
 
 [まとめ資料](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod04/VNet%E3%81%AE%E5%9F%BA%E6%9C%AC.pdf)
 
