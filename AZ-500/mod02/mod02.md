@@ -18,6 +18,7 @@
 
 ■オンプレミス接続
 
+- [仮想ネットワークゲートウェイ](../../network/virtual-network-gateway.md)
 - [VPN](../../network/vpn.md)
 - [ExpressRoute](../../network/er.md)
 - [強制トンネリング](../../network/forced-tunneling.md)
@@ -52,22 +53,41 @@
 - [PDF: 負荷分散サービスまとめ](../pdf/mod2/負荷分散サービス.pdf)
 - [Azure Application Gateway](../../network/appgw.md)
 - [Azure Front Door](../../network/front-door.md)
-- [Web アプリケーション ファイアウォール(Azure WAF)](waf.md)
+- [Web アプリケーション ファイアウォール(Azure WAF)](../../AZ-303/mod05-07-waf.md)
 
 # ホスト セキュリティ
 
 講義: [ホスト セキュリティ](mod02-03.md)
 
-- エンドポイント保護
-- 特権アクセス デバイス戦略
-- 特権アクセス ワークステーション(PAW)
-- 仮想マシン テンプレート
-- リモート アクセス管理
-- 仮想マシンの更新
-- ディスクの暗号化
-- Windows Defender
-- Microsoft Defender for Cloud の推奨事項
-- Azure セキュリティ ベンチマークによる Azure ワークロードのセキュリティ保護
+■ホスト（エンドポイント）の保護
+
+- [エンドポイント保護](../../SC/endpoint-protection/endpoint-protection.md)
+
+■ホストへのアクセス
+
+- RDP (TCP 3389)
+- SSH (TCP 22)
+- [Azure Bastion](azure-bastion.md)
+
+■ホストの更新
+
+- [Azure Automation (Update Management)](../../AZ-303/mod09-02-azure-automation.md)
+
+■ホストのデータの保護
+
+- [ディスク暗号化(Azure Disk Encryption)](../../SC/encryption/azure-disk-encryption.md)
+
+■Windowsホストの保護機能
+
+- [Windows Defender](windows-defender.md)
+
+■クラウドのホストの保護と監視
+
+- [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md)
+
+■セキュリティベンチマーク
+
+- [Azureセキュリティベンチマーク](../../SC/azure-security-benchmark.md)
 
 # コンテナー セキュリティ
 

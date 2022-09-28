@@ -2,7 +2,13 @@
 
 一般的な悪用や脆弱性から Web アプリケーションを一元的に保護
 
-https://docs.microsoft.com/ja-jp/azure/web-application-firewall/overview
+製品ページ https://azure.microsoft.com/ja-jp/products/web-application-firewall/
+
+ドキュメント https://learn.microsoft.com/ja-jp/azure/web-application-firewall/overview
+
+価格 https://azure.microsoft.com/ja-jp/pricing/details/web-application-firewall/
+
+価格は利用するサービスの種類とデータを処理する量などによって変動。
 
 
 ■WAFと統合されたサービス

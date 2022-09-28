@@ -4,6 +4,8 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-m
 
 ■多要素認証 MFA(Multi-Factor Authentication)とは？
 
+![](images/ss-2022-09-28-09-28-24.png)
+
 - サインインの際、（ユーザーID＋パスワードによる認証に加えて）追加の認証を要求するしくみ
 - 例
   - [スマホアプリ Microsoft Authenticator の通知をタップする](https://kiritsume.com/microsoft-authenticator/)
