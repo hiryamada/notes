@@ -8,6 +8,7 @@
 
 ■仮想ネットワーク(VNet)の基礎
 
+- [PDF: ネットワークセキュリティ関連サービス全体像](../pdf/mod2/ネットワークセキュリティ関連サービス.pdf)
 - [PDF: ハブ&スポーク トポロジー](../../network/ハブ・スポーク.pdf)
 - [仮想ネットワーク(VNet)](../../network/vnet.md)
 - [サブネット](../../network/subnet.md)
@@ -57,16 +58,14 @@
 
 # ホスト セキュリティ
 
-講義: [ホスト セキュリティ](mod02-03.md)
-
 ■ホスト（エンドポイント）の保護
 
 - [エンドポイント保護](../../SC/endpoint-protection/endpoint-protection.md)
 
-■ホストへのアクセス
+■ホストへの管理アクセス
 
-- RDP (TCP 3389)
-- SSH (TCP 22)
+- Windows: RDP (TCP 3389)
+- Linux: SSH (TCP 22)
 - [Azure Bastion](azure-bastion.md)
 
 ■ホストの更新
@@ -100,5 +99,5 @@
   - AKS アーキテクチャ
   - AKS ネットワーク
   - AKS のストレージ
-  - AKS と Active Directory
+  - AKS と Azure Active Directory
   - AKS と RBAC
