@@ -3,7 +3,7 @@
 ■Azure ADとは
 
 - [Azure ADの基礎](../../AzureAD/azure-ad.md)
-PDF資料 [Azure AD機能の全体像](../pdf/mod1/Azure%20AD機能.pdf)
+- PDF資料 [Azure AD機能の全体像](../pdf/mod1/Azure%20AD機能.pdf)
 
 ■ライセンス
 
