@@ -1,20 +1,23 @@
 # AZ-305: Designing Microsoft Azure Infrastructure Solutions
 
-4日間
+インフラソリューションの設計
 
-コース目標: ソリューションアーキテクトとして、多数のAzureテクノロジの中から、適切なテクノロジを「推奨」できること。適切なテクノロジを選択し、さまざまなソリューションを「設計」できること。（Recommend/Design a solution for compute / storage / network ...）
+- Azureソリューションアーキテクトを目指す方向けのコースです。
+- このコースでは、Azure ソリューション アーキテクトがインフラストラクチャ ソリューションを推奨・設計する方法を学びます。
+- 適切なテクノロジを選択し、さまざまなソリューションを「設計」できる
+- （Recommend/Design a solution for compute / storage / network ...）
 
-コース情報: https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-305t00
+日程: 4日間
 
-認定試験: https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-305
+コース情報: https://learn.microsoft.com/ja-jp/training/courses/az-305t00
 
+認定試験: https://learn.microsoft.com/ja-jp/certifications/exams/az-305
+
+<!--
 2021/10/7 [AZ-305のアナウンス(Microsoft Learn Blob)](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/reimagining-the-azure-solutions-architect-expert-certification/ba-p/2813695)
 
 2022/2/8 [AZ-305 正式化 (live) のお知らせ](https://techcommunity.microsoft.com/t5/microsoft-learn/now-live-exam-az-305-designing-microsoft-azure-infrastructure/m-p/3138200)
-
-■対応する資格
-
-[Microsoft Certified: Azure Solutions Architect Expert](https://docs.microsoft.com/ja-jp/learn/certifications/azure-solutions-architect/)
+-->
 
 ■ラーニングパス
 
@@ -30,13 +33,18 @@
   - [ラーニングパス 5: Microsoft Azure Well-Architected Framework を使用して優れたソリューションを構築する](lp05.md)
   - [ラーニングパス 6: Azure 向けの Microsoft クラウド導入フレームワークでクラウド導入を加速する](lp06.md)
 
+<!--
 # コース資料 (Microsoft Learn)
 
 https://aka.ms/CourseAZ-305
 
 ※日本語で表示されない場合は、URLの「docs.microsoft.com/XX-XX/」の部分を「docs.microsoft.com/ja-jp/」に書き換えてください。
 
-■参考: Azureアーキテクチャ センター
+-->
+
+# 参考資料
+
+■Azureアーキテクチャ センター
 
 確立されたパターンと手法を使用して Azure でソリューションを設計するためのドキュメント。ガイド、ベストプラクティス、基本原則、パターン集など。
 
@@ -66,7 +74,7 @@ https://docs.microsoft.com/ja-jp/azure/architecture/framework/
 クラウド設計パターン
 https://docs.microsoft.com/ja-jp/azure/architecture/patterns/
 
-■参考: クラウド導入フレームワーク(CAF)
+■クラウド導入フレームワーク
 
 Cloud Adoption Framework (CAF)
 
@@ -82,8 +90,7 @@ https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/overview
 - [セキュリティ](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/secure/)
 - [ツールとテンプレート](https://docs.microsoft.com/ja-jp/azure/cloud-adoption-framework/resources/tools-templates)
 
-
-■参考: 「基礎」(fundamentals)のドキュメント
+■「基礎」(fundamentals)のドキュメント
 
 Azureのセキュリティの基礎
 https://docs.microsoft.com/ja-jp/azure/security/fundamentals/
@@ -97,10 +104,17 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/
 Azureデータの基礎(Microsoft Learn)
 https://docs.microsoft.com/ja-jp/learn/paths/azure-data-fundamentals-explore-core-data-concepts/
 
-■参考: セキュリティのドキュメント
+■セキュリティのドキュメント
 
 Microsoft セキュリティのベスト プラクティス ※旧称 「Azure セキュリティ コンパス」または 「Microsoft セキュリティ コンパス」
 https://docs.microsoft.com/ja-jp/security/compass/compass
+
+■開発者向けのドキュメント
+
+Azure で開発するために必要な言語とツールを紹介。
+
+https://learn.microsoft.com/ja-jp/azure/developer/
+
 
 <!--
 ■参考: Student Materials

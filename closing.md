@@ -9,7 +9,7 @@ https://aka.ms/lxp-userguide
 - トレーニング初日にお作りいただいたAzure Passサブスクリプションは、残りの「クレジット」があれば、作成から最大30日間、ご利用いただけます。
 - トレーニングのハンズオンの復習や検証・学習などでぜひお役立てください。
 - 残りの「クレジット」については、以下のサイトから確認できます。
-- https://www.microsoftazuresponsorships.com 
+- https://www.microsoftazuresponsorships.com
 
 ■Azureサブスクリプションで作成したリソースについて
 
@@ -39,7 +39,6 @@ https://aka.ms/lxp-userguide
 - https://aka.ms/examdemo
 
 ■認定資格の更新について
-
 
 - 合格した認定試験には有効期限がありますが、毎年、無料で、認定資格を更新することができるようになりました。
 - 「更新アセスメント」に合格することで、有効期限が 1 年延長となります。

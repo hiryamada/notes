@@ -109,5 +109,6 @@
 講義ノート
 - [AZ-104](AZ-104/README.md)
 - [AZ-204](AZ-204/README.md)
+- [AZ-305](AZ-305/README.md)
 - [AZ-400](AZ-400/README.md)
 - [AZ-500](AZ-500/README.md)
