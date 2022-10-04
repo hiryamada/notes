@@ -28,6 +28,7 @@
   - メッセージをキューイングするサービス
   - 1メッセージは64KBまで
   - [負荷平準化](https://docs.microsoft.com/ja-jp/azure/architecture/patterns/queue-based-load-leveling)に利用される
+  - ※[負荷平準化の解説](../AZ-305/load-leveling.md)
 
 ■パフォーマンス レベル
 
