@@ -64,7 +64,7 @@
 ケーススタディ: 30分演習、30分発表
 
 - [認証および承認ソリューションを設計する](https://github.com/MicrosoftLearning/AZ-305-DesigningMicrosoftAzureInfrastructureSolutions.ja-jp/blob/main/Instructions/CaseStudy/07-Access.md)
-- [非リレーショナル・データ](casestudy1.md)
+- [非リレーショナル・データ](casestudy-nonrdb.md)
 - [コンピュート](casestudy2.md)
 - 4日間のまとめ・クロージング
 
