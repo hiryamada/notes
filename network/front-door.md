@@ -1,5 +1,7 @@
 # Azure Front Door
 
+[グローバルなウェブアプリケーションを高速に配信するためのセキュアでスケーラブルなエントリポイントを提供するサービス](https://ascii.jp/elem/000/004/017/4017782/)。待機時間/優先順位/重み付け/セッションアフィニティのルーティング方法を使用できる。L7で動作。
+
 https://docs.microsoft.com/ja-jp/azure/frontdoor/front-door-overview
 
 - レイヤー 7 (HTTP/HTTPS 層) で動作
