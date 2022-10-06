@@ -1,5 +1,7 @@
 # Azure CDN
 
+[PDFまとめ資料](https://github.com/hiryamada/notes/blob/main/AZ-204/pdf/mod13/Azure%20CDN%E3%81%BE%E3%81%A8%E3%82%81.pdf)
+
 Azure Content Delivery Network (CDN) を使用すれば、読み込み時間の短縮、帯域幅の節約、応答性の向上が可能です。
 
 CDN は、Web Apps、Media Services、Storage、Cloud Services など、各種 Azure サービスとシームレスに連携可能です。
