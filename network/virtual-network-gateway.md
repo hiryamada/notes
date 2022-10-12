@@ -16,9 +16,13 @@ https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpngateway
 
 ■仮想ネットワークゲートウェイのサブネット
 
-仮想ネットワークゲートウェイは、「GatewaySubnet」という名前のサブネットにデプロイする必要がある。プレフィックスは/27以上（/26, /25）が推奨される。最小は/29（推奨されない）。
+https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsub
 
-**ゲートウェイ サブネットにはネットワーク セキュリティ グループ (NSG) を関連付けない**。関連付けると正常な動作が妨げられる場合がある。https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings
+- 仮想ネットワークゲートウェイは、「GatewaySubnet」という名前のサブネットにデプロイする必要がある。
+- プレフィックスは/27以上（/27, /26, /25等）が推奨される。
+  - /27 の場合、ホストアドレス部は 32 - 27 = 5 ビット。2^5 = 32 IPアドレスが確保される。
+  - 最小は/29（推奨されない）。
+- **ゲートウェイ サブネットにはネットワーク セキュリティ グループ (NSG) を関連付けない**。関連付けると正常な動作が妨げられる場合がある。https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings
 
 VPNゲートウェイ:
 
