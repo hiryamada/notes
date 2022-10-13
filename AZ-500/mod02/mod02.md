@@ -70,7 +70,7 @@
 
 ■ホストの更新
 
-- [Azure Automation (Update Management)](../../AZ-303/mod09-02-azure-automation.md)
+- [Azure Automation](../../iac/azure-automation.md)
 
 ■ホストのデータの保護
 

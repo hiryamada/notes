@@ -1,6 +1,8 @@
 # Azure Automation
 
+→ [Azure Automation](../iac/azure-automation.md)
 
+<!--
 https://docs.microsoft.com/ja-jp/azure/automation/automation-intro
 
 Azure 環境と非 Azure 環境を一貫性をもって管理するクラウドベースのオートメーションと構成サービスを提供。
@@ -187,3 +189,5 @@ Azure Automation State Configuration では、Windows 機能 DSC サービスに
 - オンプレ等のマシン: 
   - Windows: PowerShell DSC [メタ構成](https://docs.microsoft.com/ja-jp/azure/automation/automation-dsc-onboarding#generate-dsc-metaconfigurations)を適用する。
   - Linux: PowerShell DSC for Linuxをインストール
+
+-->
