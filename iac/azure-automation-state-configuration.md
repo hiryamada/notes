@@ -95,3 +95,4 @@ Azure Automation State Configuration によって管理されるマシン。
 Azure Automation State Configuration では、Windows の「DSC サービス」に似た DSC プル サーバーが提供される。
 
 「ターゲット ノード」では、「プル サーバー」から「構成」を受信する。
+

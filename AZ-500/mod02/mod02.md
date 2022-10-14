@@ -86,7 +86,8 @@
 
 ■セキュリティベンチマーク
 
-- [Azureセキュリティベンチマーク](../../SC/azure-security-benchmark.md)
+- [Microsoftクラウドセキュリティベンチマーク](../../SC/microsoft-security-benchmark.md)
+  - 旧「Azure セキュリティベンチマーク」, 2022/10にリブランディング
 
 # コンテナー セキュリティ
 
