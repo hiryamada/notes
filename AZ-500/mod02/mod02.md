@@ -102,3 +102,8 @@
   - AKS のストレージ
   - AKS と Azure Active Directory
   - AKS と RBAC
+- 各サービスにおけるセキュリティ対策のまとめ
+  - [ACIのセキュリティ対策](../../computing/aci-security.md)
+  - [ACRのセキュリティ対策](../../computing/acr-security.md)
+  - [AKSのセキュリティ対策](../../computing/aks-security.md)
+

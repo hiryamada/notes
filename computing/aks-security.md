@@ -13,3 +13,13 @@ https://learn.microsoft.com/ja-jp/azure/aks/node-updates-kured
 
 ■AKSクラスターのKubernetesバージョンを最新化する
 
+Azure Kubernetes Service (AKS) クラスターの「アップグレード」により、新しいバージョンをインストールできる。
+https://learn.microsoft.com/ja-jp/azure/aks/upgrade-cluster?tabs=azure-cli
+
+■「Microsoft Defender for Cloud」の有料プラン「Microsoft Defender for Containers」を有効化する
+
+https://learn.microsoft.com/ja-jp/azure/defender-for-cloud/defender-for-containers-introduction
+
+- Azure/AWS/GCP/オンプレミスの Kubernetes クラスターの継続的な監視
+- データ プレーンのセキュリティ強化: Kubernetes API サーバーに対するすべての要求を、事前定義された一連のベスト プラクティスを基準にして監視
+
