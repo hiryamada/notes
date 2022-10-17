@@ -64,6 +64,19 @@
   - ★（一般）ユーザー
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/choose-right-project/7-knowledge-check)
 
+## ハンズオン: Azure DevOps
+
+- Azure DevOps
+  - Azure DevOps組織とプロジェクトを作成しましょう
+  - お手元のブラウザから [Azure portal](https://portal.azure.com/) にアクセスします
+  - トレーニング開始時に作成したMicrosoftアカウントでサインインします
+  - 手順書: [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
+  - [追加設定](ado-org-settings.md)
+
+## Azure DevOpsについて
+
+[Azure DevOpsの解説資料集](pdf/README.md)
+
 ## [モジュール3: チーム構造を記述する](https://docs.microsoft.com/ja-jp/learn/modules/describe-team-structures/)
 
 - 講義: [かんばんボード](mod01-13-kanban.md)
@@ -112,14 +125,8 @@
   - ★[GitHub Enterprise](https://github.co.jp/enterprise.html)
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/migrate-to-devops/8-knowledge-check)
 
-## ハンズオン(演習)
+## ハンズオン (オプション) GitHubアカウント
 
-- Azure DevOps
-  - Azure DevOps組織とプロジェクトを作成しましょう
-  - お手元のブラウザから [Azure portal](https://portal.azure.com/) にアクセスします
-  - トレーニング開始時に作成したMicrosoftアカウントでサインインします
-  - 手順書: [Azure DevOpsの使用を開始する](pdf/Azure%20DevOpsの使用を開始する.pdf)
-  - [追加設定](ado-org-settings.md)
 - GitHub
   - GitHubアカウントを作成しましょう
   - 手順書: [GitHubアカウントの作成](github-account.md)
