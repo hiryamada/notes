@@ -3,8 +3,11 @@
 
 - Azure portal (portal.azure.com)での作業
   - App Service の Webアプリを作成する
-  - ランタイムスタック: .NET Core 3.1
-  - オペーレーティングシステム: Windows
+    - リソースグループ: 新規作成、名前は適当に指定 rg1 など
+    - 名前: 適当に指定 webapp123456 など 123456部分は適当な乱数を指定
+    - ランタイムスタック: .NET 6
+    - オペーレーティングシステム: Windows
+    - 地域: Japan East
   - 「参照」をクリック。
   ![](images/ss-2021-12-15-09-27-49.png)
   - 別タブで、Webアプリにアクセスが行われる。「Hey, App Service Developers!」といったメッセージが出る。
