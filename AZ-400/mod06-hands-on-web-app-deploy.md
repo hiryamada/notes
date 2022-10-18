@@ -14,6 +14,8 @@
   - 別タブで、Webアプリにアクセスが行われる。「Hey, App Service Developers!」といったメッセージが出る。
   ![](images/ss-2021-12-15-09-27-29.png)
 - Azure DevOps側での作業
+  - 組織に新しいプロジェクトを作る（＋New Project）
+    - プロジェクト名は任意のものでOK
   - サービスコネクションの作成
     - Project Settings > Pipelines > Service Connections
     - New Service connection
@@ -23,8 +25,6 @@
     - ※Resource groupは選択しない
     - Grant access permission to all pipelinesにチェック
     - service connection name に「sc1」と入力してSave
-  - 組織に新しいプロジェクトを作る（＋New Project）
-    - プロジェクト名は任意のものでOK
   - ソースコードの準備
     - プロジェクトのAzure Repos をクリック
     - Importをクリック 
