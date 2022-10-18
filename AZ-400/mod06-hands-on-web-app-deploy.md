@@ -84,7 +84,10 @@
       - WebAppName は、前の手順で作成したWebアプリの名前を指定。URLではなく～～.azurewebsites.netの～～の部分 ![](images/ss-2022-10-18-14-00-20.png) ![](images/ss-2022-10-18-14-00-37.png)
     - Save and run
     - 再度Save and run
-    - 「There was a resource authorization issue: "The pipeline is not valid. Job Job: Step AzureRmWebAppDeployment input ConnectedServiceName references service connection Azure Pass - スポンサー プラン (ZZZZ) which could not be found」 というエラーが出たら、その右側の「Authorize resources」をクリックして右上の「Run new」をクリック、「Run」をクリック
+    - 初回の実行ではエラーが出る場合がある ![](images/ss-2022-10-18-14-07-04.png)
+    - エラーをクリック
+    - 「There was a resource authorization issue: "The pipeline is not valid. Job Job: Step AzureRmWebAppDeployment input ConnectedServiceName references service connection Azure Pass - スポンサー プラン (ZZZZ) which could not be found」 というエラーとなっている ![](images/ss-2022-10-18-14-07-54.png)
+    - その右側の「Authorize resources」をクリックして右上の「Run new」をクリック、「Run」をクリック
     - 「This pipeline needs permission to access a resource before this run can continue」というエラーが出たら、「View」をクリックし、「Permit」をクリック。再度「Permit」をクリック。
 - Azure portal (portal.azure.com)での作業
   - App Service の Webアプリに「参照」でアクセスする。pipelines_dotnet_coreという、先程とは別のWebサイトが表示されている。
