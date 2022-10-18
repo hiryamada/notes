@@ -21,7 +21,8 @@
     - New Service connection
     - Azure Resource Managerをクリックして画面下Next
     - Service Principal(automatic)をクリックしてNext
-    - ポップアップでサインイン画面が出るので、トレーニング用に作成したMicrosoftアカウントでサインイン
+    - ポップアップでサインイン画面が出た場合は、トレーニング用に作成したMicrosoftアカウントでサインイン
+    - ![](images/ss-2022-10-18-14-02-46.png)
     - ※Resource groupは選択しない
     - Grant access permission to all pipelinesにチェック
     - service connection name に「sc1」と入力してSave
