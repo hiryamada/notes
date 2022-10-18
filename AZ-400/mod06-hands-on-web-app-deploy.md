@@ -1,6 +1,7 @@
 
 # ハンズオン: Azure Web Apps のWebアプリへのデプロイ
 
+
 - Azure portal (portal.azure.com)での作業
   - App Service の Webアプリを作成する
     - リソースグループ: 新規作成、名前は適当に指定 rg1 など
@@ -13,6 +14,15 @@
   - 別タブで、Webアプリにアクセスが行われる。「Hey, App Service Developers!」といったメッセージが出る。
   ![](images/ss-2021-12-15-09-27-29.png)
 - Azure DevOps側での作業
+  - サービスコネクションの作成
+    - Project Settings > Pipelines > Service Connections
+    - New Service connection
+    - Azure Resource Managerをクリックして画面下Next
+    - Service Principal(automatic)をクリックしてNext
+    - ポップアップでサインイン画面が出るので、トレーニング用に作成したMicrosoftアカウントでサインイン
+    - ※Resource groupは選択しない
+    - Grant access permission to all pipelinesにチェック
+    - service connection name に「sc1」と入力してSave
   - 組織に新しいプロジェクトを作る（＋New Project）
     - プロジェクト名は任意のものでOK
   - ソースコードの準備
@@ -26,9 +36,49 @@
     - Azure Repos Git
     - プロジェクトのリポジトリを選択
     - ASP.NET Core を選択 ※ ASP.NET Core (.NET Framework) **ではない**
-    - 生成された azure-pipeline.yml を削除し、以下の「YAMLパイプライン」を貼り付ける。**以下の書き換えを行う**
-      - azureSubscription 内のカッコ内のIDは、ご自身のサブスクリプションのIDに書き換える
-        - サブスクリプションIDはAzure portalのAzure Passサブスクリプションを表示して確認
+    - 生成された azure-pipeline.yml を削除し、以下の「YAMLパイプライン」を貼り付ける。
+      ```
+      trigger:
+      - master
+
+      pool:
+        vmImage: ubuntu-latest
+
+      variables:
+        buildConfiguration: 'Release'
+
+      steps:
+      - script: dotnet build --configuration $(buildConfiguration)
+        displayName: 'dotnet build $(buildConfiguration)'
+
+      - task: DotNetCoreCLI@2
+        inputs:
+          command: 'publish'
+          publishWebProjects: true
+          arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+          zipAfterPublish: true
+
+      - task: PublishPipelineArtifact@1
+        inputs:
+          targetPath: '$(Build.ArtifactStagingDirectory)'
+          artifact: 'web'
+          publishLocation: 'pipeline'
+
+      - task: DownloadPipelineArtifact@2
+        inputs:
+          source: 'current'
+          artifact: 'web'
+          path: '$(Build.ArtifactStagingDirectory)'
+
+      - task: AzureRmWebAppDeployment@4
+        inputs:
+          ConnectionType: 'AzureRM'
+          azureSubscription: sc1
+          appType: 'webApp'
+          WebAppName: 'YOURWEBAPPNAME'
+          packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+      ```
+    - 書き換えを行う
       - WebAppName は、前の手順で作成したWebアプリの名前を指定。URLではなく～～.azurewebsites.netの～～の部分
     - Save and run
     - 再度Save and run
@@ -39,67 +89,6 @@
   ![](images/ss-2021-12-15-09-30-09.png)
 
 
-※「The pipeline is not valid. Job Job: Step AzureRmWebAppDeployment input ConnectedServiceName references service connection Azure Pass - スポンサー プラン (ZZZZ) which could not be found」エラーが消えない場合は、以下の設定をお願いします。
-
-■サービスコネクションの作成
-
-- Project Settings > Pipelines > Service Connections
-- New Service connection
-- Azure Resource Managerをクリックして画面下Next
-- Service Principal(automatic)をクリックしてNext
-- ポップアップでサインイン画面が出るので、トレーニング用に作成したMicrosoftアカウントでサインイン
-- ※Resource groupは選択しない
-- Grant access permission to all pipelinesにチェック
-- service connection name に「sc1」と入力してSave
-
-■サービスコネクションの指定
-
-- YAML内の最後のタスクのazureSubscriptionにサービスコネクションを指定する
-  -  `azureSubscription: sc1`
-
-
-YAMLパイプライン:
-```
-trigger:
-- master
-
-pool:
-  vmImage: ubuntu-latest
-
-variables:
-  buildConfiguration: 'Release'
-
-steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'publish'
-    publishWebProjects: true
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    zipAfterPublish: true
-
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)'
-    artifact: 'web'
-    publishLocation: 'pipeline'
-
-- task: DownloadPipelineArtifact@2
-  inputs:
-    source: 'current'
-    artifact: 'web'
-    path: '$(Build.ArtifactStagingDirectory)'
-
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure Pass - スポンサー プラン(YOURSUBSCRIPTIONID)'
-    appType: 'webApp'
-    WebAppName: 'YOURWEBAPPNAME'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
-```
 
 参考:
 - [最初のパイプラインの作成(.NET)](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2%2Cbrowser%2Cnet#create-your-first-pipeline-1)
