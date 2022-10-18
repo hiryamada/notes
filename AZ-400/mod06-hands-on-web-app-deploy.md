@@ -32,10 +32,11 @@
     - インポートが完了するまでしばらく待つ
   - パイプラインの準備
     - プロジェクトのAzure Pipelines をクリック
-    - パイプラインを新規作成
+    - パイプラインを新規作成 (Create Pipeline)
     - Azure Repos Git
-    - プロジェクトのリポジトリを選択
-    - ASP.NET Core を選択 ※ ASP.NET Core (.NET Framework) **ではない**
+    - プロジェクトと同名のリポジトリを選択
+    - Show Moreをクリック
+    - ASP.NET Core を選択 ※ ASP.NET Core (.NET Framework) **ではない** ![](images/ss-2022-10-18-13-58-17.png)
     - 生成された azure-pipeline.yml を削除し、以下の「YAMLパイプライン」を貼り付ける。
       ```
       trigger:
@@ -79,7 +80,7 @@
           packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
       ```
     - 書き換えを行う
-      - WebAppName は、前の手順で作成したWebアプリの名前を指定。URLではなく～～.azurewebsites.netの～～の部分
+      - WebAppName は、前の手順で作成したWebアプリの名前を指定。URLではなく～～.azurewebsites.netの～～の部分 ![](images/ss-2022-10-18-14-00-20.png) ![](images/ss-2022-10-18-14-00-37.png)
     - Save and run
     - 再度Save and run
     - 「There was a resource authorization issue: "The pipeline is not valid. Job Job: Step AzureRmWebAppDeployment input ConnectedServiceName references service connection Azure Pass - スポンサー プラン (ZZZZ) which could not be found」 というエラーが出たら、その右側の「Authorize resources」をクリックして右上の「Run new」をクリック、「Run」をクリック
