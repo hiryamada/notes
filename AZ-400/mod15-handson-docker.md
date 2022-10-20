@@ -68,11 +68,11 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 - Enter a name for the new virtual machine: dockervm
 - Enter a passphrase ... : エンター（何も入れない）
 - Select a location ... : East US
-- 2分ほどで `Created new virtual machine.`と表示され、Linux VMが作成される
+- 2分ほどで `Create new virtual machine "dockervm" Succeeded`と表示され、Linux VMが作成される
 
 ■Linux VMに接続
 
-- 「VIRTUAL MACHINES」の「Azure Pass - スポンサー プラン」を展開
+- 「Azure Pass - スポンサー プラン」の「Virtual machines」を展開
 - dockervm を右クリックし、「Connect to Host via Remote SSH」
 - 新しいVisual Studio Codeウィンドウが開く
   - 新しいVisual Studio Codeウィンドウの左下には「SSH: dockervm」と表示されているので、ここでウィンドウを判別できる
@@ -95,13 +95,26 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
     sudo apt-get install -y dotnet-sdk-6.0
     dotnet --version
     ```
-- 最後の「dotnet --version」の結果として「6.0.201」といったバージョン番号が出ればOK
+- 最後の「dotnet --version」の結果として「6.0.402」といったバージョン番号が出ればOK ※表示されるバージョン番号はインストールした時期により変わる可能性があります
 
 ■.NET の Webアプリを作成
 
 - 以下のコマンドを投入
     ```
     dotnet new web -n hello
+    ```
+
+■Webアプリが使用するポート番号の変更
+
+- プロジェクトの `Profiles/launchsettings.json` ファイルを開く
+- `"profiles"` 内の `"applicationUrl": "https://localhost:7185;http://localhost:5073",` といった行（ポート番号は環境により異なる）を以下に変更
+- `"applicationUrl": "http://localhost:8080",`![](images/ss-2022-10-20-14-17-32.png)
+- Ctrl + S で保存
+
+■Webアプリのテスト実行
+
+- 以下のコマンドを投入
+    ```
     cd hello
     dotnet run --urls=http://localhost:8080
     ```
@@ -111,7 +124,6 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
   - ※または、TERMINALの右のPORTSを開き、地球儀のアイコンをクリック。![](images/ss-2022-03-17-14-31-55.png)
 - Webブラウザを閉じる
 - Terminal内をクリックしてアクティブにし、`Ctrl + C` を押して`dotnet run`を止める（「Application is shutting down...」と表示され、次のコマンドをが投入できる状態になればOK）
-- Dockerfileの中の「EXPOSE」の行と「ENV」の行のポート番号 を 8080 に書き換え、保存する。
 
 ■Linux VMにDockerをインストール
 
@@ -211,6 +223,7 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
     GitCommit:        de40ad0
     ```
 
+
 ■WebアプリをDockerコンテナー化
 
 - 以下のコマンドを投入
@@ -219,7 +232,7 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
     code -r .
     ```
 - Visual Studio Codeがリロードされる
-- 「Do you trust...」→「Yes」
+- 「Do you trust the authors of the files in this folder?」→「Yes, I trust the authors」
 - 画面左の「Extensions」アイコンをクリック
 - C#と検索→C#の「Install」をクリック
 - しばらくすると右下に「Required assets to build and debug are missing...」と出る。「Yes」をクリック。![](images/ss-2022-03-17-14-36-20.png)
@@ -243,7 +256,6 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 - 画面左「Docker」アイコンをクリック
 - IMAGESの「hello」を展開し、「latest」を右クリックして「Run」
 - CONTAINERSの「Individual Containers」→「hello:latest」を右クリックし、「Open in Browser」
-- 「Select the container port to browse to.」と質問が出た場合は 8080 と入力してエンター。
 - Webブラウザが開き「Hello World!」と表示されればOK
 - Webブラウザを閉じる
 - CONTAINERSの「Individual Containers」→「hello:latest」を右クリックし、「Stop」
