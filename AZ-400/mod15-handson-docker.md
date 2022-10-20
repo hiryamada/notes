@@ -1,20 +1,11 @@
 # ハンズオン（前編） Docker
 
-■ハンズオンの概要
+■概要
 
-- 前編
-  - 作業用環境として labvm (Windows VM) を準備します
-  - Docker実行のため、dockervm（Linux VM）を準備します
-  - .NET で、Webアプリを作成します
-  - WebアプリをDockerコンテナー化します
-- 後編
-  - Azure Reposに、開発したコード一式を格納します
-  - Azure Container RegistryとAzure Kubernetes Serviceを準備します
-  - Azure Pipelinesで、次のパイプラインを作成します
-    - Dockerイメージをビルド
-    - Azure Container Registryにイメージをプッシュ
-    - イメージをAzure Kubernetes Serviceにデプロイ
-  - Azure Kubernetes ServicesでWebアプリの動作を確認します
+- 作業用環境として labvm (Windows VM) を準備します
+- Docker実行のため、dockervm（Linux VM）を準備します
+- .NET で、Webアプリを作成します
+- WebアプリをDockerコンテナー化します
 
 ■ハンズオン用のWindows VM (labvm) の作成
 

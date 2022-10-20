@@ -2,21 +2,15 @@
 
 ■ハンズオンの概要
 
-- 前編（実施済み）
-  - 作業用環境として labvm (Windows VM) を準備します
-  - Docker実行のため、dockervm（Linux VM）を準備します
-  - .NET で、Webアプリを作成します
-  - WebアプリをDockerコンテナー化します
-- 後編（ここからスタート）
-  - Azure Reposに、開発したコード一式を格納します
-  - Azure Container RegistryとAzure Kubernetes Serviceを準備します
-  - Azure Pipelinesで、次のパイプラインを作成します
-    - Dockerイメージをビルド
-    - Azure Container Registryにイメージをプッシュ
-    - イメージをAzure Kubernetes Serviceにデプロイ
-  - Azure Kubernetes ServicesでWebアプリの動作を確認します
+- Azure Reposに、開発したコード一式を格納します
+- Azure Container RegistryとAzure Kubernetes Serviceを準備します
+- Azure Pipelinesで、次のパイプラインを作成します
+  - Dockerイメージをビルド
+  - Azure Container Registryにイメージをプッシュ
+  - イメージをAzure Kubernetes Serviceにデプロイ
+- Azure Kubernetes ServicesでWebアプリの動作を確認します
 
-■（前編）からの続き
+■（前編）の概要
 
 - 作業用の「labvm」にリモートデスクトップ接続（またはBastionで接続）した状態です。
 - 新しいVisual Studio Codeウィンドウ（左下には「SSH: dockervm」と表示）を操作しています。

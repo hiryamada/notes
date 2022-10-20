@@ -11,3 +11,4 @@
     - 3週間ごとに、**継続して、顧客に新しい価値を届ける**
   - 最初のスプリントは2010/8に開始
   - https://docs.microsoft.com/en-us/azure/devops/release-notes/features-timeline
+  - （上記スプリントの解説ブログ - 「Azure DevOpsアップデート」タグ）https://tfsug.hatenablog.jp/archive/category/Azure%20DevOps%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88
