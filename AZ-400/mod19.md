@@ -11,7 +11,9 @@
 
 ### Rugged DevOps とは?
 
-Rugged (ラゲッド): 頑丈な, ごつごつ(でこぼこ)した。
+Rugged (ラギッド): 頑丈な, ごつごつ(でこぼこ)した。
+
+https://ejje.weblio.jp/content/rugged
 
 ■Rugged DevOps とは？
 
@@ -157,7 +159,7 @@ Microsoftの1部門であるCore Services Engineering & Operations (CSEO)と、�
 - アラートとモニタリング
 - クラウドリスクガバナンス
 
-<!-- 
+<!--
 ## Microsoft Defender for Cloud
 
 ### Microsoft Defender for Cloud
