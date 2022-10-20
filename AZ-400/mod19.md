@@ -138,9 +138,11 @@ CI/CDパイプライン自体のセキュリティ対策。
   - OWASPについてはモジュール20で解説。
 -->
 
-### Azure 用 Secure DevOps キット (AzSK)
+### Azure Tenant Security Solution(AzTS)
 
-https://azsk.azurewebsites.net/
+https://github.com/azsk/AzTS-docs
+
+（旧: Azure 用 Secure DevOps キット (AzSK)  https://azsk.azurewebsites.net/ ）
 
 DevOpsチームのセキュリティのニーズに対応するスクリプト、ツール、拡張機能、自動化、ドキュメントなどのコレクション（ベストプラクティス）。
 
@@ -155,8 +157,7 @@ Microsoftの1部門であるCore Services Engineering & Operations (CSEO)と、�
 - アラートとモニタリング
 - クラウドリスクガバナンス
 
-※注意：2021年中に[廃止予定](https://azsk.azurewebsites.net/ReleaseNotes/AzSKSunsetNotice.html)となっている。AzSKの利用者に対して、後継である[AzTS](https://github.com/azsk/AzTS-docs)への移行が推奨されている。
-
+<!-- 
 ## Microsoft Defender for Cloud
 
 ### Microsoft Defender for Cloud
@@ -202,3 +203,4 @@ Azure Advanced Threat Protection、Azure ATPは、名前が変わり、現在Mic
 [ドキュメント](https://docs.microsoft.com/ja-jp/defender-for-identity/what-is)
 
 組織内のユーザーやコンピュータ、リソースなどの資格情報に対する不正なアクティビティや、悪意のある攻撃者による攻撃を検知、分析し、組織内の管理者が適切な対応を迅速にとることができるしくみ。
+-->
