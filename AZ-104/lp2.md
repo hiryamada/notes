@@ -9,10 +9,7 @@
       - モジュール8 セルフサービスリセット
     - 初期設定: Azure AD Premium P2試用版の有効化
     - 講義
-      - 解説PDF1 [Azure ADの概要](pdf/mod01/mod01.pdf)
-      - 解説PDF2 [Azure ADとAD DSの違い](pdf/mod01/Azure%20AD%20%E3%81%A8%20AD%20DS%20%E3%81%AE%E4%BD%8D%E7%BD%AE%E3%81%A5%E3%81%91.pdf)
-      - 解説PDF3 [デバイスの登録/参加](pdf/mod01/デバイスID.pdf)
-      - [セルフサービス パスワードリセット(SSPR)](mod01-03-sspr.md)
+      - PDF資料 [Azure AD入門](../AzureAD/Azure%20AD%E5%85%A5%E9%96%80.pdf)
     - [知識チェック](lp2-1-aad-check.md)
     - [ラボ1](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.md)
   - Azureの管理
