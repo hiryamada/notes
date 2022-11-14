@@ -12,7 +12,7 @@
   - [DevOps プロジェクトでのセキュリティの実装](mod19.md)
   - [ライセンス](mod20-01-license.md)
   - [コードスキャン](mod20-02-security-scan.md)
-- ハンズオン
+- ハンズオン（オプション）
   - ハンズオン: [SonarCloudによるコード解析](mod20-handson-sonarcloud.md)
   - ハンズオン: [WhiteSource Bolt による脆弱性レポート](mod19-handson-whitesource.md)
 

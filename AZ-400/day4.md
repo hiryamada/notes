@@ -6,11 +6,17 @@
 
 # 講義とハンズオン
 
+■依存関係管理
 - 講義: [依存関係の管理戦略/パッケージ管理](mod09.md)
+
+■コンテナー型仮想化
+
+- 講義: [サーバー仮想化 vs コンテナー型](../computing/virtualization.md)
 - 講義: [Docker](mod15.md)
 - ハンズオン(前編): [Docker](mod15-handson-docker.md)
   - ※ハンズオン(前編)は(後編)に続きます
 - 講義: [Kubernetes](mod16.md)
+- [Azure DevOpsとKubernetes](../seminar/ado-aks.pdf)
 - ハンズオン(後編): [Kubernetes](mod16-handson-kubernetes.md)
 
 # [ラーニング パス7: 依存関係の管理戦略の設計と実装](https://docs.microsoft.com/ja-jp/learn/paths/az-400-design-implement-dependency-management-strategy/)

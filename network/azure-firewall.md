@@ -17,10 +17,15 @@ https://docs.microsoft.com/ja-jp/azure/firewall/overview
 
 ■参考: Azure Filrewall Premium とは？
 
-現在プレビュー
-- https://azure.microsoft.com/ja-jp/updates/azure-firewall-premium-now-in-public-preview/
+2021/2/16 パブリックプレビュー
+https://azure.microsoft.com/ja-jp/updates/azure-firewall-premium-now-in-public-preview/
+
+2021/7/19 一般提供開始
+https://azure.microsoft.com/ja-jp/updates/announcing-the-azure-firewall-premium-general-availability/
+
+ドキュメント
+
 - https://docs.microsoft.com/ja-jp/azure/firewall/premium-features
-- https://www.ether-zone.com/azure-firewall-premium/
 
 特徴
 - ファイアウォール ポリシー

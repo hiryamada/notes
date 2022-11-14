@@ -11,7 +11,9 @@
 
 ### Rugged DevOps とは?
 
-Rugged (ラゲッド): 頑丈な, ごつごつ(でこぼこ)した。
+Rugged (ラギッド): 頑丈な, ごつごつ(でこぼこ)した。
+
+https://ejje.weblio.jp/content/rugged
 
 ■Rugged DevOps とは？
 
@@ -91,7 +93,13 @@ OSSコンポーネントを利用する際は以下の点に注意しなけれ�
 
 SCAツールを使用して、脆弱性、ライセンスの問題点を発見することができる。
 
+■参考: OSS の利活用及びそのセキュリティ確保に向けた管理手法に関する事例集（経済産業省）
 
+https://www.meti.go.jp/press/2021/04/20210421001/20210421001-1.pdf
+
+OSSの概要、メリット、留意点、インシデント事例、大手企業（トヨタ様、ソニー様、オリンパス様、日立様、オムロン様等 15社）の事例集。
+
+<!--
 ### Azure DevOps パイプラインとの WhiteSource 統合
 
 （ツールをPipelineに統合し、チェックを自動化できる。以下同）
@@ -111,6 +119,7 @@ SCAツールを使用して、脆弱性、ライセンスの問題点を発見�
 ### ソフトウェア構成解析チェックをパイプラインに統合する方法
 
 （ここまでで説明済みの話題なので省略）
+-->
 
 ### パイプライン セキュリティの実装
 
@@ -129,15 +138,19 @@ CI/CDパイプライン自体のセキュリティ対策。
 - 生産モニタリング（インシデントの発見）
   - Microsoft Defender for Cloudについては後述。
 
+<!--
 ※以下は（CI/CDパイプラインのセキュリティ実装に含めて説明されているが）パイプラインセキュリティではなく、開発中のアプリケーションに対するセキュリティテストと思われる。
 
 - ダイナミックスキャン
   - 実行中のアプリケーションに、既知の攻撃パターンでアクセスして検証する
   - OWASPについてはモジュール20で解説。
+-->
 
-### Azure 用 Secure DevOps キット (AzSK)
+### Azure Tenant Security Solution(AzTS)
 
-https://azsk.azurewebsites.net/
+https://github.com/azsk/AzTS-docs
+
+（旧: Azure 用 Secure DevOps キット (AzSK)  https://azsk.azurewebsites.net/ ）
 
 DevOpsチームのセキュリティのニーズに対応するスクリプト、ツール、拡張機能、自動化、ドキュメントなどのコレクション（ベストプラクティス）。
 
@@ -152,13 +165,14 @@ Microsoftの1部門であるCore Services Engineering & Operations (CSEO)と、�
 - アラートとモニタリング
 - クラウドリスクガバナンス
 
-※注意：2021年中に[廃止予定](https://azsk.azurewebsites.net/ReleaseNotes/AzSKSunsetNotice.html)となっている。AzSKの利用者に対して、後継である[AzTS](https://github.com/azsk/AzTS-docs)への移行が推奨されている。
-
+<!--
 ## Microsoft Defender for Cloud
 
 ### Microsoft Defender for Cloud
 
-[PDFまとめ資料: Microsoft Defender for Cloud](../AZ-500/pdf/mod4/Azure%20Security%20Center%20まとめ.pdf)
+PDFまとめ資料:
+[Microsoft Defender for Cloud / Servers / Endpoint](../AZ-500/pdf/mod2/Microsoft%20Defender%20for%20Cloud%20概要.pdf)
+[Microsoft Defender for Cloud](../AZ-500/pdf/mod4/Microsoft%20Defender%20for%20Cloud%20まとめ.pdf)
 
 ### Azure Policy
 
@@ -197,3 +211,4 @@ Azure Advanced Threat Protection、Azure ATPは、名前が変わり、現在Mic
 [ドキュメント](https://docs.microsoft.com/ja-jp/defender-for-identity/what-is)
 
 組織内のユーザーやコンピュータ、リソースなどの資格情報に対する不正なアクティビティや、悪意のある攻撃者による攻撃を検知、分析し、組織内の管理者が適切な対応を迅速にとることができるしくみ。
+-->

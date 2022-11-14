@@ -9,7 +9,7 @@
 - 名前: `hello12345678`
   - ※数値部分は乱数を適当に打ち込む
   - ※この名前は、あとで使うのでコピーしておく。
-- ランタイムスタック: `.NET Core 3.1 (LTS)`
+- ランタイムスタック: `.NET 6 (LTS)`
 - オペレーティングシステム: Windows
 - ※その他はすべてデフォルト値
 - 確認及び作成
@@ -69,12 +69,6 @@ git commit -m 'initial commit'
 - Azure DevOpsの画面に移動 dev.azure.com
 - hello プロジェクトをクリック
 - Project Settings
-- PipelinesのParallel jobsのChangeをクリック
-- MS Hosted CI/CDの「Paid parallel jobs」に「2」を入力
-- 画面下部 Save
-- Azure DevOpsの画面に移動 dev.azure.com
-- hello プロジェクトをクリック
-- Project Settings
 - PipelinesのService connections
 - Create Service Connection
 - Azure Resource Manager
@@ -82,7 +76,7 @@ git commit -m 'initial commit'
 - Service principal (automatic)を選択して「Next」
 - 別のブラウザウィンドウがポップアップで開き、Azureのサインイン画面が表示される。今回のトレーニング用に作成したMicrosoftアカウントでサインイン。
 - Resource groupは選択せず、空白のままとする
-- Service connection name: serviceconnection1
+- Service connection name: sc2
 - Save
 
 ■ビルドパイプラインの作成
@@ -142,7 +136,7 @@ steps:
 - Add
 - 「Stage 1」の下の「1 job, 1 task」をクリック
 - Deploy Azure App Service
-- Parametersの「Azure subscription」の下のプルダウンで serviceconnection1 を選択
+- Parametersの「Azure subscription」の下のプルダウンで sc2 を選択
 - 「App service name」: hello12345678 ※前のステップで作成したApp Serviceの名前
 - Save
 - OK

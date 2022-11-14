@@ -1,4 +1,6 @@
-# Azure Security Benchmark (ASB)
+# Microsoft クラウド セキュリティ ベンチマーク
+
+旧「Azure セキュリティベンチマーク」, 2022/10にリブランディング
 
 https://aka.ms/azsecbm
 
@@ -6,7 +8,7 @@ https://aka.ms/azsecbm
 
 https://docs.microsoft.com/ja-jp/security/benchmark/azure/overview
 
-Azure 上のワークロード、データ、およびサービスのセキュリティを強化するための規範的なベスト プラクティスと推奨事項を提供。
+Azure とマルチクラウド環境のワークロード、データ、およびサービスのセキュリティを強化するための規範的なベスト プラクティスと推奨事項を提供。
 
 推奨事項は、環境内で特定のセキュリティ構成設定を選択するための開始点となり、組織のリスクの迅速な軽減に役立つ。
 

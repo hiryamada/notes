@@ -3,7 +3,7 @@
 - [Azure DevOpsの概要](Azure%20DevOpsの概要.pdf)
   - Azure DevOpsの全体像
 
-- [Azure DevOpsの機能の連携](/Azure%20DevOps機能の連携.pdf)
+- [Azure DevOpsの機能の連携](Azure%20DevOps機能の連携.pdf)
   - Azure DevOpsに含まれる各サービスのつながり。
 
 - [Azure DevOpsの使用を開始する](Azure%20DevOpsの使用を開始する.pdf)

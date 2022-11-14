@@ -70,7 +70,7 @@
 
 ■ホストの更新
 
-- [Azure Automation (Update Management)](../../AZ-303/mod09-02-azure-automation.md)
+- [Azure Automation](../../iac/azure-automation.md)
 
 ■ホストのデータの保護
 
@@ -86,7 +86,8 @@
 
 ■セキュリティベンチマーク
 
-- [Azureセキュリティベンチマーク](../../SC/azure-security-benchmark.md)
+- [Microsoftクラウドセキュリティベンチマーク](../../SC/microsoft-security-benchmark.md)
+  - 旧「Azure セキュリティベンチマーク」, 2022/10にリブランディング
 
 # コンテナー セキュリティ
 
@@ -101,3 +102,8 @@
   - AKS のストレージ
   - AKS と Azure Active Directory
   - AKS と RBAC
+- 各サービスにおけるセキュリティ対策のまとめ
+  - [ACIのセキュリティ対策](../../computing/aci-security.md)
+  - [ACRのセキュリティ対策](../../computing/acr-security.md)
+  - [AKSのセキュリティ対策](../../computing/aks-security.md)
+
