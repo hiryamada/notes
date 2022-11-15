@@ -23,7 +23,8 @@
       - [ロール](mod02-03-rbac.md)
       - 解説PDF [ロール](pdf/mod02/ロール・ポリシー全体像.pdf)
     - [知識チェック](lp2-2-subscription-check.md)
-    - [ラボ2a](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_02a_Manage_Subscriptions_and_RBAC.md)
+    - [ラボ2a ロール(RBAC)](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_02a_Manage_Subscriptions_and_RBAC.md)
+    - [ラボ2b ポリシー(Azure Policy)](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.md)
 
 
 # ラーニングパス 2: [AZ-104:Azure での ID とガバナンスの管理](https://docs.microsoft.com/ja-jp/learn/paths/az-104-manage-identities-governance/)
