@@ -30,6 +30,7 @@
       - [SSE](../SC/encryption/azure-storage-encryption.md)
   - [知識チェック](lp3-check.md)
   - [ラボ7](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/blob/main/Instructions/Labs/LAB_07-Manage_Azure_Storage.md)
+    - [冒頭部分（VMデプロイ）手順解説PDF](pdf/AZ-104%20ラボ7.pdf)
 
 # ラーニングパス 3: [AZ-104:Azure でのストレージの実装と管理](https://docs.microsoft.com/ja-jp/learn/paths/az-104-manage-storage/)
 ## モジュール 1: [ストレージ アカウントの構成](https://docs.microsoft.com/ja-jp/learn/modules/configure-storage-accounts/)
