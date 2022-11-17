@@ -22,6 +22,7 @@
 - VNetとオンプレミスの接続
   - [VPN（モジュール6）](../AZ-303/mod03-03-vpn.md)
   - [ExpressRoute（モジュール7）](../AZ-500/pdf/mod2/ExpressRouteまとめ.pdf)
+    - [ExpressRoute Localとは？](../network/ExpressRoute%20Local.pdf)
   - [Virtual WAN（モジュール7）](mod05-04-virtualwan.md)
 - [知識チェック](lp5-check.md)
 - ラボ
