@@ -1,8 +1,29 @@
-# Virtual Network NAT 
+# Virtual Network NAT
 
-※VNet NATとも
+※VNet NAT, NAT Gatewayとも
 
-※リソースは「NATゲートウェイ」
+※リソース名は「NATゲートウェイ」
+
+■公式サイト等
+
+ドキュメント:
+https://learn.microsoft.com/ja-jp/azure/virtual-network/nat-gateway/nat-overview
+
+価格:
+https://azure.microsoft.com/ja-jp/pricing/details/virtual-network/
+
+NAT ゲートウェイを使用してパブリック IP アドレスを管理する
+https://learn.microsoft.com/ja-jp/azure/virtual-network/ip-services/configure-public-ip-nat-gateway
+
+Azure Virtual Network NAT (NAT ゲートウェイ) のトラブルシューティング
+https://learn.microsoft.com/ja-jp/azure/virtual-network/nat-gateway/troubleshoot-nat
+
+■報道記事等:
+
+Azure仮想ネットワークの「NATゲートウェイ」が正式版に
+https://atmarkit.itmedia.co.jp/ait/articles/2003/23/news012.html
+
+■歴史
 
 2020/2/18 Virtual Network NAT プレビュー
 https://azure.microsoft.com/ja-jp/updates/natpreview/
