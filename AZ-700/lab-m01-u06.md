@@ -2,6 +2,12 @@
 
 手順書: [M01 - ユニット 6 Azure で DNS 設定を構成する](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.md)
 
+概要:
+- Azure DNS プライベートDNSゾーンを作成し、VNetにリンクします。
+- VNetに起動したVMの名前とIPアドレスがプライベートDNSゾーンに自動登録されることを確認します。
+- VNetに起動したVMで、プライベートDNSゾーンを使用した名前解決ができることを確認します。
+- ※注意: VM同士は通信はできません。
+
 時間: 25分
 
 はじめにお読みください: [全般的なラボの注意](lab.md)

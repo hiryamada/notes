@@ -11,7 +11,7 @@ https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft
 
 -->
 
-■ラボの全般的な注意
+# ラボの全般的な注意
 
 - Azure の操作は、Azure portalから実行します。
   - お手元のWebブラウザーで、 https://portal.azure.com/ にアクセスしてください。
@@ -21,12 +21,12 @@ https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft
     - 画面内の「更新」「最新の情報に更新」ボタンがある場合はそれをクリックしてください。
     - または、Webブラウザーでページをリロードしてください。
 - あるラボで作成したリソースは、次のラボで続けて使いますので、指示がない限り、消さないでください。
-- ラボの指示と、実際の画面は、若干異なる場合があります。適宜、読み替えてください。
 - 事前に [ZIPファイル(AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-master.zip)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/archive/refs/heads/master.zip) をダウンロードします。
   - ダウンロードしたファイルのファイル名を「AZ-700.zip」といった短い名前に変更します。
   - 「AZ-700.zip」を展開します。
   - 展開されたフォルダ内に `Allfiles/Exercises` というフォルダがあることを確認してください。
   - 各ラボの手順書で、ファイルを使用するように指示があった場合、このフォルダ内の対応するファイルを使用してください。
     - 例えば `F:/Allfiles/Exercises/M01` といったフォルダー内のファイルを使用するように指示があった場合は、展開されたフォルダ内の `Allfiles/Exercises/M01` 内のファイルを使用してください。
-- ご所属の企業のネットワークによっては、Azureの仮想マシンへの RDP（リモートデスクトップ）接続が許可されていない場合があります。
+- ご所属の企業のネットワークによっては、Azureの仮想マシンへの RDP（リモートデスクトップ）接続が許可されておらず、RDP接続ができない場合があります。
   - その場合は、RDP の代わりに Bastion（Azure Bastion）を使用して仮想マシンに接続してください。
+- ラボの指示と、実際の画面の文言等は、若干異なる場合があります。適宜、読み替えてください。
