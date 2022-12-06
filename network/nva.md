@@ -1,5 +1,25 @@
 # 仮想ネットワークアプライアンス
 
-https://azure.microsoft.com/ja-jp/solutions/network-appliances/
+■ネットワークアプライアンスとは？
 
-[まとめ資料](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod05/VNet%E9%96%93%E6%8E%A5%E7%B6%9A.pdf) 9ページ
+- ロード バランサーやファイアウォールの機能を提供する専用デバイス。
+- 業務用。オンプレミスで利用される。
+- ラックマウント型（サーバーラックに搭載して運用する）のものが多い。
+- 画像: [ネットワークアプライアンス](https://www.google.com/search?q=%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF+%E3%82%A2%E3%83%97%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%B9&tbm=isch)
+- お客様所有のネットワークアプライアンスをデータセンターに持ち込んで運用することはできない。
+  - Azureでは、ネットワーク **仮想** アプライアンス (NVA) を使用する。
+
+■ネットワーク仮想アプライアンス (NVA)とは？
+
+- ネットワークアプライアンスを、Azure VM（仮想マシン）の形で実装したもの。
+- [Azureのネットワーク仮想アプライアンス（公式ページ）](https://azure.microsoft.com/ja-jp/solutions/network-appliances/)
+
+■NVAの例
+
+- Webアプリケーション ファイアウォール(WAF)
+- ゲートウェイ
+- ルーター
+- ロードバランサー
+  - アプリケーション配信コントローラー(ADC)
+- WANオプティマイザー
+

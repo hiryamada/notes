@@ -1,0 +1,11 @@
+# ラボ (ハンズオン)
+
+手順書: [M02-ユニット 7 Azure portal を使用して仮想 WAN を作成する](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M02-Unit%207%20Create%20a%20Virtual%20WAN%20by%20using%20Azure%20Portal.md)
+
+
+推定時間: 65 分 (最大 45 分のデプロイ待機時間を含む)
+
+はじめにお読みください: [全般的なラボの注意](lab.md)
+
+このラボの注意:
+- リソースのデプロイに時間がかかります。お時間に余裕がある状況で実施ください。
