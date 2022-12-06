@@ -4,6 +4,8 @@
 
 https://learn.microsoft.com/ja-jp/azure/virtual-network/ip-services/public-ip-addresses
 
+VM等にパブリックIPアドレスを割り当てることで、インターネットから、そのVMへ、直接接続することが可能となる。
+
 - パブリックIPアドレス
   - Basic SKU
     - （Standard SKU導入以前から使われていたもの）
@@ -32,4 +34,20 @@ It is recommended to use parameter "-PublicIpSku Standard" in order to create a 
 
 https://learn.microsoft.com/ja-jp/azure/virtual-network/ip-services/private-ip-addresses
 
+Azure 内のリソース間の通信などでは、プライベートIPアドレスが使用される。
+
+```
+VNet 10.0.0.0/16
+└subnet1 10.0.0.0/24
+  ├NIC (10.0.0.4, 動的)
+  │ └VM1
+  ├NIC (10.0.0.5, 動的)
+  │ └VM2
+  └NIC (10.0.0.100, 静的)
+    └VM3
+```
+
+動的割り当て: サブネットのプライベートIPアドレスの範囲から、未使用のアドレスが採番される。
+
+静的割り当て: サブネットのプライベートIPアドレスの範囲から、ユーザーが指定したアドレスを固定で割り当てる。
 

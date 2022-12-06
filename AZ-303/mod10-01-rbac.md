@@ -26,6 +26,15 @@ https://docs.microsoft.com/ja-jp/azure/role-based-access-control/overview
 
 2021/5/13 Attribute Based Access Control(ABAC) パブリックプレビュー https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-attribute-based-access-control-abac-in-azure/ba-p/2147069
 
+■ロールの種類
+
+- Azure AD管理者ロール
+- 従来のサブスクリプション管理者ロール
+- Azure RBACロール
+
+[まとめPDF](../AZ-104/pdf/mod02/ロール・ポリシー全体像.pdf)
+
+
 ■スコープ
 
 ロールの割り当ては、基本的に、以下の4つのスコープのいずれかで行う。
@@ -117,12 +126,3 @@ NotActions: []
 Actions 等に指定できる操作の一覧。
 
 https://docs.microsoft.com/ja-jp/azure/role-based-access-control/resource-provider-operations
-
-■ロールの種類
-
-- Azure AD管理者ロール
-- 従来のサブスクリプション管理者ロール
-- Azure RBACロール
-
-[まとめPDF](../AZ-104/pdf/mod02/ロール・ポリシー全体像.pdf)
-

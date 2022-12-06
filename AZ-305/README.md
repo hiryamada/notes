@@ -18,7 +18,7 @@
 2022/2/8 [AZ-305 正式化 (live) のお知らせ](https://techcommunity.microsoft.com/t5/microsoft-learn/now-live-exam-az-305-designing-microsoft-azure-infrastructure/m-p/3138200)
 -->
 
-■講義（モジュールベース）
+■講義
 
 [コース情報](https://learn.microsoft.com/ja-jp/training/courses/az-305t00)
 のページの下部「このコレクションの内容」に、本コースの公式教材（全13モジュール）があります。この流れに沿って解説します。
@@ -26,7 +26,7 @@
 ※下記日程は目安であり、進捗によっては多少前後する場合があります。
 
 - 1日目
-  - [設計のガバナンス (Design governance)](m01.md)
+  - [ガバナンスの設計](m01.md)
   - [コンピューティング ソリューションを設計する](m02.md)
   - [非リレーショナルデータ用にデータ ストレージ ソリューションを設計する](m03.md)
 - 2日目

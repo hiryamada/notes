@@ -10,7 +10,7 @@ https://learn.microsoft.com/ja-jp/azure/virtual-network/virtual-network-manage-s
 
 ■サブネットで使用できないIPアドレス
 
-Azure では、各サブネット内で最初の 4 つの IP アドレスと最後の IP アドレスの合計 5 つの IP アドレスが予約されます。
+Azure では、各サブネット内で最初の 4 つの IP アドレスと最後の IP アドレスの合計 5 つの IP アドレスが予約される。
 
 例:
 

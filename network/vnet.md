@@ -4,9 +4,24 @@
 
 https://learn.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-overview
 
-[まとめ資料](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod04/VNet%E3%81%AE%E5%9F%BA%E6%9C%AC.pdf)
+
+```
+vnet1 (10.0.0.0/16)
+├subnet1 (10.0.0.0/24) - NSG1
+│ └NIC (10.0.0.4)
+│   └VM1
+└subnet2 (10.0.1.0/24) - NSG2
+  └NIC (10.0.1.4)
+    └VM2
+
+vnet2 (10.1.0.0/16)
+└subnet3 (10.1.0.0/24) - NSG3
+  └NIC (10.1.0.4)
+    └VM3
+```
 
 - Azure クラウド内のプライベートなネットワーク
+- VM（仮想マシン）などのリソースをデプロイするために使用される
 - 他のVNetとは「論理的に」分離されている
   - ピアリングなどで明示的に接続をしない限り、他のVNetとはつながらない
 - VPNや専用線（ExpressRoute）を使用して、オンプレミスと安全に接続できる

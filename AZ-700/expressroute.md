@@ -6,6 +6,9 @@
 2014/2/20 ExpressRoute プレビュー
 https://azure.microsoft.com/en-us/updates/expressroute-preview/
 
+2014/5/12 ExpressRoute 一般提供開始
+https://www.zdnet.com/home-and-office/networking/microsoft-makes-azure-expressroute-hybrid-cloud-networking-technology-available/
+
 # ExpressRouteの仮想ネットワークゲートウェイのSKU
 
 - Standard: 1 Gbps
