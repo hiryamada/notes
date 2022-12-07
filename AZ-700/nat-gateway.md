@@ -4,6 +4,22 @@
 
 ※リソース名は「NATゲートウェイ」
 
+■概要
+
+VMからの外部接続に特化した専用サービス。
+
+外部接続のために、個々の VM (または他のコンピューティング リソース) にパブリック IP アドレスを割り当てる必要がなくなり、完全にプライベートな状態を維持できる。
+
+参考: AzureのSNATオプション: https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/
+
+NAT Gatewayを利用するメリット:
+- 送信元IPアドレスを固定できる
+- NAT Gateway に追加できるパブリック IP アドレスの最大数は 16 個。一つの NAT Gateway あたり、最大 64,000 * 16 = 1,024,000 ポートが SNAT ポートに使える。
+  - SNATポート枯渇の問題が起きにくい。
+- 外部接続の TCP アイドル タイムアウトを最大 120 分に伸ばせる。
+- フルマネージドな PaaS サービスで、高い可用性を提供。
+- Azure Firewall（のSNATの利用）よりも低コスト。
+
 ■公式サイト等
 
 ドキュメント:
@@ -32,37 +48,6 @@ https://azure.microsoft.com/ja-jp/updates/natpreview/
 https://azure.microsoft.com/ja-jp/updates/virtual-network-nat-now-generally-available/
 
 
-仮想ネットワークの送信専用(アウトバウンドのみ)のインターネット接続を簡素化
-
-すべての送信接続で、仮想ネットワーク NAT に接続されているパブリック IP アドレスとパブリック IP プレフィックスのリソースの両方または一方を使用
-
-送信接続は、ロードバランサーまたはパブリック IP アドレスを仮想マシンに直接接続せずに実行できます。
-
-NAT は、仮想ネットワークの 1 つ以上のサブネットに対して構成できる
-
-仮想マシンのオンデマンド接続を提供
-
-事前割り当てなしでのインターネット接続へのオンデマンド送信 
-
-フル マネージド、高い回復力(ソフトウェアによるネットワークを利用) 
-
-スケーリング用の 1 つ以上の静的パブリック IP アドレス 
-
-構成可能なアイドル タイムアウト 
-
-認識されない接続に対する TCP リセット 
-
-Azure Monitor の多次元メトリックとアラート 
-
-可用性ゾーンにデプロイ可能（なし、ゾーン1，2, 3）※ゾーン冗長は選択不可
-
-すべての Azure パブリック クラウド リージョンで使用できる
-
-最大16個のIPアドレスを割り当て可能 https://docs.microsoft.com/ja-jp/azure/virtual-network/ip-services/configure-public-ip-nat-gateway
-
-サポートされるのは、TCP と UDP プロトコルのみです。 ICMP はサポートされていません。
-
-Azure FirewallでもSNATが利用できるが、Firewallよりも低コスト。
 
 ■料金
 

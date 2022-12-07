@@ -36,18 +36,16 @@ https://docs.microsoft.com/ja-jp/learn/paths/design-implement-microsoft-azure-ne
   - DNS
   - ピアリング
   - ルーティング
-  - [Virtual Network NAT (NAT gateway)](https://docs.microsoft.com/ja-jp/azure/virtual-network/nat-gateway/nat-overview)
+  - Virtual Network NAT (NAT gateway)
 - [モジュール2: ハイブリッド ネットワークを設計して実装する](m02.md)
-  - VPN Gateway
-  - P2P
-  - P2S
+  - VPN Gateway (S2S, P2S)
   - Azure Virtual WAN
   - NVA
 - [モジュール3: Azure ExpressRoute を設計して実装する](m03.md)
   - Azure ExpressRoute
   - Azure ExpressRoute Global Reach
   - Azure ExpressRoute FastPath
-- モジュール4: Azure での非 HTTP(S) トラフィックの負荷分散
+- [モジュール4: Azure での非 HTTP(S) トラフィックの負荷分散](m04.md)
   - Azure Load Balancer
   - Azure Traffic Manager
 - モジュール5: Azure での HTTP(S) トラフィックの負荷分散
