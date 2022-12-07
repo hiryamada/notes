@@ -11,3 +11,5 @@
 はじめにお読みください: [全般的なラボの注意](lab.md)
 
 このラボの注意:
+- タスク 6: 「リソースをクリーンアップする」では、`ContosoResourceGroup` リソースグループを削除します。
+  - その他に`cloud-shell-storage-southeastasia` と `NetworkWatcherRG` リソースグループもありますが、これらは削除する必要はありません。（削除してもまたすぐ自動的に作成されます）
