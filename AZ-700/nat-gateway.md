@@ -8,6 +8,8 @@
 
 VMから外部への接続に特化した専用サービス。送信元IPアドレスを固定できる。SNATポート枯渇を防止できる。
 
+※SNAT: Source NAT(Network Address Translation) 送信元ネットワーク アドレス変換。VMからの送信トラフィックが、「NATゲートウェイ」から送信されたかのように、送信元IPアドレスとポート番号を書き換える。戻りのトラフィックは「NATゲートウェイ」を経由してVMに戻る。
+
 ※SNATポート枯渇: アプリケーションが外部のサービスのエンドポイントと大量のコネクションを張った際に、SNAT ポート（送信元のポート）が不足して通信できなくなってしまうこと
 
 VMにパブリックIPアドレスがない場合:
@@ -36,20 +38,23 @@ VNet
 NAT Gatewayを導入した場合:
 ```
 VNet
-├サブネット
-│  └NAT Gateway + IPアドレス+ポート → 外部サービス等
-│           ↑
-└サブネット ↑
-  └NIC -    VM
+└サブネット - NAT Gateway + IPアドレス+ポート → 外部サービス等
+  │           ↑
+  └NIC        ↑
+    └         VM
 ```
 
-参考: AzureのSNATオプション: https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/
+※NAT Gateway を利用したいサブネットを NAT Gateway と関連付ける。NAT Gateway専用のサブネットは不要。
 
-NAT Gatewayを利用するメリット:
+参考: AzureのSNATオプション: https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/
+  
+NAT Gatewayを利用するメリット/特徴:
 - 送信元IPアドレスを固定できる
+- パブリックIPプレフィックスを関連付けることもできる
+  - 固定の IP アドレス セットからの接続のみを許可する必要がある場合は、パブリック IP プレフィックスを Azure Virtual Network NAT に関連付ける。
 - NAT Gateway に追加できるパブリック IP アドレスの最大数は 16 個。
   - 1つの IPアドレスあたり、64000個のSNAT ポートを提供
-  - 一つの NAT Gateway あたり、最大 64,000 * 16 = 1,024,000 ポートが SNAT ポートに使える。
+  - 一つの NAT Gateway あたり、最大 64,000 * 16 = 1,024,000 ポート（約100万ポート）が SNAT ポートに使える。
   - SNATポート枯渇の問題が起きにくい。
 - 外部接続の TCP アイドル タイムアウトを最大 120 分に伸ばせる。
   - アイドル: エンドポイントの間で長時間データが送信されないこと
@@ -58,6 +63,9 @@ NAT Gatewayを利用するメリット:
   - ※UDPは 4 分で固定。
 - フルマネージドな PaaS サービスで、高い可用性を提供。
 - Azure Firewall（のSNATの利用）よりも低コスト。
+- 各 NAT ゲートウェイは、最大 50 Gbps のスループットを提供。
+- TCP・UDPに対応。
+- SDN(ソフトウェア定義のネットワーク サービス)として実装されている。内部ではVMを使用していない。
 
 ■公式サイト等
 
