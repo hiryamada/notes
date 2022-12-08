@@ -48,7 +48,7 @@ https://docs.microsoft.com/ja-jp/learn/paths/design-implement-microsoft-azure-ne
 - [モジュール4: Azure での非 HTTP(S) トラフィックの負荷分散](m04.md)
   - Azure Load Balancer
   - Azure Traffic Manager
-- モジュール5: Azure での HTTP(S) トラフィックの負荷分散
+- [モジュール5: Azure での HTTP(S) トラフィックの負荷分散](m05.md)
   - Application Gateway
   - Front Door
 - モジュール6: ネットワーク セキュリティを設計して実装する

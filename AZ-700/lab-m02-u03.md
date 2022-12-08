@@ -22,3 +22,23 @@ ManufacturingVnet           |VPN
 - タスク7: もう一つの仮想ネットワークゲートウェイを作成します。45分ほどかかります。
 - タスク8: タスク6, 7のリソース作成が終わってから、タスク8を開始できます。
 - 次のラボでクリーンナップ（リソース削除）を行います。
+
+
+タスク6/7のスクリプト（Cloud Shellで実行）
+
+```pwsh
+$gwpip = New-AzPublicIpAddress -Name CoreServicesVnetGateway-ip -ResourceGroupName ContosoResourceGroup -Location 'East US' -AllocationMethod Dynamic
+$vnet = Get-AzVirtualNetwork -Name CoreServicesVnet -ResourceGroupName ContosoResourceGroup
+$subnet = Get-AzVirtualNetworkSubnetConfig -Name 'GatewaySubnet' -VirtualNetwork $vnet
+$gwipconfig = New-AzVirtualNetworkGatewayIpConfig -Name gwipconfig1 -SubnetId $subnet.Id -PublicIpAddressId $gwpip.Id
+New-AzVirtualNetworkGateway -Name CoreServicesVnetGateway -ResourceGroupName ContosoResourceGroup -Location 'East US' -IpConfigurations $gwipconfig -GatewayType Vpn -VpnType RouteBased -GatewaySku VpnGw1 -AsJob
+
+
+$gwpip = New-AzPublicIpAddress -Name ManufacturingVnetGateway-ip -ResourceGroupName ContosoResourceGroup -Location 'West Europe' -AllocationMethod Dynamic
+$vnet = Get-AzVirtualNetwork -Name ManufacturingVnet -ResourceGroupName ContosoResourceGroup
+$subnet = Get-AzVirtualNetworkSubnetConfig -Name 'GatewaySubnet' -VirtualNetwork $vnet
+$gwipconfig = New-AzVirtualNetworkGatewayIpConfig -Name gwipconfig2 -SubnetId $subnet.Id -PublicIpAddressId $gwpip.Id
+New-AzVirtualNetworkGateway -Name ManufacturingVnetGateway -ResourceGroupName ContosoResourceGroup -Location 'West Europe' -IpConfigurations $gwipconfig -GatewayType Vpn -VpnType RouteBased -GatewaySku VpnGw1 -AsJob
+```
+
+`Get-Job` で状況を確認できます。
