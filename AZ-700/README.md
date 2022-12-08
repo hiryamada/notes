@@ -51,15 +51,16 @@ https://docs.microsoft.com/ja-jp/learn/paths/design-implement-microsoft-azure-ne
 - [モジュール5: Azure での HTTP(S) トラフィックの負荷分散](m05.md)
   - Application Gateway
   - Front Door
-- モジュール6: ネットワーク セキュリティを設計して実装する
+- [モジュール6: ネットワーク セキュリティを設計して実装する](m06.md)
   - Azure DDoS Protection
   - NSG
   - Azure Firewall
   - Azure Firewall Manager
   - Azure WAF + Azure Front Door
-- モジュール7: Azure サービスへのプライベート アクセスの設計と実装
-  - Private Link
+- [モジュール7: Azure サービスへのプライベート アクセスの設計と実装](m07.md)
   - サービスエンドポイント
-- モジュール8: ネットワーク監視を設計して実装する
+  - プライマリエンドポイント
+- [モジュール8: ネットワーク監視を設計して実装する](m08.md)
   - Azure Monitor
+  - Log Analytics
   - Azure Network Watcher

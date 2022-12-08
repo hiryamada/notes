@@ -1,9 +1,5 @@
 # Log Analytics
 
-
-特設サイト
-https://dev.loganalytics.io/
-
 ■ログまわりの用語の整理
 
 [Azure Monitor ログ](https://docs.microsoft.com/ja-jp/azure/azure-monitor/logs/data-platform-logs):

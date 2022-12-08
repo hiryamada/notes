@@ -1,8 +1,17 @@
 # Azure Firewall Manager
 
+クラウドベースのセキュリティ境界に対して一元的なセキュリティ ポリシーとルート管理を提供するセキュリティ管理サービス。
+
+ドキュメント
 https://docs.microsoft.com/ja-jp/azure/firewall-manager/overview
 
-# 歴史
+料金
+https://azure.microsoft.com/ja-jp/pricing/details/firewall-manager/
+
+わかりやすい解説
+https://cloudsteady.jp/post/10089/
+
+■歴史
 
 2019/11/5 Azure Firewall Manager is now in preview
 https://azure.microsoft.com/en-us/updates/azure-firewall-manager-is-now-in-preview/
