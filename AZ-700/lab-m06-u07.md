@@ -1,6 +1,9 @@
 # ラボ (ハンズオン)
 
-手順書: [M06-ユニット 7 Azure portal を使用して Azure Firewall をデプロイして構成する](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M06-Unit%207%20Deploy%20and%20configure%20Azure%20Firewall%20using%20the%20Azure%20portal.md)
+手順書: M06-ユニット 7 Azure portal を使用して Azure Firewall をデプロイして構成する
+- [英語の手順書(最新, 推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Instructions/Exercises/M06-Unit%207%20Deploy%20and%20configure%20Azure%20Firewall%20using%20the%20Azure%20portal.md)
+- [日本語の手順書(内容が古くなっている場合があります, 非推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M06-Unit%207%20Deploy%20and%20configure%20Azure%20Firewall%20using%20the%20Azure%20portal.md)
+
 
 概要:
 - Azure Firewall をデプロイします

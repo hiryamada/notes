@@ -1,6 +1,9 @@
 # ラボ (ハンズオン)
 
-手順書: [M02-ユニット 3 仮想ネットワーク ゲートウェイを作成および構成する](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M02-Unit%203%20Create%20and%20configure%20a%20virtual%20network%20gateway.md)
+手順書: M02-ユニット 3 仮想ネットワーク ゲートウェイを作成および構成する
+
+- [英語の手順書(最新, 推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Instructions/Exercises/M02-Unit%203%20Create%20and%20configure%20a%20virtual%20network%20gateway.md)
+- [日本語の手順書(内容が古くなっている場合があります, 非推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M02-Unit%203%20Create%20and%20configure%20a%20virtual%20network%20gateway.md)
 
 概要: 2つのVNetをVPNで接続します。
 

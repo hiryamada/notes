@@ -1,6 +1,9 @@
 # ラボ (ハンズオン)
 
-手順書: [M07-ユニット 6 Azure PowerShell を使用して Azure プライベート エンドポイントを作成する](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M07-Unit%206%20Create%20an%20Azure%20private%20endpoint%20using%20Azure%20PowerShell.md)
+手順書: M07-ユニット 6 Azure PowerShell を使用して Azure プライベート エンドポイントを作成する
+- [英語の手順書(最新, 推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Instructions/Exercises/M07-Unit%206%20Create%20an%20Azure%20private%20endpoint%20using%20Azure%20PowerShell.md)
+- [日本語の手順書(内容が古くなっている場合があります, 非推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M07-Unit%206%20Create%20an%20Azure%20private%20endpoint%20using%20Azure%20PowerShell.md)
+
 
 概要:
 - Azure App Service Web アプリを作成します

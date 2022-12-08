@@ -1,6 +1,8 @@
 # ラボ (ハンズオン)
 
-手順書: [M05-ユニット 4 Azure Application Gateway をデプロイする](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M05-Unit%204%20Deploy%20Azure%20application%20gateway.md)
+手順書: M05-ユニット 4 Azure Application Gateway をデプロイする
+- [英語の手順書(最新, 推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Instructions/Exercises/M05-Unit%204%20Deploy%20Azure%20application%20gateway.md)
+- [日本語の手順書(内容が古くなっている場合があります, 非推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M05-Unit%204%20Deploy%20Azure%20application%20gateway.md)
 
 概要:
 - Application Gatewayを作成します

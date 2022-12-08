@@ -1,6 +1,9 @@
 # ラボ (ハンズオン)
 
-手順書: [M06-ユニット 9 Azure Firewall Manager を使用して仮想ハブのセキュリティを保護する](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M06-Unit%209%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager.md)
+手順書: M06-ユニット 9 Azure Firewall Manager を使用して仮想ハブのセキュリティを保護する
+- [英語の手順書(最新, 推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Instructions/Exercises/M06-Unit%209%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager.md)
+- [日本語の手順書(内容が古くなっている場合があります, 非推奨)](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M06-Unit%209%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager.md)
+
 
 概要:
 - Azure Firewall Manager で「セキュリティ保護付き仮想ハブ」を作成します
