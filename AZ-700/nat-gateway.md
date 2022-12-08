@@ -47,7 +47,7 @@ VNet
 ※NAT Gateway を利用したいサブネットを NAT Gateway と関連付ける。NAT Gateway専用のサブネットは不要。
 
 参考: AzureのSNATオプション: https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/
-  
+
 NAT Gatewayを利用するメリット/特徴:
 - 送信元IPアドレスを固定できる
 - パブリックIPプレフィックスを関連付けることもできる

@@ -61,3 +61,5 @@ VNet
 
 ※平常時はExpressRoute回線が優先で使用される。ExpressRoute回線に障害が発生した場合に、VPN（サイト間 VPN）にフォールオーバーされる。
 
+https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-skus-legacy#agg
+

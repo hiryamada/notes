@@ -1,4 +1,4 @@
-# ラボ (ハンズオン)
+# ラボ (ハンズオン): オプション
 
 手順書: [M02-ユニット 7 Azure portal を使用して仮想 WAN を作成する](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/blob/main/Instructions/Exercises/M02-Unit%207%20Create%20a%20Virtual%20WAN%20by%20using%20Azure%20Portal.md)
 
@@ -12,4 +12,5 @@
 はじめにお読みください: [全般的なラボの注意](lab.md)
 
 このラボの注意:
-- リソースのデプロイに時間がかかります。お時間に余裕がある状況で実施ください。
+- 本ラボはオプションとします。
+- 末尾のクリーンアップ（不要リソース削除）のみ実施してください。

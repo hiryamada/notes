@@ -26,7 +26,6 @@ VNet
 クライアントPC
 ```
 
-
 ■VPNゲートウェイのSKU
 
 https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku
@@ -63,6 +62,19 @@ S2SトンネルはBasic: 10まで、その他: 30まで。
 - 数字(1,2,3,4,5)が大きいほうが、帯域幅が広く、P2S同時接続数が多い
 - 末尾に「AZ」が付くものは[可用性ゾーンに対応](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways)。（後述）
 
+■Basic SKUの特徴/制約
+
+https://azure.microsoft.com/ja-jp/pricing/details/vpn-gateway/
+
+https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-skus-legacy#agg
+
+https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-skus-legacy#resize
+
+- 最も安価
+- ExpressRoute との共存: 不可
+- BGP はサポートされない
+- サイズ変更ができない
+
 ■SKUの変更（「サイズの変更」とも）
 
 https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#resizechange
@@ -93,19 +105,23 @@ https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-highlyavailable
 
 https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps#about
 
-- ルート ベース
+- ルート ベース（静的ルーティング）
   - BGPの構成を有効化できる
   - ほとんどの構成で、こちらが使用される
-- ポリシー ベース
+- ポリシー ベース（静的ルーティング）
   - SKU: BasicのVPNゲートウェイでのみ利用可能
+  - [検証済みVPNデバイス](https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)に含まれていない場合が多い
 
 https://qiita.com/hikaru_motomiya/items/377974a55e1042cff239#%E5%88%A9%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E9%81%95%E3%81%84
 
 > ルートベースのVPN:  ポリシーベースより柔軟性に優れており、例えば新しいサブネットを作成した場合などの変更による回複性に優れているため、オンプレミスとの接続にはこちらがお勧め
 
-■BGP
 
-有効または無効に設定。ルートベースのVPNゲートウェイでのみ有効に設定できる。
+■BGP(Border Gateway Protocol)
+
+https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-bgp-overview
+
+ルートベースのVPNゲートウェイでのみ有効に設定できる。
 
 ■パブリックIPアドレス
 
