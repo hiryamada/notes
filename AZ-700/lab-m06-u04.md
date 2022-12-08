@@ -6,7 +6,7 @@
 - DDoS Protection プランを作成し、設定します
 - 「BreakingPoint Cloud」を使用して、DDoS 攻撃のシミュレーションを実行します
 
-時間: 35 分
+時間: 40 分
 
 はじめにお読みください: [全般的なラボの注意](lab.md)
 

@@ -56,7 +56,7 @@ https://docs.microsoft.com/ja-jp/learn/paths/design-implement-microsoft-azure-ne
   - NSG
   - Azure Firewall
   - Azure Firewall Manager
-  - Azure WAF + Azure Front Door
+  - Azure WAF
 - [モジュール7: Azure サービスへのプライベート アクセスの設計と実装](m07.md)
   - サービスエンドポイント
   - プライマリエンドポイント

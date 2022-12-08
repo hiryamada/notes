@@ -3,7 +3,7 @@
 
 https://docs.microsoft.com/ja-jp/azure/virtual-network/network-security-groups-overview
 
-ネットワークセキュリティグループ
+■ネットワークセキュリティグループの構造
 - 名前
 - セキュリティ規則
   - 受信セキュリティ規則
@@ -13,7 +13,7 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/network-security-groups-o
     - ユーザーが追加する規則...
     - デフォルトの規則...
 
-各規則のプロパティ (Azure portalの表示順)
+■各規則のプロパティ (Azure portalの表示順)
 - ソース - Any / IPアドレス or CIDRブロック / サービス タグ / ASG
 - ソースポート範囲 - * 等
 - 宛先 - Any / IPアドレス or CIDRブロック / サービス タグ / ASG
@@ -25,7 +25,7 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/network-security-groups-o
 - 名前: 作成後の変更は不可!!
 - 説明
 
-受信セキュリティ規則のデフォルトの規則
+■受信セキュリティ規則のデフォルトの規則
 - 65000 AllowVnetInBound
   - ソース: VirtualNetwork
   - 宛先: VirtualNetwork
@@ -36,7 +36,7 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/network-security-groups-o
   - ソース: 任意
   - 宛先: 任意
 
-送信セキュリティ規則のデフォルトの規則
+■送信セキュリティ規則のデフォルトの規則
 - 65000 AllowVnetOutBound
   - ソース: VirtualNetwork
   - 宛先: VirtualNetwork
@@ -47,22 +47,26 @@ https://docs.microsoft.com/ja-jp/azure/virtual-network/network-security-groups-o
   - ソース: 任意
   - 宛先: 任意
 
-関連付け
+■関連付け
+
 - ネットワークインターフェース(NIC)
 - サブネット
 
-受信トラフィックの規則の処理
+■受信トラフィックの規則の処理
+
 - サブネットに関連付けられているNSGがあれば、まずその規則を処理
 - 次にNICに関連付けられているNSGがあれば、その規則を処理
 - ※サブネットにもNICにもNSGの関連付けがない場合は、トラフィックはすべて許可される
 
-送信トラフィックの規則の処理
+■送信トラフィックの規則の処理
+
 - NICに関連付けられているNSGがあれば、その規則を処理
 - 次にサブネットに関連付けられているNSGがあれば、その規則を処理
 - ※NICにもサブネットにもNSGの関連付けがない場合は、トラフィックはすべて許可される
 
-サブネット内のトラフィック
+■サブネット内のトラフィック
+
 - サブネットに関連付けたNSGのセキュリティ規則は、サブネットの内部にあるVM間の接続に影響する。
-- 例: SSH接続を拒否するルールを持つNSGをサブネットに関連付ける
-  - サブネットの外からサブネットの中のVMにSSH接続ができなくなる。
-  - サブネット内で、あるVMから別のVMへのSSH接続もできなくなる。
+  - 例: SSH接続を拒否するルールを持つNSGをサブネットに関連付ける
+    - サブネットの外からサブネットの中のVMにSSH接続ができなくなる。
+    - サブネット内で、あるVMから別のVMへのSSH接続もできなくなる。
