@@ -119,6 +119,8 @@ https://learn.microsoft.com/ja-jp/azure/firewall-manager/secure-cloud-network#cr
 設定できる項目:
 
 - [DNS設定](https://learn.microsoft.com/ja-jp/azure/firewall-manager/dns-settings)
+  - Azure Firewallが使用するDNSサーバーの設定
+  - Azure FirewallをDNSプロキシーとして使用する設定
 - [TLS検査](https://learn.microsoft.com/ja-jp/azure/firewall/premium-features#tls-inspection)
   - アウトバウンド トラフィックを復号化し、データを処理し、その後にデータを暗号化して宛先に送信
 - 規則コレクション
