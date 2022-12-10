@@ -7,12 +7,13 @@
 
 概要:
 - DDoS Protection プランを作成し、設定します
-- 「BreakingPoint Cloud」を使用して、DDoS 攻撃のシミュレーションを実行します
+- ~~「BreakingPoint Cloud」を使用して、DDoS 攻撃のシミュレーションを実行します~~
 
 時間: 40 分
 
 はじめにお読みください: [全般的なラボの注意](lab.md)
 
 このラボの注意:
-- https://breakingpoint.cloud/trial から、「BreakingPoint Cloud」のフリートライアルアカウントを作成します。初日に作成したMicrosoftアカウントのメールアドレスを使用します。
 - コスト（Azure Passサブスクリプションのクレジット）を節約するため、ラボが完了したらできるだけ早くクリーンアップします。
+- ~~https://breakingpoint.cloud/trial から、「BreakingPoint Cloud」のフリートライアルアカウントを作成します。初日に作成したMicrosoftアカウントのメールアドレスを使用します。~~ 2022/12 タスク7はスキップしてください。BreakingPointの仕様変更により、 BreakingPointの無料利用は現在不可能となっています。
+
