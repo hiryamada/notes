@@ -89,6 +89,10 @@ https://azure.microsoft.com/ja-jp/pricing/details/functions/
 - CosmosDBTrigger
 - IotHubTrigger
 
+■トリガーとバインド
+
+PDF資料: [Azure Functionsのトリガーとバインド](pdf/mod02/トリガー、バインド.pdf)
+
 ■タイマートリガー
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-timer
@@ -105,17 +109,20 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-timer
 すべての一覧（サポートされているバインディング）:
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings
 
-Twilio（トゥイリオ）: これは、サードパーティ製のサービス。APIを使用して、テキストメッセージ（SMS）を送信したりすることができる。
+Twilio（トゥイリオ）: サードパーティ製のサービス。APIを使用して、テキストメッセージ（SMS）を送信したりすることができる。
 
 解説動画: https://www.youtube.com/watch?v=1QfaGZ2Gm9g
 
 Functionsのドキュメント: https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-twilio
+
+<!--
 
 ■スケーリング
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/event-driven-scaling#runtime-scaling
 
 拡大縮小はキューの長さや最も古いキュー メッセージの経過時間に基づいて実施されます。
+
 
 ■ホスティングプラン
 
@@ -146,6 +153,8 @@ App Service プランを実行する場合、関数アプリが正常に実行�
 この設定は、App Service プランでのみ指定できる。
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan#always-on
+
+-->
 
 ■ストレージアカウント
 
@@ -277,6 +286,8 @@ func start
 ```
 ※再度、func new を実行すると、関数を追加できる。
 
+<!--
+
 ■Visual Studio Codeによるコードの編集
 
 ```
@@ -310,6 +321,7 @@ post -c {"name":"taro"}
 exit
 ```
 
+
 ■Visual Studio CodeのAzure Account拡張機能
 
 Azure Account - a single Azure sign-in and subscription filtering experience for all other Azure extensions
@@ -326,6 +338,7 @@ https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefu
 ```
 F1, Azure Functions: Deploy to Function App...
 ```
+-->
 
 <!--
 ■ラボ2 
