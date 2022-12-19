@@ -1,6 +1,6 @@
 # ハンズオン: WebアプリをApp Serviceにデプロイする
 
-Azure拡張機能のアイコンをクリック。
+Visual Studio Codeの、Azure拡張機能のアイコン（画面左側の「A」マーク）をクリック。
 
 RESOURCES内に表示されているAzureサブスクリプション（鍵のマークのアイコン）を展開し、App Servicesを右クリックし、「Create New Web App...(Advanced)」をクリック。
 
@@ -50,11 +50,6 @@ Application Insightsの選択。「Skip for now」を選択。
 
 ![](images/ss-2022-04-04-00-49-06.png)
 
-※画面右下に以下のようなエラー「This subscription has reached the limit of 1 Free ... service plan(s) ...」と表示されてしまう場合は、すでにFreeプランが作られており、これ以上Freeのプランを作ることができない状態である。
-
-この場合はこのページの手順を最初からやり直し、「App Serviceプラン」の価格レベルの選択で、Free (F1) 以外を選択する。
-
-![](images/ss-2022-04-04-00-57-16.png)
 
 Webアプリが作成されたら、「Deploy」をクリック。
 
@@ -64,13 +59,27 @@ Webアプリが作成されたら、「Deploy」をクリック。
 
 ![](images/ss-2022-04-04-14-20-20.png)
 
+デプロイする（ローカルの）Webアプリを選択。
+
 ![](images/ss-2022-04-04-14-21-29.png)
+
+デプロイ用のコンフィグ（設定）を追加するかどうかの確認。「Add Config」をクリック。
 
 ![](images/ss-2022-04-04-14-21-48.png)
 
+デプロイをするかどうかの確認。「Deploy」をクリック。
+
 ![](images/ss-2022-04-04-14-22-07.png)
 
+この（ローカルの）Webアプリを、常に同じApp Service Webアプリへとデプロイするかどうかの質問。「Yes」
+
 ![](images/ss-2022-04-04-14-22-28.png)
+
+「Azure Developer CLI is not installed...」→ 「Later」
+
+※[Azure Developer CLI](https://learn.microsoft.com/ja-jp/azure/developer/azure-developer-cli/overview) は、Azureアプリ開発を支援するコマンドラインツール。今回は利用しない。
+
+![](images/ss-2022-12-19-10-14-10.png)
 
 無事デプロイが完了したら、以下のようなダイアログが表示される。「Browse Website」をクリックする。
 
