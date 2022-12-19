@@ -9,7 +9,7 @@
   - [ハンズオン](../handson/az-204.md)
     - 準備、App Service
 - ラーニングパス2 Azure Functions
-  - [Azure Functions](mod02-01-functions.md)
+  - [Azure Functions](mod02.md)
   - [Durable Functions](mod02-02-durable-functions.md)
   - [知識チェック（試験対策）](check.md)
   - [ハンズオン](../handson/az-204.md)

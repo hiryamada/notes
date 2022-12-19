@@ -16,15 +16,22 @@ https://azure.microsoft.com/ja-jp/solutions/serverless/
 ■Azure Functionsでできることの例
 
 - イベント処理
+  - ストレージアカウントにファイル（Blob）がアップロードされたら、そのファイルを読み取って処理する
+    - SQL Databaseへデータを登録する
+    - Cosmos DBへデータを登録する
+- 定期的な処理（タイマー）
+  - 毎週・毎月といった決まった間隔でタスクを実行
 - APIの実装
 - マイクロサービスの実装
 - システムの統合
-- IoTデバイスからデータを収集して処理する
-- スケジュールに従ったタスク実行
+- IoTデバイスからのデータ収集・処理
 - Cosmos DBの変更に対応する
-- キューのメッセージを処理する
+- キューに到着したメッセージを処理する
+- **Azure Monitorアラート**がトリガーされた際に、Azure Functions関数で、対応する処理を実行する
 
 https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-overview#scenarios
+
+<!--
 
 ■Azure Functionsでできない/苦手なこと
 
@@ -46,13 +53,15 @@ https://github.com/Azure/app-service-announcements/issues
 
 （セッションなどの）状態を持たせる → 基本的にAzure Functionsのようなサーバーレスのアーキテクチャはステートレスが前提。ただし、外部のストレージを利用するなどして、状態を持たせる（複数の実行の間でデータを受け渡す）ことは不可能ではない。
 
+-->
+
 ■料金
 
 https://azure.microsoft.com/ja-jp/pricing/details/functions/
 
 「関数アプリ」作成時に、そのアプリが使用する「価格プラン」を選択する。
 
-- [消費 / 使用量 / 従量課金](https://docs.microsoft.com/ja-jp/azure/azure-functions/consumption-plan)
+- [消費（使用量、従量課金とも）](https://docs.microsoft.com/ja-jp/azure/azure-functions/consumption-plan)
   - 1 秒あたりのリソースの使用量と実行回数に基づいて課金
 - [Premium プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-premium-plan?tabs=portal)
   - インスタンス全体にわたって割り当てられたコア秒数とメモリに基づく
@@ -317,6 +326,8 @@ https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefu
 ```
 F1, Azure Functions: Deploy to Function App...
 ```
+
+<!--
 ■ラボ2 
 
 ラボの手順書
@@ -343,11 +354,6 @@ https://code.visualstudio.com/download
 httprepl
 https://docs.microsoft.com/ja-jp/aspnet/core/web-api/http-repl/#installation
 
-■Durable Functions
-
-Durable: 永続性のある、恒久的な
-
-[参考資料](pdf/mod02/durable-function.pdf)
 
 ■学習に役立つリソース
 
@@ -356,3 +362,4 @@ https://docs.microsoft.com/ja-jp/learn/paths/create-serverless-applications/
 
 サーバーレスコミュニティライブラリ: 多数のサンプルコード
 https://serverlesslibrary.net/
+-->
