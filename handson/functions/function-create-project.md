@@ -1,6 +1,8 @@
 # Azure Functions 「関数アプリ」の作成
 
-F1, Azure Functions: Create New Project...
+Visual Studio Codeの機能を使用して、ローカルで、「関数アプリ」のプロジェクトを作ります。また、プロジェクト内に、HTTPトリガーを使用する「関数」を作ります。
+
+Visual Studio Codeを起動します。「F1」を押し、続いて「Azure Functions: Create New Project...」を入力します。
 
 ![](images/ss-2022-04-04-01-36-09.png)
 
@@ -16,7 +18,7 @@ F1, Azure Functions: Create New Project...
 - Select a language
   - C#
 - Select a .NET runtime
-  - .NET 6
+  - .NET 6 LTS ※ 「.NET 6.0 Isolated LTS」ではなく「.NET 6.0 LTS」を選択
 - Select a template for your project's first function
   - HTTP trigger
 - Privide a function name

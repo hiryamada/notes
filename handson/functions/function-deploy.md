@@ -1,13 +1,15 @@
 # ハンズオン: Azure Functions 「関数アプリ」のデプロイ
 
-F1 を押し、コマンドパレットで「＋Create new Funciton App in Azure... Advanced」を選択
+F1 を押し、コマンドパレットで「Create Funciton App in Azure... (Advanced)」を選択する。
+
+（または画面左「Azure」拡張機能アイコンでAzureリソース一覧を表示し、「Function App」を右クリックして「Create Funciton App in Azure... (Advanced)」を選択する。）
 
 ![](images/ss-2022-06-20-16-53-20.png)
 
 - Enter a globally unique name...
-  - func（乱数）
+  - func（8桁程度の乱数を入力して「func12349876」のような名前にする）
 - Select a runtime stack
-  - .NET 6
+  - .NET 6 ※「.NET 6 Isolated」ではなく「.NET 6」
 - Select an OS
   - Linux
 - Select a resource group ...

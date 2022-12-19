@@ -10,6 +10,7 @@
     - 準備、App Service
 - ラーニングパス2 Azure Functions
   - [Azure Functions](mod02.md)
+    - PDF資料: [Service Busの利用例](pdf/mod02/Azure%20Function%20Service%20Bus.pdf)
   - [Durable Functions](mod02-02-durable-functions.md)
   - [知識チェック（試験対策）](check.md)
   - [ハンズオン](../handson/az-204.md)
