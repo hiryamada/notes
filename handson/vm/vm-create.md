@@ -15,7 +15,7 @@ https://portal.azure.com/
 - 仮想マシン名: winvm1
 - 地域: (Asia Pacific) Japan East
 - 可用性オプション: インフラストラクチャ冗長は必要ありません
-- イメージ: Windows Server 2022 Datacenter: Azure Edition - Gen2
+- イメージ: Windows Server 2022 Datacenter: Azure Edition - x64 Gen2
   - ※クリックして選択したイメージがプルダウンにうまく表示されない場合があるが問題ない
 - サイズ: すべてのサイズを表示、D2s_v5 で検索し、「Dシリーズ v5」を展開して D2as_v5 をクリックして「選択」。選択後は Standard_D2as_v5 と表示される。※「使用できないサイズ」などと表示されて選択できない場合は、類似の、使用できるサイズ (E2as_v5, D2as_v4 など) を選択して進める。
 - ユーザー名: azureuser
