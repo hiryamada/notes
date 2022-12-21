@@ -11,6 +11,7 @@
 - ★ご参考: Azure Kubernetes Service
   - [Azure DevOps + AKSの構築例](../AZ-400/pdf/Azure%20DevOps%20and%20AKS.pdf)
 - ラーニングパス 6: Microsoft ID Platform, Microsoft Graph
+  - ご参考: [Azure AD入門](../AzureAD/Azure%20AD%E5%85%A5%E9%96%80.pdf)
   - [Microsoft ID Platform](mod06-04-id-platform.md)
   - [ハンズオン: アプリの登録](day3-handson.md)
   - [Microsoft Authentication Library (MSAL)](mod06-05-msal.md)
