@@ -3,6 +3,7 @@
 - ラーニングパス 7: セキュリティ（Key Vault, マネージドID, App Configuration）
   - [Key Vault](mod07.md)
   - [App Configuration](mod07-02-appcfg.md)
+    - ご参考: [App Configurationのアクセスにかかる時間](pdf/Azure%20App%20Configuration%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.pdf)
   - [ハンズオン](../handson/az-204.md)
   - [知識チェック（試験対策） - Key Vault, マネージドID, App Configuration](check.md)
 - ラーニングパス 8 API Management
