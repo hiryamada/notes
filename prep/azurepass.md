@@ -17,9 +17,9 @@
 - InPrivate ウィンドウで、Azure Passのサイト（ https://www.microsoftazurepass.com/ ）にアクセスします。
 - ページ内のStartボタンをクリックします。
 - 今回のコース用に作成したMicrosoftアカウントでサインインします。
-- 「Confirm Microsoft Account」ボタンをクリックします。
-- **「Microsoft Email」の部分に、「今回のコース用に作成したMicrosoftアカウント」のメールアドレスが表示されていることを確認してください。**
+- **「Microsoft Email」の部分に、「今回のコース用に作成したMicrosoftアカウント」のメールアドレスが表示されていることを確認してください。** もし、異なるメールアドレスが表示されている場合は、「sign out」をクリックしてサインアウトし、今回のコース用に作成したMicrosoftアカウントでサインインし直してください。
 - ![](images/ss-2021-11-08-13-16-27.png)
+- 「Confirm Microsoft Account」ボタンをクリックします。
 - 「Enter Promo Code」テキストボックスに、前の手順（ラボ環境での Promo Code の入手）で入手したPromo Codeを入力します。**トレーニングキーとPromo Codeは別のもの** ですのでご注意ください。![](images/ss-2022-11-14-09-44-39.png)
 - 「Enter the characters you see」に、画面に表示されている画像の中の文字列を入力してください。
 - 「Submit」をクリックします。
@@ -27,6 +27,7 @@
 - 「プロフィール（Your profile）」フォームで、氏名などの情報を入力します。
 - 「次へ(Next)」をクリックします。※画面が切り替わるまで少し待ちます。リロードなどの操作を行わないでください。
 - 「サブスクリプション契約、オファーの詳細、プライバシーに関する声明に同意します。(I agree to the subscription agreement, offer details, and privacy statement.)」にチェックを入れます。
+- ![](images/ss-2023-01-10-10-07-23.png)
 - 「サインアップ（Sign Up）」をクリックします。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。
 - 「お客様の情報を確認しています...」「アカウントを設定しています...」(Setting up your account...)などのメッセージが出ます。**「リロード」や「戻る」操作をせず、画面が切り替わるまで待ちます**。この間に画面に表示されるテキストエリア（このサインアップ エクスペリエンスに満足していますか？）には何も入力する必要はありません。そのままお待ち下さい。
 - ![](images/ss-2021-12-06-10-04-02.png)
@@ -40,7 +41,7 @@
 
 以上で、「今回のコース用に新しく作成したMicrosoftアカウント」で「Azure Pass - スポンサー プラン」Azureサブスクリプションが利用できるようになりました。
 
-このサブスクリプションの有効期限や、クレジットの残高は、[Microsoft Azure Sponsorship クレジット残高](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。
+このサブスクリプションの有効期限や、クレジットの残高は、[Microsoft Azure Sponsorship クレジット残高](https://www.microsoftazuresponsorships.com/balance)のページで確認できます。![](images/ss-2023-01-10-10-11-47.png)
 
 ## 注意
 
