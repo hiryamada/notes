@@ -103,6 +103,7 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
     ```
     dotnet new web -n hello
     ```
+- helloフォルダを開く
 
 ■Webアプリが使用するポート番号の変更
 
@@ -113,9 +114,9 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 
 ■Webアプリのテスト実行
 
-- 以下のコマンドを投入
+- メニューの`Terminal`、`New Terminal`で、ターミナルを開く
+- ターミナル内で以下のコマンドを投入
     ```
-    cd hello
     dotnet run --urls=http://localhost:8080
     ```
 - 画面右下に確認（Your application running on ...）が出てくるので「Open in browser」をクリック
