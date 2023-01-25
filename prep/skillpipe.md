@@ -1,10 +1,14 @@
 # テキストについて
 
-テキストとして、[Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/)のコンテンツを参照します。Microsoft Learnは特に期限なくご利用いただけます。
+テキストとして、[Microsoft Learn](https://docs.microsoft.com/ja-jp/learn/)の教材が利用可能です。特に期限なくご利用いただけます。
 
-ご参加のコースの公式サイトの下部、「準備する 2 つの方法」の「オンライン - 無料」以下に、講義で参照するMicrosoft Learnのドキュメントへのリンクがあります。
+ご参加のコースの公式サイトの下部、「準備する 2 つの方法」の「Self-paced」（「オンライン - 無料」）以下に、講義で参照するMicrosoft Learnのドキュメントへのリンクがあります。こちらが教材となります。
 
+![](images/ss-2023-01-23-09-50-30.png)
+
+<!--
 これらのブックマーク（お気に入りへの追加）をお願いします。
+-->
 
 例:
 

@@ -69,6 +69,7 @@
   az provider register --namespace Microsoft.ContainerRegistry # acr
   az provider register --namespace Microsoft.ContainerService # aks
   az provider register --namespace Microsoft.OperationalInsights # monitoring
+  az provider register --namespace Microsoft.OperationsManagement # monitoring
   az group create --name hello_rg --location japaneast
   ```
 - リソースプロバイダーの登録（上記）が実際に終わるまで少し時間がかかるので3分ほど待つ
