@@ -1,7 +1,14 @@
 
 # 今回のトレーニング用の新しいMicrosoftアカウントの作成
 
-- [Microsoftアカウント](https://account.microsoft.com/account/Account?lang=ja-JP)にアクセスします。
+他のMicrosoftアカウントとの混乱を避けるため、InPrivateウィンドウ内で作業します。
+
+- InPrivate ウィンドウを開きます。
+  - Edge: [InPrivate ウィンドウ](https://support.microsoft.com/ja-jp/microsoft-edge/microsoft-edge-%E3%81%A7-inprivate-%E3%83%96%E3%83%A9%E3%82%A6%E3%82%BA%E3%82%92%E4%BD%BF%E3%81%86-e6f47704-340c-7d4f-b00d-d0cf35aa1fcc)を開きます。ショートカット キー: Ctrl + Shift + N
+  - Chrome: [シークレット ウィンドウ](https://support.google.com/chrome/answer/95464)を開きます。
+  - Firefox: [プライベート ウィンドウ](https://support.mozilla.org/ja/kb/private-browsing-use-firefox-without-history)を開きます。
+  - Safari: [プライベートブラウズ ウィンドウ](https://support.apple.com/ja-jp/guide/safari/ibrw1069/mac)を開きます。
+- InPrivate ウィンドウで、[Microsoftアカウント](https://account.microsoft.com/account/Account?lang=ja-JP)にアクセスします。
 - 画面の下までスクロールして「アカウントを作成する」をクリックします。
 - ![](images/ss-2023-01-10-09-40-44.png)
 - 「新しいメールアドレスを取得」をクリックします。
