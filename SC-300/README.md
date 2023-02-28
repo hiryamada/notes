@@ -7,7 +7,7 @@ Microsoft Azure Active Directory (Azure AD) を使用して、組織の ID お�
 
 教材や、認定試験の出題範囲についての詳細は、以下のページをご覧ください。
 
-試験 AZ-300: Microsoft ID とアクセス管理者
+試験 SC-300: Microsoft ID とアクセス管理者
 https://learn.microsoft.com/ja-jp/certifications/exams/sc-300
 
 認定資格 Microsoft Certified: Identity and Access Administrator Associate
@@ -19,7 +19,7 @@ https://learn.microsoft.com/ja-jp/certifications/identity-and-access-administrat
 
 Microsoft Learnは以下のような構成となっています。
 
-- 「ラーニングパス」(AZ-300の場合は4ラーニングパス)
+- 「ラーニングパス」(SC-300の場合は4ラーニングパス)
   - 3～5個程度の「モジュール」
     - 10個程度の「ユニット」（ページ）
 
@@ -34,8 +34,11 @@ Microsoft Learnは以下のような構成となっています。
 
 ■ ラボ手順書
 
-英語版
+英語版（最新。ブラウザの翻訳機能で日本語化して閲覧できます）
 https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/tree/master/Instructions/Labs
 
-日本語翻訳版
+日本語翻訳版（若干古い可能性があります）
 https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator.JA-JP/tree/main/Instructions/Labs
+
+ラボのファイル（ダウンロードして展開すると Allfiles フォルダ以下にラボで使用するファイルがあります）
+https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/archive/refs/heads/master.zip
