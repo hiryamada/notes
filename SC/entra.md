@@ -1,5 +1,7 @@
 # Microsoft Entra（エントラ、エンチュラ、「入口」）
 
+![](images/ss-2023-02-28-09-28-41.png)
+
 2022/5/31より、Azure AD は Microsoft Entraの一部となった。Entraには「Azure AD」、「Permissions Management」、「Velified ID」が含まれる。
 
 - Microsoft Entra

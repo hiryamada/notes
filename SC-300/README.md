@@ -32,10 +32,10 @@ Microsoft Learnは以下のような構成となっています。
 - [ラーニングパス3](lp03.md)
 - [ラーニングパス4](lp04.md)
 
-# ラボ手順書
+■ ラボ手順書
 
 英語版
-https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator
+https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/tree/master/Instructions/Labs
 
 日本語翻訳版
-https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator.JA-JP
+https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator.JA-JP/tree/main/Instructions/Labs
