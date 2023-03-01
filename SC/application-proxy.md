@@ -2,6 +2,8 @@
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/app-proxy/what-is-application-proxy
 
+![](images/ss-2023-03-01-22-39-45.png)
+
 - アプリケーション プロキシは、Azure portal で構成する Azure AD サービス
 - Azure Cloud に外部のパブリック HTTP/HTTPS URL エンドポイントを発行し、それを組織の内部アプリケーション サーバーの URL に接続することができる
 - コンポーネント
