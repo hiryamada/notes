@@ -1,29 +1,3 @@
-# 参考: ゼロトラストモデル
-
-■ゼロトラストとは？ 
-
-以下のような「原則」を組織に適用し、セキュリティを強化するという概念。
-
-- (1)常に認証・承認を実施。
-- (2)最小特権アクセスを使用。
-- (3)セキュリティ侵害を想定して対策。
-
-参考: [Microsoft Learn 組織にゼロトラストを構築する](https://docs.microsoft.com/ja-jp/learn/modules/m365-identity-zero-trust/)
-
-# 参考: Microsoft Identity Manager
-
-■Microsoft Identity Managerとは？
-
-[Microsoft Identity Manager (MIM) 2016](https://docs.microsoft.com/ja-jp/microsoft-identity-manager/microsoft-identity-manager-2016): 以前のForefront Identity Manager (FIM)。複数システム間でのID/パスワード管理を一元化。Active Directory, Lotus Notes, Novel Directoryなど。[大塚商会様のわかりやすい紹介](https://www.otsuka-shokai.co.jp/products/microsoft/active-directory/forefront-identity-manager/).[「コネクタ」を使って、さまざまなシステムと接続できる。](https://docs.microsoft.com/ja-jp/microsoft-identity-manager/supported-management-agents)
-
-- Active Directory Domain Services (AD DS)
-- Novell eDirectory
-- IBM DB2
-- Oracle Databas
-- Microsoft SQL Server
-- 汎用LDAPコネクタ
-- Lotus Domino (Lotus Notes)
-- など
 
 # Azure AD Privileged Identity Management (PIM)
 
@@ -44,11 +18,6 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-mana
 - ロールを有効化（アクティベーション）できる時間を指定する
 - MFAを強制する
 
-定期的に以下を実施:
-
-- 「アクセスレビュー」を実施し、不要なロール割り当てを取り除くことができる。
-
-
 ■PIMのスコープ
 
 Azure ADロール
@@ -57,6 +26,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-mana
 Azureリソースロール
 https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-resource-roles-assign-roles
 
+<!--
 ■PIM用語の説明（たとえ）
 
 サーバールームに出入りするための「鍵」がいくつかあるとします。
@@ -90,6 +60,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-mana
 担当者C: 割り当てされていない（割り当てのメンバーとなっていない）Azure ADユーザー
 
 注意: 「アクティブな割り当て」と「アクティブ化」は別のもの
+-->
 
 ■PIMオンボーディング (PIMの利用を開始する)
 
