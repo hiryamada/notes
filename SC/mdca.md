@@ -1,4 +1,4 @@
-# Microsfot Defender for Cloud Apps
+# Microsoft Defender for Cloud Apps
 
 旧 Microsfot Cloud App Security（MCAS）
 
