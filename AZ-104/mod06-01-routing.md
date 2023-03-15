@@ -24,7 +24,7 @@ VNet2（スポーク）10.1.0.0/16
 VNet
 ├AzureFirewallSubnet
 │ └Azure Firewall
-└サブネット - ルートテーブル (0.0.0.0 -> Azure Firewall)
+└サブネット - ルートテーブル (0.0.0.0/0 -> Azure Firewall)
   └VM1
 ```
 
@@ -33,16 +33,14 @@ VNet
 ※「[強制トンネリング](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm)」とも
 
 ```
-     インターネット
-                 ↑
-オンプレミス     ↑
-      ├ファイアウォール
+オンプレミス
+      ├ファイアウォール → インターネット
       │         ↑
       └VPNルーター等
-VNet             ↑
+VNet            ↑
 ├GatewaySubnet  ↑VPN
 │ └仮想ネットワークゲートウェイ(type:VPN / ExpressRoute)
-└サブネット - ルートテーブル (0.0.0.0 -> Azure Firewall)
+└サブネット - ルートテーブル (0.0.0.0/0 -> 仮想ネットワークゲートウェイ)
   └VM1
 ```
 
