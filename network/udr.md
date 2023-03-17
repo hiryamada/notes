@@ -50,7 +50,7 @@ VNet
 │└仮想ネットワークゲートウェイ(type: VPN) - オンプレミス
 └Subnet1
  ├VM
- └ルートテーブル (0.0.0.0->仮想ネットワークゲートウェイ)
+ └ルートテーブル (0.0.0.0/0->仮想ネットワークゲートウェイ)
 ```
 
 例2: サブネットからのトラフィックをすべて「ネットワーク仮想アプライアンス」(NVA)や「Azure Firewall」経由でインターネットに送信する
@@ -66,7 +66,7 @@ VNet
 │└NVA - インターネット
 └Subnet1
  ├VM
- └ルートテーブル (0.0.0.0->NVA)
+ └ルートテーブル (0.0.0.0/0->NVA)
 ```
 
 UDRのネクストホップ=VirtualAppliance(仮想アプライアンス) [※Azure Firewallの場合もネクストホップはVirtualApplianceとする](https://learn.microsoft.com/ja-jp/azure/firewall/tutorial-firewall-deploy-portal#create-a-default-route)
@@ -77,5 +77,5 @@ AzureFirewallSubnet
 │└Azure Firewall - インターネット
 └Subnet1
  ├VM
- └ルートテーブル (0.0.0.0->Azure Firewall)
+ └ルートテーブル (0.0.0.0/0->Azure Firewall)
 ```
