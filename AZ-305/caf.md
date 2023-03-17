@@ -1,6 +1,8 @@
 
 # クラウド導入フレームワーク for Azure
 
+![](images/ss-2023-03-17-15-54-43.png)
+
 Cloud Adoption Framework for Azure
 
 ※以下、「CAF」と表記
@@ -51,7 +53,7 @@ https://enterprisezine.jp/article/detail/13670
 
 ※AWSのCAF https://aws.amazon.com/jp/professional-services/CAF/
 
-※GCPのCAF https://cloud.google.com/adoption-framework
+※Google CloudのCAF https://cloud.google.com/adoption-framework
 
 ※Oracle Cloud Infrastructure (OCI) のCAF https://www.oracle.com/cloud/cloud-adoption-framework/
 

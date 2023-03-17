@@ -2,7 +2,7 @@
 
 https://docs.microsoft.com/ja-jp/azure/migrate/
 
-(★): 重要ポイント
+![](images/ss-2023-03-17-15-58-24.png)
 
 ■歴史
 
@@ -43,6 +43,8 @@ https://www.atmarkit.co.jp/ait/articles/1908/22/news011.html
 
 たとえば、Azure Data Boxを使用した、オンプレからAzureへのデータの移行作業は、Azure Data Boxの画面から開始することができるが、Azure Migrateの画面から開始することもできる。
 
+![](images/ss-2023-03-17-15-59-06.png)
+
 ■評価・移行できるワークロードの例
 
 - Windows 物理/仮想マシン
@@ -62,7 +64,7 @@ https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview#isv-int
 
 ■参考: ISVとは？
 
-Indipendent Software Vendor。独立系ソフトウェアベンダー。いわゆるサードパーティ。マイクロソフト製品とともに使用することができる製品を開発する、マイクロソフト外の企業。
+Independent Software Vendor。独立系ソフトウェアベンダー。いわゆるサードパーティ。マイクロソフト製品とともに使用することができる製品を開発する、マイクロソフト外の企業。
 
 - https://e-words.jp/w/ISV.html
 - https://ja.wikipedia.org/wiki/ISV
@@ -74,6 +76,8 @@ https://azure.microsoft.com/ja-jp/pricing/details/azure-migrate/
 - ただし、サードパーティ製の ISV ツールに対する料金が発生する場合がある。
 
 ■Azure Migrateの基本的な用語・概念
+
+![](images/ss-2023-03-17-16-01-01.png)
 
 (1)検出（discover / discovery）
 
@@ -98,7 +102,7 @@ https://azure.microsoft.com/ja-jp/pricing/details/azure-migrate/
 
 例: [Azure Migrate: Server Migration ツール](https://docs.microsoft.com/ja-jp/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)を使用して、オンプレミスのVMware VM、オンプレミスのHyper-V VM、オンプレミスの物理サーバーなどを移行する。
 
-■Azure Migrate アプライアンス(★)
+■Azure Migrate アプライアンス
 
 https://docs.microsoft.com/ja-jp/azure/migrate/migrate-appliance
 
@@ -203,7 +207,7 @@ project1(サーバーの移行プロジェクト)
 プロジェクトはARMテンプレートを使用して作成することもできる。
 https://docs.microsoft.com/ja-jp/azure/migrate/quickstart-create-migrate-project
 
-■オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順(★)
+■オンプレミスのHyper-Vクラスター上のVMをAzureに移行する手順
 
 https://docs.microsoft.com/ja-jp/azure/migrate/tutorial-migrate-hyper-v
 
