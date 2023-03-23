@@ -17,7 +17,7 @@ https://learn.microsoft.com/ja-jp/certifications/exams/ai-102
 
 - ラーニングパス01 AI エンジニアリングへの準備
 - ラーニングパス02 Azure Cognitive Services のプロビジョニングと管理
-- ラーニングパス03 Azure Cognitive Services を使用してテキストを処理して翻訳する
+- [ラーニングパス03 Azure Cognitive Services を使用してテキストを処理して翻訳する](lp03.md)
 - ラーニングパス04 Azure Cognitive Speech Services を使用し、音声を処理して翻訳する
 - ラーニングパス05 Azure Cognitive Services を使用して Language Understanding ソリューションを作成する
 - ラーニングパス06 質問応答ソリューションを構築する
