@@ -77,7 +77,13 @@ Security CopilotはMicrosoft独自の脅威インテリジェンスや65兆以�
 
 ■参考: AIモデル(大規模言語モデル LLM)
 
-![](images/ss-2023-03-31-03-52-47.png)
+![](images/ss-2023-03-31-05-23-05.png)
+
+2023/1/16 Azure OpenAI Service (GPT-3.5/Codex/DALL-E2): https://azure.microsoft.com/ja-jp/blog/general-availability-of-azure-openai-service-expands-access-to-large-advanced-ai-models-with-added-enterprise-benefits/
+
+2023/3/9 Azure OpenAI Service + ChatGPT https://azure.microsoft.com/ja-jp/blog/chatgpt-is-now-available-in-azure-openai-service/
+
+2023/3/22 Azure OpenAI Service + GPT-4 https://news.microsoft.com/ja-jp/2023/03/22/230322-introducing-gpt4-in-azure-openai-service/
 
 ■参考: OpenAIとMicrosoft
 
