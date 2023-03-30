@@ -66,3 +66,10 @@ https://azure.microsoft.com/ja-jp/explore/global-infrastructure/geographies/#geo
 ![](images/ss-2023-03-31-04-07-41.png)
 
 
+■参考: AWSの日本のリージョン
+
+2011/3 東京リージョンを開設（AZに対応） https://aws.amazon.com/jp/about-aws/whats-new/2011/03/02/announcing-asia-pacific-tokyo-region/
+
+2018/2 大阪ローカルリージョンを開設（AZに非対応、単一データセンター） https://aws.amazon.com/jp/about-aws/whats-new/2018/02/announcing-the-aws-osaka-local-region/
+
+2021/3 大阪リージョンを開設（AZに対応） https://aws.amazon.com/jp/about-aws/whats-new/2021/03/osaka-becomes-second-standard-region-in-japan/
