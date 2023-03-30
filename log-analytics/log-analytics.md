@@ -24,7 +24,25 @@ https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/log-analytics-workspa
        └列
 ```
 
-Log Analyticsワークスペース自体にはコストはかからないが、Log Analyticsワークスペースに送信されたデータが課金の対象となる（「データの取り込み」とも呼ばれる）。
+■コスト
+
+主に「データ取り込み」と「データ保存」に料金がかかる。
+
+「データの取り込み」: Log Analyticsワークスペースに送信されたデータが課金の対象となる。
+
+「データ保存」: 最初の 31 日間 (または Microsoft Sentinel がワークスペースで有効になっている場合は 90 日間) まで無料で保持できるが、それを超えると料金が発生。
+
+コストの詳細: https://azure.microsoft.com/ja-jp/pricing/details/monitor/
+
+■ログを表示するためのロール
+
+https://learn.microsoft.com/ja-jp/azure/azure-monitor/roles-permissions-security#built-in-monitoring-roles
+
+組み込みロール:
+
+- 「Monitoring Reader」（監視閲覧者）
+- 「Monitoring Contributor」（監視共同作業者）
+  - 監視設定の作成または変更も可能
 
 ■他のAzureサービスとの関連
 
@@ -205,6 +223,6 @@ https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/log-analytics-overvie
 - Log AnalyticsはAzure Data Explorerを基に構築されている
 - Log Analytics には、Azure Monitor 固有の機能が追加されている。
 
-Azure Data Explorer Web UI は、主に Azure Data Explorer データベースのテーブルと連携する。
+Azure Data Explorer Web UI は、主に Azure Data Explorer データベースのテーブルのデータに対してクエリを行う。
 
-Log Analytics は、Log Analytics ワークスペースのテーブルと連携する。
+Log Analytics は、Log Analytics ワークスペースのテーブルのデータに対してクエリを行う。
