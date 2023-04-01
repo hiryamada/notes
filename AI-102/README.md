@@ -1,38 +1,131 @@
 # AI-102
+
 Designing and Implementing a Microsoft Azure AI Solution（Microsoft AI ソリューションの設計と実装）
 
 https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
 
 4日間
 
-Azure Cognitive Services、Azure Cognitive Search、および Microsoft Bot Framework を利用する AI を注入したアプリケーションを構築したいソフトウェア開発者を対象としています。
-
-# 認定試験
-
-https://learn.microsoft.com/ja-jp/certifications/exams/ai-102
-
-アソシエイトレベル
-
-# 講義ノート
-
-- ラーニングパス01 AI エンジニアリングへの準備
-- ラーニングパス02 Azure Cognitive Services のプロビジョニングと管理
-- [ラーニングパス03 Azure Cognitive Services を使用してテキストを処理して翻訳する](lp03.md)
-- ラーニングパス04 Azure Cognitive Speech Services を使用し、音声を処理して翻訳する
-- ラーニングパス05 Azure Cognitive Services を使用して Language Understanding ソリューションを作成する
-- ラーニングパス06 質問応答ソリューションを構築する
-- ラーニングパス07 カスタム テキスト分析ソリューションを構築する
-- ラーニングパス08 会話 AI ソリューションを作成する
-- ラーニングパス09 Azure Cognitive Services でコンピューター ビジョン ソリューションを作成する
-- ラーニングパス10 画像およびドキュメントからテキストを抽出する
-- ラーニングパス11 Azure Cognitive Search でのナレッジ マイニングの実装
-
-# AIエンジニアの認定パス
-https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
-
+Azure Cognitive Services、Azure Cognitive Search、および Microsoft Bot Framework を利用して、AIを組み込んだアプリケーションを構築したいソフトウェア開発者を対象としています。
 
 <!--
 > ※AI-100:
 > https://docs.microsoft.com/ja-jp/learn/certifications/exams/ai-100
 > 2021年6月30日に廃止
+-->
+
+# 認定試験
+
+https://learn.microsoft.com/ja-jp/certifications/exams/ai-102
+
+Microsoft Certified: Azure AI Engineer Associate: アソシエイトレベル
+
+AIエンジニアの認定パス
+https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
+
+
+# 講義ノート
+
+～～～1日目～～～
+
+目標: AzureのAIサービスの基本を理解する。
+
+■AzureのAI/Machine Learningサービスの概要
+
+- [ラーニングパス01 AI エンジニアリングへの準備](lp01.md)
+
+■Azure Cognitive Services の基礎知識
+
+- [ラーニングパス02 Azure Cognitive Services のプロビジョニングと管理](lp02.md)
+
+～～～2日目～～～
+
+目標: Azure Cognitive Servicesに含まれるいくつかのサービスの利用方法を理解する。
+
+■Azure Cognitive Services ＞ 言語(Language API) ＞ 翻訳
+
+- [ラーニングパス03 Azure Cognitive Services を使用してテキストを処理して翻訳する](lp03.md)
+
+■Azure Cognitive Services ＞ 音声(Speech API)
+
+- [ラーニングパス04 Azure Cognitive Speech Services を使用し、音声を処理して翻訳する](lp04.md)
+
+～～～3日目～～～
+
+目標: Azure Cognitive Servicesの言語・会話系のサービスの利用方法を理解する。
+
+■Azure Cognitive Services ＞ 言語(Language API) ＞ 「会話言語理解（CLU）」
+
+- [ラーニングパス05 Azure Cognitive Services を使用して 「会話言語理解（CLU）」ソリューションを作成する](lp05.md)
+
+■Azure Cognitive Services ＞ 言語(Language API) ＞ QnA Maker
+
+- [ラーニングパス06 質問応答ソリューションを構築する](lp06.md)
+
+■Azure Cognitive Services ＞ 言語(Language API) > カスタム テキスト分類
+
+- [ラーニングパス07 カスタム テキスト分析ソリューションを構築する](lp07.md)
+
+■Azure Bot Service
+
+- [ラーニングパス08 会話 AI ソリューションを作成する](lp08.md)
+
+～～～4日目～～～
+
+目標1: Azure Cognitive Servicesに含まれる画像処理のサービスの利用方法を理解する。
+
+目標2: ドキュメント（画像を含む）に対する検索を行うサービスの利用方法を理解する。
+
+■Azure Cognitive Services ＞ 画像(Vision API)
+
+- [ラーニングパス09 Azure Cognitive Services でコンピューター ビジョン ソリューションを作成する](lp09.md)
+
+■Azure Cognitive Services ＞ 画像(Vision API) ＞ 光学式文字認識(OCR)
+
+- [ラーニングパス10 画像およびドキュメントからテキストを抽出する](lp10.md)
+
+■Azure Cognitive Search
+
+- [ラーニングパス11 Azure Cognitive Search でのナレッジ マイニングの実装](lp11.md)
+
+<!--
+# ラボ
+
+■ ラボ手順書
+
+英語版（最新。ブラウザの翻訳機能で日本語化して閲覧できます）
+https://github.com/MicrosoftLearning/AI-102-AIEngineer
+
+日本語翻訳版（若干古い可能性があります）
+https://github.com/MicrosoftLearning/AI-102-AIEngineer.ja-jp
+
+ラボのファイル（ダウンロードして展開すると Allfiles フォルダ以下にラボで使用するファイルがあります）
+https://github.com/MicrosoftLearning/AI-102-AIEngineer/archive/refs/heads/master.zip
+
+■ ラボの概要
+
+- ラボ01 Cognitive Servicesを使用する(言語の検出)
+- ラボ02 セキュリティ
+- ラボ03 モニタリング
+- ラボ04 コンテナー
+- ラボ05 テキスト分析（感情分析・キーフレーズ抽出）
+- ラボ06 翻訳
+- ラボ07 スピーチ
+- ラボ08 スピーチ翻訳
+- ラボ09 LUISアプリ
+- ラボ10 LUISクライアント
+- ラボ11 LUISスピーチ
+- ラボ12 QandA
+- ラボ13 ボット(TimeBot)の作成(Bot Framework Emulatorを使用)
+- ラボ14 ボット(WeatherBot)の作成(Bot Framework Composerを使用)
+- ラボ15 コンピュータビジョン
+- ラボ16 ビデオインデクサー
+- ラボ17 イメージ分類
+- ラボ18 オブジェクト検出
+- ラボ19 フェース
+- ラボ20 OCR
+- ラボ21 カスタムフォーム
+- ラボ22 検索ソリューションの開発
+- ラボ23 カスタムサーチスキル
+- ラボ24 ナレッジストア
 -->
