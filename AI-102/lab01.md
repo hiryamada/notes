@@ -25,7 +25,7 @@ Azure portalで作成します。
 
 左のメニューから「キーとエンドポイント」をクリックし、「キーの表示」をクリックします。以下の情報をメモ帳などに記録しておきます。
 
-- Cognitive Servicesリソースの名前（画面左上に表示
+- Cognitive Servicesリソースの名前（画面左上に表示）
   - cog823738629837 （例）
 - キー1
   - fe8e701348530482538945845a2483ff （例）
@@ -91,6 +91,8 @@ dotnet user-secrets list
 
 ## `.editorconfig`の作成
 
+`LanguageCommands.cs`クラスで発生する[警告CA1822](https://learn.microsoft.com/ja-jp/dotnet/fundamentals/code-analysis/quality-rules/ca1822)を抑制します。（このクラスのメソッドは非staticである必要があるため）
+
 プロジェクト内（Program.csなどがある場所）に`.editorconfig`ファイルを作成します。
 
 ![](images/ss-2023-04-02-10-12-56.png)
@@ -113,6 +115,8 @@ dotnet_diagnostic.CA1822.severity = none
 
 ## `Properties/launchSettings.json`の設定
 
+プログラム起動時に表示される「ビルドしています...」（`Building...`）の表示を抑制します。
+
 <!--
 https://stackoverflow.com/questions/65923063/purpose-of-dotnetrunmessages-in-launchsettings-json
 -->
@@ -127,6 +131,8 @@ https://stackoverflow.com/questions/65923063/purpose-of-dotnetrunmessages-in-lau
 ![](images/ss-2023-04-02-10-14-26.png)
 
 ## `Program.cs` のコーディング
+
+プログラムの起動部分を記述します。
 
 ```cs
 using Azure;
@@ -154,6 +160,8 @@ ConsoleApp
 ※`LanguageCommands`の部分がエラーとなりますが問題ありません。この後`LanguageCommands.cs`を作成するとエラーが解消されます。
 
 ## `LanguageCommands.cs` のコーディング
+
+言語の検出（`DetectLanguage`）を行う処理を記述します。
 
 `LanguageCommands.cs` を作成
 

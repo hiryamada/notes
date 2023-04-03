@@ -53,6 +53,12 @@ choco install -y vscode
 choco install -y azure-cli
 ```
 
+## Git for Windowsのインストール
+
+```
+choco install -y git
+```
+
 ## 環境変数PATHのリフレッシュ
 
 ```
@@ -92,4 +98,11 @@ az login
 - 画面上部の歯車アイコンをクリック
 - Language + region で、LanguageをEnglishから「日本語」に変更し、Apply、OK
 - Azure portal表示が日本語化されます。
+
+## サンプルコードを入手
+
+```
+cd ~/Documents
+git clone https://github.com/MicrosoftLearning/AI-102-AIEngineer/
+```
 

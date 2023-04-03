@@ -2,7 +2,6 @@
 
 Cognitive Servicesを使用して、以下のことを行います。
 
-- 入力された文章が何語で書いてあるか判定する（言語の検出）
 - 入力された文章を別の言語に翻訳する
 
 ## Cognitive Services マルチサービスアカウントの作成
@@ -22,6 +21,7 @@ rm Worker.cs
 dotnet add package Microsoft.Extensions.Configuration.UserSecrets
 dotnet add package Azure.AI.TextAnalytics
 dotnet add package CognitiveServices.Translator.Client
+dotnet add package ConsoleAppFramework
 ```
 
 ## キーとエンドポイントの追加
