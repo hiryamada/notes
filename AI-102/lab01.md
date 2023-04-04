@@ -176,10 +176,12 @@ class LanguageCommands : ConsoleAppBase
     {
         DetectedLanguage detectedLanguage = client.DetectLanguage(text);
         Console.WriteLine("Language:");
-        Console.WriteLine($"\t{detectedLanguage.Name},\tISO-6391: {detectedLanguage.Iso6391Name}\n");
+        Console.WriteLine($"\t{detectedLanguage.Name},\tISO 639-1: {detectedLanguage.Iso6391Name}\n");
     }
 }
 ```
+
+※[ISO 630-1: 言語コードの規格](https://ja.wikipedia.org/wiki/ISO_639-1)。ja=日本語 / en=English など。検出された言語の情報の一部として出力される。
 
 ## 実行
 
@@ -194,7 +196,7 @@ dotnet run detect --text 'おはようございます'
 実行結果例:
 ```sh
 Language:
-        Japanese,       ISO-6391: ja
+        Japanese,       ISO 639-1: ja
 ```
 
 ![](images/ss-2023-04-02-10-50-05.png)

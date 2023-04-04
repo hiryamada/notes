@@ -79,6 +79,12 @@ refreshenv
 code --install-extension ms-dotnettools.csharp
 ```
 
+## Visual Studio CodeにEditorConfig拡張機能をインストール
+
+```
+code --install-extension EditorConfig.EditorConfig
+```
+
 ## Azure CLIを使用してAzureにサインイン（ログイン）
 
 ```
