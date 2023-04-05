@@ -1,48 +1,54 @@
-# ラボ06 言語サービス（言語の検出、翻訳）
+# ラボ06 言語サービス（翻訳）
 
-Cognitive Servicesを使用して、以下のことを行います。
+Cognitive Servicesを使用して、入力された文章を別の言語に翻訳します。
 
-- 入力された文章を別の言語に翻訳する
+## Cognitive Services リソースの作成
 
-## Cognitive Services マルチサービスアカウントの作成
+Azure portalで必要なリソースを作成。以下のいずれかを使用。
 
-Azure portalで作成
+- Cognitive Services マルチサービスアカウント
+- 言語＞翻訳 リソース
 
-## プロジェクトの作成
+「言語サービス」のリソースは翻訳には使えないので注意。
 
-```sh
+![](images/ss-2023-04-05-08-59-35.png)
+
+「翻訳 リソース」を使用する場合は、以下の部分をコピーします。
+
+![](images/ss-2023-04-05-08-58-36.png)
+
+## .NET (C#) プロジェクトの作成
+
+新しく「lab06」というプロジェクトを作成。必要なNugetパッケージの追加などを行う。
+
+```
+cd ~/Documents
+mkdir lab06
+cd lab06
 dotnet new worker
 rm Worker.cs
-```
-
-## パッケージの追加
-
-```sh
-dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+dotnet add package Azure.Extensions.AspNetCore.Configuration.Secrets
 dotnet add package Azure.AI.TextAnalytics
-dotnet add package CognitiveServices.Translator.Client
 dotnet add package ConsoleAppFramework
+dotnet add package Azure.Identity
+dotnet add package CognitiveServices.Translator.Client
+echo "root = true
+[*.cs]
+# supress 'Member ... does not access instance data and can be marked as static'
+dotnet_diagnostic.CA1822.severity = none
+" > .editorconfig
+code .
 ```
 
 ## キーとエンドポイントの追加
+
+作成済みのCognitive Servicesリソースの4情報を「ユーザーシークレット」としてセット。
 
 ```sh
 dotnet user-secrets set 'CognitiveServices:SubscriptionKey' '...'
 dotnet user-secrets set 'CognitiveServices:Name' '...'
 dotnet user-secrets set 'CognitiveServices:Endpoint' '...'
 dotnet user-secrets set 'CognitiveServices:SubscriptionRegion' '...'
-```
-
-## `.editorconfig`の作成
-
-https://learn.microsoft.com/ja-jp/dotnet/fundamentals/code-analysis/quality-rules/ca1822
-
-```
-root = true
-
-[*.cs]
-# supress 'Member ... does not access instance data and can be marked as static'
-dotnet_diagnostic.CA1822.severity = none
 ```
 
 ## `Properties/launchSettings.json`の設定
@@ -60,44 +66,26 @@ https://stackoverflow.com/questions/65923063/purpose-of-dotnetrunmessages-in-lau
 ## `Program.cs` のコーディング
 
 ```cs
-using Azure;
-using Azure.AI.TextAnalytics;
 using CognitiveServices.Translator.Extension;
 
 ConsoleApp
 .CreateBuilder(args)
 .ConfigureServices((context, services) =>
 {
-    var key = context.Configuration["CognitiveServices:SubscriptionKey"] ?? "";
-    var endpoint = new Uri(context.Configuration["CognitiveServices:Endpoint"] ?? "");
-    var cred = new AzureKeyCredential(key);
-    var client = new TextAnalyticsClient(endpoint, cred);
-    services.AddSingleton(client);
     services.AddCognitiveServicesTranslator(context.Configuration);
 })
 .Build()
 .AddCommands<TranslateCommands>()
-.AddCommands<LanguageCommands>()
 .Run();
 ```
 
-## `LanguageCommands.cs` のコーディング
-
-```cs
-using Azure.AI.TextAnalytics;
-
-class LanguageCommands : ConsoleAppBase
-{
-    public void Detect(TextAnalyticsClient client, string text)
-    {
-        DetectedLanguage detectedLanguage = client.DetectLanguage(text);
-        Console.WriteLine("Language:");
-        Console.WriteLine($"\t{detectedLanguage.Name},\tISO-6391: {detectedLanguage.Iso6391Name}\n");
-    }
-}
-```
-
 ## `TranslateCommands.cs` のコーディング
+
+`TranslateCommands.cs` を作成
+
+![](images/ss-2023-04-05-08-44-53.png)
+
+以下のように変更して保存。
 
 ```cs
 using CognitiveServices.Translator;
@@ -122,17 +110,15 @@ class TranslateCommands : ConsoleAppBase
 }
 ```
 
-## 実行(言語検出)
-
-```sh
-dotnet run detect-language --text 'おはようございます'
-Language:
-        Japanese,       ISO-6391: ja
-```
-
 ## 実行(翻訳)
 
 ```sh
-$ dotnet run translate --text 'おはようございます' --from ja --to en
+dotnet run translate --text 'おはようございます' --from ja --to en
+```
+
+実行結果例
+```
 Good morning
 ```
+
+他にもいろいろな言語を試してみましょう。
