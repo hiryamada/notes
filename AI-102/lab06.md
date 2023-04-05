@@ -13,7 +13,7 @@ Azure portalで必要なリソースを作成。以下のいずれかを使用�
 
 ![](images/ss-2023-04-05-08-59-35.png)
 
-「翻訳 リソース」を使用する場合は、以下の部分をコピーします。
+「翻訳 リソース」を使用する場合は、以下の部分をコピー。
 
 ![](images/ss-2023-04-05-08-58-36.png)
 
@@ -28,7 +28,6 @@ cd lab06
 dotnet new worker
 rm Worker.cs
 dotnet add package Azure.Extensions.AspNetCore.Configuration.Secrets
-dotnet add package Azure.AI.TextAnalytics
 dotnet add package ConsoleAppFramework
 dotnet add package Azure.Identity
 dotnet add package CognitiveServices.Translator.Client
@@ -39,6 +38,15 @@ dotnet_diagnostic.CA1822.severity = none
 " > .editorconfig
 code .
 ```
+
+※このラボでは、翻訳のためのクライアントライブラリとして、オープンソース（MITライセンス）で公開されている以下のライブラリを使用している。
+
+https://github.com/Nordes/CognitiveServices.Translator.Client
+
+<!--
+TODO 以下を使用する
+dotnet add package Azure.AI.Translation.Document --version 1.0.0
+-->
 
 ## キーとエンドポイントの追加
 
