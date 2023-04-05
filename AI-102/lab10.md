@@ -1,67 +1,152 @@
 # ラボ10 「会話言語理解(CLU)」を使用するアプリの作成
 
-前のラボ([ラボ9](lab09.md))で作成したリソースを使用して、自然言語による命令を理解するアプリを作成します。
+前のラボ([ラボ9](lab09.md))で作成したモデルを使用して、自然言語による命令を理解するアプリを作成する。
 
-## ClockプロジェクトのPrediction URL のコピー
-
-Deploying a model ＞ Deployments ＞ Get prediction URL で、Prediction URLをコピー。
-
-コピーされる文字列の例:
-```
-https://clu999998273492734.cognitiveservices.azure.com/language/:analyze-conversations?api-version=2022-10-01-preview
-```
-
-この文字列から末尾の部分を削除し、`.cognitiveservices.azure.com/`で終わるようにする。
+## プロジェクトの作成
 
 ```
-https://clu999998273492734.cognitiveservices.azure.com/
+cd ~/Documents
+mkdir lab10
+cd lab10
+dotnet new worker
+rm Worker.cs
+
+dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+dotnet add package ConsoleAppFramework
+dotnet add package Azure.AI.Language.Conversations
+
+echo "root = true
+[*.cs]
+# supress 'Member ... does not access instance data and can be marked as static'
+dotnet_diagnostic.CA1822.severity = none
+" > .editorconfig
+code .
 ```
 
-この文字列をメモ帳などに控えておく。
+Visual Studio Codeで、プロジェクトのフォルダが開かれる。
 
-## Languageリソースの「Primary Key」のコピー
+## ユーザーシークレットの追加
 
-Project settingsの「Primary key」をコピー。メモ帳などに控えておく。
+Visual Studio Codeのターミナルを開く。
 
-## NuGetパッケージのコピー
-
-<!--
-https://www.nuget.org/packages/Azure.AI.Language.Conversations
--->
-
-dotnet add package Azure.AI.Language.Conversations --version 1.0.0
-
-## プロジェクトを開く
-
-Visual Studio Codeのメニュー File＞Open Folder...で以下のフォルダーを開く
+以下のコマンドの、「キー」と「エンドポイント」の部分を、前のラボでコピーしておいた文字列に置換して、ターミナル内で実行。「Clock」と「production」は置換せずそのまま実行。
 
 ```
-AI-102-AIEngineer/10b-clu-client-(preview)/C-Sharp/clock-client
+dotnet user-secrets set 'CognitiveServices:SubscriptionKey' 'キー'
+dotnet user-secrets set 'CognitiveServices:Endpoint' 'エンドポイント'
+dotnet user-secrets set 'CognitiveServices:Project' 'Clock'
+dotnet user-secrets set 'CognitiveServices:Deployment' 'production'
 ```
 
-## 設定ファイルの編集
+## `Properties/launchSettings.json`の変更
 
-`appsettings.json`を開き、以下のように編集して保存。
+dotnetRunMessagesの値をfalseに変更し、保存。
 
-- LSPredictionEndpointの値: コピーしておいた「Prediction URL」
-- LSPredictionKeyの値: コピーしておいた「Primary key」
+```json
+{
+...
+      "dotnetRunMessages": false,
+...
+}
+```
 
-## コーディング
+プログラム実行時の「Building...」という出力が抑制される。
 
+## `Program.cs`のコーディング
 
-`program.cs`を開く。
+```cs
+using Azure;
+using Azure.AI.Language.Conversations;
 
-以下の2つの手順を参考に、コードの中に必要なコードを追記していく。
+ConsoleApp
+.CreateBuilder(args)
+.ConfigureServices((context, services) =>
+{
+    var endpoint = new Uri(context.Configuration["CognitiveServices:Endpoint"] ?? "");
+    var credential = new AzureKeyCredential(context.Configuration["CognitiveServices:SubscriptionKey"] ?? "");
+    var client = new ConversationAnalysisClient(endpoint, credential);
+    services.AddSingleton(client);
 
-https://github.com/MicrosoftLearning/AI-102-AIEngineer.ja-jp/blob/main/Instructions/10b-language-understanding-client-(preview).md#language-service-sdk-%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E6%BA%96%E5%82%99%E3%82%92%E3%81%99%E3%82%8B
+    var projectName = context.Configuration["CognitiveServices:Project"];
+    var deploymentName = context.Configuration["CognitiveServices:Deployment"];
+    var project = new ConversationsProject(projectName, deploymentName);
+    services.AddSingleton(project);
+})
+.Build()
+.AddCommands<Commands>()
+.Run();
+```
 
-https://github.com/MicrosoftLearning/AI-102-AIEngineer.ja-jp/blob/main/Instructions/10b-language-understanding-client-(preview).md#%E4%BC%9A%E8%A9%B1%E8%A8%80%E8%AA%9E%E3%83%A2%E3%83%87%E3%83%AB%E3%81%8B%E3%82%89%E4%BA%88%E6%B8%AC%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B
+## `Commands.cs`のコーディング
+
+`Commands.cs`を新規作成。
+
+```cs
+using Azure.AI.Language.Conversations;
+
+class Commands : ConsoleAppBase
+{
+    public void Clock(ConversationAnalysisClient client, ConversationsProject project, string input)
+    {
+        AnalyzeConversationResult result = client.AnalyzeConversation(input, project);
+        switch (result.Prediction.TopIntent)
+        {
+            case "GetDate":
+                GetDate();
+                break;
+
+            case "GetTime":
+                GetTime();
+                break;
+
+            default:
+                Console.WriteLine("???");
+                break;
+        }
+    }
+    private void GetDate()
+    {
+        Console.WriteLine("はい、今日の日付をお答えします。");
+        Console.WriteLine(DateTime.Now.ToShortDateString());
+    }
+    private void GetTime()
+    {
+        Console.WriteLine("はい、現在時刻をお答えします。");
+        Console.WriteLine(DateTime.Now.ToShortTimeString());
+    }
+}
+```
+
+解説: 前のラボで作成した「会話言語理解(CLU)」プロジェクトのモデルを使用して、ユーザーの「発話」（input）から意図（intent）を決定し、それに応じた処理を行う。
 
 ## 実行
 
 Visual Studio Codeのメニュー＞Terminal＞New Terminalで、ターミナルを開く。
 
-`dotnet run`で、プロジェクトを実行する。
+Windows VM（英語版OS）の場合、日本語の出力が化けてしまうため、以下のコマンドで対処（コマンドプロンプトを開き、コードページを65001に変更）。
 
-`Enter some text ('quit' to stop)`と表示されるので、`what the date today`、`what time is it now` などと入力して、結果を確認する。
+```
+cmd
+chcp 65001
+```
 
+この状態でプログラムを実行する。
+
+```
+dotnet run clock --input '今日は何日？'
+dotnet run clock --input '何日ですか？'
+dotnet run clock --input '何日？'
+dotnet run clock --input '今日は何日か教えてください'
+
+dotnet run clock --input '今の時間は？'
+dotnet run clock --input '現在の時間は？'
+dotnet run clock --input '今何時ですか？'
+dotnet run clock --input '現在の時刻を教えてください'
+```
+
+実行例
+![](images/ss-2023-04-06-01-12-42.png)
+
+なお、`--input`のテキストによっては、モデルが意図を誤って認識することもありうる。
+
+より多くのトレーニングを行うことで、モデルが意図を正確に認識できる確率が高くなる。
