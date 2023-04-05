@@ -44,7 +44,8 @@ https://docs.microsoft.com/ja-jp/azure/azure-sql-edge/features#azure-sql-edge-ed
 エッジデバイス（Windows / Linux / Raspberry PI等）（ARM / x64）
 └Azure IoT Edge ランタイム
   ├IoT Edge モジュール<センサーデータの取り込み/アクチュエータの制御>
-  ├IoT Edge モジュール<機械学習>
+  ├IoT Edge モジュール<独自の機械学習モデル>
+  ├IoT Edge モジュール<Cognitive Searvices>
   ├IoT Edge モジュール<Azure SQL Edge> ※現在 Linux, ARM64 / x64 のみサポート
   ├IoT Edge モジュール<Azure Stream Analytics>
   └IoT Edge モジュール<Azure IoT Hubとの通信>
@@ -56,3 +57,6 @@ https://docs.microsoft.com/ja-jp/azure/azure-sql-edge/features#azure-sql-edge-ed
 
 ※Azure SQL Edge: ストリーミング データの分析 ＋ SQLによるデータ管理
 
+[IoT Edge で Cognitive Services を実行する](https://learn.microsoft.com/ja-jp/training/modules/run-cognitive-services-iot-edge/)
+
+[独自の機械学習モデルを Azure IoT Edge にデプロイできる。](https://github.com/microsoft/deploy-MLmodels-on-iotedge)
