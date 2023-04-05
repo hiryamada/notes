@@ -212,6 +212,24 @@ dotnet run speech --message 'おはようございます'
 
 ![](images/ss-2023-04-05-18-10-04.png)
 
+■リモートデスクトップ接続 / Bastion接続で、VMの音声が再生されるようにする
+
+![](images/ss-2023-04-05-22-23-40.png)
+
+![](images/ss-2023-04-05-22-24-24.png)
+
+![](images/ss-2023-04-05-22-24-39.png)
+
+![](images/ss-2023-04-05-22-24-57.png)
+
+![](images/ss-2023-04-05-22-25-33.png)
+
+■再生
+
+Visual Studio Codeで再生できる。
+
+![](images/ss-2023-04-05-22-26-10.png)
+
 ■コマンドライン引数でvoiceNameを変える
 
 ```
