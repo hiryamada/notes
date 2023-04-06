@@ -1,33 +1,47 @@
 # このコースで学習したサービス・機能のまとめ
 
-■Azureの基礎
+■AzureのAIのサービス
 
-- 認証・承認
-  - キー認証
-  - トークン認証
-  - Azure Active Directory認証＋Azure RBACロール
-    - ユーザー
-    - グループ
-    - サービスプリンシパル
-    - マネージドID
-- シークレットの一元管理
-  - Azure Key Vault
-    - シークレット / キー / 証明書
-- ネットワーク
-  - サービスエンドポイント
-  - プライベートエンドポイント
+- Azure Cognitive Services
+- 「責任あるAI」の原則
 
-■機械学習のサービス
+■機械学習のサービス (AI-102 範囲外)
 
 - Azure Machine Learning
 
-■高度なAI機能を提供するサービス
+■高度なAI機能を提供するサービス (AI-102 範囲外)
 
 - Azure OpenAI Service
   - GPT-4 (モデル)
   - ChatGPT (モデル)
   - Codex (モデル)
   - DALL-E2 (モデル)
+
+■Azureの基礎
+
+- 認証・承認
+  - キー認証
+  - トークン認証
+  - Azure Active Directory認証＋Azure RBACロールによる承認
+    - ユーザー
+    - グループ
+    - サービスプリンシパル
+    - マネージドID
+- 機密情報の一元管理
+  - Azure Key Vault
+    - シークレット（Cognitive Servicesでいう「キー」） / キー / 証明書
+- ネットワーク
+  - サービスエンドポイント
+  - プライベートエンドポイント
+
+■.NET / C#
+
+- .NETの構成
+  - ユーザーシークレット
+  - 環境変数
+  - コンソールアプリ起動時の引数
+  - 設定ファイル appsettings.json
+- NuGetパッケージ
 
 ■基礎的なAI機能を提供するサービス
 
@@ -54,15 +68,28 @@
         - ブランドの検出
         - 顔の検出
       - OCR
+      - Form Recognizer
 
-■応用的なAIサービス
+※正確にはForm Recognizerは「Applied AI Services」の一部。
 
-- Applied AI Services
-  - Azure Bot Service (リソース)
-    - Bot Framework SDK (ライブラリ)
-    - Bot Framework Emulator （ツール）
-    - Bot Framework Composer （ツール）
-  - Form Recognizer
+■チャットボットの開発と運用
+
+```
+Azure Cognitive Services
+└言語サービス
+  └カスタム質問応答 (以前の QnA Maker): Language Studioで開発
+      │ ├チットチャット
+      │ └ナレッジベース <--- 外部のFAQページ等
+      │
+Azure Bot Service
+└チャットボット ───── Webチャット
+      │
+Azure App Serviceアプリ
+└チャットボット（実体）: Bot Framework Composerで開発
+```
+
+- Bot Framework SDK (チャットボット開発用のライブラリ)
+- Bot Framework Emulator (チャットボットのテスト用ツール)
 
 ■ドキュメントの検索
 
@@ -71,8 +98,6 @@
 ■各社クラウドのサービスの比較・全体像
 
 https://atmarkit.itmedia.co.jp/ait/articles/2006/22/news020.html
-
-
 
 <!--
 ■俯瞰図
