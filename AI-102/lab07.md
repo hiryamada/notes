@@ -108,7 +108,9 @@ Visual Studio Codeが開き、`lab07`プロジェクトのフォルダが読み�
 
 `resourceId` の値 "..."の部分は、先ほどコピーしておいた、Cognitive Servicesの「音声サービス」リソースのリソースIDとする。
 
-`voiceName` の値はお好みで`ja-JP-KeitaNeural` や `ja-JP-NanamiNeural`とする。参考: [voiceNameの一覧](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/language-support?tabs=tts#supported-languages) （「テキスト読み上げ」タブ内の`ja-JP`の行）
+`voiceName` の値はお好みで`ja-JP-KeitaNeural` や `ja-JP-NanamiNeural`とする。
+
+参考: [voiceNameの一覧](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/language-support?tabs=tts#supported-languages) （「テキスト読み上げ」タブ内の`ja-JP`の行）
 
 ```json
 {
@@ -232,14 +234,35 @@ Visual Studio Codeで再生できる。
 
 ■コマンドライン引数でvoiceNameを変える
 
+参考: [voiceNameの一覧](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/language-support?tabs=tts#supported-languages) （「テキスト読み上げ」タブ内の`ja-JP`の行）
+
 ```
 dotnet run speech --message 'おはようございます' --speech:voiceName='ja-JP-KeitaNeural'
 
 dotnet run speech --message 'おはようございます' --speech:voiceName='ja-JP-NanamiNeural'
 ```
 
+日本語のvoiceName:
+```
+ja-JP-AoiNeural (女性)
+ja-JP-DaichiNeural (男性)
+ja-JP-KeitaNeural (男性)
+ja-JP-MayuNeural1 (女性)
+ja-JP-NanamiNeural (女性)
+ja-JP-NaokiNeural (男性)
+ja-JP-ShioriNeural (女性)
+```
+
 ■コマンドライン引数で出力先ファイルを変える
 
 ```
 dotnet run speech --message 'おはようございます' --speech:output='output2.wav'
+```
+
+■English text-to-speech
+
+tips: You can also try English text-to-speech by this way:
+
+```
+dotnet run speech --speech:lauguage 'en-US' --speech:voiceName 'en-US-JasonNeural' --message 'Hello'
 ```
