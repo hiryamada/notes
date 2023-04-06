@@ -72,14 +72,15 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 - Azure Cognitive Services ＞ 画像(Vision API) ＞ 光学式文字認識(OCR)
   - [ラーニングパス10 画像およびドキュメントからテキストを抽出する](lp10.md)
 
-テーマ(2): ドキュメント（画像を含む）に対する検索を行うサービスの利用方法を理解する。
+テーマ(2): ドキュメント（PDFなど）に対する検索を行うサービスの利用方法を理解する。
 
 - Azure Cognitive Search
   - [ラーニングパス11 Azure Cognitive Search でのナレッジ マイニングの実装](lp11.md)
 
 ■クロージング
 
-- [試験対策](exam.md)
+- [このコースで学習したサービス・機能のまとめ](matome.md)
+- [AI-102 試験対策](exam.md)
 - [クロージング(終了時のご案内)](../closing.md)
 - アンケート
 
