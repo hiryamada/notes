@@ -47,3 +47,12 @@ Testアイコン（三角フラスコ）をクリック
 `How much does the training cost?`
 
 
+## デプロイ
+
+![](images/ss-2023-04-06-19-42-28.png)
+
+
+## Application Insightsのエラーの修正
+
+https://learn.microsoft.com/ja-jp/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0
+
