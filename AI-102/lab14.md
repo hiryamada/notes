@@ -111,6 +111,16 @@ Bot Framework Composerで作業中に、このようなエラーが出る場合�
 
 ![](images/ss-2023-04-06-21-24-39.png)
 
+Property:
+```
+dialog.city
+```
+
+Output format:
+```
+=trim(this.value)
+```
+
 ![](images/ss-2023-04-06-21-25-35.png)
 
 ## APIの呼び出し
@@ -163,6 +173,9 @@ dialog.api_response
 | Property | `dialog.temp`                                      |
 | Value    | `=round(dialog.api_response.content.main.temp)` |
 
+※このように「Set a property」が2つ連続する形になる。
+![](images/ss-2023-04-06-22-39-48.png)
+
 ![](images/ss-2023-04-06-21-43-30.png)
 
 ```
@@ -198,11 +211,11 @@ ${dialog.city} の天気は ${dialog.weather} で、温度は ${dialog.temp}&deg
 
 ![](images/ss-2023-04-06-21-54-52.png)
 
-画面下部の Type your message というテキストボックスに「天気を教えて」「東京都」などと入力する。
+画面下部の Type your message というテキストボックスに「天気を教えて」などと入力する。「天気」というキーワードに反応して、GetWeatherダイアログが起動される。続いて「東京都」といった都市名を入力する。
 
 ![](images/ss-2023-04-06-21-53-22.png)
 
-「天気」というキーワードに反応して、GetWeatherダイアログが起動される。それ以外のキーワードの場合は以下のような応答を返す。
+それ以外のキーワードの場合は以下のような応答を返す。
 
 ![](images/ss-2023-04-06-21-56-21.png)
 
@@ -221,13 +234,15 @@ ${dialog.city} の天気は ${dialog.weather} で、温度は ${dialog.temp}&deg
 ![](images/ss-2023-04-06-22-00-41.png)
 
 
-## デプロイプロファイルの作成
+## 発行プロファイルの作成
 
 ![](images/ss-2023-04-06-22-03-12.png)
 
 ![](images/ss-2023-04-06-22-03-49.png)
 
 ![](images/ss-2023-04-06-22-04-57.png)
+
+※「Name」のところは、「weatherbot(乱数)」とする。「(乱数)」の部分は、適当に10桁ほど数字を打ち込む。
 
 ![](images/ss-2023-04-06-22-06-27.png)
 
@@ -253,7 +268,7 @@ ${dialog.city} の天気は ${dialog.weather} で、温度は ${dialog.temp}&deg
 
 ![](images/ss-2023-04-06-22-11-58.png)
 
-これにはわりと長い時間がかかる（15分程度）
+これにはわりと長い時間がかかる（15分～30分程度）
 
 ここで休憩を取ると良い。
 
