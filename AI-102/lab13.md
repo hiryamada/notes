@@ -10,15 +10,9 @@ Bot Framework Emulator は、開発したボットを実行する際に使用し
 
 ## Bot Framework Emulatorのインストール
 
-Bot Framework Emulatorは以下のGitHubリポジトリで開発されている。
+Bot Framework Emulator（の最新版）は Chocolateyからはインストールできないので、以下のページからインストーラー（BotFramework-Emulator-VERSION-windows-setup.exe）をダウンロードしてインストールする。
 
-https://github.com/Microsoft/BotFramework-Emulator/
-
-このリポジトリのREADMEファイルを参考に、リリースのページからBot Framework Emulatorのインストーラーをダウンロードする。
-
-https://github.com/microsoft/BotFramework-Emulator/releases/latest
-
-具体的には `BotFramework-Emulator-4.14.1-windows-setup.exe` （バージョン番号は変わる可能性がある）をダウンロード。
+https://github.com/Microsoft/BotFramework-Emulator/releases/latest
 
 ダウンロードしたインストーラーを実行する。
 

@@ -17,6 +17,8 @@ Bot Framework Composer は、コードを記述せず、高度な会話型ボッ
 
 ## Bot Framework Emulator のインストール
 
+※前のラボですでにインストールしている場合は、この作業はスキップ。
+
 Bot Framework Composerで開発したボットを実行するには、[Bot Framework Emulator](https://learn.microsoft.com/ja-jp/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp)が必要。
 
 Bot Framework Emulator（の最新版）は Chocolateyからはインストールできないので、以下のページからインストーラー（BotFramework-Emulator-VERSION-windows-setup.exe）をダウンロードしてインストールする。
@@ -27,6 +29,8 @@ https://github.com/Microsoft/BotFramework-Emulator/releases/latest
 ## Node.jsのインストール
 
 Bot Framework Composerでボットを作成するために必要。
+
+Windows PowerShellを起動し、以下を実行。※以下同様
 
 ```
 choco install -y nodejs
@@ -58,7 +62,7 @@ choco install -y bot-framework-composer
 
 ![](images/ss-2023-04-06-22-01-36.png)
 
-このようなエラーが出る場合がある。これはOKを押して閉じるしかない。
+Bot Framework Composerで作業中に、このようなエラーが出る場合がある。これはOKを押して閉じるしかない。
 
 ## ボット(WeatherBot)の作成
 
@@ -72,13 +76,21 @@ choco install -y bot-framework-composer
 
 ## 言語理解（レコグナイザー）の変更
 
-正規表現に変更。
+「正規表現」タイプに変更。
 
 ![](images/ss-2023-04-06-21-14-47.png)
 
 ## デフォルトのメッセージの変更（2箇所）
 
+```
+こんにちは！私に、天気について聞いてください
+```
+
 ![](images/ss-2023-04-06-21-17-07.png)
+
+```
+すみません、よくわかりません。私に、天気について聞いてください
+```
 
 ![](images/ss-2023-04-06-21-19-19.png)
 
@@ -93,6 +105,10 @@ choco install -y bot-framework-composer
 
 ![](images/ss-2023-04-06-21-23-00.png)
 
+```
+都市（東京都、大阪府、北海道、沖縄県など）を入力してください
+```
+
 ![](images/ss-2023-04-06-21-24-39.png)
 
 ![](images/ss-2023-04-06-21-25-35.png)
@@ -101,8 +117,14 @@ choco install -y bot-framework-composer
 
 ![](images/ss-2023-04-06-21-26-32.png)
 
+Uri: ※YOURAPPIDの部分は、取得したOpenWeather APIのAPIキーに置換。
 ```
 http://api.openweathermap.org/data/2.5/weather?units=metric&q=${dialog.city}&lang=ja&units=metric&appid=YOURAPPID
+```
+
+Result property:
+```
+dialog.api_response
 ```
 ![](images/ss-2023-04-06-21-30-04.png)
 
