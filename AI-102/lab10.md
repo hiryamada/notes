@@ -13,7 +13,7 @@ rm Worker.cs
 
 dotnet add package Microsoft.Extensions.Configuration.UserSecrets
 dotnet add package ConsoleAppFramework
-dotnet add package Azure.AI.Language.Conversations
+dotnet add package Azure.AI.Language.Conversations --version 1.0.0-beta.2
 
 echo "root = true
 [*.cs]
