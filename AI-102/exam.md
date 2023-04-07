@@ -1,6 +1,15 @@
 # AI-102 試験対策
 
-AI-102の主な試験準備（学習）方法をご紹介。
+AI-102の試験・資格と学習方法をご紹介。
+
+■認定試験のメリットは？ 合格すると何が嬉しいの？
+
+参考(Microsoft認定試験のメリット): https://www.trainocate.co.jp/upload/flyer/flyer_108.pdf
+
+- 自身がつく
+- エンジニアとしての信頼感が向上
+- 査定が向上
+- 転職にも有利
 
 ■「認定試験」と「認定資格」
 
@@ -33,10 +42,19 @@ AI-102の主な試験準備（学習）方法をご紹介。
   └まとめ
 ```
 
+正解・解説表示あり。
+
 例:
 https://learn.microsoft.com/ja-jp/training/modules/prepare-to-develop-ai-solutions-azure/10-knowledge-check
 
-正解・解説表示あり。
+ヒント:
+
+- 機械学習の「予測」とは？
+  - 大量のデータによるトレーニングに基づいて予測を行う
+- Azure Machine Learningなどでトレーニングしたモデルはどうやって使う？
+  - デプロイ（発行）して、Web経由で使用する
+- ドキュメントのインデックスを作るサービスは？
+  - Azure Cognitive Search
 
 ■「プラクティス評価」を活用して学習しよう！（無料）
 
@@ -101,8 +119,20 @@ https://learn.microsoft.com/ja-jp/certifications/exams/ai-102
 
 ■認定資格を維持しよう！（無料）
 
+https://learn.microsoft.com/ja-jp/certifications/renew-your-microsoft-certification
+
 取得した「認定資格」には有効期限が設定されている。
 
-有効期限が切れる数ヶ月前に、期限を「更新」を行うためのリンクが送られてくるので、忘れずに更新しよう。
+有効期限が切れる6ヶ月前に、期限を「更新」を行うためのリンクが送られてくるので、忘れずに更新しよう。
 
 更新の際は簡単なWeb試験に合格する必要があるが、もし不合格でも何度もチャレンジできる。
+
+■次の目標
+
+```
+AI-900
+↓
+AI-102 → AZ-204 Azure開発者
+↓
+DP-100 → Azureデータサイエンティスト
+```
