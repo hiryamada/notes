@@ -5,9 +5,9 @@ Azure Cognitive Searchを使用して、PDFの検索が実行できるように�
 Azure Cognitive Searchでは、Azure Cognitive Servicesを併用することで、以下のような高度な検索を実現できます。
 
 - PDFに含まれる画像をキーワードで検索する
-  - 例: スカイスクレイパー（高層建築物）を検索する
+  - 例: 「スカイスクレイパー」（高層ビル）を検索する
 - 感情分析を使用して、肯定的な文章が含まれる文章を検索する
-  - 例: 評判がよいホテルを検索する
+  - 例: 「評判がよい」ホテルを検索し、感情分析の結果のスコアが高い（評価が高い）順に並べる
 
 最後に、WebアプリにAzure Cognitive Searchを組み込み、Webアプリから高度な検索を利用できるようにします。
 
@@ -17,7 +17,7 @@ Azure Cognitive Searchでは、Azure Cognitive Servicesを併用することで�
 - [Azure Cognitive Services（マルチアカウント）リソースの作成](https://github.com/MicrosoftLearning/AI-102-AIEngineer.ja-jp/blob/main/Instructions/22-azure-search.md#cognitive-services-%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E4%BD%9C%E6%88%90)
 - [ストレージ アカウントの作成](https://github.com/MicrosoftLearning/AI-102-AIEngineer.ja-jp/blob/main/Instructions/22-azure-search.md#%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E4%BD%9C%E6%88%90)
 
-リソースを作成したら、以下の情報を調べてメモ帳などにコピーしておきます。
+リソースを作成したら、以下の情報を調べてメモ帳などにコピーしておく。
 
 ```
 ■Azure Cognitive Search
