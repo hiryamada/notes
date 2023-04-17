@@ -36,7 +36,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
 1. [Azure App Service Web Apps の作成](mod01.md)
    - 参考: [Azure Static Web Apps](pdf/Azure%20Static%20Web%20Apps.pdf)
 2. [Azure Functions の実装](mod02.md)
-   - 参考: [Durable Functions](pdf/mod02/durable-function.pdf)
+     - 参考: [Durable Functions](pdf/mod02/durable-function.pdf)
 3. [Blob Storage を使用するソリューションの開発](mod03-01-blob.md)
 4. [Cosmos DB ストレージを使用するソリューションを開発する](mod04.md)
 5. IaaS ソリューションの実装
@@ -52,15 +52,15 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
    - [Event Grid](mod09-01-eventgrid.md)
    - [Event Hubs](mod09-02-eventhubs.md)
 10. メッセージ ベース ソリューションの開発
-   - [Service Bus](mod10-01-servicebus.md)
-   - [Queue Storage](mod10-02-queue.md)
+    - [Service Bus](mod10-01-servicebus.md)
+    - [Queue Storage](mod10-02-queue.md)
 11. [監視とロギングをサポートするインストルメント ソリューション](mod11.md)
-   - [Azure Monitor](mod11-01-monitor.md)
-   - [Application Insights](mod11-02-appinsights.md)
-   - [Log Analytics](mod11-03-loganalytics.md)
+    - [Azure Monitor](mod11-01-monitor.md)
+    - [Application Insights](mod11-02-appinsights.md)
+    - [Log Analytics](mod11-03-loganalytics.md)
 12. [キャッシュとコンテンツ配信をソリューション内で統合](mod12.md)
-   - [Azure Cache for Redis](pdf/mod13/Azure%20Cacheまとめ.pdf)
-   - [Azure CDN](pdf/mod13/Azure%20CDNまとめ.pdf)
+    - [Azure Cache for Redis](pdf/mod13/Azure%20Cacheまとめ.pdf)
+    - [Azure CDN](pdf/mod13/Azure%20CDNまとめ.pdf)
 
 1日2～3モジュールを目安に進めていきます。
 各モジュールにはハンズオンラボ（演習時間）があります。
