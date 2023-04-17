@@ -167,7 +167,7 @@ Webアプリ
   - l1, l2, l3
   - l1v2, l2v2, l3v2
 
-これらの選択により、プランで使える性能と機能が変化する。
+これらの選択により、プランで使える性能と機能、料金が変化する。
 
 例1:
 - 「Basic」
@@ -253,6 +253,7 @@ Basic以上のプランでは、手動スケールを利用することができ
 
 Standard以上のプランでは、自動スケールを利用することができる。プランの負荷状況に合わせて、自動的にインスタンスを増減させることができる。
 
+<!--
 ■App Serviceの料金
 
 https://azure.microsoft.com/ja-jp/pricing/details/app-service/windows/
@@ -274,7 +275,25 @@ https://azure.microsoft.com/ja-jp/pricing/details/app-service/windows/
 - 3インスタンス: 月219ドル
 - ...
 - 10インスタンス: 月730ドル
+-->
 
+# ラボ1
+
+```
+Webブラウザー
+↓
+Webアプリ
+↓↑JSON
+Web API
+↓↑画像のURL
+ストレージアカウント
+└Blobコンテナー
+  └Blob（画像ファイル）
+
+```
+
+
+<!--
 
 ■主なコードのデプロイ方法
 
@@ -410,3 +429,4 @@ App Serviceでは、各アプリ（のデプロイスロット）に`example.azu
 
 
 
+-->

@@ -63,6 +63,10 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
 1日2～3モジュールを目安に進めていきます。
 各モジュールにはハンズオンラボ（演習時間）があります。
 
+# ラボの利用方法
+
+[ラボの利用方法](../cloudslice/README.md)
+
 # 知識チェックの解説
 
 [解説](check.md)
