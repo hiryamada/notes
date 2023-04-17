@@ -34,29 +34,31 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
 全12ラーニングパスで構成されます。
 
 1. [Azure App Service Web Apps の作成](mod01.md)
-1. [Azure Functions の実装](mod02.md)
-1. [Blob Storage を使用するソリューションの開発](mod03-01-blob.md)
-1. [Cosmos DB ストレージを使用するソリューションを開発する](mod04.md)
-1. IaaS ソリューションの実装
+   - 参考: [Azure Static Web Apps](pdf/Azure%20Static%20Web%20Apps.pdf)
+2. [Azure Functions の実装](mod02.md)
+   - 参考: [Durable Functions](pdf/mod02/durable-function.pdf)
+3. [Blob Storage を使用するソリューションの開発](mod03-01-blob.md)
+4. [Cosmos DB ストレージを使用するソリューションを開発する](mod04.md)
+5. IaaS ソリューションの実装
    - [VM](mod05-01-vm.md)
    - [ARMテンプレート](mod05-02-arm.md)
    - [Docker](mod05-03-docker.md)
    - [Azure Container Registry](mod05-04-acr.md)
    - [Azure Container Instance](mod05-05-aci.md)
-2. [安全なクラウド ソリューションの実装](mod06.md)
-3. [ユーザー認証と認可を実装する](mod07.md)
-4. [API Management を理解します](mod08-01-apim.md)
-5. イベントベースのソリューションの開発
+6. [安全なクラウド ソリューションの実装](mod06.md)
+7. [ユーザー認証と認可を実装する](mod07.md)
+8. [API Management を理解します](mod08-01-apim.md)
+9. イベントベースのソリューションの開発
    - [Event Grid](mod09-01-eventgrid.md)
    - [Event Hubs](mod09-02-eventhubs.md)
-6. メッセージ ベース ソリューションの開発
+10. メッセージ ベース ソリューションの開発
    - [Service Bus](mod10-01-servicebus.md)
    - [Queue Storage](mod10-02-queue.md)
-7. [監視とロギングをサポートするインストルメント ソリューション](mod11.md)
+11. [監視とロギングをサポートするインストルメント ソリューション](mod11.md)
    - [Azure Monitor](mod11-01-monitor.md)
    - [Application Insights](mod11-02-appinsights.md)
    - [Log Analytics](mod11-03-loganalytics.md)
-9. [キャッシュとコンテンツ配信をソリューション内で統合](mod12.md)
+12. [キャッシュとコンテンツ配信をソリューション内で統合](mod12.md)
    - [Azure Cache for Redis](pdf/mod13/Azure%20Cacheまとめ.pdf)
    - [Azure CDN](pdf/mod13/Azure%20CDNまとめ.pdf)
 
