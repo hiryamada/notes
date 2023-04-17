@@ -23,9 +23,9 @@ https://azure.microsoft.com/ja-jp/solutions/serverless/
   - 毎週・毎月といった決まった間隔でタスクを実行
 - APIの実装
 - マイクロサービスの実装
-- システムの統合
+- システムの統合・連携
 - IoTデバイスからのデータ収集・処理
-- Cosmos DBの変更に対応する
+- Cosmos DBのデータの変更に対応する
 - キューに到着したメッセージを処理する
 - **Azure Monitorアラート**がトリガーされた際に、Azure Functions関数で、対応する処理を実行する
 
@@ -64,10 +64,13 @@ https://azure.microsoft.com/ja-jp/pricing/details/functions/
 - [消費（使用量、従量課金とも）](https://docs.microsoft.com/ja-jp/azure/azure-functions/consumption-plan)
   - 1 秒あたりのリソースの使用量と実行回数に基づいて課金
 - [Premium プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-premium-plan?tabs=portal)
+  - 強化されたパフォーマンス
+    - より大きなVMサイズが利用できる
   - インスタンス全体にわたって割り当てられたコア秒数とメモリに基づく
   - コールド スタートなし
-  - 強化されたパフォーマンス
-  - VNetアクセス
+  - VNet統合
+    - 関数アプリから、VNet内のリソースにアクセス
+    - VNetを経由して別のリソースにアクセス
 - [専用プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan)
   - 「App Service プラン」上でAzure Functionsを実行
   - App Service プランの料金
@@ -156,13 +159,13 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan#always-on
 
 -->
 
-■ストレージアカウント
+■ストレージアカウント （ホストストレージ）
 
-Azure Functions では、Function App インスタンスを作成するときに Azure ストレージ アカウントが必要になります。
+Azure Functions 関数アプリのリソースを作成する際、Azure ストレージ アカウントも必要。
 
-アカウントが削除されると、関数アプリは実行されません。
+このストレージアカウントが削除されると、関数アプリは実行されない。
 
-最適なパフォーマンスを得るには、関数アプリで同じリージョンのストレージ アカウントを使用する必要があります。
+最適なパフォーマンスを得るには、関数アプリで同じリージョンのストレージ アカウントを使用する必要がある。
 
 複数の関数アプリで1つのストレージアカウントを共有してもよい。
 
