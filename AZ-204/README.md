@@ -38,6 +38,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
 2. [Azure Functions の実装](mod02.md)
      - 参考: [Durable Functions](pdf/mod02/durable-function.pdf)
 3. [Blob Storage を使用するソリューションの開発](mod03-01-blob.md)
+   - [ラボ3のコード例](lab03.md)
 4. [Cosmos DB ストレージを使用するソリューションを開発する](mod04.md)
 5. IaaS ソリューションの実装
    - [VM](mod05-01-vm.md)
@@ -48,7 +49,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
 6. [安全なクラウド ソリューションの実装](mod06.md)
 7. [ユーザー認証と認可を実装する](mod07.md)
 8. [API Management を理解します](mod08-01-apim.md)
-9. イベントベースのソリューションの開発
+9.  イベントベースのソリューションの開発
    - [Event Grid](mod09-01-eventgrid.md)
    - [Event Hubs](mod09-02-eventhubs.md)
 10. メッセージ ベース ソリューションの開発
