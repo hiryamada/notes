@@ -33,7 +33,7 @@ DevOpsにおけるセキュリティ（DevSecOps）とは。
 - セキュリティ対策を自動化する
   - コードの脆弱性スキャン - [SonarQube](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube)をAzure Pipelineに組み込むなど
   - Dockerコンテナの脆弱性スキャン - Azure Container Registryで[Qualysスキャナ](https://azure.microsoft.com/ja-jp/updates/vulnerability-scanning-for-images-in-azure-container-registry-is-now-generally-available/)を使用
-  - プロジェクトでの脆弱性があるパッケージの使用のチェック - Azure Pipelines[WhiteSource](https://marketplace.visualstudio.com/items?itemName=whitesource.whitesource)
+  - プロジェクトでの脆弱性があるパッケージの使用のチェック - Azure Pipelinesで[Mend Bolt (以前のWhiteSource Bolt)](https://marketplace.visualstudio.com/items?itemName=whitesource.whitesource)を使用。
 
 ※Azureのセキュリティの学習については[AZ-500 Security Technologies](https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-500t00)というコースもご利用いただけます。
 

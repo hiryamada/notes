@@ -10,11 +10,12 @@
   - [サイト信頼性エンジニアリング(SRE)](mod18-01-sre.md)
   - [非難のない文化](mod18-02-blameless-retrospective.md)
   - [DevOps プロジェクトでのセキュリティの実装](mod19.md)
+    - [Mend Bolt/デューデリジェンス/シフトレフト](mend.md)
   - [ライセンス](mod20-01-license.md)
   - [コードスキャン](mod20-02-security-scan.md)
 - ハンズオン（オプション）
   - ハンズオン: [SonarCloudによるコード解析](mod20-handson-sonarcloud.md)
-  - ハンズオン: [WhiteSource Bolt による脆弱性レポート](mod19-handson-whitesource.md)
+  - ハンズオン: [Mend Bolt (以前のWhiteSource Bolt) による脆弱性レポート](mod19-handson-whitesource.md)
 
 
 # [ラーニング パス9: 継続的フィードバックを実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-400-implement-continuous-feedback/)
@@ -199,7 +200,7 @@
   - リポジトリ内の依存関係を検査し、問題があれば警告。
   - [GitHub Advisory Database](https://github.com/advisories) に新たな脆弱性が追加された場合に、関連するアラートを送信する
     - ※[GitHubのドキュメントの解説](https://docs.github.com/ja/code-security/dependabot/dependabot-alerts/browsing-security-vulnerabilities-in-the-github-advisory-database#)
-- [WhiteSource Bolt](https://www.whitesourcesoftware.com/free-developer-tools/bolt/)
+- [Mend Bolt (以前のWhiteSource Bolt)](https://www.whitesourcesoftware.com/free-developer-tools/bolt/)
   - オープンソースの脆弱性の検索と修正
   - オープンソースのセキュリティとライセンスのコンプライアンスを評価
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/integrate-license-vulnerability-scans/10-knowledge-check)
@@ -212,7 +213,7 @@
   - [SonarCloud](https://sonarcloud.io/)
     - コード品質のチェック
     - コードスメル（コードの臭い）を発見できる
-  - [WhiteSource Bolt](https://www.whitesourcesoftware.com/free-developer-tools/bolt/)
+  - [Mend Bolt (以前のWhiteSource Bolt)](https://www.whitesourcesoftware.com/free-developer-tools/bolt/)
     - オープンソースの脆弱性の検索と修正
     - オープンソースのセキュリティとライセンスのコンプライアンスを評価
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/identify-technical-debt/8-knowledge-check)

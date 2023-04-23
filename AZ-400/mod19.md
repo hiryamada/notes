@@ -37,7 +37,7 @@ Rugged DevOps / DevSecOpsは、[2016年頃から注目されるようになっ�
 
 [Microsoftの開発者のブログ](https://devblogs.microsoft.com/devops/team-services-october-extensions-roundup-rugged-devops/)で、Rugged DevOpsで使用することができるツールがいくつか紹介されている。
 
-- WhiteSource
+- Mend Bolt (以前のWhiteSource Bolt)
 - HPE Security Fortify
 - Checkmarx
 
@@ -62,16 +62,24 @@ Rugged DevOpsで、パイプラインに追加されるもの。
 
 Software Composition Analytics(SCA)
 
-プロジェクトで、脆弱性が含まれているパッケージ（のバージョン）を使っているかどうかを検査する。
+コードを静的／非実行の状態でスキャンして、セキュリティ脆弱性になるかもしれない欠陥を検出するツール。
 
 いくつかのツールが利用できる。
 
-- [WhiteSource](https://www.ricksoft.jp/whitesource/)
+- [Mend Bolt (以前のWhiteSource Bolt)](https://www.ricksoft.jp/whitesource/)
 - [Fortify SCA](https://www.veriserve.co.jp/service/detail/fortify-sca.html)
 - [Synopsys](https://www.synopsys.com/ja-jp/glossary/what-is-software-composition-analysis.html)
 - [Black Duck](https://www.synopsys.com/ja-jp/software-integrity/security-testing/software-composition-analysis.html)
 - [Veracode](https://www.techmatrix.co.jp/product/veracode/sca.html)
 
+■SCAとSCATの違い:
+
+https://www.ricksoft.jp/blog/articles/001267.html
+
+- SAST（Static Application Security Testing）
+  - コードを静的／非実行の状態でスキャンして、セキュリティ脆弱性になるかもしれない欠陥を検出するツール。
+- SCA（Software Composition Analysis）
+  - プロジェクトに含まれるすべてのオープンソース・コンポーネントを検出・追跡するツール。検出されたオープンソース・コンポーネントの脆弱性、ライセンスについて警告を出す。
 
 ■パッケージの管理
 
