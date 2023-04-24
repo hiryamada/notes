@@ -1,5 +1,32 @@
 # Mend Bolt (以前のWhiteSource Bolt)
 
+■参考: 社名変更について
+
+2022/5/25 より、「WhiteSource」は「Mend」に。
+
+https://www.ricksoft.jp/blog/articles/001373.html
+
+■参考: Mend
+
+https://talking-english.net/fix-repair-mend/
+
+fix / repair / mend どれも「修理する・直す」といった意味の言葉で基本的にはどれも同じ意味です。
+
+mendは繊維などに対して使われる傾向がある、ちょっと古くさい単語ではあります。グーグル検索で「mending」を検索すると服やジーンズなどの穴を塞ぐ画像が多く登場するように「補修」の意味合いが強くなります。
+
+■参考: Gitの`--amend`
+
+https://www.atlassian.com/ja/git/tutorials/rewriting-history
+
+直前のコミットを変更（修正）
+
+- mend: （布などを）補修・修繕する
+- amend: （法律などを）修正する
+
+■参考: Black Duck と WhiteSource
+
+https://monoist.itmedia.co.jp/mn/articles/1708/30/news042.html
+
 ■Mend Bolt (以前のWhiteSource Bolt)とは？
 
 https://mosaique-inc.jp/whitesource.html
