@@ -81,6 +81,8 @@
 
 - 講義: [かんばんボード](mod01-13-kanban.md)
 - 講義: [アジャイルなソフトウェア開発](mod01-12-agile.md)
+- 講義: [Azure Boards](pdf/Azure%20Boards.pdf)
+- 演習: [Azure Boards](azure-boards-handson.md)
 - ★**かんばんボード**
   - ★ステージ（列）の左から右に、タスクを移動し、作業を管理および視覚化
 - ★ウォーターフォールとアジャイル
