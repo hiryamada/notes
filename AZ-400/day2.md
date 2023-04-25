@@ -14,6 +14,7 @@
   - 講義: [Azure Pipelines](mod05-02-azure-pipeline.md)
   - ハンズオン:[基本的なパイプライン](mod06-hands-on-basic-azure-pipeline.md)
   - ハンズオン:[基本的なWebアプリのデプロイ](mod06-hands-on-web-app-deploy.md)
+  - 参考資料: [Azure Pipelines (YAMLパイプライン)の入門資料集](yaml-intro.md)
   - PDF資料: [基本的なWebアプリのデプロイ](pdf/Azure%20Pipelines%20web%20app%20deploy.pdf)
   - 講義: [エージェント](mod05-03-agent.md)
   - 講義: [エージェントプール](mod05-04-agent-pool.md)
