@@ -32,6 +32,7 @@
   - テンプレート
 - 講義: [セキュリティの設計](mod07-01-security.md)
 - 講義: [設定値や機密情報の扱い方](mod07-02-configuration.md)
+- PDF資料: [Azureの認証と承認（サービスプリンシパル、マネージドID、ロール）](../SC/pdf/Azure%E3%81%AE%E8%AA%8D%E8%A8%BC%E3%81%A8%E6%89%BF%E8%AA%8D.pdf)
 - 講義: [インフラストラクチャと構成の管理(IaC)](mod13.md)
 - 講義: [Chef/Puppet/Ansible/Terraform](mod14.md)
 - ハンズオン: [Ansible](mod14-handson-ansible.md)

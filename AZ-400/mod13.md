@@ -52,7 +52,9 @@
 
 ## Azure Automation
 
+講義: [Azure Automation](../iac/azure-automation.md)
 
+<!--
 ### Azure Automation とは?
 
 
@@ -292,3 +294,4 @@ Azure Automation State Configuration では、Windows 機能 DSC サービスに
 - Blobコンテナーにホスト
 - リンクされたテンプレートのSAS URLを生成してメインテンプレートに埋め込む
 - 古典的（定番ではある）
+-->
