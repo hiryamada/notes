@@ -26,6 +26,7 @@ https://docs.microsoft.com/ja-jp/certifications/exams/az-400
 - [3日目](day3.md)
   - ラーニングパス5: CD その2
     - モジュール1～4: Azure Pipelines リリースパイプライン
+    - [PDF資料: Azure Pipelinesの環境（VMへのデプロイ）](pdf/Azure%20Pipeline%E7%92%B0%E5%A2%83.pdf)
     - モジュール5: セキュリティ
     - モジュール6: Key Vault
     - モジュール7: 認証
