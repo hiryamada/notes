@@ -38,8 +38,14 @@ https://docs.microsoft.com/ja-jp/certifications/exams/az-400
   - ラーニングパス9: フィードバック、分析
   - ラーニングパス10: セキュリティ
 
-おまけ:
-[Microsoft Learnの全ラーニングパス・モジュール・ユニットの一覧](index-az-400-ja-jp.md)
+■まとめ
+
+- 不要なAzureリソースを削除してください。
+- [AZ-400の全ラーニングパス・モジュール・ユニットの一覧](index-az-400-ja-jp.md)
+- [AZ-400 学習内容の振り返り](summary.md)
+- [AZ-400 試験対策](exam.md)
+- [クロージング](../closing.md)
+- アンケート（トレーニングが終わる際に、入力方法をご案内しますので、それまでお待ち下さい）
 
 <!-- 
 ## day 1 DevOps, ソースコードの管理
@@ -122,19 +128,6 @@ Teams 18
 ```
 -->
 
-
-# 認定資格
-
-https://docs.microsoft.com/ja-jp/learn/certifications/devops-engineer/
-
-(1)認定の前提条件: 次のいずれかに合格。
-
-- [Microsoft Certified: Azure Administrator Associate (AZ-104)](https://docs.microsoft.com/ja-jp/learn/certifications/azure-administrator/)
-- [Microsoft Certified: Azure Developer Associate (AZ-204)](https://docs.microsoft.com/ja-jp/learn/certifications/azure-developer/)
-
-(2)認定試験: AZ-400 に合格。
-
-- [AZ-400: Microsoft DevOps ソリューションの設計と実装](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400)
 
 
 # 主な関連サイト

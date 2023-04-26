@@ -149,7 +149,7 @@
 - Rugged DevOps
   - DevOpsとセキュリティを結合した考え方（DevSecOpsと同じ）
   - 特に、（ビルド・リリース等の）パイプラインをセキュリティで保護することを指す
-- ソフトウェア コンポジション分析
+- ソフトウェア コンポジション分析（Software Composition Analytics, SCA）
   - オープンソース ソフトウェア (OSS) を分析して潜在的なセキュリティの脆弱性を特定し、ソフトウェアがパイプラインで使用するために定義された基準を満たしていることを検証すること
 - [知識チェック](https://docs.microsoft.com/ja-jp/learn/modules/understand-security-pipeline/12-knowledge-check)
 
