@@ -1,0 +1,90 @@
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+variables:
+  buildConfiguration: 'Release'
+  projectName: 'MyApp'
+  websiteName: 'MyApp'
+  appPoolName: 'MyApp'
+
+stages:
+- stage: build
+  jobs:
+  - job: build
+    steps:
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'publish'
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+        publishWebProjects: true
+        zipAfterPublish: true
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+        artifact: 'web'
+        publishLocation: 'pipeline'
+- stage: deploy
+  jobs:
+  - deployment: VMDeploy
+    displayName: Deploy to VM
+    environment:
+      name: env1
+      resourceType: virtualMachine
+    variables:
+     - name: websitePhysicalPath
+       value: '%SystemDrive%\inetpub\wwwroot\$(websiteName)'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: DownloadPipelineArtifact@2
+            inputs:
+              source: 'current'
+              artifact: 'web'
+
+
+          - task: IISWebAppManagementOnMachineGroup@0
+            inputs:
+              IISDeploymentType: 'IISWebsite'
+              ActionIISWebsite: 'CreateOrUpdateWebsite'
+              WebsiteName: '$(websiteName)'
+              WebsitePhysicalPath: '$(websitePhysicalPath)'
+              WebsitePhysicalPathAuth: 'WebsiteUserPassThrough'
+              CreateOrUpdateAppPoolForWebsite: true
+              AppPoolNameForWebsite: '$(appPoolName)'
+              DotNetVersionForWebsite: 'No Managed Code'
+              PipeLineModeForWebsite: 'Integrated'
+              AppPoolIdentityForWebsite: 'ApplicationPoolIdentity'
+              AddBinding: true
+              Bindings: |
+                  {
+                      bindings:[
+                          {
+                              "protocol":"http",
+                              "ipAddress":"",
+                              "hostname":"",
+                              "port":"8080",
+                              "sslThumbprint":"",
+                              "sniFlag":false
+                          }
+                      ]
+                  }
+
+          - task: IISWebAppManagementOnMachineGroup@0
+            inputs:
+              IISDeploymentType: 'IISApplicationPool'
+              ActionIISApplicationPool: 'StopAppPool'
+              StartStopRecycleAppPoolName: '$(appPoolName)'
+
+          - task: IISWebAppDeploymentOnMachineGroup@0
+            inputs:
+              WebSiteName: '$(websiteName)'
+              Package: '$(System.DefaultWorkingDirectory).zip'
+
+          - task: IISWebAppManagementOnMachineGroup@0
+            inputs:
+              IISDeploymentType: 'IISApplicationPool'
+              ActionIISApplicationPool: 'StartAppPool'
+              StartStopRecycleAppPoolName: '$(appPoolName)'
