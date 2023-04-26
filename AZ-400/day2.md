@@ -23,6 +23,7 @@
   - 講義: [継続的インテグレーション(CI)](mod06-01-ci.md)
   - 講義: [ビルド戦略の実装](mod06-02-build.md)
   - 講義: [Azure Pipelinesとの統合(YAMLパイプライン詳細)](mod06-03-yaml.md)
+  - PDF資料: [Azure Pipelines補足（クラシック等）](pdf/Azure%20Pipelines%20%E8%A3%9C%E8%B6%B3.pdf)
   - ハンズオン:[ビルド・リリースパイプライン](mod06-hands-on-build-and-release-pipeline.md)
   - 講義: [外部ソース管理をAzure Pipelinesと統合する](mod06-04-scm-integration.md)
   - 講義: [セルフホステッド エージェントの設定](mod06-05-self-hosted-agent.md)
