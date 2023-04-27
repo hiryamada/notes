@@ -229,8 +229,7 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 
 - 以下のコマンドを投入
     ```
-    cd hello
-    code -r .
+    code -r ~/hello
     ```
 - Visual Studio Codeがリロードされる
 - 「Do you trust the authors of the files in this folder?」→「Yes, I trust the authors」

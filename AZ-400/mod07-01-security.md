@@ -115,7 +115,10 @@ Microsoft Security Code Analysis 拡張機能を使用すると、チームは A
 
 ■脅威（[Threat](https://ejje.weblio.jp/content/threat)）とは
 
-[情報資産にダメージを与えるもの、現象。（IPA）](https://www.ipa.go.jp/files/000013297.pdf)
+情報資産にダメージを与えるもの、現象。
+
+情報セキュリティ10大脅威 2023
+https://www.ipa.go.jp/security/10threats/10threats2023.html
 
 脅威の例
 - 漏洩
