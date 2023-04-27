@@ -1,5 +1,7 @@
-  - [ワークアラウンド](https://developercommunity.visualstudio.com/t/New-Kubernetes-service-connection-causes/10138123)があるのですが、こちらを実施しても正しく動作させることはできませんでした。
-  - 代わりに、[「訂正版」](mod16-handson-aci.md)を実施ください。Kubernetesの代わりにACIを使用します。
+- (2023/4/27)現在、Azure PipelinesでKubernetesの設定が失敗します。
+- [ワークアラウンド](https://developercommunity.visualstudio.com/t/New-Kubernetes-service-connection-causes/10138123)があるのですが、こちらを実施しても正しく動作させることはできませんでした。
+- AKSでKubernetes最新バージョンを使用しても改善しませんでした。
+- 代わりに、[「訂正版」](mod16-handson-aci.md)を実施ください。Kubernetesの代わりにACIを使用します。
 
 # ハンズオン（後編） Kubernetes
 
