@@ -18,6 +18,9 @@
 - 講義: [Kubernetes](mod16.md)
 - [Azure DevOpsとKubernetes](../seminar/ado-aks.pdf)
 - ハンズオン(後編): [Kubernetes](mod16-handson-kubernetes.md)
+  - [ワークアラウンド](https://developercommunity.visualstudio.com/t/New-Kubernetes-service-connection-causes/10138123)があるのですが、こちらを実施しても正しく動作させることはできませんでした。
+  - 代わりに、以下の「訂正版」を実施ください。Kubernetesの代わりにACIを使用します。
+- ハンズオン(訂正版): [ACI](mod16-handson-aci.md)
 
 # [ラーニング パス7: 依存関係の管理戦略の設計と実装](https://docs.microsoft.com/ja-jp/learn/paths/az-400-design-implement-dependency-management-strategy/)
 

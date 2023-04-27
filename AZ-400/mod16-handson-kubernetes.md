@@ -1,3 +1,6 @@
+  - [ワークアラウンド](https://developercommunity.visualstudio.com/t/New-Kubernetes-service-connection-causes/10138123)があるのですが、こちらを実施しても正しく動作させることはできませんでした。
+  - 代わりに、[「訂正版」](mod16-handson-aci.md)を実施ください。Kubernetesの代わりにACIを使用します。
+
 # ハンズオン（後編） Kubernetes
 
 ■ハンズオンの概要
@@ -86,7 +89,7 @@
     --enable-addons monitoring \
     --generate-ssh-keys \
     --node-vm-size Standard_D2as_v4 \
-    --kubernetes-version 1.23.12
+    --kubernetes-version 1.26.3
   ```
 
 ■Azure Pipelinesの準備
