@@ -227,12 +227,6 @@ Windows Server上ではDockerが動かないため、Docker実行用のLinux VM�
 
 ■WebアプリをDockerコンテナー化
 
-- 以下のコマンドを投入
-    ```
-    code -r ~/hello
-    ```
-- Visual Studio Codeがリロードされる
-- 「Do you trust the authors of the files in this folder?」→「Yes, I trust the authors」
 - 画面左の「Extensions」アイコンをクリック
 - C#と検索→C#の「Install」をクリック
 - しばらくすると右下に「Required assets to build and debug are missing...」と出る。「Yes」をクリック。![](images/ss-2022-03-17-14-36-20.png)
