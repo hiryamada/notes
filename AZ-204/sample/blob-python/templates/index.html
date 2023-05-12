@@ -1,0 +1,7 @@
+<!doctype html>
+{% for blob in blobs %}
+    <img src="{{ account_url }}/{{ blob.container }}/{{ blob.name }}" height="100">
+{% endfor %}
+
+<hr>
+<a href="/upload">アップロード</a>
