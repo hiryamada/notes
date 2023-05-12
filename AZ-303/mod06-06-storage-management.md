@@ -53,7 +53,7 @@ Microsoft Learn: [Azure Data Box ファミリを使用して大量のデータ�
 - https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/18
 - https://www.slideshare.net/ssuser411bae/azure-data-box-family-overview-and-microsoft-intelligent-edge-strategy/22
 
-
+<!--
 # Azure Data Box Gateway
 
 https://docs.microsoft.com/ja-jp/azure/databox-gateway/data-box-gateway-overview
@@ -122,6 +122,7 @@ https://azure.microsoft.com/ja-jp/products/azure-stack/edge/
   - 仮想マシン
   - エッジコンピューティング機能なし
     - データ転送のみ可能
+-->
 
 # AzCopy
 
