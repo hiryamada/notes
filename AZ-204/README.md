@@ -18,17 +18,25 @@ Azure開発者向けのコースです。
 # 日程
 
 - [1日目](day1.md)
+  - App Service, Azure Functions
 - [2日目](day2.md)
+  - Azure Blob Storage, Azure Cosmos DB
 - [3日目](day3.md)
+  - VM, ACI, ACR
+  - Microsoft ID Platform, Microsoft Graph
 - [4日目](day4.md)
+  - Key Vault, App Configuration, API Management
 - [5日目](day5.md)
+  - Event Grid, Event Hubs
+  - Queue Storage, Service Bus
+  - Application Insights
 
 # 教材 (Microsoft Learn)
 
 https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
 
 ページ下部に、Microsoft Learnへのリンクがあります。
-
+<!--
 # ラーニングパスの構成
 
 全12ラーニングパスで構成されます。
@@ -65,6 +73,7 @@ https://docs.microsoft.com/ja-jp/learn/certifications/courses/az-204t00
 
 1日2～3モジュールを目安に進めていきます。
 各モジュールにはハンズオンラボ（演習時間）があります。
+-->
 
 # ラボの利用方法
 

@@ -2,6 +2,9 @@
 
 Firewall as a Service (FWaaS)
 
+料金: https://azure.microsoft.com/ja-jp/pricing/details/azure-firewall/
+
+
 2018/9/24 Azure Firewall 一般提供開始
 https://azure.microsoft.com/ja-jp/updates/azure-firewall-generally-available/
 
