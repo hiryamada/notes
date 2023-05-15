@@ -1,7 +1,7 @@
 # 1日目
 
 - ラーニングパス1 App Service
-  - [ラーニングパス1 App Serviceの概要](lp01.md)
+  - [ラーニングパス1 App Serviceの解説](lp01.md)
   - [App Service](mod01.md)
     - [参考: App Serviceのネットワーク](appservice-network.md)
     - [参考: App Service Environment / App ServiceのVNet統合](app-service-vnet.md)
@@ -12,6 +12,7 @@
   - 準備、App Service
 -->
 - ラーニングパス2 Azure Functions
+  - [ラーニングパス2 Azure Functionsの解説](lp02.md)
   - [Azure Functions](mod02.md)
     - PDF資料: [Service Busの利用例](pdf/mod02/Azure%20Function%20Service%20Bus.pdf)
     - PDF資料: [Service Busでセッションを利用する](pdf/mod02/Service%20Bus%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3.pdf)
