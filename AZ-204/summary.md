@@ -1,6 +1,6 @@
 # AZ-204 学習内容のまとめ
 
-- サービス
+- Azure のサービス
   - コンピューティング（Azure上でコードを実行）
     - Azure App Service (Webアプリ)
     - Azure Functions (関数アプリ)

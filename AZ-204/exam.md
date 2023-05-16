@@ -50,7 +50,7 @@ Googleで[「AZ-204 合格」](https://www.google.com/search?q=az-204+%E5%90%88%
 正解・解説表示あり。
 
 例:
-https://learn.microsoft.com/ja-jp/training/modules/introduction-to-devops/6-knowledge-check
+https://learn.microsoft.com/ja-jp/training/modules/explore-azure-cosmos-db/9-knowledge-check
 
 「講義ノート」に、山田が作成した「知識チェック」解説があります。
 [解説1](day1.md) /
