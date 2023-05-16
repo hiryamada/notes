@@ -1,0 +1,29 @@
+# AZ-204 学習内容のまとめ
+
+- サービス
+  - コンピューティング（Azure上でコードを実行）
+    - Azure App Service (Webアプリ)
+    - Azure Functions (関数アプリ)
+    - Azure VM
+    - Azure Container Instance (ACI) - コンテナー
+    - Azure Container Registry (ACR) - イメージを管理
+  - ストレージ
+    - Azure Blob Storage - オブジェクトストレージ
+  - NoSQL
+    - Azure Cosmos DB - JSONデータを高速に読み書き
+  - Microsoft ID Platform
+    - Microsoft Graph
+  - 機密情報
+    - Key Vault
+  - アプリケーション構成
+    - App Configuration
+  - APIの管理
+    - API Management
+  - イベント
+    - Event Grid
+    - Event Hubs
+  - キュー
+    - Queue Storage
+    - Service Bus
+  - アプリケーションの監視
+    - Application Insights

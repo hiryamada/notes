@@ -30,6 +30,11 @@ Azure開発者向けのコースです。
   - Event Grid, Event Hubs
   - Queue Storage, Service Bus
   - Application Insights
+- 終了時のご案内
+  - [全体のまとめ](summary.md)
+  - [認定試験のご案内](exam.md)
+  - [クロージング](../closing-cloudslice.md)
+
 
 # 教材 (Microsoft Learn)
 
