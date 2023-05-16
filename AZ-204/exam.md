@@ -106,7 +106,7 @@ Microsoftの本番の認定試験の画面構成、画面遷移、出題パタ�
 
 ■本番の試験に申し込もう！（有料、割引あり）
 
-https://learn.microsoft.com/ja-jp/certifications/exams/az-400
+https://learn.microsoft.com/ja-jp/certifications/exams/az-204
 
 上記ページの「試験のスケジュール設定」から申し込む。
 
