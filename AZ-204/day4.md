@@ -1,6 +1,7 @@
 # 4日目
 
 - ラーニングパス 7: セキュリティ（Key Vault, マネージドID, App Configuration）
+  - [PDF: Azureでの認証と承認](../SC/pdf/Azure%E3%81%AE%E8%AA%8D%E8%A8%BC%E3%81%A8%E6%89%BF%E8%AA%8D.pdf)
   - [Key Vault](mod07.md)
   - [App Configuration](mod07-02-appcfg.md)
     - ご参考: [App Configurationのアクセスにかかる時間](pdf/Azure%20App%20Configuration%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.pdf)
