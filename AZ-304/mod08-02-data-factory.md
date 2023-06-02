@@ -8,12 +8,13 @@ ETL 、ELT 、データ統合という複雑なハイブリッド プロジェ�
 
 - [ETL](https://ja.wikipedia.org/wiki/Extract/Transform/Load)
   - Extract - Transform - Load
-  - 抽出 - 変換 - 読み込み。
+  - 抽出 - 変換 - 読み込み
   - [1970年ころから存在する概念](https://en.wikipedia.org/wiki/Extract,_transform,_load)
     - データウェアハウスへのデータ取り込みなど。
 - [ELT](https://www.talend.com/jp/resources/elt-vs-etl/)
-  - Extract - Load - Transform, 抽出 - 読み込み - 変換。
-  - 2020/12、John Lafleur氏が提唱。
+  - Extract - Load - Transform
+  - 抽出 - 読み込み - 変換
+  - 2020/12、John Lafleur(ジョーン ラフルール)氏が提唱。
     - https://www.kdnuggets.com/2020/12/future-etl-is-elt.html
   - データを変換せずDWHに読み込む。
   - データの利用者が必要に応じて変換作業を実施。
