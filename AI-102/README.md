@@ -29,6 +29,8 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 ■オープニング
 
 - [トレーニングご受講方法のご案内](../opening.md)
+- [ラボ環境のご案内](../cloudslice/README.md)
+  - ラボの開始前にお読みください
 
 ■1日目
 
@@ -81,7 +83,7 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 - [このコースで学習したサービス・機能のまとめ](matome.md)
 - [AI-102 試験対策](exam.md)
-- [クロージング(終了時のご案内)](../closing.md)
+- [クロージング(終了時のご案内)](../closing-cloudslice.md)
 - アンケート
 
 <!--
