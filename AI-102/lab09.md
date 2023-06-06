@@ -170,4 +170,7 @@ https://eastusclu9283742.cognitiveservices.azure.com/
 
 ## 次のステップ
 
-ここで準備したリソース、モデル、情報は、次のラボ([ラボ10](lab10.md))で使用する。
+![](images/ss-2023-06-06-15-17-30.png)
+
+ラボは終了せず、[次の手順(lab10)](lab10.md)に進んでください。
+
