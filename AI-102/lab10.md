@@ -2,6 +2,21 @@
 
 前のラボ([ラボ9](lab09.md))で作成したモデルを使用して、自然言語による命令を理解するアプリを作成する。
 
+## .NET 7.0 をインストール
+
+
+https://dotnet.microsoft.com/en-us/download
+
+![](images/ss-2023-06-06-15-24-44.png)
+
+![](images/ss-2023-06-06-15-25-21.png)
+
+![](images/ss-2023-06-06-15-25-52.png)
+
+![](images/ss-2023-06-06-15-26-09.png)
+
+![](images/ss-2023-06-06-15-27-25.png)
+
 ## プロジェクトの作成
 
 Visual Studio Codeを起動。
@@ -13,7 +28,7 @@ Visual Studio Codeを起動。
 Git Bashに切り替え
 ![](images/ss-2023-06-06-15-08-42.png)
 
-以下のコマンドをコピーし、Git Bash内に貼り付け
+以下のコマンドを全部コピーし、Git Bash内に貼り付け
 
 ```
 cd ~/Documents
@@ -42,13 +57,24 @@ Visual Studio Codeで、プロジェクトのフォルダが開かれる。
 
 Visual Studio Codeのターミナルを開く。
 
-以下のコマンドの、「キー」と「エンドポイント」の部分を、前のラボでコピーしておいた文字列に置換して、ターミナル内で実行。「Clock」と「production」は置換せずそのまま実行。
+![](images/ss-2023-06-06-15-28-46.png)
+
+Git Bashに切り替え
+
+![](images/ss-2023-06-06-15-29-15.png)
+
+以下のコマンドを、ターミナル内で実行。
+
+```
+dotnet user-secrets set 'CognitiveServices:Project' 'Clock'
+dotnet user-secrets set 'CognitiveServices:Deployment' 'production'
+```
+
+以下のコマンドの、「キー」と「エンドポイント」の部分を、前のラボでコピーしておいた文字列に置換して、ターミナル内で実行。
 
 ```
 dotnet user-secrets set 'CognitiveServices:SubscriptionKey' 'キー'
 dotnet user-secrets set 'CognitiveServices:Endpoint' 'エンドポイント'
-dotnet user-secrets set 'CognitiveServices:Project' 'Clock'
-dotnet user-secrets set 'CognitiveServices:Deployment' 'production'
 ```
 
 ## `Properties/launchSettings.json`の変更
