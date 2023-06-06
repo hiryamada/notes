@@ -23,6 +23,15 @@ AI-102の試験・資格と学習方法をご紹介。
 認定資格: Microsoft Certified: Azure AI Engineer Associate
 ```
 
+■「トレーニングジャーニー」を確認しよう！（無料、公式、英語）
+
+「クラウドITプロフェッショナル向け」「データ&AIプロフェッショナル向け」「開発者向け」などの「トレーニングジャーニー」（学習の道のり）を確認できる。
+
+「何をどの順で学べばよいか」を把握できる。
+
+https://aka.ms/AzureTrainingJourney
+
+
 ■Microsoft Learn ラーニングパス内の「知識チェック」を活用しよう！（無料）
 
 試験の詳細ページ（ https://learn.microsoft.com/ja-jp/certifications/exams/ai-102 ）の下部に、「ラーニングパス」へのリンクがある。
@@ -127,12 +136,3 @@ https://learn.microsoft.com/ja-jp/certifications/renew-your-microsoft-certificat
 
 更新の際は簡単なWeb試験に合格する必要があるが、もし不合格でも何度もチャレンジできる。
 
-■次の目標
-
-```
-AI-900
-↓
-AI-102 → AZ-204 Azure開発者
-↓
-DP-100 → Azureデータサイエンティスト
-```
