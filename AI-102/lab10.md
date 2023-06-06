@@ -4,6 +4,17 @@
 
 ## プロジェクトの作成
 
+Visual Studio Codeを起動。
+![](images/ss-2023-06-06-15-07-15.png)
+
+ターミナルを起動
+![](images/ss-2023-06-06-15-08-09.png)
+
+Git Bashに切り替え
+![](images/ss-2023-06-06-15-08-42.png)
+
+以下のコマンドをコピーし、Git Bash内に貼り付け
+
 ```
 cd ~/Documents
 mkdir lab10
@@ -22,6 +33,8 @@ dotnet_diagnostic.CA1822.severity = none
 " > .editorconfig
 code .
 ```
+
+![](images/ss-2023-06-06-15-10-47.png)
 
 Visual Studio Codeで、プロジェクトのフォルダが開かれる。
 
