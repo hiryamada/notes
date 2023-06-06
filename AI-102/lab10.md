@@ -39,7 +39,7 @@ rm Worker.cs
 
 dotnet add package Microsoft.Extensions.Configuration.UserSecrets
 dotnet add package ConsoleAppFramework
-dotnet add package Azure.AI.Language.Conversations --version 1.0.0-beta.2
+dotnet add package Azure.AI.Language.Conversations --version 1.0.0
 
 echo "root = true
 [*.cs]
@@ -62,13 +62,6 @@ Visual Studio Codeのターミナルを開く。
 Git Bashに切り替え
 
 ![](images/ss-2023-06-06-15-29-15.png)
-
-以下のコマンドを、ターミナル内で実行。
-
-```
-dotnet user-secrets set 'CognitiveServices:Project' 'Clock'
-dotnet user-secrets set 'CognitiveServices:Deployment' 'production'
-```
 
 以下のコマンドの、「キー」と「エンドポイント」の部分を、前のラボでコピーしておいた文字列に置換して、ターミナル内で実行。
 
@@ -105,11 +98,6 @@ ConsoleApp
     var credential = new AzureKeyCredential(context.Configuration["CognitiveServices:SubscriptionKey"] ?? "");
     var client = new ConversationAnalysisClient(endpoint, credential);
     services.AddSingleton(client);
-
-    var projectName = context.Configuration["CognitiveServices:Project"];
-    var deploymentName = context.Configuration["CognitiveServices:Deployment"];
-    var project = new ConversationsProject(projectName, deploymentName);
-    services.AddSingleton(project);
 })
 .Build()
 .AddCommands<Commands>()
@@ -122,25 +110,48 @@ ConsoleApp
 
 ```cs
 using Azure.AI.Language.Conversations;
-
+using System.Text.Json;
+using Azure;
+using Azure.Core;
 class Commands : ConsoleAppBase
 {
-    public void Clock(ConversationAnalysisClient client, ConversationsProject project, string input)
+    public void Clock(ConversationAnalysisClient client, IConfiguration config, string input)
     {
-        AnalyzeConversationResult result = client.AnalyzeConversation(input, project);
-        switch (result.Prediction.TopIntent)
+        System.Console.WriteLine(input);
+        string projectName = "Clock";
+        string deploymentName = "Clock";
+        var data = new
         {
-            case "GetDate":
-                GetDate();
-                break;
-
-            case "GetTime":
-                GetTime();
-                break;
-
-            default:
-                Console.WriteLine("???");
-                break;
+            analysisInput = new
+            {
+                conversationItem = new
+                { text = input, id = "1", participantId = "1", }
+            },
+            parameters = new
+            {
+                projectName,
+                deploymentName,
+                vervose = true,
+                // Use Utf16CodeUnit for strings in .NET.
+                stringIndexType = "Utf16CodeUnit",
+            },
+            kind = "Conversation",
+        };
+        Response response = client.AnalyzeConversation(RequestContent.Create(data));
+        if (response.ContentStream == null)
+        {
+            Console.WriteLine("stream is null");
+            return;
+        }
+        using JsonDocument result = JsonDocument.Parse(response.ContentStream);
+        JsonElement conversationalTaskResult = result.RootElement;
+        JsonElement conversationPrediction = conversationalTaskResult.GetProperty("result").GetProperty("prediction"); var topIntent = conversationPrediction.GetProperty("topIntent").GetString();
+        Console.WriteLine($"Top intent: {topIntent}");
+        switch (topIntent)
+        {
+            case "GetDate": GetDate(); break;
+            case "GetTime": GetTime(); break;
+            default: Console.WriteLine("can't detect intent"); break;
         }
     }
     private void GetDate()
@@ -158,29 +169,27 @@ class Commands : ConsoleAppBase
 
 解説: 前のラボで作成した「会話言語理解(CLU)」プロジェクトのモデルを使用して、ユーザーの「発話」（input）から意図（intent）を決定し、それに応じた処理を行う。
 
+## OSのタイムゾーンの調整
+
+![](images/ss-2023-06-07-02-57-07.png)
+
+![](images/ss-2023-06-07-02-57-37.png)
+
 ## 実行
 
 Visual Studio Codeのメニュー＞Terminal＞New Terminalで、ターミナルを開く。
 
-Windows VM（英語版OS）の場合、日本語の出力が化けてしまうため、以下のコマンドで対処（コマンドプロンプトを開き、コードページを65001に変更）。
-
 ```
-cmd
-chcp 65001
-```
+dotnet run clock --input "今日は何日？"
+dotnet run clock --input "何日ですか？"
+dotnet run clock --input "何日？"
+dotnet run clock --input "今日は何日か教えてください"
 
-この状態でプログラムを実行する。
-
-```
-dotnet run clock --input '今日は何日？'
-dotnet run clock --input '何日ですか？'
-dotnet run clock --input '何日？'
-dotnet run clock --input '今日は何日か教えてください'
-
-dotnet run clock --input '今の時間は？'
-dotnet run clock --input '現在の時間は？'
-dotnet run clock --input '今何時ですか？'
-dotnet run clock --input '現在の時刻を教えてください'
+dotnet run clock --input "現在の時間は？"
+dotnet run clock --input "今何時ですか？"
+dotnet run clock --input "何時？"
+dotnet run clock --input "今何時でしょうか・・・？"
+dotnet run clock --input "汝、今何時"
 ```
 
 実行例
