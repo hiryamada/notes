@@ -1,20 +1,63 @@
 # ラボ14 チャットボット(WeatherBot)の作成
 
+■概要
+
+- Cognitive Services コンテナーをAzure Container Instanceで実行します。
+- コンテナーにテキストを送信し、その言語を検出します。
+
+■ラボの起動
+
+- ラボ環境にアクセス https://esi.learnondemand.net/
+- Microsoftアカウントでサインイン
+- ラボ 14 を起動
+- 手順書（カスタマイズ）に従って作業を進めます。
+
+■ヒント
+
+- **ラボ14番では必要なAzureリソースが作成できないため、ここではワークアラウンドとしてラボ12番を起動します。**
+
+■YouTube動画
+
+AI-102 ラボ14 Bot Framework Composer を使用したボットの作成
+https://youtu.be/qIVYaA2yo7Q
+
+
+■手順書（カスタマイズ）
+
 このラボでは、Bot Framework Composerを使用して、指定された都市(「東京都」や「大阪府」など)の現在の天気と気温を調べるチャットボット「WeatherBot」を開発します。
 
 ![](images/ss-2023-04-06-21-00-16.png)
 
-天気の情報を取得するために、[OpenWeather](https://openweathermap.org/)というサービスを使用する。
+天気の情報を取得するために、[OpenWeather](https://openweathermap.org/)というサービスを使用します。
 
-Bot Framework Composer は、コードを記述せず、高度な会話型ボットをすばやく簡単に構築できる、グラフィカル デザイナー。
+Bot Framework Composer は、コードを記述せず、高度な会話型ボットをすばやく簡単に構築できる、グラフィカル デザイナーです。
 
 ## OpenWeather APIキーの準備
+
+キーの取得方法
 
 - https://openweathermap.org/price にアクセス
 - 「Free」の「Get API key」をクリック
 - ユーザー名、Eメール、パスワードなどの必要な情報を入力し、「Create Account」をクリック
 - 入力したEメールアドレス宛てに、APIキーが送信されてくる。
 
+## ラボの起動
+
+ラボ12番を起動します。
+
+- WebブラウザーでAzure portal にサインイン
+- 日本語化
+
+## リソースプロバイダーを登録
+
+Azure App Service / Azure Bot Service リソースを作成できるように、サブスクリプションにリソースプロバイダーを登録します。
+
+- サブスクリプションを表示
+- リソースプロバイダーを表示
+- Microsoft.Web を検索、登録
+- Microsoft.BotService を検索、登録
+
+<!--
 ## Bot Framework Emulator のインストール
 
 Bot Framework Composerで開発したボットを実行するには、[Bot Framework Emulator](https://learn.microsoft.com/ja-jp/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp)が必要。
@@ -47,6 +90,7 @@ choco install -y dotnetcore-3.1-sdk
 ```
 choco install -y bot-framework-composer
 ```
+-->
 
 ## Bot Framework Composerを起動
 
@@ -56,7 +100,7 @@ choco install -y bot-framework-composer
 
 ![](images/ss-2023-04-06-21-07-26.png)
 
-## たまに出る Bot Framework Composer のエラー
+## Bot Framework Composer のエラーについて
 
 ![](images/ss-2023-04-06-22-01-36.png)
 
@@ -78,7 +122,7 @@ Bot Framework Composerで作業中に、このようなエラーが出る場合�
 
 ![](images/ss-2023-04-06-21-14-47.png)
 
-## デフォルトのメッセージの変更（2箇所）
+## デフォルトのメッセージの変更
 
 ```
 こんにちは！私に、天気について聞いてください
@@ -194,9 +238,17 @@ ${dialog.city} の天気は ${dialog.weather} で、温度は ${dialog.temp}&deg
 
 ![](images/ss-2023-04-06-21-48-11.png)
 
+
+```
+トリガー名: WeatherRequested
+正規表現パターン: 天気
+```
+
 ![](images/ss-2023-04-06-21-49-09.png)
 
+
 ![](images/ss-2023-04-06-21-49-49.png)
+
 
 ![](images/ss-2023-04-06-21-50-19.png)
 
@@ -210,6 +262,13 @@ ${dialog.city} の天気は ${dialog.weather} で、温度は ${dialog.temp}&deg
 ![](images/ss-2023-04-06-21-54-52.png)
 
 画面下部の Type your message というテキストボックスに「天気を教えて」などと入力する。「天気」というキーワードに反応して、GetWeatherダイアログが起動される。続いて「東京都」といった都市名を入力する。
+
+```
+天気を教えて
+東京都
+天気を調べてください
+大阪府
+```
 
 ![](images/ss-2023-04-06-21-53-22.png)
 
@@ -266,9 +325,7 @@ ${dialog.city} の天気は ${dialog.weather} で、温度は ${dialog.temp}&deg
 
 ![](images/ss-2023-04-06-22-11-58.png)
 
-これにはわりと長い時間がかかる（15分～30分程度）
-
-ここで休憩を取ると良い。
+しばらく待つ。
 
 ## Azureでの動作確認
 
@@ -286,5 +343,19 @@ ${dialog.city} の天気は ${dialog.weather} で、温度は ${dialog.temp}&deg
 
 ![](images/ss-2023-04-06-22-23-22.png)
 
+```
+天気を教えてください
+北海道
+```
+
 ![](images/ss-2023-04-06-22-24-47.png)
 
+以上です。おつかれさまでした！
+
+■手順書（公式、参考）
+
+日本語:
+https://microsoftlearning.github.io/AI-102-AIEngineer.ja-jp/Instructions/14-bot-composer.html
+
+英語:
+https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/14-bot-composer.html
