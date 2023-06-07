@@ -2,8 +2,15 @@
 
 ■概要
 
-- Cognitive Services コンテナーをAzure Container Instanceで実行します。
-- コンテナーにテキストを送信し、その言語を検出します。
+Bot Framework Composerを使用して、指定された都市(「東京都」や「大阪府」など)の現在の天気と気温を調べるチャットボット「WeatherBot」を開発します。
+
+![](images/ss-2023-04-06-21-00-16.png)
+
+天気の情報を取得するために、[OpenWeather](https://openweathermap.org/)というサービスを使用します。
+
+Bot Framework Composer は、コードを記述せず、高度な会話型ボットをすばやく簡単に構築できる、グラフィカル デザイナーです。
+
+開発したボットをAzure Bot ServiceにデプロイしてAzure上でも動作を確認します。
 
 ■ラボの起動
 
@@ -24,13 +31,6 @@ https://youtu.be/qIVYaA2yo7Q
 
 ■手順書（カスタマイズ）
 
-このラボでは、Bot Framework Composerを使用して、指定された都市(「東京都」や「大阪府」など)の現在の天気と気温を調べるチャットボット「WeatherBot」を開発します。
-
-![](images/ss-2023-04-06-21-00-16.png)
-
-天気の情報を取得するために、[OpenWeather](https://openweathermap.org/)というサービスを使用します。
-
-Bot Framework Composer は、コードを記述せず、高度な会話型ボットをすばやく簡単に構築できる、グラフィカル デザイナーです。
 
 ## OpenWeather APIキーの準備
 
