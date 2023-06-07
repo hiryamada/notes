@@ -4,33 +4,77 @@
 
 このボットの開発には、[.NET SDK](https://learn.microsoft.com/ja-jp/dotnet/core/sdk)と、[Bot Framework Emulator](https://learn.microsoft.com/ja-jp/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp)を使用します。
 
-.NET SDKは、.NETを使用して様々なアプリケーション（ボットなど）を開発するためのSDK（ソフトウェア開発キット）です。C#などのプログラミング言語を使用してアプリを開発します。
+.NET SDKは、.NETを使用して様々なアプリケーション（コンソールアプリ、Webアプリ、ボットなど）を開発するためのSDK（ソフトウェア開発キット）です。C#などのプログラミング言語を使用してアプリを開発します。
 
 Bot Framework Emulator は、開発したボットを実行する際に使用します。
 
+## ラボの起動
+
+ラボ13番を起動します。
+
+このラボではAzure portalは使用しません。
+
+## タイムゾーン
+
+Windows画面右下の時計をクリックし、タイムゾーンを日本時間に設定。
+
+## .NET 7のインストール
+
+https://dotnet.microsoft.com/ja-jp/download
+
+.NET 7.0 の「.NET SDK x64」をダウンロード。ダウンロードしたインストーラーを実行。
+
+※インストールには5分ほど時間がかかる場合があります。途中「Cancel」ボタンをクリックしないよう気をつけてください。
+
+![](images/ss-2023-06-07-14-23-45.png)
+
+インストーラーの処理が完了したら Close をクリック
+
+![](images/ss-2023-06-07-14-27-00.png)
+
 ## Bot Framework Emulatorのインストール
 
-Bot Framework Emulator（の最新版）は Chocolateyからはインストールできないので、以下のページからインストーラー（BotFramework-Emulator-VERSION-windows-setup.exe）をダウンロードしてインストールする。
+以下のページからインストーラー（BotFramework-Emulator-VERSION-windows-setup.exe）をダウンロードしてインストールします。
 
 https://github.com/Microsoft/BotFramework-Emulator/releases/latest
 
-ダウンロードしたインストーラーを実行する。
+ダウンロードしたインストーラーを実行します。
+
+![](images/ss-2023-06-07-14-26-26.png)
+
+完了すると Bot Framework Emulatorが起動します。後で使用するのでそのままにしておきます。
 
 ## Botのプロジェクトを作成
 
+Visual Studio Codeを起動。
+
+ターミナルを開く。
+![](images/ss-2023-06-07-14-27-55.png)
+
+
+ターミナル内で以下を実行。
+
 ```
-cd ~/Documents
-dotnet new -i Microsoft.Bot.Framework.CSharp.EchoBot
+cd Documents
+dotnet new install Microsoft.Bot.Framework.CSharp.EchoBot
 dotnet new echobot -n TimeBot
 cd TimeBot
-code .
+code -r .
 ```
+
+`code -r .` で実行が止まった場合は、最後にエンターキーを押す。
+
+Visual Studio Codeのウィンドウがリロードされ、TimeBotのフォルダが開かれる。
+
+![](images/ss-2023-06-07-14-29-57.png)
 
 ## コードを変更する
 
 `Bots/EchoBot.cs`を開く。
 
 `OnMessageActivityAsync`メソッドと`OnMembersAddedAsync`メソッドがある。
+
+![](images/ss-2023-06-07-14-31-45.png)
 
 `OnMessageActivityAsync`メソッドを以下に書き換える
 
@@ -51,6 +95,18 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 }
 ```
 
+![](images/ss-2023-06-07-14-32-30.png)
+
+ファイルを保存。
+
+## バージョン指定
+
+プロジェクトのバージョンを `net6.0` から `net7.0` に更新。
+
+![](images/ss-2023-06-07-15-04-48.png)
+
+ファイルを保存。
+
 ## コードを起動する
 
 Visual Studio Codeで統合ターミナルを開く。
@@ -63,7 +119,7 @@ Visual Studio Codeで統合ターミナルを開く。
 dotnet run
 ```
 
-以下のようなログが表示される。
+しばらくすると以下のようなログが表示される。
 
 ```
 info: Microsoft.Hosting.Lifetime[14]
