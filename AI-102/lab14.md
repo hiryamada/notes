@@ -26,7 +26,7 @@ Bot Framework Composer は、コードを記述せず、高度な会話型ボッ
 ■YouTube動画
 
 AI-102 ラボ14 Bot Framework Composer を使用したボットの作成
-https://youtu.be/qIVYaA2yo7Q
+https://youtu.be/U4CPu0DGMzg
 
 
 ■手順書（カスタマイズ）
