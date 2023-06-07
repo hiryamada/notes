@@ -342,7 +342,7 @@ class Commands : ConsoleAppBase
 
 「デプロイの追加」をクリック
 
-「新しいデプロイ名を作成する」、デプロイ名「Clock」 ※小文字で始める
+「新しいデプロイ名を作成する」、デプロイ名「Clock」
 
 モデル: 「Clock」
 
