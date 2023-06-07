@@ -1,0 +1,151 @@
+{
+	"projectFileVersion": "2022-10-01-preview",
+	"stringIndexType": "Utf16CodeUnit",
+	"metadata": {
+		"projectKind": "Conversation",
+		"settings": {
+			"confidenceThreshold": 0,
+			"normalizeCasing": false
+		},
+		"projectName": "Clock",
+		"multilingual": false,
+		"description": "",
+		"language": "ja"
+	},
+	"assets": {
+		"projectKind": "Conversation",
+		"intents": [
+			{
+				"category": "None"
+			},
+			{
+				"category": "GetDate"
+			},
+			{
+				"category": "GetTime"
+			}
+		],
+		"entities": [],
+		"utterances": [
+			{
+				"text": "現在時刻を教えてください",
+				"language": "ja",
+				"intent": "GetTime",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "現在時刻は？",
+				"language": "ja",
+				"intent": "GetTime",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "現在時刻",
+				"language": "ja",
+				"intent": "GetTime",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "何時ですか？",
+				"language": "ja",
+				"intent": "GetTime",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "今何時ですか？",
+				"language": "ja",
+				"intent": "GetTime",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "今何時？",
+				"language": "ja",
+				"intent": "GetTime",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "何時何分？",
+				"language": "ja",
+				"intent": "GetTime",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "何時？",
+				"language": "ja",
+				"intent": "GetTime",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "日付",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "今何日？",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "何月何日？",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "日付は？",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "今日の日付は？",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "何日？",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "何日ですか？",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "今日は？",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			},
+			{
+				"text": "今日は何日？",
+				"language": "ja",
+				"intent": "GetDate",
+				"entities": [],
+				"dataset": "Train"
+			}
+		]
+	}
+}
