@@ -17,11 +17,9 @@ Bot Framework Composer は、コードを記述せず、高度な会話型ボッ
 
 ## Bot Framework Emulator のインストール
 
-※前のラボですでにインストールしている場合は、この作業はスキップ。
-
 Bot Framework Composerで開発したボットを実行するには、[Bot Framework Emulator](https://learn.microsoft.com/ja-jp/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp)が必要。
 
-Bot Framework Emulator（の最新版）は Chocolateyからはインストールできないので、以下のページからインストーラー（BotFramework-Emulator-VERSION-windows-setup.exe）をダウンロードしてインストールする。
+Bot Framework Emulator（の最新版）は 以下のページからインストーラー（BotFramework-Emulator-VERSION-windows-setup.exe）をダウンロードしてインストールする。
 
 https://github.com/Microsoft/BotFramework-Emulator/releases/latest
 

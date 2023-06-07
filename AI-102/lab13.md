@@ -72,6 +72,8 @@ Visual Studio Codeのウィンドウがリロードされ、TimeBotのフォル�
 
 `Bots/EchoBot.cs`を開く。
 
+ファイル冒頭に`using System;` という1行を追加する。
+
 `OnMessageActivityAsync`メソッドと`OnMembersAddedAsync`メソッドがある。
 
 ![](images/ss-2023-06-07-14-31-45.png)
