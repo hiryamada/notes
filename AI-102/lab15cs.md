@@ -26,7 +26,8 @@
 
 ■YouTube動画
 
-準備中
+AI-102 ラボ15 Computer Vision を使用した画像の分析
+https://youtu.be/DvZ5ZYvHC0w
 
 ■手順書
 
