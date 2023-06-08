@@ -5,7 +5,7 @@ AZ-104の試験・資格と学習方法をご紹介。
 
 ■認定試験のメリットは？ 合格すると何が嬉しいの？
 
-参考(Microsoft認定試験のメリット): https://www.trainocate.co.jp/upload/flyer/flyer_108.pdf
+参考: [Microsoft認定試験のメリット](https://www.trainocate.co.jp/upload/flyer/flyer_108.pdf)) / [認定プロセスの概要](https://learn.microsoft.com/ja-jp/certifications/certification-process-overview)
 
 - エンジニアとしての信頼感が向上
 - 査定・評価が向上

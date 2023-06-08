@@ -4,12 +4,12 @@ AI-102の試験・資格と学習方法をご紹介。
 
 ■認定試験のメリットは？ 合格すると何が嬉しいの？
 
-参考(Microsoft認定試験のメリット): https://www.trainocate.co.jp/upload/flyer/flyer_108.pdf
+参考: [Microsoft認定試験のメリット](https://www.trainocate.co.jp/upload/flyer/flyer_108.pdf)) / [認定プロセスの概要](https://learn.microsoft.com/ja-jp/certifications/certification-process-overview)
 
-- 自身がつく
 - エンジニアとしての信頼感が向上
-- 査定が向上
+- 査定・評価が向上
 - 転職にも有利
+- 自信が持てる
 
 ■「認定試験」と「認定資格」
 
@@ -31,6 +31,7 @@ AI-102の試験・資格と学習方法をご紹介。
 
 https://aka.ms/AzureTrainingJourney
 
+[その他の「トレーニングジャーニー（学習の道のり）」のまとめ](../general/training-journey.md)
 
 ■Microsoft Learn ラーニングパス内の「知識チェック」を活用しよう！（無料）
 
@@ -71,20 +72,33 @@ https://learn.microsoft.com/ja-jp/certifications/practice-assessments-for-micros
 
 主なAzure認定試験の模擬問題にチャレンジできる。正解・解説表示あり。英語だが、Webブラウザーの翻訳機能を使用して日本語化が可能。
 
-※AI-900（AIの基礎）の「プラクティス評価」で、AzureのAIサービスの基本的な知識を復習できる。
+~~※AI-900（AIの基礎）の「プラクティス評価」で、AzureのAIサービスの基本的な知識を復習できる。~~
 
-※2023/4/6 現在、AI-102 は まだ「プラクティス評価」に含まれていないが、「他の試験については、近日中にプラクティス評価を開始する予定です。」とある。
+~~※2023/4/6 現在、AI-102 は まだ「プラクティス評価」に含まれていないが、「他の試験については、近日中にプラクティス評価を開始する予定です。」とある。~~
 
-■「模擬試験」を活用して学習しよう！（無料）
+2023/6/8 AI-102 プラクティス評価が利用可能となりました。
+https://learn.microsoft.com/ja-jp/certifications/exams/ai-102/practice/assessment?assessment-type=practice&assessmentId=61
 
-本トレーニングご参加の方は、MeasureUp 社が提供する模擬試験を無料で利用できる。
+■「模擬試験」を活用して学習しよう！（非公式、有料）
 
-AI-102 の模擬試験も利用可能。
+**MeasureUp 社が提供する模擬試験は、模擬試験の問題は、本番の問題にかなり近い。模擬試験を徹底的に学習または暗記することで、まず間違いなく合格ラインに到達できる。**
 
-**模擬試験の問題は、本番の問題にかなり近い。模擬試験を徹底的に学習または暗記することで、まず間違いなく合格ラインに到達できる。**
+https://www.measureup.com/microsoft-practice-test-ai-102-designing-and-implementing-an-azure-ai-solution.html
 
-利用方法など、詳しくは以下のガイド内の「模擬試験の受験方法」で確認。
-https://aka.ms/lxp-userguide
+たまにセールを実施している場合がある。
+![](../AZ-400/images/ss-2023-04-27-04-22-22.png)
+
+■Udemyのeラーニング教材を活用しよう（非公式、有料）
+
+いろいろな団体や講師がAZ-104の教材を作成している。
+
+https://www.udemy.com/topic/microsoft-ai-102/
+
+品質・価格はさまざま。利用者数、評価、内容のボリュームなどをよく確認して購入。
+
+たまにセールを実施している場合がある。13,800円 → 2,000円 (86% OFF) など、かなり大幅な割引が行われる場合もある。
+
+![](../AZ-400/images/ss-2023-04-27-04-20-59.png)
 
 ■「試験サンドボックス」で本番の画面構成に慣れておこう！（無料）
 
