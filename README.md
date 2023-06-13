@@ -829,12 +829,15 @@ Contoso Ltd.
 / Tailwind Traders
 / ProseWare, Inc.
 / WoodGrove Groceries (WoodGrove Bank)
-/ AdventureWorks 
+/ AdventureWorks
 / Fourth Coffee
 / Volcano Coffee Company
 / World Wide Importers
 / Blue Yonder Airlines
 / Coho Winery
+/ Margie's Travel
+/ Tailspin Toys
+/ Alpine Ski House
 / [List of fictional companies used in Microsoft material](https://social.technet.microsoft.com/wiki/contents/articles/1117.list-of-fictional-companies-used-in-microsoft-material.aspx)
 / [List of fictional Microsoft companies](https://microsoft.fandom.com/wiki/List_of_fictional_Microsoft_companies)
 

@@ -4,6 +4,26 @@ Cognitive Servicesリソースを作成し、それを使用して「Clock」と
 
 このプロジェクトにモデル「Clock」を作成し、現在の日付や時刻を尋ねる質問の文章を理解できるように、トレーニングする。
 
+<!--
+
+lab 9b/10b メモ
+
+https://github.com/MicrosoftLearning/AI-102-AIEngineer/tree/master/10b-clu-client-(preview)/C-Sharp/clock-client
+
+https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/10b-language-understanding-client-(preview).html
+
+https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Language.Conversations_1.0.0/sdk/cognitivelanguage/Azure.AI.Language.Conversations
+
+ラボでは dotnet add package Azure.AI.Language.Conversations --version 1.0.0-beta.2 を使うように指示があるが、これはもう動かない。
+
+https://www.nuget.org/packages/Azure.AI.Language.Conversations/1.0.0
+
+を使う必要がある。
+
+1.0.0-beta.2 まで使えていた ConversationsProject や、AnalyzeConversationResult といったオブジェクトは削除されているので、これを使用したコードは動かない。
+
+-->
+
 ■はじめに
 
 このラボはわりと時間がかかります。（慣れていれば30分程度、慣れていなければ60分程度）

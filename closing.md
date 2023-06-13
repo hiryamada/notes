@@ -24,26 +24,6 @@ https://aka.ms/lxp-userguide
 - サポートの使い方は以下に掲載しております。
 - https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod99-closing/support.pdf
 
-■模擬試験（シミュレーター）
-
-- 弊社「クラウド&AI人材育成プログラム」（Enterprise Skills Initiative, ESI）ご参加のお客様は、模擬試験を無料でご利用いただけます
-- 模擬試験は、本番試験に近い形で試験を受けられるシミュレーターです
-- 詳しくは、本ページ冒頭の「総合ご案内」をご参照ください。
-
-■本番試験（資格を取得するための試験）
-
-- 弊社「クラウド&AI人材育成プログラム」（Enterprise Skills Initiative, ESI）ご参加のお客様は、トレーニングと同名の試験を
-割引価格で受験できます。
-- 詳しくは、本ページ冒頭の「総合ご案内」をご参照ください。
-- 本番の試験と近い画面を体験できる「試験サンドボックス」がご利用いただけます。
-- https://aka.ms/examdemo
-
-■認定資格の更新について
-
-- 合格した認定試験には有効期限がありますが、毎年、無料で、認定資格を更新することができるようになりました。
-- 「更新アセスメント」に合格することで、有効期限が 1 年延長となります。
-- 詳細: https://blogs.partner.microsoft.com/mpn-japan/2021/03/02/is-your-certification-expiring-soon-renew-it-for-free-today/
-
 ■クラウド＆AI人材育成プログラム(ESI)コミュニティ
 
 - ご受講者様向けLinkedInコミュニティです。
