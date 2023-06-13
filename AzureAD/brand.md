@@ -20,6 +20,8 @@ https://level69.net/archives/29831
 
 ![](images/ss-2023-02-28-09-46-29.png)
 
+![Alt text](image.png)
+
 一部の Microsoft アプリケーションでは、`whr` クエリ文字列パラメーターがサポートされている。
 
 https://learn.microsoft.com/ja-jp/azure/active-directory/fundamentals/how-to-customize-branding#user-experience
