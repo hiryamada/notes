@@ -8,6 +8,8 @@ https://level69.net/archives/29831
 
 サインインページに、独自のロゴや文言を表示したり、背景画像を変更したりすることができる。
 
+この機能を使用するには、テナントでPremium P1またはP2ライセンスが必要。テナントに1ライセンスでもP1またはP2が利用可能であればよく、その1ライセンスはユーザーに割り当てしてもしていなくてもかまわない。
+
 ユーザーエクスペリエンス（インターフェース）を改善できる。
 
 ![](images/ss-2023-02-28-09-04-23.png)
@@ -22,7 +24,7 @@ https://level69.net/archives/29831
 
 ![Alt text](image.png)
 
-一部の Microsoft アプリケーションでは、`whr` クエリ文字列パラメーターがサポートされている。
+一部の Microsoft アプリケーションでは、`whr` クエリ文字列パラメーター（[ドメインヒント](https://learn.microsoft.com/ja-jp/azure/active-directory/manage-apps/home-realm-discovery-policy#domain-hints)）がサポートされている。これを使用すると、テナント用にブランディングされた Azure AD サインイン ページをすぐに表示できる。
 
 https://learn.microsoft.com/ja-jp/azure/active-directory/fundamentals/how-to-customize-branding#user-experience
 
