@@ -1,5 +1,10 @@
 # ラボの開始方法
 
+## 手順書
+
+こちらの目次ページから各ラボの手順書を確認できます。
+
+https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator.JA-JP/
 
 ## ラボ環境の起動
 
