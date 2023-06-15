@@ -1,5 +1,8 @@
 # アプリケーション管理のためのAzure ADロール
 
+■一覧表
+![Alt text](image-2.png)
+
 ■「アプリケーション管理者」ロール
 
 https://learn.microsoft.com/ja-jp/azure/active-directory/roles/permissions-reference#application-administrator

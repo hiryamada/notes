@@ -86,3 +86,9 @@ https://learn.microsoft.com/ja-jp/azure/active-directory/governance/entitlement-
 - 30 日後に、ゲスト ユーザー アカウントが、テナントから削除される。
 
 https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator.JA-JP/blob/main/Instructions/Labs/Lab_24_ManageTheLifecycleOfExternalUsersInAADIdentityGovernanceSettings%20.md
+
+■参考
+
+MS社員による記事:「AADエンタイトルメント管理とは？」
+https://qiita.com/zukakosan/items/bd03d294ac0b98faf064
+
