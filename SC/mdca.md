@@ -11,7 +11,13 @@ CASB (キャスビー Cloud Access Security Broker) 製品。
 
 https://portal.cloudappsecurity.com
 
-![](images/ss-2023-03-01-22-06-34.png)
+アクセスすると、Microsoft 365 Defenderへ移行するというメッセージが表示される。
+
+![Alt text](image.png)
+
+「移動する」をクリックすると、Microsoft 365 Defender ( https://security.microsoft.com/ ) へ移動する。Microsoft 365 Defender の左側に「クラウドアプリ」というメニューがあり、これが新しい Microsfot Defender for Cloud Apps のインターフェースとなる。
+
+![Alt text](image-1.png)
 
 ■CASBとは？
 
@@ -28,14 +34,22 @@ https://learn.microsoft.com/ja-jp/defender-cloud-apps/set-up-cloud-discovery
 
 ■クラウド アプリのリスクを評価する ～クラウド アプリ カタログ～
 
+https://learn.microsoft.com/ja-jp/defender-cloud-apps/risk-score#the-cloud-app-catalog
+
+コンプライアンス、業界標準、ベスト プラクティスに基づいて、クラウド アプリのリスクを評価できる。90 を超えるリスク要因に基づいて、リスクのスコアが算出される。
+
+アプリが組織に与えるリスクを可視化できる。
+
 ■検出機能を強化する ～アプリコネクター～
 
 https://learn.microsoft.com/ja-jp/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps
 
 Microsoft Defender for Cloud Apps の検出機能と制御機能を強化できる。
 
-例: Box（クラウドストレージ）を接続する
-https://cloudsteady.jp/post/52505/
+例: Dropbox（クラウドストレージ）を接続する
+https://learn.microsoft.com/ja-jp/defender-cloud-apps/connect-dropbox
+
+https://learn.microsoft.com/ja-jp/defender-cloud-apps/connect-github-ec
 
 ■AD FS から Azure ADへ移行できるか調べる ～AD FS アプリケーション アクティビティ レポート～
 
