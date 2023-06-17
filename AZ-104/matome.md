@@ -1,4 +1,4 @@
-# AZ-104 まとめ(用語集)
+# AZ-104 まとめ
 
 ## ラーニングパス1 前提条件
 
@@ -49,7 +49,7 @@ https://learn.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-dir
 Azure AD Connect(オンプレミスAD DSからユーザー情報をAzure ADへ同期)
 https://learn.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect
 
-Azure AD MFA(他要素認証)
+Azure AD MFA(多要素認証)
 https://learn.microsoft.com/ja-jp/azure/active-directory/authentication/concept-mfa-howitworks
 
 Azure AD 動的グループ(条件に従いユーザーのグループへの所属を自動で調整)

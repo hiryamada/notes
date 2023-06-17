@@ -1,6 +1,6 @@
 # Microsoft Defender for Cloud Apps
 
-旧 Microsfot Cloud App Security（MCAS）
+旧 Microsoft Cloud App Security（MCAS）
 
 MCASの入門ビデオ（少し古いですが、おすすめ）
 https://www.youtube.com/watch?v=PbgQpWeduMY
@@ -15,11 +15,14 @@ https://portal.cloudappsecurity.com
 
 ![Alt text](image.png)
 
-「移動する」をクリックすると、Microsoft 365 Defender ( https://security.microsoft.com/ ) へ移動する。Microsoft 365 Defender の左側に「クラウドアプリ」というメニューがあり、これが新しい Microsfot Defender for Cloud Apps のインターフェースとなる。
+「移動する」をクリックすると、Microsoft 365 Defender ( https://security.microsoft.com/ ) へ移動する。Microsoft 365 Defender の左側に「クラウドアプリ」というメニューがあり、これが新しい Microsoft Defender for Cloud Apps のインターフェースとなる。
 
 ![Alt text](image-1.png)
 
-■CASBとは？
+■CASB(Cloud Access Security Broker)とは？
+
+https://www.hitachi-solutions.co.jp/bitglass/sp/casb/
+読み方:キャスビーまたはキャズビー
 
 https://www.nri-secure.co.jp/glossary/casb
 企業や組織が、従業員によるクラウドサービスの利用を可視化・制御するソリューション
