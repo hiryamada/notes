@@ -12,7 +12,7 @@
 
 ## 手順書
 
-https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator.ja-jp/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.html
+https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator.ja-jp/Instructions/Labs/LAB_03a-Manage_Azure_Resources_by_Using_the_Azure_Portal.html
 
 ## 概要
 
