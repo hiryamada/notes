@@ -123,7 +123,7 @@
 # それでは、どうぞよろしくお願いいたします！
 
 講義ノート
-- [AZ-104](AZ-104/README.md)
+- [AZ-104](AZ-104-2023/README.md)
 - [AZ-204](AZ-204/README.md)
 - [AZ-305](AZ-305/README.md)
 - [AZ-400](AZ-400/README.md)
