@@ -6,6 +6,7 @@
   - [管理グループ(複数のサブスクリプションをグループ化・階層化)](https://learn.microsoft.com/ja-jp/azure/governance/management-groups/overview)
   - [サブスクリプション(リソースの管理と課金の管理)](https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts#azure-subscription-purposes)
   - [リソースグループ(複数のリソースをまとめる)](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/manage-resource-groups-portal)
+  - [タグ(リソースに管理用の情報を付与)](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/tag-resources)
   - [ロック(重要なリソースの変更・削除を防止)](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/lock-resources?tabs=json)
   - [Azureポリシー(リソースのルールを設定)](https://learn.microsoft.com/ja-jp/azure/governance/policy/overview)
   - [イニシアチブ(複数のポリシーをまとめて割り当て)](https://learn.microsoft.com/ja-jp/azure/governance/policy/concepts/initiative-definition-structure)
