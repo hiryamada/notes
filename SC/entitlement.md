@@ -42,6 +42,10 @@ https://jpazureid.github.io/blog/azure-active-directory/access-management-with-a
 └SharePoint サイト
 ```
 
+■アクセスパッケージを要求する
+
+![Alt text](image-3.png)
+
 「アクセス パッケージ」が割り当てられたユーザーは、
 
 - 指定したグループに追加される。
