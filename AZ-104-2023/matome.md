@@ -71,3 +71,25 @@
   - [Application Insights (さまざまな場所で実行されるアプリの監視)](https://learn.microsoft.com/ja-jp/azure/azure-monitor/app/app-insights-overview?tabs=net)
 - バックアップ
   - [Azure Backup（VMなどをバックアップ）](https://learn.microsoft.com/ja-jp/azure/backup/backup-overview)
+
+## 全ラボ動画へのリンク
+
+- AZ-104 ラボ1 タスク1 https://youtu.be/o7qsQM9b5XE
+- AZ-104 ラボ1 タスク2 https://youtu.be/tS6hu01lsh4
+- AZ-104 ラボ1 タスク3-4 https://youtu.be/BdXQDlJc6yc
+- AZ-104 ラボ2b https://youtu.be/tfhnYEPWWZM
+- AZ-104 ラボ3a https://youtu.be/mhXU0Q6Gc5o
+- AZ-104 ラボ3b https://youtu.be/qygdHQLD8yo
+- AZ-104 ラボ3c https://youtu.be/qJj8mvnRWjc
+- AZ-104 ラボ3d https://youtu.be/cq-WFQObYV8
+- AZ-104 ラボ4 タスク1-4 https://youtu.be/aW4-F7DQSMk
+- AZ-104 ラボ4 タスク5-6 https://youtu.be/4eNIeEnXUa4
+- AZ-104 ラボ5 https://youtu.be/9WXceQ_Uh4s
+- AZ-104 ラボ6 https://youtu.be/zDqeIZWFhVU
+- AZ-104 ラボ7 https://youtu.be/GemncyBPlLY
+- AZ-104 ラボ8 https://youtu.be/jr15Mm-JcPw
+- AZ-104 ラボ9a https://youtu.be/ITaYa2_xc90
+- AZ-104 ラボ9b https://youtu.be/lIRSHvZjIx4
+- AZ-104 ラボ9c https://youtu.be/mrNWdwai4LY
+- AZ-104 ラボ10 https://youtu.be/SsBcwnZhlNo
+- AZ-104 ラボ11 https://youtu.be/yfJsLMnFR1c
