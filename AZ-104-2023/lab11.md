@@ -27,4 +27,4 @@ https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator.ja-jp/Ins
 
 音声はありません。
 
-- AZ-104 ラボ11 https://youtu.be/yfJsLMnFR1c
+- AZ-104 ラボ11 https://youtu.be/9X2VuTpdI3s
