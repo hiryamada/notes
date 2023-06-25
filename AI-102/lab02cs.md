@@ -3,6 +3,11 @@
 - Cognitive ServicesのキーをKey Vaultに格納します。
 - アプリから、Key Vaultのキーを取り出して、Cognitive Servicesのアクセスに利用します。
 
+## YouTube動画
+
+AI-102 ラボ02 Cognitive Services セキュリティの管理
+https://youtu.be/FQNB5deviiI
+
 ## 概要
 
 - Azure portalを開く。サインイン、UIを日本語化。
@@ -35,14 +40,6 @@
 - `dotnet run`
 - 「Hello」、「Bonjour」、「Gracias」などを入力し、対応する言語「English」「French」「Spanish」が表示されることを確認
 
-## 手順書
-
-日本語:
-https://microsoftlearning.github.io/AI-102-AIEngineer.ja-jp/Instructions/02-cognitive-services-security.html
-
-英語:
-https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/02-cognitive-services-security.html
-
 ## ラボの起動
 
 - ラボ環境にアクセス https://esi.learnondemand.net/
@@ -53,6 +50,10 @@ https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/02-cognitive-
   - [ラボ環境の利用方法](https://github.com/hiryamada/notes/blob/main/cloudslice/README.md)
   - [ラボの操作](https://github.com/hiryamada/notes/blob/main/cloudslice/CloudSliceLab.pdf)
 
-## YouTube動画
+## 手順書
 
-AI-102 ラボ02 https://youtu.be/FQNB5deviiI
+日本語:
+https://microsoftlearning.github.io/AI-102-AIEngineer.ja-jp/Instructions/02-cognitive-services-security.html
+
+英語:
+https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/02-cognitive-services-security.html

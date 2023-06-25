@@ -1,7 +1,5 @@
 # ラボ15 Computer Vision を使用する画像の分析
 
-■概要
-
 - 画像を分析して説明文を生成する
 - 画像からタグを取得する
 - 画像のカテゴリーを取得する
@@ -10,7 +8,12 @@
 - 画像のモデレート評価を取得する
 - サムネイル画像を生成する
 
-■ラボの起動
+## YouTube動画
+
+AI-102 ラボ15 Computer Vision を使用した画像の分析
+https://youtu.be/DvZ5ZYvHC0w
+
+## ラボの起動
 
 - ラボ環境にアクセス https://esi.learnondemand.net/
 - Microsoftアカウントでサインイン
@@ -20,19 +23,14 @@
   - [ラボ環境の利用方法](https://github.com/hiryamada/notes/blob/main/cloudslice/README.md)
   - [ラボの操作](https://github.com/hiryamada/notes/blob/main/cloudslice/CloudSliceLab.pdf)
 
-■ヒント
-
-- Visual Studio Codeでは、コードを貼り付けた後、Ctrl + Shift + F を使用してフォーマット（インデントを修正）できます。
-
-■YouTube動画
-
-AI-102 ラボ15 Computer Vision を使用した画像の分析
-https://youtu.be/DvZ5ZYvHC0w
-
-■手順書
+## 手順書
 
 日本語:
 https://microsoftlearning.github.io/AI-102-AIEngineer.ja-jp/Instructions/15-computer-vision.html
 
 英語:
 https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/15-computer-vision.html
+
+## ヒント
+
+- Visual Studio Codeでは、コードを貼り付けた後、Ctrl + Shift + F を使用してフォーマット（インデントを修正）できます。
