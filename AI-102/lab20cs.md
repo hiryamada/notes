@@ -1,14 +1,14 @@
-# ラボ18 Custom Vision を使用する画像内の物体の検出
+# ラボ20 画像内のテキストの読み取り
 
 ■概要
 
-Custom Vision サービスを使用して、画像内の 3 つのクラスの果物 (リンゴ、バナナ、オレンジ) を検出して特定できる 物体検出 モデルをトレーニングします。
+Computer Vision サービスの Read API を使用して、画像やPDFからテキストを読み取ります。
 
 ■ラボの起動
 
 - ラボ環境にアクセス https://esi.learnondemand.net/
 - Microsoftアカウントでサインイン
-- ラボ 18 を起動
+- ラボ 20 を起動
 - 以降、ラボ環境の右側に表示される手順書に従って操作
 - 詳しくは以下を参照
   - [ラボ環境の利用方法](https://github.com/hiryamada/notes/blob/main/cloudslice/README.md)
@@ -20,13 +20,13 @@ Custom Vision サービスを使用して、画像内の 3 つのクラスの果
 
 ■YouTube動画
 
-AI-102 ラボ18 Custom Vision を使用する画像内の物体の検出
-https://youtu.be/SK3kvUoweH8
+AI-102 ラボ20 画像内のテキストの読み取り
+https://youtu.be/aC-r7nzp88s
 
 ■手順書
 
 日本語:
-https://microsoftlearning.github.io/AI-102-AIEngineer.ja-jp/Instructions/18-object-detection.html
+https://microsoftlearning.github.io/AI-102-AIEngineer.ja-jp/Instructions/20-ocr.html
 
 英語:
-https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/18-object-detection.html
+https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html
