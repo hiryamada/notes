@@ -6,7 +6,7 @@
 ## YouTube動画
 
 AI-102 ラボ04 Cognitive Services コンテナーの使用
-https://youtu.be/cSGjkjkNi_Q
+https://youtu.be/zWXSBP3PaeE
 
 ## ラボの起動
 
@@ -20,8 +20,7 @@ https://youtu.be/cSGjkjkNi_Q
 
 ## ヒント
 
-- Visual Studio Codeでは、コードを貼り付けた後、Ctrl + Shift + F を使用してフォーマット（インデントを修正）できます。
-
+このラボで作成するAzure Container Instance (ACI)の「コンテナーインスタンス」では、名前として、任意のものではなく、ラボ環境の右側に表示される手順書に記載されている名前を使用する必要があります。
 
 ## 手順書
 

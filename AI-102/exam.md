@@ -81,7 +81,7 @@ https://learn.microsoft.com/ja-jp/certifications/exams/ai-102/practice/assessmen
 
 ■「模擬試験」を活用して学習しよう！（非公式、有料）
 
-**MeasureUp 社が提供する模擬試験は、模擬試験の問題は、本番の問題にかなり近い。模擬試験を徹底的に学習または暗記することで、まず間違いなく合格ラインに到達できる。**
+**MeasureUp 社が提供する模擬試験の問題は、本番の問題にかなり近い。模擬試験を徹底的に学習または暗記することで、まず間違いなく合格ラインに到達できる。**
 
 https://www.measureup.com/microsoft-practice-test-ai-102-designing-and-implementing-an-azure-ai-solution.html
 
@@ -90,7 +90,7 @@ https://www.measureup.com/microsoft-practice-test-ai-102-designing-and-implement
 
 ■Udemyのeラーニング教材を活用しよう（非公式、有料）
 
-いろいろな団体や講師がAZ-104の教材を作成している。
+いろいろな団体や講師がAI-102の教材を作成している。
 
 https://www.udemy.com/topic/microsoft-ai-102/
 

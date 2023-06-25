@@ -69,7 +69,7 @@ https://learn.microsoft.com/ja-jp/certifications/exams/sc-300/practice/assessmen
 
 ■「模擬試験」を活用して学習しよう！（非公式、有料）
 
-**MeasureUp 社が提供する模擬試験は、模擬試験の問題は、本番の問題にかなり近い。模擬試験を徹底的に学習または暗記することで、まず間違いなく合格ラインに到達できる。**
+**MeasureUp 社が提供する模擬試験の問題は、本番の問題にかなり近い。模擬試験を徹底的に学習または暗記することで、まず間違いなく合格ラインに到達できる。**
 
 https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html
 
