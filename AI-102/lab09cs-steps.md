@@ -18,13 +18,14 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ## Visual Studio Codeでプロジェクトをクローン
 
 - Visual Studio Codeを起動します。
-- サンプルコードのGitリポジトリ `https://github.com/hiryamada/ai-102-lab9.git`を、任意のフォルダーへクローンします。
+- サンプルコードのGitリポジトリ `https://github.com/hiryamada/ai-102-lab09.git`を、任意のフォルダーへクローンします。
 - クローンが完了したらOpenをクリックします。
 
 ## Azure portalを開く
 
-- Azure portal `https://portal.azure.com` にサインインします。
+- Azure portal `https://portal.azure.com` を開き、画面右「リソース」タブに表示されたユーザー名・パスワードでサインインします。
 - 画面上部歯車アイコンをクリックして、表示を日本語化します。
+- 以降、右側の手順書・リソース表示部分は使用しないため、画面右上の三本線アイコンをクリックして「分割ウィンドウ」をクリックし、左側のメインのウィンドウを広げると作業しやすいです。
 
 ## Langリソース作成
 
@@ -41,7 +42,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 - `https://language.cognitive.azure.com/` を開きます。
 - 画面上部歯車アイコンをクリックして、表示を日本語化します。
-- 画面上部歯車アイコンをクリックして、「リソース」で、作成済みの「言語サービス」リソースを選択します。
+- 画面上部「サインイン」をクリックしてサインインします。
+- 作成済みの「言語サービス」リソースを選択して「完了」をクリックします。
 - 「会話言語理解を開く」をクリックします。
 - 「インポート」をクリックします。
 - 「ファイルの選択」をクリックし、クローンしたプロジェクト内にある`datetime.json`を選択します。
@@ -50,8 +52,14 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
   - 「新しいモデルのトレーニング」に`datetime`を指定します。
   - 「トレーニングモード」で「高度なトレーニング」を選びます。
   - 「トレーニング」をクリックします。
-- トレーニングが終わるまで10分ほどかかります。ここで少し休憩してください。
-- 画面左の「モデルをデプロイ」をクリックします。「デプロイの追加」をクリックし、`datetime`
+- トレーニングが終わるまで10分ほどかかります。※休憩を取るとよいでしょう。
+  - 「状態」に「Job in queue. Starting soon ...」と表示された場合、トレーニングジョブの開始を待っています。
+  - 「状態」に「Training - NN% complete. Evaluation - NN% complete.」と表示された場合、トレーニングジョブが進行中です。
+  - 「状態」に「トレーニングに成功しました」と表示された場合、トレーニングジョブは完了しています。
+- 画面左の「モデルをデプロイ」をクリックします。
+  - 「デプロイの追加」をクリックし、デプロイ名に`datetime`を入力します。
+  - トレーニング済みモデルで`datetime`を選択します。
+  - 「デプロイ」をクリックします。デプロイは10秒ほどで完了します。
 
 ## エンドポイントとキーを設定
 
@@ -65,4 +73,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 - `Git Bash`ターミナル内で以下を実行します。
   - `bash datetime-sample.sh`
+- 現在の日付や時刻を尋ねる質問の文章が「言語サービス」に送信されます。「会話言語理解(CLU)」を使用して、質問の文章から意図（Intent）を取得します。意図に基づき、対応する処理（日付または時刻を答える）が実行されます。
 
+## 以上です。お疲れ様でした！
