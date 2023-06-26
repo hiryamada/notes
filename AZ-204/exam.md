@@ -16,7 +16,6 @@ AZ-204の試験・資格と学習方法をご紹介。
 「認定試験」に合格すると「認定資格」が得られる。
 
 ```
-
 認定試験: AZ-204 Developing Solutions for Microsoft Azure
 
 ↓合格

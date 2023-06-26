@@ -16,7 +16,7 @@ Bot Framework Composer は、コードを記述せず、高度な会話型ボッ
 
 - ラボ環境にアクセス https://esi.learnondemand.net/
 - Microsoftアカウントでサインイン
-- ラボ 14 を起動
+- ラボ 12 を起動
 - 手順書（カスタマイズ）に従って作業を進めます。
 
 ■ヒント

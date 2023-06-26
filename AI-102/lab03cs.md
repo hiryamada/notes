@@ -18,7 +18,7 @@
 
 - ラボ環境にアクセス https://esi.learnondemand.net/
 - Microsoftアカウントでサインイン
-- ラボ 02 を起動
+- ラボ 03 を起動
 - 以降、ラボ環境の右側に表示される手順書に従って操作
 - 詳しくは以下を参照
   - [ラボ環境の利用方法](https://github.com/hiryamada/notes/blob/main/cloudslice/README.md)
