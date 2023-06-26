@@ -5,6 +5,7 @@ Cognitive Servicesの「言語サービス」に含まれる「会話言語理�
 ## YouTube動画
 
 AI-102 ラボ09 会話言語理解(CLU)
+https://youtu.be/p8yb4PBI08g
 
 ## ラボの起動
 
