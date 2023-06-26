@@ -7,6 +7,8 @@
 
 ## 動画
 
+ラボの実施手順を記録した動画です。音声はありません。
+
 AZ-204 ラボ02 Azure Functions
 https://youtu.be/Hv0u7CUen7Y
 

@@ -7,6 +7,8 @@
 
 ## 動画
 
+ラボの実施手順を記録した動画です。音声はありません。
+
 AZ-204 ラボ01 App Service Web アプリ
 https://youtu.be/3RW12SVjogk
 
