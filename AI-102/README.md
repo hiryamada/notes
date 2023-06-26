@@ -38,6 +38,7 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 - AzureのAI/Machine Learningサービスの概要
   - [ラーニングパス01 AI エンジニアリングへの準備](lp01.md)
+  - [ラーニングパス12 Azure OpenAI Service](lp12.md)
 - Azure Cognitive Services の基礎知識
   - [ラーニングパス02 Azure Cognitive Services のプロビジョニングと管理](lp02.md)
 

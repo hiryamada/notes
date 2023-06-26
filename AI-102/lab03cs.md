@@ -1,11 +1,12 @@
-# ラボ03 Cognitive Services セキュリティの管理
+# ラボ03 Cognitive Services を監視する
 
 - キーの一覧（ListKeys）が行われた際にアラートをトリガーします。
 - サービスの呼び出し回数をグラフで確認します。
 
 ## YouTube動画
 
-- AI-102 ラボ03 https://youtu.be/ECwNDEFT3Wg
+- AI-102 ラボ03 Cognitive Services を監視する
+- https://youtu.be/ECwNDEFT3Wg
 
 ## 概要
 
