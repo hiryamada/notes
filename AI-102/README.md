@@ -80,6 +80,9 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 - Azure Cognitive Search
   - [ラーニングパス11 Azure Cognitive Search でのナレッジ マイニングの実装](lp11.md)
 
+※おまけ（AI-102範囲外、時間があれば解説）
+- [Microsoft Security Copilot](../microsoft-security-copilot/microsoft-security-copilot.md) (セキュリティ専門家を支援するAIアシスタント, 2023/3/28～)
+
 ■クロージング
 
 - [このコースで学習したサービス・機能のまとめ](matome.md)

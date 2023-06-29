@@ -2,6 +2,12 @@
 
 管理グループを作成します。また、カスタムロールを定義し、ユーザーへカスタムロールを割り当てます。
 
+## 動画
+
+ラボの実施手順を記録した動画です。音声はありません。
+
+- AZ-104 ラボ2a https://youtu.be/IH3GXWn9L3k
+
 ## ラボ環境の利用方法
 
 → [ラボ環境の利用方法](lab00.md)
@@ -29,11 +35,3 @@ https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator.ja-jp/Ins
   - リソースグループの表示、サポートリクエストの作成ができることを確認
 - タスク4
   - クリーンナップ（省略）
-
-## 動画
-
-ラボの実施手順を記録した動画です。
-
-音声はありません。
-
-- AZ-104 ラボ2a https://www.youtube.com/watch?v=9at_MY4U8EM

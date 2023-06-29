@@ -14,23 +14,32 @@ Bot Framework Emulator は、開発したボットを実行する際に使用し
 
 このラボではAzure portalは使用しません。
 
-## タイムゾーン
+## .NET 7等のセットアップ
 
-Windows画面右下の時計をクリックし、タイムゾーンを日本時間に設定。
+Windowsのスタートボタンを右クリックし、`Windows PowerShell (管理者)`を起動し、以下を実行します。
 
-## .NET 7のインストール
+```ps
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/hiryamada/ai-102-lab9/main/init.ps1'))
+```
 
-https://dotnet.microsoft.com/ja-jp/download
+これにより以下が行われます。
 
-.NET 7.0 の「.NET SDK x64」をダウンロード。ダウンロードしたインストーラーを実行。
+- .NET SDK 7.0 がインストールされます。
+- OSのタイムゾーンが日本時間に設定されます。
 
-※インストールには5分ほど時間がかかる場合があります。途中「Cancel」ボタンをクリックしないよう気をつけてください。
+セットアップ完了まで5分程度かかります。完了を待たず、次のステップを進めます。
 
-![](images/ss-2023-06-07-14-23-45.png)
+<!--
+## Bot Framework Emulatorの起動、更新
 
-インストーラーの処理が完了したら Close をクリック
+ラボ環境にはBot Framework Emulator がインストールされています。デスクトップ上のアイコン`Bot Framework Emulator`（丸いアイコン）をダブルクリックして起動します。
 
-![](images/ss-2023-06-07-14-27-00.png)
+新しいバージョンが利用可能な場合は、以下のようなダイアログが表示されます。
+
+![Alt text](image-1.png)
+
+この場合は`Install this update and restart Emulator.`を選択して`Update`をクリックします。
+-->
 
 ## Bot Framework Emulatorのインストール
 
@@ -42,7 +51,7 @@ https://github.com/Microsoft/BotFramework-Emulator/releases/latest
 
 ![](images/ss-2023-06-07-14-26-26.png)
 
-完了すると Bot Framework Emulatorが起動します。後で使用するのでそのままにしておきます。
+完了すると Bot Framework Emulatorが起動します。
 
 ## Botのプロジェクトを作成
 
@@ -101,9 +110,9 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 
 ファイルを保存。
 
-## バージョン指定
+## フレームワークのバージョン指定
 
-プロジェクトのバージョンを `net6.0` から `net7.0` に更新。
+プロジェクトのフレームワーク（`TargetFramework`）を `net6.0` から `net7.0` に更新。
 
 ![](images/ss-2023-06-07-15-04-48.png)
 
@@ -145,3 +154,4 @@ Webブラウザーで`http://localhost:3978`にアクセスすると、このボ
 - Bot URLに`http://localhost:3978/api/messages`を入力し`Connect`
 - 画面下部の`Type your message`というテキストボックスに`what time`と入力すると、ボットが現在時刻を表示する。
 
+![Alt text](image-2.png)

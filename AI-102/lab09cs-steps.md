@@ -15,6 +15,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 - .NET SDK 7.0 がインストールされます。
 - OSのタイムゾーンが日本時間に設定されます。
 
+セットアップ完了まで5分程度かかります。完了を待たず、次のステップを進めます。
+
 ## Visual Studio Codeでプロジェクトをクローン
 
 - Visual Studio Codeを起動します。
