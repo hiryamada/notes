@@ -1,4 +1,4 @@
-# ラボ  - 
+# ラボ05  - サイト間接続を実装する
 
 
 
@@ -6,14 +6,13 @@
 
 ラボの実施手順を記録した動画です。音声はありません。
 
-AZ-104 ラボ
-
-
+AZ-104 ラボ05 - サイト間接続を実装する(CloudSlice)
+https://youtu.be/KXWYoPCYkYc
 
 ## 手順書
 
 日本語版:
-
+https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator.ja-jp/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.html
 
 英語版:
-
+https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.html

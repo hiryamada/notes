@@ -9,6 +9,10 @@
 AZ-104 ラボ03a Azure portal を使用して Azure リソースを管理する(CloudSlice)
 https://youtu.be/1lSCAjEyCeM
 
+## 起動するラボの番号
+
+ラボ4番を起動します。**3番ではありませんのでお気をつけください。**
+
 ## 手順書
 
 日本語版:

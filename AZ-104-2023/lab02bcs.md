@@ -9,6 +9,10 @@
 AZ-104 ラボ02b Azure Policy を介してガバナンスを管理する(CloudSlice)
 https://youtu.be/ZIstJTLsGDI
 
+## 起動するラボの番号
+
+ラボ3番を起動します。**2番ではありませんのでお気をつけください。**
+
 ## 手順書
 
 日本語版:

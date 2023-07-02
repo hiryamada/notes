@@ -9,6 +9,10 @@
 AZ-104 ラボ03c Azure PowerShell を使用して Azure リソースを管理する(CloudSlice)
 https://youtu.be/JkiFBDbnYo8
 
+## 起動するラボの番号
+
+ラボ6番を起動します。**3番ではありませんのでお気をつけください。**
+
 ## 手順書
 
 日本語版:

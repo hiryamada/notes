@@ -23,7 +23,7 @@ https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator.ja-jp/Ins
   - 仮想マシンを仮想ネットワークにデプロイします
 - タスク3
   - VMにパブリック IP アドレスを割り当てます
-    - **パブリックIPアドレスは、あらかじめ作成して、NICに関連付けます。**
+    - **パブリックIPアドレス`az104-04-pip0`は、あらかじめ作成して、NICに関連付けます。**
   - VM のプライベート IP アドレスの割り当て方法を「静的」に変更します
 - タスク4
   - ネットワーク セキュリティ グループを作成します
@@ -31,11 +31,11 @@ https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator.ja-jp/Ins
   - リモートデスクトップでVMに接続できることを確認します
 - タスク5
   - Azure DNS プライベートDNSゾーンを作成します
-  - プライベートDNSゾーンを使用して、VMの名前解決ができることを確認します
+  - プライベートDNSゾーンを使用して、VM内で、VMのプライベートIPアドレスへの名前解決ができることを確認します
 - タスク6
   - Azure DNS パブリックDNSゾーンを作成します
     - GoDaddyの「ドメイン名検索」（`https://www.godaddy.com/domains/domain-name-search`）は現在接続できないため、適当なドメイン名（`test29387249342.com`といった乱数を付与したもの）を使用します。
-  - パブリックDNSゾーンを使用して、VMの名前解決ができることを確認します
+  - パブリックDNSゾーンを使用して、インターネットで、VMのパブリックIPアドレスの名前解決ができることを確認します
 - クリーンナップ（省略）
 
 ## 動画

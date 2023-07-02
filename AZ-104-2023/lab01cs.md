@@ -17,6 +17,10 @@ https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator.ja-jp/Ins
 英語版:
 https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_01-Manage_Azure_AD_Identities.html
 
+## 起動するラボの番号
+
+ラボ1番を起動します。
+
 ## 概要
 
 - 準備

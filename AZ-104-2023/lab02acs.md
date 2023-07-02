@@ -9,6 +9,10 @@
 AZ-104 ラボ02a サブスクリプションと RBAC を管理する(CloudSlice)
 https://youtu.be/IH3GXWn9L3k
 
+## 起動するラボの番号
+
+ラボ2番を起動します。
+
 ## 手順書
 
 日本語版:
