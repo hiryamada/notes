@@ -38,13 +38,19 @@ https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-pageblob-overv
 
 ■冗長性
 
+<!--
 [まとめPDF](../AZ-104/pdf/mod07/ストレージ冗長化.pdf)
+-->
+[まとめPDF(ストレージアカウント)](../AZ-104-2023/pdf/%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88.pdf)
 
 ■アクセス層
 
-ホット、クール、アーカイブ
-
+ホット、クール、コールド、アーカイブ
+<!--
 [まとめPDF](../AZ-104/pdf/mod07/アクセス層.pdf)
+-->
+
+[まとめPDF(Blobのアクセス層と料金)](../AZ-104-2023/pdf/Azure%20Blob%20Storage%E3%81%AE%E6%96%99%E9%87%91.pdf)
 
 ■ライフサイクル
 

@@ -1,14 +1,21 @@
 # 2日目
 
+<!--
 - [不要なリソースのクリーンナップ](../handson/az-204.md)
+-->
 - ラーニングパス3 Blobストレージ
   - [解説](mod03-01-blob.md)
-  - [知識チェック（試験対策） - Blob](check.md)
-  - [ハンズオン](../handson/az-204.md)
+  - [ラボ3](lab03cs.md)
 - ラーニングパス4 Cosmos DB
   - [解説](mod04.md)
+  - [ラボ4](lab04cs.md)
+
+<!--
+  - [知識チェック（試験対策） - Blob](check.md)
   - [知識チェック（試験対策） - Cosmos DB](check.md)
   - [ハンズオン](../handson/az-204.md)
+  - [ハンズオン](../handson/az-204.md)
+-->
 
 # ラーニングパス 3: [AZ-204: BLOB ストレージを使用するソリューションを開発する](https://docs.microsoft.com/ja-jp/learn/paths/develop-solutions-that-use-blob-storage/)
 ## モジュール 1: [Azure Blob Storage を調べる](https://docs.microsoft.com/ja-jp/learn/modules/explore-azure-blob-storage/)

@@ -337,7 +337,9 @@ https://docs.microsoft.com/ja-jp/learn/paths/work-with-nosql-data-in-azure-cosmo
 Azure Cosmos DB Workshop
 https://azurecosmosdb.github.io/labs/
 
+<!--
 ■ラボ4: Cosmos DBをC#コードから操作してみよう
 
 [ラボ4のご案内](lab/lab04.md)
+-->
 
