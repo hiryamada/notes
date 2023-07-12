@@ -18,18 +18,23 @@ Azure開発者向けのコースです。
 # 日程
 
 - [1日目](day1.md)
-  - App Service, Azure Functions
+  - App Service, [ラボ1](lab01cs.md)
+  - Azure Functions, [ラボ2](lab02cs.md)
 - [2日目](day2.md)
-  - Azure Blob Storage, Azure Cosmos DB
+  - Azure Blob Storage, [ラボ3](lab03cs.md)
+  - Azure Cosmos DB, [ラボ4](lab04cs.md)
 - [3日目](day3.md)
-  - VM, ACI, ACR
-  - Microsoft ID Platform, Microsoft Graph
+  - コンテナー化されたソリューションの実装(ACR, ACI, ACA), [ラボ5](lab05cs.md)
+  - ユーザー認証(Microsoft ID Platform, MSAL, Microsoft Graph), [ラボ6](lab06cs.md)
 - [4日目](day4.md)
-  - Key Vault, App Configuration, API Management
+  - セキュリティ(Key Vault, マネージドID), [ラボ7](lab07cs.md)
+  - App Configuration
+  - API Management, [ラボ8(API Management)](lab08cs.md)
+  - イベントベースソリューション(Event Grid, Event Hubs), [ラボ9(Event Grid)](lab09cs.md)
 - [5日目](day5.md)
-  - Event Grid, Event Hubs
-  - Queue Storage, Service Bus
-  - Application Insights
+  - メッセージベースソリューション(Queue Storage, Service Bus), [ラボ10(Service Bus)](lab10cs.md)
+  - Application Insights, [ラボ11](lab11cs.md)
+  - キャッシュ(Azure Cache for Redis, Azure CDN), [ラボ12(CDN)](lab12cs.md)
 - 終了時のご案内
   - [全体のまとめ](summary.md)
   - [認定試験のご案内](exam.md)

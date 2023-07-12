@@ -1,10 +1,13 @@
 # 3日目
 
+<!--
 - おまけ: [Python on Azure](../handson/python/python.md)
-- ラーニングパス 5: IaaS (VM, ACI, ACR)
   - [VM](mod05-01-vm.md)
   - [ARMテンプレート](mod05-02-arm.md)
     - [参考: Bicep](../AZ-400/mod14-handson-bicep.md)
+-->
+
+- ラーニングパス 5: コンテナー化されたソリューションの実装(ACR, ACI, ACA)
   - [ACI](mod05-05-aci.md)
   - [ACR](mod05-04-acr.md)
   - デモ: [コンソールアプリのコンテナー化、ACRビルド、ACIでの実行](container-demo.md)
@@ -12,6 +15,7 @@
 - ★ご参考: [コンテナーサービスの比較](../AZ-204/pdf/mod05/コンテナー比較.pdf)
 - ★ご参考: Azure Kubernetes Service
   - [Azure DevOps + AKSの構築例](../AZ-400/pdf/Azure%20DevOps%20and%20AKS.pdf)
+- [ラボ5](lab05cs.md)
 - ラーニングパス 6: Microsoft ID Platform, Microsoft Graph
   - ご参考: [Azure AD入門](../AzureAD/Azure%20AD%E5%85%A5%E9%96%80.pdf)
   - 解説PDF: [Microsoft ID Platform](../SC/pdf/Microsoft%20ID%20Platform.pdf)
@@ -29,6 +33,7 @@
 
 https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-iaas-solutions/
 
+<!--
 ■モジュール: Azure で仮想マシンをプロビジョニングする
 
 - ★仮想マシンの種類 https://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/series/
@@ -63,6 +68,7 @@ https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-iaas-solutions/
   - 増分（incremental）
   - 完全（complete, 知識チェックでは「完了」）
 - 知識チェック: outputセクション / デプロイモード
+-->
 
 ■（前知識）コンテナー型仮想化
 
