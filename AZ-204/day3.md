@@ -12,21 +12,22 @@
   - [ACR](mod05-04-acr.md)
   - デモ: [コンソールアプリのコンテナー化、ACRビルド、ACIでの実行](container-demo.md)
   <!--[ハンズオン](../handson/az-204.md)-->
-- ★ご参考: [コンテナーサービスの比較](../AZ-204/pdf/mod05/コンテナー比較.pdf)
-- ★ご参考: Azure Kubernetes Service
+  - ★ご参考: [コンテナーサービスの比較](../AZ-204/pdf/mod05/コンテナー比較.pdf)
+  - ★ご参考: Azure Kubernetes Service
   - [Azure DevOps + AKSの構築例](../AZ-400/pdf/Azure%20DevOps%20and%20AKS.pdf)
-- [ラボ5](lab05cs.md)
+  - [ラボ5](lab05cs.md)
 - ラーニングパス 6: Microsoft ID Platform, Microsoft Graph
   - ご参考: [Azure AD入門](../AzureAD/Azure%20AD%E5%85%A5%E9%96%80.pdf)
   - 解説PDF: [Microsoft ID Platform](../SC/pdf/Microsoft%20ID%20Platform.pdf)
   - [Microsoft ID Platform](mod06-04-id-platform.md)
-  - [ハンズオン: アプリの登録](day3-handson.md)
   - [Microsoft Authentication Library (MSAL)](mod06-05-msal.md)
   - [Microsoft Graph](mod06-08-graph.md)
+  - [ラボ6](lab06cs.md)
+<!--
+  - [ハンズオン: アプリの登録](day3-handson.md)
+  - [アプリケーションオブジェクトとサービスプリンシパル](mod06-07-application-object.md)
   - [ハンズオン: Graph Explorer](../handson/idplatform/graph-explorer.md)
   - [ハンズオン: Webアプリでサインイン機能を実装](https://github.com/hiryamada/notes/blob/main/handson/az-204.md#%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3-microsoft-id-platform)
-<!--
-  - [アプリケーションオブジェクトとサービスプリンシパル](mod06-07-application-object.md)
 -->
 
 # ラーニングパス: AZ-204: サービスとしてのインフラストラクチャ ソリューションを実装する
