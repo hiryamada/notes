@@ -4,13 +4,20 @@
   - [PDF: Azureでの認証と承認](../SC/pdf/Azure%E3%81%AE%E8%AA%8D%E8%A8%BC%E3%81%A8%E6%89%BF%E8%AA%8D.pdf)
   - [Key Vault](mod07.md)
   - [App Configuration](mod07-02-appcfg.md)
+  - [ラボ7](lab07cs.md)
+- ラーニングパス 8 API Management
+  - [API Management](mod08-01-apim.md)
+  - [ラボ8(API Management)](lab08cs.md)
+
+<!--
     - ご参考: [App Configurationのアクセスにかかる時間](pdf/Azure%20App%20Configuration%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.pdf)
   - [ハンズオン](../handson/az-204.md)
   - [知識チェック（試験対策） - Key Vault, マネージドID, App Configuration](check.md)
-- ラーニングパス 8 API Management
-  - [API Management](mod08-01-apim.md)
-  - [ハンズオン](../handson/az-204.md)
+
   - [知識チェック（試験対策） - API Management](check.md)
+  - [ハンズオン](../handson/az-204.md)
+
+-->
 
 # ラーニングパス 7: [AZ-204: セキュリティで保護されたクラウド ソリューションを実装する](https://docs.microsoft.com/ja-jp/learn/paths/az-204-implement-secure-cloud-solutions/)
 ## モジュール 1: [Azure Key Vault を実装する](https://docs.microsoft.com/ja-jp/learn/modules/implement-azure-key-vault/)
