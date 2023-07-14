@@ -8,6 +8,8 @@
 - ラーニングパス 8 API Management
   - [API Management](mod08-01-apim.md)
   - [ラボ8(API Management)](lab08cs.md)
+- ラーニングパス 9 イベント（Event Grid, Event Hubs）
+  - [Event Grid, Event Hubs](../AZ-305/event.md)
 
 <!--
     - ご参考: [App Configurationのアクセスにかかる時間](pdf/Azure%20App%20Configuration%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.pdf)

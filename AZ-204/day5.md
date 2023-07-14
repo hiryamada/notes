@@ -1,19 +1,18 @@
 # 5日目
 
-講義:
-
-- ラーニングパス 9 イベント（Event Grid, Event Hubs）
-  - [Event Grid, Event Hubs](../AZ-305/event.md)
 - ラーニングパス 10 メッセージング（キュー）
   - [Azure Queue Storage, Azure Service Bus](../AZ-305/messaging.md)
+  - [ラボ10(Service Bus)](lab10cs.md)
 - ラーニングパス 11 ログ記録（Application Insights）
   - [PDF: Application Insights](pdf/mod12/Application%20Insightsの主な機能.pdf)
+  - [ラボ11](lab11cs.md)
 - ラーニングパス 12 キャッシュ（Azure CDN、Azure Cache for Redis）
   - [Azure CDN](pdf/mod13/Azure%20CDN%E3%81%BE%E3%81%A8%E3%82%81.pdf)
+  - [ラボ12(CDN)](lab12cs.md)
   - [Azure Cache for Redis](pdf/mod13/Azure%20Cache%E3%81%BE%E3%81%A8%E3%82%81.pdf)
-  - [知識チェック（試験対策）](check.md)
-- クロージング
 
+<!--
+  - [知識チェック（試験対策）](check.md)
 ハンズオン(オプション):
 
 - ラーニングパス 09: [イベントベースのソリューションの開発](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_09.html)
@@ -24,6 +23,8 @@
   - Application Insights
 - ラーニングパス 12: [キャッシュとコンテンツ配信をソリューション内で統合する](https://microsoftlearning.github.io/AZ-204JA-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_12.html)
   - Blob + Azure CDN
+
+-->
 
 # ラーニングパス 9: [AZ-204: イベントベースのソリューションの開発](https://docs.microsoft.com/ja-jp/learn/paths/az-204-develop-event-based-solutions/)
 ## モジュール 1: [Azure Event Grid について調べる](https://docs.microsoft.com/ja-jp/learn/modules/azure-event-grid/)
