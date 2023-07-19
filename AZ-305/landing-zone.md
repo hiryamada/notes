@@ -6,6 +6,11 @@ https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-z
 
 端的に言えば、ランディングゾーンとは、Azureのベストプラクティスに従った、サブスクリプション（の設計と実装）である。https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/enterprise-scale/faq#what-does-a-landing-zone-map-to-in-azure-in-the-context-of-azure-landing-zone-architecture
 
+## 利用例
+
+https://cloudsteady.jp/2021/03/31/37251/
+
+
 ## CAFとの関係
 
 Microsoft Azure Cloud Adoption Framework（Microsoft Azure クラウド導入フレームワーク）は、組織がクラウドを導入するためのベストプラクティス集。
@@ -69,7 +74,7 @@ Azure ランディング ゾーン アーキテクチャは、熟慮された（
 
 https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-accelerators
 
-「Azure ランディング ゾーン」を適切な方法でデプロイするのに役立つ、IaC（Bicep, Terraform等）による「実装」。
+「Azure ランディング ゾーン」を適切な方法でデプロイするのに役立つ、IaC（Blueprint, Bicep, Terraform等）による「実装」。
 
 以下のページから参照できる。
 
@@ -81,3 +86,16 @@ https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/suggested
 
 組織がAzure ランディング ゾーンを使用するためにどのような準備（学習）が必要かが説明されている。
 
+## 参考: その他の「ランディングゾーン」
+
+HDD(ハードディスクなどにおいて、電源オフ時にヘッドを待避させておく領域)
+https://japan.zdnet.com/glossary/exp/%E3%83%A9%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%BE%E3%83%BC%E3%83%B3/?s=1
+
+軍事(前線でヘリコプターやVTOL機・転換式航空機を着陸させるため、一時的に確保した場所)
+https://www.weblio.jp/content/LZ
+
+医療
+https://www.ncvc.go.jp/hospital/section/cvs/vascular/pro01-3/
+
+ゴルフ
+https://www.jsgca.com/05_column/gm2004-10.html
