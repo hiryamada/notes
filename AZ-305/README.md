@@ -42,6 +42,10 @@
   - [移行を設計する](m11.md)
   - [Microsoft Azure Well-Architected Framework](m12.md)
   - [Microsoft クラウド導入フレームワーク](m13.md)
+- 終了時のご案内
+  - [全体のまとめ](summary.md)
+  - [認定試験のご案内](exam.md)
+  - [クロージング](../closing-az305.md)
 
 <!--
 ■講義（ラーニングパスベース）
@@ -142,6 +146,11 @@ Azure で開発するために必要な言語とツールを紹介。
 
 https://learn.microsoft.com/ja-jp/azure/developer/
 
+■Azure ランディングゾーン
+
+8つの「設計領域」(design areas)にわたる「設計原則」(key design principles)に準拠した「環境」。
+
+[→ 解説](landing-zone.md)
 
 <!--
 ■参考: Student Materials

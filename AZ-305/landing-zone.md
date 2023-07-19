@@ -1,0 +1,83 @@
+# Azure ランディング ゾーン
+
+https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/
+
+8つの「設計領域」(design areas)にわたる「設計原則」(key design principles)に準拠した「環境」。
+
+端的に言えば、ランディングゾーンとは、Azureのベストプラクティスに従った、サブスクリプション（の設計と実装）である。https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/enterprise-scale/faq#what-does-a-landing-zone-map-to-in-azure-in-the-context-of-azure-landing-zone-architecture
+
+## CAFとの関係
+
+Microsoft Azure Cloud Adoption Framework（Microsoft Azure クラウド導入フレームワーク）は、組織がクラウドを導入するためのベストプラクティス集。
+
+https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/overview
+
+- Strategy
+- Plan
+- Ready（準備フェーズ）
+- Adopt
+- Govern
+- Manage
+
+の6段階で構成される。
+
+「Azure ランディング ゾーン」はCAFの「Ready」（準備フェーズ）に含まれる。
+
+https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/
+
+## 8つの「設計領域」
+
+https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-architecture
+
+1. Azure 課金と Azure Active Directory テナント (A)
+2. ID とアクセス管理 (B)
+3. リソース組織 (C)
+4. ネットワーク トポロジと接続 (E)
+5. セキュリティ (F)
+6. 管理 (D、G、H)
+7. ガバナンス (C、D)
+8. プラットフォーム自動化と DevOps (I) 
+
+## 設計原則
+
+https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/design-principles
+
+開発者がターゲット アーキテクチャの最適な設計を目指すのに役立つ、設計原則が説明されている。
+
+この設計原則から逸脱する理由、逸脱した場合にどのような影響があるかも示されている。
+
+## サブスクリプション
+
+「Azure ランディング ゾーン」では、複数のサブスクリプションを使用する。
+
+アプリケーションのリソース用のサブスクリプションと、プラットフォームのリソース用のサブスクリプションを使用して、リソースを分離して管理する。
+
+アプリケーション リソースのサブスクリプションは「アプリケーション ランディング ゾーン」と呼ばれる。
+
+プラットフォーム リソースのサブスクリプションは「プラットフォーム ランディング ゾーン」と呼ばれる。
+
+
+## Azure ランディング ゾーン アーキテクチャ
+
+https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-architecture
+
+Azure ランディング ゾーン アーキテクチャは、熟慮された（opinionated） Azure ランディング ゾーンのターゲット アーキテクチャを表す。
+
+「Azure ランディング ゾーン概念アーキテクチャ」という基本設計が提供されており、各組織はこれを出発点としてカスタマイズできる。
+
+## Azure ランディング ゾーン アクセラレータ
+
+https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-accelerators
+
+「Azure ランディング ゾーン」を適切な方法でデプロイするのに役立つ、IaC（Bicep, Terraform等）による「実装」。
+
+以下のページから参照できる。
+
+https://learn.microsoft.com/ja-jp/azure/architecture/landing-zones/landing-zone-deploy#application
+
+## 準備
+
+https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/suggested-skills
+
+組織がAzure ランディング ゾーンを使用するためにどのような準備（学習）が必要かが説明されている。
+
