@@ -62,14 +62,6 @@ https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-z
 プラットフォーム リソースのサブスクリプションは「プラットフォーム ランディング ゾーン」と呼ばれる。
 
 
-## Azure ランディング ゾーン アーキテクチャ
-
-https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-architecture
-
-Azure ランディング ゾーン アーキテクチャは、熟慮された（opinionated） Azure ランディング ゾーンのターゲット アーキテクチャを表す。
-
-「Azure ランディング ゾーン概念アーキテクチャ」という基本設計が提供されており、各組織はこれを出発点としてカスタマイズできる。
-
 ## Azure ランディング ゾーン アクセラレータ
 
 https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-accelerators
@@ -85,6 +77,14 @@ https://learn.microsoft.com/ja-jp/azure/architecture/landing-zones/landing-zone-
 https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/suggested-skills
 
 組織がAzure ランディング ゾーンを使用するためにどのような準備（学習）が必要かが説明されている。
+
+## 参考: その他のクラウドの「ランディングゾーン」
+
+- AWS: https://docs.aws.amazon.com/ja_jp/prescriptive-guidance/latest/migration-aws-environment/understanding-landing-zones.html
+- Google Cloud: https://cloud.google.com/architecture/landing-zones?hl=ja
+- Alibaba Cloud: https://www.alibabacloud.com/ja/services/alibaba-cloud-landing-zone
+- Oracle Cloud: https://docs.oracle.com/ja-jp/iaas/Content/cloud-adoption-framework/landing-zone.htm
+
 
 ## 参考: その他の「ランディングゾーン」
 

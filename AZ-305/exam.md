@@ -1,6 +1,6 @@
-# AZ-204 試験対策
+# AZ-305 試験対策
 
-AZ-204の試験・資格と学習方法をご紹介。
+AZ-305の試験・資格と学習方法をご紹介。
 
 ■認定試験のメリットは？ 合格すると何が嬉しいの？
 
@@ -18,11 +18,15 @@ AZ-204の試験・資格と学習方法をご紹介。
 「Azure Solutions Architect Expert」では、前提条件「Azure Administrator Associate」にも合格しておく必要がある。
 
 ```
-【認定試験】Azure Administrator Associate (AZ-104)
+AZ-104を学習
+↓
+【認定試験】(AZ-104) Azure Administrator Associate
 ↓合格
 【認定資格】Microsoft Certified: Azure Administrator Associate
-
-【認定試験】AZ-305 Developing Solutions for Microsoft Azure
+↓
+AZ-305を学習
+↓
+【認定試験】(AZ-305) Developing Solutions for Microsoft Azure
 ↓合格
 【認定資格】Microsoft Certified: Azure Solutions Architect Expert
 ```
