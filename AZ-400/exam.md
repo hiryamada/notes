@@ -22,7 +22,7 @@ AZ-400の場合は前提条件としてAZ-104またはAZ-204の「認定資格�
 or
 認定資格: Azure Developer Associate (AZ-204)
 
-↓いずれかを取得
+↓いずれかに合格
 
 認定試験: AZ-400: Designing and Implementing Microsoft DevOps Solutions
 
