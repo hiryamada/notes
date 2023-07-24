@@ -133,14 +133,16 @@ Teams 18
 
 # 主な関連サイト
 
-[Azure DevOps](https://azure.microsoft.com/ja-jp/services/devops/)
+[Azure DevOps](https://azure.microsoft.com/ja-jp/services/devops/) ... Azure DevOps製品の紹介
 
+[Azure DevOps Labs](https://azuredevopslabs.com/) ... DevOpsの演習
+
+[DevOps リソース センター](https://docs.microsoft.com/ja-jp/devops/) ... DevOps実践に役立つ情報
+
+<!--
 [DevOps Starter](https://docs.microsoft.com/ja-jp/azure/devops-project/overview)
 
-[Azure DevOps Labs](https://azuredevopslabs.com/)
-
-[DevOps リソース センター](https://docs.microsoft.com/ja-jp/devops/)
-
+-->
 
 # 参考ブログ
 AZ-400: Designing and Implementing Microsoft DevOps Solutions 更新情報 (6/15)

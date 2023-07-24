@@ -5,7 +5,9 @@
 
 「大規模なデータ転送」、「オンプレミスのストレージ から Azure Storage アカウントへと大量のデータを転送」、「配送やロジスティクスを Microsoft に任せたい」→ Azure Data Box。参考: [Azure Data Boxはクセがつよい！](https://note.com/avakansai/n/ndc6705dd2c0d)
 
-「サーバーとデータのインベントリを実施する」 → ※「Azure Storage Migrateサービス」というものはない。「Azure Migrate」が正解？ 参考「[Azure Migrateのインベントリ](https://www.google.com/search?q=Azure++Migrate+%E3%82%A4%E3%83%B3%E3%83%99%E3%83%B3%E3%83%88%E3%83%AA)」: サーバー内で稼働しているソフトウェアの検出を行う機能。
+「サーバーとデータのインベントリを作成する」 → [Storage Migration Service（記憶域移行サービス）](https://learn.microsoft.com/ja-jp/windows-server/storage/storage-migration-service/overview#requirements)を使用して、複数のサーバーとそのデータのインベントリを作成し、データを別サーバーに移行することができる。
+
+![Alt text](image.png) https://jpn.nec.com/windowsserver/docs/2012eosbooklet_2nd.pdf
 
 「Azure の推定コストをオンプレミスのコストと比較したい」→ [Azure TCO計算ツール](https://azure.microsoft.com/ja-jp/pricing/tco/?cdn=disable)
 
