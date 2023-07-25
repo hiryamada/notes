@@ -16,10 +16,34 @@
     - Azure Repos Gitをクリック
     - Gitリポジトリ（プロジェクト名と同じ名前がついている）をクリック
     - Python packageをクリック
+    - 生成されたYAMLの以下の部分を削除し、
+      ```
+          Python27:
+            python.version: '2.7'
+          Python35:
+            python.version: '3.5'
+          Python36:
+            python.version: '3.6'
+          Python37:
+            python.version: '3.7'
+      ```
+      以下に置き換える
+      ```
+          Python38:
+            python.version: '3.8'
+          Python39:
+            python.version: '3.9'
+          Python310:
+            python.version: '3.10'
+          Python311:
+            python.version: '3.11'
+          Python312:
+            python.version: '3.12'
+      ```
     - Save and runをクリック
     - 画面右下のSave and runをクリック
     - しばらく待つ。
-    - パイプライン内で4つのJobが生成され、実行される。
+    - パイプライン内で5つのJobが生成され、実行される。
     - 2～3分ですべてのJobが完了し、それぞれのStatusはSuccessとなる。
 
 ※このパイプラインでは、以下の記述（ strategy とmatrix ）を使用して、復数のジョブを生成しています。
@@ -29,14 +53,16 @@ pool:
   vmImage: ubuntu-latest
 strategy:
   matrix:
-    Python27:
-      python.version: '2.7'
-    Python35:
-      python.version: '3.5'
-    Python36:
-      python.version: '3.6'
-    Python37:
-      python.version: '3.7'
+    Python38:
+      python.version: '3.8'
+    Python39:
+      python.version: '3.9'
+    Python310:
+      python.version: '3.10'
+    Python311:
+      python.version: '3.11'
+    Python312:
+      python.version: '3.12'
 
 steps:
 - task: UsePythonVersion@0
@@ -44,10 +70,20 @@ steps:
     versionSpec: '$(python.version)'
   displayName: 'Use Python $(python.version)'
 
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+  displayName: 'Install dependencies'
+
+- script: |
+    pip install pytest pytest-azurepipelines
+    pytest
+  displayName: 'pytest'
+
 ```
 
 実行結果例（ジョブ実行中）
-![](images/ss-2021-12-15-15-09-55.png)
+![Alt text](image.png)
 
 ※手順冒頭の「Parallel Jobs」の設定で、ジョブの数を2や3に設定し、「Run Pipeline」で再度パイプラインを実行すると、よりたくさんのジョブが並列で実行される様子が確認できます。
 
