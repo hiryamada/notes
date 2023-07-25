@@ -37,8 +37,6 @@
             python.version: '3.10'
           Python311:
             python.version: '3.11'
-          Python312:
-            python.version: '3.12'
       ```
     - Save and runをクリック
     - 画面右下のSave and runをクリック
@@ -61,8 +59,6 @@ strategy:
       python.version: '3.10'
     Python311:
       python.version: '3.11'
-    Python312:
-      python.version: '3.12'
 
 steps:
 - task: UsePythonVersion@0
