@@ -248,6 +248,7 @@
 - [Azure Traffic Manager](https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-overview)
   - Webトラフィックの一部を新しいバージョンのWebサイトへ転送できる（[荷重トラフィックルーティング](https://docs.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-routing-methods#weighted-traffic-routing-method)）
   - ※Azure Load Balancer、Azure Application Gatewayは、到着したトラフィックをバックエンドに負荷分散することができるが、一定の割合のトラフィックを別のWebサイトに転送する機能はない。
+  - [PDFまとめ: Azureの負荷分散サービス](../AZ-104-2023/pdf/Azureの負荷分散サービスまとめ.pdf)
 - カナリア デプロイ（「カナリア」ユーザー）
   - ユーザーが、問題に対して許容できることが必要（問題があっても新機能を使いたいといったようなユーザー向け）
 - ダークローンチ（機能フラグ、フィーチャーフラグとも）
