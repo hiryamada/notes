@@ -86,13 +86,13 @@
 - SonarCloud
 - Mend Bolt
 - GitHub Dependabot
-- CodeQL
-- OWASP ZAP
-- Nexus
-- Artifactory
-- Apache Archiva
-- Docker
-- Kubernetes
+- [CodeQL](https://docs.github.com/ja/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql)
+- [OWASP ZAP](https://www.zaproxy.org/)
+- [Nexus](https://www.sonatype.com/products/sonatype-nexus-repository)
+- [Artifactory](https://jfrog.com/ja/artifactory/)
+- [Apache Archiva](https://archiva.apache.org/)
+- [Docker](https://www.docker.com/)
+- [Kubernetes](https://kubernetes.io/ja/)
 
 ■プログラミング言語と関連ツール
 

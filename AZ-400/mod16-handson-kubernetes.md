@@ -1,9 +1,11 @@
+<!--
 - (2023/4/27)現在、Azure PipelinesでKubernetesの設定が失敗します。
 - [ワークアラウンド](https://developercommunity.visualstudio.com/t/New-Kubernetes-service-connection-causes/10138123)があるのですが、こちらを実施しても正しく動作させることはできませんでした。
 - AKSでKubernetes最新バージョンを使用しても改善しませんでした。
 - 代わりに、[「訂正版」](mod16-handson-aci.md)を実施ください。Kubernetesの代わりにACIを使用します。
+-->
 
-# ハンズオン（後編） Kubernetes
+# ハンズオン Azure DevOps + Azure Kubernetes Service
 
 ■ハンズオンの概要
 
@@ -15,6 +17,7 @@
   - イメージをAzure Kubernetes Serviceにデプロイ
 - Azure Kubernetes ServicesでWebアプリの動作を確認します
 
+<!--
 ■（前編）の概要
 
 - 作業用の「labvm」にリモートデスクトップ接続（またはBastionで接続）した状態です。
@@ -33,16 +36,52 @@
   git commit -m 'initial commit'
   git branch --move master main
   ```
+-->
+
+■Azure Container Registry (ACR) と Azure Kubernetes Service (AKS) の準備
+
+- Azure portalへ移動 https://portal.azure.com
+- Cloud Shellで、Bashを起動（または選択）
+- 以下のコマンドを投入。
+  ```
+  az provider register --namespace Microsoft.ContainerRegistry # acr
+  az provider register --namespace Microsoft.ContainerService # aks
+  az provider register --namespace Microsoft.OperationalInsights # monitoring
+  az provider register --namespace Microsoft.OperationsManagement # monitoring
+  az group create --name hello_rg --location japaneast
+  name=hello$(date|md5sum|head -c8)
+  az acr create \
+    --name $name \
+    --resource-group hello_rg \
+    --sku Basic
+  #az aks create \
+  #  --resource-group hello_rg \
+  #  --name $name \
+  #  --node-count 1 \
+  #  --enable-addons monitoring \
+  #  --generate-ssh-keys \
+  #  --node-vm-size Standard_D2as_v4 \
+  #  --kubernetes-version 1.27.1
+  ```
+
+■AKSクラスターを作成
+
+- 「AKS」で検索、「Kubernetesサービス」へ移動
+- 作成＞Kubernetesクラスターの作成
+- リソースグループ hello_rg を選択
+- クラスター名 (mycluster1 など、適当に指定)
+- Kubernetesバージョン 1.27.1
+- 確認および作成、作成
 
 ■新しいプロジェクトを作成
 
-- Webブラウザを開く
 - Azure DevOpsの画面に移動 https://dev.azure.com
 - `+ New Project`
 - Project name: `dockerwebapp1`
 - Visibility: `Private`
 - Create
 
+<!--
 ■Git用のPersonal Access Tokenの取得
 
 - 画面右上の、右から2番めのアイコンをクリック
@@ -54,8 +93,11 @@
 - 表示されたTokenをコピーしておく。後で使うのでメモ帳等にコピー
 - Close
 
-■Azure ReposにコードをPushする
+-->
 
+■Azure ReposにコードをImportする
+
+<!--
 - プロジェクトのReposに移動
 - 「Push an existing repository from command line」の下のテキストボックス内のコマンドをコピー
 - Visual Studio Codeに切り替える
@@ -63,40 +105,16 @@
 - パスワードの入力が求められるので、先程コピーしたTokenを貼り付ける
 - ReposのFilesをクリック
 - Files（ファイル一覧）に、`Program.cs`等のファイルが入ってきたことを確認
+-->
 
-■Azure Container Registry (ACR) と Azure Kubernetes Service (AKS) の準備
-
-- Cloud Shellを起動
-  - https://shell.azure.com にアクセスする
-  - Bash / PowerShellどちらでもよい
-- 以下のコマンドを投入。
-  ```
-  az provider register --namespace Microsoft.ContainerRegistry # acr
-  az provider register --namespace Microsoft.ContainerService # aks
-  az provider register --namespace Microsoft.OperationalInsights # monitoring
-  az provider register --namespace Microsoft.OperationsManagement # monitoring
-  az group create --name hello_rg --location japaneast
-  ```
-- リソースプロバイダーの登録（上記）が実際に終わるまで少し時間がかかるので3分ほど待つ
-- 以下のコマンドを投入。※12341234（2箇所）は、適当な乱数に置き換える
-  ```
-  az acr create \
-    --name mycontainerregistry12341234 \
-    --resource-group hello_rg \
-    --sku Basic
-  az aks create \
-    --resource-group hello_rg \
-    --name myapp12341234 \
-    --node-count 1 \
-    --enable-addons monitoring \
-    --generate-ssh-keys \
-    --node-vm-size Standard_D2as_v4 \
-    --kubernetes-version 1.26.3
-  ```
+- プロジェクトのAzure Repos をクリック
+- 下にスクロール
+- Importをクリック
+- Clone URLに `https://github.com/hiryamada/dockerwebapp` を入力し、Importをクリック
+- インポートが完了するまでしばらく待つ
 
 ■Azure Pipelinesの準備
 
-- Azure DevOpsの画面に移動 https://dev.azure.com
 - Pipelinesをクリック
 - Create Pipeline
 - Where is your code? → Azure Repos Git
@@ -105,12 +123,12 @@
   - ※「Deploy to Kubernetes - Review app with Azure DevSpaces」という似たようなものがあるので注意
 - サブスクリプションの選択: Azure Pass - スポンサー プラン
 - Continue
-- 別ウィンドウで認証が求められるので、トレーニング開始時に作成したMicrosoftアカウントでサインイン
+- 別ウィンドウで認証が求められた場合は、トレーニング開始時に作成したMicrosoftアカウントでサインイン
 - Cluster: 選択肢から選択できるクラスター(myapp～～)
 - Namespace: New, `hello`
 - Container Registry: 選択肢から選択できるレジストリ(myapp～～)
 - Image Name: hello
-- Service Port: 8080
+- Service Port: 80
 - Validate and configure
 - (パイプラインのYAMLが生成される)
 - Save and run
@@ -134,9 +152,10 @@
 - Resourcesで、「hello」（青いKubernetesアイコン）をクリック
 - Servicesをクリック
 - External IP をコピー
-- 新しいWebブラウザタブを開き、アドレス欄に、「External IP:8080」と「:8080」を付けてアクセス
-- `Hello World!` と表示されればOK
+- 新しいWebブラウザタブを開き、アドレス欄に、コピーしたExternal IPを貼り付け、アクセス
+- `Welcome to Azure training!` と表示されればOK
 
+<!--
 ■ハンズオンの確認
 
 - 開発環境として labvm (Windows VM) を準備しました
@@ -150,6 +169,7 @@
   - Azure Container Registryにイメージをプッシュ
   - イメージをAzure Kubernetes Serviceにデプロイ
 - Azure Kubernetes ServicesでWebアプリの動作を確認しました
+-->
 
 ■クリーンナップ（不要なリソースの削除）
 
