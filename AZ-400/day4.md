@@ -13,12 +13,14 @@
 
 - 講義: [サーバー仮想化 vs コンテナー型](../computing/virtualization.md)
 - 講義: [Docker](mod15.md)
-- ハンズオン(前編): [Docker](mod15-handson-docker.md)
-  - ※ハンズオン(前編)は(後編)に続きます
 - 講義: [Kubernetes](mod16.md)
 - [Azure DevOpsとKubernetes](../seminar/ado-aks.pdf)
-- ハンズオン(後編): [Kubernetes](mod16-handson-kubernetes.md)
+- ハンズオン: [Kubernetes](mod16-handson-kubernetes.md)
+
 <!--
+- ハンズオン: [Docker](mod15-handson-docker.md)
+  - ※ハンズオン(前編)は(後編)に続きます
+
   - (2023/4/27)現在、Azure PipelinesでKubernetesの設定が失敗します。
   - [ワークアラウンド](https://developercommunity.visualstudio.com/t/New-Kubernetes-service-connection-causes/10138123)があるのですが、こちらを実施しても正しく動作させることはできませんでした。
   - AKSでKubernetes最新バージョンを使用しても改善しませんでした。
