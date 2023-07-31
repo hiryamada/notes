@@ -124,9 +124,9 @@
 - サブスクリプションの選択: Azure Pass - スポンサー プラン
 - Continue
 - 別ウィンドウで認証が求められた場合は、トレーニング開始時に作成したMicrosoftアカウントでサインイン
-- Cluster: 選択肢から選択できるクラスター(myapp～～)
+- Cluster: 選択肢から選択できるクラスター
 - Namespace: New, `hello`
-- Container Registry: 選択肢から選択できるレジストリ(myapp～～)
+- Container Registry: 選択肢から選択できるレジストリ
 - Image Name: hello
 - Service Port: 80
 - Validate and configure
@@ -148,7 +148,7 @@
 ■Webアプリへのアクセス
 
 - 画面左Pipelines以下のEnvironments をクリック
-- helloをクリック
+- `dockerwebapp1`をクリック
 - Resourcesで、「hello」（青いKubernetesアイコン）をクリック
 - Servicesをクリック
 - External IP をコピー
