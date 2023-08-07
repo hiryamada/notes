@@ -1,6 +1,13 @@
 # AZ-104 まとめ
 
-## ラーニングパス1 前提条件
+## ラーニングパス1 IDとガバナンス
+
+- IDの管理
+  - [Azure AD(ユーザー管理を一元化)](https://learn.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis)
+  - [Azure AD 動的グループ(条件に従いユーザーのグループへの所属を自動で調整)](https://learn.microsoft.com/ja-jp/azure/active-directory/enterprise-users/groups-dynamic-membership)
+  - [Azure AD SSPR(セルフサービスパスワードリセット、エンドユーザーがパスワードを自分でリセットできる)](https://learn.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-howitworks)
+
+## ラーニングパス2 Azure管理者の前提条件
 
 - Azureの基本的な構造・管理の仕組み
   - [管理グループ(複数のサブスクリプションをグループ化・階層化)](https://learn.microsoft.com/ja-jp/azure/governance/management-groups/overview)
@@ -9,26 +16,14 @@
   - [タグ(リソースに管理用の情報を付与)](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/tag-resources)
   - [ロック(重要なリソースの変更・削除を防止)](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/lock-resources?tabs=json)
   - [Azureポリシー(リソースのルールを設定)](https://learn.microsoft.com/ja-jp/azure/governance/policy/overview)
-  - [イニシアチブ(複数のポリシーをまとめて割り当て)](https://learn.microsoft.com/ja-jp/azure/governance/policy/concepts/initiative-definition-structure)
   - [Azureロール(ユーザー等に操作の許可を与える)](https://learn.microsoft.com/ja-jp/azure/role-based-access-control/overview)
 - Azureの操作
   - [Azure portal(Azureの管理画面)](https://learn.microsoft.com/ja-jp/azure/azure-portal/azure-portal-overview)
   - [Azure Cloud Shell(Azure portalに組み込まれたシェル環境)](https://learn.microsoft.com/ja-jp/azure/cloud-shell/quickstart-powershell)
   - [ARMテンプレート(リソースをJSONで定義、一括デプロイ) ](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/templates/overview)
-  - [Bicep(リソースを独自の言語で定義、一括デプロイ) ](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/bicep/overview?tabs=bicep)
   - [Azure PowerShell(PowerShellに組み込むモジュール、Azureの操作用) ](https://learn.microsoft.com/ja-jp/powershell/azure/what-is-azure-powershell?view=azps-9.4.0)
   - [Azure CLI(Azureの操作を行うコマンド) ](https://learn.microsoft.com/ja-jp/cli/azure/what-is-azure-cli)
 
-## ラーニングパス2 IDとガバナンス
-
-- IDの管理
-  - [Azure AD(ユーザー管理を一元化)](https://learn.microsoft.com/ja-jp/azure/active-directory/fundamentals/active-directory-whatis)
-  - [Azure AD Connect(オンプレミスAD DSからユーザー情報をAzure ADへ同期)](https://learn.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect)
-  - [Azure AD 動的グループ(条件に従いユーザーのグループへの所属を自動で調整)](https://learn.microsoft.com/ja-jp/azure/active-directory/enterprise-users/groups-dynamic-membership)
-  - [Azure AD SSPR(セルフサービスパスワードリセット、エンドユーザーがパスワードを自分でリセットできる)](https://learn.microsoft.com/ja-jp/azure/active-directory/authentication/concept-sspr-howitworks)
-- ガバナンス
-  - [Azure のリージョン、可用性ゾーン（データセンターのあつまり）](https://learn.microsoft.com/ja-jp/azure/reliability/availability-zones-overview)
-  - [Azure のリージョンペア(同じ地域内で2つのリージョンがペアとなっている)](https://learn.microsoft.com/ja-jp/azure/reliability/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies)
 
 ## ラーニングパス3 ストレージ
 
@@ -46,14 +41,10 @@
 - 仮想マシン
   - [Azure 仮想マシン(Windows/Linuxの仮想サーバー)](https://learn.microsoft.com/ja-jp/azure/virtual-machines/overview)
   - [仮想マシンスケールセット（VMのグループを作成、インスタンスを増減）](https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/overview)
-  - [予約（VMなどの利用を予約して割引価格で利用）](https://learn.microsoft.com/ja-jp/azure/cost-management-billing/reservations/save-compute-costs-reservations)
-  - [スポットVM(余剰キャパシティを安く利用)](https://learn.microsoft.com/ja-jp/azure/virtual-machines/spot-vms)
-  - [Azureハイブリッド特典(オンプレミスのWindows Serverライセンスを持ち込み)](https://azure.microsoft.com/ja-jp/pricing/hybrid-benefit/)
 - PaaS
   - [Azure App Service(Webアプリを素早くホスティング)](https://learn.microsoft.com/ja-jp/azure/app-service/overview)
 - コンテナー
   - [Azure Container Instance(コンテナーを素早く実行)](https://learn.microsoft.com/ja-jp/azure/container-instances/container-instances-overview)
-  - [Azure Container Registry(コンテナーイメージをビルド・格納)](https://learn.microsoft.com/ja-jp/azure/container-registry/container-registry-intro)
   - [Azure Kubernetes Service(Kubernetesクラスターを素早く作成)](https://learn.microsoft.com/ja-jp/azure/aks/intro-kubernetes)
 
 ## ラーニングパス5 ネットワーク
@@ -68,7 +59,5 @@
 - 監視(モニタリング)
   - [Azure Monitor（Azureリソースの監視。ログとメトリックを収集）](https://learn.microsoft.com/ja-jp/azure/azure-monitor/overview)
   - [Log Analytics（ログを蓄積、クエリを実行）](https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/log-analytics-overview)
-  - [Application Insights (さまざまな場所で実行されるアプリの監視)](https://learn.microsoft.com/ja-jp/azure/azure-monitor/app/app-insights-overview?tabs=net)
 - バックアップ
   - [Azure Backup（VMなどをバックアップ）](https://learn.microsoft.com/ja-jp/azure/backup/backup-overview)
-
