@@ -14,6 +14,11 @@ https://azure.microsoft.com/ja-jp/pricing/details/container-apps/
 公式による解説（英語）「Introducing Azure Container Apps: a serverless container service for running modern apps at scale」
 https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-azure-container-apps-a-serverless-container-service/ba-p/2867265?ocid=AID3042118
 
+Roadmap and issues for Azure Container Apps
+https://github.com/microsoft/azure-container-apps
+
+
+
 # 使用例(クイックスタート手順・改)
 
 [Azure portalからの利用例](container-apps-portal.md)
@@ -28,6 +33,22 @@ https://azure.microsoft.com/ja-jp/updates/public-preview-azure-container-apps/
 2022/5/24 一般提供開始
 https://azure.microsoft.com/ja-jp/updates/generally-available-azure-container-apps/
 
+2022/10/12 「Azure Monitor統合」がパブリックプレビューに。デフォルトではログはLog Analyticsワークスペースに送信されるが、「Azure Monitor統合」により、ログをAzure Monitorに送信し、そこからAzure StorageやEvent Hubsなどに送信できるようになった。
+https://azure.microsoft.com/ja-jp/updates/public-preview-azure-container-apps-azure-monitor-integration/
+
+2023/3/16 「Azure Monitor統合」一般提供開始。
+https://azure.microsoft.com/en-us/updates/generally-available-azure-monitor-integration-with-azure-container-apps/
+
+2023/4/12 「Consumption and Dedicated plan」パブリックプレビュー。
+https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-announces-new-pricing-plan-and-enhanced/ba-p/3790723
+
+2023/5/10 「Initコンテナー」パブリックプレビュー。
+https://azure.microsoft.com/en-us/updates/public-preview-init-containers-in-azure-container-apps/
+
+2023/5/23 「ジョブ」がパブリックプレビューに。マニュアル、スケジュール、イベントによって起動され、任意の作業を実行できる
+。
+https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-jobs-for-azure-container-apps/ba-p/3826677
+
 # Azure Container Appsの特徴
 
 ■「コンテナー化されたアプリ」を実行するサービス
@@ -35,6 +56,8 @@ https://azure.microsoft.com/ja-jp/updates/generally-available-azure-container-ap
 任意の言語を使用してアプリを開発できる。
 
 Linux ベースの x86-64 (linux/amd64) コンテナー を運用できる。
+
+[Windowsコンテナーはサポートされない。](https://learn.microsoft.com/en-us/answers/questions/814737/azure-container-apps-and-windows-images) Windowsコンテナーを実行する必要がある場合はApp ServiceやAzure Container Instanceを使用する。
 
 ■マネージド型
 
@@ -87,7 +110,7 @@ Container Apps 環境 -> Log Analyticsワークスペース
 
 ※Azure portalでは「コンテナー アプリ」を作成すると一緒に「Container Apps 環境」「Log Analyticsワークスペース」が作成される。
 
-※App Serviceのプランとアプリの関係に似ているが、「Container Apps 環境」に対しての料金は発生しない。「サーバーレス」のサービスらしく、料金は「アプリで使われたvCPU＊時間」＋「アプリで使われたメモリ＊時間」＋「アプリで受け付けたリクエスト数」に応じて発生（後述）。
+※App Serviceのプランとアプリの関係に似ているが、「Container Apps 環境」に対しての料金は発生しない。料金は「アプリで使われたvCPU＊時間」＋「アプリで使われたメモリ＊時間」＋「アプリで受け付けたリクエスト数」に応じて発生（後述）。
 
 1つの「Container Apps 環境」で複数の「コンテナー アプリ」を動かすことができる。
 
@@ -106,6 +129,8 @@ Container Apps 環境1
 Container Apps 環境2
 └コンテナー アプリ2
 ```
+
+[環境で実行できるアプリ数には制限はない。](https://learn.microsoft.com/ja-jp/azure/container-apps/quotas)
 
 # コンテナー アプリ
 
@@ -134,9 +159,16 @@ Container Apps 環境
 
 https://docs.microsoft.com/ja-jp/azure/container-apps/environment
 
-「Container Apps 環境」は、システム（環境内の1つ～複数のコンテナー アプリ）を囲む「安全な境界」である。要するに、環境＝仮想ネットワーク（VNet）である。
+「Container Apps 環境」は、環境内の1つ～複数のコンテナー アプリを囲む「安全な境界」である。要するに、環境＝仮想ネットワーク（VNet）である。
 
 同じ環境内のコンテナー アプリは、同じ仮想ネットワークにデプロイされ、同じ Log Analytics ワークスペースにログを書き込む。
+
+```
+VNet
+└Container Apps 環境 --> Log Analyticsワークスペース
+  ├コンテナーアプリ1
+  └コンテナーアプリ2
+```
 
 # イングレス
 
@@ -144,7 +176,11 @@ https://docs.microsoft.com/ja-jp/azure/container-apps/ingress
 
 「イングレス」を有効にすることで、コンテナー アプリにHTTPSでアクセスできる。アプリケーションには完全修飾ドメイン名 (FQDN) が割り当てられる。
 
+![Alt text](image-3.png)
+
 FQDNは https://my-container-apps.ambitioussky-123456.japaneast.azurecontainerapps.io のような形式になる。
+
+※イングレスは必ずしも有効にする必要はない。たとえばキューからメッセージを読み込んで処理をするアプリの場合、イングレスは無効でもよい。
 
 # スケーリング
 
@@ -176,7 +212,13 @@ Container Apps 環境
       └コンテナー
 ```
 
-レプリカの数は最小値と最大値を指定できる。デフォルトは「最小0～最大10」。
+レプリカの数は最小値と最大値を指定できる。最大値は300まで設定可能。デフォルトは「最小0～最大10」。
+
+レプリカの状況は「Scale and replicas」で確認できる。
+![Alt text](image-2.png)
+
+レプリカ数は「メトリック」の「Replica Count」でも確認できる。
+![Alt text](image-1.png)
 
 以下に基づくスケーリングが可能
 
