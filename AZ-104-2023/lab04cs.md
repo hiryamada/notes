@@ -9,8 +9,14 @@
 
 ラボの実施手順を記録した動画です。音声はありません。
 
+<!--
 AZ-104 ラボ04 仮想ネットワークを実装する(CloudSlice)
 https://youtu.be/GJrq0U39ig8
+-->
+
+
+az-104 ラボ4 仮想ネットワーク(CloudSlice)
+https://youtu.be/c01LfooyKjo
 
 
 ## 起動するラボの番号
