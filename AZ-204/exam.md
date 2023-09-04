@@ -131,6 +131,23 @@ https://learn.microsoft.com/ja-jp/certifications/exams/az-204
     - 受験する部屋の確保が必要
       - 試験中は他人が立ち入らないようにする必要がある
 
+■本番試験中にMicrosoft Learnの閲覧が可能になりました。(2023/8～)
+
+試験中、Microsoft Learn (learn.microsoft.com) を開き、ドキュメントを参照できます。これからは「記憶力」よりも「調べる力」が重要となるということになります。
+
+![Alt text](image.png)
+
+※Fundamental試験(AZ-900, AI-900など)は除く。
+
+※「Open Book Exam」とも呼ばれる
+
+解説:
+https://learn.microsoft.com/en-us/certifications/exam-duration-exam-experience#accessing-microsoft-learn-during-your-certification-exam
+
+発表時のブログ:
+https://techcommunity.microsoft.com/t5/microsoft-learn-blog/introducing-a-new-resource-for-all-role-based-microsoft/ba-p/3500870
+
+
 ■合格したらアピールしよう！
 
 - 履歴書・名刺などに記載

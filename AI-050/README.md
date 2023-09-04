@@ -99,3 +99,9 @@ Microsoft Certified: ???
 
 参考: AIエンジニアの認定パス
 https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
+
+# 参考サイト
+
+Japan Cognitive Services Support Blog(Azure OpenAI Serviceのよくある質問と回答などを含む)
+https://jpaiblog.github.io/blog/
+
