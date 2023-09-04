@@ -102,6 +102,18 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 # 参考サイト
 
+Azure OpenAI Service 公式ドキュメント
+https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview
+
 Japan Cognitive Services Support Blog(Azure OpenAI Serviceのよくある質問と回答などを含む)
 https://jpaiblog.github.io/blog/
+
+Azure OpenAI Service リファレンスアーキテクチャ(マイクロソフトが推奨する Azure OpenAI Service の活用シナリオ例と、そのシナリオに沿ったアプリケーションデモ動画やアーキテクチャ構成を詳しく説明したドキュメント)
+https://www.microsoft.com/ja-jp/events/azurebase/contents/default.aspx?pg=AzureOAIS
+
+Azure OpenAI Service リファレンスアーキテクチャに賛同を表明頂いているパートナー企業様一覧（Azure OpenAI Service の導入・活用について、ぜひ賛同パートナーにお気軽にお問合せください）
+https://www.microsoft.com/ja-jp/biz/find-new-value-on-azure/ai-biz.aspx
+
+Microsoft Build Japan (/ YouTube / Microsoft公式チャンネル): AIに関する発表多数。2023/6/27-28開催。
+https://www.youtube.com/playlist?list=PL1RqQ3kddIpYJ0u1GxTlI0r4qMeGdEL6_
 
