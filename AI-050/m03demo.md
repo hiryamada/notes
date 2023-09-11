@@ -1,4 +1,4 @@
-# 講師デモ2 Azure OpenAI をアプリに統合する
+# 講師デモ Azure OpenAI をアプリに統合する
 
 [手順書](https://microsoftlearning.github.io/mslearn-openai.ja-jp/Instructions/Labs/02-natural-language-azure-openai.html)
 

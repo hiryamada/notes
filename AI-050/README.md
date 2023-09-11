@@ -48,11 +48,11 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-050t00
 
 - [モジュール1: Azure OpenAI Service の概要 (30分)](m01.md)
 - [モジュール2: Azure OpenAI Service で作業を開始する (30分)](m02.md)
-  - [講師デモ1: 「作業を開始する」 (30分)](demo01.md)
+  - [講師デモ1: 「作業を開始する」 (30分)](m02demo.md)
 - [モジュール3: Azure OpenAI Service を使用して自然言語ソリューションを構築する (30分)](m03.md)
-  - [講師デモ2: 「アプリに統合する」(30分)](demo02.md)
+  - [講師デモ2: 「アプリに統合する」(30分)](m03demo.md)
 - [モジュール4: Azure OpenAI Service を使用してプロンプト エンジニアリングを適用する (40分)](m04.md)
-  - [講師デモ3: 「プロンプト エンジニアリング」(30分)](demo03.md)
+  - [講師デモ3: 「プロンプト エンジニアリング」(30分)](m04demo.md)
 - [全体のまとめ](matome.md)
 
 ■時間割
@@ -117,3 +117,45 @@ https://www.microsoft.com/ja-jp/biz/find-new-value-on-azure/ai-biz.aspx
 Microsoft Build Japan (/ YouTube / Microsoft公式チャンネル): AIに関する発表多数。2023/6/27-28開催。
 https://www.youtube.com/playlist?list=PL1RqQ3kddIpYJ0u1GxTlI0r4qMeGdEL6_
 
+ChatGPTを業務に組み込むためのハンズオン(デジタル庁)
+https://www.digital.go.jp/assets/contents/node/information/field_ref_resources/5896883b-cc5a-4c5a-b610-eb32b0f4c175/82ccd074/20230725_resources_ai_outline.pdf
+
+OpenAI ドキュメント 英語版
+https://platform.openai.com/docs/introduction
+
+OpenAI ドキュメント 日本語版
+https://openai.itshinan.jp/
+
+ChatGPT開発元のOpenAIが推奨！期待通りの回答を得るプロンプトのコツ10選
+https://dekiru.net/article/24267/
+
+# 参考サイト（事例）
+
+SBテクノロジー、Azure OpenAI Service と連携する独自システムを開発し、社内利用開始
+https://www.softbanktech.co.jp/news/release/press/2023/008/
+
+アサヒビール、生成AIを活用した社内情報検索システムを導入、商品開発や業務効率化に活用
+https://it.impress.co.jp/articles/-/25158
+
+日清食品グループにおける生成AI活用の現在地
+https://www.meti.go.jp/shingikai/mono_info_service/digital_jinzai/pdf/010_02_00.pdf
+
+# 参考サイト（導入支援）
+
+Azure OpenAI Service 活用支援サービス（TIS）
+https://www.tis.jp/service_solution/azureopenaiservice/
+
+企業向け「ChatGPT」利用環境構築サービス「Azure OpenAI ServiceスターターセットPlus」の提供を開始（BIPROGYとユニアデックスのBIPROGYグループ）
+https://www.uniadex.co.jp/news/2023/20230809_azure-openai-service.html
+
+Azure OpenAI Service & Microsoft Fabric 導入支援サービス（ウルシステムズ）
+https://www.ulsystems.co.jp/services/openai-msfabric.html
+
+Azure OpenAI Service 導入サポート（パーソル プロセス&テクノロジー）
+https://www.persol-pt.co.jp/service/azureopenaiservice/
+
+「Azure OpenAI Service」導入支援サービス（SCSK）
+https://www.scsk.jp/sp/usize/service/azure_openai_service.html
+
+Azure OpenAI Serviceスターターパッケージ（ソフトバンク）
+https://www.softbank.jp/biz/services/platform/microsoft-azure/azure-openai-service/
