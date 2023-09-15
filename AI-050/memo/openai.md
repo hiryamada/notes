@@ -74,6 +74,8 @@ https://forest.watch.impress.co.jp/docs/news/1513732.html
 
 ＞その問題を克服するために、現在ベータ版として提供されているのが「Browse with Bing」だ。この機能は「ChatGPT」が知らない情報があると、検索エンジン「Bing」で最新のデータを検索・参照して回答を生成できる。
 
-■プラグイン
+■ChatGPT plugins
 
-■Code Interpreter
+https://openai.com/blog/chatgpt-plugins
+
+

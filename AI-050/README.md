@@ -108,6 +108,15 @@ https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview
 Japan Cognitive Services Support Blog(Azure OpenAI Serviceのよくある質問と回答などを含む)
 https://jpaiblog.github.io/blog/
 
+プロンプトエンジニアリングガイド日本語版
+https://www.promptingguide.ai/jp
+
+プロンプトエンジニアリングガイド英語版
+https://www.promptingguide.ai/
+
+Azure OpenAI Service を利用したエンタープライズアーキテクチャのメモ
+https://qiita.com/nohanaga/items/a18009f8b605591348fe
+
 Azure OpenAI Service リファレンスアーキテクチャ(マイクロソフトが推奨する Azure OpenAI Service の活用シナリオ例と、そのシナリオに沿ったアプリケーションデモ動画やアーキテクチャ構成を詳しく説明したドキュメント)
 https://www.microsoft.com/ja-jp/events/azurebase/contents/default.aspx?pg=AzureOAIS
 
@@ -126,8 +135,51 @@ https://platform.openai.com/docs/introduction
 OpenAI ドキュメント 日本語版
 https://openai.itshinan.jp/
 
+# 参考サイト（プロンプトエンジニアリング、例）
+
 ChatGPT開発元のOpenAIが推奨！期待通りの回答を得るプロンプトのコツ10選
 https://dekiru.net/article/24267/
+
+OpenAIがリリースした先生向けのChatGPTガイドを読む
+https://note.com/masayuki_abe/n/nebfaa80df488
+
+プロンプトの質が上がる“深津術”　今すぐ使えるChatGPTの小技を本人に聞いてみた
+https://www.itmedia.co.jp/news/articles/2309/04/news023.html
+
+The 100 Best ChatGPT Prompts to Power Your Workflow
+https://gridfiti.com/best-chatgpt-prompts/
+
+Awesome ChatGPT Prompts
+https://github.com/f/awesome-chatgpt-prompts
+
+202 Awesome ChatGPT Prompts to Boost Productivity
+https://blog.hootsuite.com/chatgpt-prompts/
+
+プロンプトエンジニアリング（Wikipedia）
+https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0
+
+LLM・プロンプトエンジニアリング基礎知識まとめ
+https://qiita.com/Jazuma/items/9de7c56fd9fa8b9c1648
+
+プロンプトエンジニアリングとは？ChatGPTで代表的な12個のプロンプトを実演！
+https://aismiley.co.jp/ai_news/what-is-prompt-engineering/
+
+# 参考サイト（awesome list系）
+
+ChatGPT のサービス・ソフトウェアがまとめられた素晴らしいリスト！「Awesome ChatGPT」
+https://kewpie13.hatenablog.com/entry/2023/04/24/085535
+
+https://github.com/eon01/awesome-chatgpt
+
+https://github.com/humanloop/awesome-chatgpt
+
+https://github.com/OpenMindClub/awesome-chatgpt
+
+https://github.com/awesome-chatgpt/awesome-chatgpt
+
+https://github.com/ai-list/awesome-chatgpt-plugins
+
+https://github.com/ouabout/chatgpt-complete-guide
 
 # 参考サイト（事例）
 
@@ -159,3 +211,6 @@ https://www.scsk.jp/sp/usize/service/azure_openai_service.html
 
 Azure OpenAI Serviceスターターパッケージ（ソフトバンク）
 https://www.softbank.jp/biz/services/platform/microsoft-azure/azure-openai-service/
+
+「Azure OpenAI Service」導入支援サービス（システムサポート）
+https://www.sts-inc.co.jp/news/20230510_01.html
