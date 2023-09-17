@@ -30,17 +30,6 @@ Guidance enables you to control modern language models more effectively and effi
 
 - 言語: Python
 
-# Open Interpreter
-
-https://github.com/KillianLucas/open-interpreter
-
-Open Interpreter lets LLMs run code (Python, Javascript, Shell, and more) locally. You can chat with Open Interpreter through a ChatGPT-like interface in your terminal by running $ interpreter after installing.
-
-`--use-azure`オプションを使用してAzure OpenAI Serviceと連携可能。
-
-Azure OpenAI Service + Open Interpreterやってみたレポート
-https://zenn.dev/happy_elements/articles/745e339b5f9d99
-
 # SlashGPT
 
 https://zenn.dev/singularity/articles/slashgpt_tutorial_1

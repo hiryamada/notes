@@ -10,7 +10,10 @@
   - (Amazon BedrockなどではLLMではなく「基盤モデル」という言い方をしている)
   - LLMとは何が違うのか？
 - [グラウンディング（接地）について](grounding.md)
+  - 記号（symbol）を現実世界に接地（ground）する（ことができない）問題
 - [RAG (Retrieval Augmented Generation 検索拡張生成)について](rag.md)
+  - ナレッジベースの外部化パターン
+  - LLM に根拠の情報 (e.g. 独自データに対する検索、Web 検索、等) に基づかせて回答を行うこと
 - [生成AIによる動画の処理(動画の説明文の生成)](youtube.md)
 
 ■OpenAI社
@@ -20,21 +23,28 @@
   - ChatGPTとはなにか？
   - Azure で ChatGPTは動くのか？
 - [GPTのようなLLMを構築するためのインフラ（スーパーコンピューター）について](infra.md)
+- [Code Interpreter](code-interpreter.md)
+  - OpenAI の ChatGPT の機能。
 
 ■マイクロソフト
 
 - [検索エンジン Microsoft Bingについて](bing.md)
-  - どんなモデルが使用されているか？
+  - GPT4のカスタマイズモデルを使用
 - [「コパイロット」について](copilot.md)
   - どんな「コパイロット」があるのか？
   - マイクロソフト製品で生成AIがどのように使われているのか？
-- [GPTの独占的ライセンスについて](license.md)
+- [GPTの独占的ライセンス契約について](license.md)
+  - （GPT-4については情報がない）
 
 ■Azure OpenAI Service
 
 - [コンテンツフィルター](content-filter.md)
+  - 禁止ワードを含む回答を出力しないようにする
 - [function calling](function-calling.md)
+  - モデルの外にある外部を呼び出す機能
 - [On your data](on-your-data.md)
+  - 外部データに対する検索が用意に。
+  - RAGパターンを素早く実装。
 
 ■一般ユーザー向けアプリケーション
 
@@ -45,3 +55,4 @@
 - [IDE/エディターからの利用](editors.md)
 - [LLMを活用するためのフレームワーク](frameworks.md)
 - [Open Interpreter](open-interpreter.md)
+  - ※ChatGPTのCode Interpreterとは別のもの。
