@@ -100,6 +100,13 @@ Microsoft Certified: ???
 参考: AIエンジニアの認定パス
 https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
+# OpenAI 最新情報
+
+
+2023/9/15 Announcing the Preview of OpenAI Whisper in Azure OpenAI service and Azure AI Speech
+https://techcommunity.microsoft.com/t5/azure-ai-services-blog/announcing-the-preview-of-openai-whisper-in-azure-openai-service/ba-p/3928388
+
+
 # 参考サイト
 
 Azure OpenAI Service 公式ドキュメント
@@ -163,6 +170,9 @@ https://qiita.com/Jazuma/items/9de7c56fd9fa8b9c1648
 
 プロンプトエンジニアリングとは？ChatGPTで代表的な12個のプロンプトを実演！
 https://aismiley.co.jp/ai_news/what-is-prompt-engineering/
+
+文章生成AI利活用ガイドライン Version 1.2 2023年 8月 東京都デジタルサービス局
+https://www.digitalservice.metro.tokyo.lg.jp/ict/pdf/ai_guideline.pdf
 
 # 参考サイト（awesome list系）
 
