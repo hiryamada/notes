@@ -1,6 +1,15 @@
-# RAG
+# RAG (Retrieval Augmented Generation)
+
+Retrieval-Augmented Generation(RAG) 検索拡張生成・取得拡張生成 など
 
 
+■IBMによる説明
+
+https://www.ibm.com/blogs/solutions/jp-ja/retrieval-augmented-generation-rag/
+
+検索により強化した文章生成
+
+RAGは、外部の知識ベースから事実を検索して、最新の正確な情報に基づいて大規模言語モデル（LLM）に回答を生成させることで、ユーザーの洞察をLLMの生成プロセスに組み込むというAIフレームワークです。
 
 ■RAG
 
