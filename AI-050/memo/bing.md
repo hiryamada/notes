@@ -41,3 +41,8 @@ https://japan.cnet.com/article/35207553/
 
 ＞現在「Microsoft Edge」でしか利用出来ない「Bing」のチャットAI機能を、Edge以外のブラウザーでも使えるようにする「Bing Chat for All Browsers」が登場した。
 
+■画像入力に対応
+
+https://forest.watch.impress.co.jp/docs/news/1517473.html
+チャットのビジュアル検索（Visual Search in Chat）はOpenAIの「GPT-4」モデルに基づいており、デバイスに保存されている画像やカメラで撮影した写真をアップロードし、Web上からそれに関連するコンテンツを検索することが可能。画像のコンテキストを「Bing」が理解・解釈し、それに関するユーザーからの質問に答えられるようになる。
+

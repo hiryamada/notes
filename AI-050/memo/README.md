@@ -6,7 +6,7 @@
   - どのようなものか？どうやって使うのか？
   - 文書のベクトル化
   - コサイン類似度
-- [「基盤モデル」(fundation models)について](foundation_models.md)
+- [「基盤モデル」(fundation models)について](foundation-models.md)
   - (Amazon BedrockなどではLLMではなく「基盤モデル」という言い方をしている)
   - LLMとは何が違うのか？
 - [グラウンディング（接地）について](grounding.md)
@@ -45,6 +45,21 @@
 - [On your data](on-your-data.md)
   - 外部データに対する検索が用意に。
   - RAGパターンを素早く実装。
+- Whisper APIの利用
+  - [2023/9 public preview](https://learn.microsoft.com/en-us/azure/ai-services/openai/whats-new#whisper-public-preview)
+  - [手順](https://learn.microsoft.com/ja-jp/azure/ai-services/openai/whisper-quickstart?tabs=command-line)
+
+■画像生成AI
+
+- [画像生成AI](graphics-ai.md)
+  - 入力されたテキストから画像を生成
+  - Stable Diffusionなど
+  - イラスト風、実写（写真）風、絵画風、アニメ風などいろいろ生成できる
+  - 一般ユーザー向けアプリ（モバイルアプリ等）もたくさんある
+
+■音楽・サウンド生成AI
+
+- [音楽・サウンド生成AI](sound-ai.md)
 
 ■一般ユーザー向けアプリケーション
 
