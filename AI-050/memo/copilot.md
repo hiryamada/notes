@@ -25,3 +25,14 @@ Edit with Copilot を使用すると、迅速かつ簡単な自然言語表現�
 https://memo.tyoshida.me/office-365/the-future-of-work-with-ai-summary/
 
 
+# Power Platformのコパイロット
+
+https://memo.tyoshida.me/power-platform/powerapps/going-beyond-prompt-engineering-with-power-platform/
+
+Power Platform の場合は大きく２つに分かれます。
+
+作成者 Copilot と ユーザー Copilot です。
+
+作成者 Copilot は、Power Apps のアプリにあたって作成を支援してくれる、Power Automate でフローを自動生成してくれるような、作成過程を支援してくれる Copilot を意味しています。
+
+ユーザー Copilot はエンドユーザーがアプリや作られたソリューションでGPTなどの生成型AIを利用するときの機能を意味しています。AI Builder のGPTモデルや、Power Apps の画面パーツとして埋め込めるようになった Copilot コンポーネントがこのユーザーCopilot に該当します。

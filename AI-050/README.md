@@ -112,6 +112,9 @@ https://techcommunity.microsoft.com/t5/azure-ai-services-blog/announcing-the-pre
 Azure OpenAI Service 公式ドキュメント
 https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview
 
+Microsoft Learn: Azure OpenAI Service を使用して生成 AI ソリューションを開発する
+https://learn.microsoft.com/ja-jp/training/paths/develop-ai-solutions-azure-openai/
+
 Japan Cognitive Services Support Blog(Azure OpenAI Serviceのよくある質問と回答などを含む)
 https://jpaiblog.github.io/blog/
 
@@ -120,6 +123,9 @@ https://www.promptingguide.ai/jp
 
 プロンプトエンジニアリングガイド英語版
 https://www.promptingguide.ai/
+
+ChatGPT - Azure OpenAI 大全
+https://speakerdeck.com/hirosatogamo/chatgpt-azure-openai-da-quan
 
 Azure OpenAI Service を利用したエンタープライズアーキテクチャのメモ
 https://qiita.com/nohanaga/items/a18009f8b605591348fe
