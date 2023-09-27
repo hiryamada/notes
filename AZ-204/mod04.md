@@ -11,6 +11,9 @@ https://docs.microsoft.com/ja-jp/azure/cosmos-db/
 
 特設ページ
 https://gotcosmos.com/
+↓
+https://developer.azurecosmosdb.com/
+
 
 ■歴史
 
@@ -55,13 +58,17 @@ NoSQLデータベース。
 
 データをグローバルに分散（レプリケーション）可能。マルチマスターの読み書きも可能。
 
-5種類のAPIをサポート。Cosmos DBアカウントを作成する際に選択する。
+6種類のAPIをサポート。Cosmos DBアカウントを作成する際に選択する。
 
-- SQL (Core) API - ネイティブのAPI. SELECT文でクエリを実行できる。
+- SQL (Core) API（英語表示では Azure Cosmos DB for NoSQL）
+  - Cosmos DBネイティブのAPI。
+  - NoSQL データベースなので基本的にはSQLではなく独自の命令を使用して読み書きを行う。
+  - クエリ（検索）については、SELECT文を使用できる。
 - Table API - ストレージアカウントのTable APIと互換
 - MongoDB API - MongoDB互換
 - Gremlin API - Apache Tinkerpop互換
 - Cassandra API - Apache Cassandra互換
+- PostgreSQL API
 
 各種言語用のクライアントライブラリ（SDK）を使用して、プログラムからデータを読み書きする。
 
@@ -146,6 +153,7 @@ https://docs.microsoft.com/ja-jp/azure/cosmos-db/consistency-levels#consistency-
 100: 10 ms
 ```
 
+<!--
 ■ハンズオン: Cosmos DBアカウントを作成しよう
 
 - Azure portalで`Cosmos DB`と検索
@@ -198,6 +206,7 @@ Cosmos DBに対する各リクエストでも、整合性レベルを指定で�
 - 左側メニューで「規定の整合性」（「設定」セクション内）をクリック
 - 5種類の整合性を選択して、画面に表示される音符のイメージを確認
 - （保存はしない）
+-->
 
 ■要求ユニット（Request Unit, RU）
 
@@ -301,8 +310,22 @@ Cosmos DBアカウント
 - /address/prefecture
 - /address/city
 
-パーティションキーの選択は、アプリケーションのパフォーマンスに影響する。
+パーティションキーの選択は、アプリケーションのスケーラビリティに影響する場合がある。
 
+パーティションキーの要件:
+
+- 値が変更されないこと
+- Stringであること
+- 高いカーディナリティがあること（値の種類がなるべく分散していること）
+  - 性別: 男性/女性
+  - 都道府県: 北海道～沖縄県 47種類
+  - 性別と都道府県では、都道府県のほうがカーディナリティが高いプロパティである
+
+詳しくは以下を参照。
+[Azure Cosmos DB でのパーティション分割と水平スケーリング](https://learn.microsoft.com/ja-jp/azure/cosmos-db/partitioning-overview)
+
+
+<!--
 ■項目ID
 
 論理パーティションの中で項目を区別する値。
@@ -336,6 +359,7 @@ https://docs.microsoft.com/ja-jp/learn/paths/work-with-nosql-data-in-azure-cosmo
 
 Azure Cosmos DB Workshop
 https://azurecosmosdb.github.io/labs/
+-->
 
 <!--
 ■ラボ4: Cosmos DBをC#コードから操作してみよう
