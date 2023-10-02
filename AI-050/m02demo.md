@@ -53,4 +53,4 @@
 - コード生成
   - Chatで、「C#のint型配列をクイックソートするプログラムを書いてください。」などと指示する。
   - ※現在Codexのモデル（code-davinci-002など）はレガシモデルとなっていてデプロイできない。
-  - 代替モデルとして gpt-3.5-turbo-instruct が追加される予定。https://zenn.dev/microsoft/articles/b050574ad7dfe2
+  - 代替モデルとして gpt-3.5-turbo-instruct が追加された。https://zenn.dev/microsoft/articles/b050574ad7dfe2

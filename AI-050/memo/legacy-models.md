@@ -24,7 +24,8 @@ https://texal.jp/2023/09/20/openai-releases-gpt-3-5-turbo-instruct/
 OpenAIが新しい言語モデル「gpt-3.5-turbo-instruct」を静かに公開したようだ。
 
 
-2023/9現在はAzure OpenAI Serviceではまだこのモデルは提供されていない。
+2023/10現在、Azure OpenAI Serviceでもこのモデルが使用可能となっている。
+![Alt text](image.png)
 
 ## GPT-3.5-Turbo-Instruct
 
