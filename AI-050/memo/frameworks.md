@@ -36,7 +36,10 @@ https://zenn.dev/singularity/articles/slashgpt_tutorial_1
 
 https://github.com/snakajima/SlashGPT/
 
-SlashGPT は中島聡が開発した ChatGPT などの LLMエージェントを手軽に開発するためのツールです。SlashGPT を使えば、json ファイルを記述するだけで ChatGPT を使ったvLLMエージェントやチャットアプリを手軽に、簡単につくることができます。
+SlashGPT は中島聡が開発した ChatGPT などの LLMエージェントを手軽に開発するためのツールです。SlashGPT を使えば、json ファイルを記述するだけで ChatGPT を使ったLLMエージェントやチャットアプリを手軽に、簡単につくることができます。
 
 出来上がった json ファイル（これからはマニフェストと呼びます）は、簡単に共有することができます。マニフェストファイルは他の人と共有する他、 SlashGPT をライブラリとして利用する場合にエージェントの設定としてそのまま使うことが可能です。
 
+# LlamaIndex
+
+https://www.llamaindex.ai/
