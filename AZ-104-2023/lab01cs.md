@@ -1,6 +1,6 @@
-# ラボ 01 - Azure Active Directory ID を管理する
+# ラボ 01 - Microsoft Entra ID (Azure Active Directory) を管理する
 
-Azure ADのテナントを作成し、ユーザー・グループを作成します。
+テナントを作成し、ユーザー・グループを作成します。
 
 ## 動画
 
@@ -29,7 +29,7 @@ https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructi
 - タスク1
   - ユーザーを作成
 - タスク2
-  - Azure AD Premium P2ライセンスを有効化
+  - Entra ID Premium P2ライセンスを有効化
   - グループを作成
 - タスク3
   - 演習用の新しいテナント(Contoso Lab)を作成
