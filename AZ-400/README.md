@@ -45,6 +45,7 @@ https://docs.microsoft.com/ja-jp/certifications/exams/az-400
 - [AZ-400の全ラーニングパス・モジュール・ユニットの一覧](index-az-400-ja-jp.md)
 - [AZ-400 学習内容の振り返り](summary.md)
 - [AZ-400 試験対策](exam.md)
+- [PDF資料: 試験対策（模擬問題と解説）](pdf/試験対策.pdf)
 - [クロージング](../closing.md)
 - アンケート（トレーニングが終わる際に、入力方法をご案内しますので、それまでお待ち下さい）
 
