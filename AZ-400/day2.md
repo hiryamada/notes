@@ -13,6 +13,7 @@
 - Azure Pipelines
   - 講義: [Azure Pipelines](mod05-02-azure-pipeline.md)
   - ハンズオン:[基本的なパイプライン](mod06-hands-on-basic-azure-pipeline.md)
+  - PDF資料: [Azure App Service](../AZ-104-2023/pdf/Azure%20App%20Service.pdf)
   - ハンズオン:[基本的なWebアプリのデプロイ](mod06-hands-on-web-app-deploy.md)
   - 参考資料: [Azure Pipelines (YAMLパイプライン)の入門資料集](yaml-intro.md)
   - PDF資料: [基本的なWebアプリのデプロイ](pdf/Azure%20Pipelines%20web%20app%20deploy.pdf)

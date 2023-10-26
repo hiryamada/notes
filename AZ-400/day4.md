@@ -12,6 +12,7 @@
 ■コンテナー型仮想化
 
 - 講義: [サーバー仮想化 vs コンテナー型](../computing/virtualization.md)
+- PDF資料: [ACI,AKS,コンテナーを利用した開発](../AZ-104-2023/pdf/コンテナーのサービス.pdf)
 - 講義: [Docker](mod15.md)
 - 講義: [Kubernetes](mod16.md)
 - [Azure DevOpsとKubernetes](../seminar/ado-aks.pdf)
