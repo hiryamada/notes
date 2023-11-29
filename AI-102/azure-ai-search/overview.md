@@ -136,7 +136,7 @@ https://learn.microsoft.com/ja-jp/azure/search/search-faceted-navigation
 
 Azure AI Searchは「ファセットナビゲーション」をサポートしている。
 
-![Alt text](image-4.png)
+![Alt text](../image-4.png)
 
 例: 価格.com の パソコンの検索 https://kakaku.com/pc/
 
