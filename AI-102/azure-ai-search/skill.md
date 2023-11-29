@@ -19,6 +19,13 @@ AIエンリッチメントを実行するしくみ。
 - カスタムスキル
   - 外部でホストされるスキル。
   - https://learn.microsoft.com/ja-jp/azure/search/cognitive-search-custom-skill-interface
+- ユーティリティスキル
+  - Azure AI Search の内部にあるスキル
+  - 外部リソースや送信接続に依存しない
+  - ほとんどのユーティリティスキルは課金対象外
+  - 例(2023/11に追加された最新のユーティリティスキル):
+    - [Azure OpenAI 埋め込みスキル (プレビュー)](https://learn.microsoft.com/ja-jp/azure/search/cognitive-search-skill-azure-openai-embedding)
+    - [テキスト分割スキル (プレビュー)](https://learn.microsoft.com/ja-jp/azure/search/cognitive-search-skill-textsplit)
 
 ■Azure AI Search Power Skills
 
