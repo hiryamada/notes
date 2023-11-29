@@ -29,11 +29,11 @@ Azure AI Searchは、検索インデックスに対して検索処理を実行�
 
 ```
 ユーザー
-↓検索
+↓キーワード検索
 Azure AI Search
 └検索インデックス search index
     ↑ インデックス作成 ↓ 検索結果から移動(キー: Blobのパスなど)
-   大量のドキュメント（PDFなど）
+   データソース: Azure Blob Storageに配置された大量のPDFなど
 ```
 
 インデックスのサイズが小さいほうが、検索パフォーマンスが良くなる。
@@ -78,7 +78,7 @@ https://learn.microsoft.com/ja-jp/azure/search/search-data-sources-gallery#data-
 - Twitter
 - Slack
 
-■フルテキスト検索（全文検索）とは？
+■フルテキスト検索（全文検索）
 
 https://www.sophia-it.com/content/%E5%85%A8%E6%96%87%E6%A4%9C%E7%B4%A2
 
@@ -100,6 +100,8 @@ https://learn.microsoft.com/ja-jp/azure/search/query-simple-syntax
 https://learn.microsoft.com/ja-jp/azure/search/query-lucene-syntax
 
 ■フィルタリング（$filter クエリ）
+
+フィルタリングを使用すると、検索結果から、条件に一致しないものを除外できる。
 
 Azure AI Search では、「OData言語」を使ったフィルタリングをサポートしている。
 
@@ -127,6 +129,7 @@ $filter=Rooms/any(room: room/BaseRate lt 200.0) and Rating ge 4
 その他の例:
 https://learn.microsoft.com/ja-jp/azure/search/search-query-odata-filter#examples
 
+
 ■ファセット ナビゲーション
 
 https://learn.microsoft.com/ja-jp/azure/search/search-faceted-navigation
@@ -147,8 +150,6 @@ https://accessible-usable.net/2020/07/entry_200727.html
 ＞たとえばオンラインショッピングの商品検索で、膨大な検索結果をさまざまな側面 (価格帯、メーカー名やブランド名、商品種別、などの切り口) から絞り込むことができる機能です。
 
 ＞ファセット (facet) とはもともと宝石のカット面という意味ですが、そこから派生して、物事の側面や切り口を意味するようにもなっています。なお英語圏では、faceted navigation と同義で guided navigation と呼ばれることもあります。
-
-
 
 ■フィールド属性
 
@@ -212,4 +213,3 @@ https://learn.microsoft.com/ja-jp/azure/search/cognitive-search-concept-intro
 検索インデックス
 ```
 
-■
