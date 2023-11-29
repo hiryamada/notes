@@ -44,16 +44,11 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 ■2日目
 
-テーマ: Azure Cognitive Servicesに含まれる言語と音声のサービスを理解する。
+テーマ(1): Azure Cognitive Servicesに含まれる言語と音声のサービスを理解する。
 - Azure Cognitive Services ＞ 言語(Language API) ＞ 翻訳
   - [ラーニングパス03 Azure Cognitive Services を使用してテキストを処理して翻訳する](lp03.md)
 - Azure Cognitive Services ＞ 音声(Speech API)
   - [ラーニングパス04 Azure Cognitive Speech Services を使用し、音声を処理して翻訳する](lp04.md)
-
-■3日目
-
-テーマ(1): Azure Cognitive Servicesの言語のサービスを理解する。
-
 - Azure Cognitive Services ＞ 言語(Language API) ＞ 会話言語理解（CLU）
   - [ラーニングパス05 Azure Cognitive Services を使用して会話言語理解ソリューションを作成する](lp05.md)
 - Azure Cognitive Services ＞ 言語(Language API) ＞ 質問応答
@@ -66,22 +61,37 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 - Azure Bot Service
   - [ラーニングパス08 会話 AI ソリューションを作成する](lp08.md)
 
-■4日目
+■3日目
 
-テーマ(1): Azure Cognitive Servicesに含まれる画像処理のサービスの利用方法を理解する。
+テーマ(1): Azure Cognitive Servicesに含まれる画像/動画のサービスの利用方法を理解する。
 
 - Azure Cognitive Services ＞ 画像(Vision API)
   - [ラーニングパス09 Azure Cognitive Services でコンピューター ビジョン ソリューションを作成する](lp09.md)
 - Azure Cognitive Services ＞ 画像(Vision API) ＞ 光学式文字認識(OCR)
   - [ラーニングパス10 画像およびドキュメントからテキストを抽出する](lp10.md)
+- [Azure AI Video Indexer](azure-ai-video-indexer.md)
 
 テーマ(2): ドキュメント（PDFなど）に対する検索を行うサービスの利用方法を理解する。
 
 - Azure Cognitive Search
   - [ラーニングパス11 Azure Cognitive Search でのナレッジ マイニングの実装](lp11.md)
 
-※おまけ（AI-102範囲外、時間があれば解説）
-- [Microsoft Security Copilot](../microsoft-security-copilot/microsoft-security-copilot.md) (セキュリティ専門家を支援するAIアシスタント, 2023/3/28～)
+テーマ(3): その他のAzure AIサービスについて概要を理解する
+
+- [Azure AI Content Moderator / Azure AI Content Safety](azure-ai-content-moderator.md)
+- [Azure AI Personalizer](azure-ai-personalizer.md)
+- [Azure AI Document Intelligence](azure-ai-document-intelligence.md)
+- [Azure AI Immersive Reader](azure-ai-immersive-reader.md)
+
+■4日目
+
+- コース AI-050と同じ内容です。
+- 4日目のラボはありません。
+
+テーマ: Azure OpenAI Service（生成AI）について理解する
+
+- Azure OpenAI Service
+  - [AI-050](../AI-050-2024/README.md)
 
 ■クロージング
 
@@ -89,6 +99,12 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 - [AI-102 試験対策](exam.md)
 - [クロージング(終了時のご案内)](../closing-cloudslice.md)
 - アンケート
+
+<!--
+※おまけ（AI-102範囲外、時間があれば解説）
+- [Microsoft Security Copilot](../microsoft-security-copilot/microsoft-security-copilot.md) (セキュリティ専門家を支援するAIアシスタント, 2023/3/28～)
+-->
+
 
 <!--
 # ラボ

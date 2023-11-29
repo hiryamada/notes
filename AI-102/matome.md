@@ -38,6 +38,7 @@
 - [コンテナーでの運用](https://learn.microsoft.com/ja-jp/azure/cognitive-services/cognitive-services-container-support)
   - [Azure Container Instance](https://learn.microsoft.com/ja-jp/azure/container-instances/container-instances-overview)
 
+<!--
 ■.NET / C#
 
 - [.NET](https://learn.microsoft.com/ja-jp/dotnet/azure/intro)
@@ -47,6 +48,8 @@
   - [コンソールアプリ起動時の引数](https://learn.microsoft.com/ja-jp/dotnet/core/extensions/configuration-providers#command-line-configuration-provider)
   - [設定ファイル appsettings.json](https://learn.microsoft.com/ja-jp/dotnet/core/extensions/configuration-providers#file-configuration-provider)
 - [NuGetパッケージ](https://learn.microsoft.com/ja-jp/nuget/what-is-nuget)
+
+-->
 
 ■Azure の AI サービス
 
