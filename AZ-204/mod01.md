@@ -20,6 +20,8 @@ AzureのPaaSサービスの一つ。([PaaSの説明](https://azure.microsoft.com
 
 Azure上で、HTTPベースのアプリケーション（WebアプリやWeb API）を稼働させることができる。
 
+★[PDF資料: App Service（概要、プラン・アプリ、スロット）](../AZ-104-2023/pdf/Azure%20App%20Service.pdf)
+
 主な特徴:
 
 - VM（仮想マシン）の管理や、OSの管理（アップデート）、.NETやJavaなどの言語ランタイムの管理（インストールやアップデート）が不要。
