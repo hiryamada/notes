@@ -1,4 +1,4 @@
-# ラボ 02: Azure Storage SDK for .NET を使用して Azure Storage リソースとメタデータを取得する
+# ラボ 03: Azure Storage SDK for .NET を使用して Azure Storage リソースとメタデータを取得する
 
 
 ## ラボ環境の利用方法

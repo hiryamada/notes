@@ -2,6 +2,7 @@
 
 https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blobs-introduction
 
+[★ストレージアカウント解説PDF](../AZ-104-2023/pdf/ストレージアカウント.pdf)
 
 - オブジェクトストレージ
 - 「非構造化データ」の格納に最適化
