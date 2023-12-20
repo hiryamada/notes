@@ -5,6 +5,8 @@
   - [VM](mod05-01-vm.md)
   - [ARMテンプレート](mod05-02-arm.md)
     - [参考: Bicep](../AZ-400/mod14-handson-bicep.md)
+
+  - [Azure DevOps + AKSの構築例](../AZ-400/pdf/Azure%20DevOps%20and%20AKS.pdf)
 -->
 
 - ラーニングパス 5: コンテナー化されたソリューションの実装(ACR, ACI, ACA)
@@ -13,8 +15,7 @@
   - デモ: [コンソールアプリのコンテナー化、ACRビルド、ACIでの実行](container-demo.md)
   <!--[ハンズオン](../handson/az-204.md)-->
   - ★ご参考: [コンテナーサービスの比較](../AZ-204/pdf/mod05/コンテナー比較.pdf)
-  - ★ご参考: Azure Kubernetes Service
-  - [Azure DevOps + AKSの構築例](../AZ-400/pdf/Azure%20DevOps%20and%20AKS.pdf)
+  - [Azure Container Apps](../AZ-305/container-apps.md)
   - [ラボ5](lab05cs.md)
 - ラーニングパス 6: Microsoft ID Platform, Microsoft Graph
   - ご参考: [Azure AD入門](../AzureAD/Azure%20AD%E5%85%A5%E9%96%80.pdf)

@@ -2,6 +2,8 @@
 
 Azure で最も高速かつ簡単にコンテナーを実行する方法を提供。
 
+[★PDF解説資料](../AZ-104-2023/pdf/コンテナーのサービス.pdf)
+
 https://docs.microsoft.com/ja-jp/azure/container-instances/container-instances-overview
 
 2018/4/25 一般提供開始 
