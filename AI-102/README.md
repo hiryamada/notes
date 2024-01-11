@@ -6,7 +6,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
 
 4日間
 
-Azure Cognitive Services、Azure Cognitive Search、および Microsoft Bot Framework を利用して、AIを組み込んだアプリケーションを構築したいソフトウェア開発者を対象としています。
+Azure AI Services、Azure AI Search、および Microsoft Bot Framework を利用して、AIを組み込んだアプリケーションを構築したいソフトウェア開発者を対象としています。
 
 <!--
 > ※AI-100:
@@ -39,21 +39,21 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 - AzureのAI/Machine Learningサービスの概要
   - [ラーニングパス01 AI エンジニアリングへの準備](lp01.md)
   - [ラーニングパス12 Azure OpenAI Service](lp12.md)
-- Azure Cognitive Services の基礎知識
-  - [ラーニングパス02 Azure Cognitive Services のプロビジョニングと管理](lp02.md)
+- Azure AI Services の基礎知識
+  - [ラーニングパス02 Azure AI Services のプロビジョニングと管理](lp02.md)
 
 ■2日目
 
-テーマ(1): Azure Cognitive Servicesに含まれる言語と音声のサービスを理解する。
-- Azure Cognitive Services ＞ 言語(Language API) ＞ 翻訳
-  - [ラーニングパス03 Azure Cognitive Services を使用してテキストを処理して翻訳する](lp03.md)
-- Azure Cognitive Services ＞ 音声(Speech API)
-  - [ラーニングパス04 Azure Cognitive Speech Services を使用し、音声を処理して翻訳する](lp04.md)
-- Azure Cognitive Services ＞ 言語(Language API) ＞ 会話言語理解（CLU）
-  - [ラーニングパス05 Azure Cognitive Services を使用して会話言語理解ソリューションを作成する](lp05.md)
-- Azure Cognitive Services ＞ 言語(Language API) ＞ 質問応答
+テーマ(1): Azure AI Servicesに含まれる言語と音声のサービスを理解する。
+- Azure AI Services ＞ 言語(Language API) ＞ 翻訳
+  - [ラーニングパス03 Azure AI Services を使用してテキストを処理して翻訳する](lp03.md)
+- Azure AI Services ＞ 音声(Speech API)
+  - [ラーニングパス04 Azure AI Speech Services を使用し、音声を処理して翻訳する](lp04.md)
+- Azure AI Services ＞ 言語(Language API) ＞ 会話言語理解（CLU）
+  - [ラーニングパス05 Azure AI Services を使用して会話言語理解ソリューションを作成する](lp05.md)
+- Azure AI Services ＞ 言語(Language API) ＞ 質問応答
   - [ラーニングパス06 質問応答ソリューションを構築する](lp06.md)
-- Azure Cognitive Services ＞ 言語(Language API) > カスタム テキスト分類
+- Azure AI Services ＞ 言語(Language API) > カスタム テキスト分類
   - [ラーニングパス07 カスタム テキスト分析ソリューションを構築する](lp07.md)
 
 テーマ(2): Azureのチャットボットのサービス、チャットボットの作成方法を理解する。
@@ -63,18 +63,20 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 ■3日目
 
-テーマ(1): Azure Cognitive Servicesに含まれる画像/動画のサービスの利用方法を理解する。
+テーマ(1): Azure AI Servicesに含まれる画像/動画のサービスの利用方法を理解する。
 
-- Azure Cognitive Services ＞ 画像(Vision API)
-  - [ラーニングパス09 Azure Cognitive Services でコンピューター ビジョン ソリューションを作成する](lp09.md)
-- Azure Cognitive Services ＞ 画像(Vision API) ＞ 光学式文字認識(OCR)
+- Azure AI Services ＞ 画像(Vision API)
+  - [ラーニングパス09 Azure AI Services でコンピューター ビジョン ソリューションを作成する](lp09.md)
+- Azure AI Services ＞ 画像(Vision API) ＞ 光学式文字認識(OCR)
   - [ラーニングパス10 画像およびドキュメントからテキストを抽出する](lp10.md)
 - [Azure AI Video Indexer](azure-ai-video-indexer.md)
 
+■4日目
+
 テーマ(2): ドキュメント（PDFなど）に対する検索を行うサービスの利用方法を理解する。
 
-- Azure Cognitive Search
-  - [ラーニングパス11 Azure Cognitive Search でのナレッジ マイニングの実装](lp11.md)
+- Azure AI Search
+  - [ラーニングパス11 Azure AI Search でのナレッジ マイニングの実装](lp11.md)
 
 テーマ(3): その他のAzure AIサービスについて概要を理解する
 
@@ -83,8 +85,7 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 - [Azure AI Document Intelligence](azure-ai-document-intelligence.md)
 - [Azure AI Immersive Reader](azure-ai-immersive-reader.md)
 
-■4日目
-
+<!--
 - コース AI-050と同じ内容です。
 - 4日目のラボはありません。
 
@@ -92,6 +93,7 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 - Azure OpenAI Service
   - [AI-050](../AI-050-2024/README.md)
+-->
 
 ■クロージング
 
@@ -122,7 +124,7 @@ https://github.com/MicrosoftLearning/AI-102-AIEngineer/archive/refs/heads/master
 
 ■ ラボの概要
 
-- ラボ01 Cognitive Servicesを使用する(言語の検出)
+- ラボ01 AI Servicesを使用する(言語の検出)
 - ラボ02 セキュリティ
 - ラボ03 モニタリング
 - ラボ04 コンテナー
