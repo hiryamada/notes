@@ -78,10 +78,12 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 - Azure AI Search
   - [ラーニングパス11 Azure AI Search でのナレッジ マイニングの実装](lp11.md)
 
+おまけ: [Azure OpenAI Serviceの「on your data」（内部でAzure AI Searchを使用）](../AI-050-2024/pdf/AI-050-mod6-onyourdata.pdf)
+
 テーマ(3): その他のAzure AIサービスについて概要を理解する
 
 - [Azure AI Content Moderator / Azure AI Content Safety](azure-ai-content-moderator.md)
-- [Azure AI Personalizer](azure-ai-personalizer.md)
+- [Azure AI Personalizer(※廃止予定)](azure-ai-personalizer.md)
 - [Azure AI Document Intelligence](azure-ai-document-intelligence.md)
 - [Azure AI Immersive Reader](azure-ai-immersive-reader.md)
 
