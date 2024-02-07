@@ -14,3 +14,6 @@ https://learn.microsoft.com/ja-jp/training/paths/develop-ai-solutions-azure-open
 - [モジュール 5: Azure OpenAI Service を使用して画像を生成する](pdf/AI-050-mod5-dalle.pdf)
 - [モジュール 6: Azure OpenAI Service で独自のデータを使用する](pdf/AI-050-mod6-onyourdata.pdf)
 
+## 終了時のご案内
+
+- [クロージング](pdf/AI-050-mod9-closing.pdf)
