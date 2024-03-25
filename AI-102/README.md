@@ -73,29 +73,24 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 ■4日目
 
-テーマ(2): ドキュメント（PDFなど）に対する検索を行うサービスの利用方法を理解する。
+テーマ(1): ドキュメント（PDFなど）に対する検索を行うサービスの利用方法を理解する。
 
 - Azure AI Search
   - [ラーニングパス11 Azure AI Search でのナレッジ マイニングの実装](lp11.md)
 
 おまけ: [Azure OpenAI Serviceの「on your data」（内部でAzure AI Searchを使用）](../AI-050-2024/pdf/AI-050-mod6-onyourdata.pdf)
 
-テーマ(3): その他のAzure AIサービスについて概要を理解する
+テーマ(2): その他のAzure AIサービスについて概要を理解する
 
 - [Azure AI Content Moderator / Azure AI Content Safety](azure-ai-content-moderator.md)
 - [Azure AI Personalizer(※廃止予定)](azure-ai-personalizer.md)
 - [Azure AI Document Intelligence](azure-ai-document-intelligence.md)
 - [Azure AI Immersive Reader](azure-ai-immersive-reader.md)
 
-<!--
-- コース AI-050と同じ内容です。
-- 4日目のラボはありません。
-
-テーマ: Azure OpenAI Service（生成AI）について理解する
+テーマ(3): Azure OpenAI Service（生成AI）について理解する（コース AI-050と同じ内容です）
 
 - Azure OpenAI Service
   - [AI-050](../AI-050-2024/README.md)
--->
 
 ■クロージング
 
