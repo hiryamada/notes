@@ -1,11 +1,11 @@
-# Azure AD Identity Protection
+# Entra ID Identity Protection
 
 ID（アカウント）に関する「リスク」を自動的に検出して対応する。
 
 ドキュメント
 https://docs.microsoft.com/ja-jp/azure/active-directory/identity-protection/overview-identity-protection
 
-Azure ADサポートチームによる解説ブログ
+Entra IDサポートチームによる解説ブログ
 https://jpazureid.github.io/blog/azure-active-directory/identity-protection-riskpolicy-introduction/
 
 > Identity Protection は Microsoft が持つ脅威の検出ソリューションの一つ
@@ -14,7 +14,7 @@ https://jpazureid.github.io/blog/azure-active-directory/identity-protection-risk
 
 ■Identity Protection （ID保護）とは？
 
-Azure portal＞Azure AD＞セキュリティ＞Identity Protection
+Azure portal＞Entra ID＞セキュリティ＞Identity Protection
 
 ![](images/ss-2022-09-26-00-17-39.png)
 
@@ -57,7 +57,7 @@ ID ベースのリスクの検出。以下のような「リスクのある」�
 - セキュリティ情報とイベント管理 (SIEM) ツールに送り戻して、組織の適用するポリシーに基づく詳細な調査を行う
 - 例: Identity Protection からMicrosoft Sentinelへのデータ接続
 https://docs.microsoft.com/ja-jp/azure/sentinel/connect-azure-ad-identity-protection
-  - Azure AD Identity Protection から Azure Sentinel にログをストリーミングし、Azure Sentinel にストリーミングしたアラームのダッシュボードに表示し、カスタム アラームを作成し、調査を改善できます。
+  - Entra ID Identity Protection から Microsoft Sentinel にログをストリーミングし、Microsoft Sentinel にストリーミングしたアラームのダッシュボードに表示し、カスタム アラームを作成し、調査を改善できます。
   - PDF資料: [Microsoft Sentinelまとめ](../pdf/mod4/Microsoft%20Sentinel%20まとめ.pdf)
 
 ■通知
@@ -107,14 +107,14 @@ https://jpazureid.github.io/blog/azure-active-directory/identity-protection-risk
 ユーザー リスク ポリシー:
 
 - リアルタイムの情報に加えて、「オフライン」のリスクと呼ばれるリスク情報を利用して、ユーザー アカウント単位でリスクを判定したうえで「ユーザー リスク ポリシー」の定義の制御を行います。
-- 例えば Azure AD テナントに登録されているアプリケーションにサインインした後に、何らかの理由で該当ユーザーの ID とパスワードがダークウェブ上に流出したとします。
+- 例えば Entra ID テナントに登録されているアプリケーションにサインインした後に、何らかの理由で該当ユーザーの ID とパスワードがダークウェブ上に流出したとします。
 - Identity Protection は、ダークウェブ上の資格情報を監視しており、当該ユーザーのパスワードがダークウェブ上でやり取りされていることを確認すると、オフライン リスクである「漏洩した資格情報」を検出します。
 - Identity Protection はこの一連のオペレーションを自動的に行います。
 - ユーザー リスク ポリシーの制御方法としてはユーザー リスクを検知した際に対象のユーザーのアクセスを「ブロック」するか「パスワードの変更」を要求させることが可能です。
 
 ■実際にIdentity Protectionの機能をシミュレーションしてみるには
 
-https://learn.microsoft.com/ja-jp/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk
+https://learn.microsoft.com/ja-jp/entra/id-protection/howto-identity-protection-simulate-risk
 
 このドキュメントに、リスクをシミュレーションするための方法が記載されている。
 
@@ -124,7 +124,7 @@ https://learn.microsoft.com/ja-jp/azure/active-directory/identity-protection/how
 
 https://learn.microsoft.com/ja-jp/azure/active-directory/identity-protection/howto-export-risk-data
 
-Azure ADの「診断設定」を使用して、Log Analyticsやストレージアカウントに、リスクデータをエクスポートすることができる。
+Entra IDの「診断設定」を使用して、Log Analyticsやストレージアカウントに、リスクデータをエクスポートすることもできる。
 
 ![](images/ss-2022-09-26-10-18-40.png)
 
@@ -132,18 +132,14 @@ Azure ADの「診断設定」を使用して、Log Analyticsやストレージ�
 
 https://learn.microsoft.com/ja-jp/graph/api/resources/identityprotection-overview
 
-Microsoft Graph APIを使用して、Identity Protectionのデータを取得することができる。
+Microsoft Graph APIを使用して、Identity Protectionのデータを取得することもできる。
 
 https://learn.microsoft.com/ja-jp/graph/azuread-identity-access-management-concept-overview
 
-> Microsoft Graph では、Azure AD Premium P2 のお客様が Identity Protection によって検出されたリスク イベントのクエリを行って、リスク イベントの種類、重大度、発生した日時、場所、影響を受けたユーザーなどの情報を簡単に取得できるようになっています。
+> Microsoft Graph では、Entra ID Premium P2 のお客様が Identity Protection によって検出されたリスク イベントのクエリを行って、リスク イベントの種類、重大度、発生した日時、場所、影響を受けたユーザーなどの情報を簡単に取得できるようになっています。
 
 ■ご参考: JBS様のマネージド型サービス
 
 https://www.jbs.co.jp/solution/list/managedsecurity_idp
 
-> Azure Active Directory Identity Protection は、攻撃の糸口である ID に対してセキュリティ強化を実現します。JBS がお客さまにかわり本製品の運用を行い、お客さま資産のセキュリティ強化と被害の低減をサポートします。
-
-サービス仕様書
-
-https://www.jbs.co.jp/-/media/Files/jbs/PDF/solution/JBS_managedsecurity_idp/JBS_managedsecurity_idp-ServiceSpecification.pdf?la=ja-JP&hash=C40D7F56A14D4AED866DA1FD381C89096B15E9EC
+> Identity Protection は、攻撃の糸口である ID に対してセキュリティ強化を実現します。JBS がお客さまにかわり本製品の運用を行い、お客さま資産のセキュリティ強化と被害の低減をサポートします。

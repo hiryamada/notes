@@ -3,7 +3,7 @@
 ■ハイブリッドIDとは？
 
 - 共通のIDで、オンプレミスとクラウドの両方にアクセスできるしくみ。
-- Azure AD Connectを使用して実現できる。
+- Entra ID Connectを使用して実現できる。
 - Freeでも利用可能。
   - テナントで扱うオブジェクト数が500000を超える場合は、P1/P2を有効化したテナントが必要
   - パスワードライトバックはユーザーごとにP1が必要
@@ -15,45 +15,45 @@
 ├Windows Server
 │ └AD DS機能を有効化, ユーザーIDを管理
 └Windows Server
-  └Azure AD Connect
+  └Entra ID Connect
     ↓ 同期
-Azure AD
+Entra IDテナント
 ```
 
-■Azure AD Connect
+■Entra ID Connect
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect
 
-- オンプレミスAD DSとAzure ADを同期するソフトウェア。
+- オンプレミスAD DSとEntra IDを同期するソフトウェア。
 - 無料
-- 以前DirSync や Azure AD Syncと呼ばれていたツールの後継
+- 以前DirSync や Entra ID Sync、Entra ID Connectと呼ばれていたツールの後継
 - Windowsアプリケーション
 - オンプレミスのWindows Server 2012,2012 R2, 2016, 2019 にインストールする
   - [インストール要件の詳細](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites#installation-prerequisites)
   - Windows Server 2022はまだサポートされていない
   - GUI操作が必要なため、Windows Server Coreは不可
 - ドメインコントローラに同居させることもできる
-- 複数のAzure AD Connectをデプロイして、可用性を向上させることもできる
+- 複数のEntra ID Connectをデプロイして、可用性を向上させることもできる
 
 ダウンロード:
 https://www.microsoft.com/en-us/download/details.aspx?id=47594
 
-またはAzure portal＞Azure AD＞Azure AD Connectから:
+またはAzure portal＞Entra ID＞Entra iD Connectから:
 ![](images/ss-2022-09-26-12-42-08.png)
 
 ■同期
 
-Azure AD Connectを使用して、オンプレミス側のID情報をAzure ADへ伝達すること。
+Entra ID Connectを使用して、オンプレミス側のID情報をEntra IDへ伝達すること。
 
-**同期は、常に、オンプレミスAD DS → Azure AD の方向で行われる**。
+**同期は、常に、オンプレミスAD DS → Entra ID の方向で行われる**。
 
-Azure ADに登録されたID情報が、オンプレミスAD DSに反映されることは**ない**。
+Entra IDに登録されたID情報が、オンプレミスAD DSに反映されることは**ない**。
 
 ※パスワード ライトバックは例外。
 
 ■パスワード ライトバック
 
-「[パスワードライトバック](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/tutorial-enable-sspr-writeback)」を設定すると、Azure AD側のパスワード変更を行った際、オンプレミスAD DS側に反映させることができる。
+「[パスワードライトバック](https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/tutorial-enable-sspr-writeback)」を設定すると、Entra ID側のパスワード変更を行った際、オンプレミスAD DS側に反映させることができる。
 
 使用するユーザーごとにP1またはP2ライセンスが必要。
 
@@ -64,7 +64,7 @@ https://jpazureid.github.io/blog/azure-active-directory-connect/password-writeba
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-hybrid-identity
 
-Azure AD Connectのインストール中に、認証方式を選択する。
+Entra ID Connectのインストール中に、認証方式を選択する。
 
 - パスワードハッシュ同期(Passsword Hash Sync: PHS)
   - Azure 側に、パスワードのハッシュ値を保存する方式。
@@ -82,7 +82,7 @@ ID連携の仕組み。オンプレミスでAD DSと「AD FS」（またはPingF
 参考:
 https://www.atmarkit.co.jp/fwin2k/operation/adfs2sso03/adfs2sso03_01.html
 
-注意: この記事は2010/9のものであり、Azure ADの正式リリース（2013/4）以前の状況についての解説であることに注意。
+注意: この記事は2010/9のものであり、Entra IDの正式リリース（2013/4）以前の状況についての解説であることに注意。
 
 ![](images/ss-2022-09-26-12-45-34.png)
 
@@ -99,7 +99,7 @@ https://www.ntt.com/business/services/application/authentication/idf/pingfederat
 
 - シングルサインオン製品
 - オンプレミスのAD DSと連携できる
-- Azure AD Connect でサポートされている。
+- Entra ID Connect でサポートされている。
 
 ■選択の目安
 
@@ -125,13 +125,13 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-phs
 
 ハッシュ値からパスワードを逆算することはできない.
 
-Azure側には、生パスワードではなく、ハッシュ値が保存される。
+Entra ID側には、生パスワードではなく、ハッシュ値が保存される。
 
 ■認証方式2: パススルー同期 (Pass-through authentication, PTA)
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-pta
 
-- Azure ADに送信されたパスワードを、オンプレミスAD DSに送信して検証
+- Entra IDに送信されたパスワードを、オンプレミスAD DSに送信して検証
 - オンプレミスのインフラストラクチャに障害が発生した場合に、パスワード ハッシュ同期へフェイルオーバー（切り替え）することもできる
   - 自動でフェイルオーバーはしない。手動で切り替えが必要
 
@@ -139,7 +139,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-pt
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-fed
 
-- オンプレミスの「AD FS」や「PingFederate」とAzure ADでフェデレーションを構成
+- オンプレミスの「AD FS」や「PingFederate」とEntra IDでフェデレーションを構成
 - オンプレミスの「AD FS」や「PingFederate」に、認証プロセスを引き継ぐ仕組み
 - オンプレのサードパーティMFAソリューションを使う場合や、スマートカード認証をサポートするなど、高度な機能を利用できる
 - AD FSで障害が発生した場合に備えて、PHSを組み合わせることができる
@@ -153,7 +153,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/how-to-connect-ss
 - Windows 10 + Microsoft Edge 等、さまざまなOS・ブラウザーの組み合わせをサポート
 - パスワードハッシュ同期(PHS) または パススルー同期(PTA)と組み合わせて利用できる
 - フェデレーション統合には適用できないが、フェデレーション統合ではAD FSサーバーによるSSOを利用できる
-- Azure AD Connectインストール中に、「Enable Single Sign On」にチェックを入れて有効化する。
+- Entra ID Connectインストール中に、「Enable Single Sign On」にチェックを入れて有効化する。
 
 ![](images/ss-2022-09-26-12-53-58.png)
 
@@ -163,20 +163,20 @@ SSO（sSSO）の利用パターン:
 - PTA + sSSO
 - フェデレーション + AD FSのSSO
 
-■Azure AD Connect Health
+■Entra ID Connect Health
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-connect#why-use-azure-ad-connect-health
 
-- Azure AD Connect, AD DS, AD FSなどを監視する仕組み。
-- 「Azure AD Connect Healthエージェント」とも呼ばれる
-  - Azure AD Connect Health Agent for Sync - Azure AD Connect監視用エージェント
-  - Azure AD Connect Health Agent for AD DS - AD DS監視用エージェント
-  - Azure AD Connect Health AD FS Agent - AD FS監視用エージェント
-- Azure AD Connectの場合、Connectがインストールされたサーバーに同居できる
+- Entra ID Connect, AD DS, AD FSなどを監視する仕組み。
+- 「Entra ID Connect Healthエージェント」とも呼ばれる
+  - Entra ID Connect Health Agent for Sync - Entra ID Connect監視用エージェント
+  - Entra ID Connect Health Agent for AD DS - AD DS監視用エージェント
+  - Entra ID Connect Health AD FS Agent - AD FS監視用エージェント
+- Entra ID Connectの場合、Connectがインストールされたサーバーに同居できる
 - ライセンス: P1(最初のエージェントに1ライセンス、追加のエージェントごとに25ライセンス)
-- 監視結果は、https://aka.ms/aadconnecthealth （Azure AD Connect Healthポータル）で確認できる
+- 監視結果は、https://aka.ms/aadconnecthealth （Entra ID Connect Healthポータル）で確認できる
 
-
+<!--
 # ラボ06  ディレクトリ同期の導入（非常に時間がかかるため、オプション）
 
 - 60min
@@ -189,8 +189,9 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/hybrid/whatis-azure-ad-c
 ```
 Azure VM（オンプレミスAD DSの代わり）
 ├ユーザー
-└Azure AD Connect
+└Entra ID Connect
  ↓ ユーザー情報を同期
-Azure AD
+Entra ID
 ```
 
+-->

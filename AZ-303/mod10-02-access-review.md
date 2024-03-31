@@ -1,8 +1,8 @@
-# Azure AD アクセスレビュー
+# アクセスレビュー
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/governance/access-reviews-overview
 
-グループへのメンバーシップ（所属）、アプリケーションへのアクセス、ロールの割り当て（Azure ADロールとAzure RBACロール）を定期的にレビューし、不要なメンバーシップ・アクセス・ロール割り当てを削除する仕組み。
+グループへのメンバーシップ（所属）、アプリケーションへのアクセス、ロールの割り当て（Entra IDロールとAzure RBACロール）を定期的にレビューし、不要なメンバーシップ・アクセス・ロール割り当てを削除する仕組み。
 
 [Premium P2ライセンスが必要](https://docs.microsoft.com/ja-jp/azure/active-directory/governance/access-reviews-overview#license-requirements)。[必要なライセンス数](https://docs.microsoft.com/ja-jp/azure/active-directory/governance/access-reviews-overview#how-many-licenses-must-you-have)
 
@@ -12,7 +12,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/governance/access-review
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/governance/create-access-review
 
-- Azure AD＞グループ＞アクセスレビュー
+- Entra ID＞グループ＞アクセスレビュー
 - ＋新しいアクセスレビュー
   - グループを選択
   - レビュー範囲を選択（「すべてのユーザー」または「ゲストユーザーのみ）

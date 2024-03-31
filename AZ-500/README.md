@@ -34,6 +34,7 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 -->
 
 - [講義資料](mod01/mod01.md)
+- ※1日目のラボはありません
 
 ## 2日目 ネットワークセキュリティ
 

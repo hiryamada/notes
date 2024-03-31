@@ -1,5 +1,5 @@
 
-# Azure AD 条件付きアクセス (conditional access)
+# 条件付きアクセス (conditional access)
 
 「セキュリティの既定値（群）＝有効」よりも柔軟で強力なアクセス制御を行うための機能。条件付きアクセスを使用する場合は、「セキュリティの既定値（群）」は無効化する。
 
@@ -13,7 +13,7 @@
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/overview
 
-Azure portal ＞ Azure AD ＞ セキュリティ ＞ 条件付きアクセス
+Azure portal ＞ Entra ID ＞ セキュリティ ＞ 条件付きアクセス
 
 ![](images/ss-2022-09-26-10-44-22.png)
 
@@ -21,7 +21,7 @@ Azure portal ＞ Azure AD ＞ セキュリティ ＞ 条件付きアクセス
 
 特定の条件が発生したときにアクセス要件を適用することができる。
 
-例: ユーザーが会社のネットワーク外からAzure ADにサインインする場合に、多要素認証(MFA)を使用する必要がある
+例: ユーザーが会社のネットワーク外からEntra IDにサインインする場合に、多要素認証(MFA)を使用する必要がある
 
 条件によって、必要な場合は適切なアクセス制御を適用（MFAを要求するなど）して組織のセキュリティを維持し、必要でない場合は、（MFAの要求をスキップするなどして）ユーザーの邪魔にならないようにすることができる。
 
@@ -125,9 +125,9 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/conditional-access/locat
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/howto-mfa-mfasettings#trusted-ips
 
-Azure AD MFA の 「信頼できる IP」機能を使用すると、定義された IP アドレス範囲からサインインするユーザーに対する多要素認証がバイパス（迂回）される。
+Entra ID MFA の 「信頼できる IP」機能を使用すると、定義された IP アドレス範囲からサインインするユーザーに対する多要素認証がバイパス（迂回）される。
 
-会社のイントラネットなど、「安全と判断されるIPアドレス」から、Azure ADにサインインする場合に、MFAのチェックを省略することができる。
+会社のイントラネットなど、「安全と判断されるIPアドレス」から、Entra IDにサインインする場合に、MFAのチェックを省略することができる。
 
 ■「利用規約」（使用条件、terms of use, TOU)への同意を求める
 

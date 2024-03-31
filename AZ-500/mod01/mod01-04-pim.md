@@ -1,5 +1,5 @@
 
-# Azure AD Privileged Identity Management (PIM)
+# Entra ID Privileged Identity Management (PIM)
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-configure
 
@@ -7,7 +7,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-mana
 
 時間/承認ベースで、特権アクセスのロールをJIT(ジャストインタイム, 必要な時間だけ)でユーザーに割り当てる仕組み。
 
-- Azure ADロールとAzure RBACロールに対応
+- Entra IDロールとAzure RBACロールに対応
 - ロールを有効化できる開始日と終了日を指定できる
 - 監査履歴を利用できる
 
@@ -20,11 +20,11 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-mana
 
 ■PIMのスコープ
 
-Azure ADロール
-https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user?tabs=new
+Entra IDロール
+https://learn.microsoft.com/ja-jp/entra/id-governance/privileged-identity-management/pim-how-to-add-role-to-user?tabs=new
 
 Azureリソースロール
-https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-management/pim-resource-roles-assign-roles
+https://learn.microsoft.com/ja-jp/entra/id-governance/privileged-identity-management/pim-resource-roles-assign-roles
 
 <!--
 ■PIM用語の説明（たとえ）
@@ -108,7 +108,7 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-mana
 
 ロールごとの設定の確認/編集:
 - Azure portalで「PIM」を検索→Privileged Identity Management 
-- 管理＞Azure ADロール
+- 管理＞Entra IDロール
 - ロール
 - ロールを選択。例: グローバル管理者
 - ロールの設定＞編集
@@ -121,9 +121,11 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/privileged-identity-mana
     - 永続的に資格のある割り当てを許可 / ～ヶ月後に有効期限が切れる
   - 「通知」タブ
 
+<!--
 # ラボ5
 
 - 60min
 - Azure Passサブスクリプションを使用します
 - 手順書: https://microsoftlearning.github.io/AZ-500JA-AzureSecurityTechnologies/
 - 解説: https://github.com/hiryamada/notes/blob/main/AZ-500/lab/lab05.md
+-->
