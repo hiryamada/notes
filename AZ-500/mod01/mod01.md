@@ -67,3 +67,8 @@ Windows Serverの機能:
 - Azure サブスクリプション管理
 
 -->
+
+## Microsoft Entra Permissions Management
+
+- [Microsoft Entra Permissions Management (CIEM: Cloud Infrastructure Entitlement Management)](../../SC/entra-permissions-management.md)
+
