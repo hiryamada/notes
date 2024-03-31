@@ -1,8 +1,8 @@
-■Azure ADユーザー
+■Entra IDユーザー
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/add-users-azure-active-directory
 
-Azure ADテナントに新しいユーザーを作成できる。
+Entra IDテナントに新しいユーザーを作成できる。
 
 ■ユーザーの種類
 

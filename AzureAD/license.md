@@ -1,4 +1,4 @@
-# Azure ADのライセンス（エディション/価格プラン）
+# Entra IDのライセンス（エディション/価格プラン）
 
 [Azure ADのプランと価格（公式サイト）](https://www.microsoft.com/ja-jp/security/business/identity-access/azure-active-directory-pricing)
 

@@ -1,6 +1,6 @@
-# Azure Active Directory (Azure AD) の基礎
+# Entra ID の基礎
 
-[★まとめPDF「Azure AD」](Azure%20AD入門.pdf)
+[★まとめPDF「Entra ID」](Azure%20AD入門.pdf)
 
 ■Azure ADとは
 

@@ -2,7 +2,7 @@
 
 ※ドキュメントでは「セキュリティの既定値群」、Azure portal上では「セキュリティの既定値」と表記されている
 
-https://learn.microsoft.com/ja-jp/azure/active-directory/fundamentals/concept-fundamentals-security-defaults
+https://learn.microsoft.com/ja-jp/entra/fundamentals/security-defaults
 
 ![](images/ss-2022-09-25-21-16-00.png)
 
@@ -16,13 +16,13 @@ https://learn.microsoft.com/ja-jp/azure/active-directory/fundamentals/concept-fu
 
 テナントでの設定方法:
 
-- Azure AD＞プロパティ＞セキュリティの既定値群の管理＞有効化（「はい」「いいえ」）
+- Entra ID＞プロパティ＞セキュリティの既定値群の管理＞有効化（「はい」「いいえ」）
 - [2019 年 10 月 22 日以降に作成されたテナントの場合、セキュリティの既定値群はテナントで有効になっている](https://docs.microsoft.com/ja-jp/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#availability)
 
 ■セキュリティの既定値（群）=有効の場合の、MFAの登録
 
-- すべてのユーザーに対して、Azure AD MFA 登録を必須にします。
-  - ユーザーは （各ユーザーの対話型サインインが最初に成功した時点から）14 日以内に、Microsoft Authenticator アプリを使用して、Azure AD MFA 登録 を行う必要がある
+- すべてのユーザーに対して、Entra ID MFA 登録を必須にします。
+  - ユーザーは （各ユーザーの対話型サインインが最初に成功した時点から）14 日以内に、Microsoft Authenticator アプリを使用して、Entra ID MFA 登録 を行う必要がある
   - 14 日が経過すると、ユーザーは登録が完了するまでサインインできなくなる
 
 ■セキュリティの既定値（群）=有効の場合の、MFA要求の発動条件

@@ -1,21 +1,21 @@
-# Azure ADの管理者ロール
+# Entra IDの管理者ロール
 
 ロールのドキュメント:
-https://docs.microsoft.com/ja-jp/azure/active-directory/roles/
+https://learn.microsoft.com/ja-jp/entra/identity/role-based-access-control/concept-understand-roles
 
 組み込みのロール一覧:
-https://docs.microsoft.com/ja-jp/azure/active-directory/roles/permissions-reference
+https://learn.microsoft.com/ja-jp/azure/role-based-access-control/rbac-and-directory-admin-roles?toc=%2Fentra%2Fidentity%2Frole-based-access-control%2FTOC.yml&bc=%2Fentra%2Fidentity%2Frole-based-access-control%2Fbreadcrumb%2Ftoc.yml#microsoft-entra-roles
 
-85種類の「Azure AD管理者ロール」が存在する（2022/9現在）
+64種類の「Entra ID管理者ロール」が存在する（2024/3現在）
 
-■覚えておきたいロール:
+■特に覚えておきたいロール:
 
 - グローバル管理者（全体管理者とも）
-  - Azure AD テナントのフルコントロールが可能
+  - Entra IDテナントのフルコントロールが可能
   - 組織内の5名未満のユーザーに割り当てることを推奨
   - グローバル管理者が多すぎると責任の所在があいまいになる
 - グローバル閲覧者
-  - Azure AD テナントの情報の読み取りのみ可能
+  - Entra ID テナントの情報の読み取りのみ可能
 - ユーザー管理者
   - ユーザーとグループのすべての側面を管理できる
     - ユーザー作成

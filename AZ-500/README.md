@@ -1,28 +1,97 @@
 
-# AZ-500
+# AZ-500 Microsoft Azure Security Technologies
 
 クラウドおよびハイブリッド環境で ID、アクセス、データ、アプリケーション、ネットワークを保護する Azure セキュリティについて学ぶコースです。
 
 日程: 4日間
 
+<!--
 教材や、認定試験の出題範囲についての詳細は、以下のページをご覧ください。
 
-認定試験 AZ-500: Microsoft Azure セキュリティ テクノロジ
-https://learn.microsoft.com/ja-jp/certifications/exams/az-500
-
 認定資格 Microsoft Certified: Azure Security Engineer Associate
-https://learn.microsoft.com/ja-jp/certifications/azure-security-engineer/
+https://learn.microsoft.com/ja-jp/credentials/certifications/azure-security-engineer/
+-->
+
+<!--
+## 教材(Microsoft Learn)の構成
+
+コース資料
+https://learn.microsoft.com/ja-jp/training/courses/az-500t00
+
+上記ページの下部に、教材(Microsoft Learn)へのリンクがあります。
+
+全8モジュール。
+-->
+
+## 1日目 Entra ID
+
+<!--
+- モジュール1 Microsoft Entra ID で ID を管理する
+- モジュール2 Microsoft Entra ID を使用して認証を管理する
+- モジュール3 Microsoft Entra ID を使用して認可を管理する
+- モジュール4 Microsoft Entra ID でアプリケーション アクセスを管理する
+- ラボ4 ディレクトリ同期の導入(省略)
+-->
+
+- [講義資料](mod01/mod01.md)
+
+## 2日目 ネットワークセキュリティ
+
+<!--
+- モジュール5 仮想ネットワークのセキュリティを計画して実装する
+- モジュール6 Azure リソースへのプライベート アクセスのセキュリティを計画して実装する
+- モジュール7 Azure リソースへのパブリック アクセスのセキュリティを計画して実装する
+-->
+
+- [講義資料](mod02/mod02.md)
+- ラボ1 ネットワーク セキュリティ グループとアプリケーション セキュリティ グループ
+- ラボ2 Azure Firewall
+
+## 3日目 アプリケーションとデータのセキュリティ
+
+<!--
+- モジュール8 コンピューティングの高度なセキュリティを計画して実装する
+- モジュール9 ストレージのセキュリティを計画して実装する
+- モジュール10 Azure SQL Database と Azure SQL Managed Instance のセキュリティを計画して実装する
+-->
+
+- [講義資料](mod03/mod03.md)
+- ラボ3 ACR と AKS の構成とセキュリティ保護
+- ラボ5 Azure SQL データベースのセキュリティ保護
+- ラボ6 サービス エンドポイントとストレージの保護
+- ラボ7 キー コンテナー
+
+## 4日目 モニタリングと管理
+
+<!--
+- モジュール11 セキュリティのガバナンスを計画、実装、管理する
+- モジュール12 Microsoft Defender for Cloud を使用してセキュリティ態勢を管理する
+- モジュール13 Microsoft Defender for Cloud を使用して脅威に対する保護を構成して管理する
+- モジュール14 セキュリティ監視とオートメーション ソリューションを構成して管理する
+-->
+
+- [講義資料](mod04/mod04.md)
+- ラボ8 Azure Monitor, Microsoft Defender for Cloud, Microsoft Sentinel
+
+## ラボの実施方法
+
+- Microsoftアカウントを作成
+- ラボ環境にMicrosoftアカウントでサインイン
+- トレーニングキーを投入（1回だけ実施）
+  - トレーニングキーは講師よりお伝えします
+- ラボを起動
+- 画面右側に表示される手順書に従ってラボを実施
 
 
-■教材(Microsoft Learn)の構成
+## まとめ
 
-上記「認定試験」や「認定資格」のページの下部に、教材(Microsoft Learn)へのリンクがあります。
+- 全体のまとめ
+- 試験対策
+- 終了時のご案内
+- 講師連絡先ご案内
+- アンケート（受講者満足度調査）の実施
 
-Microsoft Learnは以下のような構成となっています。
-
-- 「ラーニングパス」(AZ-500の場合は4ラーニングパス)
-  - 3～5個程度の「モジュール」
-    - 10個程度の「ユニット」（ページ）
+<!--
 
 ■コース日程
 
@@ -67,10 +136,11 @@ Microsoft Learnは以下のような構成となっています。
   - Microsoft Defender for Cloud
   - Azure Sentinel
     - ラボ13/14/15
-
-# ラボ
+-->
 
 <!--
+# ラボ
+
 https://microsoftlearning.github.io/AZ-500JA-AzureSecurityTechnologies/
 https://github.com/MicrosoftLearning/
 -->
@@ -85,8 +155,8 @@ https://github.com/MicrosoftLearning/AZ-500JA-AzureSecurityTechnologies
 
 https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies.ja-jp
 
--->
-
 https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies.ja-jp/tree/main/Instructions/Labs
 
 注意：ラボ13, 14, 15は続きの内容になっており、かつ、途中の待ち時間がかなりかかるものとなっています。待ち時間を含めると、トータルで2時間ほど要すると思われます。少し余裕を持って取り組みましょう。
+
+-->
