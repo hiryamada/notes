@@ -7,7 +7,7 @@ https://learn.microsoft.com/ja-jp/azure/virtual-network/ip-services/public-ip-ad
 VM等にパブリックIPアドレスを割り当てることで、インターネットから、そのVMへ、直接接続することが可能となる。
 
 - パブリックIPアドレス
-  - Basic SKU
+  - Basic SKU ... 2025/9/30 に廃止。
     - （Standard SKU導入以前から使われていたもの）
     - デフォルトで受信に対して開いている
     - 割り当て: 静的 または 動的
@@ -18,8 +18,7 @@ VM等にパブリックIPアドレスを割り当てることで、インター�
     - 割り当て: 静的のみ
     - 可用性ゾーンをサポート
 
-※どちらがよいか？ → Standard （将来的にデフォルトになる）
-
+<!--
 コマンドを使用してVMを作成すると・・・
 
 ```
@@ -29,6 +28,7 @@ It is recommended to use parameter "-PublicIpSku Standard" in order to create a 
 ```
 
 標準のパブリック IP を持つ新しい VM を作成するには、パラメーター「-PublicIpSku Standard」を使用することをお勧めします。 "-Zone" パラメーターを使用してゾーンを指定すると、Standard パブリック IP も生成されます。 Standard SKU IP は、将来的に VM 作成のデフォルトの動作になることに注意してください。
+-->
 
 ■プライベートIPアドレス
 

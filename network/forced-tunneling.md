@@ -48,8 +48,10 @@ https://www.syuheiuda.com/?p=3685
 
 オンプレからデフォルト ルート (0.0.0.0/0) を広報する。（ExpressRoute BGP ピアリング セッションを介して、既定のルートを通知する.）
 
+<!--
 ■参考: ExpressRoute接続 + 強制トンネリング で、ライセンス認証ができない事象について
 
 KMS サーバーへのルーティングを設定する。
 
 https://jpaztech1.z11.web.core.windows.net/ExpressRoute%E7%92%B0%E5%A2%83%E3%81%A7%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E8%AA%8D%E8%A8%BC%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E4%BA%8B%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.html
+-->

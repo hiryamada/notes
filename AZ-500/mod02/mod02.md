@@ -1,10 +1,13 @@
-# 境界セキュリティ
+# ネットワークの基礎
 
-■多層防御
+■基本となる考え方: 多層防御, ゼロトラスト戦略
 
 - [多層防御](../../network/defense-in-depth.md)
-- 参考: [ゼロトラスト戦略](../../SC/zero-trust.md)
+- [ゼロトラスト戦略](../../SC/zero-trust.md)
+
+<!--
 - 参考: [LAPS](../../network/laps.md)
+-->
 
 ■仮想ネットワーク(VNet)の基礎
 
@@ -40,9 +43,11 @@
 - [Azure Firewall](../../network/azure-firewall.md)
 - [DDoS保護(Azure DDoS Protection)](../../network/ddos-protection.md)
 
+<!--
 [ラボ: NSG/ASG](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies.ja-jp/blob/main/Instructions/Labs/LAB_07_NSGs.md)
 
 [ラボ: Azure Firewall](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies.ja-jp/blob/main/Instructions/Labs/LAB_08_AzureFirewall.md)
+-->
 
 ■VNet(VM)からAzureサービスへのプライベート接続
 
@@ -52,31 +57,32 @@
 
 ■ロードバランサー（負荷分散）サービス
 
-- [PDF: 負荷分散サービスまとめ](../pdf/mod2/負荷分散サービス.pdf)
+- [PDF: 負荷分散サービスまとめ](../../AZ-104-2023/pdf/Azureの負荷分散サービスまとめ.pdf)
 - [Azure Application Gateway](../../network/appgw.md)
 - [Azure Front Door](../../network/front-door.md)
 - [Web アプリケーション ファイアウォール(Azure WAF)](../../AZ-303/mod05-07-waf.md)
 
-# ホスト セキュリティ
+# 仮想マシンのセキュリティ
 
-■ホスト（エンドポイント）の保護
+■仮想マシン（エンドポイント）の保護
 
 - [エンドポイント保護](../../SC/endpoint-protection/endpoint-protection.md)
 
-■ホストへの管理アクセス
+■仮想マシンへ管理者/開発者が接続する方法
 
 - Windows: RDP (TCP 3389)
 - Linux: SSH (TCP 22)
 - [Azure Bastion](azure-bastion.md)
 
-■ホストの更新
+■仮想マシンの更新
 
 - [Azure Automation](../../iac/azure-automation.md)
 
-■ホストのデータの保護
+■仮想マシンのデータの保護
 
 - [ディスク暗号化(Azure Disk Encryption)](../../SC/encryption/azure-disk-encryption.md)
 
+<!--
 ■Windowsホストの保護機能
 
 - [Windows Defender](windows-defender.md)
@@ -84,6 +90,7 @@
 ■クラウドのホストの保護と監視
 
 - [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md)
+-->
 
 ■セキュリティベンチマーク
 
@@ -92,6 +99,7 @@
 
 # コンテナー セキュリティ
 
+講義: [コンテナーのサービス（ACIとAKS）](../../AZ-104-2023/pdf/コンテナーのサービス.pdf)
 講義: [コンテナー セキュリティ](mod02-04.md)
 
 - コンテナー型の仮想化
