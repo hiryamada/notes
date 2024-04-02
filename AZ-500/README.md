@@ -76,13 +76,16 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 
 ## ラボの実施方法
 
-- Microsoftアカウントを作成
-- ラボ環境にMicrosoftアカウントでサインイン
+- Microsoftアカウントを（なければ）作成 ([作成方法](https://support.microsoft.com/ja-jp/account-billing/%E6%96%B0%E3%81%97%E3%81%84-microsoft-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-a84675c3-3e9e-17cf-2911-3d56b15c0aaf))
+- ラボ環境にMicrosoftアカウントでサインイン （[ラボ環境](https://esi.learnondemand.net/)）
 - トレーニングキーを投入（1回だけ実施）
   - トレーニングキーは講師よりお伝えします
-- ラボを起動
-- 画面右側に表示される手順書に従ってラボを実施
+- ラボを起動（新しいウィンドウが開きます）
+- 新しいウィンドウの画面右側に表示される手順書に従ってラボを実施
 
+※ラボ環境が起動できない、起動しても真っ黒な画面が表示されたままとなる、といった場合は、[こちら](https://docs.learnondemandsystems.com/tms/connectivity-requires.md)を確認してください。
+
+※特に、企業内ネットワークや企業貸与PCの場合はその設定の制約によりラボ環境が利用できない場合があります。その場合はご自宅のネットワーク・ご自宅のPCなどから接続をお試しください。
 
 ## まとめ
 
