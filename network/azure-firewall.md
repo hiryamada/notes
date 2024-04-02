@@ -6,7 +6,7 @@ https://docs.microsoft.com/ja-jp/azure/firewall/overview
 
 ■Azure Firewallとは？
 
-[まとめ資料](https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod04/Azure%20Firewall.pdf)
+[まとめ資料](../AZ-104-2023/pdf/仮想ネットワークの概要.pdf)
 
 - VNet内のリソースを保護するためのサービス
 - マネージド サービス (Firewall as a Service)
