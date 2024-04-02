@@ -2,6 +2,56 @@
 
 マイクロソフトのエンタープライズ サービスとコンシューマー サービスを大規模な攻撃から保護してきた実績に基づき、Azureのネットワーク全体を保護。
 
+[まとめPDF](../AZ-500/pdf/mod2/DDoS-Protection.pdf)
+
+## 概要
+
+主な特徴:
+- すべてのAzureリソースを保護(Azure DDoS Protection Basic)
+- 仮想ネットワーク内にある Azure リソースを保護(Azure DDoS Protection Standard)
+  - パブリックIPアドレスが付与されたVMなど
+- レイヤー 3 (ネットワーク層） とレイヤー 4（トランスポート層） での保護を行う
+  - Azure DDoS Protectionが、Web アプリケーション ファイアウォール (WAF) と共にデプロイされる場合は、追加でレイヤー 7（アプリケーション層)での保護も行われる
+- ユーザーによる詳細設定やリソース作成は不要
+- 機械学習を使用して、トラフィック パターンを 24 時間 365 日監視
+- DDoS攻撃が検出されると、攻撃を即座に自動的に軽減
+- 攻撃や保護の状況のデータを取得可能
+  - Azure Monitor
+  - Microsoft Sentinel
+
+■参考: Azure DDoS Protectionの参照アーキテクチャ
+
+以下のページに、どのような構成のアーキテクチャで、Azure DDoS Protectionが有効となるかが説明されている。
+
+https://learn.microsoft.com/ja-JP/azure/ddos-protection/ddos-protection-reference-architectures
+
+■参考: Azure DDoS Protectionの内部構成
+
+Azure DDoS Protectionの具体的な内部構成については公開されていない。以下のように説明されている。
+
+- 「Microsoft が重要なサービスを保護するために使うものと同じセキュリティ システムを使用」
+  - https://azure.microsoft.com/ja-jp/products/ddos-protection/
+- 「規定で既定でゾーン回復性がある」
+  - https://azure.microsoft.com/ja-jp/products/ddos-protection/
+- 「地球規模の容量を利用」
+  - https://learn.microsoft.com/ja-jp/azure/ddos-protection/ddos-protection-overview
+- 「Azure のグローバル ネットワーク スケールを自動的に使用」
+  - https://learn.microsoft.com/ja-jp/azure/ddos-protection/types-of-attacks
+
+※参考: [Microsoftのグローバルネットワーク](https://learn.microsoft.com/ja-jp/azure/networking/microsoft-global-network): 世界中に配置されたエッジ ノードの大規模なメッシュを使用し、世界中のAzureリージョンを接続したWAN。光ファイバーケーブルで接続されている。
+
+また、参考にできる概念図がいくつか公開されている。
+
+図1:
+https://techcommunity.microsoft.com/t5/azure-network-security-blog/enhancing-your-azure-security-azure-ddos-sentinel-solution-and/ba-p/3913420
+![alt text](image.png)
+
+図2:
+https://azure.microsoft.com/ja-jp/blog/automate-your-attack-response-with-azure-ddos-protection-solution-for-microsoft-sentinel/
+![alt text](image-1.png)
+
+## 詳細
+
 公式サイト
 https://azure.microsoft.com/ja-jp/services/ddos-protection/
 
@@ -30,8 +80,8 @@ https://pc.watch.impress.co.jp/docs/news/1358517.html
 ■Azure DDoS Protection Basic
 
 - 無料
-- すべての Azure サービスが保護される。
 - Azure プラットフォームに統合されており、デフォルトで有効
+- すべての Azure サービスが保護される。
 - アプリケーションの変更は不要
 - トラフィックの常時監視
   - DDoS 攻撃の兆候を検出するために、アプリケーションのトラフィック パターンが 24 時間 365 日監視される
@@ -68,6 +118,7 @@ https://pc.watch.impress.co.jp/docs/news/1358517.html
 https://learn.microsoft.com/ja-jp/azure/ddos-protection/test-through-simulations#azure-ddos-simulation-testing-policy
 
 攻撃のシミュレーションには、Microsoft が承認したテスト パートナーが提供するシミュレーション環境を使用する必要がある。
+
 
 ■参考: Azureで利用できる、A10ネットワークスのDDoS緩和ソリューション
 
