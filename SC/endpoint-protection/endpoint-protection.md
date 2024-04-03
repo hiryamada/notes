@@ -32,6 +32,9 @@ https://learn.microsoft.com/ja-jp/azure/defender-for-cloud/defender-for-cloud-in
 
 Azure、オンプレミス、マルチクラウド (Amazon AWS および Google GCP) のすべてのリソース用のクラウド セキュリティ態勢管理 (CSPM) と クラウド ワークロード保護プラットフォーム (CWPP)。
 
+■「Microsoft Defender for Cloud」と「Microsoft Defender for Endpoint」の関係
+
+[PDFまとめ](../../AZ-500/pdf/mod4/Microsoft%20Defender%20for%20Cloud,%20servers,%20Endpoint.pdf)
 
 ■「Microsoft Defender for Cloud」 による「エンドポイント保護ソリューション」の監視
 
