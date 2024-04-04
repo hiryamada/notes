@@ -98,9 +98,9 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 
 ## まとめ
 
-- 全体のまとめ
-- 試験対策
-- 終了時のご案内
+- [全体のまとめ](matome.md)
+- [試験対策](exam.md)
+- [クロージング(終了時のご案内)](../closing-cloudslice.md)
 - 講師連絡先ご案内
 - アンケート（受講者満足度調査）の実施
 
