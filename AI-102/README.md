@@ -42,13 +42,13 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 ラボ(オプション)
 - [インタラクティブラボシミュレーション(※おすすめ)](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
-  - 1. Get started with Azure Cognitive Services
-  - 2. Manage Cognitive Services security
-  - 3. Monitor Cognitive Services
-  - 4. User a Cognitive Services container
+  - 1 Get started with Azure Cognitive Services
+  - 2 Manage Cognitive Services security
+  - 3 Monitor Cognitive Services
+  - 4 User a Cognitive Services container
 - [ラボ環境(※難しい)](https://esi.learnondemand.net/User/Login)
   - [ラボ環境の利用方法](../cloudslice/README.md)
-  - 1. Get Started with Azure AI Services (JA) / Azure AI サービスの使用を開始する
+  - 1 Get Started with Azure AI Services (JA) / Azure AI サービスの使用を開始する
 
 ■2日目
 
@@ -72,16 +72,16 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 ラボ(オプション)
 
 - [インタラクティブラボシミュレーション](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
-  - 5. Analyze text
-  - 6. Translate text
-  - 7. Recognize and synthesize speech
-  - 8. Translate speech
-  - 9. Create a conversational language understanding model
-  - 10. Create a Language service client application
-  - 11. Use speech and Language Understanding services
-  - 12. Create a question answering solution
-  - 13. Create a bot with the Bot Framework SDk
-  - 14. Create a bot with Bot Framework Composer
+  - 5 Analyze text
+  - 6 Translate text
+  - 7 Recognize and synthesize speech
+  - 8 Translate speech
+  - 9 Create a conversational language understanding model
+  - 10 Create a Language service client application
+  - 11 Use speech and Language Understanding services
+  - 12 Create a question answering solution
+  - 13 Create a bot with the Bot Framework SDk
+  - 14 Create a bot with Bot Framework Composer
 - [ラボ環境](https://esi.learnondemand.net/User/Login)
   - 5. Analyze Text (JA) / テキストの分析
   - 6. Create a Question Answering Solution (JA) / 質問応答ソリューションを作成する
