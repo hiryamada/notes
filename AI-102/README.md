@@ -29,8 +29,6 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 ■オープニング
 
 - [トレーニングご受講方法のご案内](../opening.md)
-- [ラボ環境のご案内](../cloudslice/README.md)
-  - ラボの開始前にお読みください
 
 ■1日目
 
@@ -41,6 +39,16 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
   - [ラーニングパス12 Azure OpenAI Service](lp12.md)
 - Azure AI Services の基礎知識
   - [ラーニングパス02 Azure AI Services のプロビジョニングと管理](lp02.md)
+
+ラボ(オプション)
+- [インタラクティブラボシミュレーション(※おすすめ)](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
+  - 1. Get started with Azure Cognitive Services
+  - 2. Manage Cognitive Services security
+  - 3. Monitor Cognitive Services
+  - 4. User a Cognitive Services container
+- [ラボ環境(※難しい)](https://esi.learnondemand.net/User/Login)
+  - [ラボ環境の利用方法](../cloudslice/README.md)
+  - 1. Get Started with Azure AI Services (JA) / Azure AI サービスの使用を開始する
 
 ■2日目
 
@@ -61,6 +69,24 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 - Azure Bot Service
   - [ラーニングパス08 会話 AI ソリューションを作成する](lp08.md)
 
+ラボ(オプション)
+
+- [インタラクティブラボシミュレーション](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
+  - 5. Analyze text
+  - 6. Translate text
+  - 7. Recognize and synthesize speech
+  - 8. Translate speech
+  - 9. Create a conversational language understanding model
+  - 10. Create a Language service client application
+  - 11. Use speech and Language Understanding services
+  - 12. Create a question answering solution
+  - 13. Create a bot with the Bot Framework SDk
+  - 14. Create a bot with Bot Framework Composer
+- [ラボ環境](https://esi.learnondemand.net/User/Login)
+  - 5. Analyze Text (JA) / テキストの分析
+  - 6. Create a Question Answering Solution (JA) / 質問応答ソリューションを作成する
+  - 7. Create a language understanding model with the Language service (JA) / 言語サービスで言語理解モデルを作成する
+
 ■3日目
 
 テーマ(1): Azure AI Servicesに含まれる画像/動画のサービスの利用方法を理解する。
@@ -71,31 +97,70 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
   - [ラーニングパス10 画像およびドキュメントからテキストを抽出する](lp10.md)
 - [Azure AI Video Indexer](azure-ai-video-indexer.md)
 
-■4日目
-
-テーマ(1): ドキュメント（PDFなど）に対する検索を行うサービスの利用方法を理解する。
+テーマ(2): ドキュメント（PDFなど）に対する検索を行うサービスの利用方法を理解する。
 
 - Azure AI Search
   - [ラーニングパス11 Azure AI Search でのナレッジ マイニングの実装](lp11.md)
 
+<!--
 おまけ: [Azure OpenAI Serviceの「on your data」（内部でAzure AI Searchを使用）](../AI-050-2024/pdf/AI-050-mod6-onyourdata.pdf)
+-->
 
-テーマ(2): その他のAzure AIサービスについて概要を理解する
+テーマ(3): その他のAzure AIサービスについて概要を理解する
 
 - [Azure AI Content Moderator / Azure AI Content Safety](azure-ai-content-moderator.md)
 - [Azure AI Personalizer(※廃止予定)](azure-ai-personalizer.md)
 - [Azure AI Document Intelligence](azure-ai-document-intelligence.md)
 - [Azure AI Immersive Reader](azure-ai-immersive-reader.md)
 
-テーマ(3): Azure OpenAI Service（生成AI）について理解する（コース AI-050と同じ内容です）
+ラボ(オプション)
+- [インタラクティブラボシミュレーション](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
+  - 15. Analyze images with Computer Vision
+  - 16. Analyze video with Azure Video Indexer
+  - 17. Classify images with Custom Vision
+  - 18. Detect objects in images with Custom Vision
+  - 19. Detect and analyze faces
+  - 20. Read text in images
+  - 21. Extract data from forms
+  - 22. Create an Azure Cognitive Search solution
+  - 23. Create a custom skill for Azure Cognitive Search
+  - 24. Create a knowledge store with Azure Cognitive Search
+- [ラボ環境](https://esi.learnondemand.net/User/Login)
+  - 2. Analyze Images with Azure AI Vision (JA) / Azure AI Vision を使用して画像を分析する
+  - 3. Read Text in Images (JA) / 画像内のテキストの読み取り
+  - 4. Classify images with a Azure AI Vision custom model (JA) / Azure AI Vision カスタム モデルを使用して画像を分類する
+  - 8. Recognize and synthesize speech (JA) / 音声の認識と合成
+  - 12. Create a Custom Skill for Azure AI Search (JA) / Azure AI Search のカスタム スキルを作成する
+  - 13. Extract Data from Forms (JA) / フォームからデータを抽出する
+
+
+■4日目
+
+テーマ: Azure OpenAI Service（生成AI）について理解する（コース AI-050と同じ内容です）
 
 - Azure OpenAI Service
   - [AI-050](../AI-050-2024/README.md)
+
+ラボ(オプション)
+- [インタラクティブラボシミュレーション](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
+  - Azure OpenAI> 1. Get started with Azure OpenAI Service
+  - Azure OpenAI> 2. Build natural language solutions with Azure OpenAI Service
+  - Azure OpenAI> 3. Apply prompt engineering with Azure OpenAI Service
+  - Azure OpenAI> 4. Generate code with Azure OpenAI Service
+  - Azure OpenAI> 5. Generate images with Azure OpenAI Service
+  - Azure OpenAI> 6. Use your own data with Azure OpenAI Service
+  - Azure OpenAI> Explore content filters in Azure OpenAI Service
+- [ラボ環境](https://esi.learnondemand.net/User/Login)
+  - 9. Integrate Azure OpenAI into your app (JA) / Azure OpenAI をアプリに統合する
+  - 10. Utilize prompt engineering in your app (JA) / アプリでプロンプト エンジニアリングを利用する
+  - 11. Use your own data with Azure OpenAI (JA) / Azure OpenAI で独自のデータを使用する
 
 ■クロージング
 
 - [このコースで学習したサービス・機能のまとめ](matome.md)
 - [AI-102 試験対策](exam.md)
+  - ※AI-050 (Azure OpenAI Services)だけの認定試験はありません。
+  - ※Azure OpenAI ServicesはAI-102の出題範囲の一部です。
 - [クロージング(終了時のご案内)](../closing-cloudslice.md)
 - アンケート
 
