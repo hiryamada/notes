@@ -83,9 +83,9 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
   - 13 Create a bot with the Bot Framework SDk
   - 14 Create a bot with Bot Framework Composer
 - [ラボ環境](https://esi.learnondemand.net/User/Login)
-  - 5. Analyze Text (JA) / テキストの分析
-  - 6. Create a Question Answering Solution (JA) / 質問応答ソリューションを作成する
-  - 7. Create a language understanding model with the Language service (JA) / 言語サービスで言語理解モデルを作成する
+  - 5 Analyze Text (JA) / テキストの分析
+  - 6 Create a Question Answering Solution (JA) / 質問応答ソリューションを作成する
+  - 7 Create a language understanding model with the Language service (JA) / 言語サービスで言語理解モデルを作成する
 
 ■3日目
 
@@ -115,23 +115,23 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 ラボ(オプション)
 - [インタラクティブラボシミュレーション](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
-  - 15. Analyze images with Computer Vision
-  - 16. Analyze video with Azure Video Indexer
-  - 17. Classify images with Custom Vision
-  - 18. Detect objects in images with Custom Vision
-  - 19. Detect and analyze faces
-  - 20. Read text in images
-  - 21. Extract data from forms
-  - 22. Create an Azure Cognitive Search solution
-  - 23. Create a custom skill for Azure Cognitive Search
-  - 24. Create a knowledge store with Azure Cognitive Search
+  - 15 Analyze images with Computer Vision
+  - 16 Analyze video with Azure Video Indexer
+  - 17 Classify images with Custom Vision
+  - 18 Detect objects in images with Custom Vision
+  - 19 Detect and analyze faces
+  - 20 Read text in images
+  - 21 Extract data from forms
+  - 22 Create an Azure Cognitive Search solution
+  - 23 Create a custom skill for Azure Cognitive Search
+  - 24 Create a knowledge store with Azure Cognitive Search
 - [ラボ環境](https://esi.learnondemand.net/User/Login)
-  - 2. Analyze Images with Azure AI Vision (JA) / Azure AI Vision を使用して画像を分析する
-  - 3. Read Text in Images (JA) / 画像内のテキストの読み取り
-  - 4. Classify images with a Azure AI Vision custom model (JA) / Azure AI Vision カスタム モデルを使用して画像を分類する
-  - 8. Recognize and synthesize speech (JA) / 音声の認識と合成
-  - 12. Create a Custom Skill for Azure AI Search (JA) / Azure AI Search のカスタム スキルを作成する
-  - 13. Extract Data from Forms (JA) / フォームからデータを抽出する
+  - 2 Analyze Images with Azure AI Vision (JA) / Azure AI Vision を使用して画像を分析する
+  - 3 Read Text in Images (JA) / 画像内のテキストの読み取り
+  - 4 Classify images with a Azure AI Vision custom model (JA) / Azure AI Vision カスタム モデルを使用して画像を分類する
+  - 8 Recognize and synthesize speech (JA) / 音声の認識と合成
+  - 12 Create a Custom Skill for Azure AI Search (JA) / Azure AI Search のカスタム スキルを作成する
+  - 13 Extract Data from Forms (JA) / フォームからデータを抽出する
 
 
 ■4日目
@@ -151,9 +151,9 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
   - Azure OpenAI> 6. Use your own data with Azure OpenAI Service
   - Azure OpenAI> Explore content filters in Azure OpenAI Service
 - [ラボ環境](https://esi.learnondemand.net/User/Login)
-  - 9. Integrate Azure OpenAI into your app (JA) / Azure OpenAI をアプリに統合する
-  - 10. Utilize prompt engineering in your app (JA) / アプリでプロンプト エンジニアリングを利用する
-  - 11. Use your own data with Azure OpenAI (JA) / Azure OpenAI で独自のデータを使用する
+  - 9 Integrate Azure OpenAI into your app (JA) / Azure OpenAI をアプリに統合する
+  - 10 Utilize prompt engineering in your app (JA) / アプリでプロンプト エンジニアリングを利用する
+  - 11 Use your own data with Azure OpenAI (JA) / Azure OpenAI で独自のデータを使用する
 
 ■クロージング
 
