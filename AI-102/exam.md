@@ -77,7 +77,7 @@ https://learn.microsoft.com/ja-jp/certifications/practice-assessments-for-micros
 ~~※2023/4/6 現在、AI-102 は まだ「プラクティス評価」に含まれていないが、「他の試験については、近日中にプラクティス評価を開始する予定です。」とある。~~
 
 2023/6/8 AI-102 プラクティス評価が利用可能となりました。
-https://learn.microsoft.com/ja-jp/certifications/exams/ai-102/practice/assessment?assessment-type=practice&assessmentId=61
+https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification
 
 ■「模擬試験」を活用して学習しよう！（非公式、有料）
 
