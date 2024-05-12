@@ -154,6 +154,12 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
   - 9 Integrate Azure OpenAI into your app (JA) / Azure OpenAI をアプリに統合する
   - 10 Utilize prompt engineering in your app (JA) / アプリでプロンプト エンジニアリングを利用する
   - 11 Use your own data with Azure OpenAI (JA) / Azure OpenAI で独自のデータを使用する
+  - ※9,10,11の手順書は以下をご参照ください
+    - https://microsoftlearning.github.io/mslearn-openai/
+    - 9 → Use Azure OpenAI SDKs in your app
+    - 10 → Utilize prompt engineering in your app
+    - 11 → Implement Retrieval Augmented Generation (RAG) with Azure OpenAI Service
+
 
 ■クロージング
 
