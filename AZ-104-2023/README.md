@@ -19,6 +19,7 @@ Azure サブスクリプションの管理、ID の保護、インフラスト�
 - [ラーニングパス1: Azure でのIDとガバナンスの管理](lp01.md)
 - [ラーニングパス2: Azure 管理者向けの前提条件](lp02.md)
 - ラボ (オプション)
+  - [ラボの実施方法](lab.md)
   - [インタラクティブラボシミュレーション](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator)
     - 1 Manage Azure Active Directory identities
     - 2 Manage subscriptions and RBAC
