@@ -11,12 +11,12 @@
 ## 学習内容
 
 - [ラーニングパス1: 画像を分析する](lp01-analyze-images.md)
-  - ラボ1 画像の分析
+  - [ラボ1 画像の分析 (Analyze Images with Azure AI Vision)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/01-analyze-images.html)
 - [ラーニングパス2: カスタムモデルを使用した画像分類](lp02-classify-images-custom-model.md)
-  - ラボ2 画像の分類
+  - [ラボ2 画像の分類 (Classify images with an Azure AI Vision custom model)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/02-image-classification.html)
 - [ラーニングパス3: 顔を検出、分析、認識する](lp03-face.md)
 - [ラーニングパス4: 画像やドキュメント内のテキストを読み取る](lp04-read-text.md)
-  - ラボ3 テキストの読み取り
+  - [ラボ3 テキストの読み取り (Read Text in Images)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/05-ocr.html)
 - [ラーニングパス5: 動画を分析する](lp05-analyze-video.md)
 
 ## ラボ（演習）
@@ -28,9 +28,9 @@
   - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
 
 このコースでは以下の3つのラボを実施します。
-- ラボ1 画像の分析 (Analyze Images with Azure AI Vision)
-- ラボ2 画像の分類 (Classify images with an Azure AI Vision custom model)
-- ラボ3 テキストの読み取り (Read Text in Images)
+- [ラボ1 画像の分析 (Analyze Images with Azure AI Vision)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/01-analyze-images.html)
+- [ラボ2 画像の分類 (Classify images with an Azure AI Vision custom model)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/02-image-classification.html)
+- [ラボ3 テキストの読み取り (Read Text in Images)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/05-ocr.html)
 
 ## アセスメント（評価）
 
