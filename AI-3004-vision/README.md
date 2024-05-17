@@ -25,6 +25,7 @@
 
 - [手順書](https://microsoftlearning.github.io/mslearn-ai-vision/)
 - [ラボ環境](https://esi.learnondemand.net/)
+  - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
 
 このコースでは以下の3つのラボを実施します。
 - ラボ1 画像の分析 (Analyze Images with Azure AI Vision)
