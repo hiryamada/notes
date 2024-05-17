@@ -32,7 +32,7 @@ Azure AI services
 - [ラーニングパス4: 画像やドキュメント内のテキストを読み取る](lp04-read-text.md)
   - [ラボ3 テキストの読み取り (Read Text in Images)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/05-ocr.html)
 - [ラーニングパス5: 動画を分析する](lp05-analyze-video.md)
-- 全体のまとめ
+- [全体のまとめ](matome.md)
 - [認定試験（アセスメント）のご案内](assessment.md)
 - クロージング（終了時のご案内）
 - 満足度アンケート

@@ -26,6 +26,13 @@ Azure AI services
 https://www.videoindexer.ai/
 
 
+## クイックスタート
+
+Azure AI Video Indexerを使用するための手順は「クイックスタート」のドキュメントで解説されている。
+
+https://learn.microsoft.com/ja-jp/azure/azure-video-indexer/video-indexer-get-started
+
+
 <!--
 ## 参考: Azure AI Visionの「Video Analysis」
 
