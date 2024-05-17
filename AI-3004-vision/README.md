@@ -4,17 +4,9 @@ https://learn.microsoft.com/ja-jp/credentials/applied-skills/build-azure-ai-visi
 
 画像分析、画像からのテキストの読み取り、動画の分析などの、Azure AI Vision の主要な機能を学び、それを使用するC#/Pythonアプリを構築します。
 
-1日コース
-
-ラボ（演習）あり。（現在英語版のみ）
-
-注意: このコースの内容は「[AI-102 Azure AI エンジニア](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/)」の一部と同じです。
-
-## 学習内容
-
 ```
 Azure AI services
-├ Azure AI Vision
+├ Azure AI Vision (画像処理)
 │  ├ Image Analysis (画像分析)
 │  ├ Custom Image Analysis (カスタムモデルによる画像分析)
 │  ├ Face (画像に含まれる人の顔の検出)
@@ -22,6 +14,16 @@ Azure AI services
 └ Azure AI Video Indexer （ビデオの分析）
 ```
 
+1日コース
+
+ラボ（演習）あり。（現在英語版のみ）
+
+注意: このコースの内容は「[AI-102 Azure AI エンジニア](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/)」の一部と同じです。
+
+## 講義
+
+- 講師自己紹介
+- オープニング（開始時のご案内）
 - [ラーニングパス1: 画像を分析する](lp01-analyze-images.md)
   - [ラボ1 画像の分析 (Analyze Images with Azure AI Vision)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/01-analyze-images.html)
 - [ラーニングパス2: カスタムモデルを使用した画像分類](lp02-classify-images-custom-model.md)
@@ -30,6 +32,10 @@ Azure AI services
 - [ラーニングパス4: 画像やドキュメント内のテキストを読み取る](lp04-read-text.md)
   - [ラボ3 テキストの読み取り (Read Text in Images)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/05-ocr.html)
 - [ラーニングパス5: 動画を分析する](lp05-analyze-video.md)
+- 全体のまとめ
+- [認定試験（アセスメント）のご案内](assessment.md)
+- クロージング（終了時のご案内）
+- 満足度アンケート
 
 ## ラボ（演習）
 
@@ -43,15 +49,3 @@ Azure AI services
 - [ラボ1 画像の分析 (Analyze Images with Azure AI Vision)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/01-analyze-images.html)
 - [ラボ2 画像の分類 (Classify images with an Azure AI Vision custom model)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/02-image-classification.html)
 - [ラボ3 テキストの読み取り (Read Text in Images)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/05-ocr.html)
-
-## アセスメント（評価）
-
-このコースは「[Microsoft Applied Skills](https://learn.microsoft.com/ja-jp/credentials/support/appliedskills-process-overview)」の一部です。
-
-Microsoft Applied Skillsのコースの内容に対応する、無料の「アセスメント（評価）」に合格することで「資格証明」を取得し、スキルを証明できます。
-
-以下のページの「評価を受ける」からアセスメント（評価）を受験できます。
-
-https://learn.microsoft.com/ja-jp/credentials/applied-skills/build-azure-ai-vision-solution
-
-※2024/6 現在、メンテナンス中につきご利用いただけません。再開予定は未定です。
