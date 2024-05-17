@@ -1,5 +1,7 @@
 # 画像分析 - Image Analysis
 
+[公式ドキュメント](https://learn.microsoft.com/ja-jp/azure/ai-services/computer-vision/overview-image-analysis?tabs=4-0)
+
 ```
 Azure AI services
  └ Azure AI Vision (Computer Vision)

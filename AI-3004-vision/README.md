@@ -1,5 +1,7 @@
 # AI-3004: Azure AI サービスを使用して Azure AI Vision ソリューションを構築する
 
+https://learn.microsoft.com/ja-jp/credentials/applied-skills/build-azure-ai-vision-solution/
+
 画像分析、画像からのテキストの読み取り、動画の分析などの、Azure AI Vision の主要な機能を学び、それを使用するC#/Pythonアプリを構築します。
 
 1日コース
@@ -9,6 +11,16 @@
 注意: このコースの内容は「[AI-102 Azure AI エンジニア](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/)」の一部と同じです。
 
 ## 学習内容
+
+```
+Azure AI services
+├ Azure AI Vision
+│  ├ Image Analysis (画像分析)
+│  ├ Custom Image Analysis (カスタムモデルによる画像分析)
+│  ├ Face (画像に含まれる人の顔の検出)
+│  └ OCR (画像に含まれるテキストの読み取り)
+└ Azure AI Video Indexer （ビデオの分析）
+```
 
 - [ラーニングパス1: 画像を分析する](lp01-analyze-images.md)
   - [ラボ1 画像の分析 (Analyze Images with Azure AI Vision)](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/01-analyze-images.html)
