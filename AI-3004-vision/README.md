@@ -6,24 +6,18 @@
 
 ラボ（演習）あり。（現在英語版のみ）
 
-このコースの内容は「[AI-102 Azure AI エンジニア](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/)」の一部と同じです。
-
-## Microsoft Applied Skills
-
-このコースは「[Microsoft Applied Skills](https://learn.microsoft.com/ja-jp/credentials/support/appliedskills-process-overview)」の一部です。
-
-無料の「アセスメント（評価）」に合格することで「資格証明」を取得し、スキルを証明できます。
+注意: このコースの内容は「[AI-102 Azure AI エンジニア](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/)」の一部と同じです。
 
 ## 学習内容
 
-- [画像を分析する](lp01-analyze-images.md)
-- ラボ1 画像の分析
-- [カスタムモデルを使用した画像分類](lp02-classify-images-custom-model.md)
-- ラボ2 画像の分類
-- [顔を検出、分析、認識する](lp03-face.md)
-- [画像やドキュメント内のテキストを読み取る](lp04-read-text.md)
-- ラボ3 テキストの読み取り
-- [動画を分析する](lp05-analyze-video.md)
+- [ラーニングパス1: 画像を分析する](lp01-analyze-images.md)
+  - ラボ1 画像の分析
+- [ラーニングパス2: カスタムモデルを使用した画像分類](lp02-classify-images-custom-model.md)
+  - ラボ2 画像の分類
+- [ラーニングパス3: 顔を検出、分析、認識する](lp03-face.md)
+- [ラーニングパス4: 画像やドキュメント内のテキストを読み取る](lp04-read-text.md)
+  - ラボ3 テキストの読み取り
+- [ラーニングパス5: 動画を分析する](lp05-analyze-video.md)
 
 ## ラボ（演習）
 
@@ -38,6 +32,10 @@
 - ラボ3 テキストの読み取り (Read Text in Images)
 
 ## アセスメント（評価）
+
+このコースは「[Microsoft Applied Skills](https://learn.microsoft.com/ja-jp/credentials/support/appliedskills-process-overview)」の一部です。
+
+Microsoft Applied Skillsのコースの内容に対応する、無料の「アセスメント（評価）」に合格することで「資格証明」を取得し、スキルを証明できます。
 
 以下のページの「評価を受ける」からアセスメント（評価）を受験できます。
 
