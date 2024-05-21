@@ -21,7 +21,7 @@ Azure AI services
 - "シーンのセグメント化" - ビデオの構成シーンへの分解。
 
 
-## Azure Video Indexer portal
+## Azure AI Video Indexer portal
 
 https://www.videoindexer.ai/
 

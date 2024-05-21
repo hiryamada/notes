@@ -24,6 +24,7 @@ Azure AI services
   - 画像に表示される家具、道具、植物、動物、アクセサリ、小物、生物などのタグを返す
 - オブジェクト検出 - Object detection
 - 人物検出 - People detection
+- 背景削除 - Background removal
 
 ### 画像キャプション - Image captions
 
@@ -55,12 +56,22 @@ Azure AI services
 
 画像に表示された人物を検出。
 
+### 背景削除 - Background removal
+
+画像の背景を削除、あるいは、クライアント側で背景削除処理などを実行するための「アルファマット」を生成。
+
+![alt text](image-2.png)
+
 ## 画像分析を行うためのAzureリソース
 
 画像の分析には以下のいずれかのリソースを使用。
 
-- 「Computer vision」リソース
+- 「Computer Vision」リソース
+  - 価格レベル: Free / S0
 - 「Azure AI services マルチサービスアカウント」リソース
+  - 価格レベル: S0
+
+「画像キャプション」や「高密度キャプション」を使用するためには、GPUが使用できるリージョン（米国東部、フランス中部、韓国中部、北ヨーロッパ、東南アジア、西ヨーロッパ、米国西部、東アジア）にリソースを作成する必要がある。
 
 ## Vision Studio
 

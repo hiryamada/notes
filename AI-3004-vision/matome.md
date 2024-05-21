@@ -26,7 +26,7 @@ Azure AI services
 |-|-|-|
 |Azure portal| https://portal.azure.com/ | Azureリソースの管理 |
 |Vision Studio| https://portal.vision.cognitive.azure.com/ | 画像分析、カスタムモデルのトレーニングとテスト、Face、OCRなどの利用 |
-|Azure Video Indexer portal| https://www.videoindexer.ai/ | 動画のアップロードと分析 |
+|Azure AI Video Indexer portal| https://www.videoindexer.ai/ | 動画のアップロードと分析 |
 
 ## SDK
 
