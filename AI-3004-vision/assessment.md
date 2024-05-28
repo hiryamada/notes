@@ -16,7 +16,11 @@ https://learn.microsoft.com/ja-jp/credentials/applied-skills/build-azure-ai-visi
 
 ![alt text](image-1.png)
 
-※2024/6 現在、メンテナンス中につきご利用いただけません。再開予定は未定です。
+## アセスメント（評価）のメンテナンス
+
+アセスメント（評価）はメンテナンスのため開始できない場合があります。再開までしばらくお待ち下さい。
+
+![alt text](image-3.png)
 
 ## 「資格証明」の活用方法
 

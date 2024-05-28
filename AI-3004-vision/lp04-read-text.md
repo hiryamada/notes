@@ -16,3 +16,8 @@ Azure AI services
 
 日本語を含む、複数の言語がサポートされている。
 
+## 実行例
+
+![alt text](image-16.png)
+
+![alt text](image-17.png)

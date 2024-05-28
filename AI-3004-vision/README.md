@@ -39,7 +39,7 @@ Azure AI services
 
 ## ラボ（演習）
 
-※2024/6 現在、英語版のみ提供されています。
+※2024/6 現在、英語版の手順書のみ提供されています。Webブラウザーの翻訳機能を使用して、手順書を日本語化できます。
 
 - [手順書](https://microsoftlearning.github.io/mslearn-ai-vision/)
 - [ラボ環境](https://esi.learnondemand.net/)
