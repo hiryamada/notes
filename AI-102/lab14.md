@@ -1,4 +1,4 @@
-# ラボ14 チャットボット(WeatherBot)の作成
+# チャットボット(WeatherBot)の作成例
 
 ■概要
 
@@ -12,6 +12,7 @@ Bot Framework Composer は、コードを記述せず、高度な会話型ボッ
 
 開発したボットをAzure Bot ServiceにデプロイしてAzure上でも動作を確認します。
 
+<!--
 ■ラボの起動
 
 - ラボ環境にアクセス https://esi.learnondemand.net/
@@ -30,6 +31,7 @@ https://youtu.be/U4CPu0DGMzg
 
 
 ■手順書（カスタマイズ）
+-->
 
 
 ## OpenWeather APIキーの準備
@@ -350,8 +352,9 @@ ${dialog.city} の天気は ${dialog.weather} で、温度は ${dialog.temp}&deg
 
 ![](images/ss-2023-04-06-22-24-47.png)
 
-以上です。おつかれさまでした！
 
+<!--
+以上です。おつかれさまでした！
 ■手順書（公式、参考）
 
 日本語:
@@ -359,3 +362,4 @@ https://microsoftlearning.github.io/AI-102-AIEngineer.ja-jp/Instructions/14-bot-
 
 英語:
 https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/14-bot-composer.html
+-->
