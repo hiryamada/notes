@@ -43,6 +43,7 @@ https://youtu.be/U4CPu0DGMzg
 - ユーザー名、Eメール、パスワードなどの必要な情報を入力し、「Create Account」をクリック
 - 入力したEメールアドレス宛てに、APIキーが送信されてくる。
 
+<!--
 ## ラボの起動
 
 ラボ12番を起動します。
@@ -58,6 +59,7 @@ Azure App Service / Azure Bot Service リソースを作成できるように、
 - リソースプロバイダーを表示
 - Microsoft.Web を検索、登録
 - Microsoft.BotService を検索、登録
+-->
 
 <!--
 ## Bot Framework Emulator のインストール

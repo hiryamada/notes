@@ -95,7 +95,7 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
   - [ラーニングパス09 Azure AI Services でコンピューター ビジョン ソリューションを作成する](lp09.md)
 - Azure AI Services ＞ 画像(Vision API) ＞ 光学式文字認識(OCR)
   - [ラーニングパス10 画像およびドキュメントからテキストを抽出する](lp10.md)
-- [Azure AI Video Indexer](azure-ai-video-indexer.md)
+- [Azure AI Video Indexer]([azure-ai-video-indexer.md](../AI-3004-vision/lp05-analyze-video.md)
 
 テーマ(2): ドキュメント（PDFなど）に対する検索を行うサービスの利用方法を理解する。
 
