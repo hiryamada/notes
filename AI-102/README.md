@@ -6,7 +6,9 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
 
 4日間
 
-Azure AI Services、Azure AI Search、および Microsoft Bot Framework を利用して、AIを組み込んだアプリケーションを構築したいソフトウェア開発者を対象としています。
+Azure AI Services（旧 Azure Cognitive Services）、Azure AI Search（旧 Azure AI Search）、および Microsoft Bot Framework を利用して、AIを組み込んだアプリケーションを構築したいソフトウェア開発者を対象としています。
+
+なお、4日目の内容はコース「AI-050」と同じです。
 
 <!--
 > ※AI-100:
@@ -36,7 +38,6 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
 
 - AzureのAI/Machine Learningサービスの概要
   - [ラーニングパス01 AI エンジニアリングへの準備](lp01.md)
-  - [ラーニングパス12 Azure OpenAI Service](lp12.md)
 - Azure AI Services の基礎知識
   - [ラーニングパス02 Azure AI Services のプロビジョニングと管理](lp02.md)
 
@@ -47,7 +48,10 @@ https://learn.microsoft.com/ja-jp/certifications/roles/ai-engineer
   - 3 Monitor Cognitive Services
   - 4 User a Cognitive Services container
 - [ラボ環境(※難しい)](https://esi.learnondemand.net/User/Login)
-  - [ラボ環境の利用方法](../cloudslice/README.md)
+  - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
+  - ※トレーニングキーは、講師より連絡いたします
+  - ※トレーニングキーの入力はトレーニング期間中に実施する必要があります
+  - ※ラボ環境はご受講より半年後までご利用いただけます
   - 1 Get Started with Azure AI Services (JA) / Azure AI サービスの使用を開始する
 
 ■2日目

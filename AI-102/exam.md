@@ -70,7 +70,9 @@ https://learn.microsoft.com/ja-jp/training/modules/prepare-to-develop-ai-solutio
 
 https://learn.microsoft.com/ja-jp/certifications/practice-assessments-for-microsoft-certifications
 
-主なAzure認定試験の模擬問題にチャレンジできる。正解・解説表示あり。英語だが、Webブラウザーの翻訳機能を使用して日本語化が可能。
+![alt text](image-8.png)
+
+主なAzure認定試験の模擬問題にチャレンジできる。正解・解説表示あり。
 
 ~~※AI-900（AIの基礎）の「プラクティス評価」で、AzureのAIサービスの基本的な知識を復習できる。~~
 
@@ -111,6 +113,9 @@ Microsoftの本番の認定試験の画面構成、画面遷移、出題パタ�
 https://learn.microsoft.com/ja-jp/certifications/exams/ai-102
 
 上記ページの「試験のスケジュール設定」から申し込む。
+![alt text](image-9.png)
+
+割引の利用方法: https://aka.ms/lxp-userguide
 
 新宿・銀座・秋葉原などの試験会場に出向いて受験する方法と、自宅などで場所を確保し、ノートPCを使用して受験する方法が選べる。
 
