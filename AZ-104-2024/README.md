@@ -56,6 +56,8 @@ Azure サブスクリプションの管理、ID の保護、インフラスト�
       - 仮想ネットワークピアリングの作成
       - ルートテーブルの作成
     - 7 Implement Traffic Management (JA) / トラフィック管理を実装する
+      - Webサーバーの作成（ARMテンプレートを利用）
+      - Azure Load Balancerの作成、Azure Application Gatewayの作成
 
 3日目:
 - 講義: Azure Storage
@@ -68,8 +70,24 @@ Azure サブスクリプションの管理、ID の保護、インフラスト�
     - 13 Implement Azure Web Apps
   - [ラボ環境](https://esi.learnondemand.net/)
     - 8 Manage Azure Storage (JA) / Azure Storageを管理する
+      - ストレージアカウントの作成、ネットワーク設定
+        - Blobの利用
+          - ライフサイクル管理の設定
+          - 時間ベースのアイテム保持ポリシーの設定
+          - Blobのアップロード
+          - SASの生成
+        - ファイル共有の利用
+          - ファイル共有の作成、フォルダの作成、ファイルのアップロード
+      - ネットワークの設定（仮想ネットワークからのアクセスに制限）
     - 9 Manage Virtual Machines (JA) / 仮想マシンを管理する
+      - 仮想マシンの作成
+        - サイズの変更、ディスクの追加
+      - 仮想マシンスケールセットの作成、スケーリングの設定
+      - Azure PowerShell / Azure CLI を使用した仮想マシンの作成（オプション）
     - 10 Implement Web Apps (JA) / Web Apps を実装する
+      - App Service Webアプリの作成
+      - デプロイスロット（ステージングスロット）の作成、スワップ
+      - 自動スケーリングの設定
 
 4日目:
 - 講義: コンテナーまたはACA
@@ -83,9 +101,24 @@ Azure サブスクリプションの管理、ID の保護、インフラスト�
     - 17 Implement monitoring
   - [ラボ環境](https://esi.learnondemand.net/)
     - 11 Implement Azure Container Instances (JA) / Azure Container Instances を実装する
+      - Azure Container Instanceの作成（hello worldを表示するコンテナーの実行）
     - 12 Implement Azure Container Apps (JA) / Azure Container Apps を実装する
+      - Azure Container Appと環境の作成（hello worldを表示するコンテナーの実行）
+      - ※環境は、名前 `my-containers` 、種類 `従量課金のみ` で新規作成してください
     - 13 Backup virtual machines (JA) / データ保護を実装する
+      - 仮想マシンの作成（ARMテンプレートを使用）、Recovery Servicesコンテナーの作成
+      - 仮想マシンのバックアップ
+        - 仮想マシンのバックアップの設定、ストレージアカウントの作成
+        - Recovery Servicesコンテナーのログとメトリックをストレージアカウントに出力する診断設定の作成
+      - 仮想マシンのレプリケーション
+        - 仮想マシンのレプリケーションの設定
     - 14 Implement Monitoring (JA) / 監視を実装する
+      - 仮想マシンの作成（ARMテンプレートを使用）
+      - VM insights を有効にする
+      - アラートの作成、通知の設定
+      - アラートをトリガーし、メールで通知を受け取る
+      - 通知を抑制する設定を行う
+      - ログのクエリ（KQL）を実行する
 - クロージング（終了時のご案内、アンケート）
 
 <!--
