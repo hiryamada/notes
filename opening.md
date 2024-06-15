@@ -21,6 +21,8 @@
   - 13:00-15:00 講義
   - 15:00～ オプション: ラボ（演習）、終わり次第順次ご退室
 
+※1日コースの場合は講義はもう少し早く終わる場合があります。
+
 <!--
 講師は毎日 17:30 まで待機し、質問対応等サポートいたします。
 -->
@@ -148,9 +150,9 @@
 - [SC-300](SC-300/README.md)
 - [AI-102](AI-102/README.md)
 - [AI-050](AI-050-2024/README.md)
-- [AI-3003](AI-3003-nlp/README.md)
-- [AI-3004](AI-3004-vision/README.md)
-- [MS-4005](MS-4005-copilot-prompt/README.md)
+- [AI-3003(nlp)](AI-3003-nlp/README.md)
+- [AI-3004(visioon)](AI-3004-vision/README.md)
+- [MS-4005(copilot)](MS-4005-copilot-prompt/README.md)
 
 よろしければ、今回ご受講のコース以外の講義資料も、ご利用ください。
 
