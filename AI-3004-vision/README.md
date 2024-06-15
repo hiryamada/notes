@@ -39,7 +39,9 @@ Azure AI services
 
 ## ラボ（オプション） / 講師デモ
 
-実際にAzureを操作するラボ（演習）です。Azureやソフトウェア開発の経験がある方向け。
+実際にAzureを操作するラボ（演習）です。Azureやソフトウェア開発の経験がある方向け。ご受講の半年後まで、ラボを利用できます。
+
+利用にはマイクロソフトアカウントとトレーニングキーの入力が必要です。トレーニングキーは講師よりご連絡いたします。トレーニングキーの入力は、トレーニング当日中に実施する必要があります。
 
 - [ラボ環境](https://esi.learnondemand.net/)
   - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
@@ -59,12 +61,13 @@ Azure AI services
 - 手順書
   - 英語版 https://microsoftlearning.github.io/mslearn-ai-vision/
   - 日本語版 https://microsoftlearning.github.io/mslearn-ai-vision.ja-jp/
-
 -->
 
 ## インタラクティブ ラボ シミュレーション（オプション）
 
-Azureの操作を疑似体験できるシミュレーションです。Azureやソフトウェア開発の経験がない方向け。
+Azureの操作を疑似体験できるシミュレーションです。Azureやソフトウェア開発の経験がない方向け。特に期限なくご利用いただけます。
+
+マイクロソフトアカウントの作成や、トレーニングキーの入力は、不要です。
 
 - [インタラクティブ ラボ シミュレーション（英語のみ）](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
   - LP（ラーニングパス）1: 15 Analyze images with Computer Vision
