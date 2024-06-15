@@ -7,16 +7,16 @@ https://learn.microsoft.com/ja-jp/credentials/applied-skills/build-azure-ai-visi
 ```
 Azure AI services
 ├ Azure AI Vision (画像処理)
-│  ├ Image Analysis (画像分析): LP(ラーニングパス)1
-│  ├ Custom Image Analysis (カスタムモデルによる画像分析): LP2
+│  ├ Image Analysis (画像分析): LP(ラーニングパス)1 / ラボ1
+│  ├ Custom Image Analysis (カスタムモデルによる画像分析): LP2 / ラボ2
 │  ├ Face (画像に含まれる人の顔の検出): LP3
-│  └ OCR (画像に含まれるテキストの読み取り) : LP4
+│  └ OCR (画像に含まれるテキストの読み取り) : LP4 / ラボ3
 └ Azure AI Video Indexer （ビデオの分析）: LP5
 ```
 
 1日コース（前半講義、後半演習）
 
-ラボ（演習）あり。（現在英語版のみ）
+ラボ（演習）あり。
 
 注意: このコースの内容は「[AI-102 Azure AI エンジニア](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/)」の一部と同じです。
 
@@ -25,12 +25,12 @@ Azure AI services
 - 講師自己紹介
 - [オープニング（開始時のご案内）](../opening.md)
 - [ラーニングパス1: 画像を分析する](lp01-analyze-images.md)
-  - ラボ（オプション） / 講師デモ 1 画像の分析 (Analyze Images with Azure AI Vision)
+  - ラボ1（オプション） / 講師デモ  画像の分析 (Analyze Images with Azure AI Vision)
 - [ラーニングパス2: カスタムモデルを使用した画像分類](lp02-classify-images-custom-model.md)
-  - ラボ（オプション） / 講師デモ 2 画像の分類 (Classify images with an Azure AI Vision custom model)
+  - ラボ2（オプション） / 講師デモ  画像の分類 (Classify images with an Azure AI Vision custom model)
 - [ラーニングパス3: 顔を検出、分析、認識する](lp03-face.md)
 - [ラーニングパス4: 画像やドキュメント内のテキストを読み取る](lp04-read-text.md)
-  - ラボ（オプション） / 講師デモ 3 テキストの読み取り (Read Text in Images)
+  - ラボ3（オプション） / 講師デモ  テキストの読み取り (Read Text in Images)
 - [ラーニングパス5: 動画を分析する](lp05-analyze-video.md)
 - [全体のまとめ](matome.md)
 - [認定試験（アセスメント）のご案内](assessment.md)
