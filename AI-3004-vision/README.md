@@ -31,6 +31,7 @@ Azure AI services
 - [ラーニングパス3: 顔を検出、分析、認識する](lp03-face.md)
 - [ラーニングパス4: 画像やドキュメント内のテキストを読み取る](lp04-read-text.md)
   - ラボ3（オプション） / 講師デモ  テキストの読み取り (Read Text in Images)
+  - [ラボ3解説PDF](lab03.pdf)
 - [ラーニングパス5: 動画を分析する](lp05-analyze-video.md)
 - [全体のまとめ](matome.md)
 - [認定試験（アセスメント）のご案内](assessment.md)
@@ -39,7 +40,9 @@ Azure AI services
 
 ## ラボ（オプション） / 講師デモ
 
-実際にAzureを操作するラボ（演習）です。Azureやソフトウェア開発の経験がある方向け。ご受講の半年後まで、ラボを利用できます。
+実際にAzureを操作するラボ（演習）です。Azureやソフトウェア開発の経験がある方向け。ご受講の3日後まで、ラボを利用できます。
+
+英語版のみ。
 
 利用にはマイクロソフトアカウントとトレーニングキーの入力が必要です。トレーニングキーは講師よりご連絡いたします。トレーニングキーの入力は、トレーニング当日中に実施する必要があります。
 
@@ -56,6 +59,7 @@ Azure AI services
 - ラボ3 テキストの読み取り (Read Text in Images)
   - 英語版 https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/05-ocr.html
   - 日本語版 https://microsoftlearning.github.io/mslearn-ai-vision.ja-jp/Instructions/Exercises/05-ocr.html
+  - [ラボ3解説PDF](lab03.pdf)
 
 <!--
 - 手順書
@@ -66,6 +70,8 @@ Azure AI services
 ## インタラクティブ ラボ シミュレーション（オプション）
 
 Azureの操作を疑似体験できるシミュレーションです。Azureやソフトウェア開発の経験がない方向け。特に期限なくご利用いただけます。
+
+英語版のみ。
 
 マイクロソフトアカウントの作成や、トレーニングキーの入力は、不要です。
 
