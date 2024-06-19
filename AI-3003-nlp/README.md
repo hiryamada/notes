@@ -2,7 +2,7 @@
 
 https://learn.microsoft.com/ja-jp/credentials/applied-skills/build-natural-language-solution-azure-ai/
 
-Azure AI Language の、テキストの分析、質問への応答（Question Answering）、会話言語理解（CLU）などの機能について学びます。また、Azure AI Speech の、文字起こし、音声合成などについて学びます。
+Azure AI Language の、テキストの分析、質問への応答（Question Answering）、会話言語理解（CLU）、Azure AI Translatorの翻訳、Azure AI Speech の、音声認識、テキスト読み上げ、音声翻訳などについて学びます。
 
 ```
 Azure AI services
@@ -12,9 +12,9 @@ Azure AI services
 │ ├ Conversational Language Understanding (CLU) / 会話言語理解 ... M3
 │ ├ Custom text classification / カスタムテキスト分類 ... M4
 | └ Custom Named Entity Recognition (NER) / カスタムNER ... M5
+├ Azure AI Translator / 翻訳 ... M6
 └ Azure AI Speech
-  ├ Speech-to-text / 音声認識 ... M6
-  ├ Text-to-speech / テキスト読み上げ ... M7
+  ├ Text-to-speech, Speech-to-Text / 音声認識・テキスト読み上げ ... M7
   └ Speech translation / 音声翻訳 ... M8
 ```
 
@@ -28,7 +28,7 @@ Azure AI services
 
 - 講師自己紹介
 - [オープニング（開始時のご案内）](../opening.md)
-- [モジュール1 Azure AI Language を使用してテキストを分析する](m01-lang.md)
+- [モジュール1 Azure AI Language を使用してテキストを分析する](m01-text-analysis.md)
 - [モジュール2 Azure AI Language を使用して質問応答ソリューションを作成する](m02-qa.md)
 - [モジュール3 会話言語理解(CLU)モデルを構築する](m03-clu.md)
 - [モジュール4 カスタム テキスト分類ソリューションを作成する](m04-custom-classification.md)
