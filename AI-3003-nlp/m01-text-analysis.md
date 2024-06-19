@@ -19,15 +19,9 @@ Azure AI services
   └ Speech translation / 音声翻訳 ... M8
 ```
 
-## 使用するリソース
+## Text Analytics (テキスト分析) とは？
 
-■リソース
-
-以下のいずれかを使用。
-
-- 「言語サービス」リソース
-- 「Azure AI Servicesマルチサービスアカウント」
-
+言語検出、キーフレーズ抽出、感情分析、エンティティ抽出（固有表現認識）、エンティティリンキングなどの自然言語処理を実行する。
 
 ## Language detection / 言語検出
 
@@ -50,15 +44,9 @@ https://www.ogis-ri.co.jp/otc/hiroba/technical/similar-document-search/part5.htm
 「文章からその主題を良く表現している句を抽出する技術」
 
 ```
-"食べ物はとてもおいしくて最高でした！スタッフの方の対応も素晴らしかったです。"
+"食事はどれもとても美味しく、最高でした！スタッフの方の対応も素晴らしかったです。"
 ↓
-"おいしい食べ物", "素晴らしいスタッフ"
-```
-
-```
-"The food was delicious and the staff were wonderful!"
-↓
-"delicious food", "wonderful staff"
+"美味しい食事", "素晴らしいスタッフ"
 ```
 
 ## Sentiment analysis / 感情を分析する
@@ -68,7 +56,6 @@ https://learn.microsoft.com/ja-jp/azure/ai-services/language-service/sentiment-o
 テキストをマイニングして「ポジティブ」「ネガティブ」「ニュートラル」といった分析を行う。人々がブランドやトピックについてどう考えているかを知ることができる。
 
 文章に対して 0 と 1 の間の信頼度スコアを返す。
-
 
 ## Named Entity Recognition (NER) / エンティティの抽出(「固有表現認識」とも)
 
@@ -94,13 +81,20 @@ https://learn.microsoft.com/ja-jp/azure/ai-services/language-service/entity-link
 
 「空に輝くヴィーナス」という文章の中では、「ヴィーナス」は「女神」ではなく「金星」と解釈するのが適切である。
 
-Entity linkingでは、このような単語の適切な意味を判断して、英語版Wikipediaの適切なリンクを付与する。
+Entity linkingでは、このような、文章の中の単語の適切な意味を判断して、英語版Wikipediaの適切なリンクを付与する。
 
 ```
 "私は空に輝くヴィーナスを見た"
 ↓
 Venus: https://en.wikipedia.org/wiki/Venus
 ```
+
+## 使用するリソース
+
+以下のいずれかを使用。
+
+- 「言語サービス」リソース
+- 「Azure AI Servicesマルチサービスアカウント」
 
 ## Language Studio
 

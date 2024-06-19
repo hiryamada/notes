@@ -18,7 +18,31 @@ Azure AI services
 
 https://learn.microsoft.com/ja-jp/azure/ai-services/speech-service/speech-translation
 
-音声の翻訳は、音声入力を認識して指定された言語に変換し、1 つ以上の他の言語でのトランスクリプトの翻訳を返すことにより、音声認識を構築します。
+マイクなどから入力された音声を文字起こしして、指定された言語に変換する。
+
+## 処理の流れ
+
+```
+音声データ（英語）
+↓
+文字起こし（英語）
+↓
+文字起こしの翻訳（日本語）
+```
+
+処理結果のレスポンスには「文字起こし（英語）」と「文字起こしの翻訳（日本語）」が含まれる。
+
+※「音声翻訳」は、音声の元の言語の「文字起こし」と、その「翻訳テキスト」を生成するところまでを担当。「翻訳テキスト」を読み上げる処理は含まれない。必要に応じて、アプリ側で、「翻訳テキスト」を別途 Text-to-speech で読み上げさせる処理を行う。
+
+## 具体的な例
+
+```
+「Hello」（英語音声）
+↓
+Hello（英語テキスト）
+↓
+こんにちは（日本語テキスト）
+```
 
 ## リソース
 
@@ -30,3 +54,14 @@ https://learn.microsoft.com/ja-jp/azure/ai-services/speech-service/speech-transl
 ## Speech Studio
 
 https://aka.ms/speechstudio/speechtranslation
+
+
+## 参考: ビデオ翻訳
+
+※今回の解説の範囲外
+
+※2024/6現在、プレビューとして提供中
+
+https://learn.microsoft.com/ja-jp/azure/ai-services/speech-service/video-translation-overview
+
+「ビデオ翻訳」を使用すると、動画の音声の「自動吹き替え」が可能。

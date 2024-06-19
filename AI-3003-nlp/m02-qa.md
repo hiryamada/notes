@@ -22,19 +22,11 @@ https://learn.microsoft.com/ja-jp/azure/cognitive-services/language-service/ques
 
 たとえば、「質問応答」で、「よく寄せられる質問」(Frequently Asked Question, FAQ)を読み取って「ナレッジベース」を構築し、ユーザーからの「ラーニング パスとは何ですか？」といった質問に、ナレッジベースを活用して回答することができる。
 
-質問応答は、たとえば「チャットボット」と組み合わせて利用できる。
+## 対応する言語
 
-```
-ユーザー
-↓質問 ↑応答（回答）
-Webアプリ / Teams / Slack / Line など
-↓ ↑
-チャットボット
-↓ ↑
-AI Services「言語サービス」
-└ 質問応答
-  └ナレッジベース
-```
+以下に「サポートされている言語」の一覧がある。日本語にも対応。
+
+https://learn.microsoft.com/ja-jp/azure/ai-services/language-service/question-answering/language-support#languages-supported
 
 ## FAQ (Frequently Asked Question)とは？
 
@@ -52,14 +44,25 @@ FAQ（よくある質問とその回答集）、製品マニュアル、Webペ�
 
 また、質問と応答を手動で追加することもできる。
 
-## 「質問応答」はどのAI Servicesリソースを使用するのか？
+
+## 質問応答の利用例
+
+質問応答は、たとえば「チャットボット」と組み合わせて利用できる。
+
+```
+ユーザー
+↓質問 ↑応答（回答）
+Webアプリ / Teams / Slack / Line など
+↓ ↑
+チャットボット
+↓ ↑
+AI Services「言語サービス」
+└ 質問応答
+  └ナレッジベース
+```
+
+## 必要なリソース
 
 AI Servicesの「言語サービス」を選び、画面右側の「カスタム質問応答」を「選択」して、リソースを作る。（言語サービスのリソースの一種）
 
 ![](../AI-102/images/ss-2023-06-07-10-57-36.png)
-
-## 「質問応答」はどの言語(日本語、英語等)に対応している？
-
-以下に「サポートされている言語」の一覧がある。日本語にも対応。
-
-https://learn.microsoft.com/ja-jp/azure/ai-services/language-service/question-answering/language-support#languages-supported
