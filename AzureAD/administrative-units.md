@@ -17,5 +17,5 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/roles/administrative-uni
 
 ■ライセンス:
 
-- 管理単位の管理者（ロールを割り当てるユーザー）には Azure AD Premium P1 ライセンスが必要
-- 管理単位のメンバー（その他のユーザー）には P1ライセンスは不要（Azure AD Free でOK）
+- 管理単位の管理者（ロールを割り当てるユーザー）には Entra ID Premium P1 ライセンスが必要
+- 管理単位のメンバー（その他のユーザー）には P1ライセンスは不要（Entra ID Free でOK）

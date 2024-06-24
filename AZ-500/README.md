@@ -34,7 +34,18 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 -->
 
 - [講義資料](mod01/mod01.md)
-- ※1日目のラボはありません
+- ラボ1/講師デモ ロール ベースのアクセス制御
+  - 「GitHubからファイルをダウンロード」はスキップ。このラボではファイルは使用しません
+  - 演習1 Azure portalによるユーザー作成、グループ作成、グループへのユーザー追加
+    - タスク1（ユーザー Joseph の作成）はスキップ。
+    - ※このラボ環境では、ユーザーの新規作成はできません。
+    - Joseph-xxxxxx@LODSPRODMCA.onmicrosoft.com といったユーザーが作成されていますのでそれを使用します。画面右上「リソース」タブで確認できます。
+  - 演習2 Azure PowerShellによるユーザー作成、グループ作成、グループへのユーザー追加
+    - タスク1（ユーザー Isabel の作成）も同様にスキップ。
+  - 演習3 Azure CLIによるユーザー作成、グループ作成、グループへのユーザー追加
+    - タスク1（ユーザー Dylan の作成）も同様にスキップ。
+  - 演習4 リソースグループの作成、Entra IDグループへのロールの割り当て
+  - 「リソースのクリーンアップ」はスキップします。
 
 ## 2日目 ネットワークセキュリティ
 
@@ -45,8 +56,8 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 -->
 
 - [講義資料](mod02/mod02.md)
-- ラボ1 ネットワーク セキュリティ グループとアプリケーション セキュリティ グループ
-- ラボ2 Azure Firewall
+- ラボ2 ネットワーク セキュリティ グループとアプリケーション セキュリティ グループ
+- ラボ3 Azure Firewall
 
 ## 3日目 アプリケーションとデータのセキュリティ
 
@@ -57,10 +68,11 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 -->
 
 - [講義資料](mod03/mod03.md)
-- ラボ3 ACR と AKS の構成とセキュリティ保護
-- ラボ5 Azure SQL データベースのセキュリティ保護
-- ラボ6 サービス エンドポイントとストレージの保護
-- ラボ7 キー コンテナー
+- ラボ4 ACR と AKS の構成とセキュリティ保護
+- ※ラボ5（ディレクトリ同期）は実施しません
+- ラボ6 Azure SQL データベースのセキュリティ保護
+- ラボ7 サービス エンドポイントとストレージの保護
+- ラボ8 キー コンテナー
 
 ## 4日目 モニタリングと管理
 
@@ -72,13 +84,13 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 -->
 
 - [講義資料](mod04/mod04.md)
-- ラボ8 Azure Monitor, Microsoft Defender for Cloud, Microsoft Sentinel
+- ラボ9 Azure Monitor, Microsoft Defender for Cloud, Microsoft Sentinel
 
 ## ラボの実施方法
 
-ラボ環境はご受講後半年後までご利用いただけます。
+[ラボ環境の利用方法のご案内(PDF)](../ラボ環境の利用方法.pdf)
 
-ラボ内容の解説は翌日午前中に実施します。
+ラボ環境はご受講後半年後までご利用いただけます。
 
 - Microsoftアカウントを（なければ）作成 ([作成方法](https://support.microsoft.com/ja-jp/account-billing/%E6%96%B0%E3%81%97%E3%81%84-microsoft-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-a84675c3-3e9e-17cf-2911-3d56b15c0aaf))
 - ラボ環境にMicrosoftアカウントでサインイン （[ラボ環境](https://esi.learnondemand.net/)）

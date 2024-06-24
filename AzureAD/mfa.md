@@ -1,4 +1,4 @@
-# Azure AD の Multi-Factor Authentication (多要素認証, MFA)
+# Entra ID の Multi-Factor Authentication (多要素認証, MFA)
 
 https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-mfa-howitworks
 
@@ -15,9 +15,9 @@ https://docs.microsoft.com/ja-jp/azure/active-directory/authentication/concept-m
 
 ※最初の認証（通常、ユーザーID＋パスワードを使用）を「プライマリ認証」、追加の認証(MFA)を「セカンダリ認証」という。
 
-■Azure AD MFAで使用できる検証方法は？
+■Entra ID MFAで使用できる検証方法は？
 
-Azure AD Multi-Factor Authentication では、次のような追加の検証形式を使用できる。
+Entra ID Multi-Factor Authentication では、次のような追加の検証形式を使用できる。
 
 ※リンク先にイメージあり
 
@@ -33,11 +33,11 @@ Azure AD Multi-Factor Authentication では、次のような追加の検証形�
 
 いくつかの方法がある。
 
-- ユーザーがAzure ADにサインインするのと同時にMFA登録を行う
+- ユーザーがEntra IDにサインインするのと同時にMFA登録を行う
   - ユーザーは、初回のサインインから14日以内にMFA登録を完了させる必要がある
   - テナント側の設定
     - 「セキュリティの既定値(群)」を有効化する![](images/ss-2022-09-25-23-42-16.png)
-    - または「Azure AD Idenity Protection」の「多要素認証登録ポリシー」をオン![](images/ss-2022-09-25-23-43-13.png)
+    - または「Entra ID Idenity Protection」の「多要素認証登録ポリシー」をオン![](images/ss-2022-09-25-23-43-13.png)
 - ユーザーが https://aka.ms/mfasetup にアクセスする
   - Microsoft Authenticatorアプリ and 電話
   - ![](images/ss-2022-09-25-23-44-06.png)
@@ -55,7 +55,7 @@ Azure AD Multi-Factor Authentication では、次のような追加の検証形�
   - 新しく作られたテナントではデフォルトで有効になっている
   - Microsoft Authenticatorアプリ＋電話番号を登録
   - 全ユーザーが、初回サインインから14日以内にMFAを有効化する
-  - Azure AD＞プロパティ＞セキュリティの既定値(群)
+  - Entra ID＞プロパティ＞セキュリティの既定値(群)
   - ![](images/ss-2022-09-25-21-59-22.png)
 - (b)「条件付きアクセス」(Premium P1)
   - Microsoft Authenticatorアプリ 以外の追加認証が使用できる
@@ -68,7 +68,7 @@ Azure AD Multi-Factor Authentication では、次のような追加の検証形�
       - 重要度が低いアプリケーションへのアクセスの場合は、MFAをスキップする
   - ![](images/ss-2022-09-25-21-57-44.png)
   - ![](images/ss-2022-09-25-21-57-08.png)
-- (c)Azure AD Identity Protectionの「多要素認証登録ポリシー」をオンにする(Premium P2)
+- (c)Entra ID Identity Protectionの「多要素認証登録ポリシー」をオンにする(Premium P2)
   - 対象のユーザーやグループを選択できる
   - 対象となったユーザーは初回サインインから14日以内にMFAを有効化する
   - ![](images/ss-2022-09-26-02-05-26.png)
@@ -76,13 +76,13 @@ Azure AD Multi-Factor Authentication では、次のような追加の検証形�
   - 管理者が、ユーザーごとにMFAを有効化する仕組み
   - 推奨されていない
   - アクセス方法（いくつかある）
-    - Azure AD＞ユーザー＞ユーザーごとのMFA![](images/ss-2022-09-25-22-30-51.png)
-    - Azure AD＞管理＞セキュリティ＞多要素認証＞クラウドベースの多要素認証の追加設定 ![](images/ss-2022-09-25-21-55-00.png)
+    - Entra ID＞ユーザー＞ユーザーごとのMFA![](images/ss-2022-09-25-22-30-51.png)
+    - Entra ID＞管理＞セキュリティ＞多要素認証＞クラウドベースの多要素認証の追加設定 ![](images/ss-2022-09-25-21-55-00.png)
     - https://account.activedirectory.windowsazure.com/usermanagement/multifactorverification.aspx にアクセス
   - ![](images/ss-2022-09-25-21-55-27.png)
 
 ■参考
 
-Azure ADサポートチームによる詳細な解説:
+Entra IDサポートチームによる詳細な解説:
 https://jpazureid.github.io/blog/azure-active-directory/MFA_configuration_scenarios/
 
