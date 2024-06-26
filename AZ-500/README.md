@@ -81,6 +81,29 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 - ラボ7 サービス エンドポイントとストレージの保護
 - ラボ8 キー コンテナー
 
+※ラボ7で、NSGの送信セキュリティ規則の作成時に`Storage`や`Internet`などのサービスタグが選択できない場合、Azure Cloud Shell (bash) を開き、以下のコマンドを入力してください。
+```
+az network nsg rule create \
+	--name Allow-Storage-All \
+	--nsg-name myNsgPrivate2 \
+	--priority 1000 \
+	--resource-group AZ500LAB12-lod41984023 \
+	--direction Outbound \
+	--source-address-prefixes VirtualNetwork \
+	--destination-address-prefixes Storage \
+	--access Allow
+
+az network nsg rule create \
+	--name Allow-Storage-All \
+	--nsg-name myNsgPrivate2 \
+	--priority 1100 \
+	--resource-group AZ500LAB12-lod41984023 \
+	--direction Outbound \
+	--source-address-prefixes VirtualNetwork \
+	--destination-address-prefixes Internet \
+	--access Deny
+```
+
 ## 4日目 モニタリングと管理
 
 <!--
