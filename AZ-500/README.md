@@ -41,7 +41,10 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
     - ※このラボ環境では、ユーザーの新規作成はできません。
     - Joseph-xxxxxx@LODSPRODMCA.onmicrosoft.com といったユーザーが作成されていますのでそれを使用します。画面右上「リソース」タブで確認できます。
   - 演習2 Azure PowerShellによるユーザー作成、グループ作成、グループへのユーザー追加
-    - タスク1（ユーザー Isabel の作成）も同様にスキップ。
+    - タスク1の5: `Connect-MgGraph -Scopes "User.ReadWrite.All"`
+    - To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code NNNNNNNN to authenticate といったメッセージが表示されますので、それに従ってWebブラウザーで上記ページにアクセスし、コードを入力します。
+    - タスク1の7を実行する前に、`Install-Module Microsoft.Graph -Scope CurrentUser` を実行して、New-MgUser や Get-MgUser コマンドが実行できるようにします。
+    - タスク1の7（ユーザー Isabel の作成）も同様にスキップ。
   - 演習3 Azure CLIによるユーザー作成、グループ作成、グループへのユーザー追加
     - タスク1（ユーザー Dylan の作成）も同様にスキップ。
   - 演習4 リソースグループの作成、Entra IDグループへのロールの割り当て
@@ -56,6 +59,10 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 -->
 
 - [講義資料](mod02/mod02.md)
+- ※ ラボ内でファイル
+  - ラボ環境内で https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies にアクセス
+  - Code ボタンをクリック＞Download ZIP
+  - ZIPファイルを展開し、Allfiles/Labsの中から必要なファイルを探して利用します
 - ラボ2 ネットワーク セキュリティ グループとアプリケーション セキュリティ グループ
 - ラボ3 Azure Firewall
 

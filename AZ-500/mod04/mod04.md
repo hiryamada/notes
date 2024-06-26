@@ -46,9 +46,11 @@ https://learn.microsoft.com/ja-jp/training/modules/understand-azure-defender-clo
 - [Microsoft Defender CSPM](https://www.microsoft.com/en-us/security/business/cloud-security/microsoft-defender-cloud-security-posture-management?rtc=1)
   - ハイブリッドおよびマルチクラウド環境を包括的にカバーするCSPM（クラウドセキュリティ態勢管理、誤設定を発見）
 
+<!--
 ※2022/10/12 Microsoft Ignite (毎年行われるテクニカルカンファレンス)
 Microsoft Defender for DevOps / Microsoft Defender CSPM 発表
 https://www.microsoft.com/security/blog/2022/10/12/introducing-new-microsoft-defender-for-cloud-innovations-to-strengthen-cloud-native-protections/
+-->
 
 # Microsoft Sentinel
 

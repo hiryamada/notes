@@ -1,8 +1,27 @@
 モジュール3 データとアプリケーションのセキュリティを保護
 
+# コンテナー セキュリティ
+
+講義: [コンテナーのサービス（ACIとAKS）](../../AZ-104-2023/pdf/コンテナーのサービス.pdf)
+講義: [コンテナー セキュリティ](mod02-04.md)
+
+- コンテナー型の仮想化
+- Azure Container Instances (ACI)
+- Azure Container Registry (ACR)
+- Azure Kubernetes Service (AKS)
+  - AKS アーキテクチャ
+  - AKS ネットワーク
+  - AKS のストレージ
+  - AKS と Azure Active Directory
+  - AKS と RBAC
+- 各サービスにおけるセキュリティ対策のまとめ
+  - [ACIのセキュリティ対策](../../computing/aci-security.md)
+  - [ACRのセキュリティ対策](../../computing/acr-security.md)
+  - [AKSのセキュリティ対策](../../computing/aks-security.md)
+
 # Azure Key Vault
 
-[モジュール3-1(Azure Key Vault)](mod03-01.md)で解説。
+[Azure Key Vault](mod03-01.md)
 
 - Azure Key Vault
 - Key Vault へのアクセス
@@ -14,11 +33,10 @@
 - キーとシークレットのローテーション
 - Key Vault の安全性と回復機能
 - Azure HSM (ハードウェア セキュリティ モジュール)
-- ラボ10
 
 # アプリケーションのセキュリティ
 
-[モジュール3-2(アプリケーションのセキュリティ)](mod03-02.md)で解説。
+[アプリケーションのセキュリティ](mod03-02.md)
 
 - Microsoft ID プラットフォーム
 - Azure AD アプリケーション シナリオ
@@ -26,11 +44,10 @@
 - Microsoft Graph のアクセス許可
 - マネージド ID
 - Web アプリ証明書（Azure App Service）
-- （ラボなし）
 
 # ストレージ セキュリティ
 
-[モジュール3-3(ストレージ セキュリティ)](mod03-03.md)で解説。
+[ストレージ セキュリティ](mod03-03.md)
 
 - データ主権
 - Azure Storage アクセス
@@ -40,11 +57,11 @@
 - BLOB データ保持ポリシー
 - Azure Files の認証
 - 安全な転送が必須
-- ラボ12
+
 
 # データベース セキュリティ
 
-[モジュール3-4(データベース セキュリティ)](mod03-04.md)で解説。
+[データベース セキュリティ](mod03-04.md)
 
 - SQL Database 認証
 - SQL Database ファイアウォール
@@ -55,4 +72,3 @@
 - 動的データ マスク
 - Transparent Data Encryption (TDE)
 - Always Encrypted
-- ラボ11
