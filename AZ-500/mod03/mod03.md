@@ -38,11 +38,11 @@
 
 [アプリケーションのセキュリティ](mod03-02.md)
 
-- Microsoft ID プラットフォーム
+- Microsoft ID プラットフォーム ([PDF解説資料](../../SC/pdf/Microsoft%20ID%20Platform.pdf))
 - Azure AD アプリケーション シナリオ
 - アプリの登録
 - Microsoft Graph のアクセス許可
-- マネージド ID
+- マネージド ID ([PDF解説資料](../../SC/pdf/Azureの認証と承認.pdf))
 - Web アプリ証明書（Azure App Service）
 
 # ストレージ セキュリティ
