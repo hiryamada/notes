@@ -22,12 +22,23 @@ Microsoft 365 のアプリ（Teams, Word, Excel, PowerPoint等）で、コンテ
 
 - 講師自己紹介
 - オープニング（開始時のご案内）
-- ラーニングパス1
-- ラーニングパス1
-- ラーニングパス1
+- [ラーニングパス1 Copilot for Microsoft 365 の使用を開始する](lp01.md)
+- [ラーニングパス2 Microsoft Copilot for Microsoft 365 の効果的なプロンプトを作成する](lp02.md)
 - [全体のまとめ](matome.md)
 - クロージング（終了時のご案内）
 - 満足度アンケート
+
+
+## ラボ（演習）
+
+※2024/7 現在、英語版の手順書のみ提供されています。Webブラウザーの翻訳機能を使用して、手順書を日本語化できます。
+
+Craft effective prompts for Microsoft Copilot for Microsoft 365
+
+- [手順書](https://github.com/MicrosoftLearning/MS-4005-Craft-effective-prompts-for-Microsoft-Copilot-for-Microsoft-365/tree/master/Instructions/Labs)
+- [ラボ環境](https://esi.learnondemand.net/)
+  - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
+
 
 <!--
 - [認定試験（アセスメント）のご案内](assessment.md)
