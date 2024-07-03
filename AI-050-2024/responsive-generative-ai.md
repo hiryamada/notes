@@ -11,13 +11,13 @@
 
 ■開発者は生成AIの潜在的リスクにどう対処すればよいのか？
 
-マイクロソフトの専門家が定義した「Azure OpenAI モデルにおける責任ある AI プラクティスの概要」（Responsible AI practices for Azure OpenAI models）があるので、それを参考に、識別・測定・緩和・運用の4ステージを実行するとよい。
+マイクロソフトの専門家が定義した「Azure OpenAI モデルにおける責任ある AI プラクティス」（Responsible AI practices for Azure OpenAI models）があるので、それを参考に、識別・測定・緩和・運用の4ステージを実行するとよい。
 
 ※プラクティス＝実践
 
-「Azure OpenAI モデルにおける責任ある AI プラクティスの概要」: [Responsible AI practices for Azure OpenAI models](https://learn.microsoft.com/ja-jp/legal/cognitive-services/openai/overview)
+「Azure OpenAI モデルにおける責任ある AI プラクティス」: [Responsible AI practices for Azure OpenAI models](https://learn.microsoft.com/ja-jp/legal/cognitive-services/openai/overview)
 
-■「責任ある生成AIガイドライン」の4ステージでは何をすればよいのか？
+■「Azure OpenAI モデルにおける責任ある AI プラクティス」の4ステージでは何をすればよいのか？
 
 以下の表を参照。
 
