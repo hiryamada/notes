@@ -23,6 +23,9 @@ https://learn.microsoft.com/ja-jp/training/paths/develop-ai-solutions-azure-open
 - [モジュール 4: Azure OpenAI Service を使用してコードを生成する](pdf/AI-050-mod4-code.pdf)
 - [モジュール 5: Azure OpenAI Service を使用して画像を生成する](pdf/AI-050-mod5-dalle.pdf)
 - [モジュール 6: Azure OpenAI Service で独自のデータを使用する](pdf/AI-050-mod6-onyourdata.pdf)
+- モジュール7: 責任あるAIの基礎
+  - [生成AIの潜在的リスク](responsive-generative-ai.md)
+  - [Azure OpenAI Serviceのコンテンツフィルター](content-filtering.md)
 - [終了時のご案内](../closing.md)
 - 受講者アンケート（満足度調査）
 
