@@ -92,7 +92,6 @@ https://learn.microsoft.com/ja-jp/azure/ai-services/openai/concepts/content-filt
 
 機能的には同じもの。
 
-Azure OpenAI Serviceのコンテンツ フィルターはAzure OpenAI Serviceのデプロイと常にセットで使用されるものであり、コンテンツ フィルター部分だけを任意のアプリから利用することはできない。
+Azure OpenAI Serviceのコンテンツ フィルターはAzure OpenAI Serviceのデプロイと常にセットで使用されるものであり、コンテンツ フィルター部分だけを任意のアプリから利用することはできない。コンテンツ フィルターのAzureリソースは作成されない（コンテンツフィルターはAzure OpenAI Serviceのリソースの一部）。
 
-「Azure AI Content Safety」は任意のアプリと組み合わせて利用できる。
-
+「Azure AI Content Safety」は任意のアプリと組み合わせて利用できる。「Azure AI Content Safety」のリソースを作成し、API経由で任意のアプリからコンテンツを送信して、不適切なコンテンツかどうかを判定できる。
