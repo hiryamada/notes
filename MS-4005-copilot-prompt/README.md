@@ -21,6 +21,7 @@ Microsoft 365 のアプリ（Teams, Word, Excel, PowerPoint等）で、コンテ
 
 https://learn.microsoft.com/ja-jp/training/courses/ms-4005
 
+<!--
 <style>
   .training tr td { border: 1px solid gray; }
   .training tr th { border: 1px solid gray; }
@@ -32,6 +33,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
   .outlook { background-color: #EEF; }
   .chat { background-color: pink; }
 </style>
+-->
 <table class="training">
   <tr>
     <th>ラーニング パス</th>
@@ -107,6 +109,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
   </tr>
 </table>
 
+<!--
 <ul>
   <li class="general">[Copilot for Microsoft 365 の概要、最適化、拡張](01-overview.md)
   <li class="word">[Word の Copilot](02-word.md)
@@ -116,6 +119,16 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
   <li class="outlook">[Outlook の Copilot](06-outlook.md)
   <li class="chat">[Chat の Copilot](07-chat.md)
 </ul>
+-->
+
+- [Copilot for Microsoft 365 の概要、最適化、拡張](01-overview.md)
+- [Word の Copilot](02-word.md)
+- [PowerPoint の Copilot](03-powerpoint.md)
+- [Excel の Copilot](04-excel.md)
+- [Teams の Copilot](05-teams.md)
+- [Outlook の Copilot](06-outlook.md)
+- [Chat の Copilot](07-chat.md)
+
 
 ## ラボ（演習）
 
