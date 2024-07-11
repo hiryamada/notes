@@ -1,0 +1,1 @@
+# Azure Document Intelligence を使用してフォームからデータを抽出する

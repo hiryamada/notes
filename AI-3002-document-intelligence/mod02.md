@@ -1,0 +1,1 @@
+# 事前構築済みの Document Intelligence モデルを使用する

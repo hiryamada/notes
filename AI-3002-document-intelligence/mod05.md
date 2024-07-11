@@ -1,0 +1,1 @@
+# Azure AI Searchの Document Intelligence カスタム スキルを構築する
