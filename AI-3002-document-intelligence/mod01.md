@@ -132,6 +132,11 @@ Azure AI Document Intelligenceでは以下の言語に対応するSDKが利用�
 - JavaScript
 - Python
 
+## SDKの使い方は？
+
+「クイックスタート」ページに、各言語のSDKの開始方法が説明されている。
+https://learn.microsoft.com/ja-jp/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-4.0.0&pivots=programming-language-csharp
+
 ## Document Intelligence Studioとは？
 
 https://learn.microsoft.com/ja-jp/azure/ai-services/document-intelligence/studio-overview?view=doc-intel-4.0.0
