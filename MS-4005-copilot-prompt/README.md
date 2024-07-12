@@ -38,12 +38,12 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
   <tr>
     <th>ラーニング パス</th>
     <th>モジュール</th>
-    <th class="word">Word</th>
-    <th class="ppt">PowerPoint</th>
-    <th class="xls">Excel</th>
-    <th class="teams">Teams</th>
-    <th class="outlook">Outlook</th>
-    <th class="chat">チャット</th>
+    <th class="word">Microsoft Copilot in Word</th>
+    <th class="ppt">Microsoft Copilot in PowerPoint</th>
+    <th class="xls">Microsoft Copilot in Excel</th>
+    <th class="teams">Microsoft Copilot in Teams</th>
+    <th class="outlook">Microsoft Copilot in Outlook</th>
+    <th class="chat">Microsoft Copilot</th>
   </tr>
   <tr>
     <td rowspan=3>Copilot for Microsoft 365 の使用を開始する</td>
