@@ -9,9 +9,13 @@ https://learn.microsoft.com/ja-jp/training/paths/develop-ai-solutions-azure-open
 
 ## 認定試験について
 
-このコースの内容は、認定試験「AI-102」の出題範囲の一部です。
+このコースに対応するMicrosoft Applied Skills（応用スキル）として「Azure OpenAI Service を使用して生成 AI ソリューションを開発する」があります。詳しくは以下のページをご参照ください。
 
-このコース「AI-050」に対応する認定試験（Azure OpenAI Serviceに特化した試験）はありません。
+https://learn.microsoft.com/ja-jp/credentials/applied-skills/develop-generative-ai-solutions-with-azure-openai-service/
+
+このコースの内容は、認定試験「AI-102」の出題範囲の一部です。詳しくは以下のページをご参照ください。
+
+https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/
 
 ## 講義
 
