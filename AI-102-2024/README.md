@@ -11,7 +11,7 @@ Azure AI services、Azure AI Search、Azure OpenAI Service を利用する AI �
 ■ 1日目
 
 - 講師自己紹介
-- 開始時のご案内
+- [開始時のご案内](../opening.md)
 - [Azure AI サービスの使用を開始する](lp01.md)
 - [Azure AI Vision でコンピューター ビジョン ソリューションを作成する](../AI-3004-vision/AI-102.md)
 
@@ -77,9 +77,9 @@ Azure AI services、Azure AI Search、Azure OpenAI Service を利用する AI �
 ■ 4日目
 
 - [Azure OpenAI Serviceを使用して生成AIソリューションを開発する](../AI-050-2024/AI-102.md)
-- 全体のまとめ
-- 認定試験対策
-- 終了時のご案内
+- [全体のまとめ](matome.md)
+- [認定試験対策](../AI-102/exam.md)
+- [終了時のご案内](../closing-cloudslice.md)
 - 受講者アンケート
 
 ## ラボ
