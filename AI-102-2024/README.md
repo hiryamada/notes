@@ -82,5 +82,13 @@ Azure AI services、Azure AI Search、Azure OpenAI Service を利用する AI �
 - [終了時のご案内](../closing-cloudslice.md)
 - 受講者アンケート
 
-## ラボ
+## ラボの手順書・サンプルコード
+
+「ラボ環境」を起動して右側に表示される手順書は、以下からもご覧いただけます。（英語のみなので、必要に応じてWebブラウザーに組み込まれた翻訳機能などをご利用ください）
+
+https://microsoftlearning.github.io/AI-102-AIEngineer/
+
+サンプルコード類は以下のGitHubリポジトリから入手できます。
+
+https://github.com/MicrosoftLearning/AI-102-AIEngineer
 
