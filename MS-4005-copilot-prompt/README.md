@@ -3,10 +3,11 @@
 
 Microsoft 365 のアプリ（Teams, Word, Excel, PowerPoint等）で、コンテンツの作成、簡略化、変換、編集を行う Microsoft Copilot for Microsoft 365 のプロンプトを作成する方法を学びます。
 
-1日コース（9:30 - 12:00）
+半日コース（9:30 - 12:00）
 
 ※このコースに対応する認定試験 / Applied Skills アセスメントはありません。
 
+※このコースのラボ（演習）の環境・手順書は英語版のみ利用可能です。日本語版はありません。
 
 ## 講義
 
@@ -43,7 +44,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
     <th class="xls">Microsoft Copilot in Excel</th>
     <th class="teams">Microsoft Copilot in Teams</th>
     <th class="outlook">Microsoft Copilot in Outlook</th>
-    <th class="chat">Microsoft Copilot</th>
+    <th class="chat">Microsoft Copilot for Microsoft 365 (チャット)</th>
   </tr>
   <tr>
     <td rowspan=3>Copilot for Microsoft 365 の使用を開始する</td>
@@ -121,13 +122,14 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
 </ul>
 -->
 
-- [Copilot for Microsoft 365 の概要、最適化、拡張](01-overview.md)
-- [Word の Copilot](02-word.md)
-- [PowerPoint の Copilot](03-powerpoint.md)
-- [Excel の Copilot](04-excel.md)
-- [Teams の Copilot](05-teams.md)
-- [Outlook の Copilot](06-outlook.md)
-- [Chat の Copilot](07-chat.md)
+- [Microsoft Copilot for Microsoft 365 の概要](01-overview.md)
+- [Microsoft Copilot for Microsoft 365 を最適化し、拡張する](02-extend.md)
+- [Microsoft Copilot for Microsoft Word](03-word.md)
+- [Microsoft Copilot for Microsoft PowerPoint](04-powerpoint.md)
+- [Microsoft Copilot for Microsoft Excel](05-excel.md)
+- [Microsoft Copilot for Microsoft Teams](06-teams.md)
+- [Microsoft Copilot for Microsoft Outlook](07-outlook.md)
+- [Microsoft Copilot for Microsoft 365 (チャット)](08-chat.md)
 
 
 ## ラボ（演習）
