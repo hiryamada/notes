@@ -82,6 +82,20 @@ Azure AI services、Azure AI Search、Azure OpenAI Service を利用する AI �
 - [終了時のご案内](../closing-cloudslice.md)
 - 受講者アンケート
 
+ラボ(オプション)
+- [インタラクティブラボシミュレーション](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
+  - Azure OpenAI > 1. Get Started with Azure OpenAI Service
+  - Azure OpenAI > 2. Build natural language solutions with Azure OpenAI Service
+  - Azure OpenAI > 3. Apply prompt engineering with Azure OpenAI Service
+  - Azure OpenAI > 4. Generate code with Azure OpenAI Service
+  - Azure OpenAI > 5. Generate images with Azure OpenAI Service
+  - Azure OpenAI > 6. Use your own data with Azure OpenAI Service
+  - Azure OpenAI > 7. Explore content filters in Azure OpenAI Service
+- [ラボ環境](https://esi.learnondemand.net/User/Login)
+  - 9 Integrate Azure OpenAI into your app (JA) / Azure OpenAI をアプリに統合する
+  - 10 Utilize prompt engineering in your app (JA) / アプリでプロンプト エンジニアリングを利用する
+  - 11 Use your own data with Azure OpenAI (JA) / Azure OpenAI で独自のデータを使用する
+
 ## ラボの手順書・サンプルコード
 
 「ラボ環境」を起動して右側に表示される手順書は、以下からもご覧いただけます。（英語のみなので、必要に応じてWebブラウザーに組み込まれた翻訳機能などをご利用ください）
