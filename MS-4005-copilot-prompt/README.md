@@ -1,7 +1,6 @@
 # MS-4005: Microsoft Copilot for Microsoft 365 に対して効果的なプロンプトを作成する
 
-
-Microsoft 365 のアプリ（Teams, Word, Excel, PowerPoint等）で、コンテンツの作成、簡略化、変換、編集を行う Microsoft Copilot for Microsoft 365 のプロンプトを作成する方法を学びます。
+Microsoft Copilot for Microsoft 365の概要を学びます。また、Microsoft 365 のアプリ（Word, Excel, PowerPoint, Teams, Outlook）で、Copilotを使用し、コンテンツの作成、簡略化、変換、編集を行う方法を学びます。
 
 半日コース（9:30 - 12:00）
 
@@ -59,6 +58,15 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
     </td>
   </tr>
   <tr>
+    <td>2. Copilot for Microsoft 365 の可能性を探る
+    <td class="word">[W]ドキュメントを作成および集計する
+    <td class="ppt">{P]魅力的なプレゼンテーションをデザインする
+    <td class="xls">[X]データを分析および変換する
+    <td class="teams">[T]生産性を高める
+    <td class="outlook">[O]メールの要約と下書きを行う
+    <td class="chat">[C]従業員を支援する
+  </tr>
+  <tr>
     <td class="general">3. Copilot for Microsoft 365 を最適化し、拡張する
     <td colspan=6 class="general">
       <ul>
@@ -70,15 +78,6 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
         <li>Graphコネクタ
       </ul>
     </td>
-  </tr>
-  <tr>
-    <td>2. Copilot for Microsoft 365 の可能性を探る
-    <td class="word">[W]ドキュメントを作成および集計する
-    <td class="ppt">{P]魅力的なプレゼンテーションをデザインする
-    <td class="xls">[X]データを分析および変換する
-    <td class="teams">[T]生産性を高める
-    <td class="outlook">[O]メールの要約と下書きを行う
-    <td class="chat">[C]従業員を支援する
   </tr>
   <tr>
     <td rowspan=4>2. Microsoft Copilot for Microsoft 365 の効果的なプロンプトを作成する</td>
@@ -131,19 +130,26 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
 </ul>
 -->
 
-- [(講義1) Microsoft Copilot for Microsoft 365 の概要](01-overview.md)
-- [(講義2) Microsoft Copilot for Microsoft 365 を最適化し、拡張する](02-extend.md)
-- [(講義3) Microsoft Copilot for Microsoft Word](03-word.md)
-- [(講義4) Microsoft Copilot for Microsoft PowerPoint](04-powerpoint.md)
-- [(講義5) Microsoft Copilot for Microsoft Excel](05-excel.md)
-- [(講義6) Microsoft Copilot for Microsoft Teams](06-teams.md)
-- [(講義7) Microsoft Copilot for Microsoft Outlook](07-outlook.md)
-- [(講義8) Copilot for Microsoft 365 (チャット)](08-chat.md)
+## 本講義での解説順
 
+本講義では、受講者が理解しやすいように、以下のように順序を調整して解説する。
+
+![alt text](image.png)
+
+- まず、Copilot for Microsoft 365 全体の解説を行う。
+  - [ ① Copilot for Microsoft 365 の概要](01-overview.md)
+  - [ ② Copilot for Microsoft 365 を最適化し、拡張する](02-extend.md)
+- 次に、各アプリのコパイロットの解説を行う。
+  - [ ③ Copilot for Microsoft Word](03-word.md)
+  - [ ④ Copilot for Microsoft PowerPoint](04-powerpoint.md)
+  - [ ⑤ Copilot for Microsoft Excel](05-excel.md)
+  - [ ⑥ Copilot for Microsoft Teams](06-teams.md)
+  - [ ⑦ Copilot for Microsoft Outlook](07-outlook.md)
+  - [ ⑧ Copilot for Microsoft 365 (チャット)](08-chat.md)
 
 ## ラボ（演習）
 
-※2024/7 現在、英語版のラボ・手順書のみ提供されています。
+※2024/7 現在、英語版のラボ・手順書のみ提供されている。
 
 Craft effective prompts for Microsoft Copilot for Microsoft 365
 
@@ -151,7 +157,7 @@ Craft effective prompts for Microsoft Copilot for Microsoft 365
 - [ラボ環境](https://esi.learnondemand.net/)
   - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
 
-1つのラボを起動すると8時間利用できます。そのラボの中でWord/Excel/PowerPointなどのCopilotを使用します。
+ラボは、「ラーニングパス2. Microsoft Copilot for Microsoft 365の効果的なプロンプトを作成する」の4モジュールに対応する内容となっている。ラボを起動すると8時間利用できる。
 
 <!--
 - [認定試験（アセスメント）のご案内](assessment.md)
