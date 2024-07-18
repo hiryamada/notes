@@ -68,19 +68,19 @@ Document Intelligence は、Azure AI Vision よりも高い解像度で読み取
 
 ## Azure AI VisionのOCRとの違い(4)
 
-Azure Vision のOCRでは、モデルのトレーニングはできない。
+Azure AI Vision のOCRでは、モデルのトレーニングはできない。
 
 Azure AI Document Intelligenceでは、モデルのトレーニングを行って、カスタムモデルを構築することで、独自の形式のドキュメント（自社のみで使用している独自の書類・伝票など）に対応することができる。
 
 ## Azure AI VisionのOCRとの違い(5)
 
-Azure Vision のOCRでは、アドオン（追加機能）は利用できない。
+Azure AI Vision のOCRでは、アドオン（追加機能）は利用できない。
 
 Azure AI Document Intelligenceでは、アドオン（追加機能）を追加することで、数式、バーコード、QRコードなどを抽出することもできる。
 
 ## Azure AI VisionのOCRとの違い(6)
 
-[Azure Vision のOCRは、 JPEG、PNG、GIF、BMP、WEBP、ICO、TIFF、MPO 形式に対応している。](https://learn.microsoft.com/ja-jp/azure/ai-services/computer-vision/overview-image-analysis?tabs=4-0#input-requirements)
+[Azure AI Vision のOCRは、 JPEG、PNG、GIF、BMP、WEBP、ICO、TIFF、MPO 形式に対応している。](https://learn.microsoft.com/ja-jp/azure/ai-services/computer-vision/overview-image-analysis?tabs=4-0#input-requirements)
 
 [Azure AI Document Intelligenceは、PDF、JPG、GIF、PNG、BMP、TIFF、HEIF、Word(.docx)、Excel(.xlsx)、PowerPoint(.pptx)、HTMLに対応している。PDFやTIFFの場合、最大2000ページを処理できる](https://learn.microsoft.com/ja-jp/azure/ai-services/document-intelligence/concept-layout?view=doc-intel-4.0.0&tabs=sample-code#input-requirements)
 
