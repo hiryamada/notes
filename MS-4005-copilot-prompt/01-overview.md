@@ -14,11 +14,11 @@ Copilot for Microsoft 365 （コパイロット: 副操縦士）は、Word、Exc
 - 分析: コパイロットに、Excelの表データを分析させて、重要なデータに書式を設定させることができる。表データの重要な箇所をすばやく理解できる。
 - 質問: コパイロットに、Teamsやメールの連絡、組織内で最近作成・更新されたファイルなどについて質問し、回答させることができる。受信したメールやTeamsメッセージ、組織内のファイルなどから、知りたい情報をすばやく引き出すことができる。
 
-※上記の、WordやExcelなどのアプリに組み込まれたコパイロットの他に、`https://www.office.com/chat/` などからアクセスできるチャット形式のインターフェースもあり、これも「Copilot for Microsoft 365」と呼ばれる。
+※上記の、WordやExcelなどのアプリに組み込まれたコパイロットの他に、`https://www.office.com/chat/` などからアクセスできるチャット形式のインターフェース（正式名称: [Microsoft Copilot with Graph-grounded chat](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview#how-does-microsoft-copilot-for-microsoft-365-work)）もあり、これも「Copilot for Microsoft 365」と呼ばれる。
 
 ![alt text](image-1.png)
 
-※本コースでは解説しないが、Microsoft Loop、Microsoft OneNote、Microsoft Whiteboardでもコパイロットが使用できる。
+※本コースでは解説しないが、Microsoft Loop、Microsoft OneNote、Microsoft Whiteboard、Microsoft Formsでもコパイロットが使用できる。https://learn.microsoft.com/ja-jp/copilot/microsoft-365/microsoft-365-copilot-overview#copilot-integration-with-graph-and-microsoft-365-apps
 
 ## プロンプトとは？
 
@@ -28,7 +28,7 @@ Copilot for Microsoft 365 （コパイロット: 副操縦士）は、Word、Exc
 
 企業ユーザーが、「Copilot for Microsoft 365」を使用したい場合、「Microsoft 365のライセンス」に加え、 「Copilot for Microsoft 365 のライセンス」が必要。
 
-ユーザー/月 または ユーザー/年 でライセンス料金が必要する。
+ユーザー/月 または ユーザー/年 でライセンス料金が必要。
 
 参考: 2024年7月現在、$30 ユーザー/月 または $360 ユーザー/年。最新の価格や利用できる機能などについては公式ページを参照。
 

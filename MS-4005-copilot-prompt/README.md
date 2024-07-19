@@ -60,7 +60,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
   <tr>
     <td>2. Copilot for Microsoft 365 の可能性を探る
     <td class="word">[W]ドキュメントを作成および集計する
-    <td class="ppt">{P]魅力的なプレゼンテーションをデザインする
+    <td class="ppt">[P]魅力的なプレゼンテーションをデザインする
     <td class="xls">[X]データを分析および変換する
     <td class="teams">[T]生産性を高める
     <td class="outlook">[O]メールの要約と下書きを行う
