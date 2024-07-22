@@ -8,13 +8,20 @@ Copilot for Microsoft 365 （コパイロット: 副操縦士）は、Word、Exc
 
 具体的には、以下のような作業を実行できる。
 
-- 要約: コパイロットに、Wordドキュメント、PowerPointスライド、Outlookメールなどの要約を生成させることができる。ドキュメントの概要をすばやく把握できる。
-- コンテンツ生成: コパイロットに、Wordドキュメントの下書きや、PowerPointスライド、挿絵などを生成させることができる。ドキュメントをすばやく作成できる。
-- コンテンツの編集: コパイロットに、Wordドキュメントの文章、Outlookメールの文章などを書き直させることができる。文章をすばやく改善できる。
-- 分析: コパイロットに、Excelの表データを分析させて、重要なデータに書式を設定させることができる。表データの重要な箇所をすばやく理解できる。
-- 質問: コパイロットに、Teamsやメールの連絡、組織内で最近作成・更新されたファイルなどについて質問し、回答させることができる。受信したメールやTeamsメッセージ、組織内のファイルなどから、知りたい情報をすばやく引き出すことができる。
 
-※上記の、WordやExcelなどのアプリに組み込まれたコパイロットの他に、`https://www.office.com/chat/` などからアクセスできるチャット形式のインターフェース（正式名称: [Microsoft Copilot with Graph-grounded chat](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview#how-does-microsoft-copilot-for-microsoft-365-work)）もあり、これも「Copilot for Microsoft 365」と呼ばれる。
+
+
+
+|概要|コパイロットで実行できること|ユーザーのメリット|
+|-|-|-|
+|要約|コパイロットに、Wordドキュメント、PowerPointスライド、Outlookメールなどの要約を生成させることができる。|ドキュメントの概要をすばやく把握できる。|
+|コンテンツ生成|コパイロットに、Wordドキュメントの下書きや、PowerPointスライド、挿絵などを生成させることができる。|ドキュメントをすばやく作成できる。|
+|コンテンツの編集|コパイロットに、Wordドキュメントの文章、Outlookメールの文章などを書き直させることができる。|文章をすばやく改善できる。|
+|分析|コパイロットに、Excelの表データを分析させて、重要なデータに書式を設定させることができる。|データの重要な特徴をすばやく理解できる。|
+|質問|コパイロットに、Teamsやメールの連絡、組織内で最近作成・更新されたファイルなどについて質問し、回答させることができる。|受信したメールやTeamsメッセージ、組織内のファイルなどから、知りたい情報をすばやく引き出すことができる。|
+
+
+※WordやExcelなどのアプリに組み込まれたコパイロットの他に、`https://www.office.com/chat/` などからアクセスできるチャット形式のインターフェースもあり、これも「Copilot for Microsoft 365」と呼ばれる。（正式名称: 「[Microsoft Copilot with Graph-grounded chat](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview#how-does-microsoft-copilot-for-microsoft-365-work)」）
 
 ![alt text](image-1.png)
 

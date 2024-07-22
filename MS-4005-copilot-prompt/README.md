@@ -132,14 +132,14 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
 
 ## 本講義での解説順
 
-本講義では、理解しやすいように、以下のように順序を調整して解説する。
+本講義では、理解しやすいように、以下のように順序を調整して解説します。
 
 ![alt text](image.png)
 
-- まず、Copilot for Microsoft 365 全体の解説を行う。
+- まず、Copilot for Microsoft 365 全体の解説を行います。
   - [ ① Copilot for Microsoft 365 の概要](01-overview.md)
   - [ ② Copilot for Microsoft 365 を最適化し、拡張する](02-extend.md)
-- 次に、各アプリのコパイロットの解説を行う。
+- 次に、各アプリのコパイロットの解説を行います。
   - [ ③ Copilot for Microsoft Word](03-word.md)
   - [ ④ Copilot for Microsoft PowerPoint](04-powerpoint.md)
   - [ ⑤ Copilot for Microsoft Excel](05-excel.md)

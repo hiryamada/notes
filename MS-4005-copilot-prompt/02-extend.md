@@ -2,7 +2,7 @@
 
 https://learn.microsoft.com/ja-jp/training/modules/optimize-and-extend-microsoft-365-copilot/
 
-## AI（コパイロット）を活用した働き方 - なぜAI（コパイロット）が必要なのか？
+## AI（コパイロット）を活用した働き方 - なぜ今、AI（コパイロット）が必要なのか？
 
 https://learn.microsoft.com/ja-jp/training/modules/optimize-and-extend-microsoft-365-copilot/2-examine-working-with-ai
 
