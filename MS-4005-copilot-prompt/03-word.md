@@ -31,8 +31,6 @@ https://learn.microsoft.com/ja-jp/training/modules/explore-possibilities-microso
 - プロンプトを修正したい場合は「鉛筆マーク」をクリックし、プロンプトを修正。文章が再生成される。
 - 生成された文章について修正を指示したい場合は「例:」のテキストボックスに修正の指示を入力。指示に基づいて文章が修正される。
 
-### Copilotウィンドウ
-
 ## Word の Copilot を使用して重要な情報を簡素化して抽出する
 
 https://learn.microsoft.com/ja-jp/training/modules/summarize-simplify-information-with-microsoft-copilot-microsoft-365/2-simplify-extract-key-information-copilot-word
