@@ -1,5 +1,9 @@
 # 全体のまとめ
 
+このコースでは以下のような内容を学びました。
+
+## Microsoft Copilot for Microsoft 365の概要
+
 - Microsoft Copilot for Microsoft 365 では 以下のようなコパイロットを使用できる
   - Copilot for Word
   - Copilot for PowerPoint
@@ -15,3 +19,11 @@
 ## 各コパイロットで実施できること
 
 ![alt text](image-42.png)
+
+
+## 参考: Copilot Lab
+
+https://copilot.cloud.microsoft/ja-JP/prompts
+
+- コパイロットに関する入門動画
+- [プロンプトの例](https://copilot.cloud.microsoft/ja-JP/prompts/all)

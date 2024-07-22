@@ -8,19 +8,13 @@ Microsoft Copilot for Microsoft 365の概要を学びます。また、Microsoft
 
 ※このコースのラボ（演習）の環境・手順書は **英語版のみ利用可能** です。日本語版の提供はありません。
 
-## 講義
-
-- 講師自己紹介
-- [オープニング（開始時のご案内）](../opening.md)
-- 講義
-- ラボの使い方の解説 / 講師デモ
-- [全体のまとめ](matome.md)
-- [クロージング（終了時のご案内）](../closing-cloudslice.md)
-- 満足度アンケート
-
-## テキストの構成
+## テキスト
 
 https://learn.microsoft.com/ja-jp/training/courses/ms-4005
+
+Microsoft Learn 「Microsoft Copilot for Microsoft 365 に対して効果的なプロンプトを作成する」
+
+基本的にこのテキストの内容（合計 2 ラーニングパス、 7 モジュール）に沿って解説します。
 
 <!--
 <style>
@@ -131,28 +125,40 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
 </ul>
 -->
 
-## 本講義での解説順
+## 本講義での解説
 
 本講義では、理解しやすいように、以下のように順序を調整して解説します。
 
 ![alt text](image.png)
 
-- まず、Copilot for Microsoft 365 全体の解説を行います。
+- 講師自己紹介
+- [オープニング（開始時のご案内）](../opening.md)
+- Copilot for Microsoft 365 全体の解説
   - [ ① Copilot for Microsoft 365 の概要](01-overview.md)
   - [ ② Copilot for Microsoft 365 を最適化し、拡張する](02-extend.md)
-- 次に、各アプリのコパイロットの解説を行います。
-  - [ ③ Copilot in Microsoft Word](03-word.md)
-  - [ ④ Copilot in Microsoft PowerPoint](04-powerpoint.md)
-  - [ ⑤ Copilot in Microsoft Excel](05-excel.md)
-  - [ ⑥ Copilot in Microsoft Teams](06-teams.md)
-  - [ ⑦ Copilot in Microsoft Outlook](07-outlook.md)
-  - [ ⑧ Copilot for Microsoft 365 (チャット)](08-chat.md) ※正式名称「Microsoft Copilot with Graph-grounded chat」
-- 最後にまとめを行います。
+- 各アプリのコパイロットの解説
+  - [ ③ Copilot in Word](03-word.md)
+  - [ ④ Copilot in PowerPoint](04-powerpoint.md)
+  - [ ⑤ Copilot in Excel](05-excel.md)
+  - [ ⑥ Copilot in Teams](06-teams.md)
+  - [ ⑦ Copilot in Outlook](07-outlook.md)
+  - [ ⑧ Microsoft Copilot with Graph-grounded chat (チャット)](08-chat.md)
+  - ラボの使い方の解説 / 講師デモ
+  - 理解度チェック
+    - [ラーニングパス1(モジュール1～3)の理解度チェック](https://learn.microsoft.com/ja-jp/training/paths/get-started-with-microsoft-365-copilot/)
+    - [ラーニングパス2(モジュール1～4)の理解度チェック](https://learn.microsoft.com/ja-jp/training/paths/craft-effective-prompts-copilot-microsoft-365/)
   - [全体のまとめ](matome.md)
+- [クロージング（終了時のご案内）](../closing-cloudslice.md)
+- 満足度アンケート
 
-## ラボ（演習）
 
-ラボは、「ラーニングパス2. Microsoft Copilot for Microsoft 365の効果的なプロンプトを作成する」の4モジュールに対応する内容となっています。
+## ラボ / 講師デモ
+
+※ラボの実施はオプションです。
+
+ラボを使用して、実際にCopilotの操作の一部を試すことができます。
+
+ラボは「ラーニングパス2. Microsoft Copilot for Microsoft 365の効果的なプロンプトを作成する」の4モジュールに対応する内容となっています。
 
 - [手順書](https://github.com/MicrosoftLearning/MS-4005-Craft-effective-prompts-for-Microsoft-Copilot-for-Microsoft-365/tree/master/Instructions/Labs)
 - [ラボ環境](https://esi.learnondemand.net/)
@@ -163,7 +169,12 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
 - ラボの中ではWord/Excel/PowerPointの演習のみ実施できます。
   - Teams/Outlook/チャット(正式名称「Microsoft Copilot with Graph-grounded chat」)の実施手順は含まれません。
 - ラボを起動すると最大で8時間利用できます。ただし操作をしていない状態が10分ほど続くとラボが終了してしまいます。
+- ラボ環境での日本語の入力はうまくいかないため、日本語入力モード（IME）は常にOFFの状態でご利用ください。
+  - 必要に応じて、お手元のメモ帳アプリ等で日本語を入力し、コピー&ペーストでラボ環境に入力します。
 - ラボの利用にはMicrosoftアカウントが必要です。
 - ラボの利用に必要なトレーニングキーは講師よりご連絡いたします。
 - トレーニングキーの入力はトレーニングご受講日中に実施する必要があります。
-- ラボはご受講後3日後までご利用いただけます。延長はできません。
+  - ご受講日の翌日以降はトレーニングキーが無効となります。
+  - 新しいトレーニングキーの発行はできません。
+- ラボはご受講後3日後までご利用いただけます。
+  - 延長はできません。
