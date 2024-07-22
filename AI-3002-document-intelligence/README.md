@@ -15,6 +15,7 @@ Azure AI Document Intelligenceを使用した、ドキュメント（請求書�
 - 講師自己紹介
 - [オープニング（開始時のご案内）](../opening.md)
 - [モジュール1 Azure AI Document Intelligence ソリューションを計画する](mod01.md)
+  - ※対応ラボなし
 - [モジュール2 事前構築済みの Azure AI Document Intelligence モデルを使う](mod02.md)
   - ラボ1 講師デモ
 - [モジュール3 Azure Document Intelligence を使用してフォームからデータを抽出する](mod03.md)
@@ -22,6 +23,7 @@ Azure AI Document Intelligenceを使用した、ドキュメント（請求書�
 - [モジュール4 構成済みのドキュメント インテリジェンス モデルを作成する](mod04.md)
   - ラボ3 講師デモ
 - [モジュール5 Azure AI Searchの Document Intelligence カスタム スキルを構築する](mod05.md)
+  - ※対応ラボなし
 - [全体のまとめ](matome.md)
 - [認定試験（アセスメント）のご案内](assessment.md)
 - [クロージング（終了時のご案内）](../closing-cloudslice.md)
