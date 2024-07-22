@@ -51,7 +51,7 @@ https://learn.microsoft.com/ja-jp/training/modules/optimize-and-extend-microsoft
 - 目標: 時間管理に関するトレーニング マニュアルの草案を作成してください。
 - コンテキスト: 対象読者は、ハイブリッド環境で作業し、オンラインの会議に出席する社員です。
 - 期待: 文書のトーンは、親しみやすく、示唆に富んだものにする必要があります。
-- ソース: 情報源として OneDrive上の Time Management of Costoto.docx を参照してください。
+- ソース: 情報源として OneDrive上の Time Management of Contoso.docx を参照してください。
 
 実際には以下のようにプロンプトを書く（目標、コンテキスト、期待、ソースといった言葉はプロンプト内に書いても書かなくてもよい）。
 
@@ -59,7 +59,7 @@ https://learn.microsoft.com/ja-jp/training/modules/optimize-and-extend-microsoft
 時間管理に関するトレーニング マニュアルの草案を作成してください。
 対象読者は、ハイブリッド環境で作業し、オンラインの会議に出席する社員です。
 文書のトーンは、親しみやすく、示唆に富んだものにする必要があります。
-情報源として OneDrive上の Time Management of Costoto.docx を参照してください。
+情報源として OneDrive上の Time Management of Contoso.docx を参照してください。
 ```
 
 上記のプロンプトに対する実際のコパイロットの出力の例（Word）
