@@ -2,11 +2,11 @@
 
 Microsoft Copilot for Microsoft 365の概要を学びます。また、Microsoft 365 のアプリ（Word, Excel, PowerPoint, Teams, Outlook）で、Copilotを使用し、コンテンツの作成、簡略化、変換、編集を行う方法を学びます。
 
-※このコースは「半日コース（9:30 - 12:00）」となります。[CTCさん](https://www.school.ctc-g.co.jp/course/P807.html)・[エディフィストさん](https://www.edifist.co.jp/course/MSCMS4005AM) も同様。
+※このコースは「半日コース（9:30 - 12:00）」となります。ご参考: [CTCさん](https://www.school.ctc-g.co.jp/course/P807.html)・[エディフィストさん](https://www.edifist.co.jp/course/MSCMS4005AM) も半日コースとして実施。
 
 ※このコースに対応する認定試験 / Applied Skills アセスメントはありません。
 
-※このコースのラボ（演習）の環境・手順書は英語版のみ利用可能です。日本語版はありません。
+※このコースのラボ（演習）の環境・手順書は **英語版のみ利用可能** です。日本語版の提供はありません。
 
 ## 講義
 
@@ -149,7 +149,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ms-4005
 
 ## ラボ（演習）
 
-※2024/7 現在、英語版のラボ・手順書のみ提供されている。
+※このコースのラボ（演習）の環境・手順書は **英語版のみ利用可能** です。日本語版の提供はありません。
 
 Craft effective prompts for Microsoft Copilot for Microsoft 365
 
@@ -157,23 +157,5 @@ Craft effective prompts for Microsoft Copilot for Microsoft 365
 - [ラボ環境](https://esi.learnondemand.net/)
   - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
 
-ラボは、「ラーニングパス2. Microsoft Copilot for Microsoft 365の効果的なプロンプトを作成する」の4モジュールに対応する内容となっている。ラボを起動すると8時間利用できる。
-
-<!--
-- [認定試験（アセスメント）のご案内](assessment.md)
-
-## ラボ（演習）
-
-※2024/6 現在、英語版の手順書のみ提供されています。Webブラウザーの翻訳機能を使用して、手順書を日本語化できます。
-
-- [手順書](https://microsoftlearning.github.io/mslearn-ai-language/)
-- [ラボ環境](https://esi.learnondemand.net/)
-  - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
-
-このコースでは以下の N つのラボを実施します。
-- ラボ1
-- ラボ1
-- ラボ1
-
--->
-
+- ラボは、「ラーニングパス2. Microsoft Copilot for Microsoft 365の効果的なプロンプトを作成する」の4モジュールに対応する内容となっています。
+- ラボを起動すると最大で8時間利用できます。ただし操作をしていない状態が10分ほど続くとラボが終了してしまいます。
