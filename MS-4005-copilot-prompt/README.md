@@ -143,7 +143,7 @@ Microsoft Learn 「Microsoft Copilot for Microsoft 365 に対して効果的な�
   - [ ⑥ Copilot in Teams](06-teams.md)
   - [ ⑦ Copilot in Outlook](07-outlook.md)
   - [ ⑧ Microsoft Copilot with Graph-grounded chat (チャット)](08-chat.md)
-  - ラボの使い方の解説 / 講師デモ
+  - [ラボの使い方の解説 / 講師デモ](ラボ環境の使い方（講師デモ）.pdf)
   - 理解度チェック
     - [ラーニングパス1(モジュール1～3)の理解度チェック](https://learn.microsoft.com/ja-jp/training/paths/get-started-with-microsoft-365-copilot/)
     - [ラーニングパス2(モジュール1～4)の理解度チェック](https://learn.microsoft.com/ja-jp/training/paths/craft-effective-prompts-copilot-microsoft-365/)
