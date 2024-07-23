@@ -158,11 +158,14 @@ Microsoft Learn 「Microsoft Copilot for Microsoft 365 に対して効果的な�
 
 ラボを使用して、実際にCopilotの操作の一部を試すことができます。
 
-ラボは「ラーニングパス2. Microsoft Copilot for Microsoft 365の効果的なプロンプトを作成する」の4モジュールに対応する内容となっています。
+ラボは「ラーニングパス2. Microsoft Copilot for Microsoft 365の効果的なプロンプトを作成する」に対応しています。
 
-- [手順書](https://github.com/MicrosoftLearning/MS-4005-Craft-effective-prompts-for-Microsoft-Copilot-for-Microsoft-365/tree/master/Instructions/Labs)
-- [ラボ環境](https://esi.learnondemand.net/)
-  - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
+- [ラボ環境 - https://esi.learnondemand.net/](https://esi.learnondemand.net/)
+- [ラボ手順の解説 / 講師デモ](ラボ環境の使い方（講師デモ）.pdf)
+
+ラボ環境を起動せずに手順書だけ確認したい場合は以下をご利用ください。
+
+- [ラボの手順書](https://github.com/MicrosoftLearning/MS-4005-Craft-effective-prompts-for-Microsoft-Copilot-for-Microsoft-365/tree/master/Instructions/Labs)
 
 ご注意:
 - ラボの環境・手順書は **英語版のみ利用可能** です。日本語版のご提供はございません。
@@ -171,10 +174,11 @@ Microsoft Learn 「Microsoft Copilot for Microsoft 365 に対して効果的な�
 - ラボを起動すると最大で8時間利用できます。ただし操作をしていない状態が10分ほど続くとラボが終了してしまいます。
 - ラボ環境での日本語の入力はうまくいかないため、日本語入力モード（IME）は常にOFFの状態でご利用ください。
   - 必要に応じて、お手元のメモ帳アプリ等で日本語を入力し、コピー&ペーストでラボ環境に入力します。
-- ラボの利用にはMicrosoftアカウントが必要です。
+- ラボの利用には Microsoftアカウント が必要です。
+  - お持ちでない場合はこちらから作成してください。[Microsoftアカウントの作成](https://account.microsoft.com/account?lang=ja-jp)
 - ラボの利用に必要なトレーニングキーは講師よりご連絡いたします。
-- トレーニングキーの入力はトレーニングご受講日中に実施する必要があります。
+- トレーニングキーの入力は **トレーニングご受講日中** に実施する必要があります。
   - ご受講日の翌日以降はトレーニングキーが無効となります。
   - 新しいトレーニングキーの発行はできません。
-- ラボはご受講後3日後までご利用いただけます。
+- ラボは **ご受講後3日後まで** ご利用いただけます。
   - 延長はできません。
