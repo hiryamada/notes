@@ -1,20 +1,24 @@
 # MS-4005: Microsoft Copilot for Microsoft 365 に対して効果的なプロンプトを作成する
 
-Microsoft Copilot for Microsoft 365の概要を学びます。また、Microsoft 365 のアプリ（Word, Excel, PowerPoint, Teams, Outlook）で、Copilotを使用し、コンテンツの作成、簡略化、変換、編集を行う方法を学びます。
+Microsoft Copilot for Microsoft 365の概要を学びます。また、Microsoft 365 のアプリ（Word, Excel, PowerPoint, Teams, Outlook）で、Copilotを使用し、コンテンツの作成、要約の生成、変換、編集を行う方法を学びます。
 
 ※このコースは「半日コース（9:30 - 12:00）」となります。ご参考: [CTCさん](https://www.school.ctc-g.co.jp/course/P807.html)・[エディフィストさん](https://www.edifist.co.jp/course/MSCMS4005AM) も本コースを半日コースとして実施。
 
+<!--
+-->
 ※このコースに対応する認定試験 / Applied Skills アセスメントはありません。
 
 ※このコースのラボ（演習）の環境・手順書は **英語版のみ利用可能** です。日本語版の提供はありません。
 
 ## テキスト
 
-https://learn.microsoft.com/ja-jp/training/courses/ms-4005
+基本的に以下のテキストの内容（合計 2 ラーニングパス、 7 モジュール）に沿って解説します。
 
 Microsoft Learn 「Microsoft Copilot for Microsoft 365 に対して効果的なプロンプトを作成する」
 
-基本的にこのテキストの内容（合計 2 ラーニングパス、 7 モジュール）に沿って解説します。
+https://learn.microsoft.com/ja-jp/training/courses/ms-4005
+
+
 
 <!--
 <style>
@@ -148,7 +152,7 @@ Microsoft Learn 「Microsoft Copilot for Microsoft 365 に対して効果的な�
     - [ラーニングパス1(モジュール1～3)の理解度チェック](https://learn.microsoft.com/ja-jp/training/paths/get-started-with-microsoft-365-copilot/)
     - [ラーニングパス2(モジュール1～4)の理解度チェック](https://learn.microsoft.com/ja-jp/training/paths/craft-effective-prompts-copilot-microsoft-365/)
   - [全体のまとめ](matome.md)
-- [クロージング（終了時のご案内）](../closing-cloudslice.md)
+- [クロージング（終了時のご案内）](closing.md)
 - 満足度アンケート
 
 
@@ -163,17 +167,21 @@ Microsoft Learn 「Microsoft Copilot for Microsoft 365 に対して効果的な�
 - [ラボ環境 - https://esi.learnondemand.net/](https://esi.learnondemand.net/)
 - [ラボ手順の解説 / 講師デモ](ラボ環境の使い方（講師デモ）.pdf)
 
+
 ラボ環境を起動せずに手順書だけ確認したい場合は以下をご利用ください。
 
 - [ラボの手順書](https://github.com/MicrosoftLearning/MS-4005-Craft-effective-prompts-for-Microsoft-Copilot-for-Microsoft-365/tree/master/Instructions/Labs)
 
+ラボの中で使用しているWord/Excel/PowerPointファイルは以下からダウンロードできます。
+https://learn.microsoft.com/en-us/training/modules/summarize-simplify-information-with-microsoft-copilot-microsoft-365/1a-follow-along-using-sample-data-copilot-microsoft-365
+
 ご注意:
 - ラボの環境・手順書は **英語版のみ利用可能** です。日本語版のご提供はございません。
-- ラボの中ではWord/Excel/PowerPointの演習のみ実施できます。
-  - Teams/Outlook/チャット(正式名称「Microsoft Copilot with Graph-grounded chat」)の実施手順は含まれません。
-- ラボを起動すると最大で8時間利用できます。ただし操作をしていない状態が10分ほど続くとラボが終了してしまいます。
+- ラボの中ではWord/Excel/PowerPoint/「Microsoft Copilot with Graph-grounded chat」の演習のみ実施できます。
+  - Teams/Outlookについてはラボ環境のアカウントに会議やメールのデータがないため、ラボは実行できません。
+- ラボを起動すると最大で8時間利用できます。ただし操作をしていない状態が15分ほど続くとラボが終了してしまいます。
 - ラボ環境での日本語の入力はうまくいかないため、日本語入力モード（IME）は常にOFFの状態でご利用ください。
-  - 必要に応じて、お手元のメモ帳アプリ等で日本語を入力し、コピー&ペーストでラボ環境に入力します。
+  - 必要に応じて、ラボ環境の外部（お手元のメモ帳アプリ等）で日本語を入力し、コピー&ペーストでラボ環境に入力します。
 - ラボの利用には Microsoftアカウント が必要です。
   - お持ちでない場合はこちらから作成してください。[Microsoftアカウントの作成](https://account.microsoft.com/account?lang=ja-jp)
 - ラボの利用に必要なトレーニングキーは講師よりご連絡いたします。

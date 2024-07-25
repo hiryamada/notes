@@ -23,7 +23,35 @@
 
 ## 参考: Copilot Lab
 
+各アプリで使用できるプロンプトや、入門動画がまとまっている。
+
 https://copilot.cloud.microsoft/ja-JP/prompts
 
-- コパイロットに関する入門動画
-- [プロンプトの例](https://copilot.cloud.microsoft/ja-JP/prompts/all)
+## 参考: YouTubeの日本語解説動画
+
+日本マイクロソフトの社員2名がCopilot for Microsoft 365の使い方をそれぞれ10分程度の動画で解説。おすすめ！
+
+【Copilot for Microsoft 365 TV】Word編
+https://www.youtube.com/watch?v=7vH5k7Bhr2g
+
+【Copilot for Microsoft 365 TV】Excel編
+https://www.youtube.com/watch?v=47TBXI2nAq8
+
+【Copilot for Microsoft 365 TV】PowerPoint編
+https://www.youtube.com/watch?v=qSZFBmWwKEU
+
+【Copilot for Microsoft 365 TV】Teams編
+https://www.youtube.com/watch?v=ET6dPSFXQlY
+
+【Copilot for Microsoft 365 TV】Outlook編
+https://www.youtube.com/watch?v=DpKD7_J9tRk
+
+【Copilot for Microsoft 365 TV】Copilot（旧Bing Chat Enterprise）編
+https://www.youtube.com/watch?v=mC-Yi6S5peA
+
+【Copilot for Microsoft 365 TV】Copilot（M365用）編
+https://www.youtube.com/watch?v=bxAJm4Loi9M
+
+※上記を全部まとめて見るためのリスト
+https://www.youtube.com/playlist?list=PLNyto1oCyhGLsr-5eI6vanZRBB-MNnep_
+

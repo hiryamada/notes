@@ -30,8 +30,11 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 - 講師自己紹介
 - [オープニング（開始時のご案内）](../opening.md)
 - モジュール1 生成 AI の基礎
+- ラボ1
 - モジュール2 Microsoft Copilot Studio の概要
+- ラボ2
 - モジュール3 Azure AI Studio の概要
+- ラボ3
 - モジュール4 Azure AI Studio を使用して独自のデータで RAG ベースのコパイロット ソリューションを構築する
 - 終了時のご案内
 
@@ -41,6 +44,15 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 ※現在英語版のみ
 
 - ラボ1 Explore Microsoft Copilot (M365 version)
+  - https://learn.microsoft.com/ja-jp/training/modules/fundamentals-generative-ai/7-exercise
+  - Word / Excel / PowerPoint の Copilotを使ってみる
+  - ラボ環境のPCには Office 2021がインストールされているのでWeb版を使う
 - ラボ2 Copilot studio
+  - https://learn.microsoft.com/ja-jp/training/modules/power-virtual-agents-bots/exercise-copilot-studio
+  - https://microsoftlearning.github.io/mslearn-copilotstudio/Instructions/Labs/01-create-copilot.html
+  - Power Platform Admin Centerで新しい開発者環境を作る admin.powerplatform.microsoft.com
+  - Copilot Studioに移動する copilotstudio.microsoft.com
+  - プロンプトを使用して経費精算コパイロットを作成する
 - ラボ3 AI Studio
+  - https://learn.microsoft.com/ja-jp/training/modules/introduction-to-azure-ai-studio/5-exercise-explore-ai-studio
 
