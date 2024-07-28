@@ -47,7 +47,8 @@ App Serviceは、自由度はVMよりも低いが、運用が楽。
   - 開発したWebアプリ等をデプロイして運用できる
   - 言語ランタイム（.NET、JRE、Python、Node.js等）はあらかじめインストールされている
   - [OSやソフトウェアのアップデート（セキュリティパッチ適用）はAzureが行う](https://docs.microsoft.com/ja-jp/azure/app-service/overview-patch-os-runtime)
-  - [RDPやSSHで接続することはできない](https://docs.microsoft.com/ja-jp/azure/app-service/operating-system-functionality#remote-desktop-access)
+  - [RDPで接続することはできない](https://docs.microsoft.com/ja-jp/azure/app-service/operating-system-functionality#remote-desktop-access)
+  - [コンテナーで稼働しているアプリにはSSHで接続できる](https://learn.microsoft.com/ja-jp/azure/app-service/configure-linux-open-ssh-session?pivots=container-linux)
   - App Service自身に複数のデプロイ方法が用意されている
 
 ■Azure仮想マシン（VM）とApp Serviceとはどう使い分ければよいのか？
@@ -279,6 +280,7 @@ https://azure.microsoft.com/ja-jp/pricing/details/app-service/windows/
 - 10インスタンス: 月730ドル
 -->
 
+<!--
 # ラボ1
 
 ```
@@ -293,6 +295,7 @@ Web API
   └Blob（画像ファイル）
 
 ```
+-->
 
 
 <!--
