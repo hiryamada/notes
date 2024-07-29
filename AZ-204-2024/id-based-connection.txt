@@ -1,0 +1,67 @@
+
+■接続文字列を使わないホストストレージへの接続について
+
+ラボ2番では、local.settings.json の中に
+ストレージアカウント（ホストストレージ）の接続文字列を記入していた。
+
+ローカルの開発においてこの接続文字列を記入しない方法を以下に解説する。
+以下の操作はラボ2番を起動して実施する。
+
+■Webブラウザーの操作
+
+	Azure portalに接続 https://portal.azure.com
+	ストレージアカウント（ホストストレージ）を作成
+	そのストレージアカウントの「アクセス制御とIAM」で、
+	自分自身のアカウント（Azure portal右上に表示）に
+	「ストレージBlobデータ所有者」を割り当てる
+
+■ターミナルの操作
+
+	az login
+	mkdir test
+	cd test
+	func init
+		dotnet (isolated process)を選択
+		c#-isolatedを選択
+	func new
+		TimerTriggerを選択
+		Function Name: Timer1
+	code . （VS Codeでプロジェクトが開かれる）
+	※ターミナルはそのままにしておく
+	※ここでTimerTriggerを作成したのは、このトリガーを使用する関数が
+	ホストストレージへの接続を必要とするためである。
+
+■VS Codeの操作
+
+	local.settings.json
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        の行を、以下のように書き換える
+        "AzureWebJobsStorage__accountName": "NNNN",
+        ※NNNNの部分は先程作成したストレージアカウントの名前とする
+	Timer1.cs
+		public void Run([TimerTrigger("0 */5 * * * *")] TimerInfo myTimer)
+        の行を、以下のように書き換える
+		public void Run([TimerTrigger("*/1 * * * * *")] TimerInfo myTimer)
+        ※タイマー関数が5分に1回ではなく1秒に1回呼び出されるように変更
+	すべてのファイルを保存
+
+■ターミナルの操作に戻る
+	func start
+	しばらくするとタイマー関数が毎秒実行され、ログが表示される。
+	※タイマートリガーを使用する関数が正しく動作したということは、
+	  ローカルのAzure Functionの実行時に
+	  ホストストレージへの接続ができている、ということを意味する。
+
+■なぜこれで動くのか？
+
+	AzureWebJobsStorage__accountNameにストレージアカウントの名前を指定し、
+	Azure Functions Core Toolsの func start でローカルで関数を実行する際、
+	az loginでサインインしているユーザーのIDを使用して、
+	そのストレージアカウントへの接続が行われる。
+	
+	タイマートリガーを使用する場合、ストレージアカウントで、
+	そのユーザーIDに「ストレージ BLOB データ所有者」ロールが
+	割り当てられていればよい（以下の公式ドキュメント参照）。
+
+https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-reference?tabs=blob&pivots=programming-language-csharp#connecting-to-host-storage-with-an-identity
+

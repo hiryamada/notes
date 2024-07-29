@@ -23,6 +23,7 @@
 - [開始時のご案内](../opening.md)
 - [Azure App Service Web Apps を実装する](../AZ-204/mod01.md)
 - [Azure Functions を実装する](../AZ-204/mod02.md)
+  - 備考: [IDベース接続](id-based-connection.txt)
 - コンテナー化されたソリューションを実装する
   - [ACI (Azure Container Instance), AKS (Azure Kubernetes Service)](../AZ-104-2023/pdf/コンテナーのサービス.pdf)
   - [ACA (Azure Cointainer Apps)](../AZ-305/container-apps.md)
