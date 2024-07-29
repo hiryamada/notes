@@ -1,5 +1,6 @@
 # Azure App Service
 
+<!--
 https://docs.microsoft.com/ja-jp/azure/app-service/overview
 
 [2015/3/24 一般提供開始](https://weblogs.asp.net/scottgu/announcing-the-new-azure-app-service)
@@ -13,6 +14,7 @@ https://docs.microsoft.com/ja-jp/azure/app-service/overview
 2020/9/22 Windowsコンテナーをサポート https://azure.microsoft.com/ja-jp/updates/app-service-announces-general-availability-of-windows-container-support/
 
 2021/8/25 可用性ゾーンをサポート https://azure.github.io/AppService/2021/08/25/App-service-support-for-availability-zones.html
+-->
 
 ■Azure App Serviceとは？
 
@@ -28,6 +30,8 @@ Azure上で、HTTPベースのアプリケーション（WebアプリやWeb API�
 - VMスケールセットのような、負荷状況に合わせてインスタンス（VM）を増減させることができる機能も利用できる。
 - ロードバランサーの機能も組み込まれている。
 - Dockerコンテナー（LinuxとWindows）もサポートされている。開発者は、開発したDockerコンテナーをApp Serviceにデプロイすることもできる。
+
+<!--
 
 ■Azure仮想マシン（VM）とApp Serviceは何が違うのか？
 
@@ -65,6 +69,7 @@ https://docs.microsoft.com/ja-jp/azure/architecture/guide/technology-choices/com
   - App Serviceが提供する言語ランタイムを使用したい
   - VMにRDPやSSHで接続する必要がない
   - App Serviceが提供する負荷分散やスケーリングを使用したい
+-->
 
 ■Webアプリとは？
 
@@ -76,9 +81,9 @@ Webアプリ: ユーザーがWebブラウザーを使用して直接アクセス
 Webアプリ（Azure App Service上で稼働）
 ```
 
-ASP.NET, ASP.NET Core, Node.js, Python, Ruby, PHPなどのWebアプリをApp Serviceで運用することができる。
+Azure App Serviceでは、ASP.NET、ASP.NET Core、Java、Node.js、PHP、Pythonなどで開発されたWebアプリを運用できる。
 
-その他の言語ランタイムを使用したい場合は、Dockerコンテナーを利用することで対応できる。
+その他の言語（たとえばRubyなど）を使用したい場合は、Dockerコンテナーを利用することで対応できる。
 
 ■Web APIとは？
 
@@ -92,43 +97,51 @@ Webアプリ/モバイルアプリ
 Web API（Azure App Service上で稼働）
 ```
 
+Azure App Serviceでは、Web APIも運用できる。
+
 ■App Service アプリ
 
-App Service上にデプロイする、ユーザーのアプリケーション。
+Azure App Serviceを構成するリソースの一つ。
 
-Webアプリや、Web APIなど。
+Webアプリや、Web APIなどが、その中で実行される。
 
 Visual Studio、Visual Studio Code、Eclipse、PyCharmなどを使用して、ローカルの開発環境でWebアプリ等を開発する。
 
-その後、開発したコードをApp Service上にデプロイして、Azure上で稼働させる。
+その後、開発したコードをAzure App Service上にデプロイして、Azure上で稼働させる。
 
-App Serviceアプリは「App Serviceプラン」にデプロイする。つまり、App Serviceアプリを動かすには必ずApp Serviceプランが必要となる。
+App Serviceアプリは「App Serviceプラン」上で動作する。つまり、App Serviceアプリを動かすには必ずApp Serviceプランが必要となる。
 
 ■App Serviceプラン
 
-「App Serviceプラン」を作成し、そこに「App Serviceアプリ」をデプロイする。
+「App Serviceプラン」を作成し、そこで「App Serviceアプリ」を動かす。
 
 （アプリを作成するときに、プランがなければ、プランも同時に作られる）
 
-1つのプランで複数のアプリを運用することができる。
+1つのApp Serviceプランで複数のApp Serviceアプリを運用することができる。
 
 ```
-App Service プラン (米国東部リージョン、Windows、Free)
+App Service プラン (米国東部リージョン、Windows、Standard S1)
 ├App Service アプリ1 (ASP.NET Core Webアプリ)
-└App Service アプリ2 (Java Webアプリ)
+│                        ↓
+└App Service アプリ2 (ASP.NET Core Web API)
+```
 
-App Service プラン (米国西部リージョン、Linux、Standard S1)
+プラン内のアプリのランタイムは異なっていてもよい。
+
+```
+App Service プラン (米国東部リージョン、Windows、Standard S1)
 ├App Service アプリ1 (ASP.NET Core Webアプリ)
 └App Service アプリ2 (Java Webアプリ)
 ```
+
 
 ■開発の流れの例
 
 まずAzure上にプランとアプリのリソースをデプロイ（作成）する。
 
 ```
-App Service プラン (米国東部リージョン、Windows、Free)
-└App Service アプリ (.NET)
+App Service プラン (米国東部リージョン、Windows、Standard S1)
+└App Service アプリ (ASP.NET Core)
 ```
 
 このとき、アプリでは、サンプルのWebアプリケーションが稼働する。
@@ -144,8 +157,8 @@ Webアプリ
 開発が完了したWebアプリを、App Serviceアプリへとデプロイする。
 
 ```
-App Service プラン (米国東部リージョン、Windows、Free)
-└App Service アプリ (.NET)
+App Service プラン (米国東部リージョン、Windows、Standard S1)
+└App Service アプリ (ASP.NET Core)
   ↑ デプロイ
 Webアプリ
   ↑ 開発
@@ -163,12 +176,16 @@ Webアプリ
 - Standard
   - S1, S2, S3
 - Premium
-  - P1, P2, P3
-  - P1V2, P2V2, P3V2
-  - P1V3, P2V3, P3V3
+  - P0v3
+  - P1v3
+  - P1mv3
+  - P2v3
+  - P2mv3
+  - P3v3
+  - P3mv3
+  - P4mv3
+  - P5mv3
 - Isolated
-  - l1, l2, l3
-  - l1v2, l2v2, l3v2
 
 これらの選択により、プランで使える性能と機能、料金が変化する。
 
@@ -200,15 +217,53 @@ WindowsとLinuxから選べる。
 言語によっては、OSが限定される場合がある。
 
 例: 
-- .NETアプリ: WindowsでもLinuxでも動く。
-- Rubyアプリ: Linuxでのみ動く。
+- ASP.NET Core アプリ: WindowsでもLinuxでも動く。
+- ASP.NET アプリ: Windowsでのみ動く。
+- PHP, Pythonアプリ: Linuxでのみ動く。
+
+
+■参考: ASP.NET Core と ASP.NET
+
+[ASP.NET](https://ja.wikipedia.org/wiki/ASP.NET) は、Windows上の「[.NET Framework](https://ja.wikipedia.org/wiki/.NET_Framework)」上で動作するWebアプリ向けフレームワーク。「[Active Server Pages](https://ja.wikipedia.org/wiki/Active_Server_Pages)」の後継。
+
+[ASP.NET Core](https://ja.wikipedia.org/wiki/ASP.NET_Core) は、マルチプラットフォーム（Windows, Mac, Linux）対応の「[.NET](https://ja.wikipedia.org/wiki/.NET)」上で動作するWebアプリ向けフレームワーク。
+
+■参考: .NET Framework と .NET
+
+バージョンの概略。
+
+- .NET Framework ... プロプライエタリ、Windowsのみ、ASP.NETが動作する
+  - .NET Framework 1.0 2002/1/5
+  - .NET Framework 2.0
+  - .NET Framework 3.0
+  - .NET Framework 3.5
+  - .NET Framework 3.5
+  - .NET Framework 3.5
+  - .NET Framework 4.0
+  - .NET Framework 4.6 2015/7/20
+  - .NET Framework 4.8
+  - .NET Framework 4.7
+  - .NET Framework 4.8 2019/4/18
+  - .NET Framework 4.8.1 2022/8/9
+- .NET ... オープンソース、マルチプラットフォーム。ASP.NET Coreが動作する
+  - .NET Core 1.0 2016/6/27
+  - .NET Core 1.1
+  - .NET Core 2.0
+  - .NET Core 2.2
+  - .NET Core 3.0
+  - .NET Core 3.1
+  - .NET 5 2020/11/10
+  - .NET 6
+  - .NET 7
+  - .NET 8 2023/11/14
+
 
 ■プランのスケールアップ・スケールダウン
 
 プランの「価格レベル」を変更すること。
 
 - Free
-- Shared(Windowsのみ)
+- Shared (Windowsのみ)
 - Basic
 - Standard
 - Premium
@@ -218,9 +273,9 @@ WindowsとLinuxから選べる。
 
 ■Freeプランはいくつまで使える？
 
-https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits
+https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits
 
-リージョンあたり 10 個まで。
+リージョンあたり 10 個まで。うち、Linuxプランは1個まで。
 
 ■プランのスケールアウト・スケールイン
 

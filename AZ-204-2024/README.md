@@ -7,8 +7,8 @@
 ## テキスト
 
 - 基本的に以下のテキストの内容に沿って解説します。
-- Microsoft Learn 「Developing Solutions for Microsoft Azure」
-- https://learn.microsoft.com/ja-jp/training/courses/az-204t00
+    - Microsoft Learn 「Developing Solutions for Microsoft Azure」
+    - https://learn.microsoft.com/ja-jp/training/courses/az-204t00
 - わかりやすくなるように、講義では一部順番を並び替えて解説します。
 
 ## 講義
