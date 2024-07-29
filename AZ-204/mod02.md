@@ -1,35 +1,52 @@
 # Azure Functions
 
-サーバーレスアプリケーションの実行を行うサービス。
-コードを実行するためのインフラの管理が不要。必要なリソースはオンデマンドで提供される（「従量課金プラン」の場合）。
-「関数アプリ」リソース内に複数の「関数」を作成。
+- サーバーレスアプリケーションの実行を行うサービス。
+- コードを実行するためのインフラの管理が不要。必要なリソースはオンデマンドで提供される（「従量課金プラン」の場合）。
+- 「関数アプリ」リソース内に複数の「関数」を作成。
 
+※Azureのサーバーレスのサービス
+https://azure.microsoft.com/ja-jp/solutions/serverless/
+
+<!--
 製品ページ
 https://azure.microsoft.com/ja-jp/services/functions/
 
 価格プラン
 https://azure.microsoft.com/ja-jp/services/functions/#pricing
+-->
 
-※Azureのサーバーレスのサービス
-https://azure.microsoft.com/ja-jp/solutions/serverless/
+
+■Azure Functionsの利用例
+
+PDF資料: [Azure Functionsによるサムネイル作成](pdf/mod02/トリガー、バインド.pdf)
 
 ■Azure Functionsでできることの例
 
-- イベント処理
-  - ストレージアカウントにファイル（Blob）がアップロードされたら、そのファイルを読み取って処理する
-    - SQL Databaseへデータを登録する
-    - Cosmos DBへデータを登録する
-- 定期的な処理（タイマー）
-  - 毎週・毎月といった決まった間隔でタスクを実行
-- APIの実装
-- マイクロサービスの実装
-- システムの統合・連携
-- IoTデバイスからのデータ収集・処理
-- Cosmos DBのデータの変更に対応する
-- キューに到着したメッセージを処理する
-- **Azure Monitorアラート**がトリガーされた際に、Azure Functions関数で、対応する処理を実行する
+https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-overview?pivots=programming-language-csharp#scenarios
 
-https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-overview#scenarios
+- ストレージアカウントにファイル（Blob）がアップロードされたら、そのファイルを読み取って処理する
+  - [Blobトリガー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-storage-blob)
+    - 応用例: 画像ファイルがアップロードされたらその画像のサムネイルを生成して別のコンテナーへ記録する
+    - 応用例: CSVファイルがアップロードされたらその内容をSQL DatabaseへINSERTする
+    - 応用例: JSONファイルがアップロードされたらその内容をCosmos DBへ登録する
+- 定期的な処理（タイマー）
+  - [タイマートリガー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-timer)
+  - スケジュールは[NCrontab](https://github.com/atifaziz/NCrontab)を使用して設定。
+  - 設定例: `0 */5 * * * *` ... 5分に1回
+- Web APIの実装
+  - [HTTPトリガー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-http-webhook)
+- IoTデバイスからのデータ収集・処理
+  - [IoT Hubトリガー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-event-iot)
+  - IoTデバイス → (HTTPS/MQTT) → IoT Hub → Azure Functions
+- Cosmos DBのデータの変更時に自動的に処理を行う
+  - [Cosmos DBトリガー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger)
+  -  (RDBでいう「[トリガー](https://techblog.recruit.co.jp/article-590/)」のようなことが実現できる)
+- キューに到着したメッセージを処理する
+  - [Azure Queue Storageのトリガー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-storage-queue-trigger)
+  - [Service Busトリガー](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-service-bus-trigger)
+- **Azure Monitor**との連動
+  - [アクショングループでの設定](https://learn.microsoft.com/ja-jp/azure/azure-monitor/alerts/action-groups#manage-action-groups)
+  - Azure Monitorアラートがトリガーされた際に、Azure FunctionsのHTTPトリガーに関連付けられた関数で、対応する処理を実行する
 
 <!--
 
@@ -59,21 +76,33 @@ https://github.com/Azure/app-service-announcements/issues
 
 https://azure.microsoft.com/ja-jp/pricing/details/functions/
 
-「関数アプリ」作成時に、そのアプリが使用する「価格プラン」を選択する。
+「関数アプリ」作成時に、そのアプリで使用する「価格プラン」を選択する。
 
 - [消費（使用量、従量課金とも）](https://docs.microsoft.com/ja-jp/azure/azure-functions/consumption-plan)
   - 1 秒あたりのリソースの使用量と実行回数に基づいて課金
+  - リソース使用量
+    - GB秒あたり $0.000016
+    - 400,000 GB/秒 は毎月無料
+  - 実行回数
+    - 100万回あたり $0.2
+  - 例:
+    - 1回の実行あたりで512MB(0.5 GB)メモリを使用し、実行時間が1000ミリ秒(1秒)
+    - 1ヶ月に300万回実行
+      - 0.5 GB * 1 s * 300万 = 150 万 GB秒
 - [Premium プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-premium-plan?tabs=portal)
-  - 強化されたパフォーマンス
-    - より大きなVMサイズが利用できる
-  - インスタンス全体にわたって割り当てられたコア秒数とメモリに基づく
-  - コールド スタートなし
-  - VNet統合
-    - 関数アプリから、VNet内のリソースにアクセス
-    - VNetを経由して別のリソースにアクセス
+  - 少なくとも1つのインスタンス（サーバー）をプロビジョニング（事前準備）しておく方法
+  - インスタンス全体にわたって割り当てられたコア秒数とメモリに基づく料金
 - [専用プラン](https://docs.microsoft.com/ja-jp/azure/azure-functions/dedicated-plan)
   - 「App Service プラン」上でAzure Functionsを実行
   - App Service プランの料金
+
+■Functions Premiumプランで利用できる機能
+
+- より強化されたパフォーマンス
+- コールド スタートなし
+- VNet統合
+  - 関数アプリから、VNet内のリソースにアクセス
+  - VNetを経由して別のリソースにアクセス
 
 ■テンプレート
 
@@ -91,10 +120,6 @@ https://azure.microsoft.com/ja-jp/pricing/details/functions/
 - EventGridTrigger
 - CosmosDBTrigger
 - IotHubTrigger
-
-■トリガーとバインド
-
-PDF資料: [Azure Functionsのトリガーとバインド](pdf/mod02/トリガー、バインド.pdf)
 
 ■タイマートリガー
 
@@ -212,9 +237,9 @@ SDKを使用した、Azureのサービスへの明示的なアクセスの例: h
 
 ■サポートされている言語
 
-C#（「クラスライブラリ」と「C#スクリプト」）, F#, JavaScript, Java, PowerShell, Python, TypeScript
+C#（「クラスライブラリ」と「C#スクリプト」）, Java, JavaScript, TypeScript,  Python, PowerShellなど。
 
-https://docs.microsoft.com/ja-jp/azure/azure-functions/supported-languages
+https://learn.microsoft.com/ja-jp/azure/azure-functions/supported-languages?tabs=isolated-process%2Cv4&pivots=programming-language-csharp#language-support-details
 
 ■各言語でのトリガー・バインドの指定方法:
 
@@ -267,12 +292,16 @@ https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-host-json
 local.settings.json: ローカル設定
 
 ■Azure Functions Core Toolsとは？
-Azure Functions Core Tools を使用すると、ローカル コンピューター上のコマンド プロンプトまたはターミナルから関数を開発およびテストできます。
+
+https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-run-local
+
+Azure Functions Core Tools を使用すると、ローカル コンピューター上のコマンド プロンプトまたはターミナルから関数を開発およびテストできる。
 
 ■Azure Functions Core Toolsのインストール
-https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-run-local
-Windows/Mac/Linuxでインストール方法が異なる。
-Windowsの場合はMSIでインストール。
+
+- Windows/Mac/Linuxでインストール方法が異なる。
+- Windowsの場合はMSIでインストール。
+- [最新版の配布場所(GitHubリリース)](https://github.com/Azure/azure-functions-core-tools/releases)
 
 ■Azure Functions Core Tools（funcコマンド）によるローカルでの関数開発
 

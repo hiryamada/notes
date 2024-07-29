@@ -8,6 +8,7 @@ Functions では、組み込みのスケーラビリティが提供され、使�
 
 C#、F#、JavaScript、Python、PowerShell Core など、好みの言語で関数コードを記述することができます。
 
+<!--
 NuGet や NPM などのパッケージ マネージャーのサポートも含まれているので、ビジネス ロジック内で一般的なライブラリを使用することができます。
 
 [製品ページ](https://azure.microsoft.com/ja-jp/services/functions/)
@@ -47,6 +48,8 @@ Microsoft Learn
 その他
 
 - [DE:CODE 2019 AWS 技術者向け Azure サーバーレス](https://eventmarketing.blob.core.windows.net/decode2019-after/decode19_PDF_CD07.pdf) AWS Lambdaとの比較でわかりやすい！
+
+-->
 
 # リソースの作り方
 
