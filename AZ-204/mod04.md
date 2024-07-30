@@ -10,8 +10,9 @@ https://azure.microsoft.com/ja-jp/pricing/details/cosmos-db/
 https://docs.microsoft.com/ja-jp/azure/cosmos-db/
 
 特設ページ
+<!--
 https://gotcosmos.com/
-↓
+-->
 https://developer.azurecosmosdb.com/
 
 
@@ -58,17 +59,25 @@ NoSQLデータベース。
 
 データをグローバルに分散（レプリケーション）可能。マルチマスターの読み書きも可能。
 
+■API
+
 6種類のAPIをサポート。Cosmos DBアカウントを作成する際に選択する。
 
-- SQL (Core) API（英語表示では Azure Cosmos DB for NoSQL）
-  - Cosmos DBネイティブのAPI。
+- Azure Cosmos DB for NoSQL
+  - 日本語UI表記では「SQL (Core) API」
+  - Cosmos DBネイティブのAPI
   - NoSQL データベースなので基本的にはSQLではなく独自の命令を使用して読み書きを行う。
   - クエリ（検索）については、SELECT文を使用できる。
-- Table API - ストレージアカウントのTable APIと互換
-- MongoDB API - MongoDB互換
-- Gremlin API - Apache Tinkerpop互換
-- Cassandra API - Apache Cassandra互換
-- PostgreSQL API
+- Azure Cosmos DB for MongoDB
+  - MongoDB互換
+- Azure Cosmos DB for Apache Gremlin
+  - Apache Tinkerpop互換
+- Azure Cosmos DB for Apache Cassandra
+  - Apache Cassandra互換
+- Azure Cosmos DB for PostgreSQL
+- Azure Cosmos DB for Table
+  - ストレージアカウントのTable（Azure Table Storage）と互換
+
 
 各種言語用のクライアントライブラリ（SDK）を使用して、プログラムからデータを読み書きする。
 
