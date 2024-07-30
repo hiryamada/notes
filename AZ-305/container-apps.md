@@ -116,11 +116,12 @@ Container Apps 環境 -> Log Analyticsワークスペース
 
 ```
 Container Apps 環境
-├コンテナー アプリ1
-└コンテナー アプリ2
+├コンテナー アプリ1 (マイクロサービス1)
+│ ↑ ↓ 通信可能
+└コンテナー アプリ2 (マイクロサービス2)
 ```
 
-[「Container Apps 環境」内の「コンテナー アプリ」はDaprを使用して相互に通信できる。](https://docs.microsoft.com/ja-jp/azure/container-apps/environment) アプリ間の通信をさせたくない場合は、別の環境に分ける。
+[「Container Apps 環境」内の「コンテナー アプリ」はDaprを使用して相互に通信できる。](https://docs.microsoft.com/ja-jp/azure/container-apps/environment) アプリ間の通信をさせる必要がない（分離したい）場合は、別の環境に分ける。
 
 ```
 Container Apps 環境1

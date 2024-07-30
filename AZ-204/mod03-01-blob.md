@@ -25,17 +25,33 @@ https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blobs-introduction
 https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-pageblob-overview?tabs=dotnet
 
 - ブロックBlob
-  - ブロックで構成
+  - 内部的には1つ～複数の「ブロック」（データの塊）で構成される
+  - 1つのBlobには最大50,000ブロックを含めることができる。
+  - 1ブロックのサイズは 最大で4,000 MB。
+  - 1つのブロック BLOB の最大サイズは約 190.73 TiB (4,000 MB X 50,000 ブロック)
   - テキストまたはバイナリ ファイルの格納に最適
   - 大きいファイルの効率的なアップロードに最適
 - 追加Blob
   - ブロックで構成
-  - 追加操作用に最適化されている
+  - 追加操作用に最適化されている（既存Blobの末尾に新しいBlockを高速に追加できる）
   - ログ記録のシナリオに最適
+  - [登場時のブログに詳しい解説がある](https://satonaoki.wordpress.com/2015/04/15/azure-storage-append-blob/)
 - ページBlob
   - 512 バイトの「ページ」で構成
   - 頻繁なランダムの読み取り/書き込み操作のために設計
   - ホット アクセス層のみ
+  - VMの仮想ディスク(VHD形式)、SQLデータベース、ビデオ編集アプリなどで使用される
+  - [詳しい解説](https://learn.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-pageblob-overview)
+
+※通常、プログラムからストレージアカウントのBlobのアップロード・ダウンロード・削除等の操作を行う場合 `BlobClient`を使用する。`BlobClient`を使用してBlobを作成した場合は「ブロックBlob」となる。
+
+```
+BlobBaseClient ... 親クラス。共通メソッドを実装。
+├BlobClient ... Blob単位での操作が可能。通常はこれを利用
+├BlockBlobClient ... Block単位の操作が可能
+├AppendBlobClient ... Blockの追加などの操作が可能
+└PageBlobClient ... Page単位の操作が可能
+```
 
 ■冗長性
 
@@ -46,7 +62,16 @@ https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-pageblob-overv
 
 ■アクセス層
 
-ホット、クール、コールド、アーカイブ
+Blobそれぞれに「アクセス層」を設定可。Blobアップロード時に特に層を指定しない場合は、ストレージアカウントに設定されたデフォルトの層の設定（ホットまたはクール）が使用される。
+
+ホット、クール、コールド、アーカイブの4種類がある。
+
+ストレージ料金は、ホット＞クール＞コールド＞アーカイブ となる。大量のデータを格納する際、コスト削減が必要であれば、ホット層以外の層の利用を検討する。
+
+ただし、読み取りコストは、ホット（コストなし）＜クール＜コールドとなる。大量に読み取りを行う際はホットの利用を検討する。
+
+アーカイブ層のBlobを読み取る際は、事前にホット・クール・コールドへの層変更（リハイドレーション）が必要。
+
 <!--
 [まとめPDF](../AZ-104/pdf/mod07/アクセス層.pdf)
 -->
@@ -54,6 +79,10 @@ https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-pageblob-overv
 [まとめPDF(Blobのアクセス層と料金)](../AZ-104-2023/pdf/Azure%20Blob%20Storage%E3%81%AE%E6%96%99%E9%87%91.pdf)
 
 ■ライフサイクル
+
+Blobのアクセス層を自動的に変更する機能。
+
+たとえば保存されてから30日経過したホット層のBlobを自動的にクール層に変更する、といった設定ができる。
 
 [まとめPDF](../AZ-104/pdf/mod07/ライフサイクルルール.pdf)
 
@@ -73,8 +102,8 @@ SDK＝Software Development Kit
   - Go
   - C++
   - C
-  - PHP
-  - Ruby
+  - PHP (2021年 [リタイア](https://github.com/Azure/azure-sdk-for-php))
+  - Ruby (2021年 [リタイア](https://github.com/Azure/azure-sdk-for-ruby/blob/master/docs/README.md))
 - モバイルプラットフォーム
   - iOS
   - Android
