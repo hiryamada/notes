@@ -18,7 +18,8 @@ https://developer.azurecosmosdb.com/
 
 ■歴史
 
-2015/4/8 Azure DocumentDB 一般提供開始 https://azure.microsoft.com/ja-jp/blog/nosql-database-service-azure-documentdb-now-generally-available/
+2015/4/8 Azure DocumentDB 一般提供開始
+https://azure.microsoft.com/ja-jp/blog/nosql-database-service-azure-documentdb-now-generally-available/
 
 完全マネージドのNoSQL データベース サービス、JSONを読み書き、SQLでクエリ可能。
 
@@ -37,18 +38,36 @@ JSONデータの例:
 ]
 ```
 
+2017/5/10 Azure Cosmos DB 一般提供開始 https://azure.microsoft.com/en-us/blog/azure-cosmos-db-microsofts-globally-distributed-multi-model-database-service/
 
-2017/5/10 Azure Cosmos DB 一般提供開始 https://azure.microsoft.com/ja-jp/blog/azure-cosmos-db-microsofts-globally-distributed-multi-model-database-service/
+2017/3/15 Azure Cosmos DB MongoDB API 一般提供開始
+https://azure.microsoft.com/en-us/updates/general-availability-documentdb-with-api-for-mongodb/
 
-2018/3/12 データエクスプローラー 一般提供開始 https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-data-explorer-ga-2/
+2017/11/16 Azure Cosmos DB Table API 一般提供開始
+https://azure.microsoft.com/fr-fr/blog/announcing-the-general-availability-of-azure-cosmosdb-table-api/?cdn=disable
 
-2018/9/24 Cassandra APIサポート 一般提供開始 https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-cassandra-api-now-generally-available/
+2018/2/7 Azure Cosmos DB Graph API (Gremlin) 一般提供開始
+https://azure.microsoft.com/ja-jp/blog/azure-cosmosdb-graph-api-now-generally-available/
 
-2020/3/6 Freeレベル(Free Tier) 提供開始 https://devblogs.microsoft.com/cosmosdb/build-apps-for-free-with-azure-cosmos-db-free-tier/
+2018/3/12 データエクスプローラー 一般提供開始
+https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-data-explorer-ga-2/
+
+2018/11/24 Azure Cosmos DB Cassandra API 一般提供開始
+https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-cassandra-api-now-generally-available/
+
+2020/3/6 Freeレベル(Free Tier) 提供開始
+https://devblogs.microsoft.com/cosmosdb/build-apps-for-free-with-azure-cosmos-db-free-tier/
 
 2020/8/12 [ChaosDB脆弱性 発見と修正](chaosdb.md)
 
-2021/5/25 Cosmos DB serverless 一般提供開始 https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-serverless-now-in-general-availability/
+2021/5/25 Azure Cosmos DB serverless 一般提供開始
+https://azure.microsoft.com/ja-jp/updates/azure-cosmos-db-serverless-now-in-general-availability/
+
+2022/10/12 Azure Cosmos DB for PostgreSQL 一般提供開始
+https://azure.microsoft.com/ja-jp/updates/generally-available-azure-cosmos-db-for-postgresql/
+
+2023/11/15 Azure Cosmos DB for MongoDB vCore 一般提供開始
+https://azure.microsoft.com/ja-jp/updates/general-availability-azure-cosmos-db-for-mongodb-vcore/
 
 
 ■Cosmos DBとは？

@@ -45,15 +45,15 @@
 
 ■4日目
 
-- API Management の実装
-- イベントベースのソリューションの開発
-- メッセージ ベースのソリューションを開発する
+- [API Management の実装](../AZ-204/mod08-01-apim.md)
+- [イベントベースのソリューションの開発](../AZ-305/event.md)
+- [メッセージ ベースのソリューションを開発する](../AZ-305/messaging.md)
 - ラボ（オプション）
 
 ■5日目
-- Application Insights を使用したソリューションのトラブルシューティング
-- ソリューションのキャッシュを実装する
-- 試験対策
+- [Application Insights を使用したソリューションのトラブルシューティング](application-insights.md)
+- [ソリューションのキャッシュを実装する](cache.md)
+- [試験対策](../AZ-204/exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
 - 受講者アンケート
 - ラボ（オプション）

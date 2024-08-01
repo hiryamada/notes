@@ -48,16 +48,6 @@ Googleで[「AZ-204 合格」](https://www.google.com/search?q=az-204+%E5%90%88%
 
 正解・解説表示あり。
 
-例:
-https://learn.microsoft.com/ja-jp/training/modules/explore-azure-cosmos-db/9-knowledge-check
-
-「講義ノート」に、山田が作成した「知識チェック」解説があります。
-[解説1](day1.md) /
-[解説2](day2.md) /
-[解説3](day3.md) /
-[解説4](day4.md) /
-[解説5](day5.md)
-
 ■「試験準備」動画を活用して学習しよう！（公式、無料、英語）
 
 以下のリンクから「試験準備」動画を視聴できる。
@@ -68,11 +58,13 @@ https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-204
 
 ■「プラクティス評価」を活用して学習しよう！（公式、無料）
 
-https://learn.microsoft.com/ja-jp/certifications/practice-assessments-for-microsoft-certifications
-
 主なAzure認定試験の模擬問題にチャレンジできる。正解・解説表示あり。英語だが、Webブラウザーの翻訳機能を使用して日本語化が可能。
 
-[AZ-204の「プラクティス評価」](https://learn.microsoft.com/ja-jp/certifications/exams/az-204/practice/assessment?assessment-type=practice&assessmentId=35)
+[AZ-204の「プラクティス評価」](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-developer/practice/assessment?assessment-type=practice&assessmentId=35&practice-assessment-type=certification)
+
+すべての「プラクティス評価」へのリンク:
+https://learn.microsoft.com/ja-jp/certifications/practice-assessments-for-microsoft-certifications
+
 
 ■「模擬試験」を活用して学習しよう！（非公式、有料）
 
@@ -99,7 +91,7 @@ https://www.udemy.com/topic/microsoft-az-204/
 
 https://aka.ms/examdemo
 
-Microsoftの本番の認定試験の画面構成、画面遷移、出題パターン（多岐選択・穴埋め・並び替えなど）を事前に確認できる。
+Microsoftの本番の認定試験の画面構成、画面遷移、出題パターン（多岐選択・穴埋め・並び替えなど）など、一連の操作を事前に確認できる。
 
 特に、マイクロソフトの認定試験をまだ受けたことがない場合はおすすめ。
 
@@ -142,11 +134,10 @@ https://learn.microsoft.com/ja-jp/certifications/exams/az-204
 ※「Open Book Exam」とも呼ばれる
 
 解説:
-https://learn.microsoft.com/en-us/certifications/exam-duration-exam-experience#accessing-microsoft-learn-during-your-certification-exam
+https://learn.microsoft.com/ja-jp/credentials/support/exam-duration-exam-experience#accessing-microsoft-learn-during-your-certification-exam
 
 発表時のブログ:
 https://techcommunity.microsoft.com/t5/microsoft-learn-blog/introducing-a-new-resource-for-all-role-based-microsoft/ba-p/3500870
-
 
 ■合格したらアピールしよう！
 
@@ -162,7 +153,7 @@ https://learn.microsoft.com/ja-jp/certifications/renew-your-microsoft-certificat
 
 取得した「認定資格」には有効期限が設定されている。
 
-有効期限が切れる6ヶ月前に、期限を「更新」を行うためのリンクが送られてくるので、忘れずに更新しよう。
+有効期限が切れる6ヶ月前に、年次更新を行うためのリンクが送られてくるので、忘れずに更新しよう。
 
 更新の際は簡単なWeb試験に合格する必要があるが、もし不合格でも何度もチャレンジできる。
 
