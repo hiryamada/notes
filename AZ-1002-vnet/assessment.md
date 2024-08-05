@@ -10,17 +10,17 @@
 
 以下のページの「評価を受ける」からアセスメント（評価）を受験できます。
 
-https://learn.microsoft.com/ja-jp/credentials/applied-skills/build-azure-ai-vision-solution
+https://learn.microsoft.com/ja-jp/credentials/applied-skills/configure-secure-workloads-use-azure-virtual-networking/
 
-![alt text](image.png)
+![alt text](../AI-3004-vision/image.png)
 
-![alt text](image-1.png)
+![alt text](../AI-3004-vision/image-1.png)
 
 ## アセスメント（評価）のメンテナンス
 
 アセスメント（評価）はメンテナンスのため開始できない場合があります。再開までしばらくお待ち下さい。
 
-![alt text](image-3.png)
+![alt text](../AI-3004-vision/image-3.png)
 
 ## 「資格証明」の活用方法
 
