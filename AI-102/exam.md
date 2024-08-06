@@ -68,18 +68,22 @@ https://learn.microsoft.com/ja-jp/training/modules/prepare-to-develop-ai-solutio
 
 ■「プラクティス評価」を活用して学習しよう！（無料）
 
-https://learn.microsoft.com/ja-jp/certifications/practice-assessments-for-microsoft-certifications
+主なAzure認定試験の模擬問題にチャレンジできる。正解・解説表示あり。
+
+2023/6/8 AI-102 プラクティス評価が利用可能となりました。
+
+https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification
 
 ![alt text](image-8.png)
 
-主なAzure認定試験の模擬問題にチャレンジできる。正解・解説表示あり。
 
-~~※AI-900（AIの基礎）の「プラクティス評価」で、AzureのAIサービスの基本的な知識を復習できる。~~
+■「試験準備」動画を活用して学習しよう！（公式、無料、英語）
 
-~~※2023/4/6 現在、AI-102 は まだ「プラクティス評価」に含まれていないが、「他の試験については、近日中にプラクティス評価を開始する予定です。」とある。~~
+以下のリンクから「試験準備」動画を視聴できる。
 
-2023/6/8 AI-102 プラクティス評価が利用可能となりました。
-https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification
+https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-ai-102-plan-and-manage-an-azure-ai-solution
+
+全部で6本。試験で問われる重要ポイントの整理、模擬問題の解説など。英語音声だが、日本語字幕を付けて視聴できる。
 
 ■「模擬試験」を活用して学習しよう！（非公式、有料）
 
