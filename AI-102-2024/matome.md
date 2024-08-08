@@ -19,11 +19,11 @@
 - Azure AI Language
 - Language Studio
 - SDK
-- Azure AI Vision
-- Azure AI Video Indexer
 
 ■ 2日目
 
+- Azure AI Vision
+- Azure AI Video Indexer
 - Azure AI Language
 - Azure AI Translate
 - Azure AI Speech

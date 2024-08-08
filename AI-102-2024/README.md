@@ -13,7 +13,6 @@ Azure AI services、Azure AI Search、Azure OpenAI Service を利用する AI �
 - 講師自己紹介
 - [開始時のご案内](../opening.md)
 - [Azure AI サービスの使用を開始する](lp01.md)
-- [Azure AI Vision でコンピューター ビジョン ソリューションを作成する](../AI-3004-vision/AI-102.md)
 
 ラボ(オプション)
 - [インタラクティブラボシミュレーション(※おすすめ)](https://mslabs.cloudguides.com/guides/AI-102%20Lab%20Simulations%20-%20Designing%20and%20implementing%20a%20Microsoft%20Azure%20AI%20solution)
@@ -21,18 +20,9 @@ Azure AI services、Azure AI Search、Azure OpenAI Service を利用する AI �
   - 2 Manage Cognitive Services security
   - 3 Monitor Cognitive Services
   - 4 User a Cognitive Services container
-  - 15 Analyze images with Computer Vision
-  - 16 Analyze video with Azure Video Indexer
-  - 17 Classify images with Custom Vision
-  - 18 Detect objects in images with Custom Vision
-  - 19 Detect and analyze faces
-  - 20 Read text in images
 - [ラボ環境(※難しい)](https://esi.learnondemand.net/User/Login)
   - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
   - 1 Get Started with Azure AI Services (JA) / Azure AI サービスの使用を開始する
-  - 2 Analyze Images with Azure AI Vision (JA) / Azure AI Vision を使用して画像を分析する
-  - 3 Read Text in Images (JA) / 画像内のテキストの読み取り
-  - 4 Classify images with a Azure AI Vision custom model (JA) / Azure AI Vision カスタム モデルを使用して画像を分類する
 
 ラボ環境について:
 - ※トレーニングキーは、講師より連絡いたします
@@ -41,6 +31,7 @@ Azure AI services、Azure AI Search、Azure OpenAI Service を利用する AI �
 
 ■ 2日目
 
+- [Azure AI Vision でコンピューター ビジョン ソリューションを作成する](../AI-3004-vision/AI-102.md)
 - [Azure AI サービスを使用して自然言語処理のソリューションを開発する](../AI-3003-nlp/AI-102.md)
 
 ラボ(オプション)
@@ -54,7 +45,16 @@ Azure AI services、Azure AI Search、Azure OpenAI Service を利用する AI �
   - 10 Create a Language service client application
   - 11 Use speech and Language Understanding services
   - 12 Create a question answering solution
+  - 15 Analyze images with Computer Vision
+  - 16 Analyze video with Azure Video Indexer
+  - 17 Classify images with Custom Vision
+  - 18 Detect objects in images with Custom Vision
+  - 19 Detect and analyze faces
+  - 20 Read text in images
 - [ラボ環境](https://esi.learnondemand.net/User/Login)
+  - 2 Analyze Images with Azure AI Vision (JA) / Azure AI Vision を使用して画像を分析する
+  - 3 Read Text in Images (JA) / 画像内のテキストの読み取り
+  - 4 Classify images with a Azure AI Vision custom model (JA) / Azure AI Vision カスタム モデルを使用して画像を分類する
   - 5 Analyze Text (JA) / テキストの分析
   - 6 Create a Question Answering Solution (JA) / 質問応答ソリューションを作成する
   - 7 Create a language understanding model with the Language service (JA) / 言語サービスで言語理解モデルを作成する
