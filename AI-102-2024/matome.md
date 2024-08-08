@@ -24,3 +24,15 @@
 
 ■ 2日目
 
+- Azure AI Language
+- Azure AI Translate
+- Azure AI Speech
+
+■ 3日目
+
+- Azure AI Search
+- Azure AI Document Intelligence
+
+■ 4日目
+
+- Azure OpenAI Service
