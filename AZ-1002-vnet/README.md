@@ -33,17 +33,25 @@ Azureの仮想ネットワーク(Virtual Network, VNet)について学習しま�
 - [ラボ環境 ( https://esi.learnondemand.net/ )](https://esi.learnondemand.net/)
 - [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
 
+注意: ラボは1時間程度放置すると勝手に終了してしまいます。その場合はまた最初からやり直しになります。
+
+■手順書
+
+日本語版
+https://microsoftlearning.github.io/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services.ja-jp/
+
+英語版
+https://microsoftlearning.github.io/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/
+
 ■ラボの概要
 
-- ラボを起動する
-- Azure PowerShell からのサインイン `Connect-AzAccount`
 - Azure portalへのサインイン
 - 仮想ネットワークの作成
+  - hub-vnet 10.0.0.0/16
+    - AzureFirewallSubnet 10.0.0.0/24
   - app-vnet 10.1.0.0/16
     - frontend 10.1.0.0/24 (vm1を配置)
     - backend 10.1.1.0/24 (vm2を配置)
-  - hub-vnet 10.0.0.0/16
-    - AzureFirewallSubnet 10.0.0.0/24
 - VNET ピアリングを構成する
 - アプリケーションセキュリティグループを使用する
   - app-backend-asg ... vm2に関連付け
@@ -53,12 +61,15 @@ Azureの仮想ネットワーク(Virtual Network, VNet)について学習しま�
     - ソース: 任意
     - 宛先: app-backend-asg
     - SSH 接続を許可
-- Azure PowerShellとARMテンプレートを使用してvm1, vm2を作成
+- Azure Cloud Shell (PowerShell) を起動
+  - ARMテンプレートを使用してvm1, vm2を作成
 - vm2のNICに app-backend-asg を関連付け
 - Azure Firewallを作成する
   - app-vnetにAzureFirewallSubnetを作成
-  - app-vnetにAzure Firewall (Basic SKU)を作成
+  - app-vnetにAzure Firewall (Standard SKU)を作成
   - アプリケーションルールコレクションを追加
+    - dev.azure.com と www.microsoft.com へのHTTPアクセスを許可
   - ネットワークルールコレクションを追加
+    - 1.1.1.1 と 1.0.0.1 （Cloudflare のパブリックDNSサーバ）へのDNSアクセスを許可
 - ルートテーブルを作成する
   - トラフィックをAzure Firewallにルーティングする
