@@ -17,8 +17,9 @@ Azure AI Studioについて学習します。
 - [4 Azure AI Studio を使用して独自のデータで RAG ベースのコパイロット ソリューションを構築する](m04.md)
   - 講師デモ: ラボ2
 - [5 微調整された言語モデルを Azure AI Studio 内のコパイロットと統合する](m05.md)
-- [6 Azure AI Studio でカスタム コパイロットのパフォーマンスを評価する](m06.md)
   - 講師デモ: ラボ3
+- [6 Azure AI Studio でカスタム コパイロットのパフォーマンスを評価する](m06.md)
+  - 講師デモ: ラボ4
 - [7 AI Studio での責任ある生成 AI](m07.md)
 - [終了時のご案内](../closing-cloudslice.md)
 - 満足度調査アンケート
@@ -27,4 +28,5 @@ Azure AI Studioについて学習します。
 
 - [ラボ 01 Model Catalog](lab01.md)
 - [ラボ 02 RAG](lab02.md)
-- [ラボ 03 Evaluations](lab03.md)
+- [ラボ 03 Fine-tuning](lab03.md)
+- [ラボ 04 Evaluations](lab04.md)
