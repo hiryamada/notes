@@ -1,4 +1,4 @@
-# Azure AI Studio を使用して独自のカスタム コパイロットを開発する
+# AI-3016 Azure AI Studio を使用して独自のカスタム コパイロットを開発する
 
 https://learn.microsoft.com/ja-jp/training/paths/create-custom-copilots-ai-studio/
 
