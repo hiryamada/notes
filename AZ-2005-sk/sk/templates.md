@@ -25,6 +25,12 @@ Handlebarsと同様に ``{{ ... }}`` で囲まれた変数、値、関数呼び�
 Microsoft.SemanticKernel.PromptTemplates.Handlebars Namespace
 https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.prompttemplates.handlebars?view=semantic-kernel-dotnet
 
+動作:
+
+- GPTにプランの作成を依頼する。具体的には、Handlebarsテンプレートの組み立てを依頼するプロンプトが送信される。使用可能なプラグインの関数などの情報も渡される。
+- GPTがHandlebarsテンプレートを返す。
+- ローカルでそのテンプレートをHandlebarsエンジンで実行する。テンプレートの中ではプラグインの呼び出しが行われ、結果はHandlebarsの変数に記録されていく。また別のプラグインの呼び出しの際に、記録された変数が引数として利用される。最後のプラグイン関数を実行したら、その結果をJSONで表示（出力）する。
+
 ## Liquid テンプレートエンジン
 
 Liquid is an open-source template language created by Shopify and written in Ruby.

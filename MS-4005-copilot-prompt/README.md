@@ -2,9 +2,8 @@
 
 Microsoft Copilot for Microsoft 365の概要を学びます。また、Microsoft 365 のアプリ（Word, Excel, PowerPoint, Teams, Outlook）で、Copilotを使用し、コンテンツの作成、要約の生成、変換、編集を行う方法を学びます。
 
-※このコースは「半日コース（9:30 - 12:00）」となります。ご参考: [CTCさん](https://www.school.ctc-g.co.jp/course/P807.html)・[エディフィストさん](https://www.edifist.co.jp/course/MSCMS4005AM) も本コースを半日コースとして実施。
-
 <!--
+※このコースは「半日コース（9:30 - 12:00）」となります。ご参考: [CTCさん](https://www.school.ctc-g.co.jp/course/P807.html)・[エディフィストさん](https://www.edifist.co.jp/course/MSCMS4005AM) も本コースを半日コースとして実施。
 -->
 ※このコースに対応する認定試験 / Applied Skills アセスメントはありません。
 

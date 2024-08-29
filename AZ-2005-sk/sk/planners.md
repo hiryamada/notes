@@ -18,3 +18,10 @@ However, with the advent of LLMs, AIs can now generate plans directly from a con
 - Stepwise
 
 https://zenn.dev/microsoft/articles/semantic-kernel-v1-004#%E3%83%97%E3%83%A9%E3%83%B3%E3%83%8A%E3%83%BC%E3%82%82%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86
+
+
+
+## 参考: Python版SKのプランナー
+
+https://zenn.dev/nomhiro/articles/sk-plan-type
+

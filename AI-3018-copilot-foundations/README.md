@@ -25,7 +25,9 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 
 **「コパイロットの使い方」** について学びたい場合は、コース [MS-4005 (効果的なプロンプト)](https://learn.microsoft.com/ja-jp/training/courses/ms-4005) をご受講ください。
 
+<!--
 **「コパイロット管理者向けの知識」** について学びたい場合は、コース [MS-4006 (管理者)](https://learn.microsoft.com/ja-jp/training/courses/ms-4006) をご受講ください。
+-->
 
 **「組織へのコパイロットの導入」** について学びたい場合は、コース [MS-4007 (導入担当者)](https://learn.microsoft.com/ja-jp/training/courses/ms-4007) をご受講ください。
 
