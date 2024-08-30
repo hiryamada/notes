@@ -86,6 +86,8 @@ https://learn.microsoft.com/ja-jp/azure/ai-services/language-service/entity-link
 
 Entity linkingでは、このような、文章の中の単語の適切な意味を判断して、英語版Wikipediaの適切なリンクを付与する。
 
+言語サポートは現時点では「en（English）」・「es（Spanish）」のみ。https://learn.microsoft.com/ja-jp/azure/ai-services/language-service/entity-linking/language-support
+
 <!--
 たとえば「ヴィーナス」（Venus）という単語は、太陽系の惑星「金星」や、ローマ神話の女神「ヴィーナス（ビーナス）」などに解釈できる。
 
