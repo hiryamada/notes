@@ -77,6 +77,16 @@ https://learn.microsoft.com/ja-jp/azure/ai-services/language-service/entity-link
 
 テキストで見つかったエンティティを識別し、Wikipedia の詳細情報へのリンクを付与する。
 
+たとえば「Apple」という言葉はいろいろな意味を持つが、以下のような文脈では意味が異なる。
+
+- 私はスーパーマーケットで Apple を購入した。
+  - Apple: https://en.wikipedia.org/wiki/Apple
+- 私は Apple の最新のスマートフォンを購入した。
+  - Apple: https://en.wikipedia.org/wiki/Apple_Inc.
+
+Entity linkingでは、このような、文章の中の単語の適切な意味を判断して、英語版Wikipediaの適切なリンクを付与する。
+
+<!--
 たとえば「ヴィーナス」（Venus）という単語は、太陽系の惑星「金星」や、ローマ神話の女神「ヴィーナス（ビーナス）」などに解釈できる。
 
 「空に輝くヴィーナス」という文章の中では、「ヴィーナス」は「女神」ではなく「金星」と解釈するのが適切である。
@@ -88,6 +98,7 @@ Entity linkingでは、このような、文章の中の単語の適切な意味
 ↓
 Venus: https://en.wikipedia.org/wiki/Venus
 ```
+-->
 
 ## 使用するリソース
 
