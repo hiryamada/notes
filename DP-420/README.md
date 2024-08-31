@@ -2,32 +2,20 @@
 
 Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB
 
-試験の情報 日本語
-https://docs.microsoft.com/ja-jp/learn/certifications/exams/dp-420
+https://learn.microsoft.com/ja-jp/training/courses/dp-420t00
 
-試験の情報 英語
-https://docs.microsoft.com/en-us/learn/certifications/exams/dp-420
+## 講義
 
-Microsoft 認定: Azure Cosmos DB Developer Specialty
-https://docs.microsoft.com/ja-jp/learn/certifications/azure-cosmos-db-developer-specialty/
-
-コース DP-420
-https://docs.microsoft.com/ja-jp/learn/certifications/courses/dp-420t00
-
-- 4日間
-- (Skillpipe)全13モジュール
-- GitHubラボ: https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev
-
-ベータ登場時のブログ(2021/11/30)
-https://techcommunity.microsoft.com/t5/microsoft-learn-blog/exam-dp-420-beta-prove-your-skills-as-an-azure-cosmos-db/ba-p/2147112
-
-Study Guide
-https://www.thomasmaurer.ch/2021/10/dp-420-study-guide-microsoft-azure-cosmos-db-developer/
-
-Learn Live: Azure Cosmos DB Certification Study Hall
-https://docs.microsoft.com/ja-jp/events/learntv/learnlive-azure-cosmos-db-certification-study-hall/
-
-焦げlog
-- https://kogelog.com/2021/10/17/20211017-01/
-- https://kogelog.com/2021/12/01/20211201-01/
-- https://github.com/YuKogasaka/Microsoft-Certification/blob/main/Data%20%26%20AI%20%E8%A9%A6%E9%A8%93/DP-420.md
+- Azure Cosmos DB for NoSQL を使ってみる
+- Azure Cosmos DB for NoSQL の計画と実装
+- SDK を使って Azure Cosmos DB for NoSQL に接続する
+- Azure Cosmos DB for NoSQL SDK を使ったデータへのアクセスと管理
+- Azure Cosmos DB for NoSQL でクエリを実行する
+- Azure Cosmos DB for NoSQL のインデックス作成戦略の定義と実装
+- Azure Cosmos DB for NoSQL を Azure サービスと統合する
+- Azure Cosmos DB for NoSQL のデータ モデリングとパーティション分割の方法を実装する
+- Azure Cosmos DB for NoSQL のレプリケーション戦略を設計および実装する
+- Azure Cosmos DB for NoSQL でクエリと操作のパフォーマンスを最適化する
+- Azure Cosmos DB for NoSQL ソリューションの監視とトラブルシューティング
+- DevOps プラクティスを使用して Azure Cosmos DB for NoSQL ソリューションを管理する
+- Azure Cosmos DB for NoSQL でサーバー側のプログラミング コンストラクトを作成する
