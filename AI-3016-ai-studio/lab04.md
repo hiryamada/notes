@@ -1,5 +1,7 @@
 # ラボ04 Evaluations
 
+https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/07-Evaluate-prompt-flow.html
+
 ## プロジェクトを作成
 
 ## gpt-35-turboをデプロイ

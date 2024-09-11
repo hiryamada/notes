@@ -1,5 +1,7 @@
 # ラボ02 RAG
 
+https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/04-Use-own-data.html
+
 ## Azure AI Studio
 
 ハブ・プロジェクト・AI Search等のリソースを作成
