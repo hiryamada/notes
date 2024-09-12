@@ -1,8 +1,8 @@
-ラボ15
+# ラボ9 後半（Microsoft Sentinel）
 
 想定時間: 30min
 
-Azure Sentinel （SIEM/SOARソリューション）について学びます。
+Microsoft Sentinel （SIEM/SOARソリューション）について学びます。
 
 - SIEM (Security Information and Event Management, [シーム](https://searchsecurity.techtarget.com/answer/SOAR-vs-SIEM-Whats-the-difference)):セキュリティ情報・イベントの管理
 - SOAR (Security Orchestration, Automation, and Response, [ソーア](https://www.siemplify.co/resources/what-is-soar-security-orchestration-automation/)):セキュリティ情報の自動収集、自動対応
@@ -21,7 +21,7 @@ Azure Sentinel （SIEM/SOARソリューション）について学びます。
 - タスク4
   - プレイブックを作成します。
 
-
+<!--
 
 ## 補足事項
 
@@ -75,3 +75,4 @@ Azure Sentinel （SIEM/SOARソリューション）について学びます。
 タスク6-7
 「Azure Sentinel | 概要」ページで、「インシデント」が0から1になっていることを確認します。
 表示されない場合は、5分ほど待って「最新の情報に更新」ボタンをクリックすることを繰り返します。
+-->

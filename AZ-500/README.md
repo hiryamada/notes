@@ -79,7 +79,9 @@ https://learn.microsoft.com/ja-jp/training/courses/az-500t00
 -->
 
 - [講義資料](mod04/mod04.md)
-- [ラボ9 Azure Monitor, Microsoft Defender for Cloud, Microsoft Sentinel](lab09.md)
+- ラボ9 Microsoft Defender for Cloud, Microsoft Sentinel
+  - [前半 (Microsoft Defender for Cloud)](lab/lab14.md)
+  - [後半 (Microsoft Sentinel)](lab/lab15.md)
 
 ## ラボの実施方法
 

@@ -1,10 +1,10 @@
-ラボ14
+# ラボ9 前半（Microsoft Defender for Cloud）
+
+想定時間: 30min
 
 想定時間: 30min
 
 Microsoft Defender for Cloud （統合的なセキュリティ監視、セキュリティアラート）について学びます。
-
-
 
 ## ラボの重要ポイント
 
@@ -23,6 +23,7 @@ Microsoft Defender for Cloud （統合的なセキュリティ監視、セキュ
 - タスク3
   - [Just In Time VMアクセス](https://docs.microsoft.com/ja-jp/azure/security-center/security-center-just-in-time?tabs=jit-config-asc%2Cjit-request-asc)の構成にて、Just-In-Time VM アクセスが適用されるポートの一覧から、ポート22（SSH接続）を削除します。
 
+<!--
 ## 
 
 タスク1-2
@@ -65,3 +66,4 @@ Microsoft Defender for Cloud （統合的なセキュリティ監視、セキュ
 
 タスク3-4 「省略記号ボタン」→ 画面右側の「...」です
 
+-->
