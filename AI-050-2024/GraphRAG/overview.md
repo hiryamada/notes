@@ -35,9 +35,13 @@ https://learn.microsoft.com/ja-jp/azure/ai-services/openai/concepts/use-your-dat
 
 https://github.com/microsoft/graphrag/blob/main/RAI_TRANSPARENCY.md#what-is-graphrag
 
-GraphRAGは、AIベースのコンテンツ解釈および検索機能です。LLM を使用して、データを解析して「ナレッジ グラフ」を作成し、ユーザー提供のプライベート データセットに関するユーザーの質問に答えます。
+GraphRAGは、AIベースのコンテンツ解釈および検索機能。LLM を使用して、データを解析して「ナレッジ グラフ」を作成し、ユーザー提供のプライベート データセットに関するユーザーの質問に答える。
 
-GraphRAGは、LLMで生成された「ナレッジグラフ」を使用して、複雑な情報のドキュメント分析を行う際の質疑応答のパフォーマンスを大幅に向上させます。
+GraphRAGは、大規模言語モデル(LLM)を使用して、任意のテキストドキュメントのコレクションからエンティティとその関係を詳述する包括的なナレッジグラフを作成する。
+
+文章の中に出てくる人物や場所などの「エンティティ」と、それらの関連性「リレーションシップ」をあらかじめ分析した「ナレッジグラフ」を作る。
+
+このグラフにより、テキスト全体を広く理解する必要がある複雑なクエリに対する応答を生成できる。
 
 ソーシャルメディア、ニュース記事、職場の生産性、化学など、さまざまなシナリオに適用した場合、従来のRAGアーキテクチャよりも有用な結果が得られることが確認されている。
 
@@ -50,6 +54,8 @@ GraphRAGに対し、従来型のRAGのことを「ナイーブなRAG」や「ベ
 No. GraphRAGの論文によれば、 従来の検索エンジンやベクトル検索を用いたRAGの得意とする分野、キーワード検索やセマンティック検索を用いた直接的な質問（例：「〇〇について教えてください」）の回答に対しては、従来のRAGの方が優れているとされている。
 
 https://arxiv.org/html/2404.16130v1#:~:text=na%C3%AFve%20RAG%20produces%20the%20most%20direct%20responses%20across%20all%20comparisons
+
+GraphRAGは、テキスト全体を広く理解する必要がある複雑なクエリに対する、より正確な応答を生成できる。
 
 ## GraphRAGが出力する回答は正確か？
 
@@ -75,9 +81,13 @@ No. GraphRAGそのものはMicrosoft Researchによって研究されている�
 
 Python。操作のためのJupyter Notebookインターフェースも利用できる。
 
+以下のGitHubリポジトリからコードを入手できる。
+
+https://github.com/microsoft/graphrag
+
 ## GraphRAGのコストは？
 
-GraphRAGそのものはオープンソースであり、無料で利用でき、ライセンスなども特に不要。
+GraphRAGそのものはオープンソースであり、無料で利用できる。Microsoftからライセンスを購入する必要はない。
 
 ただしGraphRAGを実際に動かすためには大規模言語モデルやサーバーといったリソースが必要となり、その部分の料金がかかる。
 
@@ -88,10 +98,6 @@ GraphRAGそのものはオープンソースであり、無料で利用でき、
 
 ## GraphRAGはどうやって利用すればよいのか？
 
-GraphRAG自体はオープンソースで開発されており、以下のGitHubリポジトリからコードを入手できる。
-
-https://github.com/microsoft/graphrag
-
 GraphRAGの実態はPythonのライブラリであり、以下のコマンドでインストールできる。
 
 ```
@@ -100,16 +106,15 @@ pip install graphrag
 
 インストールしたら、ワークスペース（作業場所のディレクトリ）を初期化（作成）し、設定ファイルにLLMの種類・エンドポイントのアドレス・APIキー・モデル名などをセットし、ナレッジベース（インデックス）を作成する。
 
-## GraphRAGを利用するにはAzure/OpenAIが必要か？
+ナレッジベースが作成されたら、質問文をGraphRAGに送信すると、内部でナレッジベースを使用した検索が行われ、取り出した情報を使用して、LLMによる回答が生成される。
 
-GraphRAGを利用するためにはAzureやOpenAIを使うことができるが、必ずしもAzure/OpenAIである必要はない。
+これら一連の操作にはPythonのノートブックが利用できる。
+
+## GraphRAGを利用するにはAzureやOpenAIが必要か？
+
+GraphRAGを利用するためにはAzureやOpenAIを使うことができるが、必ずしもAzureやOpenAIを使う必要はない。
 
 AWSやGoogle Cloud、オンプレミスサーバーなどでも実装できる。
 https://qiita.com/orc_jj/items/5d0858663fb663cd3f7d
 
 https://active.nikkeibp.co.jp/atcl/act/19/00012/080501295/
-
-## 参考: ネットの解説記事など
-
-わかりやすい解説
-https://internet.watch.impress.co.jp/docs/column/shimizu/1608736.html

@@ -1,9 +1,9 @@
 
-## 「GraphRAG Accelerator」とは？
+## 「GraphRAG Accelerator」（GraphRAG solution accelerator）とは？
 
 https://github.com/Azure-Samples/graphrag-accelerator
 
-Azure上でGraphRagを動かすために必要なリソースをデプロイするIaCや、nodebooks形式での実行コードが含まれているレポジトリ。
+Azure上でGraphRagを動かすために必要なリソースをデプロイするIaCや、notebook形式での実行コードが含まれているレポジトリ。
 
 ワンクリックでGraphRAGをAzureにデプロイできる。
 

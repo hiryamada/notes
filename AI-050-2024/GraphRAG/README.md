@@ -6,8 +6,8 @@
 
 - [GraphRAGの概要](overview.md)
 - [GraphRAGの「ナレッジグラフ」](knowledge-graph.md)
-- [GraphRAG accelerator](accelerator.md) (2024/7/2～)
-- [GraphRAG auto-tuning](auto-tuning.md) (2024/9/9～)
+- [GraphRAG Accelerator（GraphRAG solution accelerator）](accelerator.md) (2024/7/2～)
+- [GraphRAG Auto-tuning](auto-tuning.md) (2024/9/9～)
 
 ## 更新情報
 
@@ -25,3 +25,9 @@ https://github.com/microsoft/graphrag/releases/tag/v0.1.1
 
 2024/9/9 GraphRAG auto-tuning provides rapid adaptation to new domains
 https://www.microsoft.com/en-us/research/blog/graphrag-auto-tuning-provides-rapid-adaptation-to-new-domains/
+
+
+## 参考: ネットの解説記事など
+
+わかりやすい解説
+https://internet.watch.impress.co.jp/docs/column/shimizu/1608736.html
