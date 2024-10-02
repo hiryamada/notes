@@ -3,7 +3,7 @@
 
 https://github.com/Azure-Samples/graphrag-accelerator
 
-Azure上でGraphRagを動かすために必要なリソースをデプロイするIaCや、notebook形式での実行コードが含まれているレポジトリ。
+Azure上でGraphRAGを動かすために必要なリソースをデプロイするIaCや、notebook形式での実行コードが含まれているレポジトリ。
 
 ワンクリックでGraphRAGをAzureにデプロイできる。
 
