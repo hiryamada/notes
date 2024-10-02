@@ -7,10 +7,12 @@
 このコースでは「Microsoft Copilot for Microsoft 365」を拡張する方法について解説します。
 
 具体的には、「Microsoft Copilot Studio」を使用して、
-「プロンプト アクション」
-「コネクタ アクション」
-「会話 アクション」
-の3つを使用して、「Microsoft Copilot for Microsoft 365」を拡張する方法を学びます。
+
+- 「プロンプト アクション」
+- 「コネクタ アクション」
+- 「会話 アクション」
+
+の3つを開発し、「Microsoft Copilot for Microsoft 365」を拡張する方法を学びます。
 
 Microsoft Learn ラーニングパス:
 https://learn.microsoft.com/ja-jp/training/paths/extend-microsoft-copilot-microsoft-365-copilot-studio/
@@ -21,7 +23,7 @@ https://learn.microsoft.com/ja-jp/training/paths/extend-microsoft-copilot-micros
 
 - コパイロット（Microsoft Copilot for Microsoft 365）の基礎知識、基本的な使い方については コース「MS-4005」 で学習できます。
 - 組織へのコパイロットの導入方法やライセンスについては、コース「MS-4017」で学習できます。
-- 新しいコパイロットを開発する方法は、コース「AI-3018」で学習できます。
+
 
 ## 講義
 
