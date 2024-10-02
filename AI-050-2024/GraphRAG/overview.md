@@ -3,7 +3,7 @@
 公式サイト
 https://microsoft.github.io/graphrag/
 
-GitHubリポジトリ
+GitHubリポジトリ（GraphRAG core library）
 https://github.com/microsoft/graphrag
 
 FAQ (GraphRAG: Responsible AI FAQ)

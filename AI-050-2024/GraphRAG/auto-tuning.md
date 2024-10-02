@@ -14,3 +14,9 @@ https://www.microsoft.com/en-us/research/blog/graphrag-auto-tuning-provides-rapi
 > ドメイン固有のプロンプトのセットを手動で作成およびチューニングするには、時間がかかります。
 
 >このプロセスを効率化するために、ドメイン固有のプロンプトを生成する自動化ツールを開発しました。
+
+## 使い方
+
+以下ドキュメントを参照
+
+https://github.com/microsoft/graphrag/blob/main/docsite/posts/prompt_tuning/auto_prompt_tuning.md
