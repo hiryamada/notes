@@ -9,10 +9,14 @@ Azure Blob Storage、SQL Database、Azure Cosmos DB、Azure Data Lake Gen2など
 テキスト クエリを自動的にベクトル化する機能が組み込まれているため、クライアント アプリケーションのコーディング ロジックが実質的に不要になった。
 
 2023/11/15 パブリックプレビュー。
+https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/announcing-the-public-preview-of-integrated-vectorization-in/ba-p/3960809
+
+2024/8/22 一般提供開始
+https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/integrated-vectorization-with-azure-openai-for-azure-ai-search/ba-p/4206836
 
 ![Alt text](image.png)
 
-※2023/11/29 現在、日本語版のAzure portalでは「import and vectorize」ボタンが出てこない模様。英語表示に切り替えて対応。
+![alt text](image-1.png)
 
 ブログ(「統合ベクトル化」のパブリックプレビュー。データソースとしてAzure Blob Storageを使用する例)
 https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/announcing-the-public-preview-of-integrated-vectorization-in/ba-p/3960809

@@ -6,7 +6,11 @@ https://qiita.com/nohanaga/items/f710cac82072b63bc73f
 
 https://learn.microsoft.com/ja-jp/azure/search/search-get-started-vector
 
-2023/6 ベクトル検索 パブリックプレビュー。
+2023/7/18 ベクトル検索 パブリックプレビュー。
+https://azure.microsoft.com/ja-jp/updates/public-preview-vector-search-a-feature-of-azure-cognitive-search/
+
+https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/announcing-general-availability-of-vector-search-and-semantic/ba-p/3978525
+2023/11/15 一般提供開始
 
 「HotelName」に対して「HotelNameVector」、「Description」に対して「DescriptionVector」といったように、検索用のベクトル情報を持ったインデックスを作成する。
 

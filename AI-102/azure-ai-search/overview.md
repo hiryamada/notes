@@ -5,27 +5,16 @@
 
 さまざまな種類のデータ ソースに対するリッチな検索機能を組み込むためのインフラストラクチャ、API、およびツールを開発者に提供する、クラウド検索サービス。
 
-ドキュメントにインデックスを付け、高度な検索を実現。
+ドキュメントから「検索インデックス」を作成し、高速な検索を実現。
 
-■価格レベル
+2015/3/5 Azure Searchとして 一般提供開始。
+https://azure.microsoft.com/en-us/updates/general-availability-azure-search/
 
-- F(Free) 50 MB、最大 1 個のレプリカ、最大 1 個のパーティション、最大 1 個の検索ユニット。サブスクリプションで1つだけ利用可
-- B(Basic): 2 GB、最大 3 個のレプリカ、最大 1 個のパーティション、最大 3 個の検索ユニット
-- S(Standard): 25 GB/パーティション*、最大 12 個のレプリカ、最大 12 個のパーティション、最大 36 個の検索ユニット
-- S2(Standard 2): 100 GB/パーティション*、最大 12 個のレプリカ、最大 12 個のパーティション、最大 36 個の検索ユニット
-- S3(Standard 3): 200 GB/パーティション*、最大 12 個のレプリカ、最大 12 個のパーティション、最大 36 個の検索ユニット
-- S3HD(Standard High Density): 200 GB/パーティション*、最大 12 個のレプリカ、最大 3 個のパーティション、最大 36 個の検索ユニット
-- L1(ストレージ最適化): 1 TB/パーティション*、最大 12 個のレプリカ、最大 12 個のパーティション、最大 36 個の検索ユニット
-- L2(ストレージ最適化): 2 TB/パーティション*、最大 12 個のレプリカ、最大 12 個のパーティション、最大 36 個の検索ユニット
+2019/10 Azure Cognitive Searchに名称変更。
+https://learn.microsoft.com/ja-jp/azure/search/search-faq-frequently-asked-questions#-azure-search-----azure-cognitive-search-----azure-ai-search-----------
 
-
-価格レベルにより、使用できる機能が変化する。https://learn.microsoft.com/ja-jp/azure/search/search-sku-tier#feature-availability-by-tier
-
-リソースを作成後に価格レベルを変更することはできない。必要であれば、リソースを作り直す。インデックスはバックアップとリストアによって移行するか、再作成する。以下を参照。
-
-- 価格レベル変更は不可 https://learn.microsoft.com/ja-jp/azure/search/search-sku-tier#tier-upgrade-or-downgrade
-- 移行のチェックリスト https://learn.microsoft.com/ja-jp/azure/search/search-howto-move-across-regions
-- インデックスのバックアップとリストア（等）のツール https://github.com/Azure-Samples/azure-search-dotnet-utilities
+2023/10 Azure AI Searchに名称変更。
+https://qiita.com/nohanaga/items/0637ea6fe8e01a98e4fc
 
 ■検索インデックス search index
 
@@ -88,20 +77,27 @@ https://learn.microsoft.com/ja-jp/azure/search/search-data-sources-gallery#data-
 
 ■フルテキスト検索（全文検索）
 
-https://www.sophia-it.com/content/%E5%85%A8%E6%96%87%E6%A4%9C%E7%B4%A2
-
-＞全文検索は、文書を総なめにして検索語がないかを探し出す。仮に検索語と一致する文字列を含んだ文書が見つかれば、その文字列がいかなる個所に書かれたものであっても検索結果として持ってくる。全文検索は、検索方法としては最も網羅的な手法である。ただし他の方式に較べると検索の時間がかかるという難点がある。
-
-＞GoogleやYST（Yahoo! Search Technology）のような、インターネットで提供されている検索エンジンの多くは、Webページを全文検索するサービスを提供している
-
 https://learn.microsoft.com/ja-jp/azure/search/search-lucene-query-architecture
 
-Azure Cognitive Search では、フルテキスト検索に、オープンソースの検索エンジン「Apache Lucene」（アパッチ ルシーン）の機能の一部を使用している。
+- フルテキスト検索は、検索インデックスに格納されているプレーン テキストと照合する情報取得のアプローチ。
+- 「クエリ文字列」を指定すると、検索エンジンはそれらの用語に基づいて検索を実行する。
+- 「クエリ文字列」とは `windows` のような単語、`windows update` のような複数の単語、`is live events subtitles on by default for teams?` といったような文（質問文）。
+- 検索を効率化するために、「クエリ文字列」の字句解析が行われる
+  - すべての用語の小文字化
+  - "the" などのストップ ワードの削除
+  - プリミティブな原形への用語の単純化
+- 一致する語句が見つかると、検索エンジンにより、ドキュメントが取得され、関連度の順でドキュメントがランク付けされて上位の結果が返される。
+- ランク付けでは「BM25」というアルゴリズムが使用される。
 
+
+
+■Apache Lucene
+
+Azure AI Search は、フルテキスト検索に、オープンソースの検索エンジン「Apache Lucene」（アパッチ ルシーン）の機能の一部を使用している。
 
 https://lucene.apache.org/
 
-Apache Luceneの「Simple Query Parser」による検索と、「Lucene Query Parser」による高度なクエリをサポートしている。
+Azure AI Search は、Apache Luceneの「Simple Query Parser」による検索と、「Lucene Query Parser」による高度なクエリをサポートしている。
 
 https://learn.microsoft.com/ja-jp/azure/search/query-simple-syntax
 
@@ -111,7 +107,7 @@ https://learn.microsoft.com/ja-jp/azure/search/query-lucene-syntax
 
 フィルタリングを使用すると、検索結果から、条件に一致しないものを除外できる。
 
-Azure AI Search では、「OData言語」を使ったフィルタリングをサポートしている。
+Azure AI Search では、「OData (Open Data Protocol)」を使ったフィルタリングもサポートしている。
 
 https://learn.microsoft.com/ja-jp/azure/search/search-query-odata-filter#examples
 
@@ -126,7 +122,7 @@ https://learn.microsoft.com/ja-jp/azure/search/search-query-odata-filter#example
 |ge|以上 greater than or equal|
 |le|以下 less than or equal|
 
-フィルタリングの例
+フィルタリングの例:
 
 基本料金が $200 未満の部屋が少なくとも 1 つある 4 つ星以上のホテルをすべて探す。
 
@@ -136,6 +132,20 @@ $filter=Rooms/any(room: room/BaseRate lt 200.0) and Rating ge 4
 
 その他の例:
 https://learn.microsoft.com/ja-jp/azure/search/search-query-odata-filter#examples
+
+■参考: OData
+
+https://www.odata.org/
+
+> OData (Open Data Protocol) は、ISO/IEC 承認の OASIS 標準であり、RESTful API の構築と使用に関する一連のベスト プラクティスを定義します。OData を使用すると、リクエスト ヘッダーとレスポンス ヘッダー、ステータス コード、HTTP メソッド、URL 規則、メディア タイプ、ペイロード形式、クエリ オプションなどを定義するさまざまなアプローチを気にすることなく、RESTful API を構築しながらビジネス ロジックに集中できます。OData は、変更の追跡、再利用可能なプロシージャの機能/アクションの定義、非同期/バッチ リクエストの送信に関するガイダンスも提供します。
+
+https://erp.dentsusoken.com/blog/sap-odata-vol-88/
+
+> OData（Open Data Protocol）は、Microsoft社が策定したREST APIの標準プロトコルで、HTTPを使用してWEBサーバー等とブラウザ等でデータのやりとりをするための手順などを定めた規格です。
+
+いくつかのソフトウェアではODataがサポートされている。
+- [SAP](https://erp.dentsusoken.com/blog/sap-odata-vol-88/)
+- [Claris FileMaker](https://help.claris.com/ja/odata-guide/content/index.html)
 
 
 ■ファセット ナビゲーション
@@ -192,6 +202,7 @@ https://learn.microsoft.com/ja-jp/azure/search/search-what-is-an-index#field-att
 - 検索結果を、賃料 または 築年数 の昇順・降順でソートできること
 - 設備リストで検索結果の絞り込みを行っていけること。
   - 例: ある条件での検索結果 120件中、WiFiあり物件が100件、宅配ボックスあり物件が50件、などと表示し、クリックするとドリルダウン（絞り込み）されていくこと
+  - ※「設備リスト」列には `wifi,delivery-box` のように、その物件で利用可能な設備のタグが複数含まれているものとする。データ型 `Collection(Edm.String)`
 - 物件名・所在地・設備・賃料・築年数が、検索結果一覧に表示されること
   - 設備と担当者コメントは検索結果一覧には表示されないが、検索結果一覧のある物件をクリックすると、その物件の詳細ページには、設備と担当者コメントが表示されればよい
 
