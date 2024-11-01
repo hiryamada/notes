@@ -52,9 +52,11 @@
 
 [データベース セキュリティ](mod03-04.md)
 
+<!--
 - SQL Database 認証
 - SQL Database ファイアウォール
 - Azure Database Auditing
+-->
 - データ検出と分類
 - 脆弱性評価
 - Microsoft Defender for SQL 
