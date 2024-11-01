@@ -2,18 +2,7 @@
 
 # コンテナー セキュリティ
 
-講義: [コンテナーのサービス（ACIとAKS）](../../AZ-104-2023/pdf/コンテナーのサービス.pdf)
-講義: [コンテナー セキュリティ](mod02-04.md)
-
-- コンテナー型の仮想化
-- Azure Container Instances (ACI)
-- Azure Container Registry (ACR)
-- Azure Kubernetes Service (AKS)
-  - AKS アーキテクチャ
-  - AKS ネットワーク
-  - AKS のストレージ
-  - AKS と Azure Active Directory
-  - AKS と RBAC
+- [PDF資料: コンテナーのサービス（ACIとAKS）](../../AZ-104-2023/pdf/コンテナーのサービス.pdf)
 - 各サービスにおけるセキュリティ対策のまとめ
   - [ACIのセキュリティ対策](../../computing/aci-security.md)
   - [ACRのセキュリティ対策](../../computing/acr-security.md)
