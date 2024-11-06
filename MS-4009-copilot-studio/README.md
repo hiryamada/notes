@@ -35,14 +35,15 @@ https://learn.microsoft.com/ja-jp/training/paths/extend-microsoft-copilot-micros
 
 - 講師自己紹介
 - [開始時のご案内](../opening.md)
-- [モジュール 01 Microsoft Copilot の機能拡張の基礎](m01.md)
-- [モジュール 02 Copilot Studio アクションの概要](m02.md)
-- [モジュール 03 Copilot Studio で 「Microsoft 365 Copilot」 のプロンプト アクションを作成する](m03.md)
-  - 講師デモ 01
-- [モジュール 04 Copilot Studio で 「Microsoft 365 Copilot」 のコネクタ アクションを作成する](m04.md)
-  - 講師デモ 02
-- [モジュール 05 Copilot Studio で 「Microsoft 365 Copilot」 の会話アクションを作成する](m05.md)
-  - 講師デモ 03
+- [講義資料PDF](MS-4009.pdf)
+  - モジュール 01 Microsoft Copilot の機能拡張の基礎
+  - モジュール 02 Copilot Studio アクションの概要
+  - モジュール 03 Copilot Studio で 「Microsoft 365 Copilot」 のプロンプト アクションを作成する
+    - 講師デモ 01（PDFでの画面操作例のご紹介）
+  - モジュール 04 Copilot Studio で 「Microsoft 365 Copilot」 のコネクタ アクションを作成する
+    - 講師デモ 02（PDFでの画面操作例のご紹介）
+  - モジュール 05 Copilot Studio で 「Microsoft 365 Copilot」 の会話アクションを作成する
+    - 講師デモ 03（PDFでの画面操作例のご紹介）
 - [終了時のご案内](../closing-no-lab.md)
 - 受講者満足度アンケート
 
