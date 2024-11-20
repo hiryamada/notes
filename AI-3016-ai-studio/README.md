@@ -2,22 +2,22 @@
 
 1日コース
 
-本コースでは、Azure AI Studioの基本的な機能や使い方についてご説明します。
+本コースでは、Azure AI Foundry（旧名称 Azure AI Studio）の基本的な機能や使い方についてご説明します。
 
 ## 講義
 
 - 講師自己紹介
 - [開始時のご案内](../opening.md)
-- [PDF講義資料](AI-3016.pdf)
-- 1 Azure AI Studio の概要
-- 2 Azure AI Studio でモデル カタログのモデルを調べて展開する
+- [PDF講義資料](AI-3016-ai-foundry.pdf)
+- 1 Azure AI Foundry の概要
+- 2 Azure AI Foundry でモデル カタログのモデルを調べて展開する
   - 講師デモ（PDFでの画面例ご紹介）モデルカタログ
-- 3 Azure AI Studio でのプロンプト フローの概要
-- 4 Azure AI Studio を使用して独自のデータを使用する
+- 3 Azure AI Foundry でのプロンプト フローの概要
+- 4 Azure AI Foundry を使用して独自のデータを使用する
   - 講師デモ（PDFでの画面例ご紹介）RAG
-- 5 Azure AI Studioで言語モデルを微調整する
+- 5 Azure AI Foundryで言語モデルを微調整する
   - 講師デモ（PDFでの画面例ご紹介）微調整
-- 6 Azure AI Studio で言語モデルのパフォーマンスを評価する
+- 6 Azure AI Foundry で言語モデルのパフォーマンスを評価する
   - 講師デモ（PDFでの画面例ご紹介）評価
 - 7 AI Studio での責任ある生成 AI
 - [終了時のご案内](../closing-cloudslice.md)
