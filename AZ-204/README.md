@@ -33,10 +33,11 @@ Azure開発者向けのコースです。
   - メッセージベースソリューション(Queue Storage, Service Bus), [ラボ10(Service Bus)](lab10cs.md)
   - Application Insights, [ラボ11](lab11cs.md)
   - キャッシュ(Azure Cache for Redis, Azure CDN), [ラボ12(CDN)](lab12cs.md)
-- 終了時のご案内
+- クロージング
   - [全体のまとめ](summary.md)
   - [認定試験のご案内](exam.md)
-  - [クロージング](../closing-cloudslice.md)
+  - [終了時のご案内](../closing-cloudslice.md)
+  - 満足度調査アンケート
 
 
 # 教材 (Microsoft Learn)
