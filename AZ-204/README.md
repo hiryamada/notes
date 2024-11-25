@@ -11,12 +11,10 @@ Azure開発者向けのコースです。
 - 上級 ★★★
   - AZ-400: Designing and Implementing Microsoft DevOps Solutions
 
-本コースの上位コースとして[AZ-400 DevOps](https://docs.microsoft.com/ja-jp/learn/certifications/exams/az-400)があります。
-
- [AZ-400認定の前提条件は AZ-104 または AZ-204 となります。](https://docs.microsoft.com/ja-jp/learn/certifications/devops-engineer)
 
 # 日程
 
+- [開始時のご案内](../opening.md)
 - [1日目](day1.md)
   - App Service, [ラボ1](lab01cs.md)
   - Azure Functions, [ラボ2](lab02cs.md)
