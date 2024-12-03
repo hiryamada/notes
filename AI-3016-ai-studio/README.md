@@ -19,7 +19,7 @@
   - 講師デモ（PDFでの画面例ご紹介）微調整
 - 6 Azure AI Foundry で言語モデルのパフォーマンスを評価する
   - 講師デモ（PDFでの画面例ご紹介）評価
-- 7 AI Studio での責任ある生成 AI
+- 7 Azure AI Foundry での責任ある生成 AI
 - [終了時のご案内](../closing-cloudslice.md)
 - 満足度調査アンケート
 - （オプション）ラボ（演習）

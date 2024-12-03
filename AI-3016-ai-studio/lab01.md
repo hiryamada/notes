@@ -4,7 +4,7 @@ https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/02-Explore-mo
 
 ## ハブの作成
 
-- Azure AI Studio ( https://ai.azure.com ) にアクセス
+- Azure AI Foundry ( https://ai.azure.com ) にアクセス
 - サインイン
 - ホーム → Management → All hubs → + New Hub
 - ハブ名、リソースグループ、リージョンを指定
@@ -27,7 +27,7 @@ https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/02-Explore-mo
 ## プロジェクトの作成
 
 
-- Azure AI Studio ( https://ai.azure.com ) にアクセス
+- Azure AI Foundry ( https://ai.azure.com ) にアクセス
 - サインイン
 - ホーム → + New Project (または、ハブを選択した状態で + New Project)
 

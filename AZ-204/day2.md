@@ -8,6 +8,7 @@
   - [ラボ3](lab03cs.md)
 - ラーニングパス4 Cosmos DB
   - [解説](mod04.md)
+  - 補足: [Cosmos DBの自己結合](join.md)
   - [ラボ4](lab04cs.md)
 
 <!--
