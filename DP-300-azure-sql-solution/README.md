@@ -6,47 +6,38 @@ https://learn.microsoft.com/ja-jp/training/courses/dp-300t00
 
 4日間
 
-## ラーニング パス
+## 講義
 
-7 ラーニングパス。
-
-- day 1
-  - 1 Azure データベース管理の概要
-  - 2 データ プラットフォーム リソースの計画と実装
-- day 2
-  - 3 データベース サービスにセキュリティで保護された環境を実装する
-  - 4 Azure SQL で運用リソースを監視および最適化する
-- day 3
-  - 5 Azure SQL でのクエリ パフォーマンスを最適化する
-  - 6 Azure SQL のデータベース タスクを自動化する
-- day 4
-  - 7 高可用性とディザスター リカバリーの環境を計画して実装する
-
-## ラボ
-
-- day 1
-  - リソースの作成
-    - 1 Provision SQL virtual machine (JA) / ラボ 1: Azure 仮想マシンで SQL Server をプロビジョニングする
-      - Windows Server 2022のVMを作成し、SQL Server 2019 Developerをセットアップします。
-    - 2 Provision SQL database (JA) / ラボ 2 -Azure SQL Database をプロビジョニングする
-- day 2
-  - セキュリティ
-    - 3 Authorize access to Azure SQL Database (JA) / ラボ 3: Azure Active Directory を使用して Azure SQL Database へのアクセスを承認する
-    - 4 Configure Azure SQL Database firewall rules (JA) / ラボ 4 – Azure SQL Database ファイアウォール規則を構成する
-    - 5 Enable Microsoft Defender for SQL and Data classification (JA) / ラボ 5 – Microsoft Defender for SQL とデータ分類を有効にする
-  - 監視
-    - 6 Isolate performance problems through monitoring (JA)/ ラボ 6: 監視を通じてパフォーマンスの問題を特定する
-- day 3
-  - クエリパフォーマンス最適化
-    - 7 Detect and correct fragmentation issues (JA) / ラボ 7 – 断片化の問題を検出して修正する
-    - 8 Identify and resolve blocking issues (JA) / ラボ 8: 障害となっている問題を特定して解決する
-    - 9 Identify database design issues (JA) / ラボ 9: データベース設計の問題を特定する
-    - 10 Isolate problem areas in poorly performing queries (JA)/ ラボ 10: SQL Database で低パフォーマンス クエリの問題領域を分離する
-  - タスク自動化
-    - 11 Deploy Azure SQL Database using Azure Resource Manager template (JA) / ラボ 11: Azure Resource Manager テンプレートを使用して Azure SQL Database をデプロイする
-    - 12 Create a CPU status alert for a SQL Server (JA) / ラボ 12 – SQL Server の CPU 状態アラートを作成する
-    - 13 Deploy an automation runbook to automatically rebuild indexes (JA) / ラボ 13 – Automation Runbook をデプロイして、インデックスを自動的に再構築する
-- day 4
-  - 高可用性/災害対策
-    - 14 Configure geo-replication for Azure SQL Database (JA)/ ラボ 14 – Azure SQL Database 用に geo レプリケーションを構成する
-    - 15 Backup to URL (JA) / ラボ 15 – URL へのバックアップと URL からの復元
+- 1日目
+  - 講師自己紹介
+  - 開始時のご案内
+  - [講義(1日目)](day1.pdf)
+  - [ラボ 1 講師デモ: Azure 仮想マシンで SQL Server をプロビジョニングする](lab01.pdf)
+  - [ラボ 2 講師デモ: Azure SQL Database をプロビジョニングする](lab02.pdf)
+  - [ラボの利用方法の説明](../ラボ環境の利用方法.pdf)
+  - [ラボ実施（オプション）](https://esi.learnondemand.net/)
+- 2日目
+  - 講義(2日目)
+  - ラボ 3 講師デモ: Entra IDを使用して Azure SQL Database へのアクセスを承認する
+  - ラボ 4 講師デモ: Azure SQL Database ファイアウォール規則を構成する
+  - ラボ 5 講師デモ: Microsoft Defender for SQL とデータ分類を有効にする
+  - [ラボ実施（オプション）](https://esi.learnondemand.net/)
+- 3日目
+  - 講義(3日目)
+  - ラボ 6 講師デモ: 監視を通じてパフォーマンスの問題を特定する
+  - ラボ 7 講師デモ: 断片化の問題を検出して修正する
+  - ラボ 8 講師デモ: 障害となっている問題を特定して解決する
+  - ラボ 9 講師デモ: データベース設計の問題を特定する
+  - ラボ 10 講師デモ: SQL Database で低パフォーマンス クエリの問題領域を分離する
+  - [ラボ実施（オプション）](https://esi.learnondemand.net/)
+- 4日目
+  - 講義(4日目)
+  - ラボ 11: Azure Resource Manager テンプレートを使用して Azure SQL Database をデプロイする
+  - ラボ 12 – SQL Server の CPU 状態アラートを作成する
+  - ラボ 13 – Automation Runbook をデプロイして、インデックスを自動的に再構築する
+  - ラボ 14 – Azure SQL Database 用に geo レプリケーションを構成する
+  - ラボ 15 – URL へのバックアップと URL からの復元
+  - 終了時のご案内
+  - 試験対策
+  - 満足度アンケート
+  - 講義終了 / [ラボ実施（オプション）](https://esi.learnondemand.net/)
