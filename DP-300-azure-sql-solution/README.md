@@ -32,11 +32,11 @@ https://learn.microsoft.com/ja-jp/training/courses/dp-300t00
   - 講義終了 / [ラボ実施（オプション）](https://esi.learnondemand.net/)
 - 4日目
   - 講義(4日目)
-  - ラボ 11: Azure Resource Manager テンプレートを使用して Azure SQL Database をデプロイする
-  - ラボ 12 – SQL Server の CPU 状態アラートを作成する
-  - ラボ 13 – Automation Runbook をデプロイして、インデックスを自動的に再構築する
-  - ラボ 14 – Azure SQL Database 用に geo レプリケーションを構成する
-  - ラボ 15 – URL へのバックアップと URL からの復元
+  - ラボ 11 講師デモ: Azure Resource Manager テンプレートを使用して Azure SQL Database をデプロイする
+  - ラボ 12 講師デモ: SQL Server の CPU 状態アラートを作成する
+  - ラボ 13 講師デモ: Automation Runbook をデプロイして、インデックスを自動的に再構築する
+  - ラボ 14 講師デモ: Azure SQL Database 用に geo レプリケーションを構成する
+  - ラボ 15 講師デモ: URL へのバックアップと URL からの復元
   - 認定試験対策
   - 終了時のご案内
   - 満足度アンケート
