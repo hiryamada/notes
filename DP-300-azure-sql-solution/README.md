@@ -10,7 +10,7 @@ https://learn.microsoft.com/ja-jp/training/courses/dp-300t00
 
 - 1日目
   - 講師自己紹介
-  - 開始時のご案内
+  - [開始時のご案内](../opening.md)
   - [講義(1日目)](day1.pdf)
   - [ラボ 1 講師デモ: Azure 仮想マシンで SQL Server をプロビジョニングする](lab01.pdf)
   - [ラボ 2 講師デモ: Azure SQL Database をプロビジョニングする](lab02.pdf)
