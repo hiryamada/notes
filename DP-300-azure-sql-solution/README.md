@@ -21,6 +21,7 @@ https://learn.microsoft.com/ja-jp/training/courses/dp-300t00
   - [ラボ 3 講師デモ: Entra IDを使用して Azure SQL Database へのアクセスを承認する](lab03.pdf)
   - [ラボ 4 講師デモ: Azure SQL Database ファイアウォール規則を構成する](lab04.pdf)
   - [ラボ 5 講師デモ: Microsoft Defender for SQL とデータ分類を有効にする](lab05.pdf)
+  - [講義(2日目, 追加説明, 対応ラボなし)](day2option.pdf)
   - 講義終了 / [ラボ実施（オプション）](https://esi.learnondemand.net/)
 - 3日目
   - 講義(3日目)
