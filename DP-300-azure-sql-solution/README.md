@@ -42,3 +42,9 @@ https://learn.microsoft.com/ja-jp/training/courses/dp-300t00
   - 終了時のご案内
   - 満足度アンケート
   - 講義終了 / [ラボ実施（オプション）](https://esi.learnondemand.net/)
+
+
+## ラボの手順書
+
+以下のページですべてのラボの手順書を（ラボ環境を利用することなく）参照できます。
+https://microsoftlearning.github.io/dp-300-database-administrator.ja-jp/
