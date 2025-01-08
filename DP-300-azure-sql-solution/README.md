@@ -24,6 +24,7 @@ https://learn.microsoft.com/ja-jp/training/courses/dp-300t00
   - [講義(2日目, 追加説明, 対応ラボなし)](day2option.pdf)
   - 講義終了 / [ラボ実施（オプション）](https://esi.learnondemand.net/)
 - 3日目
+  - [ご質問の回答（解説）](masterdb.pdf)
   - [講義(3日目)](day3.pdf)
   - [ラボ 6 講師デモ: 監視を通じてパフォーマンスの問題を特定する](lab06.pdf)
   - [ラボ 7 講師デモ: 断片化の問題を検出して修正する](lab07.pdf)
