@@ -33,14 +33,15 @@ https://learn.microsoft.com/ja-jp/training/courses/dp-300t00
   - [ラボ 10 講師デモ: SQL Database で低パフォーマンス クエリの問題領域を分離する](lab10.pdf)
   - 講義終了 / [ラボ実施（オプション）](https://esi.learnondemand.net/)
 - 4日目
-  - 講義(4日目)
-  - ラボ 11 講師デモ: Azure Resource Manager テンプレートを使用して Azure SQL Database をデプロイする
-  - ラボ 12 講師デモ: SQL Server の CPU 状態アラートを作成する
-  - ラボ 13 講師デモ: Automation Runbook をデプロイして、インデックスを自動的に再構築する
-  - ラボ 14 講師デモ: Azure SQL Database 用に geo レプリケーションを構成する
-  - ラボ 15 講師デモ: URL へのバックアップと URL からの復元
+  - [ご質問の回答（解説）](dbwatcher.pdf)
+  - [講義(4日目)](day4.pdf)
+  - [ラボ 11 講師デモ: Azure Resource Manager テンプレートを使用して Azure SQL Database をデプロイする](lab11.pdf)
+  - [ラボ 12 講師デモ: SQL Server の CPU 状態アラートを作成する](lab12.pdf)
+  - [ラボ 13 講師デモ: Automation Runbook をデプロイして、インデックスを自動的に再構築する](lab13.pdf)
+  - [ラボ 14 講師デモ: Azure SQL Database 用に geo レプリケーションを構成する](lab14.pdf)
+  - [ラボ 15 講師デモ: URL へのバックアップと URL からの復元](lab15.pdf)
   - 認定試験対策
-  - 終了時のご案内
+  - [終了時のご案内](../closing-cloudslice.md)
   - 満足度アンケート
   - 講義終了 / [ラボ実施（オプション）](https://esi.learnondemand.net/)
 
