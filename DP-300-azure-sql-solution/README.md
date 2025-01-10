@@ -40,7 +40,7 @@ https://learn.microsoft.com/ja-jp/training/courses/dp-300t00
   - [ラボ 13 講師デモ: Automation Runbook をデプロイして、インデックスを自動的に再構築する](lab13.pdf)
   - [ラボ 14 講師デモ: Azure SQL Database 用に geo レプリケーションを構成する](lab14.pdf)
   - [ラボ 15 講師デモ: URL へのバックアップと URL からの復元](lab15.pdf)
-  - 認定試験対策
+  - [認定試験対策](exam.md)
   - [終了時のご案内](../closing-cloudslice.md)
   - 満足度アンケート
   - 講義終了 / [ラボ実施（オプション）](https://esi.learnondemand.net/)
