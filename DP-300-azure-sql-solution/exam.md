@@ -4,7 +4,7 @@ DP-300の試験・資格と学習方法をご紹介。
 
 ■認定試験のメリットは？ 合格すると何が嬉しいの？
 
-参考: [Microsoft認定試験のメリット](https://www.trainocate.co.jp/upload/flyer/flyer_108.pdf)) / [認定プロセスの概要](https://learn.microsoft.com/ja-jp/certifications/certification-process-overview)
+参考: [Microsoft認定試験のメリット](https://www.trainocate.co.jp/upload/flyer/flyer_108.pdf) / [認定プロセスの概要](https://learn.microsoft.com/ja-jp/certifications/certification-process-overview)
 
 - エンジニアとしての信頼感が向上
 - 査定・評価が向上
@@ -128,7 +128,7 @@ https://learn.microsoft.com/ja-jp/credentials/certifications/renew-your-microsof
 
 取得した「認定資格」には有効期限が設定されている。
 
-有効期限が切れる6ヶ月前に、期限を「更新」を行うためのリンクがメールで送られてくるので、忘れずに更新しよう。
+有効期限が切れる6ヶ月前に、期限を「更新」を行うためのリンクがメールで送られてくるので、忘れずに更新しましょう。
 
 更新の際、簡単なWeb試験（無料）に合格する必要がある。もし不合格でも何度もチャレンジできる。
 
