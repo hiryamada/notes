@@ -22,7 +22,3 @@ https://aka.ms/lxp-userguide
 
 - Teams会議チャットは本日17:30で使えなくなります。
 - その他（「講義資料」、Microsoft Learn）は無期限にご利用いただけます。
-
-■講師連絡先 / アンケートURL
-
-- 別途ご案内いたします

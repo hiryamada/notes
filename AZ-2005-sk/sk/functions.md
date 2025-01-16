@@ -2,7 +2,9 @@
 
 ~~「ネイティブ関数」~~ → メソッド関数と~~「セマンティック関数」~~ → プロンプト関数がある。
 
-https://learn.microsoft.com/en-US/semantic-kernel/support/v1-migration-guide#convention-name-changes
+~~https://learn.microsoft.com/en-US/semantic-kernel/support/v1-migration-guide#convention-name-changes~~
+
+https://learn.microsoft.com/en-us/semantic-kernel/support/migration/v1-migration-guide
 
 ## ~~「ネイティブ関数」~~ → メソッド関数
 

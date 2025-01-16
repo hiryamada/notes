@@ -1,5 +1,7 @@
 # Semantic Kernel
 
+blog
+https://devblogs.microsoft.com/semantic-kernel/category/semantic-kernel/
 
 ## Semantic Kernel の綴り
 
@@ -27,8 +29,11 @@ https://learn.microsoft.com/ja-jp/semantic-kernel/overview/
 概要（.NET）
 https://learn.microsoft.com/ja-jp/dotnet/ai/semantic-kernel-dotnet-overview
 
-GitHubリポジトリ
+GitHubリポジトリ (C#, Python)
 https://github.com/microsoft/semantic-kernel
+
+GitHubリポジトリ (Java)
+https://github.com/microsoft/semantic-kernel-java/
 
 ドキュメント
 https://learn.microsoft.com/en-us/semantic-kernel/

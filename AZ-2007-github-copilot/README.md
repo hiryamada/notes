@@ -2,9 +2,8 @@
 
 Accelerate app development by using GitHub Copilot
 
-https://learn.microsoft.com/training/paths/accelerate-app-development-using-github-copilot/
+https://learn.microsoft.com/ja-jp/training/paths/accelerate-app-development-using-github-copilot/
 
 <!--
-
 2024/10/7 ラボなし Applied Skillsなし qualified済
 -->

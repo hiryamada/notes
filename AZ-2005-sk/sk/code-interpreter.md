@@ -9,5 +9,3 @@ https://learn.microsoft.com/ja-jp/azure/container-apps/sessions-tutorial-semanti
 
 
 
-※あとで調べる
-
