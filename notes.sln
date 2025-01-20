@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AZ-204", "AZ-204", "{594F6F2A-19E7-0091-DE70-8B627599D487}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{66FA31D7-17F1-270C-58A9-D51DE4BC3DDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blob2", "AZ-204\sample\blob2\blob2.csproj", "{8F7A792F-A544-B4C2-4DAD-F0583FD94FE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F7A792F-A544-B4C2-4DAD-F0583FD94FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F7A792F-A544-B4C2-4DAD-F0583FD94FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F7A792F-A544-B4C2-4DAD-F0583FD94FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F7A792F-A544-B4C2-4DAD-F0583FD94FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66FA31D7-17F1-270C-58A9-D51DE4BC3DDB} = {594F6F2A-19E7-0091-DE70-8B627599D487}
+		{8F7A792F-A544-B4C2-4DAD-F0583FD94FE2} = {66FA31D7-17F1-270C-58A9-D51DE4BC3DDB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76E5D574-06DB-4F63-BACE-0E4C8ED71A3F}
+	EndGlobalSection
+EndGlobal
