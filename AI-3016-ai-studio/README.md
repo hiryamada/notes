@@ -1,5 +1,8 @@
 # AI-3016
 
+Azure AI Foundry ポータルで生成 AI アプリを開発する
+
+
 1日コース
 
 本コースでは、Azure AI Foundry（旧名称 Azure AI Studio）の基本的な機能や使い方についてご説明します。
