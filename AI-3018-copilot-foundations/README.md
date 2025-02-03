@@ -33,7 +33,9 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 
 **「プラグインやコネクターによるコパイロットの拡張」** について学びたい場合は、コース [MS-4010 (Copilot for Microsoft 365の拡張)](https://learn.microsoft.com/ja-jp/training/paths/build-plugins-connectors-microsoft-copilot-microsoft-365/) をご受講ください。
 
+<!--
 **「Azure OpenAI Service」** について学びたい場合は、コース [AI-050 (Azure OpenAI Service)](https://learn.microsoft.com/ja-jp/training/paths/develop-ai-solutions-azure-openai/) をご受講ください。
+-->
 
 
 ## 講義
