@@ -22,14 +22,11 @@ Microsoft Certified: Azure Network Engineer Associate
 
 https://docs.microsoft.com/ja-jp/learn/paths/design-implement-microsoft-azure-networking-solutions-az-700/
 
-- ラーニング パス (1個)
-  - モジュール (8個)
-    - ユニット
 
-■コース構成
+## 講義
 
-全8モジュール
-
+- [開始時のご案内](../opening.md)
+- [ラボ環境の利用方法](../ラボ環境の利用方法.pdf)
 - [モジュール1: Azure 仮想ネットワークの概要](m01.md)
   - VNet
   - パブリックIPアドレス
@@ -64,3 +61,6 @@ https://docs.microsoft.com/ja-jp/learn/paths/design-implement-microsoft-azure-ne
   - Azure Monitor
   - Log Analytics
   - Azure Network Watcher
+- [認定試験対策](exam.md)
+- [終了時のご案内](../closing-cloudslice.md)
+- 受講者アンケート（講師よりご案内いたします）
