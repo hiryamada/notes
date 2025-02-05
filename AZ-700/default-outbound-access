@@ -1,0 +1,15 @@
+# プライベートサブネット
+
+- 2023 年 9 月末、Azure が既定で提供しているインターネット向けへの外部接続用の送信アクセスのサービス提供を、2025 年 9 月 30 日の翌日から限定的に終了することがアナウンスされた
+- 2025 年 10 月 1 日以降に作成された新しい Azure VM は、Azure 既定の送信アクセス (既定の SNAT) を利用してインターネット宛へのアウトバウンド通信ができなくなる
+- 2025 年 10 月 1 日よりも前に作成している既存の Azure VM はこの対象外だが、明示的に送信接続の設定を加えることが推奨されている
+
+■参考リンク
+
+https://learn.microsoft.com/ja-jp/azure/virtual-network/ip-services/default-outbound-access
+
+https://jpaztech.github.io/blog/network/default-outbound-access-for-vms-will-be-retired/
+
+https://azure.microsoft.com/en-us/updates?id=default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access
+
+https://cloud.sojitz-ti.com/blog/default-outbound-access-connectivity/
