@@ -20,5 +20,5 @@ https://aka.ms/lxp-userguide
 
 ■各種有効期限
 
-- Teams会議チャットは本日17:30で使えなくなります。
-- その他（「講義資料」、Microsoft Learn）は無期限にご利用いただけます。
+- Microsoft Learnは、いつでも無料でご利用いただけます。
+
