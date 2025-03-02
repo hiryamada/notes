@@ -24,12 +24,14 @@ https://aka.ms/lxp-userguide
 - サポートの使い方は以下に掲載しております。
 - https://github.com/hiryamada/notes/blob/main/AZ-104/pdf/mod99-closing/support.pdf
 
+<!--
 ■クラウド＆AI人材育成プログラム(ESI)コミュニティ
 
 - ご受講者様向けLinkedInコミュニティです。
 - 学習に役立つ情報、コース開催情報などをこちらで共有しております。
 - ぜひご参加ください。
 - http://aka.ms/esicommj
+-->
 
 ■講義ノート
 
