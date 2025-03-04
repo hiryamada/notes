@@ -11,6 +11,8 @@ https://learn.microsoft.com/ja-jp/training/paths/accelerate-app-development-usin
     - GitHub Copilot ツールを使用してコード機能を開発する
     - GitHub Copilot ツールを使用して単体テストを開発する
     - GitHub Copilot ツールを使用してコードの改善を実装する
+    - 補足: 最新機能のご紹介
+    - [リンク集](links.md)
 - [認定試験のご案内](exam.md)
 - [終了時のご案内](../closing-no-lab.md)
 - 満足度アンケート
