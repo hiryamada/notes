@@ -18,6 +18,10 @@
 - [Azure Front Door](https://docs.microsoft.com/ja-jp/azure/web-application-firewall/afds/afds-overview)
 - [Azure Content Delivery Network (CDN)](https://docs.microsoft.com/ja-jp/azure/web-application-firewall/cdn/cdn-overview)
 
+※[Azure の負荷分散サービスの解説PDF](../AZ-104-2023/pdf/Azureの負荷分散サービスまとめ.pdf)
+
+※[Azure CDNの解説PDF](../AZ-204/pdf/mod13/Azure%20CDNまとめ.pdf)
+
 ■WAFによる保護(Application Gateway)
 
 https://docs.microsoft.com/ja-jp/azure/web-application-firewall/ag/ag-overview
