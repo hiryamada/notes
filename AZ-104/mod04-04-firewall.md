@@ -1,6 +1,8 @@
 # [Azure Firewall](https://docs.microsoft.com/ja-jp/azure/firewall/overview)
 
-[解説PDF](pdf/mod04/Azure%20Firewall.pdf)
+- [解説PDF(1)脅威インテリジェンス](pdf/mod04/Azure%20Firewall.pdf)
+- [解説PDF(2)無制限のスケーリング、Premiumの機能(スライド後半)](../AZ-104-2023/pdf/仮想ネットワークの概要.pdf)
+- [Azureサポートチームによる解説(NSGとAzure Firewallの違い)](https://jpaztech.github.io/blog/network/difference-nsg-fw/)
 
 Azure Firewall は、クラウドネイティブのサービスとしてのファイアウォール (FWaaS) オファリングです。
 
