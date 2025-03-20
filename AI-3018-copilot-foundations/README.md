@@ -4,13 +4,13 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 
 1日コース
 
-コパイロットの開発ツールである「Microsoft Copilot Studio」と「Azure AI Studio」の基礎について学習します。
+コパイロットの開発ツールである「Microsoft Copilot Studio」と「Azure AI Foundry」の基礎について学習します。
 
 - 「Microsoft Copilot Studio」
   - 独自のコパイロットをすばやく作成できます。
   - たとえば、ある企業の経費精算に関する質問に適切に回答できるコパイロットを作成できます。
   - 作成したコパイロットは、Teams、Webサイト、LINE、Slackなどから利用できます。
-- 「Azure AI Studio」
+- 「Azure AI Foundry」
   - 開発者が独自の生成AIソリューションを開発する際に使用できます。
   - さまざまな生成AIモデルの探索、デプロイ、評価をすばやく実行できます。
   - Prompt flow, 独自のデータの利用(Azure OpenAI on your data)も利用できます。
@@ -55,8 +55,8 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 
 ## ラボ
 
-※現在英語版のみ
+※日本語版あり
 
-- [ラボ1 Explore Microsoft Copilot (M365 version)](lab01.md)
+- [ラボ1 Explore Microsoft Copilot](lab01.md)
 - [ラボ2 Create a copilot with Copilot Studio](lab02.md)
 - [ラボ3 AI Studio](lab03.md)
