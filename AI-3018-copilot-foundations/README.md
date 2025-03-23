@@ -4,59 +4,36 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 
 1日コース
 
-コパイロットの開発ツールである「Microsoft Copilot Studio」と「Azure AI Foundry」の基礎について学習します。
-
-- 「Microsoft Copilot Studio」
-  - 独自のコパイロットをすばやく作成できます。
-  - たとえば、ある企業の経費精算に関する質問に適切に回答できるコパイロットを作成できます。
-  - 作成したコパイロットは、Teams、Webサイト、LINE、Slackなどから利用できます。
-- 「Azure AI Foundry」
-  - 開発者が独自の生成AIソリューションを開発する際に使用できます。
-  - さまざまな生成AIモデルの探索、デプロイ、評価をすばやく実行できます。
-  - Prompt flow, 独自のデータの利用(Azure OpenAI on your data)も利用できます。
-
-## 注意
-
-本コースに対応する「マイクロソフト認定試験」や「Applied Skills アセスメント」はありません。
-
-コース名は「コパイロットの基礎」ですが、コースの内容は「コパイロットの開発ツールの基礎」を学ぶものとなります。
-
-## 関連コース
-
-**「コパイロットの使い方」** について学びたい場合は、コース [MS-4005 (効果的なプロンプト)](https://learn.microsoft.com/ja-jp/training/courses/ms-4005) をご受講ください。
-
-<!--
-**「コパイロット管理者向けの知識」** について学びたい場合は、コース [MS-4006 (管理者)](https://learn.microsoft.com/ja-jp/training/courses/ms-4006) をご受講ください。
--->
-
-**「組織へのコパイロットの導入」** について学びたい場合は、コース [MS-4007 (導入担当者)](https://learn.microsoft.com/ja-jp/training/courses/ms-4007) をご受講ください。
-
-**「プラグインやコネクターによるコパイロットの拡張」** について学びたい場合は、コース [MS-4010 (Copilot for Microsoft 365の拡張)](https://learn.microsoft.com/ja-jp/training/paths/build-plugins-connectors-microsoft-copilot-microsoft-365/) をご受講ください。
-
-<!--
-**「Azure OpenAI Service」** について学びたい場合は、コース [AI-050 (Azure OpenAI Service)](https://learn.microsoft.com/ja-jp/training/paths/develop-ai-solutions-azure-openai/) をご受講ください。
--->
+生成 AI の基礎、Microsoft Copilot、Microsoft Copilot Studio、Azure AI Foundryについて学習します。
 
 
 ## 講義
 
 - 講師自己紹介
 - [開始時のご案内](../opening.md)
-- [オープニング（開始時のご案内）](../opening.md)
-- [モジュール1 生成 AI の基礎](m01.md)
-- ラボ1 講師デモ
-- [モジュール2 Microsoft Copilot Studio の概要](m02.md)
-- ラボ2 講師デモ
-- [モジュール3 Azure AI Studio の概要](m03.md)
-- [モジュール4 Azure AI Studio を使用して独自のデータで RAG ベースのコパイロット ソリューションを構築する](m04.md)
-- ラボ3 講師デモ
+- モジュール1 生成 AI の基礎
+- モジュール2 Microsoft Copilot Foundry の概要
+- モジュール3 Azure AI Foundry の概要
+- モジュール4 Azure AI Foundry で独自のデータを使用して RAG ベースのエージェントを構築する
+- [認定試験について](exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
-- （オプション）ハンズオンラボ
+- （オプション）ラボ
 
 ## ラボ
 
-※日本語版あり
-
-- [ラボ1 Explore Microsoft Copilot](lab01.md)
-- [ラボ2 Create a copilot with Copilot Studio](lab02.md)
-- [ラボ3 AI Studio](lab03.md)
+- ラボはご受講後半年後まで利用できます。
+- 「トレーニングキー」は講師よりチャットでご案内いたします。期限期限が本日中（講義の日）となっているため、お早めにご入力ください。
+- [ラボの利用方法のご案内](../ラボ環境の利用方法.pdf)
+- ラボ1 Microsoft Copilot を使ってみる
+  - Web版の無料のMicrosoft Copilot （https://copilot.microsoft.com/）を使用します
+  - 文章の要約や生成などを試します
+  - 生成したテキストをWord、Outlookなどに貼り付けて利用できます
+- ラボ2 Microsoft Copilot Studio でエージェントを作成
+  - Microsoft Copilot Studioでエージェントを作成します
+  - 経費精算に関する質問に回答できるようにトピックを作成します
+  - 宿泊に関する社内規定に回答できるようにファイルを追加します
+  - 2025/3/23 現在、トピックの追加画面が表示されない現象が確認されています。
+- ラボ3 Azure AI FoundryでRAGを実装する
+  - Azure AI Foundryで「Azure OpenAI on your data」を設定します
+  - 複数のPDFファイルをアップロードし、ベクトルインデックスを作成します
+  - チャットプレイグラウンドで「Azure OpenAI on your data」の動作を確認します
