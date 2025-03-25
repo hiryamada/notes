@@ -143,22 +143,3 @@
 ※トレーニング受講中に、メールでも、アンケートのご案内（URL）が皆様に送信されますが、同じ内容を講師よりご案内いたしますので、メールのご案内のほうは無視していただいて大丈夫です。
 
 # それでは、どうぞよろしくお願いいたします！
-
-講義資料:
-
-- [AZ-104](AZ-104-2023/README.md)
-- [AZ-204](AZ-204/README.md)
-- [AZ-305](AZ-305/README.md)
-- [AZ-400](AZ-400/README.md)
-- [AZ-500](AZ-500/README.md)
-- [AZ-700](AZ-700/README.md)
-- [SC-300](SC-300/README.md)
-- [AI-102](AI-102/README.md)
-- [AI-050](AI-050-2024/README.md)
-- [AI-3003(nlp)](AI-3003-nlp/README.md)
-- [AI-3004(visioon)](AI-3004-vision/README.md)
-- [MS-4005(copilot)](MS-4005-copilot-prompt/README.md)
-
-よろしければ、今回ご受講のコース以外の講義資料も、ご利用ください。
-
-これらは公開している資料ですので受講者以外の方もご利用いただけます。

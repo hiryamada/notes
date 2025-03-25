@@ -25,9 +25,10 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 - 「トレーニングキー」は講師よりチャットでご案内いたします。期限期限が本日中（講義の日）となっているため、お早めにご入力ください。
 - [ラボの利用方法のご案内](../ラボ環境の利用方法.pdf)
 - ラボ1 Microsoft Copilot を使ってみる
-  - Web版の無料のMicrosoft Copilot （https://copilot.microsoft.com/）を使用します
   - 文章の要約や生成などを試します
   - 生成したテキストをWord、Outlookなどに貼り付けて利用できます
+  - Web版の無料のMicrosoft Copilot （https://copilot.microsoft.com/ ）を使用します
+  - Microsoftアカウントが必要です
 - ラボ2 Microsoft Copilot Studio でエージェントを作成
   - Microsoft Copilot Studioでエージェントを作成します
   - 経費精算に関する質問に回答できるようにトピックを作成します
