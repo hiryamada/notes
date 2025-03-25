@@ -11,10 +11,11 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 
 - 講師自己紹介
 - [開始時のご案内](../opening.md)
-- モジュール1 生成 AI の基礎
-- モジュール2 Microsoft Copilot Foundry の概要
-- モジュール3 Azure AI Foundry の概要
-- モジュール4 Azure AI Foundry で独自のデータを使用して RAG ベースのエージェントを構築する
+- [講義資料](AI-3018.pdf)
+  - モジュール1 生成 AI の基礎
+  - モジュール2 Microsoft Copilot Foundry の概要
+  - モジュール3 Azure AI Foundry の概要
+  - モジュール4 Azure AI Foundry で独自のデータを使用して RAG ベースのエージェントを構築する
 - [認定試験について](exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
 - （オプション）ラボ
