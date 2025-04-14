@@ -4,7 +4,7 @@ https://learn.microsoft.com/ja-jp/training/paths/build-ai-apps-azure-database-po
 
 ## 講義
 
-- 開始時のご案内
+- [開始時のご案内](../opening.md)
 - [講義資料PDF](AI-3019-pg.pdf)
   - モジュール1 Azure Database for PostgreSQL で生成 AI の使用を開始する
   - モジュール2 Azure Database for PostgreSQL でセマンティック検索を有効にする
@@ -15,7 +15,7 @@ https://learn.microsoft.com/ja-jp/training/paths/build-ai-apps-azure-database-po
   - モジュール7 Azure Database for PostgreSQL からの推論に Azure Machine Learning を使用する
 - 認定試験のご案内
 - ラボのご案内
-- 終了時のご案内
+- [終了時のご案内](../closing-cloudslice.md)
 - アンケート
 
 ## 認定試験
