@@ -18,3 +18,20 @@ https://learn.microsoft.com/en-us/training/paths/build-foundation-extend-microso
 https://github.com/MicrosoftLearning/MS-4014-Build-a-foundation-to-extend-Microsoft-Copilot-365
 
 https://github.com/MicrosoftLearning/MS-4014-Build-a-foundation-to-extend-Microsoft-365-Copilot.ja-jp
+
+Due to new Microsoft 365 tenant restrictions, tenants will now be available for seven (7) days after a learner first launches their lab. This means that classes that use tenants should not be scheduled beyond this 7-day period.
+
+- Azure portal > Entra ID > アプリの登録
+- Microsoft Graph Connector Agent をインストール http://www.microsoft.com/en-us/download/details.aspx?id=104045
+    - used to index on-premises data sources using Microsoft Graph connectors
+    - Microsoft Graph connectors provide a platform for you to ingest your unstructured, line-of-business data into Microsoft Graph
+    - Prebuilt Microsoft Graph connectors https://learn.microsoft.com/en-us/microsoftsearch/pre-built-connectors-overview
+    - Graph connector agent: acts as a bridge to provide quick and secure data transfer between on-premises data and cloud services
+- Microsoft Graph Connector Agent をセットアップ
+- Download Sample Excel/Word file
+- 
+
+
+ExternalConnecton.ReadWrite.OwnedBy
+![alt text](image.png)
+https://learn.microsoft.com/en-us/microsoftsearch/graph-connector-agent#create-an-app

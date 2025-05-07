@@ -1,0 +1,90 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"name":"csharp","languageName":"csharp"},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"html","languageName":"HTML"},{"name":"http","languageName":"HTTP"},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"mermaid","languageName":"Mermaid"},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"value"}]}}
+
+#!pwsh
+
+psql -c "DROP TABLE IF EXISTS reviews"
+
+#!pwsh
+
+psql -c @"
+CREATE TABLE reviews (
+    id INT, 
+    listing_id INT, 
+    date DATE, 
+    comments TEXT
+);
+"@
+
+#!pwsh
+
+psql -c "\COPY reviews FROM 'reviews.csv' CSV HEADER"
+
+#!pwsh
+
+psql -c "DROP TABLE IF EXISTS listings"
+
+#!pwsh
+
+psql -c @"
+CREATE TABLE listings (
+    id INT, 
+    name VARCHAR(100),
+    description TEXT,
+    property_type VARCHAR(25),
+    room_type VARCHAR(30),
+    price NUMERIC,
+    weekly_price NUMERIC
+);
+"@
+
+#!pwsh
+
+psql -c "\COPY listings FROM 'listings.csv' CSV HEADER"
+
+#!pwsh
+
+psql -c "SELECT * FROM listings LIMIT 5"
+
+#!pwsh
+
+psql -c "SELECT * FROM reviews WHERE listing_id = 1 limit 5"
+
+#!pwsh
+
+psql -c "SELECT azure_cognitive.translate('Hello, how are you?', 'ja') AS translated_text"
+
+#!pwsh
+
+psql -c "SELECT azure_ai.set_setting('azure_cognitive.region', 'swedencentral');"
+
+#!pwsh
+
+psql -c @"
+SELECT 
+    id, comments, 
+    azure_cognitive.analyze_sentiment(comments, 'en') AS sentiment 
+FROM reviews 
+WHERE id in (1, 2, 3, 4, 5)
+"@
+
+#!pwsh
+
+psql -c "SELECT azure_openai.create_embeddings('text-embedding-3-large', 'bright natural light');"
+
+#!pwsh
+
+psql -c "SELECT pg_typeof(azure_openai.create_embeddings('text-embedding-3-large', 'bright natural light'));"
+
+#!pwsh
+
+psql -c "SELECT array_dims(azure_openai.create_embeddings('text-embedding-3-large', 'bright natural light'));"
+
+#!pwsh
+
+psql -c "SELECT array_dims(ARRAY[1,2,3]);"
+
+#!pwsh
+
+psql -c "SELECT array_dims(ARRAY[[1,2,3],[3,4,5]]);"

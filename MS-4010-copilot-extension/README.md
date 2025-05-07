@@ -1,7 +1,9 @@
-# Microsoft Copilot for Microsoft 365 用のコネクタとプラグインを構築する
+# MS-4010 Microsoft Copilot for Microsoft 365 用のコネクタとプラグインを構築する
 
 <!--
-ラーニングパス1が「Microsoft 365 Copilot用のプラグインとコネクタを構築する」となっています。コース名はおそらくここから取られたものと思われます。含まれるモジュールは「Microsoft 365 Copilot の機能拡張の基礎」と「Copilot の拡張開発パスを選択する」の2つであり、基本的に「Copilotの拡張方法にはどのようなものがあり、どの場合にどれを選択すべきか」という概論を説明します。VSCodeのTeams ToolKit拡張機能やKiota拡張機能でプラグインが作れますよ、というご紹介がある。
+ラーニングパス1が「Microsoft 365 Copilot用のプラグインとコネクタを構築する」となっています。コース名はおそらくここから取られたものと思われます。含まれるモジュールは「Microsoft 365 Copilot の機能拡張の基礎」と「Copilot の拡張開発パスを選択する」の2つであり、基本的に「Copilotの拡張方法にはどのようなものがあり、どの場合にどれを選択すべきか」という概論を説明します。VSCodeのTeams Toolkit拡張機能やKiota拡張機能でプラグインが作れますよ、というご紹介がある。
+
+https://learn.microsoft.com/ja-jp/training/modules/microsoft-copilot-extensibility-fundamentals/4-add-skills-copilot-plugins
  
 ラーニングパス2が「Visual Studio Code を使用して宣言型エージェントを使用してMicrosoft 365 Copilotを拡張する」となっています。このラーニングパスは昨年11月のコース改定で追加されたものだそうです。 https://techcommunity.microsoft.com/blog/iltcommunicationblog/introducing-the-newly-revamped-ms-4010-build-plugins-and-connectors-for-microsof/4330329
 んでこのラーニングパス2では、VSCodeを使用してMicrosoft 365 Copilotを拡張する、という内容になります。「宣言的エージェント」という仕組みを使用して、基本的に設定ファイルをごにょごにょしてMicrosoft 365 Copilotをカスタマイズする感じです。あとはTeams上で動作確認をします。宣言型エージェントで、プラグイン（ここではレストランのメニューを表示したり注文したりする例が使用される）やGraphコネクタ（コントソ社のITポリシーのテキストをGraphコネクタ経由で読み込む例が使用される）を使う方法の解説が含まれます。

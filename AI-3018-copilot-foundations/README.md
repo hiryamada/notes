@@ -39,3 +39,24 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
   - Azure AI Foundryで「Azure OpenAI on your data」を設定します
   - 複数のPDFファイルをアップロードし、ベクトルインデックスを作成します
   - チャットプレイグラウンドで「Azure OpenAI on your data」の動作を確認します
+
+
+## ラボ3のハブ・スポークの作成
+
+```
+「リソース」タブのユーザー名を確認
+例: User1-50354971@LODSPRODMCA.onmicrosoft.com
+
+「User1-」から「@」までの間の数値を使用（起動するたびに変わる）
+
+ハブ名: Hub50354971 ←Hub + 数値 とする
+
+プロジェクト名: Project50354971 ←Project + 数値 とする
+
+リソースグループ: ResourceGroup1 （作成済み）を選択
+
+場所: canadaeast
+
+AI Search の作成: aisearch9287501945 など（aisearch に 適当な数字を付加）
+```
+

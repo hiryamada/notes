@@ -38,6 +38,13 @@ https://qiita.com/uikou/items/1feb83865f9d638807ad
 
 ※GitHub Codespacesの中でもGitHub Copilotが利用できる。
 
+
+## 2023/2/?? GitHub Copilot Labs
+
+https://techcommunity.microsoft.com/blog/educatordeveloperblog/how-to-use-github-copilot-labs-to-improve-your-code-quality-and-productivity/3743021
+
+※現在は廃止されている
+
 ## 2023/2/14 GitHub Copilot for Business を発表
 https://forest.watch.impress.co.jp/docs/news/1478891.html
 https://learn.microsoft.com/ja-jp/training/modules/introduction-to-github-copilot-for-business/
