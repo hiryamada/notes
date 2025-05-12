@@ -2,11 +2,30 @@
 
 https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
 
-5日間コース
+4日間コース
 
-![alt text](image.png)
+- 1日目
+  - [開始時のご案内](../opening.md)
+  - [講義: Azure AI Servicesの概要 (講義資料PDF)](AI-102-day1.pdf)
+  - 模擬試験の説明
+    - [日本語版](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification)
+    - [英語版](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification)
+  - [ラボ1の説明（解説PDF）](lab01.pdf)
+  - ラボ1の開始方法説明
+  - 12:30 1日目講義終了
+  - 13:30-17:30 希望者のみ、ラボを実施
+- 2日目
+  - (順次追記)
+- 3日目
+  - (順次追記)
+- 4日目
+  - (順次追記)
+- [認定試験対策](../AI-102/exam.md)
+- 終了時のご案内
+- 満足度調査アンケート
 
-- 開始時のご案内
+
+<!--
 - 1日目
   - Azure AI Foundry
   - Azure AI model inference
@@ -43,3 +62,4 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
   - 認定試験対策
 
 
+-->
