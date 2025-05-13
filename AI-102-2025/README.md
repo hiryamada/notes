@@ -15,14 +15,18 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
   - 12:30 1日目講義終了
   - 14:00-17:30 希望者のみ、ラボを実施
 - 2日目
-  - (順次追記)
-  - 解説: Entra ID認証＋ロール
-  - Azure AI Vision
+  - 9:30-9:45 [解説: キーを使わないアクセス方法(Entra ID認証＋ロール) 解説PDF](AI-102-entra-id-auth.pdf)
+  - 9:45-10:00 模擬問題（プラクティス評価）のご紹介
+    -  [日本語版](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification)
+    -  [英語版](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification)
+  - 10:00-11:00 Azure AI Vision
     - [講義資料PDF](image-analysis.pdf)
     - [Azure AI Visionのラボ（ラボ2）の説明（解説PDF）](lab02.pdf)
-  - Azure AI Language
+      - [参考資料: その他のAzure AI Visionの機能](../AI-3004-vision/AI-102.md)
+  - 11:00-12:30 Azure AI Language
     - [講義資料PDF](text-analytics.pdf)
     - [Azure AI Languageのラボ（ラボ5）の説明（解説PDF）](lab05.pdf)
+      - [参考資料: その他のAzure AI Languageの機能](../AI-3003-nlp/AI-102.md)
   - 14:00-17:30 希望者のみ、ラボを実施
 - 3日目
   - (順次追記)
