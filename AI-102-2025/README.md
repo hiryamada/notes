@@ -13,16 +13,26 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
   - [ラボ1の説明（解説PDF）](lab01.pdf)
   - ラボ1の開始方法説明
   - 12:30 1日目講義終了
-  - 13:30-17:30 希望者のみ、ラボを実施
+  - 14:00-17:30 希望者のみ、ラボを実施
 - 2日目
   - (順次追記)
+  - 解説: Entra ID認証＋ロール
+  - Azure AI Vision
+    - [講義資料PDF](image-analysis.pdf)
+    - [Azure AI Visionのラボ（ラボ2）の説明（解説PDF）](lab02.pdf)
+  - Azure AI Language
+    - [講義資料PDF](text-analytics.pdf)
+    - [Azure AI Languageのラボ（ラボ5）の説明（解説PDF）](lab05.pdf)
+  - 14:00-17:30 希望者のみ、ラボを実施
 - 3日目
   - (順次追記)
+  - 14:00-17:30 希望者のみ、ラボを実施
 - 4日目
   - (順次追記)
-- [認定試験対策](../AI-102/exam.md)
-- 終了時のご案内
-- 満足度調査アンケート
+  - [認定試験対策](../AI-102/exam.md)
+  - 終了時のご案内
+  - 満足度調査アンケート
+  - 14:00-17:30 希望者のみ、ラボを実施
 
 
 <!--
