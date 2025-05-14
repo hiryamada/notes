@@ -32,6 +32,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
 - 3日目
   - 9:30-11:30 Azure AI Search
     - [講義資料PDF](ai-search.pdf)
+      - [参考資料: その他のAzure AI Searchの機能](../AI-102/lp11.md)
   - 11:30-12:30 Azure AI Document Intelligence
     - [講義資料(PDFはありません)Azure AI Document Intelligence](../AI-3002-document-intelligence/AI-102.md)
   - 14:00-17:30 希望者のみ、ラボを実施
