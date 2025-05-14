@@ -30,8 +30,13 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
   - [参考資料: Azure AI Vision と Azure AI Languageの業務での活用例](Azure%20AI%20Vision%20と%20Azure%20AI%20Languageの業務での活用例.pdf)
   - 14:00-17:30 希望者のみ、ラボを実施
 - 3日目
-  - (順次追記)
+  - 9:30-11:30 Azure AI Search
+    - [講義資料PDF](ai-search.pdf)
+  - 11:30-12:30 Azure AI Document Intelligence
+    - [講義資料(PDFはありません)Azure AI Document Intelligence](../AI-3002-document-intelligence/AI-102.md)
   - 14:00-17:30 希望者のみ、ラボを実施
+    - [ラボ手順書(PDF) ラボ11 Azure AI Search](lab11.pdf)
+    - [ラボ補足資料: Azure AI Searchの「検索エクスプローラー」のさまざまな検索パターン](lab11query.md)
 - 4日目
   - (順次追記)
   - [認定試験対策](../AI-102/exam.md)
