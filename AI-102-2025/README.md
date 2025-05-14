@@ -27,6 +27,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
     - [講義資料PDF](text-analytics.pdf)
       - [参考資料: その他のAzure AI Languageの機能](../AI-3003-nlp/AI-102.md)
     - [Azure AI Languageのラボ（ラボ5）の説明（解説PDF）](lab05.pdf)
+  - [参考資料: Azure AI Vision と Azure AI Languageの業務での活用例](Azure%20AI%20Vision%20と%20Azure%20AI%20Languageの業務での活用例.pdf)
   - 14:00-17:30 希望者のみ、ラボを実施
 - 3日目
   - (順次追記)
