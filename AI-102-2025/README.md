@@ -21,12 +21,12 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
     -  [英語版](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification)
   - 10:00-11:00 Azure AI Vision
     - [講義資料PDF](image-analysis.pdf)
-    - [Azure AI Visionのラボ（ラボ2）の説明（解説PDF）](lab02.pdf)
       - [参考資料: その他のAzure AI Visionの機能](../AI-3004-vision/AI-102.md)
+    - [Azure AI Visionのラボ（ラボ2）の説明（解説PDF）](lab02.pdf)
   - 11:00-12:30 Azure AI Language
     - [講義資料PDF](text-analytics.pdf)
-    - [Azure AI Languageのラボ（ラボ5）の説明（解説PDF）](lab05.pdf)
       - [参考資料: その他のAzure AI Languageの機能](../AI-3003-nlp/AI-102.md)
+    - [Azure AI Languageのラボ（ラボ5）の説明（解説PDF）](lab05.pdf)
   - 14:00-17:30 希望者のみ、ラボを実施
 - 3日目
   - (順次追記)
