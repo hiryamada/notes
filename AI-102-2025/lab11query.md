@@ -30,10 +30,11 @@ C#
 上級エンジニアの名前のみ表示
 ```json
 {
-  "search": "上級",
+  "filter": "Seniority eq '上級'"
   "select": "Name"
 }
 ```
+
 名前に「山本」を含む従業員（部分一致）
 
 ```json
