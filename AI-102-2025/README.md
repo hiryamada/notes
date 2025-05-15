@@ -42,14 +42,17 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
   - 11:30-12:30 Azure AI Document Intelligence
     - [講義資料(PDFはありません)Azure AI Document Intelligence](../AI-3002-document-intelligence/AI-102.md)
 - 4日目
-  - [埋め込みとベクトル 講義資料PDF](00-embedding-and-vector.pdf)
-  - [Azure OpenAI Service 講義資料PDF](01-azure-openai-service-basic.pdf)
-  - [Azure OpenAI Service アプリ開発 講義資料PDF](02-azure-openai-app-dev.pdf)
-  - [Azure OpenAI on your data 講義資料PDF](03-azure-openai-on-your-data.pdf)
-  - [ラボ10 サンプルコード Azure OpenAI RAG](https://github.com/hiryamada/ai-102-lab)
-  - [認定試験対策](../AI-102/exam.md)
-  - 終了時のご案内
-  - 満足度調査アンケート
+  - 9:30-10:00 Azure AI Search 補足（ベクトル検索）
+    - [埋め込みとベクトル 講義資料PDF](00-embedding-and-vector.pdf)
+  - 10:00-12:00 Azure OpenAI Service
+    - [Azure OpenAI Service 講義資料PDF](01-azure-openai-service-basic.pdf)
+    - [Azure OpenAI Service アプリ開発 講義資料PDF](02-azure-openai-app-dev.pdf)
+    - [Azure OpenAI on your data (RAG) 講義資料PDF](03-azure-openai-on-your-data.pdf)
+    - [ラボ10 サンプルコード Azure OpenAI on your data (RAG)](https://github.com/hiryamada/ai-102-lab)
+  - 12:00-12:30 終了時のご案内
+    - [認定試験対策](../AI-102/exam.md)
+    - [終了時のご案内](../closing-cloudslice.md)
+    - 満足度調査アンケート
   - 14:00-17:30 希望者のみ、ラボを実施
 
 
