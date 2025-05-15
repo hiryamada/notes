@@ -22,11 +22,13 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
   - 10:00-11:00 Azure AI Vision
     - [講義資料PDF](image-analysis.pdf)
       - [参考資料: その他のAzure AI Visionの機能](../AI-3004-vision/AI-102.md)
-    - [Azure AI Visionのラボ（ラボ2）の説明（解説PDF）](lab02.pdf)
+    - [ラボ2 サンプルコード](https://github.com/hiryamada/ai-vision-sample)
+      - [ラボ2 解説PDF](lab02.pdf)
   - 11:00-12:30 Azure AI Language
     - [講義資料PDF](text-analytics.pdf)
       - [参考資料: その他のAzure AI Languageの機能](../AI-3003-nlp/AI-102.md)
-    - [Azure AI Languageのラボ（ラボ5）の説明（解説PDF）](lab05.pdf)
+    - [ラボ5 サンプルコード](https://github.com/hiryamada/ai-language-sample)
+      - [ラボ5 解説PDF](lab05.pdf)
   - [参考資料: Azure AI Vision と Azure AI Languageの業務での活用例](Azure%20AI%20Vision%20と%20Azure%20AI%20Languageの業務での活用例.pdf)
   - 14:00-17:30 希望者のみ、ラボを実施
 - 3日目
@@ -34,13 +36,17 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
     - [講義資料PDF](ai-search.pdf)
       - [参考資料: その他のAzure AI Searchの機能](../AI-102/lp11.md)
       - [参考資料: Azure AI Searchの基礎と業務活用例](Azure%20AI%20Searchの基礎と業務活用例.pdf)
+    - [ラボ11のサンプルコード](https://github.com/hiryamada/ai-search-sample)
+      - [ラボ11 解説PDF](lab11.pdf)
+      - [ラボ11 補足資料: Azure AI Searchの「検索エクスプローラー」のさまざまな検索パターン](lab11query.md)
   - 11:30-12:30 Azure AI Document Intelligence
     - [講義資料(PDFはありません)Azure AI Document Intelligence](../AI-3002-document-intelligence/AI-102.md)
-  - 14:00-17:30 希望者のみ、ラボを実施
-    - [ラボ手順書(PDF) ラボ11 Azure AI Search](lab11.pdf)
-    - [ラボ補足資料: Azure AI Searchの「検索エクスプローラー」のさまざまな検索パターン](lab11query.md)
 - 4日目
-  - (順次追記)
+  - [埋め込みとベクトル 講義資料PDF](00-embedding-and-vector.pdf)
+  - [Azure OpenAI Service 講義資料PDF](01-azure-openai-service-basic.pdf)
+  - [Azure OpenAI Service アプリ開発 講義資料PDF](02-azure-openai-app-dev.pdf)
+  - [Azure OpenAI on your data 講義資料PDF](03-azure-openai-on-your-data.pdf)
+  - [ラボ10 サンプルコード Azure OpenAI RAG](https://github.com/hiryamada/ai-102-lab)
   - [認定試験対策](../AI-102/exam.md)
   - 終了時のご案内
   - 満足度調査アンケート

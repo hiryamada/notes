@@ -54,19 +54,20 @@ https://aka.ms/AzureTrainingJourney
 
 正解・解説表示あり。
 
-例:
-https://learn.microsoft.com/ja-jp/training/modules/prepare-to-develop-ai-solutions-azure/10-knowledge-check
+■書籍で学習しよう！（有料）
 
-ヒント:
+合格対策 Microsoft認定試験 AI-102：Microsoft Azure AI Engineer テキスト＆演習問題
 
-- 機械学習の「予測」とは？
-  - 大量のデータによるトレーニングに基づいて予測を行う
-- Azure Machine Learningなどでトレーニングしたモデルはどうやって使う？
-  - デプロイ（発行）して、Web経由で使用する
-- ドキュメントのインデックスを作るサービスは？
-  - Azure Cognitive Search
+https://www.ric.co.jp/book/new-publication/detail/2855
 
-■「プラクティス評価」を活用して学習しよう！（無料）
+- 体系的に理解できる
+- 読者特典としてダウンロードできる模擬試験問題を提供
+- 紙の書籍のメリット
+  - 読みやすい
+  - 書き込みできる
+  - 付箋を貼れる
+
+■「プラクティス評価」を活用して学習しよう！（公式、無料）
 
 主なAzure認定試験の模擬問題にチャレンジできる。正解・解説表示あり。
 
