@@ -15,7 +15,7 @@ https://learn.microsoft.com/ja-jp/training/paths/accelerate-app-development-usin
     - [リンク集](links.md)
 - [演習の実施方法のご案内](lab.md)
 - [認定試験のご案内](exam.md)
-- [終了時のご案内](../closing-cloudslice.md.md)
+- [終了時のご案内](../closing-cloudslice.md)
 - 満足度アンケート
 
 <!--
