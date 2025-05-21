@@ -1,6 +1,5 @@
 # Azure VM
 
-
 VMで、デフォルトのSNATを使用する場合、SNATポート数は 1024 まで
 
 ![](VM内の1つのアプリからのNAT.drawio.svg)
@@ -13,7 +12,7 @@ VMで、デフォルトのSNATを使用する場合、SNATポート数は 1024 �
 
 ---
 
-NAT Gatewayを使用することで、SNATポート枯渇を防止できる。1つのNAT Gatewayでは、1パブリックIPアドレスあたり60,000のSNATポートを使用可能
+NAT Gatewayを使用することで、SNATポート枯渇を防止できる。1つのNAT Gatewayでは、1パブリックIPアドレスあたり64,512のSNATポートを使用可能
 
 ![](<仮想マシン＋NAT Gateway.drawio.svg>)
 
