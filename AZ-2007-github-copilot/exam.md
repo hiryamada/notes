@@ -22,7 +22,7 @@ https://resources.github.com/ja/learn/certifications/
 - GitHub Administration
 - GitHub Copilot
 
-有償（99 USD、GitHub Foundationは49 USD）。オンラインで受験可能（試験監督あり。GitHub Foundationsは試験監督なし）
+有償（99 USD、GitHub Foundationsは49 USD）。オンラインで受験可能（試験監督あり。GitHub Foundationsは試験監督なし）
 
 ## Study Guide（学習ガイド、英語のみ）
 
