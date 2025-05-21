@@ -1,19 +1,19 @@
 # Azure VM
 
 
-VMでデフォルトのSNATを使用する場合、1024接続まで。
+VMで、デフォルトのSNATを使用する場合、SNATポート数は 1024 まで
 
 ![](VM内の1つのアプリからのNAT.drawio.svg)
 
 ---
 
-特にVM内で複数のコンテナーを稼働させるとSNATポートが枯渇しがち。
+特に、VM内で複数のコンテナーを使用して多数のアプリを稼働させると、SNATポートが枯渇しがち
 
 ![](VM内の複数のコンテナー.drawio.svg)
 
 ---
 
-仮想マシンとNAT Gatewayを組み合わせることでSNATポート枯渇を防止できる。
+NAT Gatewayを使用することで、SNATポート枯渇を防止できる。1つのNAT Gatewayでは、1パブリックIPアドレスあたり60,000のSNATポートを使用可能
 
 ![](<仮想マシン＋NAT Gateway.drawio.svg>)
 
@@ -27,14 +27,13 @@ NAT GatewayはAzure Firewallと組み合わせて運用することも可能
 
 # Azure App Service
 
-App ServiceのSNATの場合、1インスタンスあたり128～160接続程度。
-
+App Serviceの場合、1インスタンスあたりで使用可能なSNATポート数は 128 ～ 160 程度であり、1台のVMで運用する場合よりもポート枯渇が発生しやすい。
 
 ![](<App Service.drawio.svg>)
 
 ---
 
-App ServiceとNAT Gatewayを組み合わせる場合、「仮想ネットワーク統合」を使用
+App Serviceでは「仮想ネットワーク統合」によりNAT Gatewayを利用できる
 
 ![](<Azure Firewall＋NAT Gateway.drawio.svg>)
 
