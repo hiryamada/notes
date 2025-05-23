@@ -1,5 +1,8 @@
 # Azure App Service
 
+
+[解説PDF](../AZ-104-2023/pdf/Azure%20App%20Service.pdf)
+
 公式サイト https://azure.microsoft.com/ja-jp/services/app-service/
 
 ドキュメント https://docs.microsoft.com/ja-jp/azure/app-service/overview
