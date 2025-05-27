@@ -12,7 +12,7 @@ Microsoft 365 Copilotの活用方法を解説する1日コースです。
   - [講義資料PDF（ラーニングパス1: 使用を開始する）](1%20Microsoft%20365%20Copilotの使用を開始する.pdf)
   - [講義資料PDF（ラーニングパス2: 効果的なプロンプト）](2%20Microsoft%20365%20Copilotの効果的なプロンプトを作成する.pdf)
   - [講義資料PDF（ラーニングパス3: 補足 効果的なプロンプトのパターン）](3%20補足%20効果的なプロンプトのパターン.pdf)
-  - （補足）[会議文字起こしで人名を正確に認識させるためのガイド](Teams会議文字起こしでの人名認識改善アドバイス.pdf)
+  - （補足）[会議文字起こしで人名を正確に認識させるためのガイド](CopilotでのTeams会議文字起こしと要約のアドバイス.pdf)
 - [Microsoft 365 Copilot リンク集](../ms-copilot/links.md)
 - [Microsoft 365 Copilot 関連動画](../ms-copilot/youtube.md)
 - [認定試験のご案内](../ms-copilot/exam.md)
