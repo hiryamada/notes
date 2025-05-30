@@ -6,6 +6,14 @@ https://learn.microsoft.com/ja-jp/training/paths/copilot-foundations/
 
 生成 AI の基礎、Microsoft Copilot、Microsoft Copilot Studio、Azure AI Foundryについて学習します。
 
+<!--
+後継コース: MS-4014
+https://techcommunity.microsoft.com/blog/iltcommunicationblog/ilt-course-retirement-ai-3018-copilot-foundations/4383209
+
+https://learn.microsoft.com/ja-jp/credentials/certifications/retired-courses
+2025/4/30 Retired
+
+-->
 
 ## 講義
 
