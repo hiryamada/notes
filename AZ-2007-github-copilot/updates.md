@@ -260,3 +260,20 @@ Copilot Autofix for Partners
 
 ## 参考: GitHub Extensions
 https://github.com/marketplace?type=apps&copilot_app=true
+
+
+## May 19th, 2025 Announcing Public Preview of the GitHub Copilot app modernization for Java
+
+https://devblogs.microsoft.com/java/public-preview-app-mod-java/
+
+## May 19th, 2025 Accelerate Your .NET Upgrades with GitHub Copilot
+
+https://devblogs.microsoft.com/dotnet/github-copilot-upgrade-dotnet/
+
+## May 29, 2025 Introducing Copilot Spaces: A new way to work with code and context
+
+https://github.blog/changelog/2025-05-29-introducing-copilot-spaces-a-new-way-to-work-with-code-and-context/
+
+## May 30, 2025 Copilot Workspace Sunset
+
+https://gist.github.com/idan/15f101b8ff4be8bebe17147c08995363
