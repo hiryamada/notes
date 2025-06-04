@@ -262,6 +262,10 @@ Copilot Autofix for Partners
 https://github.com/marketplace?type=apps&copilot_app=true
 
 
+## May 8, 2025 OpenAI GPT-4.1 is now generally available in GitHub Copilot as the new default model
+
+https://github.blog/changelog/2025-05-08-openai-gpt-4-1-is-now-generally-available-in-github-copilot-as-the-new-default-model/
+
 ## May 19th, 2025 Announcing Public Preview of the GitHub Copilot app modernization for Java
 
 https://devblogs.microsoft.com/java/public-preview-app-mod-java/

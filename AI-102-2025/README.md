@@ -34,6 +34,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
 - 3日目
   - 9:30-11:30 Azure AI Search
     - [講義資料PDF](ai-search.pdf)
+      - [埋め込みとベクトル 講義資料PDF](00-embedding-and-vector.pdf)
       - [参考資料: その他のAzure AI Searchの機能](../AI-102/lp11.md)
       - [参考資料: Azure AI Searchの基礎と業務活用例](Azure%20AI%20Searchの基礎と業務活用例.pdf)
     - [ラボ11のサンプルコード](https://github.com/hiryamada/ai-search-sample)
@@ -42,8 +43,6 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
   - 11:30-12:30 Azure AI Document Intelligence
     - [講義資料(PDFはありません)Azure AI Document Intelligence](../AI-3002-document-intelligence/AI-102.md)
 - 4日目
-  - 9:30-10:00 Azure AI Search 補足（ベクトル検索）
-    - [埋め込みとベクトル 講義資料PDF](00-embedding-and-vector.pdf)
   - 10:00-12:00 Azure OpenAI Service
     - [Azure OpenAI Service 講義資料PDF](01-azure-openai-service-basic.pdf)
     - [Azure OpenAI Service アプリ開発 講義資料PDF](02-azure-openai-app-dev.pdf)
