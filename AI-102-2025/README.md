@@ -47,6 +47,7 @@ https://learn.microsoft.com/ja-jp/training/courses/ai-102t00
     - [Azure OpenAI Service 講義資料PDF](01-azure-openai-service-basic.pdf)
     - [Azure OpenAI Service アプリ開発 講義資料PDF](02-azure-openai-app-dev.pdf)
     - [Azure OpenAI on your data (RAG) 講義資料PDF](03-azure-openai-on-your-data.pdf)
+      - 参考資料: [形態素解析とトークン化](AI_Tokens_and_Morphological_Analysis.pdf)
     - [ラボ10 サンプルコード Azure OpenAI on your data (RAG)](https://github.com/hiryamada/ai-102-lab)
   - 12:00-12:30 終了時のご案内
     - [認定試験対策](../AI-102/exam.md)
