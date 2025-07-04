@@ -1,4 +1,4 @@
-# MS-4010 Microsoft Copilot for Microsoft 365 用のコネクタとプラグインを構築する
+# MS-4010 Visual Studio Code を使用して宣言型エージェントでMicrosoft 365 Copilotを拡張する
 
 <!--
 ラーニングパス1が「Microsoft 365 Copilot用のプラグインとコネクタを構築する」となっています。コース名はおそらくここから取られたものと思われます。含まれるモジュールは「Microsoft 365 Copilot の機能拡張の基礎」と「Copilot の拡張開発パスを選択する」の2つであり、基本的に「Copilotの拡張方法にはどのようなものがあり、どの場合にどれを選択すべきか」という概論を説明します。VSCodeのTeams Toolkit拡張機能やKiota拡張機能でプラグインが作れますよ、というご紹介がある。

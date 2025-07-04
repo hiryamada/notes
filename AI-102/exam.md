@@ -1,7 +1,8 @@
-# AI-102 試験対策
+# AI-102 認定試験
 
 AI-102の試験・資格と学習方法をご紹介。
 
+<!--
 ■認定試験のメリットは？ 合格すると何が嬉しいの？
 
 参考: [Microsoft認定試験のメリット](https://www.trainocate.co.jp/upload/flyer/flyer_108.pdf)) / [認定プロセスの概要](https://learn.microsoft.com/ja-jp/certifications/certification-process-overview)
@@ -10,6 +11,7 @@ AI-102の試験・資格と学習方法をご紹介。
 - 査定・評価が向上
 - 転職にも有利
 - 自信が持てる
+-->
 
 ■「認定試験」と「認定資格」
 
