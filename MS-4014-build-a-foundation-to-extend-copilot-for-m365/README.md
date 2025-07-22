@@ -2,6 +2,31 @@
 
 https://learn.microsoft.com/ja-jp/training/paths/build-foundation-extend-microsoft-365-copilot/
 
+- Microsoft 365 Copilotを拡張・カスタマイズする方法について概要を学習します。
+- 3時間のコースです。
+- 4つのモジュールで構成されます。
+- モジュール1では「一般的に、エージェントとは何か」「エージェントはビジネスにどのように役に立つのか」について説明します。
+- モジュール2では「マイクロソフト製品において（拡張やカスタマイズをせず、すぐに使えるCopilotやエージェントとしては）どのようなCopilotやエージェントがあるのか」を説明します。
+- モジュール3では「エージェントの拡張・カスタマイズの方法」について説明します。
+- モジュール4では「独自のエージェントの開発方法」について説明します。
+- ※本コースでは「Microsoft 365 Copilotの使い方」は解説されません。必要に応じて[MS-4018](https://learn.microsoft.com/ja-jp/training/paths/draft-analyze-present-microsoft-365-copilot/)などのMicrosoft 365 Copilot入門者・利用者向けコースをご受講ください。
+- ※本コースにはラボ（実機演習）はございません。座学のみとなります。
+
+## 講義
+
+- [開始時のご案内](../opening.md)
+- 講義
+  - モジュール1 AI エージェントの開発の概要
+    - [講義資料PDF](m01.pdf)
+  - モジュール2 Microsoft AI エージェント ソリューションの概要
+    - [講義資料PDF](m02.pdf)
+  - モジュール3 シナリオに最適なMicrosoft 365 Copilot拡張パスを選択する
+    - [講義資料PDF](m03.pdf)
+  - モジュール4 カスタム AI エージェントの開発パスを選択する
+    - [講義資料PDF](m04.pdf)
+- [認定試験のご紹介](../ms-copilot/exam.md)
+- [終了時のご案内](../closing-no-lab.md)
+- 満足度調査アンケート
 
 <!--
 ラボ
