@@ -6,7 +6,7 @@ https://learn.microsoft.com/ja-jp/training/paths/build-foundation-extend-microso
 - 3時間のコースです。
 - 4つのモジュールで構成されます。
 - モジュール1では「一般的に、エージェントとは何か」「エージェントはビジネスにどのように役に立つのか」について説明します。
-- モジュール2では「マイクロソフト製品において（拡張やカスタマイズをせず、すぐに使えるCopilotやエージェントとしては）どのようなCopilotやエージェントがあるのか」を説明します。
+- モジュール2では「マイクロソフト製品において（拡張やカスタマイズをせず、すぐに使えるCopilotやエージェントとしては）どのようなCopilotやエージェントがあるのか」「エージェント開発者向けのAzureサービスにはどのようなものがあるのか」を説明します。
 - モジュール3では「エージェントの拡張・カスタマイズの方法」について説明します。
 - モジュール4では「独自のエージェントの開発方法」について説明します。
 - ※本コースでは「Microsoft 365 Copilotの使い方」は解説されません。必要に応じて[MS-4018](https://learn.microsoft.com/ja-jp/training/paths/draft-analyze-present-microsoft-365-copilot/)などのMicrosoft 365 Copilot入門者・利用者向けコースをご受講ください。
