@@ -11,7 +11,7 @@ https://learn.microsoft.com/ja-jp/training/paths/develop-ai-agents-on-azure/
   - [講義資料](AI-3026-mod123.pdf)
 - モジュール4～5 Semantic Kernel
   - [講義資料](../AZ-2005-sk/AZ-2005-sk.pdf)
-- 認定試験のご案内
+- [認定試験(AI-102)のご案内](../AI-102/exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
 - 満足度調査アンケート
 - ラボ（オプション）
