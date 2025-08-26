@@ -18,6 +18,7 @@ Azureの仮想ネットワーク(Virtual Network, VNet)について学習しま�
 - 講師自己紹介
 - [開始時のご案内](../opening.md)
 - [講義: 仮想ネットワークの講義資料(PDF)](../AZ-104-2023/pdf/仮想ネットワークの概要.pdf)
+  - 追加資料: [ハブ＆スポーク トポロジーの例](../network/ハブ・スポーク.pdf)
 - ラボの解説（講師によるAzure操作デモ）
 - [認定試験対策](assessment.md)
 - [終了時のご案内](../closing-cloudslice.md)
