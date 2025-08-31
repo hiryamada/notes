@@ -1,0 +1,53 @@
+
+講義:
+
+- 開始時のご案内
+- 講義資料
+- ラーニングパス1（GitHub Copilot 基礎 パート1）
+  - 1 責任あるAI※
+  - 2 GitHub Copilotの概要
+    - https://docs.github.com/ja/copilot/get-started/what-is-github-copilot
+    - GitHub Copilot for chat
+    - GitHub Copilot for pull requests
+    - GitHub Copilot for the CLI
+    - サブスクリプションプラン
+    - インラインチャット
+    - 複数のコード候補からの選択
+    - セットアップ
+  - 3 プロンプトエンジニアリング※
+    - https://docs.github.com/ja/copilot/concepts/prompt-engineering
+    - https://code.visualstudio.com/docs/copilot/chat/prompt-crafting
+    - codespaces
+  - 4 高度な機能
+    - インラインチャット
+    - スラッシュコマンド
+    - エージェント(participants)※
+  - 5 さまざまな環境でのGitHub Copilot
+    - suggestion
+    - chat
+    - GitHub in the CLI※
+  - 6 管理とカスタマイズ※
+    - サブスクリプションプラン
+    - https://github.com/features/copilot の、「よくある質問＞責任あるAI」
+    - IP indemnification
+      - https://resources.github.com/learn/pathways/copilot/essentials/establishing-trust-in-using-github-copilot/
+    - Data Protection Agreement（DPA）
+      - https://github.com/customer-terms/github-data-protection-agreement
+    - GitHub Copilot Trust Center
+      - https://resources.github.com/ja/copilot-trust-center/
+    - コンテンツの除外
+      - https://docs.github.com/ja/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot
+    - トラブルシューティング
+      - https://docs.github.com/ja/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues
+- ラーニングパス2（GitHub Copilot 基礎 パート2）
+  - 7 開発者のユースケース
+    - SDLC※
+    - 制限事項※
+  - 8 単体テストの開発
+  - 9 GitHub Copilot Businessの概要※
+  - 10 GitHub Copilot Enterpriseの概要※
+  - 11 JavaScriptでGitHub Copilotを使う※
+  - 12 PythonでGitHub Copilotを使用する※
+- [認定試験のご案内](exam.md)
+- 終了時のご案内
+- 満足度調査アンケート
