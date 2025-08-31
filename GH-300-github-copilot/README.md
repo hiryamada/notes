@@ -12,7 +12,7 @@ https://learn.microsoft.com/ja-jp/training/courses/gh-300t00
 - [開始時のご案内](../opening.md)
 - 講義
   - part 1 - [講義資料PDF1](GH-300-part1.pdf)
-  - part 2 - 講義資料PDF2（準備でき次第アップロードしお知らせします）
+  - part 2 - 講義資料PDF2（準備でき次第アップロードし、お知らせします）
 - [認定試験 GH-300 のご案内](exam.md)
 - [終了時のご案内](../closing-no-lab.md)
 - 満足度調査アンケート
