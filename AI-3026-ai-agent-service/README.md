@@ -2,7 +2,11 @@
 
 Azure で AI エージェントを開発する
 
+<!--
 https://learn.microsoft.com/ja-jp/training/paths/develop-ai-agents-on-azure/
+-->
+
+https://learn.microsoft.com/ja-jp/collections/j06xt3t1kr4rd0
 
 ## 講義
 
