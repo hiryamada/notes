@@ -16,6 +16,7 @@ https://learn.microsoft.com/ja-jp/training/paths/implement-no-code-copilot-agent
 - 本コースにはラボ（演習環境）があります
   - 英語版のみ
   - 皆様のお手元の（皆様が普段使っている）Microsoft 365 Copilot環境は本コースでは使用しません
+  - 演習6は実際のSharePointエージェントの作成ではなく、シミュレーターを使った操作体験となります。シミュレーター起動時に `{"type":"https://tools.ietf.org/html/rfc9110#section-15.5.5","title":"Not Found","status":404,"traceId":"..."}` といったエラーが表示される環境では、シミュレーターはご利用いただけません。代わりに [ラボ手順解説PDF](MS-4019-lab.pdf) をご覧いただき手順のみをご確認ください。
 
 ## スケジュール
 
@@ -25,7 +26,7 @@ https://learn.microsoft.com/ja-jp/training/paths/implement-no-code-copilot-agent
 - 受講者アンケート、講義終了
 - （オプション）ラボ（実機演習）
   - [ラボ手順解説PDF](MS-4019-lab.pdf)
-  - ※ラボは英語版のみとなります
+
 
 ## コースアジェンダ
 
