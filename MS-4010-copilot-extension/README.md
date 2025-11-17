@@ -1,5 +1,30 @@
 # MS-4010 Visual Studio Code を使用して宣言型エージェントでMicrosoft 365 Copilotを拡張する
 
+https://learn.microsoft.com/ja-jp/collections/57mnuqtrgz277m
+
+<!--
+モジュール1，3，7，9の4モジュール、ラボは5個
+
+モジュール1は宣言型エージェントの概要、ラボ1はM365 Agents Toolkitによる開発
+
+モジュール3はAPIプラグイン（ラボ2）・アダプティブカード（ラボ3）・認証（ラボ4）
+
+モジュール7M365 Copilotコネクターの開発とモニタリング（ラボ5）、コネクターのメンテナンス（ラボなし）
+-->
+
+<!--
+- Module 1: Introduction to declarative agents for Microsoft 365 Copilot 
+  - Lab 1 (Follow in Learn): Build your first declarative agent using TypeSpec 
+- Module 3: Introduction to actions with API plugins for declarative agents 
+  - Lab 2: Build your first action for declarative agents with API plugin by using Visual Studio Code 
+  - Lab 3: Use Adaptive Cards to show data in API plugins for declarative agents 
+  - Lab 4: Authenticate your API plugin for declarative agents with secured APIs 
+- Module 7: Introduction to Microsoft 365 Copilot connectors 
+  - Lab 5 (Follow in Learn): Build Your First Microsoft 365 Copilot Connector Using Visual Studio Code 
+- Module 9: Monitor and maintain Microsoft 365 Copilot connectors
+-->
+
+
 <!--
 ラーニングパス1が「Microsoft 365 Copilot用のプラグインとコネクタを構築する」となっています。コース名はおそらくここから取られたものと思われます。含まれるモジュールは「Microsoft 365 Copilot の機能拡張の基礎」と「Copilot の拡張開発パスを選択する」の2つであり、基本的に「Copilotの拡張方法にはどのようなものがあり、どの場合にどれを選択すべきか」という概論を説明します。VSCodeのTeams Toolkit拡張機能やKiota拡張機能でプラグインが作れますよ、というご紹介がある。
 

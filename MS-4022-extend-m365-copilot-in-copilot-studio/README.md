@@ -1,6 +1,6 @@
 # MS-4022
 
-- 1日コース
+- 3時間コース
 - Microsoft Copilot Studio を使用して、Microsoft 365 Copilot を拡張する「宣言型エージェント」を構築します。
 
 https://learn.microsoft.com/ja-jp/training/paths/extend-microsoft-365-copilot-studio/
