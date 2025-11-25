@@ -5,3 +5,5 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 <!--
 「Microsoft Copilot Studio でカスタム コパイロットを作成し、機能を拡張する」より名前変更。
 -->
+
+[ラボ手順PDF](pl-7008-lab.pdf)
