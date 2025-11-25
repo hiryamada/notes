@@ -11,5 +11,5 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 
 ラボ環境: https://esi.learnondemand.net/User/Login
 
-[ラボ手順PDF](pl-7008-lab.pdf) ※現在ラボ1,2まで作成済み。続きは現在開発中です。開発が終わり次第このファイルを更新します。
+[ラボ手順PDF](pl-7008-lab.pdf) ※現在 ~~ラボ1,2~~ ラボ5（トピックの管理） まで作成済み。続きは現在開発中です。開発が終わり次第このファイルを更新します。
 
