@@ -2,7 +2,7 @@
 
 https://learn.microsoft.com/ja-jp/collections/66w2a7txpy78r1
 
-- 1日コース
+- 2日コース
 - GitHubの基礎を学びます
 - 本コースではラボ環境の提供はございません
 
