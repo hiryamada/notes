@@ -22,6 +22,7 @@ https://learn.microsoft.com/ja-jp/training/paths/implement-no-code-copilot-agent
 
 - [開始時のご案内](../opening.md)
 - [講義資料PDF](MS-4019.pdf)
+- [認定試験のご案内](../ab-exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
 - 受講者アンケート、講義終了
 - （オプション）ラボ（実機演習）
