@@ -17,6 +17,8 @@ https://learn.microsoft.com/ja-jp/training/courses/gh-200t00
 ## 演習
 
 - https://github.com/skills-dev/hello-github-actions
+- https://github.com/skills/publish-packages
+  - ※Docker for desktop が必要ですs
 
 ## 教材の構成
 
