@@ -2,7 +2,7 @@
 
 https://learn.microsoft.com/ja-jp/training/courses/gh-200t00
 
-※本コースでは演習環境のご提供はございません。
+※本コースでは演習環境のご提供はございませんが、GitHubアカウントをお持ちであれば、GitHub公式の演習手順（GitHub Skills）で演習を実施できます。
 
 ## 講義
 
@@ -13,6 +13,10 @@ https://learn.microsoft.com/ja-jp/training/courses/gh-200t00
 - [終了時のご案内](../closing-no-lab.md)
 - 満足度調査アンケート
 
+
+## 演習
+
+- https://github.com/skills-dev/hello-github-actions
 
 ## 教材の構成
 
