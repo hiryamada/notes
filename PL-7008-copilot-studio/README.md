@@ -1,7 +1,9 @@
 # PL-7008: Microsoft Copilot Studio でエージェントを作成する
 
+<!--
 Microsoft Learn教材: 
 https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/
+-->
 
 ## 講義
 
