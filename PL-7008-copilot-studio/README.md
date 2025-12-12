@@ -30,3 +30,11 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 - マイクロソフトアカウントの作成: https://signup.live.com/
   - '～@outlook.jp' というメールアドレスでマイクロソフトアカウントを作成できます
 - ラボ環境: https://esi.learnondemand.net/User/Login
+
+## ラボ手順書
+
+ラボ手順はラボ環境内に表示されますので、ラボ実施時はそちらを参照してください。
+
+ラボを起動せずにラボ手順のみ参照したい場合は以下のページを利用できます（英語版手順）
+
+https://microsoftlearning.github.io/mslearn-copilotstudio/
