@@ -28,7 +28,7 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 ## ラボ環境
 
 - マイクロソフトアカウントの作成: https://signup.live.com/
-  - '～@outlook.jp' というメールアドレスでマイクロソフトアカウントを作成できます
+  - '～@outlook.com' というメールアドレスでマイクロソフトアカウントを作成できます
 - ラボ環境: https://esi.learnondemand.net/User/Login
 
 ## ラボ手順書
@@ -38,3 +38,12 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 ラボを起動せずにラボ手順のみ参照したい場合は以下のページを利用できます（英語版手順）
 
 https://microsoftlearning.github.io/mslearn-copilotstudio/
+
+## 不動産のプロモーションに役立つ情報が掲載されているサイト
+
+ラボ4タスク2.2 で、エージェントのナレッジとして設定できる「公開Webサイト」の例。
+
+- https://mailchimp.com/resources/generate-real-estate-leads/ 
+- https://smei.org/marketing-strategy/ 
+
+
