@@ -9,7 +9,7 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 
 - [開始時のご案内](../opening.md)
 - 講義
-  - [講義資料PDF(release)](../releases/download/PL-7008/pl-7008.pdf)
+  - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/PL-7008/pl-7008.pdf)
 - [Microsoft 365 関連の認定試験のご案内](../ab-exam.md)
 - [終了時のご案内](../closing-mscopilot.md)
 - （希望者のみ）ラボ
