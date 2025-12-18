@@ -5,6 +5,14 @@ Microsoft Learn教材:
 https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/
 -->
 
+## 2025/12/18 補足
+
+エージェントの「設定」で生成AIオーケストレーションを無効に設定すると、トピック→最初から の画面のトリガーに「ユーザーが語句を発生した時」が表示されます。
+
+![alt text](image-1.png)
+
+![alt text](image.png)
+
 ## 講義
 
 - [開始時のご案内](../opening.md)
