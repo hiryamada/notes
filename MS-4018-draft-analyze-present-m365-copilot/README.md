@@ -13,7 +13,7 @@ Microsoft 365 Copilotの概要を学びます。また、Microsoft 365 のアプ
   - [講義資料PDF(2)モジュール2～7 各アプリでのCopilotの使い方](2-7.pdf)
 - [Microsoft 365 Copilot リンク集](../ms-copilot/links.md)
 - [Microsoft 365 Copilot 関連動画](../ms-copilot/youtube.md)
-- [認定試験のご案内](../ms-copilot/exam.md)
+- [Microsoft 365 関連の認定試験のご案内](../ab-exam.md)
 - [終了時のご案内](../closing-mscopilot.md)
 - 演習（希望者のみ）
   - [Microsoft 365 Copilot 演習手順](https://github.com/hiryamada/copilotdemo)
