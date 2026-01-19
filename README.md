@@ -1,1 +1,16 @@
-講義資料
+## Microsoft 365 Copilot - Microsoft 365 Copilotユーザー・エージェント利用者向け
+
+|コース名(講義資料)|日程|ラボ|Microsoft Learn(日本語)|Microsoft Learn(英語)|備考|
+|-|-|-|-|-|-|
+|[MS-4018](MS-4018-draft-analyze-present-m365-copilot/README.md)|1 day|あり|[Microsoft 365 Copilot でドラフト、分析、プレゼンテーションを行う](https://learn.microsoft.com/ja-jp/training/paths/draft-analyze-present-microsoft-365-copilot/)|[Draft, analyze, and present with Microsoft 365 Copilot](https://learn.microsoft.com/en-us/training/paths/draft-analyze-present-microsoft-365-copilot/)|Microsoft 365アプリとチャットでのCopilotの使い方|
+|[MS-4019](MS-4019-create-no-code-copilot-agent-for-sharepoint/README.md)|1 day|あり|[エージェントを使用して日常のビジネス プロセスを変革する](https://learn.microsoft.com/ja-jp/training/paths/implement-no-code-copilot-agents-microsoft-365-sharepoint/)|[Transform your everyday business processes with agents](https://learn.microsoft.com/en-us/training/paths/implement-no-code-copilot-agents-microsoft-365-sharepoint/)|Microsoft 365 Copilot Chat内のエージェントやSharePointエージェントの使い方・カスタマイズ|
+
+## Microsoft 365 Copilot - エージェント開発者向け
+
+|コース名(講義資料)|日程|ラボ|Microsoft Learn(日本語)|Microsoft Learn(英語)|備考|
+|-|-|-|-|-|-|
+|[MS-4014](MS-4014-build-a-foundation-to-extend-copilot-for-m365/README.md)|1 day|なし|[AI エージェントを構築し、Microsoft 365 Copilotを拡張するための基盤を構築する](https://learn.microsoft.com/ja-jp/training/paths/build-foundation-extend-microsoft-365-copilot/)|[Build a foundation to build AI agents and extend Microsoft 365 Copilot](https://learn.microsoft.com/en-us/training/paths/build-foundation-extend-microsoft-365-copilot/)|エージェント開発概論・基礎知識|
+|[MS-4022](MS-4022-extend-m365-copilot-in-copilot-studio/README.md)|1 day|あり|[Copilot Studioで Microsoft 365 Copilot を拡張する](https://learn.microsoft.com/ja-jp/training/paths/extend-microsoft-365-copilot-studio/)|[Extend Microsoft 365 Copilot in Copilot Studio](https://learn.microsoft.com/en-us/training/paths/extend-microsoft-365-copilot-studio/)|Microsoft Copilot Studio での宣言型エージェントの開発|
+|[PL-7008](PL-7008-copilot-studio/README.md)|1 day|あり|[Microsoft Copilot Studio でエージェントを作成する](https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/)|[Create agents in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/)|Microsoft Copilot Studio でのカスタムエージェントの開発|
+|[MS-4010](MS-4010-copilot-extension/README.md)|1 day|あり|[Visual Studio Code を使用して宣言型エージェントを使用して Microsoft 365 Copilot を拡張する](https://learn.microsoft.com/ja-jp/training/paths/build-plugins-connectors-microsoft-copilot-microsoft-365/)|[Extend Microsoft 365 Copilot with declarative agents by using Visual Studio Code](https://learn.microsoft.com/en-us/training/paths/build-plugins-connectors-microsoft-copilot-microsoft-365/)|VS Codeでの宣言型エージェントの開発|
+|[MS-4015](MS-4015-bulid-custom-copilots-for-teams/README.md)|1 day|あり|[Microsoft 365 Agents SDK を使用してカスタム エンジン エージェントを構築する](https://learn.microsoft.com/ja-jp/training/courses/ms-4015)|[Build custom engine agents with the Microsoft 365 Agents SDK](https://learn.microsoft.com/en-us/training/courses/ms-4015)|VS Codeでのカスタムエンジンエージェントの開発|
