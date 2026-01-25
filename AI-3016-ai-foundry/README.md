@@ -6,13 +6,21 @@
 （Develop generative AI apps in Azure AI Foundry）
 -->
 
-Develop generative AI apps in Azure
-
 1日コース
 
 本コースでは、Microsoft Foundryの基本的な機能や使い方についてご説明します。
 
 ## 講義
+
+- [開始時のご案内](../opening.md)
+- 講義
+  - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/AI-3016/AI-3016-microsoft-foundry.pdf)
+  - [ラボ操作例PDF](https://github.com/hiryamada/notes/releases/download/AI-3016/AI-3016-microsoft-foundry-lab.pdf)
+- [終了時のご案内](../closing-cloudslice.md)
+- 受講者アンケート実施
+  - オプションで残りのラボを実施（希望者のみ）
+
+## 講義内容・ラボ構成
 
 - 1 Azure で AI ソリューションを開発するための計画と準備
 - 2 Microsoft Foundry ポータルでモデル カタログからモデルを選択してデプロイする 
@@ -57,10 +65,11 @@ Develop generative AI apps in Azure
 
 ## 認定試験について
 
-本コース（AI-3016 Azure AI Foundry）に直接対応する認定試験・認定資格・Applied Skillsはありません。
+本コース（AI-3016）に直接対応する認定試験・認定資格・Applied Skillsはありません。
 
-ただし、本コースで学習する内容の一部は、AI-900（Azure AI Fundamentals）などのAI系の認定試験の準備に役立つ場合があります。
+ただし、本コースで学習する内容は、AI-102の出題範囲であるため、AI-102の認定試験の準備に役立ちます。
 
+<!--
 ## ラボ
 
 オプションで、ラボ（演習）を実施できます。
@@ -76,6 +85,7 @@ Develop generative AI apps in Azure
   - [ラボ4 Evaluations](lab04.md)
 
 ※ラボ環境において、プロジェクト・ハブを作成する際に、ラボ環境の中の手順書に表示されているプロジェクト名・ハブ名を指定する必要があります。またリソースグループは、このラボ環境で提供されるサブスクリプションにあらかじめ作成されているリソースグループを選択する必要があります。
+-->
 
 <!--
 英語ラボ手順書
