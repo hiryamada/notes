@@ -6,8 +6,6 @@
 （Develop generative AI apps in Azure AI Foundry）
 -->
 
-1日コース
-
 本コースでは、Microsoft Foundryの基本的な機能や使い方についてご説明します。
 
 ## 講義
