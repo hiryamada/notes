@@ -10,7 +10,7 @@ Microsoft Copilot を使用して、調査、情報の検索、効果的なコ�
 
 - [開始時のご案内](../opening.md)
 - 講義
-  - [講義資料PDF](AI-3025-work-smart.pdf)
+  - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AI-3025-work-smart.pdf)
 - [認定試験のご案内](../ab-exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
 - アンケート
