@@ -2,7 +2,6 @@
 
 https://learn.microsoft.com/ja-jp/collections/66w2a7txpy78r1
 
-- 2日間コース
 - GitHubの基礎を学びます
 - 本コースではラボ環境（https://esi.learnondemand.net/）の提供はございません
   - GitHubが提供する「演習」（GitHub Skills）をご案内いたします
