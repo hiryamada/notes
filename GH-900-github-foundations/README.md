@@ -14,6 +14,9 @@ https://learn.microsoft.com/ja-jp/collections/66w2a7txpy78r1
 - [開始時のご案内](../opening.md)
 - 講義
   - [講義資料PDF](GH-900.pdf)
+  - GitHub Copilotの解説PDF
+    - [part1](../GH-300-github-copilot/GH-300-part1.pdf)
+    - [part2](../GH-300-github-copilot/GH-300-part2.pdf)
 - [認定試験 GH-900 のご案内](exam.md)
 - [終了時のご案内](../closing-no-lab.md)
 - 満足度調査アンケート
