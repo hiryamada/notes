@@ -10,32 +10,34 @@ https://code.visualstudio.com/docs/copilot/agents/agents-tutorial
 
 https://atmarkit.itmedia.co.jp/ait/articles/2510/15/news018.html
 
-## 「GitHub Copilot拡張機能」は非推奨となった。
+## 「GitHub Copilot拡張機能」は非推奨となった
 
-拡張機能の検索で「GitHub.copilot」で検索すると出てくる。
+拡張機能の検索でID「GitHub.copilot」で検索すると出てくる。
 代わりに「GitHub Copilot Chat 拡張機能」（ID: GitHub.copilot-chat）をインストールする。
 
-## インストールする拡張機能はIDで指定するとよい。
+## インストールする拡張機能はIDで指定するとよい
 
-GitHub.copilot-chat
-ms-python.python
-ms-ossdata.vscode-pgsql
+- `GitHub.copilot-chat`
+- `ms-python.python`
+- `ms-ossdata.vscode-pgsql`
 
 ## ショートカット
 
-Ctrl + Shift + I: チャットビューを開き、Agentを選択。（閉じることはできない）
-Ctrl + Alt + B: セカンダリサイドバーの開閉
+- `Ctrl + Shift + I`: チャットビューを開き、Agentを選択。（閉じることはできない）
+- `Ctrl + Alt + B`: セカンダリサイドバーの開閉
 
 ## ツールのアイコン
 
 - Ask、Editではツールのアイコンは表示されない。
 - Agent、Planでは、ツールのアイコンが表示される。
 
-## Planエージェントの設定ファイル（Plan.agent.md）
+## Planエージェントの設定ファイル
 
 チャットビュー内の「エージェントの設定」（エージェント選択スイッチ）内で、Planの右のアイコンをクリック。
 
-Planエージェントの定義ファイルが確認できる。
+Planエージェントの定義ファイル（Plan.agent.md）が確認できる。
+
+つまりPlanエージェントはカスタムエージェントと同様の仕組みで作られている。
 
 ## モデルの管理画面
 
@@ -100,6 +102,8 @@ https://code.visualstudio.com/docs/copilot/agents/subagents
 メインエージェントからサブエージェントを呼び出せる
 
 https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience#_subagents
+
+`～.agent.md` （カスタムエージェントの定義ファイル）内では、ヘッダーの`agents: [...]` という記述で、このエージェントが使用するサブエージェントを指定できる。
 
 ## Agent hooks
 
