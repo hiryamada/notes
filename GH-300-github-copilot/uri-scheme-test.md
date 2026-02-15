@@ -1,1 +1,1 @@
-vscode://GitHub.Copilot-Chat/chat?agent=agent%26prompt=hello
+[hello](vscode://GitHub.Copilot-Chat/chat?agent=agent%26prompt=hello)
