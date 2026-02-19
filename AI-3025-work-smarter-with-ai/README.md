@@ -4,13 +4,13 @@ https://learn.microsoft.com/ja-jp/training/paths/work-smarter-with-ai/
 
 Microsoft Copilot を使用して、調査、情報の検索、効果的なコンテンツの生成を支援する方法について確認します。
 
-3時間（9:30～12:30 または 13:30～16:30）
+3時間（9:30～12:30 または 13:30～16:30  または 13:00～16:00）
 
 ## 講義
 
 - [開始時のご案内](../opening.md)
 - 講義
-  - 前半: [講義資料PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AI-3025-work-smart.pdf)
+  - 前半: [講義資料PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AI-3025-work-smart-2026.pdf)
   - 後半: [ラボ操作例PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AI-3025-alt-lab.pdf)
 - [認定試験のご案内](../ab-exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
