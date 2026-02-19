@@ -111,6 +111,12 @@ https://code.visualstudio.com/docs/copilot/customization/hooks
 
 エージェントセッションでの「UserPromptSubmit」といったイベントで、シェルコマンドを実行できるようになった
 
+
+## GitHub Copilot CLIのHook
+
+https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/use-hooks
+
+
 ## チェックポイント
 
 https://code.visualstudio.com/docs/copilot/chat/chat-checkpoints
@@ -137,14 +143,6 @@ https://code.visualstudio.com/docs/copilot/guides/debug-with-copilot
 /startDebugging
 
 copilot-debug コマンド
-
-## MCP Apps
-
-https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support
-
-対話中に直接レンダリングされるインタラクティブなUIコンポーネントを返すことが可能です:ダッシュボード、フォーム、可視化、多段階ワークフローなどです。これにより、より豊かで効果的な人間とエージェントの協働の機会が生まれます。
-
-（Adaptive Cards https://adaptivecards.io/ に似ている）
 
 ## Copilot memory
 
@@ -176,3 +174,39 @@ https://code.visualstudio.com/updates/v1_108#_improvements-to-agent-sessions-vie
 https://gihyo.jp/article/2025/12/vscode-updates-november-2025
 
 Visual Studio Codeは2025年12月10日、今月の更新版であるNovember 2025（バージョン1.107）をリリースした。エージェントセッション一覧がチャットビューに統合されて、バックグラウンドエージェントやクラウドエージェントとの引き継ぎが改善されるなど、VS CodeでのAgent HQの機能強化が行われた
+
+## GitHub Copilot SDK
+https://gihyo.jp/article/2026/01/github-copilot-sdk
+
+## GitHub Spec Kit
+
+https://github.com/github/spec-kit
+
+https://qiita.com/goataka/items/66ecf5f472208d6185ce
+
+## GitHub Copilot CLI 現状確認会議
+
+https://speakerdeck.com/torumakabe/github-copilot-cli-xian-zhuang-que-ren-hui-yi?slide=17
+
+## メモリー
+
+https://docs.github.com/en/copilot/how-tos/use-copilot-agents/copilot-memory
+
+## MCPサーバーのツール以外のもの（Prompts と Resources）
+
+https://zenn.dev/microsoft/articles/github-copilot-mcp
+
+https://qiita.com/ipeblb/items/535709fa06cbb40c400c
+
+
+## MCP Apps
+
+https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support
+
+対話中に直接レンダリングされるインタラクティブなUIコンポーネントを返すことが可能です:ダッシュボード、フォーム、可視化、多段階ワークフローなどです。これにより、より豊かで効果的な人間とエージェントの協働の機会が生まれます。
+
+（Adaptive Cards https://adaptivecards.io/ に似ている）
+
+https://modelcontextprotocol.github.io/ext-apps/api/
+
+https://modelcontextprotocol.io/docs/extensions/apps
