@@ -25,6 +25,7 @@ https://learn.microsoft.com/ja-jp/training/paths/transform-business-workflows-wi
 - 6. ビジネス ワークフローで Microsoft 365 Copilot が果たす役割を定義する
 
 <!--
+D登録済み
 AB-730: Transform business workflows with generative AI
 
 https://learn.microsoft.com/en-us/training/courses/ab-730t00

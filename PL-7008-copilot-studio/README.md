@@ -47,13 +47,13 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 
 https://microsoftlearning.github.io/mslearn-copilotstudio/
 
+<!--
 ## 不動産のプロモーションに役立つ情報が掲載されているサイト
 
 ラボ4タスク2.2 で、エージェントのナレッジとして設定できる「公開Webサイト」の例。
 
 - https://mailchimp.com/resources/generate-real-estate-leads/ 
 - https://smei.org/marketing-strategy/ 
-
 
 ## ラボ補足
 
@@ -62,3 +62,5 @@ https://microsoftlearning.github.io/mslearn-copilotstudio/
 ![alt text](image-1.png)
 
 ![alt text](image.png)
+
+-->
