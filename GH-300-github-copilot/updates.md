@@ -176,7 +176,20 @@ https://gihyo.jp/article/2025/12/vscode-updates-november-2025
 Visual Studio Codeは2025年12月10日、今月の更新版であるNovember 2025（バージョン1.107）をリリースした。エージェントセッション一覧がチャットビューに統合されて、バックグラウンドエージェントやクラウドエージェントとの引き継ぎが改善されるなど、VS CodeでのAgent HQの機能強化が行われた
 
 ## GitHub Copilot SDK
+
+任意のアプリケーションにGitHub Copilotの機能を組み込むためのSDK
+
 https://gihyo.jp/article/2026/01/github-copilot-sdk
+
+https://github.blog/engineering/build-an-agent-into-any-app-with-the-github-copilot-sdk/
+
+https://github.com/github/copilot-sdk
+
+## GitHub Copilot SDKがMicrosoft Agent Frameworkに統合された
+
+https://devblogs.microsoft.com/semantic-kernel/build-ai-agents-with-github-copilot-sdk-and-microsoft-agent-framework/
+
+https://atmarkit.itmedia.co.jp/ait/articles/2602/25/news067.html
 
 ## GitHub Spec Kit
 
