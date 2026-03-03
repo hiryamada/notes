@@ -223,3 +223,30 @@ https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support
 https://modelcontextprotocol.github.io/ext-apps/api/
 
 https://modelcontextprotocol.io/docs/extensions/apps
+
+
+## ACP support in Copilot CLI is now in public preview
+
+GitHub Copilot CLI が ACP（Agent Client Protocol）に対応。
+
+ACPに対応する任意のエディターやIDEからGitHub Copilot CLIのコントロールが可能に。
+
+https://github.blog/changelog/2026-01-28-acp-support-in-copilot-cli-is-now-in-public-preview/
+
+https://github.com/orgs/community/discussions/185860
+
+## GitHub Copilot BusinessとProでClaudeとCodexが利用可能に
+
+https://codezine.jp/news/detail/23507
+
+GitHubは2月26日、Copilot BusinessとCopilot Proのユーザー向けに、AnthropicのAIモデル「Claude」とOpenAIのAIモデル「Codex」が利用可能になったと発表した。
+
+　これにより、既存のCopilot EnterpriseやPro+ユーザーだけでなく、より多くの開発チームが両エージェントをGitHub.com、GitHub Mobile、VS Code上で利用できるようになった。ClaudeとCodexは、リポジトリのコードや履歴、Issueやプルリクエスト、Copilot Memoryなどにアクセスし、開発フローをサポートする。
+
+## GitHub Copilotの利用状況を可視化する「Copilot Usage Metrics」提供開始
+
+https://codezine.jp/news/detail/23517
+
+## GitHub Copilot CLI が一般提供を開始
+
+https://gihyo.jp/article/2026/02/github-copilot-cli-ga
