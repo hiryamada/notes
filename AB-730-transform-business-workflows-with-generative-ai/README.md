@@ -4,13 +4,14 @@ https://learn.microsoft.com/ja-jp/training/paths/transform-business-workflows-wi
 
 - 本コースではMicrosoft 365 Copilotの基礎を解説します。
 - 本コースは座学のみとなります。ラボ（演習）の提供はございません。講師のデモをご覧いただきます。
+- 対応する[認定試験](https://learn.microsoft.com/ja-jp/credentials/certifications/ai-business-professional/?practice-assessment-type=certification)がございます。受講後ぜひチャレンジしてください！（2026/3時点で英語試験のみ）
 
 ## 講義
 
-- 開始時のご案内
-- 講義資料
-- 認定試験のご紹介
-- 終了時のご案内
+- [開始時のご案内](../opening.md)
+- [講義資料PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AB-730.pdf)
+- [認定試験のご紹介](../ab-exam.md)
+- [終了時のご案内](../closing-no-lab.md)
 - 受講者アンケート
 
 ## コース構成
