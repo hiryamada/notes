@@ -5,6 +5,11 @@
 - 本講義の内容は以下のMicrosoft Learnテキストに準拠しています。
   - https://learn.microsoft.com/ja-jp/training/paths/draft-analyze-present-microsoft-365-copilot/
 
+## 講義資料
+
+- [講義資料PDF](https://github.com/hiryamada/notes/releases/download/MS-4018/MS-4018.pdf)
+- [ラボ解説PDF](https://github.com/hiryamada/notes/releases/download/MS-4018/MS-4018-lab.pdf)
+
 ## 講義
 
 - (9:30～)開始時のご案内
