@@ -15,7 +15,7 @@ https://learn.microsoft.com/ja-jp/credentials/certifications/resources/study-gui
 
 ## おすすめの練習問題集
 
-https://ghcertified.com/practice_tests/
+https://ghcertified.com/en
 
 ## プラクティス評価（模擬問題）
 
