@@ -23,7 +23,7 @@ https://learn.microsoft.com/ja-jp/training/paths/build-foundation-extend-microso
     - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/MS-4014-extend-m365-copilot/m03.pdf)
   - モジュール4 カスタム AI エージェントの開発パスを選択する
     - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/MS-4014-extend-m365-copilot/m04.pdf)
-- [認定試験のご紹介](../ms-copilot/exam.md)
+- [認定試験のご紹介](https://github.com/hiryamada/notes/blob/main/ab-exam.md)
 - [終了時のご案内](../closing-no-lab.md)
 - 満足度調査アンケート
 
