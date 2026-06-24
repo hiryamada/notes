@@ -16,13 +16,13 @@ https://learn.microsoft.com/ja-jp/training/paths/build-foundation-extend-microso
 - [開始時のご案内](../opening.md)
 - 講義
   - モジュール1 AI エージェントの開発の概要
-    - [講義資料PDF](m01.pdf)
+    - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/MS-4014-extend-m365-copilot/m01.pdf)
   - モジュール2 Microsoft AI エージェント ソリューションの概要
-    - [講義資料PDF](m02.pdf)
+    - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/MS-4014-extend-m365-copilot/m02.pdf)
   - モジュール3 シナリオに最適なMicrosoft 365 Copilot拡張パスを選択する
-    - [講義資料PDF](m03.pdf)
+    - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/MS-4014-extend-m365-copilot/m03.pdf)
   - モジュール4 カスタム AI エージェントの開発パスを選択する
-    - [講義資料PDF](m04.pdf)
+    - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/MS-4014-extend-m365-copilot/m04.pdf)
 - [認定試験のご紹介](../ms-copilot/exam.md)
 - [終了時のご案内](../closing-no-lab.md)
 - 満足度調査アンケート
