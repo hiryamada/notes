@@ -10,7 +10,9 @@ https://learn.microsoft.com/ja-jp/collections/j06xt3t1kr4rd0
 
 - [開始時のご案内](../opening.md)
 - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AI-3026-microsoft-foundry.pdf)
+  - [Youtubeおすすめ動画（VS Code上でのMicrosoft Foundry操作）](https://www.youtube.com/watch?v=aQFSDGAk9DA)
 - [ラボ操作例PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AI-3026-microsoft-foundry-labs.pdf)
+- [認定試験のご案内](exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
 
 <!--
@@ -28,20 +30,15 @@ https://learn.microsoft.com/ja-jp/collections/j06xt3t1kr4rd0
 - ラボ（オプション）
 -->
 
-## 講義内容・ラボ構成
+## 講義内容
 
 - 1 AzureでAIエージェント開発を始める
-	- lab 1 Explore AI Agent development
 - 2 Microsoft Foundry Agent Service を使用して AI エージェントを開発する
-	- lab 2 Develop an AI agent
 - 3 Visual Studio Code で Microsoft Foundry 拡張機能を使用して AI エージェントを開発する
 - 4 カスタム ツールをエージェントに統合する
 - 5 Microsoft Foundry Agent Service を使用してマルチエージェント ソリューションを開発する
-	- lab 3 Develop a multi-agent solution with Azure AI Foundry
 - 6 MCP ツールと Azure AI エージェントの統合
-	- lab 4 Connect AI Agents to a remote MCP server
 - 7 Microsoft Agent Framework を使用して AI エージェントを開発する
-	- lab 5 Develop an Azure AI agent with the Microsoft Agent Framework SDK
 - 8 Microsoft Agent Framework を使用してマルチエージェント ソリューションを調整する
 - 9 A2A を使用して Azure AI エージェントを検出する
 - 10 Microsoft Foundry を使用してエージェント駆動型ワークフローを構築する
@@ -66,9 +63,3 @@ https://github.com/MicrosoftLearning/mslearn-ai-agents
 
 -->
 
-
-## 認定試験について
-
-本コース（AI-3026）に直接対応する認定試験・認定資格・Applied Skillsはありません。
-
-ただし、本コースで学習する内容は、AI-102の出題範囲であるため、AI-102の認定試験の準備に役立ちます。
