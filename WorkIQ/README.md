@@ -43,6 +43,12 @@ Work IQが有効化されると、「職場/Web」切り替えスイッチがな
 各ユーザーはMicrosoft 365 Copilot Chatの画面で「New Copilot」スイッチをON・OFFでき、ONの場合はWork IQボタン、OFFの場合は「職場（Work）・Web」切り替えスイッチが表示される。
 https://www.youtube.com/watch?v=F_i8e7oe69I
 
+## Microsoft Graphとの関係
+
+https://www.microsoft.com/insidetrack/blog/intelligence-on-tap-how-work-iq-enables-ai-and-agents-at-microsoft/
+
+Work IQはMicrosoft Graphの上に載っており、そのデータを推論し、CopilotやAIエージェントから得られる結果に影響を与える。
+
 ## Microsoft 365 Copilot Chatで利用方法
 
 Microsoft 365 Copilot Chatに統合されている。画面左上に「Work IQ」ボタンが出現。クリックでON・OFFできる。
@@ -64,6 +70,12 @@ https://aurant-technologies.com/blog/copilot-implementation-14811/
 
 ## Work IQ / Fabric IQ / Foundry IQ / Web IQ の違い
 https://qiita.com/lowgain/items/ffc7dc2722defa63e14f
+
+https://www.microsoft.com/insidetrack/blog/how-work-iq-is-supercharging-our-ai-usage-at-microsoft/
+
+- Work IQは非構造化生産性データに焦点を当て、AIがメール、会議、ドキュメント、コラボレーションシグナルを通じて人々の働き方を理解するのを支援します。
+- Fabric IQは同様の理屈を分析データや構造化データに適用し、指標、トレンド、KPI、その他のビジネスシグナルに文脈と説明を加えます。
+- Foundry IQは、Microsoft 365、分析プラットフォーム、ラインオブビジネスシステム間でインテリジェンスをつなげ、両方の世界から引き出せるエージェントを作成するための基盤を提供します。
 
 ## 開発者向けの情報
 
