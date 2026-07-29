@@ -33,12 +33,12 @@ https://learn.microsoft.com/en-us/training/courses/ai-103t00
   - ラボ10 Develop an Azure AI chat agent with the Microsoft Agent Framework SDK
   - ラボ11 Develop a multi-agent solution
 - 3日目
-  - ラボ11 Analyze text
-  - ラボ12 Develop A Text Analysis Agent
-  - ラボ13 Use speech-capable generative AI models
-  - ラボ14 Recognize and synthesize speech
-  - ラボ15 Use Azure Speech in an agent
-  - ラボ16 Develop a Voice Live agent
+  - ラボ12 Analyze text
+  - ラボ13 Develop A Text Analysis Agent
+  - ラボ14 Use speech-capable generative AI models
+  - ラボ15 Recognize and synthesize speech
+  - ラボ16 Use Azure Speech in an agent
+  - ラボ17 Develop a Voice Live agent
 - 4日目
   - (TODO)
 <!--
