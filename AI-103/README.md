@@ -13,7 +13,8 @@ https://learn.microsoft.com/en-us/training/courses/ai-103t00
 - 3日目: [自然言語ソリューションを開発する （AI-3003）](../AI-3003-nlp/README.md)
   - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AI-3003-nlp.pdf)
 - 4日目: [ビジュアル データから分析情報を抽出する（AI-3008）](../AI-3008-extract-information/)
-  - 講義資料: 準備中
+  - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/AI-3026/AI-3008-extract-insights.pdf)
+  - [講義資料PDF(Azure AI Search)](https://github.com/hiryamada/notes/blob/main/AI-102-2025/ai-search.pdf)
 - [認定試験のご案内](exam.md)
 - [終了時のご案内](../closing-cloudslice.md)
 
