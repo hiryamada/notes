@@ -14,6 +14,7 @@ https://learn.microsoft.com/ja-jp/collections/66w2a7txpy78r1
 - [開始時のご案内](../opening.md)
 - 講義
   - [講義資料PDF](GH-900.pdf)
+  - [OSSベストプラクティス](OSSbestpractive.pdf)
   - GitHub Copilotの解説PDF
     - [part1](../GH-300-github-copilot/GH-300-part1.pdf)
     - [part2](../GH-300-github-copilot/GH-300-part2.pdf)
