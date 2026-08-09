@@ -12,13 +12,13 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 ## 講義
 
 - [開始時のご案内](../opening.md)
-- 講義
+- 講義資料PDF
   - [1.環境構築編](https://github.com/hiryamada/notes/releases/download/PL-7008/1-.pdf)
   - [2.エージェント作成編](https://github.com/hiryamada/notes/releases/download/PL-7008/2-.pdf)
   - [3.エージェント公開編](https://github.com/hiryamada/notes/releases/download/PL-7008/3-.pdf)
   - [4.応用編](https://github.com/hiryamada/notes/releases/download/PL-7008/4-.pdf)
-  - [1～4で使用するサンプルプロンプト](./prompts.md)
-  - [全体のまとめ](./summary.md)
+- [1～4で使用するサンプルプロンプト](./prompts.md)
+- [全体のまとめ](./summary.md)
 - [Microsoft 365 関連の認定試験のご案内](../ab-exam.md)
 - [終了時のご案内](../closing-mscopilot.md)
 
