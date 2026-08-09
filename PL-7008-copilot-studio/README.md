@@ -1,7 +1,7 @@
 # PL-7008: Microsoft Copilot Studio でエージェントを作成する
 
 Microsoft Learn教材: 
-https://learn.microsoft.com/ja-jp/collections/p6zqazteypgezr
+https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/
 
 <!--
 Microsoft Learn教材: 
@@ -13,12 +13,21 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 
 - [開始時のご案内](../opening.md)
 - 講義
-  - [サンプルプロンプト](./prompts.md)
-  - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/PL-7008/pl-7008.pdf)
-  - [代替ラボ手順PDF](https://github.com/hiryamada/notes/releases/download/PL-7008/pl-7008-alt-lab.pdf)
+  - [1.環境構築編](https://github.com/hiryamada/notes/releases/download/PL-7008/1-.pdf)
+  - [2.エージェント作成編](https://github.com/hiryamada/notes/releases/download/PL-7008/2-.pdf)
+  - [3.エージェント公開編](https://github.com/hiryamada/notes/releases/download/PL-7008/3-.pdf)
+  - [4.応用編](https://github.com/hiryamada/notes/releases/download/PL-7008/4-.pdf)
+  - [1～4で使用するサンプルプロンプト](./prompts.md)
+  - [全体のまとめ](./summary.md)
 - [Microsoft 365 関連の認定試験のご案内](../ab-exam.md)
 - [終了時のご案内](../closing-mscopilot.md)
-- （希望者のみ）ラボ
+
+<!--
+  - [講義資料PDF](https://github.com/hiryamada/notes/releases/download/PL-7008/pl-7008.pdf)
+  - [代替ラボ手順PDF](https://github.com/hiryamada/notes/releases/download/PL-7008/pl-7008-alt-lab.pdf)
+
+
+-->
 
 <!--
 ## 時間配分（予定）
@@ -38,7 +47,6 @@ https://learn.microsoft.com/ja-jp/training/paths/create-extend-custom-copilots-m
 - マイクロソフトアカウントの作成: https://signup.live.com/
   - '～@outlook.com' というメールアドレスでマイクロソフトアカウントを作成できます
 - ラボ環境: https://esi.learnondemand.net/User/Login
-- ラボ環境は起動してから1時間以上放置すると終了してしまいますのでご注意ください。
 
 ## ラボ手順書
 
