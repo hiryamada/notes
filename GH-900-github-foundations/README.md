@@ -19,6 +19,7 @@ https://learn.microsoft.com/ja-jp/collections/66w2a7txpy78r1
     - [part1](../GH-300-github-copilot/GH-300-part1.pdf)
     - [part2](../GH-300-github-copilot/GH-300-part2.pdf)
 - [認定試験 GH-900 のご案内](exam.md)
+  - 試験対策おすすめ書籍 [「読んでつなげる GitHub  GH-900 GitHub Foundations 試験」(9/11発売)](https://book.mynavi.jp/ec/products/detail/id=152335)
 - [終了時のご案内](../closing-no-lab.md)
 - 満足度調査アンケート
 

@@ -105,3 +105,11 @@ Connected Agents
 
 
 ラボ環境は半年後まで利用できますので、ぜひ練習・復習にご活用ください。
+
+### 参考情報
+
+- Microsoft Copilot Studio ドキュメント
+  - [Microsoft Copilot Studio の概要](https://learn.microsoft.com/ja-jp/power-platform/copilot-studio/overview)
+  - [Microsoft Copilot Studio の使用を開始する](https://learn.microsoft.com/ja-jp/power-platform/copilot-studio/get-started)
+  - [Microsoft Copilot Studio のエージェントの作成](https://learn.microsoft.com/ja-jp/power-platform/copilot-studio/create-agent)
+  - [Microsoft Copilot Studio のエージェントの公開](https://learn.microsoft.com/ja-jp/power-platform/copilot-studio/publish-agent)
