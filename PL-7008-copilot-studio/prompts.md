@@ -22,6 +22,13 @@
 商品の価格の値をテーブルに書き込む際、値は整数として送信すること。
 ```
 
+## ポップアップを許可するサイトの設定
+
+```
+copilotstudio.microsoft.com
+copilotstudio.preview.microsoft.com
+```
+
 ## すべての商品の取得
 
 ```
