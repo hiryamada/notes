@@ -1,7 +1,5 @@
 # AZ-2007: GitHub Copilot を使用してアプリ開発を高速化する
 
-1日コース
-
 https://learn.microsoft.com/ja-jp/training/paths/accelerate-app-development-using-github-copilot/
 
 - [開始時のご案内](../opening.md)
