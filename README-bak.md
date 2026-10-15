@@ -1,3 +1,5 @@
+※このページの内容は古くなっています。 [REAMDME.md ファイル](README.md) をご覧ください。
+
 # [トレーニングの準備](prep/README.md)
 
 準備は**初日に1回だけ実施**すればOKです。以降は、ご準備いただいたMicrosoftアカウントで、[Azure portal](https://portal.azure.com/)や、[演習環境 - Learn on Demand LMS (LODS)](https://tsfb.learnondemand.net/) にアクセスできます。
