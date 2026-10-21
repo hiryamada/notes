@@ -1,5 +1,11 @@
 # サンプルプロンプト
 
+## Power AppsのページのURL
+
+```
+https://make.powerapps.com/
+```
+
 ## Power Appsで「商品」テーブルを作成する
 
 ```
