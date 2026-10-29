@@ -23,6 +23,9 @@ https://learn.microsoft.com/ja-jp/training/paths/implement-no-code-copilot-agent
 - （オプション）ラボ（実機演習）
   - [ラボ手順解説PDF](MS-4019-lab.pdf)
 
+## 参考
+
+[Excelファイルを検索するエージェントの開発例(Agent Builder)](parts-search-agent.md)
 
 ## ラボについて
 
