@@ -1,4 +1,12 @@
-# Agent Builder 利用例（部品検索エージェント）
+# Agent Builder 利用例
+
+Excelファイル（部品表）を検索する「部品検索エージェント」
+
+## Excelファイル
+
+[automobile-parts.xlsx](automobile-parts.xlsx)
+
+## 動作イメージ
 
 エージェント動作イメージ
 ![alt text](image.png)
