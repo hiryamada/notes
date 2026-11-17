@@ -350,3 +350,4 @@ Teamsチャットで読みやすいように、重要な内容を維持したま
 - [Outlookメール](https://outlook.cloud.microsoft/mail/)
 - [Outlook予定表](https://outlook.cloud.microsoft/calendar/)
 - [Teams](https://teams.cloud.microsoft/)
+- [Whiteboard](https://whiteboard.cloud.microsoft/)

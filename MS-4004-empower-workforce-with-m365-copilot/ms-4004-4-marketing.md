@@ -333,3 +333,4 @@ Wordに、例えば以下を含むキャンペーン企画案が作成されま�
 - [Outlookメール](https://outlook.cloud.microsoft/mail/)
 - [Outlook予定表](https://outlook.cloud.microsoft/calendar/)
 - [Teams](https://teams.cloud.microsoft/)
+- [Whiteboard](https://whiteboard.cloud.microsoft/)

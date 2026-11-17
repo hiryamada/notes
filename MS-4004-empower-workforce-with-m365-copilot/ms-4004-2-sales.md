@@ -263,3 +263,4 @@ Outlookに、次の内容を含む新規メールの下書きが作成されま�
 - [Outlookメール](https://outlook.cloud.microsoft/mail/)
 - [Outlook予定表](https://outlook.cloud.microsoft/calendar/)
 - [Teams](https://teams.cloud.microsoft/)
+- [Whiteboard](https://whiteboard.cloud.microsoft/)

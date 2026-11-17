@@ -35,7 +35,7 @@ Microsoft Copilotを使用して、現在の業務を整理し、課題を分析
 
 ## 使用するアプリ
 
-Microsoft Whiteboard
+[Microsoft Whiteboard](https://whiteboard.cloud.microsoft/)
 
 ## シチュエーション
 
@@ -313,3 +313,4 @@ PowerPointに、例えば次のような構成の資料が作成されます。
 - [Outlookメール](https://outlook.cloud.microsoft/mail/)
 - [Outlook予定表](https://outlook.cloud.microsoft/calendar/)
 - [Teams](https://teams.cloud.microsoft/)
+- [Whiteboard](https://whiteboard.cloud.microsoft/)
