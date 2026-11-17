@@ -1,0 +1,25 @@
+Employee ID,Department,Course,Assigned Date,Due Date,Completion Date,Status
+E001,Sales,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-18,Completed
+E002,Sales,Information Security Fundamentals,2026-10-01,2026-11-30,,In Progress
+E003,Sales,Information Security Fundamentals,2026-10-01,2026-11-30,,Not Started
+E004,Sales,Information Security Fundamentals,2026-10-01,2026-11-15,,Not Started
+E005,Marketing,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-22,Completed
+E006,Marketing,Information Security Fundamentals,2026-10-01,2026-11-30,2026-11-03,Completed
+E007,Marketing,Information Security Fundamentals,2026-10-01,2026-11-30,,In Progress
+E008,Marketing,Information Security Fundamentals,2026-10-01,2026-11-20,,Not Started
+E009,Finance,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-09,Completed
+E010,Finance,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-14,Completed
+E011,Finance,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-27,Completed
+E012,Finance,Information Security Fundamentals,2026-10-01,2026-11-15,,In Progress
+E013,IT,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-05,Completed
+E014,IT,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-08,Completed
+E015,IT,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-11,Completed
+E016,IT,Information Security Fundamentals,2026-10-01,2026-11-30,,In Progress
+E017,HR,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-19,Completed
+E018,HR,Information Security Fundamentals,2026-10-01,2026-11-30,2026-10-29,Completed
+E019,HR,Information Security Fundamentals,2026-10-01,2026-11-20,,In Progress
+E020,HR,Information Security Fundamentals,2026-10-01,2026-11-10,,Not Started
+E021,Operations,Information Security Fundamentals,2026-10-01,2026-11-30,2026-11-02,Completed
+E022,Operations,Information Security Fundamentals,2026-10-01,2026-11-30,,Not Started
+E023,Operations,Information Security Fundamentals,2026-10-01,2026-11-20,,In Progress
+E024,Operations,Information Security Fundamentals,2026-10-01,2026-11-10,,Not Started
