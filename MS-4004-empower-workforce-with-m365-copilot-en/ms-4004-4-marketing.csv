@@ -1,0 +1,21 @@
+Campaign,Channel,Impressions,Clicks,Leads,Cost,Conversions
+Cloud_Workstyle_Q1,Email,15000,1720,184,280000,38
+Cloud_Workstyle_Q1,Paid Social,85000,2380,126,760000,21
+Cloud_Workstyle_Q1,Search Ads,42000,3110,242,1150000,54
+Cloud_Workstyle_Q1,Webinar,4800,920,196,520000,61
+Cloud_Workstyle_Q1,Display Ads,120000,1460,58,680000,8
+Security_Readiness_Q2,Email,18000,1940,213,320000,44
+Security_Readiness_Q2,Paid Social,92000,2650,143,810000,25
+Security_Readiness_Q2,Search Ads,47000,3480,276,1280000,63
+Security_Readiness_Q2,Webinar,5200,1080,238,610000,76
+Security_Readiness_Q2,Display Ads,135000,1580,64,720000,9
+AI_Productivity_Q3,Email,22000,2640,304,390000,68
+AI_Productivity_Q3,Paid Social,140000,5740,412,1350000,83
+AI_Productivity_Q3,Search Ads,58000,4260,345,1540000,79
+AI_Productivity_Q3,Webinar,7600,1490,327,750000,102
+AI_Productivity_Q3,Organic Social,68000,3260,178,180000,31
+Data_Insights_Q4,Email,19500,2010,201,350000,41
+Data_Insights_Q4,Paid Social,106000,2980,157,940000,27
+Data_Insights_Q4,Search Ads,51000,3740,288,1390000,66
+Data_Insights_Q4,Webinar,6100,1180,259,660000,82
+Data_Insights_Q4,Organic Social,59000,2840,161,160000,28

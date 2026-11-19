@@ -1,0 +1,25 @@
+Employee ID,Location,Work Style,Department,Communication Status
+E001,Tokyo,Hybrid,Sales,Completed
+E002,Tokyo,Office,Sales,Completed
+E003,Osaka,Remote,Sales,Pending
+E004,Nagoya,Hybrid,Sales,Pending
+E005,Tokyo,Hybrid,Marketing,Completed
+E006,Osaka,Office,Marketing,Pending
+E007,Tokyo,Remote,Marketing,Pending
+E008,Fukuoka,Hybrid,Marketing,Completed
+E009,Tokyo,Office,Finance,Completed
+E010,Osaka,Hybrid,Finance,Completed
+E011,Nagoya,Remote,Finance,Pending
+E012,Tokyo,Hybrid,Finance,Pending
+E013,Tokyo,Remote,IT,Completed
+E014,Osaka,Hybrid,IT,Completed
+E015,Fukuoka,Office,IT,Pending
+E016,Nagoya,Remote,IT,Completed
+E017,Tokyo,Hybrid,HR,Completed
+E018,Osaka,Office,HR,Pending
+E019,Fukuoka,Remote,HR,Pending
+E020,Tokyo,Hybrid,HR,Completed
+E021,Tokyo,Office,Operations,Completed
+E022,Osaka,Hybrid,Operations,Pending
+E023,Nagoya,Office,Operations,Pending
+E024,Fukuoka,Remote,Operations,Pending
