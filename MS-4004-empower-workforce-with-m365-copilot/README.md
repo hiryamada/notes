@@ -2,7 +2,7 @@
 
 https://learn.microsoft.com/ja-jp/training/paths/empower-workforce-copilot-use-cases/
 
-経営幹部、営業、マーケティング、財務、IT、人事、業務の 7 つのユース ケースに関連する一連の実践的な演習を行います。 これらの演習では、さまざまな Microsoft 365 アプリ (Word、PowerPoint、Outlook など) で Copilot を使って、各ユース ケースに関連する一連の一般的なビジネス関連タスクを完了することに焦点を当てています。 
+経営幹部、営業、マーケティング、財務、IT、人事、業務などのユース ケースに関連する一連の実践的な演習を行います。 これらの演習では、さまざまな Microsoft 365 アプリ (Word、PowerPoint、Outlook など) で Copilot を使って、各ユース ケースに関連する一連の一般的なビジネス関連タスクを完了することに焦点を当てています。 
 
 - 2026/11/25
     - [営業部門のユースケース (MS-4004.2)](ms-4004-2-sales.md)
